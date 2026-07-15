@@ -201,3 +201,10 @@ test("client contains a bundled-data fallback", async () => {
   assert.match(source, /apiUrl\("\/api\/overrides"\)/);
   assert.match(source, /\.catch\(\(\) => \[\]\)/);
 });
+
+test("hand and meld tiles keep the same per-tile width", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /container-type:\s*inline-size/);
+  assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
+  assert.match(source, /const APP_VERSION = 7;/);
+});

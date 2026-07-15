@@ -210,6 +210,7 @@
 
     .hand-stage {
       flex: 0 0 auto;
+      container-type: inline-size;
       padding: 15px 5px 10px;
       border-top: 1px solid rgba(242,210,123,.16);
       border-bottom: 1px solid rgba(242,210,123,.16);
@@ -218,7 +219,8 @@
 
     .tiles-line {
       --visual-count: 14;
-      --tile-width: min(40px, calc((100vw - 47px) / var(--visual-count)));
+      --tile-width: min(40px, calc((min(100vw, 28rem) - 58px) / var(--visual-count)));
+      --tile-width: min(40px, calc((100cqw - 24px) / var(--visual-count)));
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -239,11 +241,9 @@
       border-left: 1px solid rgba(242,210,123,.4);
     }
 
-    .meld-group { display: flex; gap: 0; }
+    .meld-group { display: flex; align-items: flex-end; flex: none; gap: 0; }
 
     .tile-button {
-      width: var(--tile-width);
-      min-width: 0;
       padding: 0;
       border: 0;
       border-radius: 3px;
@@ -255,12 +255,19 @@
     }
 
     .tile-button img, .meld-tile {
-      width: 100%;
       height: auto;
       display: block;
       border-radius: 3px;
       filter: drop-shadow(0 3px 2px rgba(0,0,0,.42));
       pointer-events: none;
+    }
+
+    .tile-button img { width: 100%; }
+
+    .tile-button, .meld-tile {
+      width: var(--tile-width);
+      min-width: var(--tile-width);
+      flex: 0 0 var(--tile-width);
     }
 
     .tile-button:hover { filter: brightness(1.05); }
@@ -286,7 +293,6 @@
     }
 
     .meld-tile {
-      width: var(--tile-width);
       opacity: .91;
     }
 
@@ -491,7 +497,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 6;
+    const APP_VERSION = 7;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
