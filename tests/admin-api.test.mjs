@@ -206,7 +206,14 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 8;/);
+  assert.match(source, /const APP_VERSION = 9;/);
+});
+
+test("question 1 contains a red five-pin", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  const question = questions.find((item) => item.id === 1);
+  assert.equal(question.hand.filter((tile) => tile === "0p").length, 1);
+  assert.equal(question.hand.includes("5p"), false);
 });
 
 test("question 13 contains an open three-white pon", async () => {
