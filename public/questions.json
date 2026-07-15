@@ -518,10 +518,10 @@
     "dora": "7m",
     "melds": [
       {
-        "type": "kan",
-        "open": false,
+        "type": "pon",
+        "open": true,
+        "calledIndex": 0,
         "tiles": [
-          "5z",
           "5z",
           "5z",
           "5z"

@@ -206,5 +206,17 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 7;/);
+  assert.match(source, /const APP_VERSION = 8;/);
+});
+
+test("question 13 contains an open three-white pon", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  const question = questions.find((item) => item.id === 13);
+  assert.equal(question.meldCount, 1);
+  assert.deepEqual(question.melds, [{
+    type: "pon",
+    open: true,
+    calledIndex: 0,
+    tiles: ["5z", "5z", "5z"],
+  }]);
 });
