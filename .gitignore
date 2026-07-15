@@ -1,0 +1,13 @@
+# Secrets supplied for the Discord importer
+.env
+
+# Importer working files (the generated app data and images are kept)
+data/import-state.json
+data/import-errors.jsonl
+
+# Usual local tooling output
+node_modules/
+supabase/.temp/
+__pycache__/
+*.pyc
+.DS_Store

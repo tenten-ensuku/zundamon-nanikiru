@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#06110f">
+  <title>ずんだもん何切る</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f6f2df;
+      --muted: #9aa9a4;
+      --felt-0: #06110f;
+      --felt-1: #0b2f28;
+      --felt-2: #0f493c;
+      --gold: #d8a83c;
+      --gold-light: #f2d27b;
+      --orange: #b65a22;
+      --orange-light: #e7863b;
+      --line: rgba(242, 210, 123, .24);
+      --shadow: 0 16px 44px rgba(0, 0, 0, .36);
+      font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "HGS明朝E", "MS PMincho", serif;
+      font-weight: 900;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+
+    html, body { min-height: 100%; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      min-height: 100dvh;
+      overflow: hidden;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.014) 1px, transparent 1px),
+        radial-gradient(circle at 50% -12%, #17604e 0, var(--felt-1) 38%, var(--felt-0) 82%);
+      background-size: 24px 24px, 24px 24px, auto;
+      -webkit-tap-highlight-color: transparent;
+      overscroll-behavior: none;
+      touch-action: manipulation;
+    }
+
+    body.reviewing {
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+    }
+
+    button, a { font: inherit; }
+    button { color: inherit; }
+
+    .app {
+      width: min(100%, 28rem);
+      min-height: 100dvh;
+      margin: 0 auto;
+      padding: max(10px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom));
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      position: relative;
+    }
+
+    .app::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at center, transparent 45%, rgba(0, 0, 0, .24));
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 8px;
+      min-height: 48px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand-kicker {
+      margin: 0 0 -2px;
+      color: var(--gold-light);
+      font-size: 10px;
+      letter-spacing: .24em;
+      text-shadow: 0 2px 4px #000;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(25px, 8vw, 34px);
+      line-height: 1;
+      letter-spacing: -.03em;
+      text-shadow: 0 3px 0 #03110e, 0 6px 12px rgba(0,0,0,.6);
+      -webkit-text-stroke: .35px rgba(242, 210, 123, .55);
+    }
+
+    .counter {
+      padding-bottom: 2px;
+      color: var(--gold-light);
+      font-size: 14px;
+      white-space: nowrap;
+      text-shadow: 0 2px 3px #000;
+    }
+
+    .top-actions { display: flex; align-items: center; gap: 7px; padding-bottom: 1px; }
+    .admin-link {
+      padding: 4px 6px;
+      border: 1px solid rgba(242,210,123,.2);
+      border-radius: 5px;
+      color: var(--muted);
+      background: rgba(0,0,0,.18);
+      font-size: 9px;
+      text-decoration: none;
+    }
+
+    .progress {
+      height: 4px;
+      overflow: hidden;
+      border-radius: 2px;
+      background: rgba(0, 0, 0, .38);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+    }
+
+    .progress > span {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--orange), var(--gold-light));
+      transition: width .28s ease;
+    }
+
+    .board {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 9px;
+      min-height: 0;
+    }
+
+    .situation {
+      padding: 10px 11px 9px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: linear-gradient(145deg, rgba(15,73,60,.76), rgba(3,22,18,.78));
+      box-shadow: var(--shadow), inset 0 1px rgba(255,255,255,.04);
+    }
+
+    .situation-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .round-line {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 2px 10px;
+      min-width: 0;
+    }
+
+    .round {
+      color: var(--gold-light);
+      font-size: 22px;
+      line-height: 1;
+      text-shadow: 0 2px 3px #000;
+    }
+
+    .seat, .turn { font-size: 15px; }
+
+    .sub-line {
+      min-height: 16px;
+      margin-top: 6px;
+      display: flex;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .dora-box {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex: none;
+    }
+
+    .dora-label {
+      padding: 3px 5px;
+      color: #1b1608;
+      border-radius: 3px;
+      background: linear-gradient(#f2d27b, #b77c20);
+      font-size: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,.35);
+    }
+
+    .dora-tile {
+      width: 30px;
+      height: auto;
+      display: block;
+      border-radius: 2px;
+      filter: drop-shadow(0 3px 3px rgba(0,0,0,.45));
+    }
+
+    .hand-stage {
+      flex: 0 0 auto;
+      padding: 15px 5px 10px;
+      border-top: 1px solid rgba(242,210,123,.16);
+      border-bottom: 1px solid rgba(242,210,123,.16);
+      background: linear-gradient(90deg, transparent, rgba(15,73,60,.42) 8%, rgba(15,73,60,.42) 92%, transparent);
+    }
+
+    .tiles-line {
+      --visual-count: 14;
+      --tile-width: min(40px, calc((100vw - 47px) / var(--visual-count)));
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 1px;
+      min-width: 0;
+    }
+
+    .hand-tiles, .meld-tiles {
+      display: flex;
+      align-items: flex-end;
+      gap: 1px;
+      min-width: 0;
+    }
+
+    .meld-tiles {
+      margin-left: 5px;
+      padding-left: 5px;
+      border-left: 1px solid rgba(242,210,123,.4);
+    }
+
+    .meld-group { display: flex; gap: 0; }
+
+    .tile-button {
+      width: var(--tile-width);
+      min-width: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 3px;
+      background: transparent;
+      cursor: pointer;
+      position: relative;
+      transition: transform .1s ease, filter .1s ease;
+      touch-action: manipulation;
+    }
+
+    .tile-button img, .meld-tile {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 3px;
+      filter: drop-shadow(0 3px 2px rgba(0,0,0,.42));
+      pointer-events: none;
+    }
+
+    .tile-button:hover { filter: brightness(1.05); }
+
+    .tile-button.selected {
+      z-index: 2;
+      transform: translateY(-9px);
+      filter: drop-shadow(0 0 5px var(--gold-light));
+    }
+
+    .tile-button.selected::after {
+      content: "";
+      position: absolute;
+      inset: -3px;
+      border: 2px solid var(--gold-light);
+      border-radius: 5px;
+      box-shadow: 0 0 0 1px #5a3808, 0 0 10px rgba(242,210,123,.7);
+    }
+
+    .tile-button:focus-visible {
+      outline: 3px solid var(--gold-light);
+      outline-offset: 2px;
+    }
+
+    .meld-tile {
+      width: var(--tile-width);
+      opacity: .91;
+    }
+
+    .meld-tile.sideways {
+      margin-inline: calc(var(--tile-width) * .181818);
+      transform: translateY(calc(var(--tile-width) * .181818)) rotate(90deg);
+      filter: drop-shadow(3px 0 2px rgba(0,0,0,.42));
+    }
+
+    .hand-caption {
+      min-height: 20px;
+      margin-top: 8px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hand-caption strong {
+      color: var(--gold-light);
+      font-size: 15px;
+    }
+
+    .decision {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(144px, 1.25fr);
+      gap: 8px;
+      align-items: stretch;
+    }
+
+    .selected-panel {
+      min-height: 52px;
+      padding: 7px 9px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 8px;
+      background: rgba(0,0,0,.2);
+    }
+
+    .selected-panel small { color: var(--muted); font-size: 10px; }
+    .selected-name { margin-top: 2px; color: var(--gold-light); font-size: 17px; }
+
+    .primary {
+      min-height: 52px;
+      padding: 8px 12px;
+      border: 1px solid #efad5e;
+      border-radius: 8px;
+      color: #fff8e6;
+      background: linear-gradient(180deg, var(--orange-light), #9c4017);
+      box-shadow: 0 4px 0 #58200b, 0 7px 15px rgba(0,0,0,.3), inset 0 1px rgba(255,255,255,.25);
+      font-size: 16px;
+      text-shadow: 0 2px 2px rgba(0,0,0,.55);
+      cursor: pointer;
+    }
+
+    .primary:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 #58200b; }
+    .primary:disabled { opacity: .35; cursor: default; filter: grayscale(.5); }
+
+    .review {
+      display: none;
+      padding: 13px;
+      border: 1px solid rgba(242,210,123,.32);
+      border-radius: 10px;
+      background: linear-gradient(145deg, rgba(12,47,40,.98), rgba(4,20,17,.98));
+      box-shadow: var(--shadow);
+    }
+
+    .review.open { display: block; animation: reveal .2s ease-out; }
+
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(7px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .review h2 {
+      margin: 0 0 9px;
+      color: var(--gold-light);
+      font-size: 18px;
+      text-shadow: 0 2px 3px #000;
+    }
+
+    .answer-feedback {
+      margin-bottom: 11px;
+      padding: 9px 11px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      border-radius: 8px;
+      background: rgba(0,0,0,.22);
+    }
+    .answer-feedback strong { font-size: 21px; }
+    .answer-feedback span { color: var(--muted); font-size: 12px; text-align: right; }
+    .answer-feedback.correct { border: 1px solid rgba(218,55,43,.72); }
+    .answer-feedback.correct strong { color: #ff6659; }
+    .answer-feedback.incorrect { border: 1px solid rgba(57,128,219,.72); }
+    .answer-feedback.incorrect strong { color: #6ba9f4; }
+
+    .explanation {
+      color: #e9eadf;
+      font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.75;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .explanation a { color: var(--gold-light); }
+
+    .review-actions {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 8px;
+    }
+
+    .secondary, .next-button, .nav-button {
+      min-height: 44px;
+      border: 1px solid rgba(242,210,123,.34);
+      border-radius: 7px;
+      background: rgba(2,17,14,.72);
+      cursor: pointer;
+    }
+
+    .next-button {
+      border-color: #d99b49;
+      background: linear-gradient(#bd682c, #814015);
+      box-shadow: 0 3px 0 #4c260c;
+    }
+
+    .source-link {
+      margin-top: 11px;
+      display: inline-block;
+      color: var(--muted);
+      font-family: "Yu Gothic", "YuGothic", sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .bottom-nav {
+      margin-top: auto;
+      padding-top: 2px;
+      display: grid;
+      grid-template-columns: 80px 1fr 80px;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-button { min-height: 39px; font-size: 12px; }
+    .nav-button:disabled { opacity: .28; }
+
+    .answered-count {
+      color: var(--muted);
+      text-align: center;
+      font-size: 10px;
+    }
+
+    .answered-count strong { color: var(--gold-light); font-size: 14px; }
+
+    .loading, .fatal {
+      margin: auto;
+      padding: 24px;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .fatal { color: #ffd4c8; }
+
+    @media (min-width: 540px) {
+      body { padding: 16px 0; }
+      .app {
+        min-height: calc(100dvh - 32px);
+        border: 1px solid rgba(242,210,123,.14);
+        border-radius: 16px;
+        background: rgba(3,20,17,.34);
+        box-shadow: 0 26px 80px rgba(0,0,0,.45);
+      }
+    }
+
+    @media (max-height: 610px) and (orientation: portrait) {
+      .app { gap: 6px; }
+      .topbar { min-height: 40px; }
+      .situation { padding-top: 7px; padding-bottom: 6px; }
+      .hand-stage { padding-top: 12px; padding-bottom: 6px; }
+      .decision { grid-template-columns: 1fr 1.15fr; }
+      .selected-panel, .primary { min-height: 46px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app" id="app">
+    <div class="loading" id="loading">牌姿を準備しています…</div>
+  </div>
+
+  <script src="config.js"></script>
+  <script>
+    "use strict";
+
+    const APP_VERSION = 6;
+    const STORAGE_KEY = "zundamon-nanikiru-state-v2";
+    const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
+    const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
+    const WIND_NAMES = { east: "東", south: "南", west: "西", north: "北" };
+    const app = document.getElementById("app");
+
+    let questions = [];
+    let currentIndex = 0;
+    let selectedIndex = null;
+    let revealed = false;
+    let state = loadState();
+
+    document.documentElement.dataset.appVersion = String(APP_VERSION);
+
+    function apiUrl(path) {
+      const local = location.hostname === "127.0.0.1" || location.hostname === "localhost";
+      const base = window.ZUNDAMON_CONFIG?.apiBaseUrl?.replace(/\/$/, "") || "";
+      if (local || !base) return path;
+      return `${base}${path.replace(/^\/api/, "")}`;
+    }
+
+    function mergeOverrides(baseQuestions, overrides) {
+      const byId = new Map((Array.isArray(overrides) ? overrides : []).map(override => [Number(override.id), override]));
+      return baseQuestions.map(question => {
+        const override = byId.get(Number(question.id));
+        return {
+          ...question,
+          correctDiscards: Array.isArray(override?.correctDiscards)
+            ? override.correctDiscards
+            : Array.isArray(question.correctDiscards) ? question.correctDiscards : [],
+          explanation: typeof override?.explanation === "string" ? override.explanation : question.explanation,
+          overridden: Boolean(override),
+          overrideUpdatedAt: override?.overrideUpdatedAt || null,
+        };
+      });
+    }
+
+    function loadState() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+        return parsed && typeof parsed === "object"
+          ? { currentId: parsed.currentId || 1, responses: parsed.responses || {} }
+          : { currentId: 1, responses: {} };
+      } catch {
+        return { currentId: 1, responses: {} };
+      }
+    }
+
+    function saveState() {
+      state.currentId = questions[currentIndex]?.id || 1;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function tilePath(code) {
+      if (code === "0m") return "tiles/aka3-66-90-l.png";
+      if (code === "0p") return "tiles/aka1-66-90-l.png";
+      if (code === "0s") return "tiles/aka2-66-90-l.png";
+      const number = Number(code[0]);
+      const suit = code[1];
+      if (suit === "z") {
+        const honorAsset = { 1: 1, 2: 2, 3: 3, 4: 4, 5: 6, 6: 5, 7: 7 };
+        return `tiles/ji${honorAsset[number]}-66-90-l.png`;
+      }
+      const prefix = { m: "man", p: "pin", s: "sou" }[suit];
+      return `tiles/${prefix}${number}-66-90-l.png`;
+    }
+
+    function tileName(code) {
+      const number = Number(code[0]);
+      const suit = code[1];
+      if (suit === "z") return HONOR_NAMES[number] || code;
+      return `${number === 0 ? "赤5" : number}${SUIT_NAMES[suit] || suit}`;
+    }
+
+    function roundName(value) {
+      const match = /^(east|south|west|north)(\d+)$/.exec(value || "");
+      return match ? `${WIND_NAMES[match[1]]}${match[2]}局` : "局面不明";
+    }
+
+    function stripDiscordMarkdown(value) {
+      return (value || "")
+        .replace(/\|\|/g, "")
+        .replace(/\*\*/g, "")
+        .replace(/__/g, "")
+        .replace(/~~/g, "")
+        .trim();
+    }
+
+    function appendLinkedText(container, value) {
+      const text = stripDiscordMarkdown(value) || "この問題の解説はまだありません。";
+      const chunks = text.split(/(https?:\/\/[^\s]+)/g);
+      for (const chunk of chunks) {
+        if (/^https?:\/\//.test(chunk)) {
+          const link = document.createElement("a");
+          link.href = chunk;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = chunk;
+          container.append(link);
+        } else {
+          container.append(document.createTextNode(chunk));
+        }
+      }
+    }
+
+    function preloadTiles() {
+      const codes = [];
+      for (const suit of ["m", "p", "s"]) {
+        codes.push(`0${suit}`);
+        for (let number = 1; number <= 9; number += 1) codes.push(`${number}${suit}`);
+      }
+      for (let number = 1; number <= 7; number += 1) codes.push(`${number}z`);
+      return Promise.all(codes.map(code => new Promise(resolve => {
+        const image = new Image();
+        image.onload = image.onerror = resolve;
+        image.src = tilePath(code);
+      })));
+    }
+
+    function buildShell() {
+      app.innerHTML = `
+        <header class="topbar">
+          <div>
+            <p class="brand-kicker">ZUNDAMON</p>
+            <h1>ずんだもん何切る</h1>
+          </div>
+          <div class="top-actions"><div class="counter" id="counter"></div><a class="admin-link" href="admin.html">管理</a></div>
+        </header>
+        <div class="progress" aria-label="回答進捗"><span id="progressBar"></span></div>
+        <main class="board">
+          <section class="situation" aria-label="局面">
+            <div class="situation-main">
+              <div>
+                <div class="round-line">
+                  <strong class="round" id="round"></strong>
+                  <span class="seat" id="seat"></span>
+                  <span class="turn" id="turn"></span>
+                </div>
+                <div class="sub-line" id="subLine"></div>
+              </div>
+              <div class="dora-box">
+                <span class="dora-label">ドラ</span>
+                <img class="dora-tile" id="dora" alt="">
+              </div>
+            </div>
+          </section>
+
+          <section class="hand-stage" aria-label="牌姿">
+            <div class="tiles-line" id="tilesLine">
+              <div class="hand-tiles" id="handTiles" role="group" aria-label="打牌を選択"></div>
+              <div class="meld-tiles" id="meldTiles" aria-label="副露"></div>
+            </div>
+            <div class="hand-caption" id="handCaption">切る牌をタップしてください</div>
+          </section>
+
+          <section class="decision" id="decision">
+            <div class="selected-panel">
+              <small>選択中</small>
+              <span class="selected-name" id="selectedName">未選択</span>
+            </div>
+            <button class="primary" id="confirmButton" type="button" disabled>この牌を切る</button>
+          </section>
+
+          <section class="review" id="review" aria-live="polite">
+            <div class="answer-feedback" id="answerFeedback" hidden><strong id="judgment"></strong><span id="correctAnswer"></span></div>
+            <h2>解説</h2>
+            <div class="explanation" id="explanation"></div>
+            <div class="review-actions">
+              <button class="secondary" id="retryButton" type="button">選び直す</button>
+              <button class="next-button" id="nextButton" type="button">次の問題</button>
+            </div>
+            <a class="source-link" id="sourceLink" target="_blank" rel="noopener noreferrer">Discordの元投稿を開く</a>
+          </section>
+
+          <nav class="bottom-nav" aria-label="問題移動">
+            <button class="nav-button" id="previousNav" type="button">← 前へ</button>
+            <div class="answered-count"><strong id="answeredCount"></strong><br>回答済み</div>
+            <button class="nav-button" id="nextNav" type="button">次へ →</button>
+          </nav>
+        </main>`;
+
+      document.getElementById("confirmButton").addEventListener("click", confirmSelection);
+      document.getElementById("retryButton").addEventListener("click", retryQuestion);
+      document.getElementById("nextButton").addEventListener("click", () => moveQuestion(1));
+      document.getElementById("previousNav").addEventListener("click", () => moveQuestion(-1));
+      document.getElementById("nextNav").addEventListener("click", () => moveQuestion(1));
+    }
+
+    function renderQuestion() {
+      const question = questions[currentIndex];
+      const response = state.responses[String(question.id)];
+      selectedIndex = response && Number.isInteger(response.index) ? response.index : null;
+      revealed = Boolean(response);
+
+      document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${questions.length} 問`;
+      document.getElementById("round").textContent = roundName(question.round);
+      document.getElementById("seat").textContent = `${WIND_NAMES[question.seat] || "―"}家`;
+      document.getElementById("turn").textContent = `${question.turn ?? "―"}巡目`;
+      document.getElementById("dora").src = tilePath(question.dora);
+      document.getElementById("dora").alt = `ドラ ${tileName(question.dora)}`;
+
+      const subItems = [];
+      if (question.honba !== null && question.honba !== undefined) subItems.push(`${question.honba}本場`);
+      if (question.points) subItems.push(`${Number(question.points).toLocaleString("ja-JP")}点`);
+      if (question.melds?.length) subItems.push(question.melds[0].open ? "副露あり" : "暗槓あり");
+      document.getElementById("subLine").textContent = subItems.join("　") || " ";
+
+      renderHand(question);
+      renderDecision(question);
+      renderReview(question);
+      renderProgress();
+
+      document.getElementById("previousNav").disabled = currentIndex === 0;
+      document.getElementById("nextNav").disabled = currentIndex === questions.length - 1;
+      document.getElementById("nextButton").disabled = currentIndex === questions.length - 1;
+      saveState();
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+
+    function renderHand(question) {
+      const hand = document.getElementById("handTiles");
+      const melds = document.getElementById("meldTiles");
+      hand.innerHTML = "";
+      melds.innerHTML = "";
+
+      question.hand.forEach((code, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `tile-button${selectedIndex === index ? " selected" : ""}`;
+        button.dataset.index = String(index);
+        button.setAttribute("aria-label", `${tileName(code)}を切る`);
+        button.setAttribute("aria-pressed", selectedIndex === index ? "true" : "false");
+        button.disabled = revealed;
+        const image = document.createElement("img");
+        image.src = tilePath(code);
+        image.alt = tileName(code);
+        image.width = 66;
+        image.height = 90;
+        button.append(image);
+        button.addEventListener("click", () => selectTile(index));
+        hand.append(button);
+      });
+
+      let meldTileCount = 0;
+      for (const meld of question.melds || []) {
+        const group = document.createElement("div");
+        group.className = "meld-group";
+        group.title = meld.type === "kan" ? "槓" : meld.type === "chi" ? "チー" : "ポン";
+        meld.tiles.forEach((code, tileIndex) => {
+          const image = document.createElement("img");
+          image.className = "meld-tile";
+          if (meld.open && tileIndex === meld.calledIndex) image.classList.add("sideways");
+          image.src = tilePath(code);
+          image.alt = tileName(code);
+          image.width = 66;
+          image.height = 90;
+          group.append(image);
+          meldTileCount += 1;
+        });
+        melds.append(group);
+      }
+      melds.hidden = meldTileCount === 0;
+      const sidewaysCount = (question.melds || []).filter(meld => meld.open && Number.isInteger(meld.calledIndex)).length;
+      document.getElementById("tilesLine").style.setProperty("--visual-count", Math.max(14, question.hand.length + meldTileCount + sidewaysCount * .36));
+    }
+
+    function selectTile(index) {
+      if (revealed) return;
+      selectedIndex = index;
+      renderHand(questions[currentIndex]);
+      renderDecision(questions[currentIndex]);
+    }
+
+    function renderDecision(question) {
+      const selected = selectedIndex === null ? null : question.hand[selectedIndex];
+      document.getElementById("selectedName").textContent = selected ? tileName(selected) : "未選択";
+      document.getElementById("handCaption").innerHTML = selected
+        ? `<strong>${tileName(selected)}</strong> を選択中`
+        : "切る牌をタップしてください";
+      document.getElementById("confirmButton").disabled = selectedIndex === null || revealed;
+      document.getElementById("decision").hidden = revealed;
+    }
+
+    function confirmSelection() {
+      if (selectedIndex === null || revealed) return;
+      const question = questions[currentIndex];
+      state.responses[String(question.id)] = {
+        tile: question.hand[selectedIndex],
+        index: selectedIndex,
+        answeredAt: new Date().toISOString()
+      };
+      revealed = true;
+      saveState();
+      renderHand(question);
+      renderDecision(question);
+      renderReview(question);
+      renderProgress();
+    }
+
+    function retryQuestion() {
+      const question = questions[currentIndex];
+      delete state.responses[String(question.id)];
+      selectedIndex = null;
+      revealed = false;
+      saveState();
+      renderHand(question);
+      renderDecision(question);
+      renderReview(question);
+      renderProgress();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function renderReview(question) {
+      const review = document.getElementById("review");
+      const explanation = document.getElementById("explanation");
+      const feedback = document.getElementById("answerFeedback");
+      review.classList.toggle("open", revealed);
+      document.body.classList.toggle("reviewing", revealed);
+      explanation.innerHTML = "";
+      if (revealed) appendLinkedText(explanation, question.explanation);
+      const correctDiscards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
+      const response = state.responses[String(question.id)];
+      if (revealed && response && correctDiscards.length) {
+        const correct = correctDiscards.includes(response.tile);
+        feedback.hidden = false;
+        feedback.className = `answer-feedback ${correct ? "correct" : "incorrect"}`;
+        document.getElementById("judgment").textContent = correct ? "○ 正解" : "× 不正解";
+        document.getElementById("correctAnswer").textContent = `正解：${correctDiscards.map(tileName).join("・")}`;
+      } else {
+        feedback.hidden = true;
+        feedback.className = "answer-feedback";
+      }
+      const sourceLink = document.getElementById("sourceLink");
+      sourceLink.href = question.discordMessageUrl;
+    }
+
+    function renderProgress() {
+      const answered = Object.keys(state.responses).filter(id => questions.some(question => String(question.id) === id)).length;
+      document.getElementById("answeredCount").textContent = `${answered} / ${questions.length}`;
+      document.getElementById("progressBar").style.width = `${questions.length ? answered / questions.length * 100 : 0}%`;
+    }
+
+    function moveQuestion(delta) {
+      const next = currentIndex + delta;
+      if (next < 0 || next >= questions.length) return;
+      currentIndex = next;
+      renderQuestion();
+    }
+
+    function showFatal(error) {
+      document.body.classList.add("reviewing");
+      app.innerHTML = `<div class="fatal"><strong>問題データを読み込めませんでした。</strong><br><small></small></div>`;
+      app.querySelector("small").textContent = error?.message || String(error);
+    }
+
+    document.addEventListener("keydown", event => {
+      if (!questions.length) return;
+      if (event.key === "ArrowLeft") moveQuestion(-1);
+      if (event.key === "ArrowRight") moveQuestion(1);
+      if (event.key === "Enter" && selectedIndex !== null && !revealed) confirmSelection();
+      if (event.key === "Escape" && revealed) retryQuestion();
+    });
+
+    const baseQuestionsRequest = fetch("public/questions.json", { cache: "no-store" }).then(response => {
+      if (!response.ok) throw new Error(`questions.json: ${response.status}`);
+      return response.json();
+    });
+    const overridesRequest = fetch(apiUrl("/api/overrides"), { cache: "no-store" })
+      .then(response => response.ok ? response.json() : [])
+      .catch(() => []);
+
+    Promise.all([
+      baseQuestionsRequest,
+      overridesRequest,
+      preloadTiles()
+    ]).then(([baseQuestions, overrides]) => {
+      questions = mergeOverrides(baseQuestions, overrides)
+        .filter(question => Array.isArray(question.hand) && question.hand.length);
+      if (!questions.length) throw new Error("構造化済みの問題がありません。 ");
+      const savedIndex = questions.findIndex(question => question.id === state.currentId);
+      currentIndex = savedIndex >= 0 ? savedIndex : 0;
+      buildShell();
+      renderQuestion();
+    }).catch(showFatal);
+  </script>
+</body>
+</html>

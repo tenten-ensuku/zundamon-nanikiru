@@ -1,0 +1,14 @@
+{
+  "name": "zundamon-nanikiru-discord-importer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Discordの何切る問題をアプリ用データへ取り込むCLI",
+  "scripts": {
+    "app": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "import:questions": "node scripts/import-discord-questions.mjs --test newest",
+    "import:questions:oldest": "node scripts/import-discord-questions.mjs --test oldest",
+    "import:questions:all": "node scripts/import-discord-questions.mjs --all",
+    "structure:questions": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ocr-questions.ps1 && python scripts/structure-questions.py"
+  }
+}

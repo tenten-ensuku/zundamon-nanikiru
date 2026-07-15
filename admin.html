@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#06110f">
+  <title>管理画面｜ずんだもん何切る</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f6f2df;
+      --muted: #9aa9a4;
+      --felt-0: #06110f;
+      --felt-1: #0b2f28;
+      --felt-2: #0f493c;
+      --gold: #d8a83c;
+      --gold-light: #f2d27b;
+      --orange: #b65a22;
+      --danger: #b84b3c;
+      font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "HGS明朝E", "MS PMincho", serif;
+      font-weight: 900;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.014) 1px, transparent 1px),
+        radial-gradient(circle at 50% -10%, #17604e, var(--felt-1) 38%, var(--felt-0) 82%);
+      background-size: 24px 24px, 24px 24px, auto;
+    }
+    button, input, textarea { font: inherit; }
+    button { color: inherit; cursor: pointer; }
+
+    .shell {
+      width: min(100%, 52rem);
+      min-height: 100dvh;
+      margin: 0 auto;
+      padding: max(14px, env(safe-area-inset-top)) 12px max(18px, env(safe-area-inset-bottom));
+    }
+    .header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .kicker { margin: 0; color: var(--gold-light); font-size: 10px; letter-spacing: .22em; }
+    h1 { margin: 2px 0 0; font-size: clamp(25px, 7vw, 36px); text-shadow: 0 3px 0 #03110e; }
+    .back {
+      padding: 9px 12px;
+      border: 1px solid rgba(242,210,123,.34);
+      border-radius: 7px;
+      color: var(--ink);
+      background: rgba(0,0,0,.22);
+      text-decoration: none;
+    }
+
+    .login {
+      width: min(100%, 26rem);
+      margin: clamp(54px, 13vh, 110px) auto 0;
+      padding: 22px;
+      border: 1px solid rgba(242,210,123,.3);
+      border-radius: 12px;
+      background: linear-gradient(145deg, rgba(15,73,60,.9), rgba(3,22,18,.94));
+      box-shadow: 0 18px 55px rgba(0,0,0,.45);
+    }
+    .login h2 { margin: 0 0 8px; color: var(--gold-light); }
+    .login p { margin: 0 0 16px; color: var(--muted); font-family: sans-serif; font-size: 13px; font-weight: 600; line-height: 1.6; }
+    label { display: block; margin-bottom: 6px; color: var(--gold-light); font-size: 13px; }
+    input, textarea {
+      width: 100%;
+      border: 1px solid rgba(242,210,123,.3);
+      border-radius: 7px;
+      color: var(--ink);
+      background: rgba(0,0,0,.34);
+      outline: none;
+    }
+    input { min-height: 46px; padding: 9px 11px; }
+    textarea { min-height: 190px; padding: 11px; resize: vertical; font-family: "Yu Gothic", sans-serif; font-weight: 600; line-height: 1.6; }
+    input:focus, textarea:focus { border-color: var(--gold-light); box-shadow: 0 0 0 2px rgba(242,210,123,.12); }
+    .primary {
+      width: 100%; min-height: 46px; margin-top: 12px; border: 1px solid #efad5e; border-radius: 7px;
+      background: linear-gradient(#d27735, #8c3e17); box-shadow: 0 3px 0 #4b210c;
+    }
+    .message { min-height: 20px; margin-top: 10px; color: #ffd09e; font-family: sans-serif; font-size: 12px; font-weight: 700; }
+    .message.success { color: #9ee6b8; }
+
+    .toolbar {
+      margin: 16px 0 10px;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 9px;
+      border: 1px solid rgba(242,210,123,.22);
+      border-radius: 9px;
+      background: rgba(3,22,18,.74);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+    .logout { padding: 0 14px; border: 1px solid rgba(242,210,123,.3); border-radius: 7px; background: rgba(0,0,0,.28); }
+    .summary-line { margin: 0 2px 10px; color: var(--muted); font-size: 12px; }
+
+    .question-list { display: grid; gap: 7px; }
+    details {
+      overflow: clip;
+      border: 1px solid rgba(242,210,123,.2);
+      border-radius: 9px;
+      background: linear-gradient(145deg, rgba(15,73,60,.7), rgba(3,22,18,.82));
+    }
+    details[open] { border-color: rgba(242,210,123,.45); box-shadow: 0 10px 28px rgba(0,0,0,.28); }
+    summary {
+      min-height: 50px;
+      padding: 10px 12px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    .qid { color: var(--gold-light); font-size: 17px; }
+    .qcontext { color: var(--muted); font-size: 12px; }
+    .answer-state { font-size: 11px; text-align: right; }
+    .answer-state.unset { color: #d0a0a0; }
+    .answer-state.override { color: #9ee6b8; }
+    .editor { padding: 13px; border-top: 1px solid rgba(242,210,123,.18); }
+    .field-title { margin: 0 0 7px; color: var(--gold-light); font-size: 13px; }
+    .hint { margin: 0 0 10px; color: var(--muted); font-family: sans-serif; font-size: 11px; font-weight: 600; }
+
+    .answer-tiles { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 16px; }
+    .answer-tile {
+      width: 39px;
+      padding: 0;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      background: transparent;
+      position: relative;
+    }
+    .answer-tile img { display: block; width: 100%; height: auto; border-radius: 2px; pointer-events: none; }
+    .answer-tile.selected { border-color: var(--gold-light); transform: translateY(-4px); box-shadow: 0 0 10px rgba(242,210,123,.65); }
+    .answer-tile.selected::after {
+      content: "○"; position: absolute; right: -5px; top: -9px; color: #d7352b; font-size: 18px; text-shadow: 0 1px #fff;
+    }
+    .editor-actions { margin-top: 11px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .save, .restore { min-height: 44px; border-radius: 7px; }
+    .save { border: 1px solid #efad5e; background: linear-gradient(#cf7434, #8b3d16); }
+    .restore { border: 1px solid rgba(255,255,255,.18); background: rgba(0,0,0,.3); }
+    .restore:disabled { opacity: .3; cursor: default; }
+    .item-message { min-height: 20px; margin: 8px 0 0; color: #ffd09e; font-family: sans-serif; font-size: 12px; font-weight: 700; }
+    .item-message.success { color: #9ee6b8; }
+    .empty { padding: 32px; text-align: center; color: var(--muted); }
+
+    @media (max-width: 520px) {
+      .shell { padding-inline: 9px; }
+      .back { padding: 8px 9px; font-size: 12px; }
+      summary { grid-template-columns: auto 1fr; }
+      .answer-state { grid-column: 1 / -1; text-align: left; }
+      .answer-tile { width: calc((100vw - 68px) / 7); max-width: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="header">
+      <div><p class="kicker">ADMIN</p><h1>問題管理</h1></div>
+      <a class="back" href="./">アプリへ戻る</a>
+    </header>
+
+    <section class="login" id="loginPanel">
+      <h2>管理者ログイン</h2>
+      <p>管理パスワードはこの画面内だけで保持し、ブラウザには保存しません。</p>
+      <form id="loginForm">
+        <label for="password">管理パスワード</label>
+        <input id="password" type="password" autocomplete="current-password" required>
+        <button class="primary" type="submit">ログイン</button>
+        <div class="message" id="loginMessage" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section id="adminPanel" hidden>
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="問題番号・正解牌・解説を検索">
+        <button class="logout" id="logout" type="button">終了</button>
+      </div>
+      <p class="summary-line" id="summaryLine"></p>
+      <div class="question-list" id="questionList"></div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script>
+    "use strict";
+    const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
+    const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
+    const WIND_NAMES = { east: "東", south: "南", west: "西", north: "北" };
+    let adminPassword = "";
+    let baseQuestions = [];
+    let questions = [];
+
+    function tilePath(code) {
+      if (code === "0m") return "tiles/aka3-66-90-l.png";
+      if (code === "0p") return "tiles/aka1-66-90-l.png";
+      if (code === "0s") return "tiles/aka2-66-90-l.png";
+      const number = Number(code[0]);
+      const suit = code[1];
+      if (suit === "z") {
+        const honorAsset = { 1: 1, 2: 2, 3: 3, 4: 4, 5: 6, 6: 5, 7: 7 };
+        return `tiles/ji${honorAsset[number]}-66-90-l.png`;
+      }
+      return `tiles/${{ m: "man", p: "pin", s: "sou" }[suit]}${number}-66-90-l.png`;
+    }
+
+    function tileName(code) {
+      const number = Number(code[0]);
+      if (code[1] === "z") return HONOR_NAMES[number] || code;
+      return `${number === 0 ? "赤5" : number}${SUIT_NAMES[code[1]] || code[1]}`;
+    }
+
+    function roundName(value) {
+      const match = /^(east|south|west|north)(\d+)$/.exec(value || "");
+      return match ? `${WIND_NAMES[match[1]]}${match[2]}局` : "局面不明";
+    }
+
+    function apiUrl(path) {
+      const local = location.hostname === "127.0.0.1" || location.hostname === "localhost";
+      const base = window.ZUNDAMON_CONFIG?.apiBaseUrl?.replace(/\/$/, "") || "";
+      if (local || !base) return path;
+      const remotePath = path.replace(/^\/api\/admin/, "").replace(/^\/api/, "");
+      return `${base}${remotePath}`;
+    }
+
+    function mergeOverrides(base, overrides) {
+      const byId = new Map((Array.isArray(overrides) ? overrides : []).map(override => [Number(override.id), override]));
+      return base.map(question => {
+        const override = byId.get(Number(question.id));
+        return {
+          ...question,
+          correctDiscards: Array.isArray(override?.correctDiscards)
+            ? override.correctDiscards
+            : Array.isArray(question.correctDiscards) ? question.correctDiscards : [],
+          explanation: typeof override?.explanation === "string" ? override.explanation : question.explanation,
+          overridden: Boolean(override),
+          overrideUpdatedAt: override?.overrideUpdatedAt || null,
+        };
+      });
+    }
+
+    async function loadQuestions() {
+      const [base, overrides] = await Promise.all([
+        fetch("public/questions.json", { cache: "no-store" }).then(response => {
+          if (!response.ok) throw new Error("問題データを読み込めませんでした。");
+          return response.json();
+        }),
+        api("/api/overrides"),
+      ]);
+      baseQuestions = base;
+      return mergeOverrides(base, overrides);
+    }
+
+    async function api(path, options = {}) {
+      const headers = { "Content-Type": "application/json", ...(options.headers || {}) };
+      if (options.admin) headers["X-Admin-Password"] = adminPassword;
+      const response = await fetch(apiUrl(path), { ...options, headers, cache: "no-store" });
+      const body = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(body.error || "処理に失敗しました。");
+      return body;
+    }
+
+    document.getElementById("loginForm").addEventListener("submit", async event => {
+      event.preventDefault();
+      const message = document.getElementById("loginMessage");
+      const supplied = document.getElementById("password").value;
+      message.textContent = "確認しています…";
+      try {
+        await api("/api/admin/login", { method: "POST", body: JSON.stringify({ password: supplied }) });
+        adminPassword = supplied;
+        questions = await loadQuestions();
+        document.getElementById("loginPanel").hidden = true;
+        document.getElementById("adminPanel").hidden = false;
+        renderList();
+      } catch (error) {
+        adminPassword = "";
+        message.textContent = error.message;
+      }
+    });
+
+    document.getElementById("search").addEventListener("input", renderList);
+    document.getElementById("logout").addEventListener("click", () => {
+      adminPassword = "";
+      document.getElementById("password").value = "";
+      location.href = "/";
+    });
+
+    function matches(question, query) {
+      if (!query) return true;
+      const haystack = [
+        question.id,
+        question.explanation,
+        ...(question.correctDiscards || []),
+        ...(question.correctDiscards || []).map(tileName),
+      ].join(" ").toLowerCase();
+      return haystack.includes(query.toLowerCase());
+    }
+
+    function renderList() {
+      const query = document.getElementById("search").value.trim();
+      const filtered = questions.filter(question => matches(question, query));
+      const list = document.getElementById("questionList");
+      list.innerHTML = "";
+      const configured = questions.filter(question => question.correctDiscards?.length).length;
+      document.getElementById("summaryLine").textContent = `${questions.length}問中 ${configured}問の正解を設定済み　／　表示 ${filtered.length}問`;
+      if (!filtered.length) {
+        list.innerHTML = '<div class="empty">該当する問題がありません。</div>';
+        return;
+      }
+
+      for (const question of filtered) {
+        const details = document.createElement("details");
+        const answerText = question.correctDiscards?.length
+          ? question.correctDiscards.map(tileName).join("・")
+          : "正解未設定";
+        details.innerHTML = `
+          <summary>
+            <span class="qid">第${question.id}問</span>
+            <span class="qcontext">${roundName(question.round)}　${WIND_NAMES[question.seat] || "―"}家　${question.turn ?? "―"}巡目</span>
+            <span class="answer-state ${question.overridden ? "override" : question.correctDiscards?.length ? "" : "unset"}">${answerText}${question.overridden ? "　編集済み" : ""}</span>
+          </summary>
+          <div class="editor"></div>`;
+        details.addEventListener("toggle", () => {
+          if (details.open && !details.dataset.loaded) {
+            details.dataset.loaded = "true";
+            renderEditor(details, question);
+          }
+        });
+        list.append(details);
+      }
+    }
+
+    function renderEditor(details, question) {
+      const editor = details.querySelector(".editor");
+      const selected = new Set(question.correctDiscards || []);
+      editor.innerHTML = `
+        <p class="field-title">正解打牌</p>
+        <p class="hint">正解にする牌をタップしてください。複数選択できます。</p>
+        <div class="answer-tiles"></div>
+        <label>解説文</label>
+        <textarea maxlength="20000"></textarea>
+        <div class="editor-actions">
+          <button class="restore" type="button" ${question.overridden ? "" : "disabled"}>元に戻す</button>
+          <button class="save" type="button">保存</button>
+        </div>
+        <p class="item-message" aria-live="polite"></p>`;
+      const tiles = editor.querySelector(".answer-tiles");
+      const textarea = editor.querySelector("textarea");
+      const itemMessage = editor.querySelector(".item-message");
+      textarea.value = question.explanation || "";
+
+      const redrawTiles = () => {
+        tiles.innerHTML = "";
+        question.hand.forEach(code => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `answer-tile${selected.has(code) ? " selected" : ""}`;
+          button.setAttribute("aria-label", `${tileName(code)}を正解にする`);
+          button.setAttribute("aria-pressed", selected.has(code) ? "true" : "false");
+          const image = document.createElement("img");
+          image.src = tilePath(code);
+          image.alt = tileName(code);
+          image.width = 66;
+          image.height = 90;
+          button.append(image);
+          button.addEventListener("click", () => {
+            if (selected.has(code)) selected.delete(code); else selected.add(code);
+            redrawTiles();
+          });
+          tiles.append(button);
+        });
+      };
+      redrawTiles();
+
+      editor.querySelector(".save").addEventListener("click", async () => {
+        itemMessage.className = "item-message";
+        itemMessage.textContent = "保存しています…";
+        try {
+          const saved = await api(`/api/admin/questions/${question.id}`, {
+            method: "PUT",
+            admin: true,
+            body: JSON.stringify({ correctDiscards: [...selected], explanation: textarea.value }),
+          });
+          const updated = { ...question, ...saved };
+          questions = questions.map(item => item.id === updated.id ? updated : item);
+          Object.assign(question, updated);
+          editor.querySelector(".restore").disabled = false;
+          itemMessage.className = "item-message success";
+          itemMessage.textContent = "保存しました。通常画面にも反映されています。";
+          updateSummary(details, question);
+        } catch (error) {
+          itemMessage.textContent = error.message;
+        }
+      });
+
+      const restoreButton = editor.querySelector(".restore");
+      let restoreArmed = false;
+      let restoreTimer = null;
+      restoreButton.addEventListener("click", async () => {
+        if (!restoreArmed) {
+          restoreArmed = true;
+          restoreButton.textContent = "もう一度押して復元";
+          itemMessage.className = "item-message";
+          itemMessage.textContent = `第${question.id}問の編集内容を復元する場合は、もう一度押してください。`;
+          restoreTimer = setTimeout(() => {
+            restoreArmed = false;
+            restoreButton.textContent = "元に戻す";
+            itemMessage.textContent = "";
+          }, 15000);
+          return;
+        }
+        restoreArmed = false;
+        clearTimeout(restoreTimer);
+        restoreButton.textContent = "元に戻す";
+        itemMessage.className = "item-message";
+        itemMessage.textContent = "元に戻しています…";
+        try {
+          await api(`/api/admin/questions/${question.id}`, { method: "DELETE", admin: true });
+          const bundled = baseQuestions.find(item => item.id === question.id);
+          if (!bundled) throw new Error("原本の問題が見つかりません。");
+          const restored = {
+            ...structuredClone(bundled),
+            correctDiscards: Array.isArray(bundled.correctDiscards) ? bundled.correctDiscards : [],
+            overridden: false,
+            overrideUpdatedAt: null,
+          };
+          questions = questions.map(item => item.id === restored.id ? restored : item);
+          Object.assign(question, restored);
+          selected.clear();
+          for (const code of restored.correctDiscards || []) selected.add(code);
+          textarea.value = restored.explanation || "";
+          redrawTiles();
+          restoreButton.disabled = true;
+          itemMessage.className = "item-message success";
+          itemMessage.textContent = "原本の内容へ戻しました。";
+          updateSummary(details, question);
+        } catch (error) {
+          itemMessage.textContent = error.message;
+        }
+      });
+    }
+
+    function updateSummary(details, question) {
+      const state = details.querySelector(".answer-state");
+      const answerText = question.correctDiscards?.length ? question.correctDiscards.map(tileName).join("・") : "正解未設定";
+      state.className = `answer-state ${question.overridden ? "override" : question.correctDiscards?.length ? "" : "unset"}`;
+      state.textContent = `${answerText}${question.overridden ? "　編集済み" : ""}`;
+      const configured = questions.filter(item => item.correctDiscards?.length).length;
+      document.getElementById("summaryLine").textContent = `${questions.length}問中 ${configured}問の正解を設定済み`;
+    }
+  </script>
+</body>
+</html>
