@@ -126,13 +126,14 @@
     .answer-state { font-size: 11px; text-align: right; }
     .answer-state.unset { color: #d0a0a0; }
     .answer-state.override { color: #9ee6b8; }
-    .editor { padding: 13px; border-top: 1px solid rgba(242,210,123,.18); }
+    .editor { --admin-tile-width: 39px; padding: 13px; border-top: 1px solid rgba(242,210,123,.18); }
     .field-title { margin: 0 0 7px; color: var(--gold-light); font-size: 13px; }
     .hint { margin: 0 0 10px; color: var(--muted); font-family: sans-serif; font-size: 11px; font-weight: 600; }
 
     .answer-tiles { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 16px; }
     .answer-tile {
-      width: 39px;
+      width: var(--admin-tile-width);
+      flex: 0 0 var(--admin-tile-width);
       padding: 0;
       border: 2px solid transparent;
       border-radius: 4px;
@@ -143,6 +144,24 @@
     .answer-tile.selected { border-color: var(--gold-light); transform: translateY(-4px); box-shadow: 0 0 10px rgba(242,210,123,.65); }
     .answer-tile.selected::after {
       content: "○"; position: absolute; right: -5px; top: -9px; color: #d7352b; font-size: 18px; text-shadow: 0 1px #fff;
+    }
+    .meld-preview { margin: -2px 0 16px; }
+    .meld-preview .field-title { margin-bottom: 10px; }
+    .admin-melds { display: flex; align-items: flex-end; gap: 8px; padding: 1px 5px 8px; }
+    .admin-meld-group { display: flex; align-items: flex-end; flex: none; gap: 0; }
+    .admin-meld-tile {
+      width: var(--admin-tile-width);
+      min-width: var(--admin-tile-width);
+      height: auto;
+      display: block;
+      flex: 0 0 var(--admin-tile-width);
+      border-radius: 2px;
+      filter: drop-shadow(0 3px 2px rgba(0,0,0,.42));
+    }
+    .admin-meld-tile.sideways {
+      margin-inline: calc(var(--admin-tile-width) * .181818);
+      transform: translateY(calc(var(--admin-tile-width) * .181818)) rotate(90deg);
+      filter: drop-shadow(3px 0 2px rgba(0,0,0,.42));
     }
     .editor-actions { margin-top: 11px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .save, .restore { min-height: 44px; border-radius: 7px; }
@@ -158,7 +177,7 @@
       .back { padding: 8px 9px; font-size: 12px; }
       summary { grid-template-columns: auto 1fr; }
       .answer-state { grid-column: 1 / -1; text-align: left; }
-      .answer-tile { width: calc((100vw - 68px) / 7); max-width: 42px; }
+      .editor { --admin-tile-width: min(42px, calc((100vw - 68px) / 7)); }
     }
   </style>
 </head>
@@ -346,6 +365,10 @@
         <p class="field-title">正解打牌</p>
         <p class="hint">正解にする牌をタップしてください。複数選択できます。</p>
         <div class="answer-tiles"></div>
+        <div class="meld-preview" hidden>
+          <p class="field-title">副露面子</p>
+          <div class="admin-melds" aria-label="副露面子"></div>
+        </div>
         <label>解説文</label>
         <textarea maxlength="20000"></textarea>
         <div class="editor-actions">
@@ -354,9 +377,30 @@
         </div>
         <p class="item-message" aria-live="polite"></p>`;
       const tiles = editor.querySelector(".answer-tiles");
+      const meldPreview = editor.querySelector(".meld-preview");
+      const meldTiles = editor.querySelector(".admin-melds");
       const textarea = editor.querySelector("textarea");
       const itemMessage = editor.querySelector(".item-message");
       textarea.value = question.explanation || "";
+
+      for (const meld of question.melds || []) {
+        if (!Array.isArray(meld.tiles) || !meld.tiles.length) continue;
+        const group = document.createElement("div");
+        group.className = "admin-meld-group";
+        group.setAttribute("aria-label", meld.type === "kan" ? "槓" : meld.type === "chi" ? "チー" : "ポン");
+        meld.tiles.forEach((code, tileIndex) => {
+          const image = document.createElement("img");
+          image.className = "admin-meld-tile";
+          if (meld.open && tileIndex === meld.calledIndex) image.classList.add("sideways");
+          image.src = tilePath(code);
+          image.alt = tileName(code);
+          image.width = 66;
+          image.height = 90;
+          group.append(image);
+        });
+        meldTiles.append(group);
+      }
+      meldPreview.hidden = meldTiles.childElementCount === 0;
 
       const redrawTiles = () => {
         tiles.innerHTML = "";

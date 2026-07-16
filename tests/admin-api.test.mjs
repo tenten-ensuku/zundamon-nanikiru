@@ -206,7 +206,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 11;/);
+  assert.match(source, /const APP_VERSION = 12;/);
 });
 
 test("client has the Ensuku-style menu without an ura mode", async () => {
@@ -219,6 +219,16 @@ test("client has the Ensuku-style menu without an ura mode", async () => {
   assert.match(source, /data-start-mode="all"/);
   assert.match(source, /id="homeButton"[^>]*>メニュー</);
   assert.doesNotMatch(source, /裏モード/);
+});
+
+test("admin editor displays melds separately with the called tile sideways", async () => {
+  const source = await readFile(path.resolve("admin.html"), "utf8");
+  assert.match(source, /class="admin-melds" aria-label="副露面子"/);
+  assert.match(source, /for \(const meld of question\.melds \|\| \[\]\)/);
+  assert.match(source, /meld\.open && tileIndex === meld\.calledIndex/);
+  assert.match(source, /classList\.add\("sideways"\)/);
+  assert.match(source, /\.answer-tile[\s\S]*width:\s*var\(--admin-tile-width\)/);
+  assert.match(source, /\.admin-meld-tile[\s\S]*width:\s*var\(--admin-tile-width\)/);
 });
 
 test("question 1 contains a red five-pin", async () => {
