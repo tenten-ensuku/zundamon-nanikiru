@@ -2626,6 +2626,8 @@
     "honba": 0,
     "points": 25000,
     "dora": "2m",
+    "note": "南＝1枚切れ　北＝生牌（1枚も切られていない）",
+    "riichiChoice": true,
     "melds": [],
     "correctDiscards": []
   },

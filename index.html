@@ -184,6 +184,18 @@
       font-size: 11px;
     }
 
+    .situation-note {
+      margin-top: 7px;
+      padding-top: 6px;
+      border-top: 1px solid rgba(242,210,123,.2);
+      color: #f2d27b;
+      font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.45;
+      white-space: pre-line;
+    }
+
     .dora-box {
       display: flex;
       align-items: center;
@@ -320,6 +332,35 @@
       grid-template-columns: minmax(0, 1fr) minmax(144px, 1.25fr);
       gap: 8px;
       align-items: stretch;
+    }
+
+    .decision.has-riichi {
+      grid-template-columns: minmax(76px, .72fr) minmax(0, 1fr) minmax(126px, 1.18fr);
+    }
+
+    .riichi-button {
+      min-height: 52px;
+      padding: 7px 8px;
+      border: 1px solid rgba(242,210,123,.46);
+      border-radius: 8px;
+      color: var(--gold-light);
+      background: linear-gradient(180deg, rgba(19,58,49,.95), rgba(3,23,19,.96));
+      box-shadow: inset 0 1px rgba(255,255,255,.08);
+      font-size: 15px;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+
+    .riichi-button[aria-pressed="true"] {
+      border-color: #efad5e;
+      color: #fff8e6;
+      background: linear-gradient(180deg, #d07a39, #8f3e17);
+      box-shadow: 0 3px 0 #58200b, 0 0 10px rgba(242,210,123,.32), inset 0 1px rgba(255,255,255,.2);
+    }
+
+    .riichi-button:focus-visible {
+      outline: 3px solid var(--gold-light);
+      outline-offset: 2px;
     }
 
     .selected-panel {
@@ -837,7 +878,7 @@
       .situation { padding-top: 7px; padding-bottom: 6px; }
       .hand-stage { padding-top: 12px; padding-bottom: 6px; }
       .decision { grid-template-columns: 1fr 1.15fr; }
-      .selected-panel, .primary { min-height: 46px; }
+      .selected-panel, .riichi-button, .primary { min-height: 46px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -854,7 +895,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 16;
+    const APP_VERSION = 17;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -865,6 +906,7 @@
     let playQuestions = [];
     let currentIndex = 0;
     let selectedIndex = null;
+    let riichiSelected = false;
     let revealed = false;
     let currentScreen = "menu";
     let activeTab = "challenge";
@@ -1537,6 +1579,7 @@
                 <img class="dora-tile" id="dora" alt="">
               </div>
             </div>
+            <div class="situation-note" id="situationNote" hidden></div>
           </section>
 
           <section class="hand-stage" aria-label="牌姿">
@@ -1548,6 +1591,7 @@
           </section>
 
           <section class="decision" id="decision">
+            <button class="riichi-button" id="riichiButton" type="button" aria-pressed="false" hidden>立直</button>
             <div class="selected-panel">
               <small>選択中</small>
               <span class="selected-name" id="selectedName">未選択</span>
@@ -1574,6 +1618,7 @@
         </main>`;
 
       document.getElementById("confirmButton").addEventListener("click", confirmSelection);
+      document.getElementById("riichiButton").addEventListener("click", toggleRiichi);
       document.getElementById("retryButton").addEventListener("click", retryQuestion);
       document.getElementById("nextButton").addEventListener("click", nextQuestionOrFinish);
       document.getElementById("previousNav").addEventListener("click", () => moveQuestion(-1));
@@ -1585,6 +1630,7 @@
       const question = playQuestions[currentIndex];
       const response = state.session?.responses?.[String(question.id)];
       selectedIndex = response && Number.isInteger(response.index) ? response.index : null;
+      riichiSelected = Boolean(response?.riichi);
       revealed = Boolean(response);
 
       document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${playQuestions.length} 問`;
@@ -1599,6 +1645,9 @@
       if (question.points) subItems.push(`${Number(question.points).toLocaleString("ja-JP")}点`);
       if (question.melds?.length) subItems.push(question.melds[0].open ? "副露あり" : "暗槓あり");
       document.getElementById("subLine").textContent = subItems.join("　") || " ";
+      const situationNote = document.getElementById("situationNote");
+      situationNote.textContent = typeof question.note === "string" ? question.note : "";
+      situationNote.hidden = !situationNote.textContent;
 
       renderHand(question);
       renderDecision(question);
@@ -1668,14 +1717,33 @@
       renderDecision(playQuestions[currentIndex]);
     }
 
+    function toggleRiichi() {
+      const question = playQuestions[currentIndex];
+      if (revealed || question.riichiChoice !== true) return;
+      riichiSelected = !riichiSelected;
+      renderDecision(question);
+    }
+
     function renderDecision(question) {
       const selected = selectedIndex === null ? null : question.hand[selectedIndex];
+      const supportsRiichi = question.riichiChoice === true;
+      const decision = document.getElementById("decision");
+      const riichiButton = document.getElementById("riichiButton");
+      decision.classList.toggle("has-riichi", supportsRiichi);
+      riichiButton.hidden = !supportsRiichi;
+      riichiButton.disabled = revealed;
+      riichiButton.setAttribute("aria-pressed", riichiSelected ? "true" : "false");
+      riichiButton.textContent = riichiSelected ? "立直 選択中" : "立直";
       document.getElementById("selectedName").textContent = selected ? tileName(selected) : "未選択";
       document.getElementById("handCaption").innerHTML = selected
         ? `<strong>${tileName(selected)}</strong> を選択中`
         : "切る牌をタップしてください";
-      document.getElementById("confirmButton").disabled = selectedIndex === null || revealed;
-      document.getElementById("decision").hidden = revealed;
+      const confirmButton = document.getElementById("confirmButton");
+      confirmButton.disabled = selectedIndex === null || revealed;
+      confirmButton.textContent = supportsRiichi
+        ? riichiSelected ? "立直して切る" : "ダマで切る"
+        : "この牌を切る";
+      decision.hidden = revealed;
     }
 
     function confirmSelection() {
@@ -1690,6 +1758,7 @@
       const response = {
         tile,
         index: selectedIndex,
+        ...(question.riichiChoice === true ? { riichi: riichiSelected } : {}),
         graded,
         correct,
         answeredAt,
@@ -1727,6 +1796,7 @@
       if (state.responses[id]?.answeredAt === sessionResponse?.answeredAt) delete state.responses[id];
       if (state.session?.responses) delete state.session.responses[id];
       selectedIndex = null;
+      riichiSelected = false;
       revealed = false;
       saveState();
       renderHand(question);

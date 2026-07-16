@@ -206,7 +206,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 16;/);
+  assert.match(source, /const APP_VERSION = 17;/);
 });
 
 test("client has the Ensuku-style menu without an ura mode", async () => {
@@ -282,4 +282,18 @@ test("question 13 contains an open three-white pon", async () => {
     calledIndex: 0,
     tiles: ["5z", "5z", "5z"],
   }]);
+});
+
+test("question 66 shows the discard note and records a riichi choice", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  const question = questions.find((item) => item.id === 66);
+  assert.equal(question.note, "南＝1枚切れ　北＝生牌（1枚も切られていない）");
+  assert.equal(question.riichiChoice, true);
+
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /id="situationNote" hidden/);
+  assert.match(source, /id="riichiButton"[^>]*aria-pressed="false"[^>]*hidden>立直</);
+  assert.match(source, /function toggleRiichi\(\)/);
+  assert.match(source, /question\.riichiChoice === true \? \{ riichi: riichiSelected \} : \{\}/);
+  assert.match(source, /riichiSelected \? "立直して切る" : "ダマで切る"/);
 });
