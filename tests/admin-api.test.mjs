@@ -206,7 +206,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 14;/);
+  assert.match(source, /const APP_VERSION = 15;/);
 });
 
 test("client has the Ensuku-style menu without an ura mode", async () => {
@@ -243,6 +243,18 @@ test("admin exit returns to the GitHub Pages app directory", async () => {
   const source = await readFile(path.resolve("admin.html"), "utf8");
   assert.match(source, /document\.getElementById\("logout"\)[\s\S]*location\.href = "\.\/";/);
   assert.doesNotMatch(source, /location\.href = "\/";/);
+});
+
+test("problem catalog displays hand, melds, dora, and persistent favorites", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /favoriteIds:\s*\[\]/);
+  assert.match(source, /favoriteIds:\s*Array\.isArray\(source\.favoriteIds\)/);
+  assert.match(source, /function createCatalogCard\(question\)/);
+  assert.match(source, /question\.hand\.forEach\(code => hand\.append\(createCatalogTile\(code\)\)\)/);
+  assert.match(source, /question\.melds\.forEach\(meld =>/);
+  assert.match(source, /createCatalogTile\(question\.dora\)/);
+  assert.match(source, /button\.textContent = active \? "★追加済" : "☆追加"/);
+  assert.match(source, /image\.loading = "lazy"/);
 });
 
 test("question 1 contains a red five-pin", async () => {

@@ -681,6 +681,86 @@
     .ranking-row small { color: var(--muted); font-size: 10px; }
     .ranking-score { text-align: right; }
 
+    .catalog-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+    .catalog-heading small { color: var(--muted); font-size: 11px; }
+    .catalog-card {
+      --visual-count: 15;
+      --catalog-tile-width: min(24px, calc((100cqw - 34px) / var(--visual-count)));
+      padding: 12px;
+      position: relative;
+      overflow: hidden;
+      container-type: inline-size;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 14px;
+      background: linear-gradient(145deg, rgba(3,22,18,.78), rgba(0,0,0,.24));
+      box-shadow: 0 6px 16px rgba(0,0,0,.16);
+    }
+    .catalog-question {
+      width: 100%;
+      padding: 0;
+      border: 0;
+      color: var(--ink);
+      background: transparent;
+      text-align: left;
+      cursor: pointer;
+    }
+    .catalog-tiles-line {
+      min-height: calc(var(--catalog-tile-width) * 1.363636 + 8px);
+      margin-bottom: 9px;
+      display: flex;
+      align-items: flex-end;
+      gap: 1px;
+    }
+    .catalog-hand, .catalog-melds, .catalog-meld-group { display: flex; align-items: flex-end; gap: 0; min-width: 0; }
+    .catalog-melds { margin-left: 5px; padding-left: 5px; border-left: 1px solid rgba(242,210,123,.34); }
+    .catalog-mini-tile {
+      width: var(--catalog-tile-width);
+      min-width: var(--catalog-tile-width);
+      height: auto;
+      display: block;
+      flex: 0 0 var(--catalog-tile-width);
+      border-radius: 2px;
+      filter: drop-shadow(0 2px 1px rgba(0,0,0,.4));
+    }
+    .catalog-mini-tile.sideways {
+      margin-inline: calc(var(--catalog-tile-width) * .181818);
+      transform: translateY(calc(var(--catalog-tile-width) * .181818)) rotate(90deg);
+      filter: drop-shadow(2px 0 1px rgba(0,0,0,.4));
+    }
+    .catalog-dora {
+      margin-left: auto;
+      padding-left: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+    .catalog-dora small { color: var(--muted); font-size: 8px; line-height: 1; }
+    .catalog-info { min-height: 43px; padding-right: 86px; }
+    .catalog-title { color: var(--gold-light); font-size: 13px; }
+    .catalog-scene { margin-left: 5px; color: var(--muted); font-size: 10px; }
+    .catalog-rate { margin: 5px 0 0; color: var(--ink); font-size: 11px; }
+    .catalog-favorite {
+      min-width: 76px;
+      min-height: 39px;
+      padding: 6px 9px;
+      position: absolute;
+      right: 10px;
+      bottom: 12px;
+      z-index: 2;
+      border: 1px solid rgba(242,210,123,.22);
+      border-radius: 999px;
+      color: var(--gold-light);
+      background: rgba(20,31,27,.92);
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .catalog-favorite.active {
+      color: #251607;
+      border-color: var(--gold-light);
+      background: linear-gradient(#f2d27b, #b77c20);
+    }
+
     .catalog-tools {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -757,7 +837,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 14;
+    const APP_VERSION = 15;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -806,6 +886,7 @@
         currentId: 1,
         responses: {},
         wrongIds: [],
+        favoriteIds: [],
         questionStats: {},
         results: [],
         settings: { nickname: "" },
@@ -821,6 +902,7 @@
         currentId: Number(source.currentId) || 1,
         responses: source.responses && typeof source.responses === "object" ? source.responses : {},
         wrongIds: Array.isArray(source.wrongIds) ? source.wrongIds.map(Number).filter(Number.isFinite) : [],
+        favoriteIds: Array.isArray(source.favoriteIds) ? [...new Set(source.favoriteIds.map(Number).filter(Number.isFinite))] : [],
         questionStats: source.questionStats && typeof source.questionStats === "object" ? source.questionStats : {},
         results: Array.isArray(source.results) ? source.results.slice(0, 50) : [],
         settings: {
@@ -1054,10 +1136,10 @@
       });
       panel.innerHTML = `
         <section class="menu-panel">
-          <h2>問題一覧</h2>
+          <div class="catalog-heading"><h2>問題一覧</h2><small>${questions.length}問</small></div>
           <p class="menu-lead">問題をタップすると、その問題だけ確認できます。</p>
           <div class="catalog-tools">
-            <button class="menu-secondary${problemSort === "default" ? " active" : ""}" type="button" data-sort="default">問題番号順</button>
+            <button class="menu-secondary${problemSort === "default" ? " active" : ""}" type="button" data-sort="default">通常順</button>
             <button class="menu-secondary${problemSort === "weak" ? " active" : ""}" type="button" data-sort="weak">苦手順</button>
           </div>
           <div class="question-list" id="problemList"></div>
@@ -1069,7 +1151,105 @@
         });
       });
       const list = document.getElementById("problemList");
-      sorted.forEach(question => list.append(createQuestionRow(question, true)));
+      sorted.forEach(question => list.append(createCatalogCard(question)));
+    }
+
+    function createCatalogTile(code, className = "") {
+      const image = document.createElement("img");
+      image.className = `catalog-mini-tile${className ? ` ${className}` : ""}`;
+      image.src = tilePath(code);
+      image.alt = tileName(code);
+      image.width = 66;
+      image.height = 90;
+      image.loading = "lazy";
+      image.decoding = "async";
+      return image;
+    }
+
+    function updateFavoriteButton(button, questionId) {
+      const active = state.favoriteIds.includes(Number(questionId));
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+      button.setAttribute("aria-label", `第${questionId}問を${active ? "お気に入りから外す" : "お気に入りに追加"}`);
+      button.textContent = active ? "★追加済" : "☆追加";
+    }
+
+    function toggleFavorite(questionId, button) {
+      const favorites = new Set(state.favoriteIds);
+      if (favorites.has(questionId)) favorites.delete(questionId); else favorites.add(questionId);
+      state.favoriteIds = [...favorites];
+      saveState();
+      updateFavoriteButton(button, questionId);
+    }
+
+    function createCatalogCard(question) {
+      const stat = state.questionStats[String(question.id)] || { total: 0, correct: 0 };
+      const card = document.createElement("article");
+      card.className = "catalog-card";
+      const meldTileCount = (question.melds || []).reduce((total, meld) => total + (meld.tiles?.length || 0), 0);
+      const sidewaysCount = (question.melds || []).filter(meld => meld.open && Number.isInteger(meld.calledIndex)).length;
+      card.style.setProperty("--visual-count", String(Math.max(15, question.hand.length + meldTileCount + sidewaysCount * .36 + (question.dora ? 1.4 : 0))));
+
+      const openButton = document.createElement("button");
+      openButton.type = "button";
+      openButton.className = "catalog-question";
+      openButton.setAttribute("aria-label", `第${question.id}問を開く`);
+      openButton.addEventListener("click", () => openSingleQuestion(question.id));
+
+      const tilesLine = document.createElement("div");
+      tilesLine.className = "catalog-tiles-line";
+      const hand = document.createElement("div");
+      hand.className = "catalog-hand";
+      question.hand.forEach(code => hand.append(createCatalogTile(code)));
+      tilesLine.append(hand);
+
+      if (question.melds?.length) {
+        const melds = document.createElement("div");
+        melds.className = "catalog-melds";
+        question.melds.forEach(meld => {
+          const group = document.createElement("div");
+          group.className = "catalog-meld-group";
+          for (const [tileIndex, code] of (meld.tiles || []).entries()) {
+            const sideways = meld.open && tileIndex === meld.calledIndex;
+            group.append(createCatalogTile(code, sideways ? "sideways" : ""));
+          }
+          melds.append(group);
+        });
+        tilesLine.append(melds);
+      }
+
+      if (question.dora) {
+        const dora = document.createElement("div");
+        dora.className = "catalog-dora";
+        const label = document.createElement("small");
+        label.textContent = "ドラ";
+        const image = createCatalogTile(question.dora);
+        image.alt = `ドラ ${tileName(question.dora)}`;
+        dora.append(label, image);
+        tilesLine.append(dora);
+      }
+
+      const info = document.createElement("div");
+      info.className = "catalog-info";
+      const title = document.createElement("strong");
+      title.className = "catalog-title";
+      title.textContent = `No.${question.id}`;
+      const scene = document.createElement("span");
+      scene.className = "catalog-scene";
+      scene.textContent = `${roundName(question.round)} ${WIND_NAMES[question.seat] || "―"}家 ${question.turn ?? "―"}巡目`;
+      const rate = document.createElement("p");
+      rate.className = "catalog-rate";
+      rate.textContent = stat.total ? `正答率 ${Math.round(stat.correct / stat.total * 100)}% (${stat.correct}/${stat.total})` : "正答率 -- (0/0)";
+      info.append(title, scene, rate);
+      openButton.append(tilesLine, info);
+
+      const favorite = document.createElement("button");
+      favorite.type = "button";
+      favorite.className = "catalog-favorite";
+      updateFavoriteButton(favorite, question.id);
+      favorite.addEventListener("click", () => toggleFavorite(question.id, favorite));
+      card.append(openButton, favorite);
+      return card;
     }
 
     function createQuestionRow(question, showRate = false) {
