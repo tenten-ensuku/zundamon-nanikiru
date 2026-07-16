@@ -110,11 +110,12 @@
       background: linear-gradient(145deg, rgba(15,73,60,.7), rgba(3,22,18,.82));
     }
     details[open] { border-color: rgba(242,210,123,.45); box-shadow: 0 10px 28px rgba(0,0,0,.28); }
+    details.reviewed { border-color: rgba(126,225,157,.5); }
     summary {
       min-height: 50px;
       padding: 10px 12px;
       display: grid;
-      grid-template-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto auto;
       align-items: center;
       gap: 10px;
       cursor: pointer;
@@ -126,6 +127,30 @@
     .answer-state { font-size: 11px; text-align: right; }
     .answer-state.unset { color: #d0a0a0; }
     .answer-state.override { color: #9ee6b8; }
+    .review-check {
+      min-height: 32px;
+      padding: 4px 7px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(242,210,123,.25);
+      border-radius: 6px;
+      color: var(--ink);
+      background: rgba(0,0,0,.24);
+      font-family: sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .review-check input {
+      width: 20px;
+      min-height: 20px;
+      margin: 0;
+      padding: 0;
+      accent-color: #d8a83c;
+    }
+    .review-check:has(input:checked) { border-color: #79ca98; color: #9ee6b8; }
+    .review-check:has(input:disabled) { opacity: .58; cursor: wait; }
     .editor { --admin-tile-width: 39px; padding: 13px; border-top: 1px solid rgba(242,210,123,.18); }
     .field-title { margin: 0 0 7px; color: var(--gold-light); font-size: 13px; }
     .hint { margin: 0 0 10px; color: var(--muted); font-family: sans-serif; font-size: 11px; font-weight: 600; }
@@ -184,7 +209,8 @@
     @media (max-width: 520px) {
       .shell { padding-inline: 9px; }
       .back { padding: 8px 9px; font-size: 12px; }
-      summary { grid-template-columns: auto 1fr; }
+      summary { grid-template-columns: auto 1fr auto; }
+      .review-check { grid-column: 3; grid-row: 1; }
       .answer-state { grid-column: 1 / -1; text-align: left; }
       .editor { --admin-tile-width: min(42px, calc((100vw - 68px) / 7)); }
     }
@@ -264,14 +290,17 @@
       const byId = new Map((Array.isArray(overrides) ? overrides : []).map(override => [Number(override.id), override]));
       return base.map(question => {
         const override = byId.get(Number(question.id));
+        const hasContentOverride = Array.isArray(override?.correctDiscards) || typeof override?.explanation === "string";
         return {
           ...question,
           correctDiscards: Array.isArray(override?.correctDiscards)
             ? override.correctDiscards
             : Array.isArray(question.correctDiscards) ? question.correctDiscards : [],
           explanation: typeof override?.explanation === "string" ? override.explanation : question.explanation,
-          overridden: Boolean(override),
+          reviewed: override?.reviewed === true,
+          overridden: hasContentOverride,
           overrideUpdatedAt: override?.overrideUpdatedAt || null,
+          reviewUpdatedAt: override?.reviewUpdatedAt || null,
         };
       });
     }
@@ -338,8 +367,7 @@
       const filtered = questions.filter(question => matches(question, query));
       const list = document.getElementById("questionList");
       list.innerHTML = "";
-      const configured = questions.filter(question => question.correctDiscards?.length).length;
-      document.getElementById("summaryLine").textContent = `${questions.length}問中 ${configured}問の正解を設定済み　／　表示 ${filtered.length}問`;
+      updateSummaryLine(filtered.length);
       if (!filtered.length) {
         list.innerHTML = '<div class="empty">該当する問題がありません。</div>';
         return;
@@ -347,6 +375,7 @@
 
       for (const question of filtered) {
         const details = document.createElement("details");
+        details.classList.toggle("reviewed", question.reviewed === true);
         const answerText = question.correctDiscards?.length
           ? question.correctDiscards.map(tileName).join("・")
           : "正解未設定";
@@ -354,6 +383,7 @@
           <summary>
             <span class="qid">第${question.id}問</span>
             <span class="qcontext">${roundName(question.round)}　${WIND_NAMES[question.seat] || "―"}家　${question.turn ?? "―"}巡目</span>
+            <label class="review-check"><input class="review-checkbox" type="checkbox" ${question.reviewed ? "checked" : ""}><span>確認完了</span></label>
             <span class="answer-state ${question.overridden ? "override" : question.correctDiscards?.length ? "" : "unset"}">${answerText}${question.overridden ? "　編集済み" : ""}</span>
           </summary>
           <div class="editor"></div>`;
@@ -363,8 +393,41 @@
             renderEditor(details, question);
           }
         });
+        const reviewLabel = details.querySelector(".review-check");
+        const reviewCheckbox = details.querySelector(".review-checkbox");
+        reviewLabel.addEventListener("click", event => event.stopPropagation());
+        reviewCheckbox.addEventListener("change", async () => {
+          const previous = question.reviewed === true;
+          reviewCheckbox.disabled = true;
+          details.classList.toggle("reviewed", reviewCheckbox.checked);
+          try {
+            const saved = await api(`/api/admin/questions/${question.id}`, {
+              method: "PATCH",
+              admin: true,
+              body: JSON.stringify({ reviewed: reviewCheckbox.checked }),
+            });
+            question.reviewed = saved.reviewed === true;
+            question.reviewUpdatedAt = saved.reviewUpdatedAt || null;
+            reviewCheckbox.checked = question.reviewed;
+            details.classList.toggle("reviewed", question.reviewed);
+            updateSummaryLine(filtered.length);
+          } catch (error) {
+            question.reviewed = previous;
+            reviewCheckbox.checked = previous;
+            details.classList.toggle("reviewed", previous);
+            window.alert(error.message);
+          } finally {
+            reviewCheckbox.disabled = false;
+          }
+        });
         list.append(details);
       }
+    }
+
+    function updateSummaryLine(visibleCount = questions.length) {
+      const configured = questions.filter(question => question.correctDiscards?.length).length;
+      const reviewed = questions.filter(question => question.reviewed).length;
+      document.getElementById("summaryLine").textContent = `${questions.length}問中 ${configured}問の正解を設定済み　／　確認完了 ${reviewed}問　／　表示 ${visibleCount}問`;
     }
 
     function renderEditor(details, question) {
@@ -494,6 +557,8 @@
           const restored = {
             ...structuredClone(bundled),
             correctDiscards: Array.isArray(bundled.correctDiscards) ? bundled.correctDiscards : [],
+            reviewed: question.reviewed === true,
+            reviewUpdatedAt: question.reviewUpdatedAt || null,
             overridden: false,
             overrideUpdatedAt: null,
           };
@@ -518,8 +583,8 @@
       const answerText = question.correctDiscards?.length ? question.correctDiscards.map(tileName).join("・") : "正解未設定";
       state.className = `answer-state ${question.overridden ? "override" : question.correctDiscards?.length ? "" : "unset"}`;
       state.textContent = `${answerText}${question.overridden ? "　編集済み" : ""}`;
-      const configured = questions.filter(item => item.correctDiscards?.length).length;
-      document.getElementById("summaryLine").textContent = `${questions.length}問中 ${configured}問の正解を設定済み`;
+      const query = document.getElementById("search").value.trim();
+      updateSummaryLine(questions.filter(item => matches(item, query)).length);
     }
   </script>
 </body>

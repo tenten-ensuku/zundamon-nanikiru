@@ -162,6 +162,33 @@ test("server validates IDs, answers, and explanation length", async () => {
   assert.equal(tooLong.status, 400);
 });
 
+test("review completion can be saved without editing question content", async () => {
+  const headers = { "Content-Type": "application/json", "X-Admin-Password": PASSWORD };
+  const unauthenticated = await request("/api/admin/questions/1", {
+    method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ reviewed: true }),
+  });
+  assert.equal(unauthenticated.status, 401);
+
+  const invalid = await request("/api/admin/questions/1", {
+    method: "PATCH", headers, body: JSON.stringify({ reviewed: "yes" }),
+  });
+  assert.equal(invalid.status, 400);
+
+  const response = await request("/api/admin/questions/1", {
+    method: "PATCH", headers, body: JSON.stringify({ reviewed: true }),
+  });
+  assert.equal(response.status, 200);
+  const saved = await response.json();
+  assert.equal(saved.reviewed, true);
+  assert.equal(saved.overridden, false);
+  assert.equal(saved.explanation, "原本の解説");
+
+  const overrides = await request("/api/overrides").then((result) => result.json());
+  assert.equal(overrides[0].reviewed, true);
+  assert.equal("correctDiscards" in overrides[0], false);
+  assert.equal("explanation" in overrides[0], false);
+});
+
 test("upsert reaches the merged public question list", async () => {
   const response = await request("/api/admin/questions/1", {
     method: "PUT",
@@ -173,6 +200,7 @@ test("upsert reaches the merged public question list", async () => {
   const saved = await response.json();
   assert.deepEqual(saved.correctDiscards, ["1m", "0p"]);
   assert.equal(saved.overridden, true);
+  assert.equal(saved.reviewed, true);
 
   const publicResponse = await request("/api/questions");
   const publicQuestions = await publicResponse.json();
@@ -193,6 +221,24 @@ test("delete restores bundled content", async () => {
   assert.equal(restored.explanation, "原本の解説");
   assert.deepEqual(restored.correctDiscards, []);
   assert.equal(restored.overridden, false);
+  assert.equal(restored.reviewed, true);
+
+  const stored = JSON.parse(await readFile(overridesPath, "utf8"));
+  assert.equal(stored["1"].reviewed, true);
+  assert.equal("correctDiscards" in stored["1"], false);
+});
+
+test("review completion can be cleared after restoring bundled content", async () => {
+  const response = await request("/api/admin/questions/1", {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json", "X-Admin-Password": PASSWORD },
+    body: JSON.stringify({ reviewed: false }),
+  });
+  assert.equal(response.status, 200);
+  const saved = await response.json();
+  assert.equal(saved.reviewed, false);
+  assert.equal(saved.overridden, false);
+  assert.deepEqual(await request("/api/overrides").then((result) => result.json()), []);
 });
 
 test("client contains a bundled-data fallback", async () => {
@@ -206,7 +252,25 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 19;/);
+  assert.match(source, /const APP_VERSION = 20;/);
+});
+
+test("reviewing mode restores vertical scrolling after an answer", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  const playLockIndex = source.indexOf("body.play-open { overflow: hidden; }");
+  const reviewUnlockIndex = source.indexOf("body.play-open.reviewing");
+  assert.ok(playLockIndex >= 0);
+  assert.ok(reviewUnlockIndex > playLockIndex);
+  assert.match(source, /body\.play-open\.reviewing\s*\{[^}]*overflow-y:\s*auto[^}]*touch-action:\s*pan-y/s);
+});
+
+test("admin editor has a shared per-question review checkbox", async () => {
+  const source = await readFile(path.resolve("admin.html"), "utf8");
+  assert.match(source, /class="review-checkbox" type="checkbox"/);
+  assert.match(source, /<span>確認完了<\/span>/);
+  assert.match(source, /method:\s*"PATCH"/);
+  assert.match(source, /JSON\.stringify\(\{ reviewed: reviewCheckbox\.checked \}\)/);
+  assert.match(source, /確認完了 \$\{reviewed\}問/);
 });
 
 test("client has the Ensuku-style menu without an ura mode", async () => {

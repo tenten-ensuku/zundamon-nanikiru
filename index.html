@@ -512,6 +512,13 @@
 
     body.play-open { overflow: hidden; }
 
+    body.play-open.reviewing {
+      overflow-x: hidden;
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+      touch-action: pan-y;
+    }
+
     .menu-app {
       display: block;
       padding-bottom: max(28px, env(safe-area-inset-bottom));
@@ -895,7 +902,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 19;
+    const APP_VERSION = 20;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -929,14 +936,17 @@
       const byId = new Map((Array.isArray(overrides) ? overrides : []).map(override => [Number(override.id), override]));
       return baseQuestions.map(question => {
         const override = byId.get(Number(question.id));
+        const hasContentOverride = Array.isArray(override?.correctDiscards) || typeof override?.explanation === "string";
         return {
           ...question,
           correctDiscards: Array.isArray(override?.correctDiscards)
             ? override.correctDiscards
             : Array.isArray(question.correctDiscards) ? question.correctDiscards : [],
           explanation: typeof override?.explanation === "string" ? override.explanation : question.explanation,
-          overridden: Boolean(override),
+          reviewed: override?.reviewed === true,
+          overridden: hasContentOverride,
           overrideUpdatedAt: override?.overrideUpdatedAt || null,
+          reviewUpdatedAt: override?.reviewUpdatedAt || null,
         };
       });
     }

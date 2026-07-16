@@ -2,6 +2,7 @@ import { createClient } from "npm:@supabase/supabase-js@2.110.6";
 
 const FUNCTION_SLUG = "zundamon-question-admin";
 const TABLE = "zundamon_question_overrides";
+const REVIEW_TABLE = "zundamon_question_reviews";
 const MAX_EXPLANATION_LENGTH = 20_000;
 const MAX_BODY_LENGTH = 64 * 1024;
 const TILE_CODE = /^(?:[1-9][mps]|[1-7]z|0[mps])$/;
@@ -32,7 +33,7 @@ function responseHeaders(origin: string | null) {
   };
   if (origin && isAllowedOrigin(origin)) {
     headers["Access-Control-Allow-Origin"] = origin;
-    headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS";
+    headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, PATCH, DELETE, OPTIONS";
     headers["Access-Control-Allow-Headers"] = "Content-Type, X-Admin-Password";
   }
   return headers;
@@ -105,6 +106,26 @@ function publicOverride(row: Record<string, unknown>) {
   };
 }
 
+function mergePublicRows(
+  overrideRows: Record<string, unknown>[],
+  reviewRows: Record<string, unknown>[],
+) {
+  const byId = new Map<number, Record<string, unknown>>();
+  for (const row of overrideRows) {
+    const item = publicOverride(row);
+    byId.set(Number(item.id), item);
+  }
+  for (const row of reviewRows) {
+    const id = Number(row.question_id);
+    byId.set(id, {
+      ...(byId.get(id) || { id }),
+      reviewed: row.reviewed === true,
+      reviewUpdatedAt: row.updated_at || null,
+    });
+  }
+  return [...byId.values()].sort((left, right) => Number(left.id) - Number(right.id));
+}
+
 async function authenticate(request: Request, bodyPassword?: unknown) {
   const expected = Deno.env.get("ADMIN_PASSWORD") || "";
   if (!expected) return { configured: false, authenticated: false };
@@ -121,12 +142,14 @@ Deno.serve(async (request: Request) => {
 
   try {
     if (request.method === "GET" && pathname === "/overrides") {
-      const { data, error } = await database()
-        .from(TABLE)
-        .select("question_id, correct_discards, explanation, updated_at")
-        .order("question_id");
-      if (error) throw error;
-      return json(200, (data || []).map(publicOverride), origin);
+      const db = database();
+      const [overrideResult, reviewResult] = await Promise.all([
+        db.from(TABLE).select("question_id, correct_discards, explanation, updated_at").order("question_id"),
+        db.from(REVIEW_TABLE).select("question_id, reviewed, updated_at").order("question_id"),
+      ]);
+      if (overrideResult.error) throw overrideResult.error;
+      if (reviewResult.error) throw reviewResult.error;
+      return json(200, mergePublicRows(overrideResult.data || [], reviewResult.data || []), origin);
     }
 
     if (request.method === "POST" && pathname === "/login") {
@@ -138,7 +161,7 @@ Deno.serve(async (request: Request) => {
     }
 
     const match = /^\/questions\/(\d+)$/.exec(pathname);
-    if (match && (request.method === "PUT" || request.method === "DELETE")) {
+    if (match && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) {
       const auth = await authenticate(request);
       if (!auth.configured) return json(503, { error: "管理パスワードが設定されていません。" }, origin);
       if (!auth.authenticated) return json(401, { error: "認証に失敗しました。" }, origin);
@@ -152,6 +175,30 @@ Deno.serve(async (request: Request) => {
         const { error } = await database().from(TABLE).delete().eq("question_id", id);
         if (error) throw error;
         return json(200, { id, restored: true }, origin);
+      }
+
+      if (request.method === "PATCH") {
+        const body = await readJson(request);
+        if (typeof body.reviewed !== "boolean") {
+          return json(400, { error: "確認完了の指定が正しくありません。" }, origin);
+        }
+        if (!body.reviewed) {
+          const { error } = await database().from(REVIEW_TABLE).delete().eq("question_id", id);
+          if (error) throw error;
+          return json(200, { id, reviewed: false, reviewUpdatedAt: null }, origin);
+        }
+
+        const { data, error } = await database()
+          .from(REVIEW_TABLE)
+          .upsert({ question_id: id, reviewed: true, updated_at: new Date().toISOString() }, { onConflict: "question_id" })
+          .select("question_id, reviewed, updated_at")
+          .single();
+        if (error) throw error;
+        return json(200, {
+          id: Number(data.question_id),
+          reviewed: data.reviewed === true,
+          reviewUpdatedAt: data.updated_at || null,
+        }, origin);
       }
 
       const body = await readJson(request);
