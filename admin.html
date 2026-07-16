@@ -130,6 +130,15 @@
     .field-title { margin: 0 0 7px; color: var(--gold-light); font-size: 13px; }
     .hint { margin: 0 0 10px; color: var(--muted); font-family: sans-serif; font-size: 11px; font-weight: 600; }
 
+    .admin-dora-preview { margin-bottom: 16px; }
+    .admin-dora-tile {
+      width: var(--admin-tile-width);
+      height: auto;
+      display: block;
+      border-radius: 2px;
+      filter: drop-shadow(0 3px 2px rgba(0,0,0,.42));
+    }
+
     .answer-tiles { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 16px; }
     .answer-tile {
       width: var(--admin-tile-width);
@@ -362,6 +371,10 @@
       const editor = details.querySelector(".editor");
       const selected = new Set(question.correctDiscards || []);
       editor.innerHTML = `
+        <div class="admin-dora-preview">
+          <p class="field-title">ドラ</p>
+          <img class="admin-dora-tile" width="66" height="90" alt="">
+        </div>
         <p class="field-title">正解打牌</p>
         <p class="hint">正解にする牌をタップしてください。複数選択できます。</p>
         <div class="answer-tiles"></div>
@@ -377,11 +390,18 @@
         </div>
         <p class="item-message" aria-live="polite"></p>`;
       const tiles = editor.querySelector(".answer-tiles");
+      const doraTile = editor.querySelector(".admin-dora-tile");
       const meldPreview = editor.querySelector(".meld-preview");
       const meldTiles = editor.querySelector(".admin-melds");
       const textarea = editor.querySelector("textarea");
       const itemMessage = editor.querySelector(".item-message");
       textarea.value = question.explanation || "";
+      if (question.dora) {
+        doraTile.src = tilePath(question.dora);
+        doraTile.alt = `ドラ ${tileName(question.dora)}`;
+      } else {
+        doraTile.closest(".admin-dora-preview").hidden = true;
+      }
 
       for (const meld of question.melds || []) {
         if (!Array.isArray(meld.tiles) || !meld.tiles.length) continue;
