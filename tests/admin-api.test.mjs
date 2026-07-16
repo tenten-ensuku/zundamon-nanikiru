@@ -206,7 +206,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 10;/);
+  assert.match(source, /const APP_VERSION = 11;/);
 });
 
 test("client has the Ensuku-style menu without an ura mode", async () => {
@@ -214,6 +214,7 @@ test("client has the Ensuku-style menu without an ura mode", async () => {
   for (const label of ["挑戦", "復習", "問題一覧", "自己分析", "順位", "設定"]) {
     assert.match(source, new RegExp(label));
   }
+  assert.match(source, /class="menu-admin-entry" href="admin\.html">管理画面<\/a>/);
   assert.match(source, /data-start-mode="ten"/);
   assert.match(source, /data-start-mode="all"/);
   assert.match(source, /id="homeButton"[^>]*>メニュー</);
