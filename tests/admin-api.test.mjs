@@ -252,7 +252,13 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 20;/);
+  assert.match(source, /const APP_VERSION = 21;/);
+});
+
+test("pre-release menu displays the canonical app version beside the title", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /class="menu-title"><h1>ずんだもん何切る<\/h1><small class="menu-version">ver \$\{APP_VERSION\}<\/small>/);
+  assert.match(source, /\.menu-version\s*\{[^}]*position:\s*absolute[^}]*right:\s*1px[^}]*bottom:\s*-10px[^}]*font-size:\s*8px/s);
 });
 
 test("reviewing mode restores vertical scrolling after an answer", async () => {

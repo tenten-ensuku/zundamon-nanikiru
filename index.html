@@ -533,9 +533,29 @@
 
     .menu-header h1 { font-size: clamp(29px, 9vw, 36px); }
 
+    .menu-title {
+      display: inline-block;
+      position: relative;
+    }
+
+    .menu-version {
+      position: absolute;
+      right: 1px;
+      bottom: -10px;
+      color: var(--muted);
+      font-family: sans-serif;
+      font-size: 8px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: .06em;
+      white-space: nowrap;
+      opacity: .82;
+      text-shadow: 0 1px 2px #000;
+    }
+
     .menu-admin-entry {
       min-height: 30px;
-      margin-top: 9px;
+      margin-top: 14px;
       padding: 5px 12px;
       display: inline-flex;
       align-items: center;
@@ -902,7 +922,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 20;
+    const APP_VERSION = 21;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -1109,7 +1129,7 @@
       app.innerHTML = `
         <header class="menu-header">
           <p class="brand-kicker">ZUNDAMON</p>
-          <h1>ずんだもん何切る</h1>
+          <div class="menu-title"><h1>ずんだもん何切る</h1><small class="menu-version">ver ${APP_VERSION}</small></div>
           <a class="menu-admin-entry" href="admin.html">管理画面</a>
           <button class="settings-tab-button${activeTab === "settings" ? " active" : ""}" id="settingsTab" type="button">
             <span>⚙</span><small>設定</small>
