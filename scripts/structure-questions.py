@@ -176,6 +176,12 @@ def sort_hand(hand: list[str]) -> list[str]:
     return sorted(hand, key=sort_key)
 
 
+def has_kan_choice(hand: list[str]) -> bool:
+    """Return true when the concealed hand contains four tiles of one kind."""
+    counts = Counter("5" + code[1] if code.startswith("0") else code for code in hand)
+    return any(count == 4 for count in counts.values())
+
+
 def tile_features(image: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
     normalized = cv2.resize(image, (66, 90), interpolation=cv2.INTER_AREA)
     hsv = cv2.cvtColor(normalized, cv2.COLOR_BGR2HSV)
@@ -495,6 +501,10 @@ def main():
         question["hand"] = hand
         question["draw"] = None
         question.setdefault("correctDiscards", [])
+        if has_kan_choice(hand):
+            question["kanChoice"] = True
+        else:
+            question.pop("kanChoice", None)
         question["meldCount"] = meld_count
         question["melds"] = MELD_OVERRIDES.get(question_id, [])
         question.update(situation)

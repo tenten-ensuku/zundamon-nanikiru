@@ -206,7 +206,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 18;/);
+  assert.match(source, /const APP_VERSION = 19;/);
 });
 
 test("client has the Ensuku-style menu without an ura mode", async () => {
@@ -298,13 +298,19 @@ test("question 66 shows the discard note and records a riichi choice", async () 
   assert.match(source, /riichiSelected \? "立直して切る" : "ダマで切る"/);
 });
 
-test("questions 78 and 79 offer kan as a standalone answer", async () => {
+test("every concealed quad offers kan as a standalone answer", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  for (const id of [78, 79]) {
-    const question = questions.find((item) => item.id === id);
+  const normalize = (tile) => /^0[mps]$/.test(tile) ? `5${tile[1]}` : tile;
+  const quadQuestions = questions.filter((question) => {
+    const counts = question.hand.reduce((map, tile) => {
+      const kind = normalize(tile);
+      return map.set(kind, (map.get(kind) || 0) + 1);
+    }, new Map());
+    return [...counts.values()].includes(4);
+  });
+  assert.deepEqual(quadQuestions.map((question) => question.id), [52, 78, 79, 86, 97]);
+  for (const question of quadQuestions) {
     assert.equal(question.kanChoice, true);
-    const counts = question.hand.reduce((map, tile) => map.set(tile, (map.get(tile) || 0) + 1), new Map());
-    assert.equal([...counts.values()].includes(4), true);
   }
 
   const source = await readFile(path.resolve("index.html"), "utf8");
@@ -312,4 +318,9 @@ test("questions 78 and 79 offer kan as a standalone answer", async () => {
   assert.match(source, /function toggleKan\(\)/);
   assert.match(source, /specialChoice === "kan" \? \{ choice: "kan" \} : \{\}/);
   assert.match(source, /\? "カン！で回答"/);
+
+  const structureSource = await readFile(path.resolve("scripts/structure-questions.py"), "utf8");
+  assert.match(structureSource, /def has_kan_choice\(hand: list\[str\]\) -> bool:/);
+  assert.match(structureSource, /"5" \+ code\[1\] if code\.startswith\("0"\) else code/);
+  assert.match(structureSource, /question\["kanChoice"\] = True/);
 });

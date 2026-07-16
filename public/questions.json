@@ -2064,6 +2064,7 @@
     "honba": 0,
     "points": 25000,
     "dora": "8s",
+    "kanChoice": true,
     "melds": [],
     "correctDiscards": []
   },
@@ -3418,6 +3419,7 @@
     "honba": null,
     "points": 25000,
     "dora": "7s",
+    "kanChoice": true,
     "melds": [],
     "correctDiscards": []
   },
@@ -3863,6 +3865,7 @@
     "honba": null,
     "points": 25000,
     "dora": "1p",
+    "kanChoice": true,
     "melds": [],
     "correctDiscards": []
   },
