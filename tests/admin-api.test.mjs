@@ -206,7 +206,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 13;/);
+  assert.match(source, /const APP_VERSION = 14;/);
 });
 
 test("client has the Ensuku-style menu without an ura mode", async () => {
@@ -237,6 +237,12 @@ test("admin editor displays the dora with the approved tile image path", async (
   assert.match(source, /doraTile\.src = tilePath\(question\.dora\)/);
   assert.match(source, /doraTile\.alt = `ドラ \$\{tileName\(question\.dora\)\}`/);
   assert.match(source, /\.admin-dora-tile\s*\{[^}]*width:\s*var\(--admin-tile-width\)/s);
+});
+
+test("admin exit returns to the GitHub Pages app directory", async () => {
+  const source = await readFile(path.resolve("admin.html"), "utf8");
+  assert.match(source, /document\.getElementById\("logout"\)[\s\S]*location\.href = "\.\/";/);
+  assert.doesNotMatch(source, /location\.href = "\/";/);
 });
 
 test("question 1 contains a red five-pin", async () => {
