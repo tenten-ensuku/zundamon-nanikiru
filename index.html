@@ -736,10 +736,27 @@
       gap: 2px;
     }
     .catalog-dora small { color: var(--muted); font-size: 8px; line-height: 1; }
-    .catalog-info { min-height: 43px; padding-right: 86px; }
+    .catalog-info { min-height: 60px; padding-right: 86px; }
     .catalog-title { color: var(--gold-light); font-size: 13px; }
     .catalog-scene { margin-left: 5px; color: var(--muted); font-size: 10px; }
     .catalog-rate { margin: 5px 0 0; color: var(--ink); font-size: 11px; }
+    .catalog-rate-bar {
+      height: 7px;
+      margin-top: 8px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(87,110,101,.18);
+      box-shadow: inset 0 1px 2px rgba(0,0,0,.45);
+    }
+    .catalog-rate-bar > span {
+      width: 0;
+      height: 100%;
+      display: block;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #ef5b55 0%, #f3a55f 25%, #f2d77a 48%, #8fd39a 72%, #35c7a4 100%);
+      box-shadow: 0 0 5px rgba(242,210,123,.18);
+      transition: width .28s ease;
+    }
     .catalog-favorite {
       min-width: 76px;
       min-height: 39px;
@@ -837,7 +854,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 15;
+    const APP_VERSION = 16;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -1239,8 +1256,19 @@
       scene.textContent = `${roundName(question.round)} ${WIND_NAMES[question.seat] || "―"}家 ${question.turn ?? "―"}巡目`;
       const rate = document.createElement("p");
       rate.className = "catalog-rate";
-      rate.textContent = stat.total ? `正答率 ${Math.round(stat.correct / stat.total * 100)}% (${stat.correct}/${stat.total})` : "正答率 -- (0/0)";
-      info.append(title, scene, rate);
+      const rateValue = stat.total ? Math.max(0, Math.min(100, Math.round(stat.correct / stat.total * 100))) : 0;
+      rate.textContent = stat.total ? `正答率 ${rateValue}% (${stat.correct}/${stat.total})` : "正答率 -- (0/0)";
+      const rateBar = document.createElement("div");
+      rateBar.className = "catalog-rate-bar";
+      rateBar.setAttribute("role", "progressbar");
+      rateBar.setAttribute("aria-label", stat.total ? `第${question.id}問の正答率` : `第${question.id}問は未挑戦`);
+      rateBar.setAttribute("aria-valuemin", "0");
+      rateBar.setAttribute("aria-valuemax", "100");
+      rateBar.setAttribute("aria-valuenow", String(rateValue));
+      const rateFill = document.createElement("span");
+      rateFill.style.width = `${rateValue}%`;
+      rateBar.append(rateFill);
+      info.append(title, scene, rate, rateBar);
       openButton.append(tilesLine, info);
 
       const favorite = document.createElement("button");

@@ -206,7 +206,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 15;/);
+  assert.match(source, /const APP_VERSION = 16;/);
 });
 
 test("client has the Ensuku-style menu without an ura mode", async () => {
@@ -255,6 +255,14 @@ test("problem catalog displays hand, melds, dora, and persistent favorites", asy
   assert.match(source, /createCatalogTile\(question\.dora\)/);
   assert.match(source, /button\.textContent = active \? "★追加済" : "☆追加"/);
   assert.match(source, /image\.loading = "lazy"/);
+});
+
+test("problem catalog displays a rainbow accuracy progress bar", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /\.catalog-rate-bar > span[\s\S]*linear-gradient\(90deg, #ef5b55[\s\S]*#35c7a4/s);
+  assert.match(source, /const rateValue = stat\.total \? Math\.max\(0, Math\.min\(100,/);
+  assert.match(source, /rateBar\.setAttribute\("role", "progressbar"\)/);
+  assert.match(source, /rateFill\.style\.width = `\$\{rateValue\}%`/);
 });
 
 test("question 1 contains a red five-pin", async () => {
