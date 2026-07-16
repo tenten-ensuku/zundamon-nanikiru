@@ -206,7 +206,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 17;/);
+  assert.match(source, /const APP_VERSION = 18;/);
 });
 
 test("client has the Ensuku-style menu without an ura mode", async () => {
@@ -296,4 +296,20 @@ test("question 66 shows the discard note and records a riichi choice", async () 
   assert.match(source, /function toggleRiichi\(\)/);
   assert.match(source, /question\.riichiChoice === true \? \{ riichi: riichiSelected \} : \{\}/);
   assert.match(source, /riichiSelected \? "立直して切る" : "ダマで切る"/);
+});
+
+test("questions 78 and 79 offer kan as a standalone answer", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  for (const id of [78, 79]) {
+    const question = questions.find((item) => item.id === id);
+    assert.equal(question.kanChoice, true);
+    const counts = question.hand.reduce((map, tile) => map.set(tile, (map.get(tile) || 0) + 1), new Map());
+    assert.equal([...counts.values()].includes(4), true);
+  }
+
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /id="kanButton"[^>]*aria-pressed="false"[^>]*hidden>カン！</);
+  assert.match(source, /function toggleKan\(\)/);
+  assert.match(source, /specialChoice === "kan" \? \{ choice: "kan" \} : \{\}/);
+  assert.match(source, /\? "カン！で回答"/);
 });

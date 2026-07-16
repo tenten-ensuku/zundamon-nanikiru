@@ -334,11 +334,11 @@
       align-items: stretch;
     }
 
-    .decision.has-riichi {
+    .decision.has-option {
       grid-template-columns: minmax(76px, .72fr) minmax(0, 1fr) minmax(126px, 1.18fr);
     }
 
-    .riichi-button {
+    .riichi-button, .kan-button {
       min-height: 52px;
       padding: 7px 8px;
       border: 1px solid rgba(242,210,123,.46);
@@ -351,14 +351,14 @@
       touch-action: manipulation;
     }
 
-    .riichi-button[aria-pressed="true"] {
+    .riichi-button[aria-pressed="true"], .kan-button[aria-pressed="true"] {
       border-color: #efad5e;
       color: #fff8e6;
       background: linear-gradient(180deg, #d07a39, #8f3e17);
       box-shadow: 0 3px 0 #58200b, 0 0 10px rgba(242,210,123,.32), inset 0 1px rgba(255,255,255,.2);
     }
 
-    .riichi-button:focus-visible {
+    .riichi-button:focus-visible, .kan-button:focus-visible {
       outline: 3px solid var(--gold-light);
       outline-offset: 2px;
     }
@@ -878,7 +878,7 @@
       .situation { padding-top: 7px; padding-bottom: 6px; }
       .hand-stage { padding-top: 12px; padding-bottom: 6px; }
       .decision { grid-template-columns: 1fr 1.15fr; }
-      .selected-panel, .riichi-button, .primary { min-height: 46px; }
+      .selected-panel, .riichi-button, .kan-button, .primary { min-height: 46px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -895,7 +895,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 17;
+    const APP_VERSION = 18;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -907,6 +907,7 @@
     let currentIndex = 0;
     let selectedIndex = null;
     let riichiSelected = false;
+    let specialChoice = null;
     let revealed = false;
     let currentScreen = "menu";
     let activeTab = "challenge";
@@ -1592,6 +1593,7 @@
 
           <section class="decision" id="decision">
             <button class="riichi-button" id="riichiButton" type="button" aria-pressed="false" hidden>立直</button>
+            <button class="kan-button" id="kanButton" type="button" aria-pressed="false" hidden>カン！</button>
             <div class="selected-panel">
               <small>選択中</small>
               <span class="selected-name" id="selectedName">未選択</span>
@@ -1619,6 +1621,7 @@
 
       document.getElementById("confirmButton").addEventListener("click", confirmSelection);
       document.getElementById("riichiButton").addEventListener("click", toggleRiichi);
+      document.getElementById("kanButton").addEventListener("click", toggleKan);
       document.getElementById("retryButton").addEventListener("click", retryQuestion);
       document.getElementById("nextButton").addEventListener("click", nextQuestionOrFinish);
       document.getElementById("previousNav").addEventListener("click", () => moveQuestion(-1));
@@ -1631,6 +1634,7 @@
       const response = state.session?.responses?.[String(question.id)];
       selectedIndex = response && Number.isInteger(response.index) ? response.index : null;
       riichiSelected = Boolean(response?.riichi);
+      specialChoice = response?.choice === "kan" ? "kan" : null;
       revealed = Boolean(response);
 
       document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${playQuestions.length} 問`;
@@ -1713,6 +1717,7 @@
     function selectTile(index) {
       if (revealed) return;
       selectedIndex = index;
+      specialChoice = null;
       renderHand(playQuestions[currentIndex]);
       renderDecision(playQuestions[currentIndex]);
     }
@@ -1724,40 +1729,63 @@
       renderDecision(question);
     }
 
+    function toggleKan() {
+      const question = playQuestions[currentIndex];
+      if (revealed || question.kanChoice !== true) return;
+      specialChoice = specialChoice === "kan" ? null : "kan";
+      if (specialChoice === "kan") {
+        selectedIndex = null;
+        riichiSelected = false;
+      }
+      renderHand(question);
+      renderDecision(question);
+    }
+
     function renderDecision(question) {
       const selected = selectedIndex === null ? null : question.hand[selectedIndex];
       const supportsRiichi = question.riichiChoice === true;
+      const supportsKan = question.kanChoice === true;
+      const kanSelected = specialChoice === "kan";
       const decision = document.getElementById("decision");
       const riichiButton = document.getElementById("riichiButton");
-      decision.classList.toggle("has-riichi", supportsRiichi);
+      const kanButton = document.getElementById("kanButton");
+      decision.classList.toggle("has-option", supportsRiichi || supportsKan);
       riichiButton.hidden = !supportsRiichi;
       riichiButton.disabled = revealed;
       riichiButton.setAttribute("aria-pressed", riichiSelected ? "true" : "false");
       riichiButton.textContent = riichiSelected ? "立直 選択中" : "立直";
-      document.getElementById("selectedName").textContent = selected ? tileName(selected) : "未選択";
-      document.getElementById("handCaption").innerHTML = selected
+      kanButton.hidden = !supportsKan;
+      kanButton.disabled = revealed;
+      kanButton.setAttribute("aria-pressed", kanSelected ? "true" : "false");
+      document.getElementById("selectedName").textContent = kanSelected ? "カン！" : selected ? tileName(selected) : "未選択";
+      document.getElementById("handCaption").innerHTML = kanSelected
+        ? "<strong>カン！</strong> を選択中"
+        : selected
         ? `<strong>${tileName(selected)}</strong> を選択中`
         : "切る牌をタップしてください";
       const confirmButton = document.getElementById("confirmButton");
-      confirmButton.disabled = selectedIndex === null || revealed;
-      confirmButton.textContent = supportsRiichi
+      confirmButton.disabled = (selectedIndex === null && !kanSelected) || revealed;
+      confirmButton.textContent = kanSelected
+        ? "カン！で回答"
+        : supportsRiichi
         ? riichiSelected ? "立直して切る" : "ダマで切る"
         : "この牌を切る";
       decision.hidden = revealed;
     }
 
     function confirmSelection() {
-      if (selectedIndex === null || revealed) return;
+      if ((selectedIndex === null && specialChoice !== "kan") || revealed) return;
       const question = playQuestions[currentIndex];
       const id = String(question.id);
       const correctDiscards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
       const graded = correctDiscards.length > 0;
-      const tile = question.hand[selectedIndex];
+      const tile = specialChoice === "kan" ? null : question.hand[selectedIndex];
       const correct = graded ? correctDiscards.includes(tile) : null;
       const answeredAt = new Date().toISOString();
       const response = {
         tile,
         index: selectedIndex,
+        ...(specialChoice === "kan" ? { choice: "kan" } : {}),
         ...(question.riichiChoice === true ? { riichi: riichiSelected } : {}),
         graded,
         correct,
@@ -1797,6 +1825,7 @@
       if (state.session?.responses) delete state.session.responses[id];
       selectedIndex = null;
       riichiSelected = false;
+      specialChoice = null;
       revealed = false;
       saveState();
       renderHand(question);
