@@ -463,6 +463,250 @@
 
     .fatal { color: #ffd4c8; }
 
+    body.menu-open {
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+      touch-action: pan-y;
+    }
+
+    body.play-open { overflow: hidden; }
+
+    .menu-app {
+      display: block;
+      padding-bottom: max(28px, env(safe-area-inset-bottom));
+    }
+
+    .menu-header {
+      min-height: 76px;
+      padding: 12px 66px 8px 2px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .menu-header h1 { font-size: clamp(29px, 9vw, 36px); }
+
+    .settings-tab-button {
+      width: 56px;
+      height: 56px;
+      padding: 4px;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      border: 1px solid rgba(242,210,123,.28);
+      border-radius: 14px;
+      color: var(--muted);
+      background: rgba(0,0,0,.25);
+      cursor: pointer;
+    }
+
+    .settings-tab-button.active {
+      color: #251607;
+      border-color: var(--gold-light);
+      background: linear-gradient(#f2d27b, #b77c20);
+    }
+
+    .settings-tab-button span { display: block; font-size: 19px; line-height: 1; }
+    .settings-tab-button small { display: block; margin-top: 5px; font-size: 10px; }
+
+    .menu-tabs {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 3px;
+      margin: 3px 0 12px;
+      padding: 4px;
+      border-radius: 18px;
+      background: rgba(0,0,0,.22);
+      position: relative;
+      z-index: 1;
+    }
+
+    .menu-tab {
+      min-width: 0;
+      min-height: 48px;
+      padding: 5px 1px;
+      border: 1px solid transparent;
+      border-radius: 14px;
+      color: var(--muted);
+      background: rgba(2,17,14,.7);
+      font-size: 9px;
+      line-height: 1.12;
+      cursor: pointer;
+    }
+
+    .menu-tab span { display: block; margin-bottom: 3px; font-size: 16px; line-height: 1; }
+    .menu-tab.active {
+      color: #251607;
+      border-color: var(--gold-light);
+      background: linear-gradient(#f2d27b, #b77c20);
+      box-shadow: 0 3px 0 #69410b;
+    }
+
+    .menu-panel {
+      padding: 14px;
+      border: 1px solid rgba(242,210,123,.28);
+      border-radius: 14px;
+      background: linear-gradient(145deg, rgba(12,47,40,.94), rgba(4,20,17,.94));
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 1;
+    }
+
+    .menu-panel h2 { margin: 0; color: var(--gold-light); font-size: 21px; }
+    .menu-panel h3 { margin: 0; font-size: 16px; }
+    .menu-lead { margin: 6px 0 14px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+
+    .mode-grid { display: grid; gap: 10px; }
+
+    .mode-card {
+      width: 100%;
+      min-height: 86px;
+      padding: 13px 16px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #e5a555;
+      border-radius: 12px;
+      color: #fff7e8;
+      background: linear-gradient(150deg, #b96328, #6f3214);
+      box-shadow: 0 4px 0 #3f1c0b, 0 8px 18px rgba(0,0,0,.28), inset 0 1px rgba(255,255,255,.18);
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .mode-card.all { background: linear-gradient(150deg, #9c531f, #4f2911); }
+    .mode-card strong { display: block; font-size: 24px; }
+    .mode-card small { display: block; margin-top: 4px; color: #f4d9b4; font-size: 11px; }
+    .mode-card b { color: var(--gold-light); font-size: 24px; }
+
+    .resume-card,
+    .menu-note {
+      margin-top: 12px;
+      padding: 12px;
+      border: 1px solid rgba(242,210,123,.18);
+      border-radius: 10px;
+      background: rgba(0,0,0,.2);
+    }
+
+    .menu-actions { display: flex; gap: 8px; margin-top: 10px; }
+
+    .menu-primary,
+    .menu-secondary,
+    .menu-danger {
+      min-height: 42px;
+      padding: 9px 13px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .menu-primary {
+      border: 1px solid #e5a555;
+      color: #fff8e6;
+      background: linear-gradient(#c86f2f, #853b16);
+    }
+
+    .menu-secondary {
+      border: 1px solid rgba(242,210,123,.3);
+      color: var(--ink);
+      background: rgba(2,17,14,.72);
+    }
+
+    .menu-danger {
+      border: 1px solid rgba(220,91,74,.55);
+      color: #ffd8d0;
+      background: rgba(81,24,18,.5);
+    }
+
+    .menu-primary:disabled,
+    .menu-secondary:disabled { opacity: .35; cursor: default; }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .summary-card {
+      padding: 12px 8px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 10px;
+      background: rgba(0,0,0,.2);
+      text-align: center;
+    }
+
+    .summary-card strong { display: block; color: var(--gold-light); font-size: 23px; }
+    .summary-card small { color: var(--muted); font-size: 10px; }
+
+    .question-list,
+    .ranking-list { display: grid; gap: 7px; margin-top: 12px; }
+
+    .question-row,
+    .ranking-row {
+      width: 100%;
+      padding: 10px 11px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 9px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 9px;
+      color: var(--ink);
+      background: rgba(0,0,0,.2);
+      text-align: left;
+    }
+
+    button.question-row { cursor: pointer; }
+    .question-row strong { color: var(--gold-light); font-size: 13px; }
+    .question-row span { min-width: 0; font-size: 11px; }
+    .question-row em { color: var(--muted); font-size: 10px; font-style: normal; white-space: nowrap; }
+    .ranking-row { grid-template-columns: 36px 1fr auto; }
+    .ranking-place { color: var(--gold-light); text-align: center; font-size: 17px; }
+    .ranking-row small { color: var(--muted); font-size: 10px; }
+    .ranking-score { text-align: right; }
+
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+      margin-top: 12px;
+    }
+
+    .catalog-tools button.active {
+      color: #251607;
+      border-color: var(--gold-light);
+      background: linear-gradient(#f2d27b, #b77c20);
+    }
+
+    .setting-group { margin-top: 15px; }
+    .setting-group label { display: block; margin-bottom: 6px; color: var(--muted); font-size: 12px; }
+    .setting-input {
+      width: 100%;
+      min-height: 43px;
+      padding: 9px 11px;
+      border: 1px solid rgba(242,210,123,.26);
+      border-radius: 8px;
+      color: var(--ink);
+      background: rgba(0,0,0,.26);
+      font: 700 14px "Yu Gothic", sans-serif;
+    }
+
+    .play-home {
+      min-height: 32px;
+      padding: 5px 8px;
+      border: 1px solid rgba(242,210,123,.3);
+      border-radius: 7px;
+      color: var(--gold-light);
+      background: rgba(0,0,0,.28);
+      font-size: 10px;
+      cursor: pointer;
+    }
+
+    .result-app { justify-content: center; }
+    .result-panel { text-align: center; }
+    .result-score { margin: 16px 0 4px; color: var(--gold-light); font-size: 46px; line-height: 1; }
+    .result-detail { color: var(--muted); font-size: 12px; line-height: 1.8; }
+
     @media (min-width: 540px) {
       body { padding: 16px 0; }
       .app {
@@ -497,7 +741,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 9;
+    const APP_VERSION = 10;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -505,9 +749,15 @@
     const app = document.getElementById("app");
 
     let questions = [];
+    let playQuestions = [];
     let currentIndex = 0;
     let selectedIndex = null;
     let revealed = false;
+    let currentScreen = "menu";
+    let activeTab = "challenge";
+    let problemSort = "default";
+    let rankingMode = "ten";
+    let lastResult = null;
     let state = loadState();
 
     document.documentElement.dataset.appVersion = String(APP_VERSION);
@@ -535,19 +785,61 @@
       });
     }
 
+    function defaultState() {
+      return {
+        currentId: 1,
+        responses: {},
+        wrongIds: [],
+        questionStats: {},
+        results: [],
+        settings: { nickname: "" },
+        session: null,
+      };
+    }
+
+    function normalizeState(value) {
+      const fallback = defaultState();
+      const source = value && typeof value === "object" ? value : {};
+      const normalized = {
+        ...fallback,
+        currentId: Number(source.currentId) || 1,
+        responses: source.responses && typeof source.responses === "object" ? source.responses : {},
+        wrongIds: Array.isArray(source.wrongIds) ? source.wrongIds.map(Number).filter(Number.isFinite) : [],
+        questionStats: source.questionStats && typeof source.questionStats === "object" ? source.questionStats : {},
+        results: Array.isArray(source.results) ? source.results.slice(0, 50) : [],
+        settings: {
+          ...fallback.settings,
+          ...(source.settings && typeof source.settings === "object" ? source.settings : {}),
+        },
+        session: source.session && typeof source.session === "object" ? source.session : null,
+      };
+      if (normalized.session) {
+        normalized.session.ids = Array.isArray(normalized.session.ids)
+          ? normalized.session.ids.map(Number).filter(Number.isFinite)
+          : [];
+        normalized.session.position = Math.max(0, Number(normalized.session.position) || 0);
+        normalized.session.answeredIds = Array.isArray(normalized.session.answeredIds)
+          ? normalized.session.answeredIds.map(Number).filter(Number.isFinite)
+          : [];
+        normalized.session.responses = normalized.session.responses && typeof normalized.session.responses === "object"
+          ? normalized.session.responses
+          : {};
+        if (!normalized.session.ids.length) normalized.session = null;
+      }
+      return normalized;
+    }
+
     function loadState() {
       try {
         const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
-        return parsed && typeof parsed === "object"
-          ? { currentId: parsed.currentId || 1, responses: parsed.responses || {} }
-          : { currentId: 1, responses: {} };
+        return normalizeState(parsed);
       } catch {
-        return { currentId: 1, responses: {} };
+        return defaultState();
       }
     }
 
     function saveState() {
-      state.currentId = questions[currentIndex]?.id || 1;
+      state.currentId = playQuestions[currentIndex]?.id || state.currentId || 1;
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     }
 
@@ -617,14 +909,391 @@
       })));
     }
 
-    function buildShell() {
+    function sessionLabel(mode) {
+      return mode === "ten" ? "10問" : mode === "all" ? "全問" : mode === "review" ? "復習" : "問題確認";
+    }
+
+    function formatElapsed(seconds) {
+      const value = Math.max(0, Math.round(Number(seconds) || 0));
+      const minutes = Math.floor(value / 60);
+      const rest = value % 60;
+      return minutes ? `${minutes}分${String(rest).padStart(2, "0")}秒` : `${rest}秒`;
+    }
+
+    function setScreen(screen) {
+      currentScreen = screen;
+      document.body.classList.toggle("menu-open", screen !== "play");
+      document.body.classList.toggle("play-open", screen === "play");
+      if (screen !== "play") document.body.classList.remove("reviewing");
+    }
+
+    function renderMenu(tab = activeTab) {
+      activeTab = tab;
+      setScreen("menu");
+      app.className = "app menu-app";
+      const tabs = [
+        ["challenge", "⚡", "挑戦"],
+        ["review", "↻", "復習"],
+        ["problems", "▤", "問題一覧"],
+        ["analysis", "↗", "自己分析"],
+        ["ranking", "♛", "順位"],
+      ];
+      app.innerHTML = `
+        <header class="menu-header">
+          <p class="brand-kicker">ZUNDAMON</p>
+          <h1>ずんだもん何切る</h1>
+          <button class="settings-tab-button${activeTab === "settings" ? " active" : ""}" id="settingsTab" type="button">
+            <span>⚙</span><small>設定</small>
+          </button>
+        </header>
+        <nav class="menu-tabs" aria-label="メニュー">
+          ${tabs.map(([id, icon, label]) => `
+            <button class="menu-tab${activeTab === id ? " active" : ""}" type="button" data-tab="${id}">
+              <span>${icon}</span>${label}
+            </button>`).join("")}
+        </nav>
+        <div id="menuPanel"></div>`;
+
+      app.querySelectorAll("[data-tab]").forEach(button => {
+        button.addEventListener("click", () => renderMenu(button.dataset.tab));
+      });
+      document.getElementById("settingsTab").addEventListener("click", () => {
+        renderMenu(activeTab === "settings" ? "challenge" : "settings");
+      });
+      renderMenuPanel();
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+
+    function renderMenuPanel() {
+      const panel = document.getElementById("menuPanel");
+      if (activeTab === "challenge") renderChallengePanel(panel);
+      if (activeTab === "review") renderReviewPanel(panel);
+      if (activeTab === "problems") renderProblemPanel(panel);
+      if (activeTab === "analysis") renderAnalysisPanel(panel);
+      if (activeTab === "ranking") renderRankingPanel(panel);
+      if (activeTab === "settings") renderSettingsPanel(panel);
+    }
+
+    function renderChallengePanel(panel) {
+      const answered = Object.keys(state.responses).length;
+      const activeSession = state.session && state.session.mode !== "single" ? state.session : null;
+      panel.innerHTML = `
+        <section class="menu-panel">
+          <h2>挑戦</h2>
+          <p class="menu-lead">出題タイプを選んですぐ開始できます。</p>
+          <div class="mode-grid">
+            <button class="mode-card" type="button" data-start-mode="ten">
+              <span><strong>10問</strong><small>全問題からランダム出題</small></span><b>▶</b>
+            </button>
+            <button class="mode-card all" type="button" data-start-mode="all">
+              <span><strong>全問</strong><small>${questions.length}問を問題番号順に出題</small></span><b>▶</b>
+            </button>
+          </div>
+          ${activeSession ? `
+            <div class="resume-card">
+              <h3>途中の${sessionLabel(activeSession.mode)}</h3>
+              <p class="menu-lead">${Object.keys(activeSession.responses || {}).length} / ${activeSession.ids.length} 問回答済み</p>
+              <button class="menu-primary" id="resumeSession" type="button">続きから</button>
+            </div>` : ""}
+          <div class="summary-grid">
+            <div class="summary-card"><strong>${answered}</strong><small>回答した問題</small></div>
+            <div class="summary-card"><strong>${state.wrongIds.length}</strong><small>復習中</small></div>
+          </div>
+        </section>`;
+      panel.querySelectorAll("[data-start-mode]").forEach(button => {
+        button.addEventListener("click", () => startChallenge(button.dataset.startMode));
+      });
+      document.getElementById("resumeSession")?.addEventListener("click", resumeSession);
+    }
+
+    function renderReviewPanel(panel) {
+      const reviewQuestions = state.wrongIds
+        .map(id => questions.find(question => question.id === id))
+        .filter(Boolean);
+      panel.innerHTML = `
+        <section class="menu-panel">
+          <h2>復習</h2>
+          <p class="menu-lead">不正解だった問題をまとめて解き直します。</p>
+          <button class="menu-primary" id="startReview" type="button" ${reviewQuestions.length ? "" : "disabled"}>${reviewQuestions.length}問を復習</button>
+          <div class="question-list" id="reviewList"></div>
+        </section>`;
+      document.getElementById("startReview").addEventListener("click", startReview);
+      const list = document.getElementById("reviewList");
+      if (!reviewQuestions.length) {
+        list.innerHTML = `<div class="menu-note"><p class="menu-lead">復習する問題はありません。</p></div>`;
+        return;
+      }
+      reviewQuestions.forEach(question => list.append(createQuestionRow(question)));
+    }
+
+    function renderProblemPanel(panel) {
+      const sorted = [...questions].sort((a, b) => {
+        if (problemSort === "default") return a.id - b.id;
+        const aStat = state.questionStats[String(a.id)] || { total: 0, correct: 0 };
+        const bStat = state.questionStats[String(b.id)] || { total: 0, correct: 0 };
+        const aRate = aStat.total ? aStat.correct / aStat.total : 2;
+        const bRate = bStat.total ? bStat.correct / bStat.total : 2;
+        return aRate - bRate || bStat.total - aStat.total || a.id - b.id;
+      });
+      panel.innerHTML = `
+        <section class="menu-panel">
+          <h2>問題一覧</h2>
+          <p class="menu-lead">問題をタップすると、その問題だけ確認できます。</p>
+          <div class="catalog-tools">
+            <button class="menu-secondary${problemSort === "default" ? " active" : ""}" type="button" data-sort="default">問題番号順</button>
+            <button class="menu-secondary${problemSort === "weak" ? " active" : ""}" type="button" data-sort="weak">苦手順</button>
+          </div>
+          <div class="question-list" id="problemList"></div>
+        </section>`;
+      panel.querySelectorAll("[data-sort]").forEach(button => {
+        button.addEventListener("click", () => {
+          problemSort = button.dataset.sort;
+          renderMenu("problems");
+        });
+      });
+      const list = document.getElementById("problemList");
+      sorted.forEach(question => list.append(createQuestionRow(question, true)));
+    }
+
+    function createQuestionRow(question, showRate = false) {
+      const response = state.responses[String(question.id)];
+      const stat = state.questionStats[String(question.id)] || { total: 0, correct: 0 };
+      const row = document.createElement("button");
+      row.type = "button";
+      row.className = "question-row";
+      const number = document.createElement("strong");
+      number.textContent = `第${question.id}問`;
+      const scene = document.createElement("span");
+      scene.textContent = `${roundName(question.round)} ${WIND_NAMES[question.seat] || "―"}家 ${question.turn ?? "―"}巡目`;
+      const status = document.createElement("em");
+      if (showRate && stat.total) status.textContent = `${Math.round(stat.correct / stat.total * 100)}% (${stat.correct}/${stat.total})`;
+      else if (!response) status.textContent = "未回答";
+      else if (response.correct === true) status.textContent = "正解";
+      else if (response.correct === false) status.textContent = "不正解";
+      else status.textContent = "採点待ち";
+      row.append(number, scene, status);
+      row.addEventListener("click", () => openSingleQuestion(question.id));
+      return row;
+    }
+
+    function renderAnalysisPanel(panel) {
+      const stats = Object.values(state.questionStats);
+      const attempts = stats.reduce((sum, stat) => sum + (Number(stat.total) || 0), 0);
+      const correct = stats.reduce((sum, stat) => sum + (Number(stat.correct) || 0), 0);
+      const rate = attempts ? Math.round(correct / attempts * 100) : 0;
+      const recent = state.results.slice(0, 5);
+      panel.innerHTML = `
+        <section class="menu-panel">
+          <h2>自己分析</h2>
+          <p class="menu-lead">この端末に保存された回答履歴です。</p>
+          <div class="summary-grid">
+            <div class="summary-card"><strong>${Object.keys(state.responses).length}</strong><small>回答問題数</small></div>
+            <div class="summary-card"><strong>${attempts ? `${rate}%` : "--"}</strong><small>採点済み正答率</small></div>
+            <div class="summary-card"><strong>${attempts}</strong><small>採点回数</small></div>
+            <div class="summary-card"><strong>${state.wrongIds.length}</strong><small>復習中</small></div>
+          </div>
+          <h3 style="margin-top:16px">最近の挑戦</h3>
+          <div class="ranking-list" id="recentResults"></div>
+        </section>`;
+      const list = document.getElementById("recentResults");
+      if (!recent.length) {
+        list.innerHTML = `<div class="menu-note"><p class="menu-lead">まだ挑戦記録がありません。</p></div>`;
+        return;
+      }
+      recent.forEach((result, index) => list.append(createResultRow(result, index + 1, false)));
+    }
+
+    function renderRankingPanel(panel) {
+      const modes = [["ten", "10問"], ["all", "全問"]];
+      const rows = state.results
+        .filter(result => result.mode === rankingMode)
+        .sort((a, b) => {
+          const aRate = a.graded ? a.correct / a.graded : -1;
+          const bRate = b.graded ? b.correct / b.graded : -1;
+          return bRate - aRate || a.elapsedSeconds - b.elapsedSeconds;
+        })
+        .slice(0, 20);
+      panel.innerHTML = `
+        <section class="menu-panel">
+          <h2>順位</h2>
+          <p class="menu-lead">この端末内の挑戦記録を、正答率とタイムで並べます。</p>
+          <div class="catalog-tools">
+            ${modes.map(([id, label]) => `<button class="menu-secondary${rankingMode === id ? " active" : ""}" type="button" data-ranking-mode="${id}">${label}</button>`).join("")}
+          </div>
+          <div class="ranking-list" id="rankingList"></div>
+        </section>`;
+      panel.querySelectorAll("[data-ranking-mode]").forEach(button => {
+        button.addEventListener("click", () => {
+          rankingMode = button.dataset.rankingMode;
+          renderMenu("ranking");
+        });
+      });
+      const list = document.getElementById("rankingList");
+      if (!rows.length) {
+        list.innerHTML = `<div class="menu-note"><p class="menu-lead">この出題タイプの記録はまだありません。</p></div>`;
+        return;
+      }
+      rows.forEach((result, index) => list.append(createResultRow(result, index + 1, true)));
+    }
+
+    function createResultRow(result, place, showPlace) {
+      const row = document.createElement("div");
+      row.className = "ranking-row";
+      const rank = document.createElement("strong");
+      rank.className = "ranking-place";
+      rank.textContent = showPlace ? String(place) : sessionLabel(result.mode);
+      const detail = document.createElement("div");
+      const title = document.createElement("div");
+      title.textContent = `${result.correct ?? 0} / ${result.graded ?? 0} 正解`;
+      const date = document.createElement("small");
+      date.textContent = new Date(result.finishedAt).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+      detail.append(title, date);
+      const score = document.createElement("div");
+      score.className = "ranking-score";
+      score.textContent = result.graded ? `${Math.round(result.correct / result.graded * 100)}%` : "採点待ち";
+      const time = document.createElement("small");
+      time.textContent = formatElapsed(result.elapsedSeconds);
+      score.append(document.createElement("br"), time);
+      row.append(rank, detail, score);
+      return row;
+    }
+
+    function renderSettingsPanel(panel) {
+      panel.innerHTML = `
+        <section class="menu-panel">
+          <h2>設定</h2>
+          <div class="setting-group">
+            <label for="nicknameInput">ニックネーム</label>
+            <input class="setting-input" id="nicknameInput" maxlength="16" autocomplete="nickname">
+          </div>
+          <div class="setting-group">
+            <h3>バックアップ</h3>
+            <p class="menu-lead">回答履歴・復習・設定をファイルで保存、復元できます。</p>
+            <div class="menu-actions">
+              <button class="menu-secondary" id="backupDownload" type="button">保存</button>
+              <button class="menu-secondary" id="backupRestore" type="button">復元</button>
+              <input id="backupFile" type="file" accept="application/json" hidden>
+            </div>
+          </div>
+          <div class="setting-group">
+            <h3>管理</h3>
+            <div class="menu-actions">
+              <a class="menu-secondary" href="admin.html" style="display:inline-flex;align-items:center;text-decoration:none">管理画面</a>
+              <button class="menu-danger" id="clearProgress" type="button">進捗をリセット</button>
+            </div>
+          </div>
+        </section>`;
+      const nickname = document.getElementById("nicknameInput");
+      nickname.value = state.settings.nickname || "";
+      nickname.addEventListener("input", () => {
+        state.settings.nickname = nickname.value.slice(0, 16);
+        saveState();
+      });
+      document.getElementById("backupDownload").addEventListener("click", downloadBackup);
+      document.getElementById("backupRestore").addEventListener("click", () => document.getElementById("backupFile").click());
+      document.getElementById("backupFile").addEventListener("change", restoreBackup);
+      document.getElementById("clearProgress").addEventListener("click", () => {
+        if (!window.confirm("回答履歴・復習・順位をすべて消去します。よろしいですか？")) return;
+        state = defaultState();
+        saveState();
+        renderMenu("settings");
+      });
+    }
+
+    function downloadBackup() {
+      saveState();
+      const payload = JSON.stringify({ app: "zundamon-nanikiru", version: APP_VERSION, savedAt: new Date().toISOString(), state }, null, 2);
+      const url = URL.createObjectURL(new Blob([payload], { type: "application/json" }));
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `zundamon-nanikiru-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    async function restoreBackup(event) {
+      const file = event.target.files?.[0];
+      if (!file) return;
+      try {
+        const parsed = JSON.parse(await file.text());
+        state = normalizeState(parsed.state || parsed);
+        state.session = null;
+        saveState();
+        renderMenu("settings");
+      } catch {
+        window.alert("バックアップファイルを読み込めませんでした。");
+      }
+    }
+
+    function shuffledIds() {
+      const ids = questions.map(question => question.id);
+      for (let index = ids.length - 1; index > 0; index -= 1) {
+        const swap = Math.floor(Math.random() * (index + 1));
+        [ids[index], ids[swap]] = [ids[swap], ids[index]];
+      }
+      return ids;
+    }
+
+    function createSession(mode, ids) {
+      state.session = {
+        mode,
+        ids,
+        position: 0,
+        startedAt: new Date().toISOString(),
+        answeredIds: [],
+        responses: {},
+      };
+      saveState();
+      resumeSession();
+    }
+
+    function startChallenge(mode) {
+      const ids = mode === "ten" ? shuffledIds().slice(0, Math.min(10, questions.length)) : questions.map(question => question.id);
+      createSession(mode, ids);
+    }
+
+    function startReview() {
+      const ids = state.wrongIds.filter(id => questions.some(question => question.id === id));
+      if (ids.length) createSession("review", ids);
+    }
+
+    function openSingleQuestion(id) {
+      createSession("single", [Number(id)]);
+    }
+
+    function resumeSession() {
+      if (!state.session) return renderMenu("challenge");
+      playQuestions = state.session.ids
+        .map(id => questions.find(question => question.id === id))
+        .filter(Boolean);
+      if (!playQuestions.length) {
+        state.session = null;
+        saveState();
+        return renderMenu("challenge");
+      }
+      state.session.ids = playQuestions.map(question => question.id);
+      currentIndex = Math.min(Math.max(0, state.session.position || 0), playQuestions.length - 1);
+      setScreen("play");
+      app.className = "app play-app";
+      buildPlayShell();
+      renderQuestion();
+    }
+
+    function goMenu() {
+      if (state.session?.mode === "single") state.session = null;
+      else if (state.session) state.session.position = currentIndex;
+      saveState();
+      renderMenu("challenge");
+    }
+
+    function buildPlayShell() {
       app.innerHTML = `
         <header class="topbar">
           <div>
             <p class="brand-kicker">ZUNDAMON</p>
             <h1>ずんだもん何切る</h1>
           </div>
-          <div class="top-actions"><div class="counter" id="counter"></div><a class="admin-link" href="admin.html">管理</a></div>
+          <div class="top-actions"><button class="play-home" id="homeButton" type="button">メニュー</button><div class="counter" id="counter"></div></div>
         </header>
         <div class="progress" aria-label="回答進捗"><span id="progressBar"></span></div>
         <main class="board">
@@ -681,18 +1350,19 @@
 
       document.getElementById("confirmButton").addEventListener("click", confirmSelection);
       document.getElementById("retryButton").addEventListener("click", retryQuestion);
-      document.getElementById("nextButton").addEventListener("click", () => moveQuestion(1));
+      document.getElementById("nextButton").addEventListener("click", nextQuestionOrFinish);
       document.getElementById("previousNav").addEventListener("click", () => moveQuestion(-1));
       document.getElementById("nextNav").addEventListener("click", () => moveQuestion(1));
+      document.getElementById("homeButton").addEventListener("click", goMenu);
     }
 
     function renderQuestion() {
-      const question = questions[currentIndex];
-      const response = state.responses[String(question.id)];
+      const question = playQuestions[currentIndex];
+      const response = state.session?.responses?.[String(question.id)];
       selectedIndex = response && Number.isInteger(response.index) ? response.index : null;
       revealed = Boolean(response);
 
-      document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${questions.length} 問`;
+      document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${playQuestions.length} 問`;
       document.getElementById("round").textContent = roundName(question.round);
       document.getElementById("seat").textContent = `${WIND_NAMES[question.seat] || "―"}家`;
       document.getElementById("turn").textContent = `${question.turn ?? "―"}巡目`;
@@ -711,8 +1381,10 @@
       renderProgress();
 
       document.getElementById("previousNav").disabled = currentIndex === 0;
-      document.getElementById("nextNav").disabled = currentIndex === questions.length - 1;
-      document.getElementById("nextButton").disabled = currentIndex === questions.length - 1;
+      document.getElementById("nextNav").disabled = currentIndex === playQuestions.length - 1;
+      document.getElementById("nextButton").disabled = false;
+      document.getElementById("nextButton").textContent = currentIndex === playQuestions.length - 1 && state.session?.mode !== "single" ? "結果へ" : currentIndex === playQuestions.length - 1 ? "メニューへ" : "次の問題";
+      if (state.session) state.session.position = currentIndex;
       saveState();
       window.scrollTo({ top: 0, behavior: "instant" });
     }
@@ -767,8 +1439,8 @@
     function selectTile(index) {
       if (revealed) return;
       selectedIndex = index;
-      renderHand(questions[currentIndex]);
-      renderDecision(questions[currentIndex]);
+      renderHand(playQuestions[currentIndex]);
+      renderDecision(playQuestions[currentIndex]);
     }
 
     function renderDecision(question) {
@@ -783,12 +1455,38 @@
 
     function confirmSelection() {
       if (selectedIndex === null || revealed) return;
-      const question = questions[currentIndex];
-      state.responses[String(question.id)] = {
-        tile: question.hand[selectedIndex],
+      const question = playQuestions[currentIndex];
+      const id = String(question.id);
+      const correctDiscards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
+      const graded = correctDiscards.length > 0;
+      const tile = question.hand[selectedIndex];
+      const correct = graded ? correctDiscards.includes(tile) : null;
+      const answeredAt = new Date().toISOString();
+      const response = {
+        tile,
         index: selectedIndex,
-        answeredAt: new Date().toISOString()
+        graded,
+        correct,
+        answeredAt,
       };
+      const alreadyAnswered = state.session?.answeredIds?.includes(question.id);
+      state.responses[id] = response;
+      if (state.session) {
+        state.session.responses[id] = response;
+        if (!alreadyAnswered) state.session.answeredIds.push(question.id);
+      }
+      if (graded && !alreadyAnswered) {
+        const stat = state.questionStats[id] || { total: 0, correct: 0 };
+        stat.total += 1;
+        if (correct) stat.correct += 1;
+        state.questionStats[id] = stat;
+      }
+      if (graded) {
+        const wrong = new Set(state.wrongIds);
+        if (correct) wrong.delete(question.id);
+        else wrong.add(question.id);
+        state.wrongIds = [...wrong];
+      }
       revealed = true;
       saveState();
       renderHand(question);
@@ -798,8 +1496,11 @@
     }
 
     function retryQuestion() {
-      const question = questions[currentIndex];
-      delete state.responses[String(question.id)];
+      const question = playQuestions[currentIndex];
+      const id = String(question.id);
+      const sessionResponse = state.session?.responses?.[id];
+      if (state.responses[id]?.answeredAt === sessionResponse?.answeredAt) delete state.responses[id];
+      if (state.session?.responses) delete state.session.responses[id];
       selectedIndex = null;
       revealed = false;
       saveState();
@@ -819,7 +1520,7 @@
       explanation.innerHTML = "";
       if (revealed) appendLinkedText(explanation, question.explanation);
       const correctDiscards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
-      const response = state.responses[String(question.id)];
+      const response = state.session?.responses?.[String(question.id)];
       if (revealed && response && correctDiscards.length) {
         const correct = correctDiscards.includes(response.tile);
         feedback.hidden = false;
@@ -835,16 +1536,75 @@
     }
 
     function renderProgress() {
-      const answered = Object.keys(state.responses).filter(id => questions.some(question => String(question.id) === id)).length;
-      document.getElementById("answeredCount").textContent = `${answered} / ${questions.length}`;
-      document.getElementById("progressBar").style.width = `${questions.length ? answered / questions.length * 100 : 0}%`;
+      const answered = Object.keys(state.session?.responses || {}).length;
+      document.getElementById("answeredCount").textContent = `${answered} / ${playQuestions.length}`;
+      document.getElementById("progressBar").style.width = `${playQuestions.length ? answered / playQuestions.length * 100 : 0}%`;
     }
 
     function moveQuestion(delta) {
       const next = currentIndex + delta;
-      if (next < 0 || next >= questions.length) return;
+      if (next < 0 || next >= playQuestions.length) return;
       currentIndex = next;
+      if (state.session) state.session.position = currentIndex;
       renderQuestion();
+    }
+
+    function nextQuestionOrFinish() {
+      if (currentIndex < playQuestions.length - 1) return moveQuestion(1);
+      if (state.session?.mode === "single") return goMenu();
+      finishSession();
+    }
+
+    function finishSession() {
+      if (!state.session) return renderMenu("challenge");
+      const finishedSession = state.session;
+      const sessionQuestions = finishedSession.ids
+        .map(id => questions.find(question => question.id === id))
+        .filter(Boolean);
+      const responses = finishedSession.responses || {};
+      const gradedResponses = sessionQuestions
+        .map(question => responses[String(question.id)])
+        .filter(response => response?.graded);
+      const answered = sessionQuestions.filter(question => responses[String(question.id)]).length;
+      const correct = gradedResponses.filter(response => response.correct).length;
+      const elapsedSeconds = Math.max(0, (Date.now() - new Date(finishedSession.startedAt).getTime()) / 1000);
+      const result = {
+        mode: finishedSession.mode,
+        total: sessionQuestions.length,
+        answered,
+        graded: gradedResponses.length,
+        correct,
+        elapsedSeconds,
+        finishedAt: new Date().toISOString(),
+      };
+      if (result.mode === "ten" || result.mode === "all") {
+        state.results.unshift(result);
+        state.results = state.results.slice(0, 50);
+      }
+      state.session = null;
+      lastResult = result;
+      saveState();
+      renderResult(result);
+    }
+
+    function renderResult(result) {
+      setScreen("result");
+      app.className = "app menu-app result-app";
+      const percentage = result.graded ? Math.round(result.correct / result.graded * 100) : null;
+      app.innerHTML = `
+        <section class="menu-panel result-panel">
+          <p class="brand-kicker">RESULT</p>
+          <h2>${sessionLabel(result.mode)} 完了</h2>
+          <div class="result-score">${percentage === null ? "--" : `${percentage}%`}</div>
+          <p class="result-detail">${result.answered} / ${result.total} 問回答<br>${result.correct} / ${result.graded} 問正解<br>タイム ${formatElapsed(result.elapsedSeconds)}${result.graded < result.answered ? `<br>採点待ち ${result.answered - result.graded}問` : ""}</p>
+          <div class="menu-actions" style="justify-content:center;margin-top:18px">
+            <button class="menu-secondary" id="resultMenu" type="button">メニュー</button>
+            ${result.mode === "ten" || result.mode === "all" ? `<button class="menu-primary" id="resultRetry" type="button">再挑戦</button>` : ""}
+          </div>
+        </section>`;
+      document.getElementById("resultMenu").addEventListener("click", () => renderMenu("challenge"));
+      document.getElementById("resultRetry")?.addEventListener("click", () => startChallenge(result.mode));
+      window.scrollTo({ top: 0, behavior: "instant" });
     }
 
     function showFatal(error) {
@@ -854,11 +1614,11 @@
     }
 
     document.addEventListener("keydown", event => {
-      if (!questions.length) return;
+      if (!questions.length || currentScreen !== "play") return;
       if (event.key === "ArrowLeft") moveQuestion(-1);
       if (event.key === "ArrowRight") moveQuestion(1);
       if (event.key === "Enter" && selectedIndex !== null && !revealed) confirmSelection();
-      if (event.key === "Escape" && revealed) retryQuestion();
+      if (event.key === "Escape") goMenu();
     });
 
     const baseQuestionsRequest = fetch("public/questions.json", { cache: "no-store" }).then(response => {
@@ -877,10 +1637,8 @@
       questions = mergeOverrides(baseQuestions, overrides)
         .filter(question => Array.isArray(question.hand) && question.hand.length);
       if (!questions.length) throw new Error("構造化済みの問題がありません。 ");
-      const savedIndex = questions.findIndex(question => question.id === state.currentId);
-      currentIndex = savedIndex >= 0 ? savedIndex : 0;
-      buildShell();
-      renderQuestion();
+      state = normalizeState(state);
+      renderMenu("challenge");
     }).catch(showFatal);
   </script>
 </body>

@@ -206,7 +206,18 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 9;/);
+  assert.match(source, /const APP_VERSION = 10;/);
+});
+
+test("client has the Ensuku-style menu without an ura mode", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  for (const label of ["挑戦", "復習", "問題一覧", "自己分析", "順位", "設定"]) {
+    assert.match(source, new RegExp(label));
+  }
+  assert.match(source, /data-start-mode="ten"/);
+  assert.match(source, /data-start-mode="all"/);
+  assert.match(source, /id="homeButton"[^>]*>メニュー</);
+  assert.doesNotMatch(source, /裏モード/);
 });
 
 test("question 1 contains a red five-pin", async () => {
