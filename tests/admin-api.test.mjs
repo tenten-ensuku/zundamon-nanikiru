@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 25;/);
+  assert.match(source, /const APP_VERSION = 26;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -388,8 +388,9 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
   assert.equal(question.correctRiichi, true);
   assert.equal(question.sourceUrl, "https://youtu.be/a3yIRViy5gc");
   assert.equal(question.sourceLabel, "YouTube動画を開く");
-  assert.match(question.explanation, /3・6・9索待ちの三面張/);
-  assert.match(question.explanation, /北切りリーチを優先/);
+  assert.match(question.explanation, /3s・6s・9s待ちの三面張/);
+  assert.match(question.explanation, /4z切りリーチを優先/);
+  assert.doesNotMatch(question.explanation, /[萬万筒索]/);
 
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /typeof question\.correctRiichi === "boolean"/);
@@ -411,7 +412,7 @@ test("question 167 reproduces both left-called chi melds and grades six man", as
     { round: "east1", seat: "west", turn: 6, honba: 0, points: 25000 },
   );
   assert.equal(question.dora, "6s");
-  assert.equal(question.note, "6索をチーした直後（ツモ牌表記なし）");
+  assert.equal(question.note, "6sをチーした直後（ツモ牌表記なし）");
   assert.deepEqual(question.melds, [
     { type: "chi", open: true, calledIndex: 0, tiles: ["6s", "4s", "0s"] },
     { type: "chi", open: true, calledIndex: 0, tiles: ["3p", "4p", "5p"] },
@@ -419,8 +420,9 @@ test("question 167 reproduces both left-called chi melds and grades six man", as
   assert.deepEqual(question.correctDiscards, ["6m"]);
   assert.equal(question.sourceUrl, "https://youtu.be/ADWMMNXtryw");
   assert.equal(question.sourceLabel, "YouTube動画を開く");
-  assert.match(question.explanation, /4萬4枚と7萬1枚の計5枚/);
+  assert.match(question.explanation, /4m4枚と7m1枚の計5枚/);
   assert.match(question.explanation, /40符となり1300・2600/);
+  assert.doesNotMatch(question.explanation, /[萬万筒索]/);
 });
 
 test("every concealed quad offers kan as a standalone answer", async () => {
