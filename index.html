@@ -496,16 +496,8 @@
     }
 
     .content-link { margin: .12em .16em; background: rgba(7,35,29,.78); color: var(--gold-light); }
+    .link-icon { width: 1.15em; height: 1.15em; flex: 0 0 auto; }
     .source-video-link:focus-visible, .content-link:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 2px; }
-
-    .source-link {
-      margin-top: 11px;
-      display: inline-block;
-      color: var(--muted);
-      font-family: "Yu Gothic", "YuGothic", sans-serif;
-      font-size: 11px;
-      font-weight: 600;
-    }
 
     .bottom-nav {
       margin-top: auto;
@@ -964,7 +956,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 36;
+    const APP_VERSION = 37;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -1124,11 +1116,46 @@
       const host = parsedUrl.hostname.replace(/^www\./, "");
       if (host === "youtu.be" || host === "youtube.com" || host.endsWith(".youtube.com")) return { label: "YouTubeを開く", kind: "youtube" };
       if (host === "docs.google.com") {
-        if (parsedUrl.pathname.startsWith("/document/")) return { label: "Googleドキュメントを開く", kind: "google" };
-        if (parsedUrl.pathname.startsWith("/spreadsheets/")) return { label: "Googleスプレッドシートを開く", kind: "google" };
-        if (parsedUrl.pathname.startsWith("/presentation/")) return { label: "Googleスライドを開く", kind: "google" };
+        if (parsedUrl.pathname.startsWith("/document/")) return { label: "Googleドキュメントを開く", kind: "google-doc" };
+        if (parsedUrl.pathname.startsWith("/spreadsheets/")) return { label: "Googleスプレッドシートを開く", kind: "google-doc" };
+        if (parsedUrl.pathname.startsWith("/presentation/")) return { label: "Googleスライドを開く", kind: "google-doc" };
       }
       return { label: `${host}を開く`, kind: "external" };
+    }
+
+    function createLinkIcon(kind) {
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("class", `link-icon link-icon--${kind}`);
+      svg.setAttribute("viewBox", "0 0 24 24");
+      svg.setAttribute("aria-hidden", "true");
+      if (kind === "youtube") {
+        const box = document.createElementNS(svg.namespaceURI, "path");
+        box.setAttribute("fill", "#ff334f");
+        box.setAttribute("d", "M23 12c0-2.2-.3-3.7-.8-4.7-.4-.8-1.1-1.4-1.9-1.6C18.8 5.2 12 5.2 12 5.2s-6.8 0-8.3.5c-.8.2-1.5.8-1.9 1.6C1.3 8.3 1 9.8 1 12s.3 3.7.8 4.7c.4.8 1.1 1.4 1.9 1.6 1.5.5 8.3.5 8.3.5s6.8 0 8.3-.5c.8-.2 1.5-.8 1.9-1.6.5-1 .8-2.5.8-4.7Z");
+        const play = document.createElementNS(svg.namespaceURI, "path");
+        play.setAttribute("fill", "#fff");
+        play.setAttribute("d", "m10 15.8 5.6-3.8L10 8.2v7.6Z");
+        svg.append(box, play);
+      } else if (kind === "google-doc") {
+        const page = document.createElementNS(svg.namespaceURI, "path");
+        page.setAttribute("fill", "#4285f4");
+        page.setAttribute("d", "M6 2h8l4 4v16H6V2Zm8 1.8V7h3.2L14 3.8Z");
+        const lines = document.createElementNS(svg.namespaceURI, "path");
+        lines.setAttribute("fill", "#fff");
+        lines.setAttribute("d", "M8.5 10h7v1.5h-7V10Zm0 3h7v1.5h-7V13Zm0 3h5.2v1.5H8.5V16Z");
+        svg.append(page, lines);
+      } else {
+        const external = document.createElementNS(svg.namespaceURI, "path");
+        external.setAttribute("fill", "currentColor");
+        external.setAttribute("d", "M5 4h7v2H7v11h11v-5h2v7H5V4Zm9 0h6v6h-2V7.4l-7.3 7.3-1.4-1.4L16.6 6H14V4Z");
+        svg.append(external);
+      }
+      return svg;
+    }
+
+    function setLinkContent(link, metadata, label = metadata.label) {
+      link.replaceChildren(createLinkIcon(metadata.kind), document.createTextNode(label));
+      link.setAttribute("aria-label", label);
     }
 
     function appendLinkedText(container, value) {
@@ -1147,8 +1174,7 @@
             link.target = "_blank";
             link.rel = "noreferrer";
             link.className = `content-link content-link--${metadata.kind}`;
-            link.textContent = `↗ ${metadata.label}`;
-            link.setAttribute("aria-label", metadata.label);
+            setLinkContent(link, metadata);
             link.title = url;
             container.append(link);
             if (trailing) container.append(document.createTextNode(trailing));
@@ -1176,7 +1202,7 @@
     }
 
     function sessionLabel(mode) {
-      return mode === "ten" ? "10問" : mode === "all" ? "全問" : mode === "review" ? "復習" : "問題確認";
+      return mode === "ten" ? "10問" : mode === "all" ? "全問" : mode === "review" ? "復習" : mode === "catalog" ? "問題一覧" : "問題確認";
     }
 
     function formatElapsed(seconds) {
@@ -1365,7 +1391,7 @@
       openButton.type = "button";
       openButton.className = "catalog-question";
       openButton.setAttribute("aria-label", `第${question.id}問を開く`);
-      openButton.addEventListener("click", () => openSingleQuestion(question.id));
+      openButton.addEventListener("click", () => openCatalogQuestion(question.id));
 
       const tilesLine = document.createElement("div");
       tilesLine.className = "catalog-tiles-line";
@@ -1613,11 +1639,11 @@
       return ids;
     }
 
-    function createSession(mode, ids) {
+    function createSession(mode, ids, position = 0) {
       state.session = {
         mode,
         ids,
-        position: 0,
+        position,
         startedAt: new Date().toISOString(),
         answeredIds: [],
         responses: {},
@@ -1641,6 +1667,12 @@
       createSession("single", [Number(id)]);
     }
 
+    function openCatalogQuestion(id) {
+      const ids = questions.map(question => question.id);
+      const position = ids.indexOf(Number(id));
+      if (position >= 0) createSession("catalog", ids, position);
+    }
+
     function resumeSession() {
       if (!state.session) return renderMenu("challenge");
       playQuestions = state.session.ids
@@ -1660,7 +1692,7 @@
     }
 
     function goMenu() {
-      if (state.session?.mode === "single") state.session = null;
+      if (state.session?.mode === "single" || state.session?.mode === "catalog") state.session = null;
       else if (state.session) state.session.position = currentIndex;
       saveState();
       renderMenu("challenge");
@@ -1722,7 +1754,6 @@
               <button class="secondary" id="retryButton" type="button">選び直す</button>
               <button class="next-button" id="nextButton" type="button">次の問題</button>
             </div>
-            <a class="source-link" id="sourceLink" target="_blank" rel="noreferrer">Discordの元投稿を開く</a>
           </section>
 
           <nav class="bottom-nav" aria-label="問題移動">
@@ -1965,7 +1996,7 @@
       sourceVideo.hidden = !hasSourceVideo;
       if (hasSourceVideo) {
         sourceVideoLink.href = question.sourceUrl;
-        sourceVideoLink.textContent = `↗ ${question.sourceLabel || "元動画を開く"}`;
+        setLinkContent(sourceVideoLink, linkMetadata(new URL(question.sourceUrl)), "問題解説動画へ飛ぶ");
       }
       const correctDiscards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
       const response = state.session?.responses?.[String(question.id)];
@@ -1982,10 +2013,6 @@
         feedback.hidden = true;
         feedback.className = "answer-feedback";
       }
-      const sourceLink = document.getElementById("sourceLink");
-      const hasDiscordSource = revealed && typeof question.discordMessageUrl === "string" && /^https?:\/\//.test(question.discordMessageUrl);
-      sourceLink.hidden = !hasDiscordSource;
-      if (hasDiscordSource) sourceLink.href = question.discordMessageUrl;
     }
 
     function renderProgress() {
@@ -2004,7 +2031,7 @@
 
     function nextQuestionOrFinish() {
       if (currentIndex < playQuestions.length - 1) return moveQuestion(1);
-      if (state.session?.mode === "single") return goMenu();
+      if (state.session?.mode === "single" || state.session?.mode === "catalog") return goMenu();
       finishSession();
     }
 

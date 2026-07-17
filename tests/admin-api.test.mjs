@@ -274,7 +274,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 36;/);
+  assert.match(source, /const APP_VERSION = 37;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -361,7 +361,21 @@ test("review displays the original video below the explanation and keeps referen
   assert.match(source, /new URL\(url\)/);
   assert.match(source, /link\.className = `content-link content-link--\$\{metadata\.kind\}`/);
   assert.match(source, /link\.rel = "noreferrer"/);
-  assert.match(source, /question\.discordMessageUrl/);
+  assert.match(source, /setLinkContent\(sourceVideoLink, linkMetadata\(new URL\(question\.sourceUrl\)\), "問題解説動画へ飛ぶ"\)/);
+  assert.doesNotMatch(source, /id="sourceLink"/);
+  assert.doesNotMatch(source, /Discordの元投稿を開く/);
+});
+
+test("problem catalog opens a consecutive question session and link chips use service icons", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /openButton\.addEventListener\("click", \(\) => openCatalogQuestion\(question\.id\)\)/);
+  assert.match(source, /function openCatalogQuestion\(id\)/);
+  assert.match(source, /createSession\("catalog", ids, position\)/);
+  assert.match(source, /state\.session\?\.mode === "single" \|\| state\.session\?\.mode === "catalog"/);
+  assert.match(source, /function createLinkIcon\(kind\)/);
+  assert.match(source, /kind === "youtube"/);
+  assert.match(source, /kind === "google-doc"/);
+  assert.match(source, /link-icon--\$\{kind\}/);
 });
 
 test("admin exit returns to the GitHub Pages app directory", async () => {
@@ -460,7 +474,7 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
   assert.match(source, /riichiSelected === question\.correctRiichi/);
   assert.match(source, /id="sourceVideo" hidden/);
   assert.match(source, /question\.sourceUrl/);
-  assert.match(source, /question\.discordMessageUrl/);
+  assert.match(source, /"問題解説動画へ飛ぶ"/);
 });
 
 test("question 167 reproduces both left-called chi melds and grades six man", async () => {
