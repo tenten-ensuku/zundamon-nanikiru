@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "series": {
+    "channel": "ずんだもんの麻雀何切るチャンネル",
+    "frameSize": {
+      "width": 640,
+      "height": 360
+    },
+    "visualAnchors": [
+      "上部左: 局・本場・自風・巡目・点数",
+      "上部中央: ドラ表示",
+      "上部: 手牌と黄色いツモ表示",
+      "問題フレーム下部: 黒板上の問題文",
+      "結論フレーム: 打牌と立直判断の文言"
+    ]
+  },
+  "referenceQuestions": [
+    {
+      "id": 166,
+      "image": "/questions/question-166.png",
+      "sourceUrl": "https://youtu.be/a3yIRViy5gc",
+      "checks": ["立直判断", "4z", "東1局・西家・8巡目"]
+    },
+    {
+      "id": 167,
+      "image": "/questions/question-167.png",
+      "sourceUrl": "https://youtu.be/ADWMMNXtryw",
+      "checks": ["複数チー", "赤5", "鳴いた牌を左端"]
+    },
+    {
+      "id": 168,
+      "image": "/questions/question-168.png",
+      "sourceUrl": "https://youtu.be/VWOg74rytII",
+      "checks": ["通常手", "ドラ4m", "打8m"]
+    },
+    {
+      "id": 169,
+      "image": "/questions/question-169.png",
+      "sourceUrl": "https://youtu.be/Aijtrqz70Os",
+      "checks": ["比較問題", "ドラ6s", "打2m"]
+    },
+    {
+      "id": 170,
+      "image": "/questions/question-170.png",
+      "sourceUrl": "https://youtu.be/EwtJuGUcYy8",
+      "checks": ["立直判断", "ドラ8s", "打2s"]
+    },
+    {
+      "id": 171,
+      "image": "/questions/question-171.png",
+      "sourceUrl": "https://youtu.be/GucqM0jEhlA",
+      "checks": ["赤5m", "6zポン", "ドラ9m", "打3p"]
+    }
+  ],
+  "evidenceRule": "手牌・ドラ・副露・局面は問題フレーム、打牌・立直・カンは結論フレームで確認する。字幕は補助資料であり、画面に反する場合は採用しない。"
+}

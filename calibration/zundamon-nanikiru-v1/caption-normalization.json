@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "outputRule": "牌を示す語は必ず個別のASCII牌コードへ正規化する。曖昧な文字列の自動置換は禁止し、問題フレームで照合する。",
+  "examples": [
+    { "caption": "ろくまん / ローマン / 六萬", "output": "6m", "requiresVisualCheck": true },
+    { "caption": "赤5ピン / 赤五筒", "output": "0p", "requiresVisualCheck": true },
+    { "caption": "中 / 白 / 發", "output": "7z / 5z / 6z", "requiresVisualCheck": true },
+    { "caption": "リーチ", "output": "riichiChoice と correctRiichi", "requiresConclusionFrame": true },
+    { "caption": "カン", "output": "kanChoice", "requiresConclusionFrame": true }
+  ],
+  "formatExamples": [
+    "3s・6s・9s待ち",
+    "4mを切る",
+    "赤5は0m・0p・0s"
+  ]
+}

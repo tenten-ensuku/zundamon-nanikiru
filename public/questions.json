@@ -6699,5 +6699,138 @@
     "correctDiscards": [
       "8m"
     ]
+  },
+  {
+    "id": 169,
+    "image": "/questions/question-169.png",
+    "images": [
+      "/questions/question-169.png"
+    ],
+    "explanation": "打2m。\n\n5p切りも受け入れは15枚で同じ。しかし2mを切ると、6m・9mを引いた形で三色の可能性を残しつつ、6p・8pでは平和も見える。受け入れが同じなら、役の変化が多い2m切りを選ぶ。",
+    "sourceUrl": "https://youtu.be/Aijtrqz70Os",
+    "sourceLabel": "YouTube動画を開く",
+    "createdAt": "2024-11-25T10:00:06Z",
+    "course": "intermediate",
+    "hand": [
+      "2m",
+      "4m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "7m",
+      "8m",
+      "5p",
+      "6p",
+      "8p",
+      "6s",
+      "8s",
+      "9s"
+    ],
+    "draw": null,
+    "status": "unreviewed",
+    "meldCount": 0,
+    "round": "east1",
+    "seat": "west",
+    "turn": 6,
+    "honba": 0,
+    "points": 25000,
+    "dora": "6s",
+    "melds": [],
+    "correctDiscards": [
+      "2m"
+    ]
+  },
+  {
+    "id": 170,
+    "image": "/questions/question-170.png",
+    "images": [
+      "/questions/question-170.png"
+    ],
+    "explanation": "打2s、立直。\n\n2s切りは2m・5m・6mの10枚、2m切りは1m・3m・4mの11枚がアガリ牌になる。ドラも赤5もないため、2s切りで三暗刻が付く2m・5mの6枚を取れる価値が高い。2m切りでは三暗刻が付くのは2sの3枚だけになる。",
+    "sourceUrl": "https://youtu.be/EwtJuGUcYy8",
+    "sourceLabel": "YouTube動画を開く",
+    "createdAt": "2024-11-19T10:00:10Z",
+    "course": "intermediate",
+    "hand": [
+      "2m",
+      "3m",
+      "4m",
+      "5m",
+      "7m",
+      "7m",
+      "7m",
+      "9p",
+      "9p",
+      "9p",
+      "2s",
+      "3s",
+      "4s",
+      "5s"
+    ],
+    "draw": null,
+    "status": "unreviewed",
+    "meldCount": 0,
+    "round": "east1",
+    "seat": "west",
+    "turn": 6,
+    "honba": 0,
+    "points": 25000,
+    "dora": "8s",
+    "melds": [],
+    "correctDiscards": [
+      "2s"
+    ],
+    "riichiChoice": true,
+    "correctRiichi": true
+  },
+  {
+    "id": 171,
+    "image": "/questions/question-171.png",
+    "images": [
+      "/questions/question-171.png"
+    ],
+    "explanation": "打3p。\n\n3p切りでも6p切りでもテンパイだが、3pを切ると赤5pを4p・6pでチーした後に2pを切れる。6p切りでは赤5pを3p・4pでチーする形となり、通常の5pを処理しにくく、2pも喰い替えで切れない。",
+    "sourceUrl": "https://youtu.be/GucqM0jEhlA",
+    "sourceLabel": "YouTube動画を開く",
+    "createdAt": "2024-04-05T10:00:13Z",
+    "course": "intermediate",
+    "hand": [
+      "4m",
+      "0m",
+      "2p",
+      "3p",
+      "3p",
+      "4p",
+      "4p",
+      "5p",
+      "6p",
+      "8s",
+      "8s"
+    ],
+    "draw": null,
+    "status": "unreviewed",
+    "meldCount": 1,
+    "round": "east1",
+    "seat": "west",
+    "turn": 6,
+    "honba": 0,
+    "points": 25000,
+    "dora": "9m",
+    "melds": [
+      {
+        "type": "pon",
+        "open": true,
+        "calledIndex": 0,
+        "tiles": [
+          "6z",
+          "6z",
+          "6z"
+        ]
+      }
+    ],
+    "correctDiscards": [
+      "3p"
+    ]
   }
 ]

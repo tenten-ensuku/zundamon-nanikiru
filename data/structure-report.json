@@ -1,10 +1,10 @@
 {
-  "questions": 168,
-  "structured": 168,
-  "withDora": 168,
-  "withRound": 168,
-  "withSeat": 168,
-  "withTurn": 168,
+  "questions": 171,
+  "structured": 171,
+  "withDora": 171,
+  "withRound": 171,
+  "withSeat": 171,
+  "withTurn": 171,
   "needsReview": 0,
   "items": [
     {
@@ -10186,6 +10186,44 @@
       "meldCount": 0,
       "melds": [],
       "dora": "4m",
+      "issues": [],
+      "confidence": []
+    },
+    {
+      "id": 169,
+      "handLength": 14,
+      "meldCount": 0,
+      "melds": [],
+      "dora": "6s",
+      "issues": [],
+      "confidence": []
+    },
+    {
+      "id": 170,
+      "handLength": 14,
+      "meldCount": 0,
+      "melds": [],
+      "dora": "8s",
+      "issues": [],
+      "confidence": []
+    },
+    {
+      "id": 171,
+      "handLength": 11,
+      "meldCount": 1,
+      "melds": [
+        {
+          "type": "pon",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "6z",
+            "6z",
+            "6z"
+          ]
+        }
+      ],
+      "dora": "9m",
       "issues": [],
       "confidence": []
     }

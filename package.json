@@ -9,6 +9,7 @@
     "import:questions": "node scripts/import-discord-questions.mjs --test newest",
     "import:questions:oldest": "node scripts/import-discord-questions.mjs --test oldest",
     "import:questions:all": "node scripts/import-discord-questions.mjs --all",
-    "structure:questions": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ocr-questions.ps1 && python scripts/structure-questions.py"
+    "structure:questions": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ocr-questions.ps1 && python scripts/structure-questions.py",
+    "validate:video-question": "node scripts/validate-video-question.mjs"
   }
 }

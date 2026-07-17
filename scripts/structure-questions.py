@@ -68,6 +68,21 @@ MANUAL_IMAGE_OVERRIDES = {
                  "5s", "6s", "7s", "7s"],
         "dora": "4m",
     },
+    169: {
+        "hand": ["2m", "4m", "4m", "5m", "6m", "7m", "7m", "8m", "5p", "6p", "8p",
+                 "8s", "9s", "6s"],
+        "dora": "6s",
+    },
+    170: {
+        "hand": ["2m", "3m", "4m", "5m", "7m", "7m", "7m", "9p", "9p", "2s", "3s",
+                 "4s", "5s", "9p"],
+        "dora": "8s",
+    },
+    171: {
+        "hand": ["0m", "4m", "2p", "3p", "3p", "4p", "4p", "5p", "6p", "8s", "8s"],
+        "dora": "9m",
+        "meldCount": 1,
+    },
     6: {
         "hand": ["2m", "3m", "4m", "7m", "0p", "9p", "9p", "4s", "4s",
                  "5s", "6s", "7s", "7s", "9p"],
@@ -113,6 +128,9 @@ SITUATION_OVERRIDES = {
     166: {"round": "east1", "seat": "west", "turn": 8, "honba": 0, "points": 25000},
     167: {"round": "east1", "seat": "west", "turn": 6, "honba": 0, "points": 25000},
     168: {"round": "east1", "seat": "west", "turn": 6, "honba": 0, "points": 25000},
+    169: {"round": "east1", "seat": "west", "turn": 6, "honba": 0, "points": 25000},
+    170: {"round": "east1", "seat": "west", "turn": 6, "honba": 0, "points": 25000},
+    171: {"round": "east1", "seat": "west", "turn": 6, "honba": 0, "points": 25000},
 }
 
 
@@ -136,6 +154,9 @@ MELD_OVERRIDES = {
     167: [
         {"type": "chi", "open": True, "calledIndex": 0, "tiles": ["6s", "4s", "0s"]},
         {"type": "chi", "open": True, "calledIndex": 0, "tiles": ["3p", "4p", "5p"]},
+    ],
+    171: [
+        {"type": "pon", "open": True, "calledIndex": 0, "tiles": ["6z", "6z", "6z"]},
     ],
 }
 

@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 29;/);
+  assert.match(source, /const APP_VERSION = 30;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -376,7 +376,7 @@ test("question 66 shows the discard note and records a riichi choice", async () 
 
 test("question 166 reproduces the YouTube problem and grades north with riichi", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 168);
+  assert.equal(questions.length, 171);
   const question = questions.find((item) => item.id === 166);
   assert.deepEqual(question.hand, [
     "2m", "3m", "4m", "3s", "4s", "4s", "5s", "5s", "6s", "7s", "8s", "4z", "4z", "4z",
@@ -405,7 +405,7 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
 
 test("question 167 reproduces both left-called chi melds and grades six man", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 168);
+  assert.equal(questions.length, 171);
   const question = questions.find((item) => item.id === 167);
   assert.deepEqual(question.hand, [
     "5m", "0m", "6m", "7m", "7m", "7m", "7z", "7z",
@@ -431,7 +431,7 @@ test("question 167 reproduces both left-called chi melds and grades six man", as
 
 test("question 168 reproduces the YouTube hand and grades eight man", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 168);
+  assert.equal(questions.length, 171);
   const question = questions.find((item) => item.id === 168);
   assert.deepEqual(question.hand, [
     "3m", "4m", "8m", "9m", "9m", "2p", "3p", "4p", "6p", "7p", "5s", "6s", "7s", "7s",
@@ -450,6 +450,55 @@ test("question 168 reproduces the YouTube hand and grades eight man", async () =
   assert.match(question.explanation, /4sを引いて456sを作る4枚/);
   assert.match(question.explanation, /8mの3枚だけ/);
   assert.doesNotMatch(question.explanation, /[萬万筒索]/);
+});
+
+test("three non-duplicate videos start the intermediate course", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  assert.equal(questions.length, 171);
+  const intermediate = questions.filter((question) => question.course === "intermediate");
+  assert.deepEqual(intermediate.map((question) => question.id), [169, 170, 171]);
+  assert.deepEqual(intermediate.map((question) => question.sourceUrl), [
+    "https://youtu.be/Aijtrqz70Os",
+    "https://youtu.be/EwtJuGUcYy8",
+    "https://youtu.be/GucqM0jEhlA",
+  ]);
+});
+
+test("question 169 keeps the comparison hand, dora, and two-man answer", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  const question = questions.find((item) => item.id === 169);
+  assert.deepEqual(question.hand, [
+    "2m", "4m", "4m", "5m", "6m", "7m", "7m", "8m", "5p", "6p", "8p", "6s", "8s", "9s",
+  ]);
+  assert.equal(question.dora, "6s");
+  assert.deepEqual(question.melds, []);
+  assert.deepEqual(question.correctDiscards, ["2m"]);
+  assert.equal(question.course, "intermediate");
+  assert.doesNotMatch(question.explanation, /[萬万筒索]/);
+});
+
+test("question 170 stores the riichi decision and question 171 stores the open red-dragon pon", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  const riichi = questions.find((item) => item.id === 170);
+  assert.deepEqual(riichi.hand, [
+    "2m", "3m", "4m", "5m", "7m", "7m", "7m", "9p", "9p", "9p", "2s", "3s", "4s", "5s",
+  ]);
+  assert.equal(riichi.dora, "8s");
+  assert.deepEqual(riichi.correctDiscards, ["2s"]);
+  assert.equal(riichi.riichiChoice, true);
+  assert.equal(riichi.correctRiichi, true);
+
+  const openHand = questions.find((item) => item.id === 171);
+  assert.deepEqual(openHand.hand, [
+    "4m", "0m", "2p", "3p", "3p", "4p", "4p", "5p", "6p", "8s", "8s",
+  ]);
+  assert.equal(openHand.dora, "9m");
+  assert.deepEqual(openHand.melds, [
+    { type: "pon", open: true, calledIndex: 0, tiles: ["6z", "6z", "6z"] },
+  ]);
+  assert.deepEqual(openHand.correctDiscards, ["3p"]);
+  assert.equal(openHand.course, "intermediate");
+  assert.doesNotMatch(openHand.explanation, /[萬万筒索]/);
 });
 
 test("every concealed quad offers kan as a standalone answer", async () => {
