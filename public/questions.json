@@ -275,7 +275,7 @@
     "images": [
       "/questions/question-007.png"
     ],
-    "explanation": "||打東。\n\nスキップ牌の扱い。\n\n現状4ブロックヘッドレス。\nすなわち、ヘッドレス1型になり得る形ですので、スキップ牌の価値は上昇しています。\n\n打9ｓとすると、9ｓと**6ｓ**の受け入れロスとなることに注意。\n\nスキップ牌はこのように、１型（４ブロックヘッドレス）では価値UP。\n\n逆に言えば、１型にならないケースでは価値大幅downとなりますので、\n\nスキップ牌の価値は、以下のようにセオリー化可能です。\n\n\n**スキップ牌は、\n①ヘッドがある→ゴミ\n②5ブロックある→ゴミ**\n\n※ゴミと書いたのは、スキップ牌としてのメリット（頭+ブロックを作りやすい）が機能しないという意味。\n\n逆に言えば\n**スキップ牌は\nヘッドレスかつ4ブロック以下の時はパワーUP**||",
+    "explanation": "||打東。\n\nスキップ牌の扱い。\n\n現状4ブロックヘッドレス。\nすなわち、ヘッドレス1型になり得る形ですので、スキップ牌の価値は上昇しています。\n\n打9ｓとすると、9ｓと**6ｓ**の受け入れロスとなることに注意。\n\nスキップ牌はこのように、１型（４ブロックヘッドレス）では価値UP。\n\n逆に言えば、１型にならないケースでは価値大幅downとなりますので、\n\nスキップ牌の価値は、以下のようにセオリー化可能です。\n\n\n**スキップ牌は、\n①ヘッドがある→ゴミ\n②5ブロックある→ゴミ**\n\n※ゴミと書いたのは、スキップ牌としてのメリット（頭+ブロックを作りやすい）が機能しないという意味。\n\n逆に言えば\n**スキップ牌は\nヘッドレスかつ4ブロック以下の時はパワーUP**||\n\n【動画要約】\n打1z。\n\n役牌を残して数牌の端を切りたくなる形だが、この手では数牌の受け入れが前に進むため、1zを先に処理する。2pや7sを引いた時に1p・4p・7p、6s・9sの変化を残せる。1zと5zの比較では、ダブ東を鳴かれにくくするため1zから切る。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309969143491199077",
     "discordMessageId": "1309969143491199077",
     "threadId": "1309969143491199077",
@@ -306,7 +306,9 @@
     "points": 25000,
     "dora": "2m",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "1z"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=WZ-zphDYP_U",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -316,7 +318,7 @@
     "images": [
       "/questions/question-008.png"
     ],
-    "explanation": "||打2ｓ\n\n受け入れＭＡＸ。\n**弱い所をフォローして、強い所はフォローいらず。**\n\n３ヘッドは両面固定して2ヘッドに✨ ||",
+    "explanation": "||打2ｓ\n\n受け入れＭＡＸ。\n**弱い所をフォローして、強い所はフォローいらず。**\n\n３ヘッドは両面固定して2ヘッドに✨ ||\n\n【動画要約】\n打2s。\n\n2sから5sの形は3s・6sの両面待ちになる。受け入れ枚数が同じ候補でも、弱い部分を残してフォローし、強い部分には余計なフォローを付けない形を選ぶ。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309969164840075437",
     "discordMessageId": "1309969164840075437",
     "threadId": "1309969164840075437",
@@ -347,7 +349,9 @@
     "points": 25000,
     "dora": "9p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "2s"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=076quV9Y1TQ",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -357,7 +361,7 @@
     "images": [
       "/questions/question-009.png"
     ],
-    "explanation": "",
+    "explanation": "【動画要約】\n打2z。\n\n4pや8pを切ると受け入れは広いが、テンパイ時はリーチのみになりやすい。2zを切ると受け入れは少し狭くなる一方、タンヤオが付くため、役を見込める形を優先する。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309969205864435722",
     "discordMessageId": "1309969205864435722",
     "threadId": "1309969205864435722",
@@ -388,7 +392,9 @@
     "points": 25000,
     "dora": "2s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "2z"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=MzcNkT_RznY",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -398,7 +404,7 @@
     "images": [
       "/questions/question-010.png"
     ],
-    "explanation": "||打8ｓが正解ですが、\n打4ｓでも完全系になることに注意。\n打4ｓ→467889の6枚形（リャンカン含み完全系）\n打8ｓ→446789ｓの6枚形（2ヘッドの完全系）\n\n１枚分受け入れ差があり、ドラ受けも残したいので、打8ｓ。||",
+    "explanation": "||打8ｓが正解ですが、\n打4ｓでも完全系になることに注意。\n打4ｓ→467889の6枚形（リャンカン含み完全系）\n打8ｓ→446789ｓの6枚形（2ヘッドの完全系）\n\n１枚分受け入れ差があり、ドラ受けも残したいので、打8ｓ。||\n\n【動画要約】\n打8s。\n\n受け入れは16枚あり、ドラの1pを引けばそのままテンパイする。7sを切る案は自分で必要な牌を使ってしまい受け入れが15枚になり、ドラの1pを引いてもテンパイしないため、8sを選ぶ。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309969218418114611",
     "discordMessageId": "1309969218418114611",
     "threadId": "1309969218418114611",
@@ -429,7 +435,9 @@
     "points": 25000,
     "dora": "1p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "8s"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=t1ch2uvwqTk",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -439,7 +447,7 @@
     "images": [
       "/questions/question-011.png"
     ],
-    "explanation": "💯",
+    "explanation": "💯\n\n【動画要約】\n打3p。\n\n3pと5sのどちらを切っても受け入れ枚数は同じだが、テンパイ時の良形率に差が出る。両面になりやすい3p切りを選び、弱い嵌張形には5sを残してくっつきの余地を持たせる。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310204681712304189",
     "discordMessageId": "1310204681712304189",
     "threadId": "1310204681712304189",
@@ -470,7 +478,9 @@
     "points": 25000,
     "dora": "2m",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "3p"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=BNGgOoQH1ZM",
     "sourceLabel": "YouTube動画を開く"
   },

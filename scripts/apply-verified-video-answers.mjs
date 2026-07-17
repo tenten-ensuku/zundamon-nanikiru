@@ -11,6 +11,11 @@ const verifiedAnswers = new Map([
   [4, ["2m"]],
   [5, ["5m"]],
   [6, ["7m"]],
+  [7, ["1z"]],
+  [8, ["2s"]],
+  [9, ["2z"]],
+  [10, ["8s"]],
+  [11, ["3p"]],
 ]);
 
 const questions = JSON.parse(await fs.readFile(questionsPath, "utf8"));

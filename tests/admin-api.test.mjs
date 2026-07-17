@@ -274,7 +274,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 47;/);
+  assert.match(source, /const APP_VERSION = 48;/);
 });
 
 test("hand dora and red fives receive the static gloss marker", async () => {
@@ -421,9 +421,9 @@ test("question 1 contains a red five-pin", async () => {
   assert.equal(question.hand.includes("8s"), false);
 });
 
-test("first five verified source videos use canonical answers and summaries", async () => {
+test("verified source videos use canonical answers and summaries", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  const expected = new Map([[2, "3s"], [3, "4s"], [4, "2m"], [5, "5m"], [6, "7m"]]);
+  const expected = new Map([[2, "3s"], [3, "4s"], [4, "2m"], [5, "5m"], [6, "7m"], [7, "1z"], [8, "2s"], [9, "2z"], [10, "8s"], [11, "3p"]]);
   for (const [id, discard] of expected) {
     const question = questions.find((item) => item.id === id);
     assert.deepEqual(question.correctDiscards, [discard]);

@@ -32,7 +32,11 @@ if (clearInvalid) {
       throw new Error(`問題 ${question.id} の動画要約に漢字牌表記があります。m/p/s/z の正規牌コードへ直してください。`);
     }
     const original = String(question.explanation || "").trim();
-    const next = `${original}${original ? "\n\n" : ""}${marker}\n${summary.trim()}`;
+    const existingMarkerIndex = original.indexOf(marker);
+    const explanationWithoutPreviousSummary = existingMarkerIndex === -1
+      ? original
+      : original.slice(0, existingMarkerIndex).trim();
+    const next = `${explanationWithoutPreviousSummary}${explanationWithoutPreviousSummary ? "\n\n" : ""}${marker}\n${summary.trim()}`;
     if (question.explanation !== next) {
       question.explanation = next;
       changed += 1;
