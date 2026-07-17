@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 28;/);
+  assert.match(source, /const APP_VERSION = 29;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -279,14 +279,18 @@ test("admin editor has a shared per-question review checkbox", async () => {
   assert.match(source, /確認完了 \$\{reviewed\}問/);
 });
 
-test("client has the Ensuku-style menu without an ura mode", async () => {
+test("client separates beginner and intermediate courses without an ura mode", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
-  for (const label of ["挑戦", "復習", "問題一覧", "自己分析", "順位", "設定"]) {
+  for (const label of ["初級編", "中級編", "復習", "問題一覧", "自己分析", "順位", "設定"]) {
     assert.match(source, new RegExp(label));
   }
   assert.match(source, /class="menu-admin-entry" href="admin\.html">管理画面<\/a>/);
   assert.match(source, /data-start-mode="ten"/);
   assert.match(source, /data-start-mode="all"/);
+  assert.match(source, /function questionCourse\(question\)/);
+  assert.match(source, /question\.course === "intermediate"/);
+  assert.match(source, /function courseQuestions\(course\)/);
+  assert.doesNotMatch(source, /出題タイプを選んですぐ開始できます/);
   assert.match(source, /id="homeButton"[^>]*>メニュー</);
   assert.doesNotMatch(source, /裏モード/);
 });

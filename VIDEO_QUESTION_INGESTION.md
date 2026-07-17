@@ -53,6 +53,7 @@
   "sourceUrl": "https://youtu.be/example",
   "sourceLabel": "YouTube動画を開く",
   "createdAt": "2026-07-17T00:00:00Z",
+  "course": "intermediate",
   "hand": ["1m", "2m"],
   "draw": null,
   "meldCount": 0,
@@ -69,6 +70,7 @@
 ```
 
 - `hand` には副露牌を入れない。`meldCount` が `n` の時、ツモを分離しない現行仕様では手牌は `14 - 3n` 枚である。
+- 問題の編は `course` で分ける。初級編は `"beginner"`（省略時も初級編）、中級編は `"intermediate"` を保存する。今後追加する中級編の動画問題には必ず `"course": "intermediate"` を入れる。
 - ツモ牌が別表示でも、現行アプリでは理牌して `hand` に入れ、`draw` は常に `null` にする。鳴いた直後でツモ牌がない場合も同じで、必要なら `note` に `6sをチーした直後（ツモ牌表記なし）` のように書く。
 - `melds` には見えている副露をすべて入れる。一つだけ確認して確定しない。第167問のように複数チーがある場合も全面子を記録する。
 - チーは上家からのみ行う。UIでは鳴いた牌を左端で横向きにするため、新規データは `{"type":"chi","open":true,"calledIndex":0,"tiles":["6s","4s","0s"]}` のように、鳴いた牌を最初に置く。

@@ -639,6 +639,21 @@
     .menu-panel h3 { margin: 0; font-size: 16px; }
     .menu-lead { margin: 6px 0 14px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 
+    .course-card {
+      padding: 13px;
+      border: 1px solid rgba(242,210,123,.26);
+      border-radius: 12px;
+      background: rgba(0,0,0,.16);
+    }
+
+    .course-card + .course-card { margin-top: 12px; }
+    .course-card h2 { margin: 0 0 10px; }
+    .course-card.intermediate {
+      border-color: rgba(163,123,215,.34);
+      background: linear-gradient(145deg, rgba(49,26,67,.45), rgba(0,0,0,.2));
+    }
+    .course-card.intermediate h2 { color: #d7b4f6; }
+
     .mode-grid { display: grid; gap: 10px; }
 
     .mode-card {
@@ -662,6 +677,15 @@
     .mode-card strong { display: block; font-size: 24px; }
     .mode-card small { display: block; margin-top: 4px; color: #f4d9b4; font-size: 11px; }
     .mode-card b { color: var(--gold-light); font-size: 24px; }
+    .mode-card:disabled { cursor: default; filter: saturate(.45); opacity: .42; }
+
+    .course-card.intermediate .mode-card {
+      border-color: #9f70c5;
+      background: linear-gradient(150deg, #6e3b8d, #321d4b);
+      box-shadow: 0 4px 0 #20112f, 0 8px 18px rgba(0,0,0,.28), inset 0 1px rgba(255,255,255,.16);
+    }
+
+    .course-card.intermediate .mode-card.all { background: linear-gradient(150deg, #4f2c6b, #251735); }
 
     .resume-card,
     .menu-note {
@@ -922,7 +946,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 28;
+    const APP_VERSION = 29;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -1101,6 +1125,18 @@
       return mode === "ten" ? "10問" : mode === "all" ? "全問" : mode === "review" ? "復習" : "問題確認";
     }
 
+    function courseLabel(course) {
+      return course === "intermediate" ? "中級編" : "初級編";
+    }
+
+    function questionCourse(question) {
+      return question.course === "intermediate" ? "intermediate" : "beginner";
+    }
+
+    function courseQuestions(course) {
+      return questions.filter(question => questionCourse(question) === course);
+    }
+
     function formatElapsed(seconds) {
       const value = Math.max(0, Math.round(Number(seconds) || 0));
       const minutes = Math.floor(value / 60);
@@ -1120,7 +1156,7 @@
       setScreen("menu");
       app.className = "app menu-app";
       const tabs = [
-        ["challenge", "⚡", "挑戦"],
+        ["challenge", "⚡", "初級編"],
         ["review", "↻", "復習"],
         ["problems", "▤", "問題一覧"],
         ["analysis", "↗", "自己分析"],
@@ -1166,21 +1202,30 @@
     function renderChallengePanel(panel) {
       const answered = Object.keys(state.responses).length;
       const activeSession = state.session && state.session.mode !== "single" ? state.session : null;
+      const beginnerQuestions = courseQuestions("beginner");
+      const intermediateQuestions = courseQuestions("intermediate");
+      const createCourseButtons = (course, items) => `
+        <div class="mode-grid">
+          <button class="mode-card" type="button" data-start-mode="ten" data-course="${course}" ${items.length ? "" : "disabled"}>
+            <span><strong>10問</strong></span><b>▶</b>
+          </button>
+          <button class="mode-card all" type="button" data-start-mode="all" data-course="${course}" ${items.length ? "" : "disabled"}>
+            <span><strong>全問</strong></span><b>▶</b>
+          </button>
+        </div>`;
       panel.innerHTML = `
         <section class="menu-panel">
-          <h2>挑戦</h2>
-          <p class="menu-lead">出題タイプを選んですぐ開始できます。</p>
-          <div class="mode-grid">
-            <button class="mode-card" type="button" data-start-mode="ten">
-              <span><strong>10問</strong><small>全問題からランダム出題</small></span><b>▶</b>
-            </button>
-            <button class="mode-card all" type="button" data-start-mode="all">
-              <span><strong>全問</strong><small>${questions.length}問を問題番号順に出題</small></span><b>▶</b>
-            </button>
-          </div>
+          <section class="course-card">
+            <h2>初級編</h2>
+            ${createCourseButtons("beginner", beginnerQuestions)}
+          </section>
+          <section class="course-card intermediate">
+            <h2>中級編</h2>
+            ${createCourseButtons("intermediate", intermediateQuestions)}
+          </section>
           ${activeSession ? `
             <div class="resume-card">
-              <h3>途中の${sessionLabel(activeSession.mode)}</h3>
+              <h3>途中の${courseLabel(activeSession.course)} ${sessionLabel(activeSession.mode)}</h3>
               <p class="menu-lead">${Object.keys(activeSession.responses || {}).length} / ${activeSession.ids.length} 問回答済み</p>
               <button class="menu-primary" id="resumeSession" type="button">続きから</button>
             </div>` : ""}
@@ -1190,7 +1235,7 @@
           </div>
         </section>`;
       panel.querySelectorAll("[data-start-mode]").forEach(button => {
-        button.addEventListener("click", () => startChallenge(button.dataset.startMode));
+        button.addEventListener("click", () => startChallenge(button.dataset.startMode, button.dataset.course));
       });
       document.getElementById("resumeSession")?.addEventListener("click", resumeSession);
     }
@@ -1523,8 +1568,8 @@
       }
     }
 
-    function shuffledIds() {
-      const ids = questions.map(question => question.id);
+    function shuffledIds(course) {
+      const ids = courseQuestions(course).map(question => question.id);
       for (let index = ids.length - 1; index > 0; index -= 1) {
         const swap = Math.floor(Math.random() * (index + 1));
         [ids[index], ids[swap]] = [ids[swap], ids[index]];
@@ -1532,9 +1577,10 @@
       return ids;
     }
 
-    function createSession(mode, ids) {
+    function createSession(mode, ids, course = "beginner") {
       state.session = {
         mode,
+        course,
         ids,
         position: 0,
         startedAt: new Date().toISOString(),
@@ -1545,9 +1591,11 @@
       resumeSession();
     }
 
-    function startChallenge(mode) {
-      const ids = mode === "ten" ? shuffledIds().slice(0, Math.min(10, questions.length)) : questions.map(question => question.id);
-      createSession(mode, ids);
+    function startChallenge(mode, course = "beginner") {
+      const items = courseQuestions(course);
+      if (!items.length) return;
+      const ids = mode === "ten" ? shuffledIds(course).slice(0, Math.min(10, items.length)) : items.map(question => question.id);
+      createSession(mode, ids, course);
     }
 
     function startReview() {
@@ -1931,6 +1979,7 @@
       const elapsedSeconds = Math.max(0, (Date.now() - new Date(finishedSession.startedAt).getTime()) / 1000);
       const result = {
         mode: finishedSession.mode,
+        course: finishedSession.course || "beginner",
         total: sessionQuestions.length,
         answered,
         graded: gradedResponses.length,
@@ -1955,7 +2004,7 @@
       app.innerHTML = `
         <section class="menu-panel result-panel">
           <p class="brand-kicker">RESULT</p>
-          <h2>${sessionLabel(result.mode)} 完了</h2>
+          <h2>${courseLabel(result.course)} ${sessionLabel(result.mode)} 完了</h2>
           <div class="result-score">${percentage === null ? "--" : `${percentage}%`}</div>
           <p class="result-detail">${result.answered} / ${result.total} 問回答<br>${result.correct} / ${result.graded} 問正解<br>タイム ${formatElapsed(result.elapsedSeconds)}${result.graded < result.answered ? `<br>採点待ち ${result.answered - result.graded}問` : ""}</p>
           <div class="menu-actions" style="justify-content:center;margin-top:18px">
@@ -1964,7 +2013,7 @@
           </div>
         </section>`;
       document.getElementById("resultMenu").addEventListener("click", () => renderMenu("challenge"));
-      document.getElementById("resultRetry")?.addEventListener("click", () => startChallenge(result.mode));
+      document.getElementById("resultRetry")?.addEventListener("click", () => startChallenge(result.mode, result.course));
       window.scrollTo({ top: 0, behavior: "instant" });
     }
 
