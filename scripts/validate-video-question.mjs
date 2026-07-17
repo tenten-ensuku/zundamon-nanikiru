@@ -20,7 +20,7 @@ for (const id of ids) {
     failures.push(`${id}: question not found`);
     continue;
   }
-  if (question.course !== "intermediate") failures.push(`${id}: course must be intermediate`);
+  if ("course" in question) failures.push(`${id}: course categories are not used`);
   if (question.draw !== null) failures.push(`${id}: draw must be null`);
   if (!/^https:\/\/youtu\.be\//.test(question.sourceUrl || "")) failures.push(`${id}: sourceUrl must be a YouTube short URL`);
   if (!Array.isArray(question.hand) || !question.hand.every((tile) => tilePattern.test(tile))) failures.push(`${id}: invalid concealed tile code`);
@@ -55,4 +55,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`Validated intermediate video questions: ${ids.join(", ")}`);
+console.log(`Validated video questions: ${ids.join(", ")}`);

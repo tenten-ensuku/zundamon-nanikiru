@@ -24,7 +24,7 @@
 5. 字幕は理由の要約にだけ使う。牌名は `m` / `p` / `s` / `z` の個別コードへ正規化する。
 6. `questions.json`、画像、`structure-questions.py` の手動オーバーライド、テストを同じ変更で更新する。
 7. ユーザーが牌姿を訂正した場合は、訂正前後を `verified-questions.json` の `correctionLedger` に記録し、確定した全手牌を `questions` に保存する。
-8. `npm run validate:video-question -- <id>`、`npm test`、`git diff --check` を通す。校正対象の問題は、ここに保存した確定手牌との完全一致も検証される。
+8. `npm run validate:video-question -- <id>`、`npm test`、`git diff --check` を通す。校正対象の問題は、ここに保存した確定手牌との完全一致も検証される。問題はすべて初級編の連番へ追加し、カテゴリ分けはしない。
 
 ## モデル変更時の判定
 

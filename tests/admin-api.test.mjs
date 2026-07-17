@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 32;/);
+  assert.match(source, /const APP_VERSION = 33;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -279,17 +279,15 @@ test("admin editor has a shared per-question review checkbox", async () => {
   assert.match(source, /確認完了 \$\{reviewed\}問/);
 });
 
-test("client separates beginner and intermediate courses without an ura mode", async () => {
+test("client has one continuous beginner question set without an ura mode", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
-  for (const label of ["初級編", "中級編", "復習", "問題一覧", "自己分析", "順位", "設定"]) {
+  for (const label of ["初級編", "復習", "問題一覧", "自己分析", "順位", "設定"]) {
     assert.match(source, new RegExp(label));
   }
   assert.match(source, /class="menu-admin-entry" href="admin\.html">管理画面<\/a>/);
   assert.match(source, /data-start-mode="ten"/);
   assert.match(source, /data-start-mode="all"/);
-  assert.match(source, /function questionCourse\(question\)/);
-  assert.match(source, /question\.course === "intermediate"/);
-  assert.match(source, /function courseQuestions\(course\)/);
+  assert.doesNotMatch(source, /中級編|intermediate|questionCourse|courseQuestions/);
   assert.doesNotMatch(source, /出題タイプを選んですぐ開始できます/);
   assert.match(source, /id="homeButton"[^>]*>メニュー</);
   assert.doesNotMatch(source, /裏モード/);
@@ -460,12 +458,12 @@ test("question 168 reproduces the YouTube hand and grades eight man", async () =
   assert.doesNotMatch(question.explanation, /[萬万筒索]/);
 });
 
-test("three non-duplicate videos start the intermediate course", async () => {
+test("three non-duplicate videos continue the beginner question set", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
   assert.equal(questions.length, 171);
-  const intermediate = questions.filter((question) => question.course === "intermediate");
-  assert.deepEqual(intermediate.map((question) => question.id), [169, 170, 171]);
-  assert.deepEqual(intermediate.map((question) => question.sourceUrl), [
+  assert.equal(questions.some((question) => "course" in question), false);
+  const added = questions.filter((question) => [169, 170, 171].includes(question.id));
+  assert.deepEqual(added.map((question) => question.sourceUrl), [
     "https://youtu.be/Aijtrqz70Os",
     "https://youtu.be/EwtJuGUcYy8",
     "https://youtu.be/GucqM0jEhlA",
@@ -481,7 +479,7 @@ test("question 169 keeps the comparison hand, dora, and two-man answer", async (
   assert.equal(question.dora, "6s");
   assert.deepEqual(question.melds, []);
   assert.deepEqual(question.correctDiscards, ["2m"]);
-  assert.equal(question.course, "intermediate");
+  assert.equal("course" in question, false);
   assert.doesNotMatch(question.explanation, /[萬万筒索]/);
 });
 
@@ -505,7 +503,7 @@ test("question 170 stores the riichi decision and question 171 stores the open r
     { type: "pon", open: true, calledIndex: 0, tiles: ["6z", "6z", "6z"] },
   ]);
   assert.deepEqual(openHand.correctDiscards, ["3p"]);
-  assert.equal(openHand.course, "intermediate");
+  assert.equal("course" in openHand, false);
   assert.doesNotMatch(openHand.explanation, /[萬万筒索]/);
 });
 
