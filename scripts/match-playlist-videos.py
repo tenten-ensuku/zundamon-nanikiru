@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
+import cv2
 from PIL import Image
 
 
@@ -118,6 +119,41 @@ def image_feature(path: Path) -> np.ndarray:
     return np.asarray(crop.resize((384, 64), Image.Resampling.LANCZOS), dtype=np.float32) / 255.0
 
 
+def dora_feature(path: Path) -> np.ndarray:
+    """Extract the displayed dora tile, independent of the saved text value."""
+    image = Image.open(path).convert("L")
+    pixels = np.asarray(image, dtype=np.uint8)
+    height, width = pixels.shape
+    if width <= 700 and height >= 300:
+        # The Zundamon videos consistently show the dora tile at this upper
+        # position. A proportional crop keeps this robust if the resolution changes.
+        crop = image.crop((int(width * 0.678), int(height * 0.05), int(width * 0.725), int(height * 0.164)))
+    else:
+        # Compact Discord screenshots put the dora tile as the rightmost large
+        # bright component, after the tsumohai. Morphological closing fills the
+        # colored tile pips before finding that component.
+        bright = (pixels > 170).astype(np.uint8)
+        bright[:int(height * 0.20)] = 0
+        bright[int(height * 0.92):] = 0
+        closed = cv2.morphologyEx(bright, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_RECT, (7, 7)))
+        _, _, stats, _ = cv2.connectedComponentsWithStats(closed)
+        components = [
+            (int(x), int(y), int(component_width), int(component_height), int(area))
+            for x, y, component_width, component_height, area in stats[1:]
+            if component_width > 40
+            and component_height > max(30, int(height * 0.30))
+            and area > 500
+            and y > int(height * 0.25)
+        ]
+        if not components:
+            # Keep the run usable even if a screenshot has an unusual layout.
+            crop = image.crop((int(width * 0.82), int(height * 0.30), int(width * 0.98), int(height * 0.88)))
+        else:
+            x, y, component_width, component_height, _ = max(components, key=lambda component: component[0])
+            crop = image.crop((x, y, x + component_width, y + component_height))
+    return np.asarray(crop.resize((30, 41), Image.Resampling.LANCZOS), dtype=np.float32) / 255.0
+
+
 def extract_frames(entry: dict[str, Any], work_dir: Path, ffmpeg: str) -> dict[str, Any]:
     entry_id = entry["id"]
     frames_dir = work_dir / "frames"
@@ -170,7 +206,7 @@ def extract_frames(entry: dict[str, Any], work_dir: Path, ffmpeg: str) -> dict[s
                 pass
 
 
-def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_features: dict[int, np.ndarray], known_ids: dict[str, int], extraction_results: dict[str, dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, list[dict[str, Any]]]]:
+def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_features: dict[int, np.ndarray], question_doras: dict[int, np.ndarray], known_ids: dict[str, int], extraction_results: dict[str, dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, list[dict[str, Any]]]]:
     rows: list[dict[str, Any]] = []
     rankings: dict[int, list[dict[str, Any]]] = {question_id: [] for question_id in question_features}
     for index, entry in enumerate(entries, start=1):
@@ -189,16 +225,19 @@ def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_fea
             })
             continue
         frame_features = [image_feature(path) for path in frame_paths]
+        frame_doras = [dora_feature(path) for path in frame_paths]
         scores = []
         for question_id, question_feature in question_features.items():
             score = min(float(np.mean((frame_feature - question_feature) ** 2)) for frame_feature in frame_features)
             scores.append((score, question_id))
         scores.sort()
         for score, question_id in scores:
+            dora_score = min(float(np.mean((frame_dora - question_doras[question_id]) ** 2)) for frame_dora in frame_doras)
             rankings[question_id].append({
                 "playlistIndex": int(entry.get("playlist_index") or index),
                 "videoId": entry_id,
                 "score": round(score, 6),
+                "doraScore": round(dora_score, 6),
             })
         top = scores[:3]
         best_score, best_question = top[0]
@@ -220,10 +259,13 @@ def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_fea
             "candidates": [{"questionId": question_id, "score": round(score, 6)} for score, question_id in top],
             "frames": [str(path.relative_to(output_dir)).replace("\\", "/") for path in frame_paths],
         })
-    return rows, {
-        str(question_id): sorted(candidates, key=lambda candidate: candidate["score"])[:12]
-        for question_id, candidates in rankings.items()
-    }
+    question_candidates: dict[str, list[dict[str, Any]]] = {}
+    for question_id, candidates in rankings.items():
+        by_dora = sorted(candidates, key=lambda candidate: candidate["doraScore"])
+        dora_cutoff = by_dora[0]["doraScore"] + 0.006
+        dora_matches = [candidate for candidate in by_dora if candidate["doraScore"] <= dora_cutoff]
+        question_candidates[str(question_id)] = sorted(dora_matches, key=lambda candidate: candidate["score"])[:12]
+    return rows, question_candidates
 
 
 def main() -> None:
@@ -240,12 +282,14 @@ def main() -> None:
 
     questions = json.loads((ROOT / "public" / "questions.json").read_text(encoding="utf-8"))
     question_features: dict[int, np.ndarray] = {}
+    question_doras: dict[int, np.ndarray] = {}
     known_ids: dict[str, int] = {}
     for question in questions:
         question_id = int(question["id"])
         image_path = ROOT / "public" / "questions" / f"question-{question_id:03}.png"
         if image_path.exists():
             question_features[question_id] = image_feature(image_path)
+            question_doras[question_id] = dora_feature(image_path)
         source_id = video_id(question.get("sourceUrl"))
         if source_id:
             known_ids[source_id] = question_id
@@ -272,7 +316,7 @@ def main() -> None:
             print(f"[{completed}/{len(entries)}] {result['id']}: {result['status']}", flush=True)
 
     (output_dir / "extraction-results.json").write_text(json.dumps(extraction_results, ensure_ascii=False, indent=2), encoding="utf-8")
-    rows, question_candidates = candidate_rows(entries, output_dir, question_features, known_ids, extraction_results)
+    rows, question_candidates = candidate_rows(entries, output_dir, question_features, question_doras, known_ids, extraction_results)
     report = {**manifest, "questionCount": len(question_features), "matches": rows, "questionCandidates": question_candidates}
     (output_dir / "matches.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     matched = [row for row in rows if row["status"] == "matched"]
