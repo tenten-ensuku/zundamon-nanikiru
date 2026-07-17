@@ -6560,5 +6560,47 @@
     "dora": "6s",
     "melds": [],
     "correctDiscards": []
+  },
+  {
+    "id": 166,
+    "image": "/questions/question-166.png",
+    "images": [
+      "/questions/question-166.png"
+    ],
+    "explanation": "打北リーチ。\n\n北を1枚切ると、索子の34455678が3・6・9索待ちの三面張となり、待ちは合計10枚。北北が雀頭に残るため、リーチ・平和・ドラ2が確定し、6索または9索で和了すれば一盃口もつく。ツモなどが重なれば跳満まで見える。\n\nドラの北を残して索子を切る選択肢も聴牌は維持できるが、待ちは3～5枚に減る。ドラ3にこだわるより、打点を大きく落とさず待ちを倍近く広げられる北切りリーチを優先する。",
+    "sourceUrl": "https://youtu.be/a3yIRViy5gc",
+    "sourceLabel": "YouTube動画を開く",
+    "createdAt": "2024-11-22T10:00:00Z",
+    "hand": [
+      "2m",
+      "3m",
+      "4m",
+      "3s",
+      "4s",
+      "4s",
+      "5s",
+      "5s",
+      "6s",
+      "7s",
+      "8s",
+      "4z",
+      "4z",
+      "4z"
+    ],
+    "draw": null,
+    "status": "unreviewed",
+    "meldCount": 0,
+    "round": "east1",
+    "seat": "west",
+    "turn": 8,
+    "honba": 0,
+    "points": 25000,
+    "dora": "4z",
+    "melds": [],
+    "correctDiscards": [
+      "4z"
+    ],
+    "riichiChoice": true,
+    "correctRiichi": true
   }
 ]

@@ -922,7 +922,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 22;
+    const APP_VERSION = 23;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -1639,7 +1639,7 @@
               <button class="secondary" id="retryButton" type="button">選び直す</button>
               <button class="next-button" id="nextButton" type="button">次の問題</button>
             </div>
-            <a class="source-link" id="sourceLink" target="_blank" rel="noopener noreferrer">Discordの元投稿を開く</a>
+            <a class="source-link" id="sourceLink" target="_blank" rel="noopener noreferrer">元投稿を開く</a>
           </section>
 
           <nav class="bottom-nav" aria-label="問題移動">
@@ -1810,7 +1810,10 @@
       const correctDiscards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
       const graded = correctDiscards.length > 0;
       const tile = specialChoice === "kan" ? null : question.hand[selectedIndex];
-      const correct = graded ? correctDiscards.includes(tile) : null;
+      const gradesRiichi = typeof question.correctRiichi === "boolean";
+      const correct = graded
+        ? correctDiscards.includes(tile) && (!gradesRiichi || riichiSelected === question.correctRiichi)
+        : null;
       const answeredAt = new Date().toISOString();
       const response = {
         tile,
@@ -1876,17 +1879,21 @@
       const correctDiscards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
       const response = state.session?.responses?.[String(question.id)];
       if (revealed && response && correctDiscards.length) {
-        const correct = correctDiscards.includes(response.tile);
+        const gradesRiichi = typeof question.correctRiichi === "boolean";
+        const correct = correctDiscards.includes(response.tile)
+          && (!gradesRiichi || response.riichi === question.correctRiichi);
         feedback.hidden = false;
         feedback.className = `answer-feedback ${correct ? "correct" : "incorrect"}`;
         document.getElementById("judgment").textContent = correct ? "○ 正解" : "× 不正解";
-        document.getElementById("correctAnswer").textContent = `正解：${correctDiscards.map(tileName).join("・")}`;
+        const riichiAnswer = gradesRiichi ? (question.correctRiichi ? "立直・" : "ダマ・") : "";
+        document.getElementById("correctAnswer").textContent = `正解：${riichiAnswer}${correctDiscards.map(tileName).join("・")}`;
       } else {
         feedback.hidden = true;
         feedback.className = "answer-feedback";
       }
       const sourceLink = document.getElementById("sourceLink");
-      sourceLink.href = question.discordMessageUrl;
+      sourceLink.href = question.sourceUrl || question.discordMessageUrl;
+      sourceLink.textContent = question.sourceLabel || "Discordの元投稿を開く";
     }
 
     function renderProgress() {

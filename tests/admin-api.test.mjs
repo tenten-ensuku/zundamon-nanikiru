@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 22;/);
+  assert.match(source, /const APP_VERSION = 23;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -368,6 +368,34 @@ test("question 66 shows the discard note and records a riichi choice", async () 
   assert.match(source, /function toggleRiichi\(\)/);
   assert.match(source, /question\.riichiChoice === true \? \{ riichi: riichiSelected \} : \{\}/);
   assert.match(source, /riichiSelected \? "立直して切る" : "ダマで切る"/);
+});
+
+test("question 166 reproduces the YouTube problem and grades north with riichi", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  assert.equal(questions.length, 166);
+  const question = questions.find((item) => item.id === 166);
+  assert.deepEqual(question.hand, [
+    "2m", "3m", "4m", "3s", "4s", "4s", "5s", "5s", "6s", "7s", "8s", "4z", "4z", "4z",
+  ]);
+  assert.equal(question.draw, null);
+  assert.deepEqual(
+    { round: question.round, seat: question.seat, turn: question.turn, honba: question.honba, points: question.points },
+    { round: "east1", seat: "west", turn: 8, honba: 0, points: 25000 },
+  );
+  assert.equal(question.dora, "4z");
+  assert.deepEqual(question.correctDiscards, ["4z"]);
+  assert.equal(question.riichiChoice, true);
+  assert.equal(question.correctRiichi, true);
+  assert.equal(question.sourceUrl, "https://youtu.be/a3yIRViy5gc");
+  assert.equal(question.sourceLabel, "YouTube動画を開く");
+  assert.match(question.explanation, /3・6・9索待ちの三面張/);
+  assert.match(question.explanation, /北切りリーチを優先/);
+
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /typeof question\.correctRiichi === "boolean"/);
+  assert.match(source, /riichiSelected === question\.correctRiichi/);
+  assert.match(source, /question\.sourceUrl \|\| question\.discordMessageUrl/);
+  assert.match(source, /question\.sourceLabel \|\| "Discordの元投稿を開く"/);
 });
 
 test("every concealed quad offers kan as a standalone answer", async () => {

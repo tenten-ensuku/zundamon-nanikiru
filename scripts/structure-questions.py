@@ -53,6 +53,11 @@ MANUAL_IMAGE_OVERRIDES = {
                  "6s", "7s", "8s", "9s", "4p"],
         "dora": "6s",
     },
+    166: {
+        "hand": ["2m", "3m", "4m", "3s", "4s", "4s", "5s", "5s", "6s",
+                 "7s", "8s", "4z", "4z", "4z"],
+        "dora": "4z",
+    },
     6: {
         "hand": ["2m", "3m", "4m", "7m", "0p", "9p", "9p", "4s", "4s",
                  "5s", "6s", "7s", "7s", "9p"],
@@ -95,6 +100,7 @@ SITUATION_OVERRIDES = {
     104: {"round": "east1", "seat": "west", "turn": 6, "honba": None, "points": 25000},
     116: {"round": "east1", "seat": "west", "turn": 6, "honba": None, "points": 25000},
     126: {"round": "east1", "seat": "west", "turn": 6, "honba": None, "points": 25000},
+    166: {"round": "east1", "seat": "west", "turn": 8, "honba": 0, "points": 25000},
 }
 
 
@@ -102,7 +108,7 @@ SITUATION_OVERRIDES = {
 MELD_OVERRIDES = {
     3: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["7z", "7z", "7z"]}],
     5: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["3z", "3z", "3z"]}],
-    13: [{"type": "kan", "open": False, "tiles": ["5z", "5z", "5z", "5z"]}],
+    13: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["5z", "5z", "5z"]}],
     31: [{"type": "pon", "open": True, "calledIndex": 1, "tiles": ["2s", "2s", "2s"]}],
     33: [{"type": "pon", "open": True, "calledIndex": 1, "tiles": ["6z", "6z", "6z"]}],
     59: [{"type": "chi", "open": True, "calledIndex": 0, "tiles": ["7m", "8m", "9m"]}],

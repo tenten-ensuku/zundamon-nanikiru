@@ -167,7 +167,7 @@ Deno.serve(async (request: Request) => {
       if (!auth.authenticated) return json(401, { error: "認証に失敗しました。" }, origin);
 
       const id = Number(match[1]);
-      if (!Number.isInteger(id) || id < 1 || id > 165) {
+      if (!Number.isInteger(id) || id < 1 || id > 166) {
         return json(404, { error: "問題が見つかりません。" }, origin);
       }
 
