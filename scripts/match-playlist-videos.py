@@ -15,6 +15,7 @@ import shutil
 import subprocess
 import sys
 import time
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
@@ -119,39 +120,111 @@ def image_feature(path: Path) -> np.ndarray:
     return np.asarray(crop.resize((384, 64), Image.Resampling.LANCZOS), dtype=np.float32) / 255.0
 
 
-def dora_feature(path: Path) -> np.ndarray:
-    """Extract the displayed dora tile, independent of the saved text value."""
+def video_dora_feature(path: Path) -> np.ndarray | None:
+    """Extract the displayed dora tile across the playlist's two layouts."""
     image = Image.open(path).convert("L")
     pixels = np.asarray(image, dtype=np.uint8)
     height, width = pixels.shape
-    if width <= 700 and height >= 300:
-        # The Zundamon videos consistently show the dora tile at this upper
-        # position. A proportional crop keeps this robust if the resolution changes.
-        crop = image.crop((int(width * 0.678), int(height * 0.05), int(width * 0.725), int(height * 0.164)))
-    else:
-        # Compact Discord screenshots put the dora tile as the rightmost large
-        # bright component, after the tsumohai. Morphological closing fills the
-        # colored tile pips before finding that component.
-        bright = (pixels > 170).astype(np.uint8)
-        bright[:int(height * 0.20)] = 0
-        bright[int(height * 0.92):] = 0
-        closed = cv2.morphologyEx(bright, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_RECT, (7, 7)))
-        _, _, stats, _ = cv2.connectedComponentsWithStats(closed)
-        components = [
-            (int(x), int(y), int(component_width), int(component_height), int(area))
-            for x, y, component_width, component_height, area in stats[1:]
-            if component_width > 40
-            and component_height > max(30, int(height * 0.30))
-            and area > 500
-            and y > int(height * 0.25)
-        ]
-        if not components:
-            # Keep the run usable even if a screenshot has an unusual layout.
-            crop = image.crop((int(width * 0.82), int(height * 0.30), int(width * 0.98), int(height * 0.88)))
-        else:
-            x, y, component_width, component_height, _ = max(components, key=lambda component: component[0])
-            crop = image.crop((x, y, x + component_width, y + component_height))
+    bright = (pixels > 170).astype(np.uint8)
+    bright[:int(height * 0.02)] = 0
+    bright[int(height * 0.37):] = 0
+    closed = cv2.morphologyEx(bright, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5)))
+    _, _, stats, _ = cv2.connectedComponentsWithStats(closed)
+    components = [
+        (int(x), int(y), int(component_width), int(component_height), int(area))
+        for x, y, component_width, component_height, area in stats[1:]
+        if width * 0.035 < component_width < width * 0.075
+        and height * 0.09 < component_height < height * 0.16
+        and area > 500
+    ]
+    if not components:
+        return None
+    # Earlier videos show dora above the hand. Later videos put it to the right
+    # of the hand, so select the upper tile when present, otherwise the rightmost.
+    upper = [component for component in components if component[1] < int(height * 0.18)]
+    x, y, component_width, component_height, _ = max(upper or components, key=lambda component: component[0])
+    crop = image.crop((x, y, x + component_width, y + component_height))
     return np.asarray(crop.resize((30, 41), Image.Resampling.LANCZOS), dtype=np.float32) / 255.0
+
+
+def tile_templates() -> dict[str, np.ndarray]:
+    templates: dict[str, np.ndarray] = {}
+    prefixes = {"man": "m", "pin": "p", "sou": "s", "ji": "z"}
+    for path in (ROOT / "tiles").glob("*-66-90-l.png"):
+        stem = path.stem.split("-")[0]
+        if stem.startswith("aka"):
+            suit = {"aka1": "m", "aka2": "p", "aka3": "s"}.get(stem)
+            if suit:
+                templates[f"0{suit}"] = np.asarray(
+                    Image.open(path).convert("L").resize((58, 82), Image.Resampling.LANCZOS), dtype=np.float32
+                ) / 255.0
+            continue
+        for prefix, suit in prefixes.items():
+            if stem.startswith(prefix):
+                templates[f"{stem[len(prefix):]}{suit}"] = np.asarray(
+                    Image.open(path).convert("L").resize((58, 82), Image.Resampling.LANCZOS), dtype=np.float32
+                ) / 255.0
+                break
+    return templates
+
+
+def tile_code(feature: np.ndarray | None, templates: dict[str, np.ndarray]) -> str | None:
+    if feature is None:
+        return None
+    enlarged = np.asarray(Image.fromarray((feature * 255).astype(np.uint8)).resize((58, 82), Image.Resampling.LANCZOS), dtype=np.float32) / 255.0
+    return min(templates, key=lambda code: float(np.mean(np.abs(enlarged - templates[code]))))
+
+
+def video_dora_code(path: Path, templates: dict[str, np.ndarray]) -> str | None:
+    return tile_code(video_dora_feature(path), templates)
+
+
+def video_hand_codes(path: Path, templates: dict[str, np.ndarray]) -> list[str]:
+    """Read the contiguous concealed hand; a separated tsumohai is optional."""
+    image = Image.open(path).convert("L")
+    pixels = np.asarray(image, dtype=np.uint8)
+    height, width = pixels.shape
+    bright = (pixels > 170).astype(np.uint8)
+    bright[:int(height * 0.14)] = 0
+    bright[int(height * 0.37):] = 0
+    closed = cv2.morphologyEx(bright, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_RECT, (7, 5)))
+    _, _, stats, _ = cv2.connectedComponentsWithStats(closed)
+    components = [
+        (int(x), int(y), int(component_width), int(component_height), int(area))
+        for x, y, component_width, component_height, area in stats[1:]
+        if component_width > width * 0.20 and component_height > height * 0.08
+    ]
+    if not components:
+        return []
+    x, y, component_width, component_height, _ = max(components, key=lambda component: component[4])
+    best: tuple[float, int, int, float] | None = None
+    for count in range(8, 15):
+        for gap in range(0, max(2, int(component_height * 0.06)) + 1):
+            tile_width = (component_width - gap * (count - 1)) / count
+            error = abs(tile_width - component_height * 0.72)
+            candidate = (error, count, gap, tile_width)
+            if best is None or candidate < best:
+                best = candidate
+    if best is None:
+        return []
+    _, count, gap, tile_width = best
+    codes: list[str] = []
+    for index in range(count):
+        x0 = round(x + index * (tile_width + gap))
+        x1 = round(x + (index + 1) * tile_width + index * gap)
+        crop = image.crop((x0, y, x1, y + component_height))
+        feature = np.asarray(crop.resize((30, 41), Image.Resampling.LANCZOS), dtype=np.float32) / 255.0
+        code = tile_code(feature, templates)
+        if code:
+            codes.append(code)
+    return codes
+
+
+def hand_overlap(expected: list[str], observed: list[str]) -> float:
+    if not expected or not observed:
+        return 0.0
+    shared = sum((Counter(expected) & Counter(observed)).values())
+    return shared / min(len(expected), len(observed))
 
 
 def extract_frames(entry: dict[str, Any], work_dir: Path, ffmpeg: str) -> dict[str, Any]:
@@ -206,7 +279,7 @@ def extract_frames(entry: dict[str, Any], work_dir: Path, ffmpeg: str) -> dict[s
                 pass
 
 
-def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_features: dict[int, np.ndarray], question_doras: dict[int, np.ndarray], known_ids: dict[str, int], extraction_results: dict[str, dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, list[dict[str, Any]]]]:
+def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_features: dict[int, np.ndarray], question_hands: dict[int, list[str]], question_doras: dict[int, str | None], known_ids: dict[str, int], extraction_results: dict[str, dict[str, Any]], templates: dict[str, np.ndarray]) -> tuple[list[dict[str, Any]], dict[str, list[dict[str, Any]]]]:
     rows: list[dict[str, Any]] = []
     rankings: dict[int, list[dict[str, Any]]] = {question_id: [] for question_id in question_features}
     for index, entry in enumerate(entries, start=1):
@@ -225,19 +298,22 @@ def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_fea
             })
             continue
         frame_features = [image_feature(path) for path in frame_paths]
-        frame_doras = [dora_feature(path) for path in frame_paths]
+        frame_dora_codes = {code for path in frame_paths if (code := video_dora_code(path, templates))}
+        frame_hand_codes = [video_hand_codes(path, templates) for path in frame_paths]
+        displayed_hand = max(frame_hand_codes, key=len, default=[])
         scores = []
         for question_id, question_feature in question_features.items():
             score = min(float(np.mean((frame_feature - question_feature) ** 2)) for frame_feature in frame_features)
             scores.append((score, question_id))
         scores.sort()
         for score, question_id in scores:
-            dora_score = min(float(np.mean((frame_dora - question_doras[question_id]) ** 2)) for frame_dora in frame_doras)
+            overlap = max((hand_overlap(question_hands[question_id], hand) for hand in frame_hand_codes), default=0.0)
             rankings[question_id].append({
                 "playlistIndex": int(entry.get("playlist_index") or index),
                 "videoId": entry_id,
                 "score": round(score, 6),
-                "doraScore": round(dora_score, 6),
+                "handMatch": round(overlap, 4),
+                "doraMatched": question_doras[question_id] in frame_dora_codes,
             })
         top = scores[:3]
         best_score, best_question = top[0]
@@ -257,14 +333,15 @@ def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_fea
             "scoreGap": round(gap, 6) if gap is not None else None,
             "confidence": confidence,
             "candidates": [{"questionId": question_id, "score": round(score, 6)} for score, question_id in top],
+            "doraCodes": sorted(frame_dora_codes),
+            "handCodes": displayed_hand,
             "frames": [str(path.relative_to(output_dir)).replace("\\", "/") for path in frame_paths],
         })
     question_candidates: dict[str, list[dict[str, Any]]] = {}
     for question_id, candidates in rankings.items():
-        by_dora = sorted(candidates, key=lambda candidate: candidate["doraScore"])
-        dora_cutoff = by_dora[0]["doraScore"] + 0.006
-        dora_matches = [candidate for candidate in by_dora if candidate["doraScore"] <= dora_cutoff]
-        question_candidates[str(question_id)] = sorted(dora_matches, key=lambda candidate: candidate["score"])[:12]
+        dora_matches = [candidate for candidate in candidates if candidate["doraMatched"]]
+        strict_matches = [candidate for candidate in dora_matches if candidate["handMatch"] >= 0.70]
+        question_candidates[str(question_id)] = sorted(strict_matches, key=lambda candidate: (-candidate["handMatch"], candidate["score"]))[:12]
     return rows, question_candidates
 
 
@@ -282,14 +359,16 @@ def main() -> None:
 
     questions = json.loads((ROOT / "public" / "questions.json").read_text(encoding="utf-8"))
     question_features: dict[int, np.ndarray] = {}
-    question_doras: dict[int, np.ndarray] = {}
+    question_hands: dict[int, list[str]] = {}
+    question_doras: dict[int, str | None] = {}
     known_ids: dict[str, int] = {}
     for question in questions:
         question_id = int(question["id"])
         image_path = ROOT / "public" / "questions" / f"question-{question_id:03}.png"
         if image_path.exists():
             question_features[question_id] = image_feature(image_path)
-            question_doras[question_id] = dora_feature(image_path)
+            question_hands[question_id] = question.get("hand") or []
+            question_doras[question_id] = question.get("dora")
         source_id = video_id(question.get("sourceUrl"))
         if source_id:
             known_ids[source_id] = question_id
@@ -316,7 +395,7 @@ def main() -> None:
             print(f"[{completed}/{len(entries)}] {result['id']}: {result['status']}", flush=True)
 
     (output_dir / "extraction-results.json").write_text(json.dumps(extraction_results, ensure_ascii=False, indent=2), encoding="utf-8")
-    rows, question_candidates = candidate_rows(entries, output_dir, question_features, question_doras, known_ids, extraction_results)
+    rows, question_candidates = candidate_rows(entries, output_dir, question_features, question_hands, question_doras, known_ids, extraction_results, tile_templates())
     report = {**manifest, "questionCount": len(question_features), "matches": rows, "questionCandidates": question_candidates}
     (output_dir / "matches.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     matched = [row for row in rows if row["status"] == "matched"]
