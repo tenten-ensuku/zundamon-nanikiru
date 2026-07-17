@@ -67,13 +67,55 @@ def load_playlist(url: str) -> dict[str, Any]:
 
 
 def image_feature(path: Path) -> np.ndarray:
+    """Return a normalized image of the left-hand tile strip.
+
+    Question screenshots and Zundamon videos use different surrounding layouts,
+    but the tile row itself is visually comparable.  Detecting the bright tile
+    area avoids ranking by captions, characters, or the green background.
+    """
     image = Image.open(path).convert("L")
-    width, height = image.size
-    # This crop contains the round text, hand, dora, and tsumohai. It deliberately
-    # excludes the narration caption and most of the character animation.
-    crop = image.crop((int(width * 0.12), int(height * 0.08), int(width * 0.93), int(height * 0.50)))
-    pixels = np.asarray(crop.resize((64, 32), Image.Resampling.LANCZOS), dtype=np.float32)
-    return (pixels - pixels.mean()) / (pixels.std() + 1e-6)
+    pixels = np.asarray(image, dtype=np.uint8)
+    height, width = pixels.shape
+    bright = pixels > 180
+
+    # Tiles live in the upper-middle area in both the old compact screenshots
+    # and the newer 16:9 video frames. This intentionally ignores round text.
+    top = int(height * 0.12)
+    bottom = max(top + 1, int(height * 0.62))
+    row_counts = bright.sum(axis=1)
+    peak_y = top + int(np.argmax(row_counts[top:bottom]))
+    row_threshold = max(20, int(row_counts[peak_y] * 0.45))
+    y0 = peak_y
+    while y0 > top and row_counts[y0 - 1] >= row_threshold:
+        y0 -= 1
+    y1 = peak_y
+    while y1 < bottom - 1 and row_counts[y1 + 1] >= row_threshold:
+        y1 += 1
+
+    col_counts = bright[y0:y1 + 1].sum(axis=0)
+    col_threshold = max(2, int((y1 - y0 + 1) * 0.35))
+    columns = np.flatnonzero(col_counts >= col_threshold)
+    if len(columns) == 0:
+        crop = image.crop((int(width * 0.08), top, int(width * 0.92), bottom))
+    else:
+        # Combine adjacent tile runs, but stop at the wide tsumohai/dora gap.
+        runs: list[tuple[int, int]] = []
+        start = previous = int(columns[0])
+        for column in columns[1:]:
+            column = int(column)
+            if column - previous > 3:
+                runs.append((start, previous))
+                start = column
+            previous = column
+        runs.append((start, previous))
+        x0, x1 = runs[0]
+        for start, end in runs[1:]:
+            if start - x1 < 28:
+                x1 = end
+            else:
+                break
+        crop = image.crop((max(0, x0 - 5), max(0, y0 - 6), min(width, x1 + 6), min(height, y1 + 8)))
+    return np.asarray(crop.resize((384, 64), Image.Resampling.LANCZOS), dtype=np.float32) / 255.0
 
 
 def extract_frames(entry: dict[str, Any], work_dir: Path, ffmpeg: str) -> dict[str, Any]:
@@ -128,8 +170,9 @@ def extract_frames(entry: dict[str, Any], work_dir: Path, ffmpeg: str) -> dict[s
                 pass
 
 
-def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_features: dict[int, np.ndarray], known_ids: dict[str, int], extraction_results: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_features: dict[int, np.ndarray], known_ids: dict[str, int], extraction_results: dict[str, dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, list[dict[str, Any]]]]:
     rows: list[dict[str, Any]] = []
+    rankings: dict[int, list[dict[str, Any]]] = {question_id: [] for question_id in question_features}
     for index, entry in enumerate(entries, start=1):
         entry_id = entry["id"]
         frame_paths = [output_dir / "frames" / f"{entry_id}-{timestamp:g}s.png" for timestamp in FRAME_TIMESTAMPS]
@@ -151,11 +194,17 @@ def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_fea
             score = min(float(np.mean((frame_feature - question_feature) ** 2)) for frame_feature in frame_features)
             scores.append((score, question_id))
         scores.sort()
+        for score, question_id in scores:
+            rankings[question_id].append({
+                "playlistIndex": int(entry.get("playlist_index") or index),
+                "videoId": entry_id,
+                "score": round(score, 6),
+            })
         top = scores[:3]
         best_score, best_question = top[0]
         second_score = top[1][0] if len(top) > 1 else None
         gap = None if second_score is None else second_score - best_score
-        confidence = "high" if best_score < 0.03 and (gap is None or gap > 0.03) else "medium" if best_score < 0.18 else "review"
+        confidence = "high" if best_score < 0.03 and (gap is None or gap > 0.03) else "medium" if best_score < 0.12 else "review"
         rows.append({
             "playlistIndex": int(entry.get("playlist_index") or index),
             "videoId": entry_id,
@@ -171,7 +220,10 @@ def candidate_rows(entries: list[dict[str, Any]], output_dir: Path, question_fea
             "candidates": [{"questionId": question_id, "score": round(score, 6)} for score, question_id in top],
             "frames": [str(path.relative_to(output_dir)).replace("\\", "/") for path in frame_paths],
         })
-    return rows
+    return rows, {
+        str(question_id): sorted(candidates, key=lambda candidate: candidate["score"])[:12]
+        for question_id, candidates in rankings.items()
+    }
 
 
 def main() -> None:
@@ -220,8 +272,8 @@ def main() -> None:
             print(f"[{completed}/{len(entries)}] {result['id']}: {result['status']}", flush=True)
 
     (output_dir / "extraction-results.json").write_text(json.dumps(extraction_results, ensure_ascii=False, indent=2), encoding="utf-8")
-    rows = candidate_rows(entries, output_dir, question_features, known_ids, extraction_results)
-    report = {**manifest, "questionCount": len(question_features), "matches": rows}
+    rows, question_candidates = candidate_rows(entries, output_dir, question_features, known_ids, extraction_results)
+    report = {**manifest, "questionCount": len(question_features), "matches": rows, "questionCandidates": question_candidates}
     (output_dir / "matches.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     matched = [row for row in rows if row["status"] == "matched"]
     high = sum(row.get("confidence") == "high" for row in matched)
