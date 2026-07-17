@@ -6,7 +6,7 @@ import path from "node:path";
 const functionPath = path.resolve("supabase/functions/zundamon-question-admin/index.ts");
 const migrationPath = path.resolve("supabase/migrations/20260716000000_create_zundamon_question_overrides.sql");
 const reviewMigrationPath = path.resolve("supabase/migrations/20260716010000_create_zundamon_question_reviews.sql");
-const rangeMigrationPath = path.resolve("supabase/migrations/20260717050655_expand_zundamon_question_range_to_166.sql");
+const rangeMigrationPath = path.resolve("supabase/migrations/20260717052458_expand_zundamon_question_range_to_167.sql");
 
 test("Supabase function authenticates every mutation and keeps secrets server-side", async () => {
   const source = await readFile(functionPath, "utf8");
@@ -26,12 +26,12 @@ test("Supabase function stores shared review completion separately", async () =>
   assert.match(source, /from\(REVIEW_TABLE\)[\s\S]*\.upsert\(/);
 });
 
-test("Supabase accepts admin edits for question 166", async () => {
+test("Supabase accepts admin edits for question 167", async () => {
   const functionSource = await readFile(functionPath, "utf8");
   const migrationSource = await readFile(rangeMigrationPath, "utf8");
-  assert.match(functionSource, /id > 166/);
-  assert.match(migrationSource, /zundamon_question_id_range[\s\S]*between 1 and 166/i);
-  assert.match(migrationSource, /zundamon_review_question_id_range[\s\S]*between 1 and 166/i);
+  assert.match(functionSource, /id > 167/);
+  assert.match(migrationSource, /zundamon_question_id_range[\s\S]*between 1 and 167/i);
+  assert.match(migrationSource, /zundamon_review_question_id_range[\s\S]*between 1 and 167/i);
 });
 
 test("Supabase migration enables RLS and revokes public table access", async () => {

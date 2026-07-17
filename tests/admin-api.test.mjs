@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 23;/);
+  assert.match(source, /const APP_VERSION = 24;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -372,7 +372,7 @@ test("question 66 shows the discard note and records a riichi choice", async () 
 
 test("question 166 reproduces the YouTube problem and grades north with riichi", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 166);
+  assert.equal(questions.length, 167);
   const question = questions.find((item) => item.id === 166);
   assert.deepEqual(question.hand, [
     "2m", "3m", "4m", "3s", "4s", "4s", "5s", "5s", "6s", "7s", "8s", "4z", "4z", "4z",
@@ -396,6 +396,30 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
   assert.match(source, /riichiSelected === question\.correctRiichi/);
   assert.match(source, /question\.sourceUrl \|\| question\.discordMessageUrl/);
   assert.match(source, /question\.sourceLabel \|\| "Discordの元投稿を開く"/);
+});
+
+test("question 167 reproduces the YouTube problem and grades six man", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  assert.equal(questions.length, 167);
+  const question = questions.find((item) => item.id === 167);
+  assert.deepEqual(question.hand, [
+    "5m", "0m", "6m", "7m", "7m", "7m", "3p", "4p", "5p", "7z", "7z",
+  ]);
+  assert.equal(question.draw, null);
+  assert.deepEqual(
+    { round: question.round, seat: question.seat, turn: question.turn, honba: question.honba, points: question.points },
+    { round: "east1", seat: "west", turn: 6, honba: 0, points: 25000 },
+  );
+  assert.equal(question.dora, "6s");
+  assert.equal(question.note, "6索をチーした直後（ツモ牌表記なし）");
+  assert.deepEqual(question.melds, [
+    { type: "chi", open: true, calledIndex: 2, tiles: ["4s", "0s", "6s"] },
+  ]);
+  assert.deepEqual(question.correctDiscards, ["6m"]);
+  assert.equal(question.sourceUrl, "https://youtu.be/ADWMMNXtryw");
+  assert.equal(question.sourceLabel, "YouTube動画を開く");
+  assert.match(question.explanation, /4萬4枚と7萬1枚の計5枚/);
+  assert.match(question.explanation, /40符となり1300・2600/);
 });
 
 test("every concealed quad offers kan as a standalone answer", async () => {
