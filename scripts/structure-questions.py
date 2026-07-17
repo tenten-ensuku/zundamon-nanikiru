@@ -136,7 +136,7 @@ SITUATION_OVERRIDES = {
 
 # 副露は16問のみ。横向き牌を含むため、元画像を目視確認した確定値を使用します。
 MELD_OVERRIDES = {
-    3: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["7z", "7z", "7z"]}],
+    3: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["6z", "6z", "6z"]}],
     5: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["3z", "3z", "3z"]}],
     13: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["5z", "5z", "5z"]}],
     31: [{"type": "pon", "open": True, "calledIndex": 1, "tiles": ["2s", "2s", "2s"]}],
