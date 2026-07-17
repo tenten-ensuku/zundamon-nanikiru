@@ -119,9 +119,11 @@ function validQuestion(value: unknown, id: number) {
   const normalizedMelds = melds.map((meld) => ({ type: ["chi", "pon", "kan"].includes(String((meld as Record<string, unknown>).type)) ? String((meld as Record<string, unknown>).type) : "pon", open: (meld as Record<string, unknown>).open !== false, calledIndex: Number((meld as Record<string, unknown>).calledIndex) || 0, tiles: ((meld as Record<string, unknown>).tiles as unknown[]).filter((code): code is string => typeof code === "string" && TILE_CODE.test(code)) }));
   if (normalizedMelds.some((meld) => (meld.type === "kan" ? meld.tiles.length !== 4 : meld.tiles.length !== 3) || (meld.type === "chi" && meld.calledIndex !== 0) || meld.calledIndex < 0 || meld.calledIndex >= meld.tiles.length) || hand.length !== 14 - normalizedMelds.reduce((total, meld) => total + meld.tiles.length, 0)) return null;
   const explanation = typeof question.explanation === "string" ? question.explanation.trim() : "";
+  const sourceUrl = typeof question.sourceUrl === "string" ? question.sourceUrl.trim() : "";
+  if (sourceUrl && !/^https?:\/\//.test(sourceUrl)) return null;
   if (explanation.length > MAX_EXPLANATION_LENGTH) return null;
   const correctDiscards = Array.isArray(question.correctDiscards) ? [...new Set(question.correctDiscards.filter((code): code is string => typeof code === "string" && hand.includes(code)))] : [];
-  return { ...question, id, hand, melds: normalizedMelds, meldCount: normalizedMelds.length, dora, draw: null, explanation, correctDiscards };
+  return { ...question, id, hand, melds: normalizedMelds, meldCount: normalizedMelds.length, dora, draw: null, explanation, sourceUrl, sourceLabel: sourceUrl ? "元動画を開く" : "", correctDiscards };
 }
 
 function mergePublicRows(

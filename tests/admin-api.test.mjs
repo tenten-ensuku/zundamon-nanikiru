@@ -221,7 +221,9 @@ test("admin can replace tiles and add a complete custom question", async () => {
   };
   const replaced = await request("/api/admin/questions/1", { method: "PUT", headers, body: JSON.stringify({ question: replacement }) });
   assert.equal(replaced.status, 200);
-  assert.equal((await replaced.json()).dora, "3p");
+  const savedReplacement = await replaced.json();
+  assert.equal(savedReplacement.dora, "3p");
+  assert.equal(savedReplacement.sourceUrl, "");
 
   const custom = { ...replacement, id: 3, explanation: "新規問題", hand: ["1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m", "9m", "1p", "2p", "3p", "4p", "5p"], meldCount: 0, melds: [], dora: "1s", correctDiscards: ["1m"] };
   const created = await request("/api/admin/questions", { method: "POST", headers, body: JSON.stringify({ question: custom }) });
@@ -272,7 +274,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 34;/);
+  assert.match(source, /const APP_VERSION = 35;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -339,6 +341,26 @@ test("admin editor provides a 37-tile palette, replacement controls, and problem
   assert.match(source, /class="tile-palette"/);
   assert.match(source, /"0m"[\s\S]*"0p"[\s\S]*"0s"/);
   assert.match(source, /question\.isNew \? "POST" : "PUT"/);
+});
+
+test("admin editor separates the original video URL from explanation text", async () => {
+  const source = await readFile(path.resolve("admin.html"), "utf8");
+  assert.match(source, /id="sourceUrl" type="url"/);
+  assert.match(source, /元動画 URL/);
+  assert.match(source, /参考動画は解説文に貼ります/);
+  assert.match(source, /draft\.sourceUrl = sourceUrlInput\.value\.trim\(\)/);
+});
+
+test("review displays the original video below the explanation and keeps reference URLs linkified", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /id="sourceVideo" hidden/);
+  assert.match(source, /id="sourceVideoLink"/);
+  assert.match(source, /question\.sourceUrl/);
+  assert.match(source, /const url = trimUrlPunctuation\(chunk\)/);
+  assert.match(source, /new URL\(url\)/);
+  assert.match(source, /link\.className = `content-link content-link--\$\{metadata\.kind\}`/);
+  assert.match(source, /link\.rel = "noreferrer"/);
+  assert.match(source, /question\.discordMessageUrl/);
 });
 
 test("admin exit returns to the GitHub Pages app directory", async () => {
@@ -435,8 +457,9 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /typeof question\.correctRiichi === "boolean"/);
   assert.match(source, /riichiSelected === question\.correctRiichi/);
-  assert.match(source, /question\.sourceUrl \|\| question\.discordMessageUrl/);
-  assert.match(source, /question\.sourceLabel \|\| "Discordの元投稿を開く"/);
+  assert.match(source, /id="sourceVideo" hidden/);
+  assert.match(source, /question\.sourceUrl/);
+  assert.match(source, /question\.discordMessageUrl/);
 });
 
 test("question 167 reproduces both left-called chi melds and grades six man", async () => {

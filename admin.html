@@ -478,6 +478,9 @@
           <p class="field-title">副露面子</p>
           <div class="admin-melds" aria-label="副露面子"></div>
         </div>
+        <label for="sourceUrl">元動画 URL</label>
+        <p class="hint">ずんだもん何切るの元動画だけをここへ貼ってください。参考動画は解説文に貼ります。</p>
+        <input id="sourceUrl" type="url" inputmode="url" placeholder="https://youtu.be/..." maxlength="2000">
         <label>解説文</label>
         <textarea maxlength="20000"></textarea>
         <div class="editor-actions">
@@ -487,8 +490,10 @@
         <p class="item-message" aria-live="polite"></p>`;
       const tiles = editor.querySelector(".answer-tiles");
       const textarea = editor.querySelector("textarea");
+      const sourceUrlInput = editor.querySelector("#sourceUrl");
       const itemMessage = editor.querySelector(".item-message");
       textarea.value = draft.explanation || "";
+      sourceUrlInput.value = draft.sourceUrl || "";
 
       const tileButton = (code, active, click) => { const button = document.createElement("button"); button.type = "button"; button.className = `edit-tile${active ? " target" : ""}`; const image = document.createElement("img"); image.src = tilePath(code); image.alt = tileName(code); image.width = 66; image.height = 90; button.append(image); button.addEventListener("click", click); return button; };
       const redrawStructure = () => {
@@ -553,6 +558,9 @@
         itemMessage.textContent = "保存しています…";
         try {
           draft.explanation = textarea.value;
+          draft.sourceUrl = sourceUrlInput.value.trim();
+          if (draft.sourceUrl && !/^https?:\/\//.test(draft.sourceUrl)) throw new Error("元動画 URL は http:// または https:// で入力してください。");
+          draft.sourceLabel = draft.sourceUrl ? "元動画を開く" : "";
           draft.correctDiscards = [...selected];
           draft.meldCount = draft.melds.length;
           const requiredHandCount = 14 - draft.melds.reduce((total, meld) => total + meld.tiles.length, 0);

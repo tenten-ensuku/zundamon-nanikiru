@@ -119,9 +119,11 @@ function normalizeStructuredQuestion(value, id) {
   const correctDiscards = Array.isArray(value.correctDiscards) ? [...new Set(value.correctDiscards.filter((code) => hand.includes(code)))] : [];
   const explanation = typeof value.explanation === "string" ? value.explanation.trim() : "";
   if (explanation.length > MAX_EXPLANATION_LENGTH) return null;
+  const sourceUrl = typeof value.sourceUrl === "string" ? value.sourceUrl.trim() : "";
+  if (sourceUrl && !/^https?:\/\//.test(sourceUrl)) return null;
   return {
     id, image: typeof value.image === "string" ? value.image.trim() : "", images: Array.isArray(value.images) ? value.images.filter((image) => typeof image === "string") : [],
-    explanation, sourceUrl: typeof value.sourceUrl === "string" ? value.sourceUrl.trim() : "", sourceLabel: typeof value.sourceLabel === "string" ? value.sourceLabel.trim() : "YouTube動画を開く",
+    explanation, sourceUrl, sourceLabel: sourceUrl ? "元動画を開く" : "",
     createdAt: typeof value.createdAt === "string" ? value.createdAt : new Date().toISOString(), hand, draw: null, status: value.status === "reviewed" ? "reviewed" : "unreviewed",
     meldCount: melds.length, round: /^(east|south|west|north)\d+$/.test(value.round || "") ? value.round : "east1", seat: ["east", "south", "west", "north"].includes(value.seat) ? value.seat : "west",
     turn: Math.max(0, Math.min(18, Number(value.turn) || 0)), honba: Number.isInteger(value.honba) ? value.honba : 0, points: Number.isFinite(value.points) ? value.points : 25000,
