@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Apply only curated, rule-compliant video summaries to question data. */
+/** Append curated, rule-compliant video summaries to existing explanations. */
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -8,15 +8,17 @@ const questionsPath = path.join(root, "public", "questions.json");
 const apply = process.argv.includes("--apply");
 const clearInvalid = process.argv.includes("--clear-invalid");
 const summariesPath = process.argv.slice(2).find((argument) => !argument.startsWith("--")) || path.join(root, "data", "video-summaries.json");
+const marker = "【動画要約】";
 const genericSummary = /^動画では「.*」をテーマに、牌姿全体を比較しながら打牌判断の根拠を解説しています。$/;
-
 const questions = JSON.parse(await fs.readFile(questionsPath, "utf8"));
 let changed = 0;
 
 if (clearInvalid) {
   for (const question of questions) {
-    if (genericSummary.test(String(question.videoSummary || ""))) {
-      delete question.videoSummary;
+    const text = String(question.explanation || "");
+    const next = text.replace(new RegExp(`\\n*${marker}\\n${genericSummary.source}(?=\\n|$)`, "g"), "").trim();
+    if (next !== text.trim()) {
+      question.explanation = next;
       changed += 1;
     }
   }
@@ -29,8 +31,10 @@ if (clearInvalid) {
     if (/[一二三四五六七八九][萬万筒索]/.test(summary)) {
       throw new Error(`問題 ${question.id} の動画要約に漢字牌表記があります。m/p/s/z の正規牌コードへ直してください。`);
     }
-    if (question.videoSummary !== summary.trim()) {
-      question.videoSummary = summary.trim();
+    const original = String(question.explanation || "").trim();
+    const next = `${original}${original ? "\n\n" : ""}${marker}\n${summary.trim()}`;
+    if (question.explanation !== next) {
+      question.explanation = next;
       changed += 1;
     }
   }

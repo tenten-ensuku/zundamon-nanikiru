@@ -372,7 +372,7 @@
     });
     document.getElementById("addQuestion").addEventListener("click", () => {
       const id = Math.max(0, ...questions.map(question => Number(question.id) || 0)) + 1;
-      questions.push({ id, image: "", images: [], explanation: "", videoSummary: "", sourceUrl: "", sourceLabel: "YouTube動画を開く", createdAt: new Date().toISOString(), hand: [], draw: null, status: "unreviewed", meldCount: 0, round: "east1", seat: "west", turn: 6, honba: 0, points: 25000, dora: "1m", melds: [], correctDiscards: [], isNew: true });
+      questions.push({ id, image: "", images: [], explanation: "", sourceUrl: "", sourceLabel: "YouTube動画を開く", createdAt: new Date().toISOString(), hand: [], draw: null, status: "unreviewed", meldCount: 0, round: "east1", seat: "west", turn: 6, honba: 0, points: 25000, dora: "1m", melds: [], correctDiscards: [], isNew: true });
       document.getElementById("search").value = String(id);
       renderList();
       const details = document.querySelector(".question-list details");
@@ -384,7 +384,6 @@
       const haystack = [
         question.id,
         question.explanation,
-        question.videoSummary,
         ...(question.correctDiscards || []),
         ...(question.correctDiscards || []).map(tileName),
       ].join(" ").toLowerCase();
@@ -483,9 +482,6 @@
         <input id="sourceUrl" type="url" inputmode="url" placeholder="https://youtu.be/..." maxlength="2000">
         <label for="explanationText">解説文</label>
         <textarea id="explanationText" maxlength="20000"></textarea>
-        <label for="videoSummary">動画要約</label>
-        <p class="hint">動画で確認した結論・待ち・選択理由・代替案だけを短く書きます。牌は必ず 6m / 0p / 4z の正規コードで保存します。</p>
-        <textarea id="videoSummary" maxlength="20000"></textarea>
         <div class="editor-actions">
           <button class="restore" type="button" ${question.overridden ? "" : "disabled"}>元に戻す</button>
           <button class="save" type="button">保存</button>
@@ -493,11 +489,9 @@
         <p class="item-message" aria-live="polite"></p>`;
       const tiles = editor.querySelector(".answer-tiles");
       const textarea = editor.querySelector("#explanationText");
-      const videoSummaryTextarea = editor.querySelector("#videoSummary");
       const sourceUrlInput = editor.querySelector("#sourceUrl");
       const itemMessage = editor.querySelector(".item-message");
       textarea.value = draft.explanation || "";
-      videoSummaryTextarea.value = draft.videoSummary || "";
       sourceUrlInput.value = draft.sourceUrl || "";
 
       const tileButton = (code, active, click) => { const button = document.createElement("button"); button.type = "button"; button.className = `edit-tile${active ? " target" : ""}`; const image = document.createElement("img"); image.src = tilePath(code); image.alt = tileName(code); image.width = 66; image.height = 90; button.append(image); button.addEventListener("click", click); return button; };
@@ -563,7 +557,6 @@
         itemMessage.textContent = "保存しています…";
         try {
           draft.explanation = textarea.value;
-          draft.videoSummary = videoSummaryTextarea.value.trim();
           draft.sourceUrl = sourceUrlInput.value.trim();
           if (draft.sourceUrl && !/^https?:\/\//.test(draft.sourceUrl)) throw new Error("元動画 URL は http:// または https:// で入力してください。");
           draft.sourceLabel = draft.sourceUrl ? "元動画を開く" : "";
@@ -630,7 +623,6 @@
           selected.clear();
           for (const code of restored.correctDiscards || []) selected.add(code);
           textarea.value = restored.explanation || "";
-          videoSummaryTextarea.value = restored.videoSummary || "";
           redrawTiles();
           restoreButton.disabled = true;
           itemMessage.className = "item-message success";
