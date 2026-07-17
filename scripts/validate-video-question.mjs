@@ -8,9 +8,11 @@ if (!ids.length || ids.some((id) => !Number.isInteger(id))) {
 }
 
 const questions = JSON.parse(await readFile("public/questions.json", "utf8"));
+const verifiedQuestions = JSON.parse(await readFile("calibration/zundamon-nanikiru-v1/verified-questions.json", "utf8")).questions;
 const tilePattern = /^(?:[0-9][mps]|[1-7]z)$/;
 const normalize = (tile) => /^0[mps]$/.test(tile) ? `5${tile[1]}` : tile;
 const failures = [];
+const sameJson = (left, right) => JSON.stringify(left) === JSON.stringify(right);
 
 for (const id of ids) {
   const question = questions.find((item) => item.id === id);
@@ -37,6 +39,15 @@ for (const id of ids) {
   for (const tile of allTiles) counts.set(normalize(tile), (counts.get(normalize(tile)) || 0) + 1);
   if ([...counts.values()].some((count) => count > 4)) failures.push(`${id}: more than four copies of a tile`);
   await access(path.resolve("public", question.image.replace(/^\//, ""))).catch(() => failures.push(`${id}: question image is missing`));
+
+  const verified = verifiedQuestions[String(id)];
+  if (verified) {
+    for (const field of ["hand", "dora", "melds", "correctDiscards", "riichiChoice", "correctRiichi"]) {
+      if (field in verified && !sameJson(question[field], verified[field])) {
+        failures.push(`${id}: does not match the verified calibration for ${field}`);
+      }
+    }
+  }
 }
 
 if (failures.length) {

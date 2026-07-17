@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "purpose": "ユーザー確認済みの牌姿を固定し、別モデルへの引き継ぎ時に同じ誤認を再発させないための機械検証用基準。",
+  "correctionLedger": [
+    {
+      "id": 169,
+      "sourceUrl": "https://youtu.be/Aijtrqz70Os",
+      "incorrectRead": ["5p", "6p", "8p", "6s", "8s", "9s"],
+      "verifiedRead": ["5p", "7p", "9p", "7s", "8s", "9s"],
+      "rule": "数牌の中央・端の模様だけで確定せず、同一手牌の連続形を全体で照合する。"
+    },
+    {
+      "id": 170,
+      "sourceUrl": "https://youtu.be/EwtJuGUcYy8",
+      "incorrectRead": ["2s", "3s", "4s", "5s"],
+      "verifiedRead": ["2s", "3s", "3s", "3s"],
+      "rule": "連続形に見えても、同種牌の重なりを一牌ずつ数える。順子と決めつけない。"
+    }
+  ],
+  "questions": {
+    "169": {
+      "hand": ["2m", "4m", "4m", "5m", "6m", "7m", "7m", "8m", "5p", "7p", "9p", "7s", "8s", "9s"],
+      "dora": "6s",
+      "melds": [],
+      "correctDiscards": ["2m"]
+    },
+    "170": {
+      "hand": ["2m", "3m", "4m", "5m", "7m", "7m", "7m", "9p", "9p", "9p", "2s", "3s", "3s", "3s"],
+      "dora": "8s",
+      "melds": [],
+      "correctDiscards": ["2s"],
+      "riichiChoice": true,
+      "correctRiichi": true
+    }
+  }
+}

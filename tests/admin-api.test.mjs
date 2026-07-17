@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 31;/);
+  assert.match(source, /const APP_VERSION = 32;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -476,7 +476,7 @@ test("question 169 keeps the comparison hand, dora, and two-man answer", async (
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
   const question = questions.find((item) => item.id === 169);
   assert.deepEqual(question.hand, [
-    "2m", "4m", "4m", "5m", "6m", "7m", "7m", "8m", "5p", "6p", "8p", "6s", "8s", "9s",
+    "2m", "4m", "4m", "5m", "6m", "7m", "7m", "8m", "5p", "7p", "9p", "7s", "8s", "9s",
   ]);
   assert.equal(question.dora, "6s");
   assert.deepEqual(question.melds, []);
@@ -489,7 +489,7 @@ test("question 170 stores the riichi decision and question 171 stores the open r
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
   const riichi = questions.find((item) => item.id === 170);
   assert.deepEqual(riichi.hand, [
-    "2m", "3m", "4m", "5m", "7m", "7m", "7m", "9p", "9p", "9p", "2s", "3s", "4s", "5s",
+    "2m", "3m", "4m", "5m", "7m", "7m", "7m", "9p", "9p", "9p", "2s", "3s", "3s", "3s",
   ]);
   assert.equal(riichi.dora, "8s");
   assert.deepEqual(riichi.correctDiscards, ["2s"]);
@@ -507,6 +507,19 @@ test("question 170 stores the riichi decision and question 171 stores the open r
   assert.deepEqual(openHand.correctDiscards, ["3p"]);
   assert.equal(openHand.course, "intermediate");
   assert.doesNotMatch(openHand.explanation, /[萬万筒索]/);
+});
+
+test("user-verified video corrections are fixed in the calibration set", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  const calibration = JSON.parse(await readFile(path.resolve("calibration/zundamon-nanikiru-v1/verified-questions.json"), "utf8"));
+  for (const id of [169, 170]) {
+    const question = questions.find((item) => item.id === id);
+    const verified = calibration.questions[String(id)];
+    for (const field of ["hand", "dora", "melds", "correctDiscards", "riichiChoice", "correctRiichi"]) {
+      if (field in verified) assert.deepEqual(question[field], verified[field], `question ${id}: ${field}`);
+    }
+  }
+  assert.deepEqual(calibration.correctionLedger.map((entry) => entry.id), [169, 170]);
 });
 
 test("every concealed quad offers kan as a standalone answer", async () => {

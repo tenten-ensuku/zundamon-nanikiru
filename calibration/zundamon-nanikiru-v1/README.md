@@ -6,7 +6,7 @@
 
 1. リポジトリ直下の `AGENTS.md`
 2. リポジトリ直下の `VIDEO_QUESTION_INGESTION.md`
-3. このフォルダの `manifest.json` と `caption-normalization.json`
+3. このフォルダの `manifest.json`、`caption-normalization.json`、`verified-questions.json`
 
 ## 対象シリーズの見分け方
 
@@ -23,7 +23,8 @@
 4. 結論フレームで打牌、立直、カンの選択を確定する。字幕だけで結論を確定しない。
 5. 字幕は理由の要約にだけ使う。牌名は `m` / `p` / `s` / `z` の個別コードへ正規化する。
 6. `questions.json`、画像、`structure-questions.py` の手動オーバーライド、テストを同じ変更で更新する。
-7. `npm run validate:video-question -- <id>`、`npm test`、`git diff --check` を通す。
+7. ユーザーが牌姿を訂正した場合は、訂正前後を `verified-questions.json` の `correctionLedger` に記録し、確定した全手牌を `questions` に保存する。
+8. `npm run validate:video-question -- <id>`、`npm test`、`git diff --check` を通す。校正対象の問題は、ここに保存した確定手牌との完全一致も検証される。
 
 ## モデル変更時の判定
 
@@ -37,5 +38,6 @@
 - `萬`、`筒`、`索`、牌絵文字、HTML画像タグを `explanation`・`note` に保存しない。
 - 問題フレームに表示されたツモ牌を `draw` へ残さない。
 - チーで鳴いた牌を左端以外に置かない。`calledIndex: 0` とする。
+- 牌の連続形を見た目だけで順子と決めつけない。特に `5p・6p・8p` と `5p・7p・9p`、`2s・3s・4s・5s` と `2s・3s・3s・3s` のような誤認は、校正セットの確定値を照合して防ぐ。
 
 詳しいフィールド定義、公開、バージョン更新は `VIDEO_QUESTION_INGESTION.md` を正とします。
