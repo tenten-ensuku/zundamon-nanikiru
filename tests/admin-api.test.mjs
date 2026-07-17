@@ -274,7 +274,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 46;/);
+  assert.match(source, /const APP_VERSION = 47;/);
 });
 
 test("hand dora and red fives receive the static gloss marker", async () => {
@@ -430,6 +430,12 @@ test("first five verified source videos use canonical answers and summaries", as
     assert.match(question.explanation, /【動画要約】/);
     assert.match(question.explanation, new RegExp(`打${discard}`));
   }
+});
+
+test("saved admin explanations retain bundled video summaries", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /function mergeExplanationWithVideoSummary/);
+  assert.match(source, /current\.includes\("【動画要約】"\)/);
 });
 
 test("question 3 contains an open three-green-dragon pon", async () => {

@@ -53,6 +53,14 @@ async function writeJsonAtomic(filePath, value) {
   await rename(temporary, filePath);
 }
 
+function mergeExplanationWithVideoSummary(baseExplanation, overrideExplanation) {
+  const base = String(baseExplanation || "").trim();
+  const current = String(overrideExplanation ?? baseExplanation ?? "").trim();
+  const summary = base.match(/(?:^|\n\n)【動画要約】\n[\s\S]*$/)?.[0]?.trim() || "";
+  if (!summary || current.includes("【動画要約】")) return current;
+  return current ? `${current}\n\n${summary}` : summary;
+}
+
 function mergeQuestions(baseQuestions, overrides) {
   const baseIds = new Set(baseQuestions.map((question) => Number(question.id)));
   const merged = baseQuestions.map((question) => {
@@ -65,7 +73,7 @@ function mergeQuestions(baseQuestions, overrides) {
       correctDiscards: Array.isArray(override?.correctDiscards)
         ? override.correctDiscards
         : Array.isArray(question.correctDiscards) ? question.correctDiscards : [],
-      explanation: typeof override?.explanation === "string" ? override.explanation : question.explanation,
+      explanation: mergeExplanationWithVideoSummary(question.explanation, typeof override?.explanation === "string" ? override.explanation : undefined),
       reviewed: override?.reviewed === true,
       overridden: hasContentOverride,
       overrideUpdatedAt: override?.updatedAt || null,
