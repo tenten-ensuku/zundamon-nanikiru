@@ -57,14 +57,15 @@ const changed = [];
 for (const mapping of mappings) {
   const question = byId.get(mapping.id);
   if (!question) throw new Error(`questions.json に問題 ${mapping.id} がありません。`);
-  const summary = `${marker}\n動画では「${topicFromTitle(mapping.title)}」をテーマに、牌姿全体を比較しながら打牌判断の根拠を解説しています。`;
+  const summary = `動画では「${topicFromTitle(mapping.title)}」をテーマに、牌姿全体を比較しながら打牌判断の根拠を解説しています。`;
   const previous = String(question.explanation || "").trim();
-  const next = previous.includes(marker) ? previous : (previous ? `${previous}\n\n${summary}` : summary);
-  if (videoId(question.sourceUrl) !== videoId(mapping.sourceUrl) || question.explanation !== next) {
+  const next = previous.replace(new RegExp(`\\n*${marker}\\n[^\\n]*(?:\\n|$)$`), "").trim();
+  if (videoId(question.sourceUrl) !== videoId(mapping.sourceUrl) || question.explanation !== next || question.videoSummary !== summary) {
     changed.push(mapping.id);
     if (videoId(question.sourceUrl) !== videoId(mapping.sourceUrl)) question.sourceUrl = mapping.sourceUrl;
     question.sourceLabel = "YouTube動画を開く";
     question.explanation = next;
+    question.videoSummary = summary;
   }
 }
 if (apply) await fs.writeFile(questionsPath, `${JSON.stringify(questions, null, 2)}\n`, "utf8");

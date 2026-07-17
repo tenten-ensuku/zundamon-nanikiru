@@ -274,7 +274,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 42;/);
+  assert.match(source, /const APP_VERSION = 43;/);
 });
 
 test("hand dora and red fives receive the static gloss marker", async () => {
@@ -370,6 +370,8 @@ test("review displays the original video below the explanation and keeps referen
   assert.match(source, /link\.className = `content-link content-link--\$\{metadata\.kind\}`/);
   assert.match(source, /link\.rel = "noreferrer"/);
   assert.match(source, /setLinkContent\(sourceVideoLink, linkMetadata\(new URL\(question\.sourceUrl\)\), "問題解説動画へ飛ぶ"\)/);
+  assert.match(source, /question\.videoSummary/);
+  assert.match(source, /className = "video-summary"/);
   assert.doesNotMatch(source, /id="sourceLink"/);
   assert.doesNotMatch(source, /Discordの元投稿を開く/);
 });

@@ -467,6 +467,22 @@
 
     .explanation a { color: var(--gold-light); }
 
+    .video-summary {
+      margin-top: 14px;
+      padding: 10px 12px;
+      border-left: 3px solid var(--gold);
+      border-radius: 4px;
+      background: rgba(216, 168, 60, 0.1);
+      color: #f6f2df;
+      line-height: 1.7;
+    }
+
+    .video-summary strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--gold-light);
+    }
+
     .review-actions {
       margin-top: 12px;
       display: grid;
@@ -978,7 +994,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 42;
+    const APP_VERSION = 43;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -2018,7 +2034,18 @@
       review.classList.toggle("open", revealed);
       document.body.classList.toggle("reviewing", revealed);
       explanation.innerHTML = "";
-      if (revealed) appendLinkedText(explanation, question.explanation);
+      if (revealed) {
+        appendLinkedText(explanation, question.explanation);
+        if (typeof question.videoSummary === "string" && question.videoSummary.trim()) {
+          const videoSummary = document.createElement("section");
+          videoSummary.className = "video-summary";
+          const title = document.createElement("strong");
+          title.textContent = "動画要約";
+          videoSummary.append(title);
+          appendLinkedText(videoSummary, question.videoSummary);
+          explanation.append(videoSummary);
+        }
+      }
       const sourceVideo = document.getElementById("sourceVideo");
       const sourceVideoLink = document.getElementById("sourceVideoLink");
       const hasSourceVideo = revealed && typeof question.sourceUrl === "string" && /^https?:\/\//.test(question.sourceUrl);
