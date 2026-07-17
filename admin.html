@@ -263,21 +263,20 @@
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
     const WIND_NAMES = { east: "東", south: "南", west: "西", north: "北" };
+    const TILE_ASSET_VERSION = "41";
     let adminPassword = "";
     let baseQuestions = [];
     let questions = [];
 
     function tilePath(code) {
-      if (code === "0m") return "tiles/aka3-66-90-l.png";
-      if (code === "0p") return "tiles/aka1-66-90-l.png";
-      if (code === "0s") return "tiles/aka2-66-90-l.png";
+      const cacheVersion = `?v=${TILE_ASSET_VERSION}`;
+      if (code === "0m") return "tiles/aka1-66-90-l.png" + cacheVersion;
+      if (code === "0p") return "tiles/aka2-66-90-l.png" + cacheVersion;
+      if (code === "0s") return "tiles/aka3-66-90-l.png" + cacheVersion;
       const number = Number(code[0]);
       const suit = code[1];
-      if (suit === "z") {
-        const honorAsset = { 1: 1, 2: 2, 3: 3, 4: 4, 5: 6, 6: 5, 7: 7 };
-        return `tiles/ji${honorAsset[number]}-66-90-l.png`;
-      }
-      return `tiles/${{ m: "man", p: "pin", s: "sou" }[suit]}${number}-66-90-l.png`;
+      if (suit === "z") return `tiles/ji${number}-66-90-l.png${cacheVersion}`;
+      return `tiles/${{ m: "man", p: "pin", s: "sou" }[suit]}${number}-66-90-l.png${cacheVersion}`;
     }
 
     function tileName(code) {

@@ -31,11 +31,12 @@ def main() -> None:
 <script>
 const questionImageBase='../../public/questions/';
 const tileImageBase='../../tiles/';
+const tileImageVersion='?v=41';
 const storeKey='zundamon-video-matcher-v1';
 let questions=[],matches=[],questionCandidates={},mapping=JSON.parse(localStorage.getItem(storeKey)||'{}');
 const qSelect=document.querySelector('#question'), view=document.querySelector('#view'), search=document.querySelector('#search'), videos=document.querySelector('#videos'), status=document.querySelector('#status'), qCard=document.querySelector('#questionCard');
 const questionImage=id=>`${questionImageBase}question-${String(id).padStart(3,'0')}.png`;
-const tileImage=code=>{const match=String(code||'').match(/^([0-9])([mpsz])$/);if(!match)return '';const[,number,suit]=match;if(number==='0'){const red={m:'aka1',p:'aka2',s:'aka3'}[suit];return red?`${tileImageBase}${red}-66-90-l.png`:''}const prefix={m:'man',p:'pin',s:'sou',z:'ji'}[suit];return prefix?`${tileImageBase}${prefix}${number}-66-90-l.png`:''};
+const tileImage=code=>{const match=String(code||'').match(/^([0-9])([mpsz])$/);if(!match)return '';const[,number,suit]=match;if(number==='0'){const red={m:'aka1',p:'aka2',s:'aka3'}[suit];return red?`${tileImageBase}${red}-66-90-l.png${tileImageVersion}`:''}const prefix={m:'man',p:'pin',s:'sou',z:'ji'}[suit];return prefix?`${tileImageBase}${prefix}${number}-66-90-l.png${tileImageVersion}`:''};
 const tileRow=(tiles,label)=>`<div class="data-hand" aria-label="${label}">${tiles.map(code=>{const src=tileImage(code);return src?`<img src="${src}" alt="${code}" title="${code}">`:''}).join('')}</div>`;
 const save=()=>localStorage.setItem(storeKey,JSON.stringify(mapping));
 function selected(){return Number(qSelect.value)}

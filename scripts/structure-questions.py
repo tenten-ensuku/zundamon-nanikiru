@@ -181,7 +181,7 @@ def write_json(path: Path, value) -> None:
 
 def tile_code_from_asset(stem: str) -> str:
     prefix = stem.split("-")[0]
-    red_five_map = {"aka1": "0p", "aka2": "0s", "aka3": "0m"}
+    red_five_map = {"aka1": "0m", "aka2": "0p", "aka3": "0s"}
     if prefix in red_five_map:
         return red_five_map[prefix]
     suit, number = re.fullmatch(r"(man|pin|sou|ji)(\d)", prefix).groups()
@@ -191,10 +191,7 @@ def tile_code_from_asset(stem: str) -> str:
         return number + "p"
     if suit == "sou":
         return number + "s"
-    # 承認済み画像は ji5=發, ji6=白。一般的な牌コードは 5z=白, 6z=發。
-    honor_map = {"1": "1z", "2": "2z", "3": "3z", "4": "4z",
-                 "5": "6z", "6": "5z", "7": "7z"}
-    return honor_map[number]
+    return number + "z"
 
 
 def sort_hand(hand: list[str]) -> list[str]:
