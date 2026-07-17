@@ -78,6 +78,10 @@
     input { min-height: 46px; padding: 9px 11px; }
     textarea { min-height: 190px; padding: 11px; resize: vertical; font-family: "Yu Gothic", sans-serif; font-weight: 600; line-height: 1.6; }
     input:focus, textarea:focus { border-color: var(--gold-light); box-shadow: 0 0 0 2px rgba(242,210,123,.12); }
+    .format-toolbar { display: flex; gap: 7px; margin: -2px 0 7px; }
+    .format-button { min-height: 34px; padding: 4px 11px; border: 1px solid rgba(242,210,123,.36); border-radius: 6px; color: var(--ink); background: rgba(0,0,0,.28); }
+    .format-button strong { font-family: sans-serif; }
+    .format-button.red { color: #ff7165; }
     .primary {
       width: 100%; min-height: 46px; margin-top: 12px; border: 1px solid #efad5e; border-radius: 7px;
       background: linear-gradient(#d27735, #8c3e17); box-shadow: 0 3px 0 #4b210c;
@@ -489,6 +493,11 @@
         <p class="hint">ずんだもん何切るの元動画だけをここへ貼ってください。参考動画は解説文に貼ります。</p>
         <input id="sourceUrl" type="url" inputmode="url" placeholder="https://youtu.be/..." maxlength="2000">
         <label for="explanationText">解説文</label>
+        <div class="format-toolbar" role="toolbar" aria-label="解説文の書式">
+          <button class="format-button" type="button" data-format="bold" title="太字">B 太字</button>
+          <button class="format-button red" type="button" data-format="red" title="赤文字">● 赤文字</button>
+        </div>
+        <p class="hint">文字を選んで押すと書式を付けます。太字は <code>**文字**</code>、赤文字は <code>[red]文字[/red]</code> として保存されます。</p>
         <textarea id="explanationText" maxlength="20000"></textarea>
         <div class="editor-actions">
           <button class="restore" type="button" ${question.overridden ? "" : "disabled"}>元に戻す</button>
@@ -501,6 +510,15 @@
       const itemMessage = editor.querySelector(".item-message");
       textarea.value = draft.explanation || "";
       sourceUrlInput.value = draft.sourceUrl || "";
+      const applyFormat = (format) => {
+        const start = textarea.selectionStart;
+        const end = textarea.selectionEnd;
+        const selectedText = textarea.value.slice(start, end) || (format === "bold" ? "太字" : "赤文字");
+        const [open, close] = format === "bold" ? ["**", "**"] : ["[red]", "[/red]"];
+        textarea.setRangeText(`${open}${selectedText}${close}`, start, end, "select");
+        textarea.focus();
+      };
+      editor.querySelectorAll("[data-format]").forEach(button => button.addEventListener("click", () => applyFormat(button.dataset.format)));
 
       const tileButton = (code, active, click) => { const button = document.createElement("button"); button.type = "button"; button.className = `edit-tile${active ? " target" : ""}`; const image = document.createElement("img"); image.src = tilePath(code); image.alt = tileName(code); image.width = 66; image.height = 90; button.append(image); button.addEventListener("click", click); return button; };
       const redrawStructure = () => {

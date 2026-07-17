@@ -466,6 +466,8 @@
     }
 
     .explanation a { color: var(--gold-light); }
+    .explanation strong { color: #fff8dc; font-weight: 900; }
+    .explanation .explanation-red { color: #ff7165; font-weight: 900; }
 
     .review-actions {
       margin-top: 12px;
@@ -978,7 +980,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 48;
+    const APP_VERSION = 49;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -1138,7 +1140,6 @@
     function stripDiscordMarkdown(value) {
       return (value || "")
         .replace(/\|\|/g, "")
-        .replace(/\*\*/g, "")
         .replace(/__/g, "")
         .replace(/~~/g, "")
         .trim();
@@ -1194,6 +1195,21 @@
       link.setAttribute("aria-label", label);
     }
 
+    function appendFormattedText(container, text) {
+      const pattern = /(\*\*[^*]+\*\*|\[red\][\s\S]*?\[\/red\])/g;
+      let lastIndex = 0;
+      for (const match of text.matchAll(pattern)) {
+        if (match.index > lastIndex) container.append(document.createTextNode(text.slice(lastIndex, match.index)));
+        const token = match[0];
+        const node = document.createElement(token.startsWith("**") ? "strong" : "span");
+        if (node.tagName === "SPAN") node.className = "explanation-red";
+        node.textContent = token.startsWith("**") ? token.slice(2, -2) : token.slice(5, -6);
+        container.append(node);
+        lastIndex = match.index + token.length;
+      }
+      if (lastIndex < text.length) container.append(document.createTextNode(text.slice(lastIndex)));
+    }
+
     function appendLinkedText(container, value) {
       const text = stripDiscordMarkdown(value) || "この問題の解説はまだありません。";
       const chunks = text.split(/(https?:\/\/[^\s]+)/g);
@@ -1215,10 +1231,10 @@
             container.append(link);
             if (trailing) container.append(document.createTextNode(trailing));
           } catch {
-            container.append(document.createTextNode(chunk));
+            appendFormattedText(container, chunk);
           }
         } else {
-          container.append(document.createTextNode(chunk));
+          appendFormattedText(container, chunk);
         }
       }
     }

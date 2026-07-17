@@ -274,7 +274,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 48;/);
+  assert.match(source, /const APP_VERSION = 49;/);
 });
 
 test("hand dora and red fives receive the static gloss marker", async () => {
@@ -436,6 +436,17 @@ test("saved admin explanations retain bundled video summaries", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /function mergeExplanationWithVideoSummary/);
   assert.match(source, /current\.includes\("【動画要約】"\)/);
+});
+
+test("admin explanation editor supports bold and red text without injecting HTML", async () => {
+  const admin = await readFile(path.resolve("admin.html"), "utf8");
+  const client = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(admin, /data-format="bold"/);
+  assert.match(admin, /data-format="red"/);
+  assert.match(admin, /\[red\]文字\[\/red\]/);
+  assert.match(client, /function appendFormattedText/);
+  assert.match(client, /document\.createElement\(token\.startsWith\("\*\*"\) \? "strong" : "span"\)/);
+  assert.match(client, /explanation-red/);
 });
 
 test("question 3 contains an open three-green-dragon pon", async () => {
