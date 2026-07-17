@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 24;/);
+  assert.match(source, /const APP_VERSION = 25;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -398,12 +398,12 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
   assert.match(source, /question\.sourceLabel \|\| "Discordの元投稿を開く"/);
 });
 
-test("question 167 reproduces the YouTube problem and grades six man", async () => {
+test("question 167 reproduces both left-called chi melds and grades six man", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
   assert.equal(questions.length, 167);
   const question = questions.find((item) => item.id === 167);
   assert.deepEqual(question.hand, [
-    "5m", "0m", "6m", "7m", "7m", "7m", "3p", "4p", "5p", "7z", "7z",
+    "5m", "0m", "6m", "7m", "7m", "7m", "7z", "7z",
   ]);
   assert.equal(question.draw, null);
   assert.deepEqual(
@@ -413,7 +413,8 @@ test("question 167 reproduces the YouTube problem and grades six man", async () 
   assert.equal(question.dora, "6s");
   assert.equal(question.note, "6索をチーした直後（ツモ牌表記なし）");
   assert.deepEqual(question.melds, [
-    { type: "chi", open: true, calledIndex: 2, tiles: ["4s", "0s", "6s"] },
+    { type: "chi", open: true, calledIndex: 0, tiles: ["6s", "4s", "0s"] },
+    { type: "chi", open: true, calledIndex: 0, tiles: ["3p", "4p", "5p"] },
   ]);
   assert.deepEqual(question.correctDiscards, ["6m"]);
   assert.equal(question.sourceUrl, "https://youtu.be/ADWMMNXtryw");

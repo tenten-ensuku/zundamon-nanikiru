@@ -10152,17 +10152,27 @@
     },
     {
       "id": 167,
-      "handLength": 11,
-      "meldCount": 1,
+      "handLength": 8,
+      "meldCount": 2,
       "melds": [
         {
           "type": "chi",
           "open": true,
-          "calledIndex": 2,
+          "calledIndex": 0,
           "tiles": [
+            "6s",
             "4s",
-            "0s",
-            "6s"
+            "0s"
+          ]
+        },
+        {
+          "type": "chi",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "3p",
+            "4p",
+            "5p"
           ]
         }
       ],

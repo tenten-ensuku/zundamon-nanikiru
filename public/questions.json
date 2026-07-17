@@ -6620,15 +6620,12 @@
       "7m",
       "7m",
       "7m",
-      "3p",
-      "4p",
-      "5p",
       "7z",
       "7z"
     ],
     "draw": null,
     "status": "unreviewed",
-    "meldCount": 1,
+    "meldCount": 2,
     "round": "east1",
     "seat": "west",
     "turn": 6,
@@ -6640,11 +6637,21 @@
       {
         "type": "chi",
         "open": true,
-        "calledIndex": 2,
+        "calledIndex": 0,
         "tiles": [
+          "6s",
           "4s",
-          "0s",
-          "6s"
+          "0s"
+        ]
+      },
+      {
+        "type": "chi",
+        "open": true,
+        "calledIndex": 0,
+        "tiles": [
+          "3p",
+          "4p",
+          "5p"
         ]
       }
     ],

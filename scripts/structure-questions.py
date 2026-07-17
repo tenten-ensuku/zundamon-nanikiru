@@ -59,10 +59,9 @@ MANUAL_IMAGE_OVERRIDES = {
         "dora": "4z",
     },
     167: {
-        "hand": ["5m", "0m", "6m", "7m", "7m", "7m", "3p", "4p", "5p",
-                 "7z", "7z"],
+        "hand": ["5m", "0m", "6m", "7m", "7m", "7m", "7z", "7z"],
         "dora": "6s",
-        "meldCount": 1,
+        "meldCount": 2,
     },
     6: {
         "hand": ["2m", "3m", "4m", "7m", "0p", "9p", "9p", "4s", "4s",
@@ -128,7 +127,10 @@ MELD_OVERRIDES = {
     137: [{"type": "chi", "open": True, "calledIndex": 1, "tiles": ["6m", "7m", "8m"]}],
     139: [{"type": "chi", "open": True, "calledIndex": 1, "tiles": ["4s", "0s", "6s"]}],
     149: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["8s", "8s", "8s"]}],
-    167: [{"type": "chi", "open": True, "calledIndex": 2, "tiles": ["4s", "0s", "6s"]}],
+    167: [
+        {"type": "chi", "open": True, "calledIndex": 0, "tiles": ["6s", "4s", "0s"]},
+        {"type": "chi", "open": True, "calledIndex": 0, "tiles": ["3p", "4p", "5p"]},
+    ],
 }
 
 
