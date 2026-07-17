@@ -97,13 +97,31 @@ function database() {
 }
 
 function publicOverride(row: Record<string, unknown>) {
+  const questionData = row.question_data && typeof row.question_data === "object" ? row.question_data as Record<string, unknown> : null;
   return {
+    ...(questionData || {}),
     id: Number(row.question_id),
     correctDiscards: Array.isArray(row.correct_discards) ? row.correct_discards : [],
     explanation: String(row.explanation || ""),
     overridden: true,
     overrideUpdatedAt: row.updated_at || null,
+    ...(questionData ? { questionData } : {}),
   };
+}
+
+function validQuestion(value: unknown, id: number) {
+  if (!value || typeof value !== "object") return null;
+  const question = value as Record<string, unknown>;
+  const hand = Array.isArray(question.hand) ? question.hand.filter((code) => typeof code === "string" && TILE_CODE.test(code)) : [];
+  const melds = Array.isArray(question.melds) ? question.melds : [];
+  const dora = typeof question.dora === "string" ? question.dora : "";
+  if (Number(question.id) !== id || !hand.length || !TILE_CODE.test(dora) || melds.some((meld) => !meld || typeof meld !== "object" || !Array.isArray((meld as Record<string, unknown>).tiles) || ![3, 4].includes(((meld as Record<string, unknown>).tiles as unknown[]).length))) return null;
+  const normalizedMelds = melds.map((meld) => ({ type: ["chi", "pon", "kan"].includes(String((meld as Record<string, unknown>).type)) ? String((meld as Record<string, unknown>).type) : "pon", open: (meld as Record<string, unknown>).open !== false, calledIndex: Number((meld as Record<string, unknown>).calledIndex) || 0, tiles: ((meld as Record<string, unknown>).tiles as unknown[]).filter((code): code is string => typeof code === "string" && TILE_CODE.test(code)) }));
+  if (normalizedMelds.some((meld) => (meld.type === "kan" ? meld.tiles.length !== 4 : meld.tiles.length !== 3) || (meld.type === "chi" && meld.calledIndex !== 0) || meld.calledIndex < 0 || meld.calledIndex >= meld.tiles.length) || hand.length !== 14 - normalizedMelds.reduce((total, meld) => total + meld.tiles.length, 0)) return null;
+  const explanation = typeof question.explanation === "string" ? question.explanation.trim() : "";
+  if (explanation.length > MAX_EXPLANATION_LENGTH) return null;
+  const correctDiscards = Array.isArray(question.correctDiscards) ? [...new Set(question.correctDiscards.filter((code): code is string => typeof code === "string" && hand.includes(code)))] : [];
+  return { ...question, id, hand, melds: normalizedMelds, meldCount: normalizedMelds.length, dora, draw: null, explanation, correctDiscards };
 }
 
 function mergePublicRows(
@@ -144,7 +162,7 @@ Deno.serve(async (request: Request) => {
     if (request.method === "GET" && pathname === "/overrides") {
       const db = database();
       const [overrideResult, reviewResult] = await Promise.all([
-        db.from(TABLE).select("question_id, correct_discards, explanation, updated_at").order("question_id"),
+        db.from(TABLE).select("question_id, correct_discards, explanation, question_data, updated_at").order("question_id"),
         db.from(REVIEW_TABLE).select("question_id, reviewed, updated_at").order("question_id"),
       ]);
       if (overrideResult.error) throw overrideResult.error;
@@ -161,13 +179,15 @@ Deno.serve(async (request: Request) => {
     }
 
     const match = /^\/questions\/(\d+)$/.exec(pathname);
-    if (match && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) {
+    const isCreate = request.method === "POST" && pathname === "/questions";
+    if ((match && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
       const auth = await authenticate(request);
       if (!auth.configured) return json(503, { error: "管理パスワードが設定されていません。" }, origin);
       if (!auth.authenticated) return json(401, { error: "認証に失敗しました。" }, origin);
 
-      const id = Number(match[1]);
-      if (!Number.isInteger(id) || id < 1 || id > 167) {
+      const body = request.method === "PATCH" || request.method === "DELETE" ? null : await readJson(request);
+      const id = isCreate ? Number((body?.question as Record<string, unknown>)?.id) : Number(match?.[1]);
+      if (!Number.isInteger(id) || id < 1 || id > 9999) {
         return json(404, { error: "問題が見つかりません。" }, origin);
       }
 
@@ -201,7 +221,12 @@ Deno.serve(async (request: Request) => {
         }, origin);
       }
 
-      const body = await readJson(request);
+      const structured = validQuestion(body?.question, id);
+      if (structured) {
+        const { data, error } = await database().from(TABLE).upsert({ question_id: id, correct_discards: structured.correctDiscards, explanation: structured.explanation, question_data: structured, updated_at: new Date().toISOString() }, { onConflict: "question_id" }).select("question_id, correct_discards, explanation, question_data, updated_at").single();
+        if (error) throw error;
+        return json(200, publicOverride(data), origin);
+      }
       const explanation = typeof body.explanation === "string" ? body.explanation.trim() : "";
       const correctDiscards = Array.isArray(body.correctDiscards)
         ? [...new Set(body.correctDiscards.filter((code: unknown) => typeof code === "string"))]

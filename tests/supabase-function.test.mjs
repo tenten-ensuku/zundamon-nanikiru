@@ -26,12 +26,15 @@ test("Supabase function stores shared review completion separately", async () =>
   assert.match(source, /from\(REVIEW_TABLE\)[\s\S]*\.upsert\(/);
 });
 
-test("Supabase accepts admin edits for question 167", async () => {
+test("Supabase accepts structured edits and new question IDs", async () => {
   const functionSource = await readFile(functionPath, "utf8");
-  const migrationSource = await readFile(rangeMigrationPath, "utf8");
-  assert.match(functionSource, /id > 167/);
-  assert.match(migrationSource, /zundamon_question_id_range[\s\S]*between 1 and 167/i);
-  assert.match(migrationSource, /zundamon_review_question_id_range[\s\S]*between 1 and 167/i);
+  const migrationSource = await readFile(path.resolve("supabase/migrations/20260717100000_add_question_data_to_admin_overrides.sql"), "utf8");
+  assert.match(functionSource, /id > 9999/);
+  assert.match(functionSource, /request\.method === "POST" && pathname === "\/questions"/);
+  assert.match(functionSource, /question_data: structured/);
+  assert.match(migrationSource, /question_data jsonb/i);
+  assert.match(migrationSource, /zundamon_question_id_range[\s\S]*between 1 and 9999/i);
+  assert.match(migrationSource, /zundamon_review_question_id_range[\s\S]*between 1 and 9999/i);
 });
 
 test("Supabase migration enables RLS and revokes public table access", async () => {

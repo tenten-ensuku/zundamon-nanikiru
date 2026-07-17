@@ -211,6 +211,25 @@ test("upsert reaches the merged public question list", async () => {
   assert.equal(stored["1"].explanation, "編集した解説");
 });
 
+test("admin can replace tiles and add a complete custom question", async () => {
+  const headers = { "Content-Type": "application/json", "X-Admin-Password": PASSWORD };
+  const replacement = {
+    id: 1, image: "", images: [], explanation: "牌姿を編集", sourceUrl: "", sourceLabel: "", createdAt: "2026-01-01T00:00:00Z",
+    hand: ["1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m", "9m", "1p", "2p"], draw: null, status: "unreviewed",
+    meldCount: 1, round: "east1", seat: "west", turn: 6, honba: 0, points: 25000, dora: "3p",
+    melds: [{ type: "pon", open: true, calledIndex: 0, tiles: ["6z", "6z", "6z"] }], correctDiscards: ["1m"],
+  };
+  const replaced = await request("/api/admin/questions/1", { method: "PUT", headers, body: JSON.stringify({ question: replacement }) });
+  assert.equal(replaced.status, 200);
+  assert.equal((await replaced.json()).dora, "3p");
+
+  const custom = { ...replacement, id: 3, explanation: "新規問題", hand: ["1m", "2m", "3m", "4m", "5m", "6m", "7m", "8m", "9m", "1p", "2p", "3p", "4p", "5p"], meldCount: 0, melds: [], dora: "1s", correctDiscards: ["1m"] };
+  const created = await request("/api/admin/questions", { method: "POST", headers, body: JSON.stringify({ question: custom }) });
+  assert.equal(created.status, 200);
+  const publicQuestions = await request("/api/questions").then((response) => response.json());
+  assert.equal(publicQuestions.find((question) => question.id === 3).explanation, "新規問題");
+});
+
 test("delete restores bundled content", async () => {
   const response = await request("/api/admin/questions/1", {
     method: "DELETE",
@@ -238,7 +257,8 @@ test("review completion can be cleared after restoring bundled content", async (
   const saved = await response.json();
   assert.equal(saved.reviewed, false);
   assert.equal(saved.overridden, false);
-  assert.deepEqual(await request("/api/overrides").then((result) => result.json()), []);
+  const remainingOverrides = await request("/api/overrides").then((result) => result.json());
+  assert.equal(remainingOverrides.some((override) => override.id === 1), false);
 });
 
 test("client contains a bundled-data fallback", async () => {
@@ -252,7 +272,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 33;/);
+  assert.match(source, /const APP_VERSION = 34;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -293,22 +313,32 @@ test("client has one continuous beginner question set without an ura mode", asyn
   assert.doesNotMatch(source, /裏モード/);
 });
 
-test("admin editor displays melds separately with the called tile sideways", async () => {
+test("admin editor supports direct meld editing and shows the called tile sideways", async () => {
   const source = await readFile(path.resolve("admin.html"), "utf8");
-  assert.match(source, /class="admin-melds" aria-label="副露面子"/);
-  assert.match(source, /for \(const meld of question\.melds \|\| \[\]\)/);
+  assert.match(source, /class="meld-editor"/);
+  assert.match(source, /draft\.melds\.forEach/);
   assert.match(source, /meld\.open && tileIndex === meld\.calledIndex/);
   assert.match(source, /classList\.add\("sideways"\)/);
-  assert.match(source, /\.answer-tile[\s\S]*width:\s*var\(--admin-tile-width\)/);
-  assert.match(source, /\.admin-meld-tile[\s\S]*width:\s*var\(--admin-tile-width\)/);
+  assert.match(source, /aria-label", "横向きの牌"/);
+  assert.match(source, /\.edit-tile[\s\S]*width:\s*var\(--admin-tile-width\)/);
 });
 
 test("admin editor displays the dora with the approved tile image path", async () => {
   const source = await readFile(path.resolve("admin.html"), "utf8");
-  assert.match(source, /class="admin-dora-tile" width="66" height="90"/);
-  assert.match(source, /doraTile\.src = tilePath\(question\.dora\)/);
-  assert.match(source, /doraTile\.alt = `ドラ \$\{tileName\(question\.dora\)\}`/);
-  assert.match(source, /\.admin-dora-tile\s*\{[^}]*width:\s*var\(--admin-tile-width\)/s);
+  assert.match(source, /class="tile-editor-row dora-row"/);
+  assert.match(source, /tileButton\(draft\.dora, target\?\.kind === "dora"/);
+  assert.match(source, /image\.src = tilePath\(code\)/);
+  assert.match(source, /const allTiles = \[\.\.\.Array\.from/);
+});
+
+test("admin editor provides a 37-tile palette, replacement controls, and problem creation", async () => {
+  const source = await readFile(path.resolve("admin.html"), "utf8");
+  assert.match(source, /id="addQuestion"/);
+  assert.match(source, /class="delete-selected"/);
+  assert.match(source, /class="clear-hand"/);
+  assert.match(source, /class="tile-palette"/);
+  assert.match(source, /"0m"[\s\S]*"0p"[\s\S]*"0s"/);
+  assert.match(source, /question\.isNew \? "POST" : "PUT"/);
 });
 
 test("admin exit returns to the GitHub Pages app directory", async () => {

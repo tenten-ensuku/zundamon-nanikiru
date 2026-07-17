@@ -7,6 +7,8 @@ import { fileURLToPath } from "node:url";
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const JSON_LIMIT = 64 * 1024;
 const MAX_EXPLANATION_LENGTH = 20_000;
+const TILE_CODE = /^(?:[1-9][mps]|[1-7]z|0[mps])$/;
+const MAX_QUESTION_ID = 9999;
 
 async function loadEnvFile(filePath) {
   try {
@@ -52,11 +54,14 @@ async function writeJsonAtomic(filePath, value) {
 }
 
 function mergeQuestions(baseQuestions, overrides) {
-  return baseQuestions.map((question) => {
+  const baseIds = new Set(baseQuestions.map((question) => Number(question.id)));
+  const merged = baseQuestions.map((question) => {
     const override = overrides[String(question.id)];
-    const hasContentOverride = Array.isArray(override?.correctDiscards) || typeof override?.explanation === "string";
+    const questionData = override?.questionData && typeof override.questionData === "object" ? override.questionData : {};
+    const hasContentOverride = Object.keys(questionData).length || Array.isArray(override?.correctDiscards) || typeof override?.explanation === "string";
     return {
       ...question,
+      ...questionData,
       correctDiscards: Array.isArray(override?.correctDiscards)
         ? override.correctDiscards
         : Array.isArray(question.correctDiscards) ? question.correctDiscards : [],
@@ -67,6 +72,12 @@ function mergeQuestions(baseQuestions, overrides) {
       reviewUpdatedAt: override?.reviewUpdatedAt || null,
     };
   });
+  for (const override of Object.values(overrides)) {
+    const questionData = override?.questionData;
+    if (!questionData || typeof questionData !== "object" || baseIds.has(Number(questionData.id))) continue;
+    merged.push({ ...questionData, reviewed: override?.reviewed === true, overridden: true, overrideUpdatedAt: override?.updatedAt || null, reviewUpdatedAt: override?.reviewUpdatedAt || null });
+  }
+  return merged.sort((left, right) => Number(left.id) - Number(right.id));
 }
 
 function listOverrides(overrides) {
@@ -79,11 +90,43 @@ function listOverrides(overrides) {
       };
       if (Array.isArray(override?.correctDiscards)) result.correctDiscards = override.correctDiscards;
       if (typeof override?.explanation === "string") result.explanation = override.explanation;
+      if (override?.questionData && typeof override.questionData === "object") result.questionData = override.questionData;
       if (override?.updatedAt) result.overrideUpdatedAt = override.updatedAt;
       return result;
     })
     .filter((override) => Number.isInteger(override.id))
     .sort((left, right) => left.id - right.id);
+}
+
+function normalizeStructuredQuestion(value, id) {
+  if (!value || typeof value !== "object" || Number(value.id) !== id || id < 1 || id > MAX_QUESTION_ID) return null;
+  const hand = Array.isArray(value.hand) ? value.hand.filter((code) => TILE_CODE.test(code)) : [];
+  const melds = Array.isArray(value.melds) ? value.melds.map((meld) => ({
+    type: ["chi", "pon", "kan"].includes(meld?.type) ? meld.type : "pon",
+    open: meld?.open !== false,
+    calledIndex: Number.isInteger(meld?.calledIndex) ? meld.calledIndex : 0,
+    tiles: Array.isArray(meld?.tiles) ? meld.tiles.filter((code) => TILE_CODE.test(code)) : [],
+  })) : [];
+  if (!hand.length || !TILE_CODE.test(value.dora || "") || melds.some((meld) => (meld.type === "kan" ? meld.tiles.length !== 4 : meld.tiles.length !== 3) || (meld.type === "chi" && meld.calledIndex !== 0) || meld.calledIndex < 0 || meld.calledIndex >= meld.tiles.length)) return null;
+  if (hand.length !== 14 - melds.reduce((total, meld) => total + meld.tiles.length, 0)) return null;
+  const allTiles = [...hand, ...melds.flatMap((meld) => meld.tiles)];
+  const counts = new Map();
+  for (const code of allTiles) {
+    const normalized = code.startsWith("0") ? `5${code[1]}` : code;
+    counts.set(normalized, (counts.get(normalized) || 0) + 1);
+  }
+  if ([...counts.values()].some((count) => count > 4)) return null;
+  const correctDiscards = Array.isArray(value.correctDiscards) ? [...new Set(value.correctDiscards.filter((code) => hand.includes(code)))] : [];
+  const explanation = typeof value.explanation === "string" ? value.explanation.trim() : "";
+  if (explanation.length > MAX_EXPLANATION_LENGTH) return null;
+  return {
+    id, image: typeof value.image === "string" ? value.image.trim() : "", images: Array.isArray(value.images) ? value.images.filter((image) => typeof image === "string") : [],
+    explanation, sourceUrl: typeof value.sourceUrl === "string" ? value.sourceUrl.trim() : "", sourceLabel: typeof value.sourceLabel === "string" ? value.sourceLabel.trim() : "YouTube動画を開く",
+    createdAt: typeof value.createdAt === "string" ? value.createdAt : new Date().toISOString(), hand, draw: null, status: value.status === "reviewed" ? "reviewed" : "unreviewed",
+    meldCount: melds.length, round: /^(east|south|west|north)\d+$/.test(value.round || "") ? value.round : "east1", seat: ["east", "south", "west", "north"].includes(value.seat) ? value.seat : "west",
+    turn: Math.max(0, Math.min(18, Number(value.turn) || 0)), honba: Number.isInteger(value.honba) ? value.honba : 0, points: Number.isFinite(value.points) ? value.points : 25000,
+    dora: value.dora, melds, correctDiscards, ...(value.riichiChoice === true ? { riichiChoice: true, correctRiichi: value.correctRiichi === true } : {}), ...(value.note ? { note: String(value.note) } : {}),
+  };
 }
 
 function sendJson(response, status, value, origin) {
@@ -227,21 +270,28 @@ export function createAppServer(options = {}) {
       }
 
       const adminMatch = /^\/api\/admin\/questions\/(\d+)$/.exec(pathname);
-      if (adminMatch && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) {
+      const isCreate = request.method === "POST" && pathname === "/api/admin/questions";
+      if ((adminMatch && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
         if (!adminPassword || !authenticated(request)) {
           sendJson(response, 401, { error: "認証に失敗しました。" }, origin);
           return;
         }
-        const questionId = Number(adminMatch[1]);
+        const body = request.method === "PATCH" || request.method === "DELETE" ? null : await readRequestJson(request);
+        const questionId = isCreate ? Number(body?.question?.id) : Number(adminMatch[1]);
         const { baseQuestions, overrides } = await baseAndOverrides();
         const baseQuestion = baseQuestions.find((question) => question.id === questionId);
-        if (!baseQuestion) {
+        const existingQuestion = overrides[String(questionId)]?.questionData;
+        if ((!baseQuestion && !existingQuestion && !isCreate) || !Number.isInteger(questionId) || questionId < 1 || questionId > MAX_QUESTION_ID) {
           sendJson(response, 404, { error: "問題が見つかりません。" }, origin);
           return;
         }
 
         const key = String(questionId);
         const existing = overrides[key] && typeof overrides[key] === "object" ? overrides[key] : {};
+        if (isCreate && (baseQuestion || existingQuestion)) {
+          sendJson(response, 409, { error: "同じ番号の問題がすでにあります。" }, origin);
+          return;
+        }
         if (request.method === "DELETE") {
           if (existing.reviewed === true) {
             overrides[key] = {
@@ -272,7 +322,10 @@ export function createAppServer(options = {}) {
             }
           }
         } else {
-          const body = await readRequestJson(request);
+          const structured = normalizeStructuredQuestion(body?.question, questionId);
+          if (structured) {
+            overrides[key] = { ...(existing.reviewed === true ? { reviewed: true, reviewUpdatedAt: existing.reviewUpdatedAt || new Date().toISOString() } : {}), questionData: structured, correctDiscards: structured.correctDiscards, explanation: structured.explanation, updatedAt: new Date().toISOString() };
+          } else {
           const explanation = typeof body.explanation === "string" ? body.explanation.trim() : "";
           const correctDiscards = Array.isArray(body.correctDiscards)
             ? [...new Set(body.correctDiscards.filter((code) => typeof code === "string"))]
@@ -295,6 +348,7 @@ export function createAppServer(options = {}) {
             explanation,
             updatedAt: new Date().toISOString(),
           };
+          }
         }
 
         writeQueue = writeQueue.then(() => writeJsonAtomic(overridesPath, overrides));
