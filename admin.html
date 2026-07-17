@@ -302,9 +302,13 @@
       return `${base}${remotePath}`;
     }
 
+    function cleanDiscordExplanationArtifacts(value) {
+      return String(value || "").replace(/\|\||※/g, "").replace(/ *\n/g, "\n").trim();
+    }
+
     function mergeExplanationWithVideoSummary(baseExplanation, overrideExplanation) {
-      const base = String(baseExplanation || "").trim();
-      const current = String(overrideExplanation ?? baseExplanation ?? "").trim();
+      const base = cleanDiscordExplanationArtifacts(baseExplanation);
+      const current = cleanDiscordExplanationArtifacts(overrideExplanation ?? baseExplanation ?? "");
       const summary = base.match(/(?:^|\n\n)【動画要約】\n[\s\S]*$/)?.[0]?.trim() || "";
       if (!summary || current.includes("【動画要約】")) return current;
       return current ? `${current}\n\n${summary}` : summary;

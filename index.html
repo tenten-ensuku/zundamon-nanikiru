@@ -980,7 +980,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 49;
+    const APP_VERSION = 50;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -1010,9 +1010,13 @@
       return `${base}${path.replace(/^\/api/, "")}`;
     }
 
+    function cleanDiscordExplanationArtifacts(value) {
+      return String(value || "").replace(/\|\||※/g, "").replace(/ *\n/g, "\n").trim();
+    }
+
     function mergeExplanationWithVideoSummary(baseExplanation, overrideExplanation) {
-      const base = String(baseExplanation || "").trim();
-      const current = String(overrideExplanation ?? baseExplanation ?? "").trim();
+      const base = cleanDiscordExplanationArtifacts(baseExplanation);
+      const current = cleanDiscordExplanationArtifacts(overrideExplanation ?? baseExplanation ?? "");
       const summary = base.match(/(?:^|\n\n)【動画要約】\n[\s\S]*$/)?.[0]?.trim() || "";
       if (!summary || current.includes("【動画要約】")) return current;
       return current ? `${current}\n\n${summary}` : summary;
@@ -1140,6 +1144,7 @@
     function stripDiscordMarkdown(value) {
       return (value || "")
         .replace(/\|\|/g, "")
+        .replace(/※/g, "")
         .replace(/__/g, "")
         .replace(/~~/g, "")
         .trim();

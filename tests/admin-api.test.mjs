@@ -274,7 +274,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 49;/);
+  assert.match(source, /const APP_VERSION = 50;/);
 });
 
 test("hand dora and red fives receive the static gloss marker", async () => {
@@ -447,6 +447,15 @@ test("admin explanation editor supports bold and red text without injecting HTML
   assert.match(client, /function appendFormattedText/);
   assert.match(client, /document\.createElement\(token\.startsWith\("\*\*"\) \? "strong" : "span"\)/);
   assert.match(client, /explanation-red/);
+});
+
+test("Discord spoiler and annotation remnants are removed from explanations", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  assert.equal(questions.some((question) => /\|\||※/.test(String(question.explanation || ""))), false);
+  const client = await readFile(path.resolve("index.html"), "utf8");
+  const admin = await readFile(path.resolve("admin.html"), "utf8");
+  assert.match(client, /function cleanDiscordExplanationArtifacts/);
+  assert.match(admin, /function cleanDiscordExplanationArtifacts/);
 });
 
 test("question 3 contains an open three-green-dragon pon", async () => {
