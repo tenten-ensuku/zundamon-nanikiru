@@ -274,7 +274,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 39;/);
+  assert.match(source, /const APP_VERSION = 40;/);
 });
 
 test("hand dora and red fives receive the static gloss marker", async () => {
@@ -457,7 +457,7 @@ test("question 66 shows the discard note and records a riichi choice", async () 
 
 test("question 166 reproduces the YouTube problem and grades north with riichi", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 168);
+  assert.equal(questions.length, 167);
   const question = questions.find((item) => item.id === 166);
   assert.deepEqual(question.hand, [
     "2m", "3m", "4m", "3s", "4s", "4s", "5s", "5s", "6s", "7s", "8s", "4z", "4z", "4z",
@@ -487,7 +487,7 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
 
 test("question 167 reproduces both left-called chi melds and grades six man", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 168);
+  assert.equal(questions.length, 167);
   const question = questions.find((item) => item.id === 167);
   assert.deepEqual(question.hand, [
     "5m", "0m", "6m", "7m", "7m", "7m", "7z", "7z",
@@ -513,7 +513,7 @@ test("question 167 reproduces both left-called chi melds and grades six man", as
 
 test("question 168 reproduces the YouTube hand and grades eight man", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 168);
+  assert.equal(questions.length, 167);
   const question = questions.find((item) => item.id === 168);
   assert.deepEqual(question.hand, [
     "3m", "4m", "8m", "9m", "9m", "2p", "3p", "4p", "6p", "7p", "5s", "6s", "7s", "7s",
@@ -536,7 +536,7 @@ test("question 168 reproduces the YouTube hand and grades eight man", async () =
 
 test("three non-duplicate videos continue the beginner question set", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 168);
+  assert.equal(questions.length, 167);
   assert.equal(questions.some((question) => "course" in question), false);
   const added = questions.filter((question) => [169, 170, 171].includes(question.id));
   assert.deepEqual(added.map((question) => question.sourceUrl), [
