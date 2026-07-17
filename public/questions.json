@@ -44,7 +44,7 @@
     "images": [
       "/questions/question-002.png"
     ],
-    "explanation": "",
+    "explanation": "【動画要約】\n打3s。\n\n打7sの方が受け入れは多いが、5pを引いた時にドラが出ていく、またはドラ単騎待ちになりやすい。打3sなら7sを雀頭候補として残せるため、1s・4s・7s待ちの形も見込め、ドラを使いやすい。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309943410311958570",
     "discordMessageId": "1309943410311958570",
     "threadId": "1309943410311958570",
@@ -75,7 +75,9 @@
     "points": null,
     "dora": "5p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "3s"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=hNbn49F3pbw",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -85,7 +87,7 @@
     "images": [
       "/questions/question-003.png"
     ],
-    "explanation": "",
+    "explanation": "【動画要約】\n打4s。\n\n両面テンパイだけなら別の打牌と同じでも、4sを切ると8sを引いて5sを切る変化が残る。9sが加わる三面張テンパイを作れるため、鳴いていて一盃口を見ないこの形では4sを選ぶ。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309943455727747115",
     "discordMessageId": "1309943455727747115",
     "threadId": "1309943455727747115",
@@ -124,7 +126,9 @@
         ]
       }
     ],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "4s"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=O1bmwG7uu6I",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -134,7 +138,7 @@
     "images": [
       "/questions/question-004.png"
     ],
-    "explanation": "",
+    "explanation": "【動画要約】\n打2m。\n\n2mと2pの比較だが、打2pと比べても受け入れ枚数は減らない。打2mなら一盃口の可能性を残せるため、受け入れを落とさず役を狙える。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309943498140549190",
     "discordMessageId": "1309943498140549190",
     "threadId": "1309943498140549190",
@@ -165,7 +169,9 @@
     "points": 25000,
     "dora": "7s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "2m"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=5eF7eOULv8k",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -175,7 +181,7 @@
     "images": [
       "/questions/question-005.png"
     ],
-    "explanation": "https://youtu.be/VJEg2Q_ReH8",
+    "explanation": "https://youtu.be/VJEg2Q_ReH8\n\n【動画要約】\n打5m。\n\n上家から0mが出た時に6m・7mでチーでき、1p・4pの両面待ちを維持できる。先に4mを切る形ではこの変化を活かせないため、0mを使える5m切りを選ぶ。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309943537390846084",
     "discordMessageId": "1309943537390846084",
     "threadId": "1309943537390846084",
@@ -214,7 +220,9 @@
         ]
       }
     ],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "5m"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=u-e3ejx8YGo",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -224,7 +232,7 @@
     "images": [
       "/questions/question-006.png"
     ],
-    "explanation": "",
+    "explanation": "【動画要約】\n打7m。\n\n雀頭が決まり切っていないため、7mを雀頭候補として残す。4m周りを引いた時のテンパイ変化を残せるので、雀頭を早く決め打ちする打牌より柔軟に受けられる。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309969118325244008",
     "discordMessageId": "1309969118325244008",
     "threadId": "1309969118325244008",
@@ -255,7 +263,9 @@
     "points": 25000,
     "dora": "9p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "7m"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=KJa-jtBUIw4",
     "sourceLabel": "YouTube動画を開く"
   },
