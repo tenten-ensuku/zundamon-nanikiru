@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 27;/);
+  assert.match(source, /const APP_VERSION = 28;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -430,14 +430,14 @@ test("question 168 reproduces the YouTube hand and grades eight man", async () =
   assert.equal(questions.length, 168);
   const question = questions.find((item) => item.id === 168);
   assert.deepEqual(question.hand, [
-    "3m", "4m", "8m", "9m", "9m", "1p", "2p", "3p", "4p", "5p", "5s", "6s", "7s", "7s",
+    "3m", "4m", "8m", "9m", "9m", "2p", "3p", "4p", "6p", "7p", "5s", "6s", "7s", "7s",
   ]);
   assert.equal(question.draw, null);
   assert.deepEqual(
     { round: question.round, seat: question.seat, turn: question.turn, honba: question.honba, points: question.points },
     { round: "east1", seat: "west", turn: 6, honba: 0, points: 25000 },
   );
-  assert.equal(question.dora, "1m");
+  assert.equal(question.dora, "4m");
   assert.equal(question.note, "7sをツモした局面（ツモ牌は手牌へ統合）");
   assert.deepEqual(question.melds, []);
   assert.deepEqual(question.correctDiscards, ["8m"]);
