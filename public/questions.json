@@ -6658,5 +6658,46 @@
     "correctDiscards": [
       "6m"
     ]
+  },
+  {
+    "id": 168,
+    "image": "/questions/question-168.png",
+    "images": [
+      "/questions/question-168.png"
+    ],
+    "explanation": "打8m。\n\n8m切りと7s切りでは、2m・5mと5p・8pの受け入れ枚数は変わらない。8mを切って7sを残すと、4sを引いて456sを作る4枚と、7sを引いて縦引きになる2枚の計6枚でタンヤオへの変化が増える。\n\n7sを切って8mを残す場合、タンヤオへ近づく縦引きは8mの3枚だけ。8mを先に切り、7sを雀頭にしたまま9mを整理してタンヤオを目指すのがよい。直接の受け入れ枚数だけでなく、一手先の変化まで見る問題。",
+    "sourceUrl": "https://youtu.be/VWOg74rytII",
+    "sourceLabel": "YouTube動画を開く",
+    "createdAt": "2024-05-24T10:00:00Z",
+    "hand": [
+      "3m",
+      "4m",
+      "8m",
+      "9m",
+      "9m",
+      "1p",
+      "2p",
+      "3p",
+      "4p",
+      "5p",
+      "5s",
+      "6s",
+      "7s",
+      "7s"
+    ],
+    "draw": null,
+    "status": "unreviewed",
+    "meldCount": 0,
+    "round": "east1",
+    "seat": "west",
+    "turn": 6,
+    "honba": 0,
+    "points": 25000,
+    "dora": "1m",
+    "note": "7sをツモした局面（ツモ牌は手牌へ統合）",
+    "melds": [],
+    "correctDiscards": [
+      "8m"
+    ]
   }
 ]

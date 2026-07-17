@@ -252,7 +252,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 26;/);
+  assert.match(source, /const APP_VERSION = 27;/);
 });
 
 test("pre-release menu displays the canonical app version beside the title", async () => {
@@ -372,7 +372,7 @@ test("question 66 shows the discard note and records a riichi choice", async () 
 
 test("question 166 reproduces the YouTube problem and grades north with riichi", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 167);
+  assert.equal(questions.length, 168);
   const question = questions.find((item) => item.id === 166);
   assert.deepEqual(question.hand, [
     "2m", "3m", "4m", "3s", "4s", "4s", "5s", "5s", "6s", "7s", "8s", "4z", "4z", "4z",
@@ -401,7 +401,7 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
 
 test("question 167 reproduces both left-called chi melds and grades six man", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 167);
+  assert.equal(questions.length, 168);
   const question = questions.find((item) => item.id === 167);
   assert.deepEqual(question.hand, [
     "5m", "0m", "6m", "7m", "7m", "7m", "7z", "7z",
@@ -422,6 +422,29 @@ test("question 167 reproduces both left-called chi melds and grades six man", as
   assert.equal(question.sourceLabel, "YouTube動画を開く");
   assert.match(question.explanation, /4m4枚と7m1枚の計5枚/);
   assert.match(question.explanation, /40符となり1300・2600/);
+  assert.doesNotMatch(question.explanation, /[萬万筒索]/);
+});
+
+test("question 168 reproduces the YouTube hand and grades eight man", async () => {
+  const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
+  assert.equal(questions.length, 168);
+  const question = questions.find((item) => item.id === 168);
+  assert.deepEqual(question.hand, [
+    "3m", "4m", "8m", "9m", "9m", "1p", "2p", "3p", "4p", "5p", "5s", "6s", "7s", "7s",
+  ]);
+  assert.equal(question.draw, null);
+  assert.deepEqual(
+    { round: question.round, seat: question.seat, turn: question.turn, honba: question.honba, points: question.points },
+    { round: "east1", seat: "west", turn: 6, honba: 0, points: 25000 },
+  );
+  assert.equal(question.dora, "1m");
+  assert.equal(question.note, "7sをツモした局面（ツモ牌は手牌へ統合）");
+  assert.deepEqual(question.melds, []);
+  assert.deepEqual(question.correctDiscards, ["8m"]);
+  assert.equal(question.sourceUrl, "https://youtu.be/VWOg74rytII");
+  assert.equal(question.sourceLabel, "YouTube動画を開く");
+  assert.match(question.explanation, /4sを引いて456sを作る4枚/);
+  assert.match(question.explanation, /8mの3枚だけ/);
   assert.doesNotMatch(question.explanation, /[萬万筒索]/);
 });
 

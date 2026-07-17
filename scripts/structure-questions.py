@@ -63,6 +63,11 @@ MANUAL_IMAGE_OVERRIDES = {
         "dora": "6s",
         "meldCount": 2,
     },
+    168: {
+        "hand": ["3m", "4m", "8m", "9m", "9m", "1p", "2p", "3p", "4p", "5p",
+                 "5s", "6s", "7s", "7s"],
+        "dora": "1m",
+    },
     6: {
         "hand": ["2m", "3m", "4m", "7m", "0p", "9p", "9p", "4s", "4s",
                  "5s", "6s", "7s", "7s", "9p"],
@@ -107,6 +112,7 @@ SITUATION_OVERRIDES = {
     126: {"round": "east1", "seat": "west", "turn": 6, "honba": None, "points": 25000},
     166: {"round": "east1", "seat": "west", "turn": 8, "honba": 0, "points": 25000},
     167: {"round": "east1", "seat": "west", "turn": 6, "honba": 0, "points": 25000},
+    168: {"round": "east1", "seat": "west", "turn": 6, "honba": 0, "points": 25000},
 }
 
 
