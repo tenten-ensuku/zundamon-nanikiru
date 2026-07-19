@@ -490,7 +490,7 @@
     "images": [
       "/questions/question-012.png"
     ],
-    "explanation": "💯\nおそらく、よーじさんは入力ミス。",
+    "explanation": "💯\nおそらく、よーじさんは入力ミス。\n\n【動画要約】\n打2s。\n\n9pと2sのどちらを切っても、1p・4pと5s・8sの両面受けが残る一向聴になる。受け入れが同じなら、8pを引いた時に一盃口が付く可能性を残せる2s切りを選ぶ。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310204711210713098",
     "discordMessageId": "1310204711210713098",
     "threadId": "1310204711210713098",
@@ -521,7 +521,9 @@
     "points": 25000,
     "dora": "8s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "2s"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=OpfPicoaUX4",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -531,7 +533,7 @@
     "images": [
       "/questions/question-013.png"
     ],
-    "explanation": "打4ｐ。\n8ｐ引きの三面張変化よりもトイトイ変化を優先したい。\n\nよーじさんは、Q3の学びを活かせて偉いです。が、今回はトイトイ変化の方が価値が高いですね。",
+    "explanation": "打4ｐ。\n8ｐ引きの三面張変化よりもトイトイ変化を優先したい。\n\nよーじさんは、Q3の学びを活かせて偉いです。が、今回はトイトイ変化の方が価値が高いですね。\n\n【動画要約】\n打4p。\n\n3pを引いた時の三面張変化はあるが、和了しても1000点に留まりやすい。4pを切れば6p・7p・3zをポンした時にトイトイが付き、5200点や満貫まで見込めるため、打点上昇を優先する。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310204729221185568",
     "discordMessageId": "1310204729221185568",
     "threadId": "1310204729221185568",
@@ -570,7 +572,9 @@
         ]
       }
     ],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "4p"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=eHWL_ifEXjo",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -580,7 +584,7 @@
     "images": [
       "/questions/question-014.png"
     ],
-    "explanation": "💯",
+    "explanation": "💯\n\n【動画要約】\n打7p。\n\n1sを切ってから6pや8pを引けば9pを切ってタンヤオへ向かえるが、9pはドラ。先に7pを切ってドラの9pを雀頭として固定すれば、ドラを使い切りやすい。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310204745704804363",
     "discordMessageId": "1310204745704804363",
     "threadId": "1310204745704804363",
@@ -611,7 +615,9 @@
     "points": 25000,
     "dora": "9p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "7p"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=6duFhRJr5ks",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -621,7 +627,7 @@
     "images": [
       "/questions/question-015.png"
     ],
-    "explanation": "💯",
+    "explanation": "💯\n\n【動画要約】\n打4m。\n\n受け入れ最大の候補はあるが、6pを引くとドラが出ていき、5mを引くと単騎待ちになりやすい。4mを切ってドラを含む両面・三面張の変化を残す。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310204779640913980",
     "discordMessageId": "1310204779640913980",
     "threadId": "1310204779640913980",
@@ -652,7 +658,9 @@
     "points": 25000,
     "dora": "7p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "4m"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=qKlCZANeghU",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -662,7 +670,7 @@
     "images": [
       "/questions/question-016.png"
     ],
-    "explanation": "打3ｐ\n\n3ｐと7ｍが浮いている余剰牌型一向聴なのだ。６ブロック目の種（好形変化、打点の種）として3ｐと7ｍを比較するのだ。\n\n中膨れ7ｍの嬉しいくっつきは4種（5～9ｍ）、3ｐの嬉しい受け入れは2種（2ｐ4ｐ）なのだ。\n\n打3ｐとして、4ｐを引いた際には、打7ｍとしてヘッドレス1型でちょっと優秀な中膨れスキップ形45568ｐを残すのだ。",
+    "explanation": "打3ｐ\n\n3ｐと7ｍが浮いている余剰牌型一向聴なのだ。６ブロック目の種（好形変化、打点の種）として3ｐと7ｍを比較するのだ。\n\n中膨れ7ｍの嬉しいくっつきは4種（5～9ｍ）、3ｐの嬉しい受け入れは2種（2ｐ4ｐ）なのだ。\n\n打3ｐとして、4ｐを引いた際には、打7ｍとしてヘッドレス1型でちょっと優秀な中膨れスキップ形45568ｐを残すのだ。\n\n【動画要約】\n打3p。\n\n3pと7mは受け入れに直接関係しない比較だが、7mを残すと5m・6m・8m・9mを引いた時に両面変化が作れる。3pを残すより嬉しい変化が多く、7mを残す。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310269131865456810",
     "discordMessageId": "1310269131865456810",
     "threadId": "1310269131865456810",
@@ -693,7 +701,9 @@
     "points": 25000,
     "dora": "3s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "3p"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=YkneBe3x-Qk",
     "sourceLabel": "YouTube動画を開く"
   },
