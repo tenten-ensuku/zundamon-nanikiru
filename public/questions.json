@@ -832,7 +832,7 @@
     "images": [
       "/questions/question-020.png"
     ],
-    "explanation": "打8ｐ立直\n\nドラ表で8ｐは残り2枚。\n圧倒的大差で、シャンポン立直優位。",
+    "explanation": "打8ｐ立直\n\nドラ表で8ｐは残り2枚。\n圧倒的大差で、シャンポン立直優位。\n\n【動画要約】\n打7p・立直。\n\n8p切りなら良形でも、ドラ表示牌が8pのため待ちが2枚になる。7pを切って9p・2zのシャンポン待ちにし、4枚受けを取る。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310269177021333575",
     "discordMessageId": "1310269177021333575",
     "threadId": "1310269177021333575",
@@ -863,9 +863,13 @@
     "points": 25000,
     "dora": "9p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "7p"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=C6sbxMSWikM",
-    "sourceLabel": "YouTube動画を開く"
+    "sourceLabel": "YouTube動画を開く",
+    "riichiChoice": true,
+    "correctRiichi": true
   },
   {
     "id": 21,
@@ -912,7 +916,7 @@
     "images": [
       "/questions/question-022.png"
     ],
-    "explanation": "今後、聴牌の場合には立直判断もお書き下さい😀",
+    "explanation": "今後、聴牌の場合には立直判断もお書き下さい😀\n\n【動画要約】\n打1s・立直。\n\n1s・4s・8sのいずれでも立直できる形だが、1s切りならタンヤオが付く。宣言牌の筋で待つ引っかけにもなり、打点を優先する。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310539848087506954",
     "discordMessageId": "1310539848087506954",
     "threadId": "1310539848087506954",
@@ -943,9 +947,13 @@
     "points": 25000,
     "dora": "7m",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "1s"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=t9CdqxugLcg",
-    "sourceLabel": "YouTube動画を開く"
+    "sourceLabel": "YouTube動画を開く",
+    "riichiChoice": true,
+    "correctRiichi": true
   },
   {
     "id": 23,
@@ -953,7 +961,7 @@
     "images": [
       "/questions/question-023.png"
     ],
-    "explanation": "💯",
+    "explanation": "💯\n\n【動画要約】\n打9p。\n\n3面子と雀頭があるくっつき一向聴。9pの近くには面子があり、8pを2枚使っているため9pは使いづらい。1mを残した両面変化と、索子の中ぶくれを残す。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310539863652696116",
     "discordMessageId": "1310539863652696116",
     "threadId": "1310539863652696116",
@@ -984,7 +992,9 @@
     "points": 25000,
     "dora": "1m",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "9p"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=tLjNf_BhcoM",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -1033,7 +1043,7 @@
     "images": [
       "/questions/question-025.png"
     ],
-    "explanation": "💯",
+    "explanation": "💯\n\n【動画要約】\n打6s。\n\n9sを残して7p・8p・9pと7s・8s・9sの三色同順を狙う。先に3sや8sを引くと役なし両面テンパイになるが、この局面では立直を選ぶ。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310539886033633331",
     "discordMessageId": "1310539886033633331",
     "threadId": "1310539886033633331",
@@ -1064,7 +1074,9 @@
     "points": 25000,
     "dora": "2s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "6s"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=XRPXUIQbG4U",
     "sourceLabel": "YouTube動画を開く"
   },

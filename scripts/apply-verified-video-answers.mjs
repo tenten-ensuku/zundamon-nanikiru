@@ -21,7 +21,12 @@ const verifiedAnswers = new Map([
   [14, ["7p"]],
   [15, ["4m"]],
   [16, ["3p"]],
+  [20, ["7p"]],
+  [22, ["1s"]],
+  [23, ["9p"]],
+  [25, ["6s"]],
 ]);
+const verifiedRiichi = new Set([20, 22]);
 
 const questions = JSON.parse(await fs.readFile(questionsPath, "utf8"));
 for (const question of questions) {
@@ -31,6 +36,10 @@ for (const question of questions) {
     throw new Error(`問題 ${question.id} の確認済み打牌が手牌にありません。`);
   }
   question.correctDiscards = answer;
+  if (verifiedRiichi.has(question.id)) {
+    question.riichiChoice = true;
+    question.correctRiichi = true;
+  }
 }
 await fs.writeFile(questionsPath, `${JSON.stringify(questions, null, 2)}\n`, "utf8");
 console.log(JSON.stringify({ updated: [...verifiedAnswers.keys()] }));
