@@ -1088,7 +1088,7 @@
     "images": [
       "/questions/question-026.png"
     ],
-    "explanation": "💯\n打9p\n\n一向聴の宿題でも何個か出てきましたが、端から始まる順子は除いて考えて問題無い事が多く、789を除いて考えると見え易いかもしれません。\nリャンメンカンチャン含みの一向聴ですね。\n14mから引いた場合には、打5pのカン2p待ちにすることがとても多い形です。（2p1枚飛んでても大体カン2pにとります。）",
+    "explanation": "💯\n打9p\n\n一向聴の宿題でも何個か出てきましたが、端から始まる順子は除いて考えて問題無い事が多く、789を除いて考えると見え易いかもしれません。\nリャンメンカンチャン含みの一向聴ですね。\n14mから引いた場合には、打5pのカン2p待ちにすることがとても多い形です。（2p1枚飛んでても大体カン2pにとります。）\n\n【動画要約】\n打9p。\n\n9pを切ると受け入れを最大にしながら役なしテンパイを避けられる。両面の平和変化に加え、2pを引いた時は一通を含む立直が打てるため、拾える役を残す。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310850217951891458",
     "discordMessageId": "1310850217951891458",
     "threadId": "1310850217951891458",
@@ -1119,7 +1119,9 @@
     "points": 25000,
     "dora": "8m",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "9p"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=d-I0fXXGY38",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -1129,7 +1131,7 @@
     "images": [
       "/questions/question-027.png"
     ],
-    "explanation": "💯",
+    "explanation": "💯\n\n【動画要約】\n打9m。\n\n悪形を2つ残す一向聴だが、9mを切って6s引きの両面変化を狙う。フリテンになる可能性があっても、未テンパイでは両面ターツをカンチャンより優先する。6sをチーできれば、5s・8s引きでもタンヤオが付き、鳴いて前進できる。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310850235345408061",
     "discordMessageId": "1310850235345408061",
     "threadId": "1310850235345408061",
@@ -1160,7 +1162,9 @@
     "points": 25000,
     "dora": "2s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "9m"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=3-uyZduwFzw",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -1170,7 +1174,7 @@
     "images": [
       "/questions/question-028.png"
     ],
-    "explanation": "💯",
+    "explanation": "💯\n\n【動画要約】\n打3p。\n\n索子の離れた両嵌形を残し、索子を先に引いた時に平和付きのテンパイを作る。通常の両嵌より良形変化が多く、2種類の良形受けを持つ強い形として扱う。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310850244522545263",
     "discordMessageId": "1310850244522545263",
     "threadId": "1310850244522545263",
@@ -1201,7 +1205,9 @@
     "points": 25000,
     "dora": "6m",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "3p"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=rGKUwhn4_68",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -1211,7 +1217,7 @@
     "images": [
       "/questions/question-029.png"
     ],
-    "explanation": "💯\n既に5ブロック揃っている為、今（カン8s）より【明確に嬉しい】ターツ生成しか価値は無く、14mという強両面生成を見て打1pを正解としたいですが、ずんだもん何切るの正解は打2mでした。（初級者編なのでご了承ください）\n\nhttps://youtu.be/3VafS2YYWW8?si=8u3XBxeEypjjpW1V\n\n1345の1>孤立2\nとなる理由は動画通りしっかりと説明できるようにしておきましょう。",
+    "explanation": "💯\n既に5ブロック揃っている為、今（カン8s）より【明確に嬉しい】ターツ生成しか価値は無く、14mという強両面生成を見て打1pを正解としたいですが、ずんだもん何切るの正解は打2mでした。（初級者編なのでご了承ください）\n\nhttps://youtu.be/3VafS2YYWW8?si=8u3XBxeEypjjpW1V\n\n1345の1>孤立2\nとなる理由は動画通りしっかりと説明できるようにしておきましょう。\n\n【動画要約】\n打2m。\n\n内側の2mより外側の1pを残す。1pの近くに3p・4p・5pの面子があり、2pを引けば両面になり、6pを引いても変化が残る。面子の近くにある孤立牌・ターツは普段より価値が高い。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310850253595082773",
     "discordMessageId": "1310850253595082773",
     "threadId": "1310850253595082773",
@@ -1242,7 +1248,9 @@
     "points": 25000,
     "dora": "4s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "2m"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=6WRnzt3XzRU",
     "sourceLabel": "YouTube動画を開く"
   },
@@ -1252,7 +1260,7 @@
     "images": [
       "/questions/question-030.png"
     ],
-    "explanation": "１面子しか無いので、一向聴ではありません。\n愚形二箇所あるので、打1mとし4m引き両面変化を見ます。\n何切る問題は、一向聴の問題であることが大半ではありますが、二向聴や聴牌も出てきますので、まずは何向聴かを確認くださいませ😀",
+    "explanation": "１面子しか無いので、一向聴ではありません。\n愚形二箇所あるので、打1mとし4m引き両面変化を見ます。\n何切る問題は、一向聴の問題であることが大半ではありますが、二向聴や聴牌も出てきますので、まずは何向聴かを確認くださいませ😀\n\n【動画要約】\n打1m。\n\n6ブロックあるため、1mか対子のどちらかを切る形。1mを切ると2p・3s・4sで両面変化するが、対子を切ると良形変化が少ない。余った牌を先に切って、良形変化の枚数を多く残す。",
     "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310850261505278004",
     "discordMessageId": "1310850261505278004",
     "threadId": "1310850261505278004",
@@ -1283,7 +1291,9 @@
     "points": 25000,
     "dora": "9p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "1m"
+    ],
     "sourceUrl": "https://www.youtube.com/watch?v=alqkuxKSHmI",
     "sourceLabel": "YouTube動画を開く"
   },

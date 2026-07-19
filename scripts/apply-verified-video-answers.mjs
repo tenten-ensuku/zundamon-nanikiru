@@ -26,6 +26,11 @@ const verifiedAnswers = new Map([
   [22, ["1s"]],
   [23, ["9p"]],
   [25, ["6s"]],
+  [26, ["9p"]],
+  [27, ["9m"]],
+  [28, ["3p"]],
+  [29, ["2m"]],
+  [30, ["1m"]],
 ]);
 const verifiedRiichi = new Set([20, 22]);
 
