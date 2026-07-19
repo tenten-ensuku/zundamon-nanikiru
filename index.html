@@ -980,7 +980,7 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 55;
+    const APP_VERSION = 56;
     const STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
@@ -1762,7 +1762,7 @@
             <p class="brand-kicker">ZUNDAMON</p>
             <h1>重要何切る問題集（基礎）</h1>
           </div>
-          <div class="top-actions"><button class="play-home" id="homeButton" type="button">メニュー</button><div class="counter" id="counter"></div></div>
+          <div class="top-actions"><a class="admin-link play-admin-entry" id="playAdminEntry" href="admin.html">管理</a><button class="play-home" id="homeButton" type="button">メニュー</button><div class="counter" id="counter"></div></div>
         </header>
         <div class="progress" aria-label="回答進捗"><span id="progressBar"></span></div>
         <main class="board">
@@ -1839,6 +1839,7 @@
       revealed = Boolean(response);
 
       document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${playQuestions.length} 問`;
+      document.getElementById("playAdminEntry").href = `admin.html?question=${encodeURIComponent(question.id)}`;
       document.getElementById("round").textContent = roundName(question.round);
       document.getElementById("seat").textContent = `${WIND_NAMES[question.seat] || "―"}家`;
       document.getElementById("turn").textContent = `${question.turn ?? "―"}巡目`;

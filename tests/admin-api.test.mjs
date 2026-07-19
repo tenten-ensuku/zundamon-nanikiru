@@ -274,7 +274,7 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 55;/);
+  assert.match(source, /const APP_VERSION = 56;/);
 });
 
 test("hand dora and red fives receive the static gloss marker", async () => {
@@ -316,6 +316,8 @@ test("client has one continuous beginner question set without an ura mode", asyn
     assert.match(source, new RegExp(label));
   }
   assert.match(source, /class="menu-admin-entry" href="admin\.html">管理画面<\/a>/);
+  assert.match(source, /class="admin-link play-admin-entry" id="playAdminEntry" href="admin\.html">管理<\/a>/);
+  assert.match(source, /playAdminEntry"\)\.href = `admin\.html\?question=\$\{encodeURIComponent\(question\.id\)\}`/);
   assert.match(source, /data-start-mode="ten"/);
   assert.match(source, /data-start-mode="all"/);
   assert.doesNotMatch(source, /中級編|intermediate|questionCourse|courseQuestions/);
@@ -390,6 +392,14 @@ test("admin exit returns to the GitHub Pages app directory", async () => {
   const source = await readFile(path.resolve("admin.html"), "utf8");
   assert.match(source, /document\.getElementById\("logout"\)[\s\S]*location\.href = "\.\/";/);
   assert.doesNotMatch(source, /location\.href = "\/";/);
+});
+
+test("admin opens the requested question from the play screen link", async () => {
+  const source = await readFile(path.resolve("admin.html"), "utf8");
+  assert.match(source, /new URLSearchParams\(location\.search\)\.get\("question"\)/);
+  assert.match(source, /search"\)\.value = String\(requestedQuestionId\)/);
+  assert.match(source, /details\.dataset\.questionId = String\(question\.id\)/);
+  assert.match(source, /details\[data-question-id="\$\{requestedQuestionId\}"\]/);
 });
 
 test("problem catalog displays hand, melds, dora, and persistent favorites", async () => {
