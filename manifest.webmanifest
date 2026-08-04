@@ -1,0 +1,32 @@
+{
+  "id": "/zundamon-nanikiru/",
+  "name": "重要何切る問題集（基礎）",
+  "short_name": "ずんだもん何切る",
+  "description": "重要な何切る問題を復習する麻雀ドリル。",
+  "start_url": "/zundamon-nanikiru/",
+  "scope": "/zundamon-nanikiru/",
+  "display": "standalone",
+  "background_color": "#06110f",
+  "theme_color": "#0b2f28",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "/zundamon-nanikiru/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/zundamon-nanikiru/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/zundamon-nanikiru/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
