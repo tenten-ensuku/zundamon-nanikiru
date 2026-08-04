@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta name="theme-color" content="#06110f">
+  <link rel="icon" type="image/png" sizes="32x32" href="/zundamon-nanikiru/icons/favicon-32.png?v=58">
+  <link rel="apple-touch-icon" sizes="180x180" href="/zundamon-nanikiru/icons/apple-touch-icon-180.png?v=58">
+  <link rel="manifest" href="/zundamon-nanikiru/manifest.webmanifest?v=58">
   <title>重要何切る問題集（基礎）</title>
   <style>
     :root {
@@ -980,8 +983,12 @@
   <script>
     "use strict";
 
-    const APP_VERSION = 56;
-    const STORAGE_KEY = "zundamon-nanikiru-state-v2";
+    const APP_ID = "zundamon-nanikiru";
+    const APP_BASE_PATH = "/zundamon-nanikiru/";
+    const APP_VERSION = 58;
+    const storageKey = (name) => `${APP_ID}:${name}`;
+    const STORAGE_KEY = storageKey("state-v2");
+    const LEGACY_STORAGE_KEY = "zundamon-nanikiru-state-v2";
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
     const WIND_NAMES = { east: "東", south: "南", west: "西", north: "北" };
@@ -1097,6 +1104,10 @@
 
     function loadState() {
       try {
+        if (localStorage.getItem(STORAGE_KEY) === null) {
+          const legacyValue = localStorage.getItem(LEGACY_STORAGE_KEY);
+          if (legacyValue !== null) localStorage.setItem(STORAGE_KEY, legacyValue);
+        }
         const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
         return normalizeState(parsed);
       } catch {
