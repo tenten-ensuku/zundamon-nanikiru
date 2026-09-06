@@ -243,7 +243,13 @@
       <a class="back" href="./">アプリへ戻る</a>
     </header>
 
-    <section class="login" id="loginPanel">
+    <section class="login" id="accessPanel" aria-live="polite">
+      <h2 id="accessTitle">編集画面を開いています…</h2>
+      <p id="accessMessage"></p>
+      <button class="primary" id="retryAccess" type="button" hidden>再確認</button>
+    </section>
+
+    <section class="login" id="loginPanel" hidden>
       <h2>管理者ログイン</h2>
       <p>管理パスワードはこの画面内だけで保持し、ブラウザには保存しません。</p>
       <form id="loginForm">
@@ -255,6 +261,7 @@
     </section>
 
     <section id="adminPanel" hidden>
+      <p class="summary-line" id="editModeNotice"></p>
       <div class="toolbar">
         <input id="search" type="search" placeholder="問題番号・正解牌・解説を検索">
         <button class="add-question" id="addQuestion" type="button">＋追加</button>
@@ -272,10 +279,11 @@
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
     const WIND_NAMES = { east: "東", south: "南", west: "西", north: "北" };
     const TILE_ASSET_VERSION = "41";
-    const requestedQuestionId = Number(new URLSearchParams(location.search).get("question"));
     let adminPassword = "";
+    let currentEditMode = "closed";
     let baseQuestions = [];
     let questions = [];
+    const requestedQuestionId = Number(new URLSearchParams(location.search).get("question"));
 
     function tilePath(code) {
       const cacheVersion = `?v=${TILE_ASSET_VERSION}`;
@@ -360,12 +368,62 @@
 
     async function api(path, options = {}) {
       const headers = { "Content-Type": "application/json", ...(options.headers || {}) };
-      if (options.admin) headers["X-Admin-Password"] = adminPassword;
+      if (options.admin && adminPassword) headers["X-Admin-Password"] = adminPassword;
       const response = await fetch(apiUrl(path), { ...options, headers, cache: "no-store" });
       const body = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(body.error || "処理に失敗しました。");
+      if (!response.ok) {
+        const message = response.status === 402
+          ? "共有保存サービスが利用制限で停止しています（HTTP 402）。パスワードの問題ではありません。現在は共有編集できません。"
+          : body.error || "処理に失敗しました。";
+        throw Object.assign(new Error(message), { status: response.status });
+      }
       return body;
     }
+
+    async function openEditor() {
+      questions = await loadQuestions();
+      if (Number.isInteger(requestedQuestionId) && requestedQuestionId > 0) {
+        document.getElementById("search").value = String(requestedQuestionId);
+      }
+      const local = location.hostname === "127.0.0.1" || location.hostname === "localhost";
+      const modeLabel = currentEditMode === "open" ? "編集開放中・ログイン不要" : "管理者として編集中";
+      document.getElementById("editModeNotice").textContent = `${modeLabel} ／ ${local ? "このPCに保存（公開サイトには自動反映されません）" : "変更は全員の問題集に反映されます"}`;
+      document.getElementById("accessPanel").hidden = true;
+      document.getElementById("loginPanel").hidden = true;
+      document.getElementById("adminPanel").hidden = false;
+      renderList();
+    }
+
+    async function initializeEditor() {
+      const title = document.getElementById("accessTitle");
+      const message = document.getElementById("accessMessage");
+      const retry = document.getElementById("retryAccess");
+      document.getElementById("accessPanel").hidden = false;
+      document.getElementById("loginPanel").hidden = true;
+      document.getElementById("adminPanel").hidden = true;
+      title.textContent = "編集画面を開いています…";
+      message.textContent = "";
+      retry.hidden = true;
+      try {
+        const access = await api("/api/admin/access");
+        currentEditMode = access.mode;
+        if (access.mode === "open") await openEditor();
+        else if (access.mode === "password") {
+          document.getElementById("accessPanel").hidden = true;
+          document.getElementById("loginPanel").hidden = false;
+        } else {
+          title.textContent = "編集は停止中です";
+          message.textContent = "問題を解く機能は引き続き利用できます。";
+          retry.hidden = false;
+        }
+      } catch (error) {
+        title.textContent = "編集画面を開けません";
+        message.textContent = error.status === 402 ? error.message : "保存先に接続できません。サーバーが起動しているか確認してください。";
+        retry.hidden = false;
+      }
+    }
+
+    document.getElementById("retryAccess").addEventListener("click", initializeEditor);
 
     document.getElementById("loginForm").addEventListener("submit", async event => {
       event.preventDefault();
@@ -375,13 +433,7 @@
       try {
         await api("/api/admin/login", { method: "POST", body: JSON.stringify({ password: supplied }) });
         adminPassword = supplied;
-        questions = await loadQuestions();
-        if (Number.isInteger(requestedQuestionId) && requestedQuestionId > 0) {
-          document.getElementById("search").value = String(requestedQuestionId);
-        }
-        document.getElementById("loginPanel").hidden = true;
-        document.getElementById("adminPanel").hidden = false;
-        renderList();
+        await openEditor();
       } catch (error) {
         adminPassword = "";
         message.textContent = error.message;
@@ -734,6 +786,7 @@
       const query = document.getElementById("search").value.trim();
       updateSummaryLine(questions.filter(item => matches(item, query)).length);
     }
+    initializeEditor();
   </script>
 </body>
 </html>

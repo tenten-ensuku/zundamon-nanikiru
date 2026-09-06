@@ -3,6 +3,7 @@ import { createServer } from "node:http";
 import { readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { resolveEditMode, editAccess } from "./supabase/functions/zundamon-question-admin/edit-policy.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const JSON_LIMIT = 128 * 1024;
@@ -212,6 +213,7 @@ export function createAppServer(options = {}) {
   const basePath = path.resolve(options.basePath || process.env.QUESTIONS_PATH || path.join(rootDir, "public", "questions.json"));
   const overridesPath = path.resolve(options.overridesPath || process.env.QUESTION_OVERRIDES_PATH || path.join(rootDir, "data", "question-overrides.json"));
   const adminPassword = options.adminPassword ?? process.env.ADMIN_PASSWORD ?? "";
+  const getEditMode = () => resolveEditMode(options.editMode ?? process.env.QUESTION_EDIT_MODE);
   const port = Number(options.port ?? process.env.PORT ?? 4173);
   const configuredOrigins = options.allowedOrigins ?? (process.env.ALLOWED_ORIGINS || "").split(",").filter(Boolean);
   const allowedOrigins = new Set([
@@ -235,7 +237,7 @@ export function createAppServer(options = {}) {
   }
 
   function authenticated(request) {
-    return safePasswordEqual(request.headers["x-admin-password"], adminPassword);
+    return getEditMode() === "open" || (getEditMode() === "password" && safePasswordEqual(request.headers["x-admin-password"], adminPassword));
   }
 
   async function handler(request, response) {
@@ -267,6 +269,11 @@ export function createAppServer(options = {}) {
     }
 
     try {
+      if (request.method === "GET" && pathname === "/api/admin/access") {
+        sendJson(response, 200, editAccess(getEditMode()), origin);
+        return;
+      }
+
       if (request.method === "GET" && pathname === "/api/questions") {
         const { baseQuestions, overrides } = await baseAndOverrides();
         sendJson(response, 200, mergeQuestions(baseQuestions, overrides), origin);
@@ -280,6 +287,14 @@ export function createAppServer(options = {}) {
       }
 
       if (request.method === "POST" && pathname === "/api/admin/login") {
+        if (getEditMode() === "closed") {
+          sendJson(response, 403, { error: "編集は停止中です。" }, origin);
+          return;
+        }
+        if (getEditMode() === "open") {
+          sendJson(response, 200, { ok: true }, origin);
+          return;
+        }
         if (!adminPassword) {
           sendJson(response, 503, { error: "管理パスワードが設定されていません。" }, origin);
           return;
@@ -296,7 +311,11 @@ export function createAppServer(options = {}) {
       const adminMatch = /^\/api\/admin\/questions\/(\d+)$/.exec(pathname);
       const isCreate = request.method === "POST" && pathname === "/api/admin/questions";
       if ((adminMatch && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
-        if (!adminPassword || !authenticated(request)) {
+        if (getEditMode() === "closed") {
+          sendJson(response, 403, { error: "編集は停止中です。" }, origin);
+          return;
+        }
+        if (!authenticated(request)) {
           sendJson(response, 401, { error: "認証に失敗しました。" }, origin);
           return;
         }
@@ -378,7 +397,7 @@ export function createAppServer(options = {}) {
         writeQueue = writeQueue.then(() => writeJsonAtomic(overridesPath, overrides));
         await writeQueue;
         const merged = mergeQuestions(baseQuestions, overrides).find((question) => question.id === questionId);
-        sendJson(response, 200, merged, origin);
+        sendJson(response, 200, merged || { id: questionId, restored: true }, origin);
         return;
       }
 
@@ -414,7 +433,7 @@ export function createAppServer(options = {}) {
   }
 
   const server = createServer(handler);
-  return { server, port, rootDir, basePath, overridesPath };
+  return { server, port, rootDir, basePath, overridesPath, getEditMode };
 }
 
 if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
@@ -422,7 +441,9 @@ if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
   const app = createAppServer();
   app.server.listen(app.port, "127.0.0.1", () => {
     console.log(`ずんだもん何切る: http://127.0.0.1:${app.port}/`);
-    if (!process.env.ADMIN_PASSWORD) console.warn("ADMIN_PASSWORD が未設定のため、管理画面へのログインは無効です。");
+    if (app.getEditMode() === "open") console.warn("一時的な編集開放中です。ログイン不要で、このPCの問題データを編集できます。");
+    else if (app.getEditMode() === "closed") console.warn("問題の編集は停止中です。");
+    else if (!process.env.ADMIN_PASSWORD) console.warn("ADMIN_PASSWORD が未設定のため、管理画面へのログインは無効です。");
   });
 }
 

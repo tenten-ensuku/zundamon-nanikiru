@@ -154,7 +154,7 @@ test("admin API round-trips drawn discards and both large explanation sections i
   const password = "isolated-v60-test-password";
   const fixture = { id: 1, hand: ["1m", "2m", "3m", "4p", "0p", "5s", "6s", "7s", "1z", "1z", "2z", "3z", "4z"], draw: "5z", dora: "2m", melds: [], explanation: "原文", correctDiscards: ["5z"] };
   await writeFile(basePath, JSON.stringify([fixture]));
-  const app = createAppServer({ rootDir: root, basePath, overridesPath, adminPassword: password, port: 0 });
+  const app = createAppServer({ rootDir: root, basePath, overridesPath, adminPassword: password, editMode: "password", port: 0 });
   await new Promise(resolve => app.server.listen(0, "127.0.0.1", resolve));
   const origin = `http://127.0.0.1:${app.server.address().port}`;
   const put = question => fetch(`${origin}/api/admin/questions/1`, { method: "PUT", headers: { "Content-Type": "application/json", "X-Admin-Password": password }, body: JSON.stringify({ question }) });

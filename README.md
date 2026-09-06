@@ -10,10 +10,29 @@ npm run app
 
 ### 管理画面
 
-問題ごとに正解打牌（複数可）と解説文を編集できます。「元に戻す」でDiscordから取得した原本へ戻せます。管理パスワードはHTML・JavaScript・JSON・ブラウザ保存領域には保存されません。
+問題ごとに正解打牌（複数可）と解説文を編集できます。「元に戻す」で同梱の問題データへ戻せます。
 
-- ローカル: `.env` の `ADMIN_PASSWORD` で認証し、変更分を `data/question-overrides.json` に保存します。
-- GitHub Pages: Supabase Edge FunctionのSecret `ADMIN_PASSWORD` で認証し、変更分を `public.zundamon_question_overrides` に保存します。
+**現在は全体公開前の一時的な編集開放中です。ログインなしで編集できます。** URLを知っている人による書き換えも可能です。
+
+- ローカル: 変更分をこのPCの `data/question-overrides.json` に保存します。公開サイトには自動反映されません。
+- GitHub Pages: 変更分をSupabaseの `public.zundamon_question_overrides` に保存し、利用者全員へ反映します。
+- 共有APIがHTTP 402などで停止中なら、認証をなくしても共有保存できません。編集画面は理由を表示し、保存できたようには扱いません。
+
+#### 全体公開時に編集を停止する
+
+`QUESTION_EDIT_MODE` をサーバー側で設定します。画面だけでなく、追加・修正・確認済みチェック・復元の全APIで適用します。
+
+| 値 | 動作 |
+| --- | --- |
+| `open` | 誰でも編集可能（現在の初期値） |
+| `password` | `ADMIN_PASSWORD` で認証した人だけ編集可能 |
+| `closed` | パスワードが正しくても全編集を拒否 |
+
+ローカルでは `.env` に `QUESTION_EDIT_MODE=closed` を追加して `npm run app` を再起動します。公開版は、このプロジェクトのSupabase Edge Function環境変数に同じ設定を追加します。
+
+両方の初期値を変更する場合は `supabase/functions/zundamon-question-admin/edit-policy.mjs` の `DEFAULT_EDIT_MODE` を変更し、ローカル再起動とEdge Function再配信を行います。Edge Functionには `index.ts` と `edit-policy.mjs` の両方が必要です。環境変数が優先され、不正な値は安全側の `closed` になります。
+
+`password` モードのローカル用パスワードは `.env`、公開版はSupabaseのSecret `ADMIN_PASSWORD` に保存します。パスワードを公開ファイルやブラウザ保存領域へ置きません。通常のアプリ更新の公開と、利用者を広く募集する「全体公開」は区別してください。
 
 ### GitHub Pages + Supabase
 

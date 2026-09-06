@@ -33,6 +33,7 @@ async function startTestServer(password = PASSWORD) {
     basePath,
     overridesPath,
     adminPassword: password,
+    editMode: "password",
     port: 0,
     allowedOrigins: ["http://allowed.test"],
   });

@@ -9,12 +9,14 @@ const migrationPath = path.resolve("supabase/migrations/20260716000000_create_zu
 const reviewMigrationPath = path.resolve("supabase/migrations/20260716010000_create_zundamon_question_reviews.sql");
 const rangeMigrationPath = path.resolve("supabase/migrations/20260717052458_expand_zundamon_question_range_to_167.sql");
 
-test("Supabase function authenticates every mutation and keeps secrets server-side", async () => {
+test("Supabase function applies the edit policy to every mutation and keeps secrets server-side", async () => {
   const source = await readFile(functionPath, "utf8");
   assert.match(source, /Deno\.env\.get\("ADMIN_PASSWORD"\)/);
   assert.match(source, /request\.headers\.get\("X-Admin-Password"\)/);
   assert.match(source, /match && \(request\.method === "PUT" \|\| request\.method === "PATCH" \|\| request\.method === "DELETE"\)/);
   assert.match(source, /await authenticate\(request\)/);
+  assert.match(source, /mode === "closed"\) return json\(403/);
+  assert.match(source, /Deno\.env\.get\("QUESTION_EDIT_MODE"\)/);
   assert.doesNotMatch(source, /ADMIN_PASSWORD\s*=\s*["'][^"']+/);
 });
 

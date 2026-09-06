@@ -1,4 +1,5 @@
 import { createClient } from "npm:@supabase/supabase-js@2.110.6";
+import { resolveEditMode, editAccess } from "./edit-policy.mjs";
 
 const FUNCTION_SLUG = "zundamon-question-admin";
 const TABLE = "zundamon_question_overrides";
@@ -161,6 +162,9 @@ function mergePublicRows(
 }
 
 async function authenticate(request: Request, bodyPassword?: unknown) {
+  const mode = resolveEditMode(Deno.env.get("QUESTION_EDIT_MODE"));
+  if (mode === "open") return { configured: true, authenticated: true };
+  if (mode === "closed") return { configured: true, authenticated: false };
   const expected = Deno.env.get("ADMIN_PASSWORD") || "";
   if (!expected) return { configured: false, authenticated: false };
   const supplied = bodyPassword ?? request.headers.get("X-Admin-Password");
@@ -175,6 +179,9 @@ Deno.serve(async (request: Request) => {
   const pathname = routePath(new URL(request.url));
 
   try {
+    const mode = resolveEditMode(Deno.env.get("QUESTION_EDIT_MODE"));
+    if (request.method === "GET" && pathname === "/access") return json(200, editAccess(mode), origin);
+
     if (request.method === "GET" && pathname === "/overrides") {
       const db = database();
       const [overrideResult, reviewResult] = await Promise.all([
@@ -187,6 +194,7 @@ Deno.serve(async (request: Request) => {
     }
 
     if (request.method === "POST" && pathname === "/login") {
+      if (mode === "closed") return json(403, { error: "編集は停止中です。" }, origin);
       const body = await readJson(request);
       const auth = await authenticate(request, body.password);
       if (!auth.configured) return json(503, { error: "管理パスワードが設定されていません。" }, origin);
@@ -197,6 +205,7 @@ Deno.serve(async (request: Request) => {
     const match = /^\/questions\/(\d+)$/.exec(pathname);
     const isCreate = request.method === "POST" && pathname === "/questions";
     if ((match && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
+      if (mode === "closed") return json(403, { error: "編集は停止中です。" }, origin);
       const auth = await authenticate(request);
       if (!auth.configured) return json(503, { error: "管理パスワードが設定されていません。" }, origin);
       if (!auth.authenticated) return json(401, { error: "認証に失敗しました。" }, origin);
