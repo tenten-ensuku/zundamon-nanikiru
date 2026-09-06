@@ -15,6 +15,7 @@ let changed = 0;
 
 if (clearInvalid) {
   for (const question of questions) {
+    if (question.explanationSchemaVersion >= 2) continue; // Never strip author text in the split schema.
     const text = String(question.explanation || "");
     const next = text.replace(new RegExp(`\\n*${marker}\\n${genericSummary.source}(?=\\n|$)`, "g"), "").trim();
     if (next !== text.trim()) {
@@ -27,6 +28,13 @@ if (clearInvalid) {
   for (const question of questions) {
     const summary = summaries[String(question.id)];
     if (summary == null) continue;
+    if (question.explanationSchemaVersion >= 2) {
+      // Require explicit intent before replacing reviewed v60 video explanations.
+      if (!process.argv.includes("--replace-reviewed")) continue;
+      if (typeof summary !== "string" || !summary.trim()) throw new Error(`Invalid summary: ${question.id}`);
+      if (question.videoExplanation !== summary) { question.videoExplanation = summary; changed += 1; }
+      continue;
+    }
     if (typeof summary !== "string" || !summary.trim()) throw new Error(`問題 ${question.id} の動画要約が空です。`);
     if (/[一二三四五六七八九][萬万筒索]/.test(summary)) {
       throw new Error(`問題 ${question.id} の動画要約に漢字牌表記があります。m/p/s/z の正規牌コードへ直してください。`);

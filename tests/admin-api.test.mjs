@@ -274,14 +274,18 @@ test("hand and meld tiles keep the same per-tile width", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /container-type:\s*inline-size/);
   assert.match(source, /\.tile-button, \.meld-tile\s*\{[^}]*width:\s*var\(--tile-width\)[^}]*flex:\s*0 0 var\(--tile-width\)/s);
-  assert.match(source, /const APP_VERSION = 56;/);
+  const version = Number(source.match(/const APP_VERSION = (\d+);/)?.[1]);
+  assert.ok(Number.isInteger(version) && version > 0);
+  assert.ok(source.includes('ver ${APP_VERSION}'));
 });
 
-test("hand dora and red fives receive the static gloss marker", async () => {
+test("hand and meld dora use the shared animated face without covering selection", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /function isRedDora\(code\)\s*\{[\s\S]*code === "0m"[\s\S]*code === "0p"[\s\S]*code === "0s"/);
-  assert.match(source, /function isHandDora\(code, dora\)\s*\{\s*return code === dora \|\| isRedDora\(code\);/);
-  assert.match(source, /tile-button\.dora-in-hand::before/);
+  assert.match(source, /tile-face\.is-dora::after/);
+  assert.match(source, /animation: dora-sheen 2\.8s linear infinite/);
+  assert.match(source, /@media \(prefers-reduced-motion: reduce\)\s*\{\s*\.tile-face\.is-dora::after\s*\{[^}]*animation:\s*none;[^}]*opacity:\s*\.16;/);
+  assert.match(source, /tile\.append\(createTileFace\(code, question\.dora\)\)/);
   assert.match(source, /doraInHand \? " dora-in-hand" : ""/);
 });
 
@@ -433,12 +437,13 @@ test("question 1 contains a red five-pin", async () => {
 
 test("verified source videos use canonical answers and summaries", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  const expected = new Map([[2, "3s"], [3, "4s"], [4, "2m"], [5, "5m"], [6, "7m"], [7, "1z"], [8, "2s"], [9, "2z"], [10, "8s"], [11, "3p"], [12, "2s"], [13, "4p"], [14, "7p"], [15, "4m"], [16, "3p"], [19, "8s"], [20, "7p"], [22, "1s"], [23, "9p"], [25, "6s"], [26, "9p"], [27, "9m"], [28, "3p"], [29, "2m"], [30, "1m"]]);
+  const expected = new Map([[2, "3s"], [3, "4s"], [4, "2m"], [5, "5m"], [6, "7m"], [7, "1z"], [8, "2s"], [9, "2z"], [10, "8s"], [11, "3p"], [12, "2s"], [13, "4p"], [14, "7p"], [15, "4m"], [16, "3p"], [19, "8s"], [20, "8p"], [22, "1s"], [23, "9p"], [25, "6s"], [26, "9p"], [27, "9s"], [28, "3p"], [29, "1p"], [30, "1m"]]);
   for (const [id, discard] of expected) {
     const question = questions.find((item) => item.id === id);
-    assert.deepEqual(question.correctDiscards, [discard]);
-    assert.match(question.explanation, /【動画要約】/);
-    assert.match(question.explanation, new RegExp(`打${discard}`));
+    assert.ok(question.correctDiscards.includes(discard), `answer ${id}`);
+    assert.equal(question.explanationSchemaVersion, 2);
+    assert.match(question.videoExplanation, /のだ/);
+    assert.doesNotMatch(question.explanation, /【動画要約】/);
   }
   for (const id of [20, 22]) {
     const question = questions.find((item) => item.id === id);
@@ -464,20 +469,60 @@ test("admin explanation editor supports bold and red text without injecting HTML
   assert.match(client, /explanation-red/);
 });
 
-test("Discord spoiler and annotation remnants are removed from explanations", async () => {
+test("explanations render mahjong notation as inline tile images without changing natural language", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /function appendExplanationText/);
+  assert.match(source, /function explanationTileCode/);
+  assert.match(source, /\[0-9０-９\]\+\[mpsｍｐｓ\]/u);
+  assert.match(source, /if \(normalized === "發"\) return "6z"/);
+  assert.match(source, /function isMahjongMiddle/);
+  assert.match(source, /token === "中" && !isMahjongMiddle/);
+  assert.match(source, /className = "explanation-tile"/);
+  assert.match(source, /function explanationTilePath/);
+  assert.match(source, /tiles\/explanation\/aka2-66-90-l\.png/);
+  assert.match(source, /image\.src = explanationTilePath\(code\)/);
+  assert.match(source, /\.explanation-tile\s*\{[^}]*height:\s*1\.18em/s);
+  assert.doesNotMatch(source, /normalized === "発"/);
+});
+
+test("explanation tile renderer handles red fives and leaves natural Japanese intact", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  const start = source.indexOf("function explanationTileCode");
+  const end = source.indexOf("    function appendLinkedText", start);
+  assert.ok(start >= 0 && end > start, "explanation renderer functions must be present");
+  const document = {
+    createElement(tagName) {
+      return {
+        tagName: tagName.toUpperCase(),
+        children: [],
+        append(...nodes) { this.children.push(...nodes); },
+      };
+    },
+    createTextNode(textContent) { return { tagName: "#TEXT", textContent }; },
+  };
+  const renderer = new Function("document", "explanationTilePath", "tileName", `${source.slice(start, end)}; return { appendFormattedText };`)(document, code => `tile:${code}`, code => code);
+  const root = document.createElement("div");
+  renderer.appendFormattedText(root, "3ｍ r5p 赤5ｓ 發 発 その中で 白・發・中 **4p** [red]5s[/red]");
+  const collectImages = node => (node.children || []).flatMap(child => child.tagName === "IMG" ? [child] : collectImages(child));
+  assert.deepEqual(collectImages(root).map(image => image.src), ["tile:3m", "tile:0p", "tile:0s", "tile:6z", "tile:6z", "tile:7z", "tile:4p", "tile:5s"]);
+  const collectText = node => (node.children || []).flatMap(child => child.tagName === "#TEXT" ? [child.textContent] : collectText(child)).join("");
+  assert.match(collectText(root), /発 その中で/);
+});
+
+test("Discord markup is retained in author storage and cleaned only for display", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.some((question) => /\|\||※/.test(String(question.explanation || ""))), false);
+  assert.ok(questions.find(question => question.id === 13).explanation.includes("||"));
   const client = await readFile(path.resolve("index.html"), "utf8");
   const admin = await readFile(path.resolve("admin.html"), "utf8");
   assert.match(client, /function cleanDiscordExplanationArtifacts/);
   assert.match(admin, /function cleanDiscordExplanationArtifacts/);
 });
 
-test("question 3 contains an open three-green-dragon pon", async () => {
+test("question 3 contains an open three-red-dragon pon", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
   const question = questions.find((item) => item.id === 3);
   assert.deepEqual(question.melds, [
-    { type: "pon", open: true, calledIndex: 0, tiles: ["6z", "6z", "6z"] },
+    { type: "pon", open: true, calledIndex: 0, tiles: ["7z", "7z", "7z"] },
   ]);
 });
 
@@ -512,9 +557,9 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
   assert.equal(questions.length, 167);
   const question = questions.find((item) => item.id === 166);
   assert.deepEqual(question.hand, [
-    "2m", "3m", "4m", "3s", "4s", "4s", "5s", "5s", "6s", "7s", "8s", "4z", "4z", "4z",
+    "2m", "3m", "4s", "4s", "5s", "5s", "6s", "6s", "7s", "8s", "4z", "4z", "4z",
   ]);
-  assert.equal(question.draw, null);
+  assert.equal(question.draw, "4m");
   assert.deepEqual(
     { round: question.round, seat: question.seat, turn: question.turn, honba: question.honba, points: question.points },
     { round: "east1", seat: "west", turn: 8, honba: 0, points: 25000 },
@@ -525,13 +570,13 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
   assert.equal(question.correctRiichi, true);
   assert.equal(question.sourceUrl, "https://youtu.be/a3yIRViy5gc");
   assert.equal(question.sourceLabel, "YouTube動画を開く");
-  assert.match(question.explanation, /3s・6s・9s待ちの三面張/);
-  assert.match(question.explanation, /4z切りリーチを優先/);
-  assert.doesNotMatch(question.explanation, /[萬万筒索]/);
+  assert.match(question.videoExplanation, /3s・6s・9sの三面張/);
+  assert.match(question.videoExplanation, /4z切り/);
+  assert.equal(question.explanation, "");
 
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /typeof question\.correctRiichi === "boolean"/);
-  assert.match(source, /riichiSelected === question\.correctRiichi/);
+  assert.match(source, /response\.riichi === question\.correctRiichi/);
   assert.match(source, /id="sourceVideo" hidden/);
   assert.match(source, /question\.sourceUrl/);
   assert.match(source, /"問題解説動画へ飛ぶ"/);
@@ -549,18 +594,18 @@ test("question 167 reproduces both left-called chi melds and grades six man", as
     { round: question.round, seat: question.seat, turn: question.turn, honba: question.honba, points: question.points },
     { round: "east1", seat: "west", turn: 6, honba: 0, points: 25000 },
   );
-  assert.equal(question.dora, "6s");
+  assert.equal(question.dora, "8s");
   assert.equal(question.note, "6sをチーした直後（ツモ牌表記なし）");
   assert.deepEqual(question.melds, [
-    { type: "chi", open: true, calledIndex: 0, tiles: ["6s", "4s", "0s"] },
+    { type: "chi", open: true, calledIndex: 0, tiles: ["6s", "7s", "8s"] },
     { type: "chi", open: true, calledIndex: 0, tiles: ["3p", "4p", "5p"] },
   ]);
   assert.deepEqual(question.correctDiscards, ["6m"]);
   assert.equal(question.sourceUrl, "https://youtu.be/ADWMMNXtryw");
   assert.equal(question.sourceLabel, "YouTube動画を開く");
-  assert.match(question.explanation, /4m4枚と7m1枚の計5枚/);
-  assert.match(question.explanation, /40符となり1300・2600/);
-  assert.doesNotMatch(question.explanation, /[萬万筒索]/);
+  assert.match(question.videoExplanation, /6m切り/);
+  assert.match(question.videoExplanation, /フリテン/);
+  assert.equal(question.explanation, "");
 });
 
 test("question 168 reproduces the YouTube hand and grades eight man", async () => {
@@ -568,22 +613,22 @@ test("question 168 reproduces the YouTube hand and grades eight man", async () =
   assert.equal(questions.length, 167);
   const question = questions.find((item) => item.id === 168);
   assert.deepEqual(question.hand, [
-    "3m", "4m", "8m", "9m", "9m", "2p", "3p", "4p", "6p", "7p", "5s", "6s", "7s", "7s",
+    "3m", "4m", "8m", "9m", "9m", "2p", "3p", "4p", "6p", "7p", "5s", "6s", "7s",
   ]);
-  assert.equal(question.draw, null);
+  assert.equal(question.draw, "7s");
   assert.deepEqual(
     { round: question.round, seat: question.seat, turn: question.turn, honba: question.honba, points: question.points },
     { round: "east1", seat: "west", turn: 6, honba: 0, points: 25000 },
   );
   assert.equal(question.dora, "4m");
-  assert.equal(question.note, "7sをツモした局面（ツモ牌は手牌へ統合）");
+  assert.equal(question.note, "7sをツモした局面");
   assert.deepEqual(question.melds, []);
   assert.deepEqual(question.correctDiscards, ["8m"]);
   assert.equal(question.sourceUrl, "https://youtu.be/VWOg74rytII");
   assert.equal(question.sourceLabel, "YouTube動画を開く");
-  assert.match(question.explanation, /4sを引いて456sを作る4枚/);
-  assert.match(question.explanation, /8mの3枚だけ/);
-  assert.doesNotMatch(question.explanation, /[萬万筒索]/);
+  assert.match(question.videoExplanation, /4sが4枚、7sが2枚で合計6枚/);
+  assert.match(question.videoExplanation, /8mの縦引き3枚/);
+  assert.equal(question.explanation, "");
 });
 
 test("three non-duplicate videos continue the beginner question set", async () => {
@@ -602,9 +647,10 @@ test("question 169 keeps the comparison hand, dora, and two-man answer", async (
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
   const question = questions.find((item) => item.id === 169);
   assert.deepEqual(question.hand, [
-    "2m", "4m", "4m", "5m", "6m", "7m", "7m", "8m", "5p", "7p", "9p", "7s", "8s", "9s",
+    "2m", "4m", "4m", "5m", "6m", "7m", "7m", "8m", "5p", "7p", "9p", "8s", "9s",
   ]);
-  assert.equal(question.dora, "6s");
+  assert.equal(question.draw, "7s");
+  assert.equal(question.dora, "7s");
   assert.deepEqual(question.melds, []);
   assert.deepEqual(question.correctDiscards, ["2m"]);
   assert.equal("course" in question, false);
@@ -615,8 +661,9 @@ test("question 170 stores the riichi decision and question 171 stores the open r
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
   const riichi = questions.find((item) => item.id === 170);
   assert.deepEqual(riichi.hand, [
-    "2m", "3m", "4m", "5m", "7m", "7m", "7m", "9p", "9p", "9p", "2s", "3s", "3s", "3s",
+    "2m", "3m", "4m", "5m", "7m", "7m", "7m", "9p", "9p", "2s", "3s", "3s", "3s",
   ]);
+  assert.equal(riichi.draw, "9p");
   assert.equal(riichi.dora, "8s");
   assert.deepEqual(riichi.correctDiscards, ["2s"]);
   assert.equal(riichi.riichiChoice, true);
@@ -624,11 +671,12 @@ test("question 170 stores the riichi decision and question 171 stores the open r
 
   const openHand = questions.find((item) => item.id === 171);
   assert.deepEqual(openHand.hand, [
-    "4m", "0m", "2p", "3p", "3p", "4p", "4p", "5p", "6p", "8s", "8s",
+    "0m", "2p", "3p", "3p", "4p", "4p", "5p", "6p", "8s", "8s",
   ]);
+  assert.equal(openHand.draw, "4m");
   assert.equal(openHand.dora, "9m");
   assert.deepEqual(openHand.melds, [
-    { type: "pon", open: true, calledIndex: 0, tiles: ["6z", "6z", "6z"] },
+    { type: "pon", open: true, calledIndex: 0, tiles: ["7z", "7z", "7z"] },
   ]);
   assert.deepEqual(openHand.correctDiscards, ["3p"]);
   assert.equal("course" in openHand, false);
@@ -642,17 +690,19 @@ test("user-verified video corrections are fixed in the calibration set", async (
     const question = questions.find((item) => item.id === id);
     const verified = calibration.questions[String(id)];
     for (const field of ["hand", "dora", "melds", "correctDiscards", "riichiChoice", "correctRiichi"]) {
-      if (field in verified) assert.deepEqual(question[field], verified[field], `question ${id}: ${field}`);
+      if (field === "hand") assert.deepEqual([...question.hand, ...(question.draw ? [question.draw] : [])].sort(), [...verified.hand].sort(), `question ${id}: tile inventory`);
+      else if (field in verified) assert.deepEqual(question[field], verified[field], `question ${id}: ${field}`);
     }
   }
-  assert.deepEqual(calibration.correctionLedger.map((entry) => entry.id), [169, 170]);
+  assert.deepEqual(calibration.correctionLedger.filter(entry => entry.id).map(entry => entry.id), [169, 170]);
+  assert.equal(calibration.correctionLedger.at(-1).revision, 61);
 });
 
 test("every concealed quad offers kan as a standalone answer", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
   const normalize = (tile) => /^0[mps]$/.test(tile) ? `5${tile[1]}` : tile;
   const quadQuestions = questions.filter((question) => {
-    const counts = question.hand.reduce((map, tile) => {
+    const counts = [...question.hand, ...(question.draw ? [question.draw] : [])].reduce((map, tile) => {
       const kind = normalize(tile);
       return map.set(kind, (map.get(kind) || 0) + 1);
     }, new Map());

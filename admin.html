@@ -69,6 +69,8 @@
     label { display: block; margin-bottom: 6px; color: var(--gold-light); font-size: 13px; }
     input, textarea {
       width: 100%;
+      min-width: 0;
+      max-width: 100%;
       border: 1px solid rgba(242,210,123,.3);
       border-radius: 7px;
       color: var(--ink);
@@ -93,7 +95,7 @@
       margin: 16px 0 10px;
       padding: 10px;
       display: grid;
-      grid-template-columns: 1fr auto auto;
+      grid-template-columns: minmax(0, 1fr) auto auto;
       gap: 9px;
       border: 1px solid rgba(242,210,123,.22);
       border-radius: 9px;
@@ -107,8 +109,9 @@
     .add-question { padding: 0 12px; border: 1px solid #efad5e; border-radius: 7px; background: linear-gradient(#cf7434, #8b3d16); }
     .summary-line { margin: 0 2px 10px; color: var(--muted); font-size: 12px; }
 
-    .question-list { display: grid; gap: 7px; }
+    .question-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: 7px; }
     details {
+      min-width: 0;
       overflow: clip;
       border: 1px solid rgba(242,210,123,.2);
       border-radius: 9px;
@@ -156,7 +159,8 @@
     }
     .review-check:has(input:checked) { border-color: #79ca98; color: #9ee6b8; }
     .review-check:has(input:disabled) { opacity: .58; cursor: wait; }
-    .editor { --admin-tile-width: 39px; padding: 13px; border-top: 1px solid rgba(242,210,123,.18); }
+    .editor { --admin-tile-width: 39px; min-width: 0; padding: 13px; border-top: 1px solid rgba(242,210,123,.18); }
+    .editor input + label, .editor textarea + label { margin-top: 14px; }
     .field-title { margin: 0 0 7px; color: var(--gold-light); font-size: 13px; }
     .hint { margin: 0 0 10px; color: var(--muted); font-family: sans-serif; font-size: 11px; font-weight: 600; }
 
@@ -189,11 +193,11 @@
     .edit-tile img, .palette-tile img { width: 100%; height: auto; display: block; border-radius: 2px; pointer-events: none; }
     .edit-tile.target { border-color: var(--gold-light); transform: translateY(-4px); box-shadow: 0 0 9px rgba(242,210,123,.55); }
     .edit-tile.sideways { margin-inline: calc(var(--admin-tile-width) * .181818); transform: translateY(calc(var(--admin-tile-width) * .181818)) rotate(90deg); }
-    .tile-controls { display: flex; gap: 7px; margin: 6px 0 12px; }
+    .tile-controls { display: flex; flex-wrap: wrap; gap: 7px; margin: 6px 0 12px; }
     .tile-controls button, .meld-add, .meld-remove { min-height: 34px; padding: 5px 8px; border: 1px solid rgba(242,210,123,.28); border-radius: 6px; background: rgba(0,0,0,.28); font-size: 12px; }
-    .tile-palette { display: grid; grid-template-columns: repeat(10, var(--admin-tile-width)); gap: 4px; overflow-x: auto; padding-bottom: 6px; }
+    .tile-palette { display: grid; grid-template-columns: repeat(auto-fit, var(--admin-tile-width)); gap: 4px; padding-bottom: 6px; }
     .palette-tile { width: var(--admin-tile-width); padding: 0; border: 1px solid rgba(242,210,123,.2); border-radius: 4px; background: #071510; }
-    .meld-edit { display: flex; align-items: flex-end; gap: 6px; margin-bottom: 8px; }
+    .meld-edit { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 6px; margin-bottom: 8px; }
     .meld-edit select { min-height: 32px; color: var(--ink); background: #0a211c; border: 1px solid rgba(242,210,123,.25); border-radius: 5px; }
     .meld-preview { margin: -2px 0 16px; }
     .meld-preview .field-title { margin-bottom: 10px; }
@@ -308,8 +312,8 @@
     }
 
     function mergeExplanationWithVideoSummary(baseExplanation, overrideExplanation) {
-      const base = cleanDiscordExplanationArtifacts(baseExplanation);
-      const current = cleanDiscordExplanationArtifacts(overrideExplanation ?? baseExplanation ?? "");
+      const base = String(baseExplanation || "");
+      const current = String(overrideExplanation ?? baseExplanation ?? "");
       const summary = base.match(/(?:^|\n\n)【動画要約】\n[\s\S]*$/)?.[0]?.trim() || "";
       if (!summary || current.includes("【動画要約】")) return current;
       return current ? `${current}\n\n${summary}` : summary;
@@ -404,6 +408,7 @@
       const haystack = [
         question.id,
         question.explanation,
+        question.videoExplanation,
         ...(question.correctDiscards || []),
         ...(question.correctDiscards || []).map(tileName),
       ].join(" ").toLowerCase();
@@ -425,7 +430,7 @@
         const details = document.createElement("details");
         details.dataset.questionId = String(question.id);
         details.classList.toggle("reviewed", question.reviewed === true);
-        const answerText = question.correctDiscards?.length
+        const answerText = question.correctKan === true ? "カン！" : question.correctDiscards?.length
           ? question.correctDiscards.map(tileName).join("・")
           : "正解未設定";
         details.innerHTML = `
@@ -433,7 +438,7 @@
             <span class="qid">第${question.id}問</span>
             <span class="qcontext">${roundName(question.round)}　${WIND_NAMES[question.seat] || "―"}家　${question.turn ?? "―"}巡目</span>
             <label class="review-check"><input class="review-checkbox" type="checkbox" ${question.reviewed ? "checked" : ""}><span>確認完了</span></label>
-            <span class="answer-state ${question.overridden ? "override" : question.correctDiscards?.length ? "" : "unset"}">${answerText}${question.overridden ? "　編集済み" : ""}</span>
+            <span class="answer-state ${question.overridden ? "override" : question.correctDiscards?.length || question.correctKan === true ? "" : "unset"}">${answerText}${question.overridden ? "　編集済み" : ""}</span>
           </summary>
           <div class="editor"></div>`;
         details.addEventListener("toggle", () => {
@@ -478,7 +483,7 @@
     }
 
     function updateSummaryLine(visibleCount = questions.length) {
-      const configured = questions.filter(question => question.correctDiscards?.length).length;
+      const configured = questions.filter(question => question.correctDiscards?.length || question.correctKan === true).length;
       const reviewed = questions.filter(question => question.reviewed).length;
       document.getElementById("summaryLine").textContent = `${questions.length}問中 ${configured}問の正解を設定済み　／　確認完了 ${reviewed}問　／　表示 ${visibleCount}問`;
     }
@@ -492,12 +497,16 @@
       editor.innerHTML = `
         <p class="field-title">牌姿</p><p class="hint">牌を選ぶと金枠になります。下の牌を押すと差し替え、未選択なら手牌へ追加します。</p>
         <div class="tile-editor-row hand-row"></div><div class="tile-controls"><button type="button" class="delete-selected">選択牌を削除</button><button type="button" class="clear-hand">手牌を全消去</button></div>
+        <p class="field-title">ツモ牌（原本で明示されている場合のみ）</p><div class="tile-editor-row draw-row"></div>
+        <div class="tile-controls"><button type="button" class="set-draw">選択した手牌をツモ牌へ</button><button type="button" class="merge-draw">ツモ牌を手牌へ戻す</button></div>
         <p class="field-title">ドラ（押してから下の牌を選択）</p><div class="tile-editor-row dora-row"></div>
         <p class="field-title">副露</p><div class="meld-editor"></div><button type="button" class="meld-add">＋副露追加</button>
         <p class="field-title">牌パレット（37種）</p><div class="tile-palette"></div>
         <p class="field-title">正解打牌</p>
         <p class="hint">正解にする牌をタップしてください。複数選択できます。</p>
         <div class="answer-tiles"></div>
+        <label class="kan-answer-field" ${draft.kanChoice ? "" : "hidden"}>カンの正解<select class="kan-answer"><option value="">未設定</option><option value="false">カンしない</option><option value="true">カン！</option></select></label>
+        <label ${draft.riichiChoice ? "" : "hidden"}>立直の正解<select class="riichi-answer"><option value="">未設定</option><option value="false">ダマ</option><option value="true">立直</option></select></label>
         <div class="meld-preview" hidden>
           <p class="field-title">副露面子</p>
           <div class="admin-melds" aria-label="副露面子"></div>
@@ -505,7 +514,9 @@
         <label for="sourceUrl">元動画 URL</label>
         <p class="hint">ずんだもん何切るの元動画だけをここへ貼ってください。参考動画は解説文に貼ります。</p>
         <input id="sourceUrl" type="url" inputmode="url" placeholder="https://youtu.be/..." maxlength="2000">
-        <label for="explanationText">解説文</label>
+        <label for="videoExplanationText">動画解説（ずんだもん）</label>
+        <textarea id="videoExplanationText" maxlength="20000" placeholder="動画で確認した内容を、なのだ口調で記入"></textarea>
+        <label for="explanationText">あなたの解説（エンスク）</label>
         <div class="format-toolbar" role="toolbar" aria-label="解説文の書式">
           <button class="format-button" type="button" data-format="bold" title="太字">B 太字</button>
           <button class="format-button red" type="button" data-format="red" title="赤文字">● 赤文字</button>
@@ -519,9 +530,19 @@
         <p class="item-message" aria-live="polite"></p>`;
       const tiles = editor.querySelector(".answer-tiles");
       const textarea = editor.querySelector("#explanationText");
+      const videoTextarea = editor.querySelector("#videoExplanationText");
       const sourceUrlInput = editor.querySelector("#sourceUrl");
+      const kanAnswerInput = editor.querySelector(".kan-answer");
+      const riichiAnswerInput = editor.querySelector(".riichi-answer");
+      const restoreDecisionInputs = () => {
+        kanAnswerInput.value = typeof draft.correctKan === "boolean" ? String(draft.correctKan) : "";
+        riichiAnswerInput.value = typeof draft.correctRiichi === "boolean" ? String(draft.correctRiichi) : "";
+      };
+      restoreDecisionInputs();
       const itemMessage = editor.querySelector(".item-message");
-      textarea.value = draft.explanation || "";
+      const marker = String(draft.explanation || "").indexOf("【動画要約】");
+      textarea.value = marker < 0 ? draft.explanation || "" : draft.explanation.slice(0, marker).replace(/\n+$/, "");
+      videoTextarea.value = typeof draft.videoExplanation === "string" ? draft.videoExplanation : marker < 0 ? "" : draft.explanation.slice(marker + "【動画要約】".length).trim();
       sourceUrlInput.value = draft.sourceUrl || "";
       const applyFormat = (format) => {
         const start = textarea.selectionStart;
@@ -537,6 +558,9 @@
       const redrawStructure = () => {
         const handRow = editor.querySelector(".hand-row"); handRow.innerHTML = "";
         draft.hand.forEach((code, index) => handRow.append(tileButton(code, target?.kind === "hand" && target.index === index, () => { target = { kind: "hand", index }; redrawStructure(); })));
+        const drawRow = editor.querySelector(".draw-row"); drawRow.innerHTML = "";
+        if (draft.draw) drawRow.append(tileButton(draft.draw, target?.kind === "draw", () => { target = { kind: "draw" }; redrawStructure(); }));
+        else drawRow.textContent = "なし";
         const doraRow = editor.querySelector(".dora-row"); doraRow.innerHTML = ""; doraRow.append(tileButton(draft.dora, target?.kind === "dora", () => { target = { kind: "dora" }; redrawStructure(); }));
         const meldEditor = editor.querySelector(".meld-editor"); meldEditor.innerHTML = "";
         draft.melds.forEach((meld, meldIndex) => {
@@ -562,11 +586,16 @@
           const remove = document.createElement("button"); remove.type = "button"; remove.className = "meld-remove"; remove.textContent = "削除"; remove.addEventListener("click", () => { draft.melds.splice(meldIndex, 1); target = null; redrawStructure(); }); row.append(remove); meldEditor.append(row);
         });
       };
-      const redrawPalette = () => { const palette = editor.querySelector(".tile-palette"); palette.innerHTML = ""; allTiles.forEach(code => { const button = document.createElement("button"); button.type = "button"; button.className = "palette-tile"; const image = document.createElement("img"); image.src = tilePath(code); image.alt = tileName(code); image.width = 66; image.height = 90; button.append(image); button.addEventListener("click", () => { if (target?.kind === "hand") draft.hand[target.index] = code; else if (target?.kind === "dora") draft.dora = code; else if (target?.kind === "meld") draft.melds[target.meldIndex].tiles[target.tileIndex] = code; else if (draft.hand.length < 14) draft.hand.push(code); redrawStructure(); redrawTiles(); }); palette.append(button); }); };
+      const redrawPalette = () => { const palette = editor.querySelector(".tile-palette"); palette.innerHTML = ""; allTiles.forEach(code => { const button = document.createElement("button"); button.type = "button"; button.className = "palette-tile"; const image = document.createElement("img"); image.src = tilePath(code); image.alt = tileName(code); image.width = 66; image.height = 90; button.append(image); button.addEventListener("click", () => { if (target?.kind === "hand") draft.hand[target.index] = code; else if (target?.kind === "draw") draft.draw = code; else if (target?.kind === "dora") draft.dora = code; else if (target?.kind === "meld") draft.melds[target.meldIndex].tiles[target.tileIndex] = code; else if (draft.hand.length < 14) draft.hand.push(code); redrawStructure(); redrawTiles(); }); palette.append(button); }); };
 
       const redrawTiles = () => {
+        const counts = new Map();
+        for (const code of [...draft.hand, ...(draft.draw ? [draft.draw] : [])]) { const normal = code.replace(/^0/, "5"); counts.set(normal, (counts.get(normal) || 0) + 1); }
+        draft.kanChoice = [...counts.values()].includes(4);
+        editor.querySelector(".kan-answer-field").hidden = !draft.kanChoice;
+        if (!draft.kanChoice) kanAnswerInput.value = "";
         tiles.innerHTML = "";
-        draft.hand.forEach(code => {
+        [...draft.hand, ...(draft.draw ? [draft.draw] : [])].forEach(code => {
           const button = document.createElement("button");
           button.type = "button";
           button.className = `answer-tile${selected.has(code) ? " selected" : ""}`;
@@ -585,9 +614,23 @@
           tiles.append(button);
         });
       };
-      editor.querySelector(".delete-selected").addEventListener("click", () => { if (target?.kind === "hand") { draft.hand.splice(target.index, 1); target = null; redrawStructure(); redrawTiles(); } });
-      editor.querySelector(".clear-hand").addEventListener("click", () => { draft.hand = []; selected.clear(); target = null; redrawStructure(); redrawTiles(); });
+      const sortDraftHand = () => draft.hand.sort((a, b) => {
+        const key = code => "mpsz".indexOf(code[1]) * 100 + (Number(code[0]) || 5) * 2 + (code[0] === "0" ? 1 : 0);
+        return key(a) - key(b);
+      });
+      editor.querySelector(".delete-selected").addEventListener("click", () => { if (target?.kind === "hand") draft.hand.splice(target.index, 1); else if (target?.kind === "draw") draft.draw = null; target = null; redrawStructure(); redrawTiles(); });
+      editor.querySelector(".clear-hand").addEventListener("click", () => { draft.hand = []; draft.draw = null; selected.clear(); target = null; redrawStructure(); redrawTiles(); });
       editor.querySelector(".meld-add").addEventListener("click", () => { draft.melds.push({ type: "pon", open: true, calledIndex: 0, tiles: ["1m", "1m", "1m"] }); redrawStructure(); });
+      editor.querySelector(".set-draw").addEventListener("click", () => {
+        if (target?.kind !== "hand") return;
+        const [draw] = draft.hand.splice(target.index, 1);
+        if (draft.draw) draft.hand.push(draft.draw);
+        draft.draw = draw; sortDraftHand(); target = null; redrawStructure(); redrawTiles();
+      });
+      editor.querySelector(".merge-draw").addEventListener("click", () => {
+        if (draft.draw) draft.hand.push(draft.draw);
+        draft.draw = null; sortDraftHand(); target = null; redrawStructure(); redrawTiles();
+      });
       redrawStructure(); redrawPalette();
       redrawTiles();
 
@@ -596,15 +639,20 @@
         itemMessage.textContent = "保存しています…";
         try {
           draft.explanation = textarea.value;
+          draft.videoExplanation = videoTextarea.value;
+          draft.explanationSchemaVersion = 2;
+          sortDraftHand();
           draft.sourceUrl = sourceUrlInput.value.trim();
           if (draft.sourceUrl && !/^https?:\/\//.test(draft.sourceUrl)) throw new Error("元動画 URL は http:// または https:// で入力してください。");
           draft.sourceLabel = draft.sourceUrl ? "元動画を開く" : "";
           draft.correctDiscards = [...selected];
+          draft.correctKan = kanAnswerInput.value === "" ? null : kanAnswerInput.value === "true";
+          draft.correctRiichi = riichiAnswerInput.value === "" ? null : riichiAnswerInput.value === "true";
           draft.meldCount = draft.melds.length;
-          const requiredHandCount = 14 - draft.melds.reduce((total, meld) => total + meld.tiles.length, 0);
+          const requiredHandCount = 14 - draft.melds.length * 3 - (draft.draw ? 1 : 0);
           if (draft.hand.length !== requiredHandCount) throw new Error(`手牌は${requiredHandCount}枚にしてください。`);
           if (!draft.dora) throw new Error("ドラを選択してください。");
-          if (!draft.correctDiscards.length) throw new Error("正解打牌を1枚以上選択してください。");
+          if (draft.correctDiscards.some(code => ![...draft.hand, draft.draw].includes(code))) throw new Error("手牌・ツモ牌にない正解打牌が選ばれています。");
           const saved = await api(question.isNew ? "/api/admin/questions" : `/api/admin/questions/${question.id}`, {
             method: question.isNew ? "POST" : "PUT",
             admin: true,
@@ -659,9 +707,14 @@
           };
           questions = questions.map(item => item.id === restored.id ? restored : item);
           Object.assign(question, restored);
+          Object.assign(draft, structuredClone(restored));
           selected.clear();
           for (const code of restored.correctDiscards || []) selected.add(code);
           textarea.value = restored.explanation || "";
+          videoTextarea.value = restored.videoExplanation || "";
+          sourceUrlInput.value = restored.sourceUrl || "";
+          restoreDecisionInputs();
+          redrawStructure();
           redrawTiles();
           restoreButton.disabled = true;
           itemMessage.className = "item-message success";
@@ -675,8 +728,8 @@
 
     function updateSummary(details, question) {
       const state = details.querySelector(".answer-state");
-      const answerText = question.correctDiscards?.length ? question.correctDiscards.map(tileName).join("・") : "正解未設定";
-      state.className = `answer-state ${question.overridden ? "override" : question.correctDiscards?.length ? "" : "unset"}`;
+      const answerText = question.correctKan === true ? "カン！" : question.correctDiscards?.length ? question.correctDiscards.map(tileName).join("・") : "正解未設定";
+      state.className = `answer-state ${question.overridden ? "override" : question.correctDiscards?.length || question.correctKan === true ? "" : "unset"}`;
       state.textContent = `${answerText}${question.overridden ? "　編集済み" : ""}`;
       const query = document.getElementById("search").value.trim();
       updateSummaryLine(questions.filter(item => matches(item, query)).length);

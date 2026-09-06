@@ -16,6 +16,8 @@ QUESTIONS_DIR = ROOT / "public" / "questions"
 OCR_PATH = ROOT / "data" / "ocr-results.json"
 REPORT_PATH = ROOT / "data" / "structure-report.json"
 TILES_DIR = ROOT / "tiles"
+SOURCE_DRAW_PATH = ROOT / "data" / "source-draws-v60.json"
+SOURCE_DRAW_OVERRIDES = json.loads(SOURCE_DRAW_PATH.read_text(encoding="utf-8"))["draws"] if SOURCE_DRAW_PATH.exists() else {}
 
 WIND_CODES = {"東": "east", "南": "south", "西": "west", "北": "north"}
 KANJI_NUMBERS = {"〇": 0, "零": 0, "一": 1, "二": 2, "三": 3, "四": 4,
@@ -29,12 +31,12 @@ MANUAL_IMAGE_OVERRIDES = {
         "dora": "8m",
     },
     162: {
-        "hand": ["7m", "8m", "9m", "2p", "2p", "4p", "6p", "2s", "3s",
-                 "5s", "6s", "7s", "8s", "2p"],
+        "hand": ["7m", "8m", "9m", "2p", "2p", "5p", "6p", "2s", "3s",
+                 "0s", "6s", "7s", "8s", "2p"],
         "dora": "9m",
     },
     163: {
-        "hand": ["1m", "2m", "3m", "3m", "5m", "4p", "4p", "6p", "6p",
+        "hand": ["1m", "2m", "3m", "3m", "0m", "4p", "4p", "6p", "6p",
                  "8p", "8p", "7s", "8s", "4m"],
         "dora": "3z",
     },
@@ -44,18 +46,18 @@ MANUAL_IMAGE_OVERRIDES = {
         "dora": "2p",
     },
     165: {
-        "hand": ["9m", "9m", "2p", "2p", "4p", "5p", "6p", "7p", "5s",
-                 "6s", "7s", "8s", "9s", "4p"],
-        "dora": "6s",
+        "hand": ["9m", "9m", "2p", "2p", "4p", "5p", "6p", "7p", "4s",
+                 "0s", "7s", "8s", "9s", "6p"],
+        "dora": "9s",
     },
     166: {
-        "hand": ["2m", "3m", "4m", "3s", "4s", "4s", "5s", "5s", "6s",
+        "hand": ["2m", "3m", "4m", "6s", "4s", "4s", "5s", "5s", "6s",
                  "7s", "8s", "4z", "4z", "4z"],
         "dora": "4z",
     },
     167: {
         "hand": ["5m", "0m", "6m", "7m", "7m", "7m", "7z", "7z"],
-        "dora": "6s",
+        "dora": "8s",
         "meldCount": 2,
     },
     168: {
@@ -66,7 +68,7 @@ MANUAL_IMAGE_OVERRIDES = {
     169: {
         "hand": ["2m", "4m", "4m", "5m", "6m", "7m", "7m", "8m", "5p", "7p", "9p",
                  "7s", "8s", "9s"],
-        "dora": "6s",
+        "dora": "7s",
     },
     170: {
         "hand": ["2m", "3m", "4m", "5m", "7m", "7m", "7m", "9p", "9p", "2s", "3s",
@@ -84,7 +86,7 @@ MANUAL_IMAGE_OVERRIDES = {
         "dora": "9p",
     },
     136: {
-        "hand": ["5m", "6m", "1p", "3p", "4p", "5p", "6p", "7s", "7s",
+        "hand": ["5m", "6m", "2p", "3p", "4p", "5p", "6p", "7s", "7s",
                  "8s", "8s", "8s", "9s", "7p"],
         "dora": "2p",
     },
@@ -126,7 +128,7 @@ SITUATION_OVERRIDES = {
 
 # 副露は16問のみ。横向き牌を含むため、元画像を目視確認した確定値を使用します。
 MELD_OVERRIDES = {
-    3: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["6z", "6z", "6z"]}],
+    3: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["7z", "7z", "7z"]}],
     5: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["3z", "3z", "3z"]}],
     13: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["5z", "5z", "5z"]}],
     31: [{"type": "pon", "open": True, "calledIndex": 1, "tiles": ["2s", "2s", "2s"]}],
@@ -138,17 +140,24 @@ MELD_OVERRIDES = {
     93: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["6z", "6z", "6z"]}],
     107: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["6z", "6z", "6z"]}],
     123: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["6z", "6z", "6z"]}],
-    137: [{"type": "chi", "open": True, "calledIndex": 1, "tiles": ["6m", "7m", "8m"]}],
-    139: [{"type": "chi", "open": True, "calledIndex": 1, "tiles": ["4s", "0s", "6s"]}],
-    149: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["8s", "8s", "8s"]}],
+    137: [{"type": "chi", "open": True, "calledIndex": 0, "tiles": ["7m", "6m", "8m"]}],
+    139: [{"type": "chi", "open": True, "calledIndex": 0, "tiles": ["0s", "4s", "6s"]}],
+    149: [{"type": "pon", "open": True, "calledIndex": 0, "tiles": ["9s", "9s", "9s"]}],
     167: [
-        {"type": "chi", "open": True, "calledIndex": 0, "tiles": ["6s", "4s", "0s"]},
+        {"type": "chi", "open": True, "calledIndex": 0, "tiles": ["6s", "7s", "8s"]},
         {"type": "chi", "open": True, "calledIndex": 0, "tiles": ["3p", "4p", "5p"]},
     ],
     171: [
-        {"type": "pon", "open": True, "calledIndex": 0, "tiles": ["6z", "6z", "6z"]},
+        {"type": "pon", "open": True, "calledIndex": 0, "tiles": ["7z", "7z", "7z"]},
     ],
 }
+
+
+VERIFIED_PATH = ROOT / "calibration" / "zundamon-nanikiru-v1" / "verified-questions.json"
+for verified_id, verified in json.loads(VERIFIED_PATH.read_text(encoding="utf-8"))["questions"].items():
+    # User-approved image calibration takes precedence over OCR and older templates.
+    MANUAL_IMAGE_OVERRIDES[int(verified_id)] = {"hand": verified["hand"], "dora": verified["dora"], "meldCount": len(verified["melds"])}
+    MELD_OVERRIDES[int(verified_id)] = verified["melds"]
 
 
 def read_json(path: Path):
@@ -471,7 +480,13 @@ def parse_situation(text: str):
 def structure_image(question_id: int, image: np.ndarray, templates):
     if question_id in MANUAL_IMAGE_OVERRIDES:
         value = MANUAL_IMAGE_OVERRIDES[question_id]
-        return value["hand"], value["dora"], value.get("meldCount", 0), []
+        hand = list(value["hand"])
+        draw = SOURCE_DRAW_OVERRIDES.get(str(question_id))
+        if draw is not None:
+            if draw not in hand:
+                raise RuntimeError(f"原本のツモ牌 {draw} が手牌にありません。目視修正が必要です。")
+            hand.remove(draw)
+        return hand, draw, value["dora"], value.get("meldCount", 0), []
 
     mask = white_mask(image)
     y0, y1 = main_row(image, mask)
@@ -510,7 +525,8 @@ def structure_image(question_id: int, image: np.ndarray, templates):
         hand_end = group_end
         dora_crop = find_right_dora_crop(image, mask, hand_end, y0, y1, width)
     dora = classify_tile(dora_crop, templates)[0] if dora_crop is not None else None
-    return hand, dora, meld_count, confidence
+    draw = hand.pop() if separate_draw else None
+    return hand, draw, dora, meld_count, confidence
 
 
 def main():
@@ -521,17 +537,22 @@ def main():
 
     for question in questions:
         question_id = int(question["id"])
+        # v60以降の手作業レビュー済みデータを、旧OCR推定で上書きしない。
+        if question.get("explanationSchemaVersion", 0) >= 2:
+            report.append({"id": question_id, "status": "preserved-reviewed-data"})
+            continue
         image_path = ROOT / "public" / question["image"].lstrip("/")
         image = read_image(image_path)
 
-        hand, dora, meld_count, confidence = structure_image(question_id, image, templates)
+        hand, draw, dora, meld_count, confidence = structure_image(question_id, image, templates)
         hand = sort_hand(hand)
         situation = parse_situation(ocr_by_id.get(question_id, ""))
         situation.update(SITUATION_OVERRIDES.get(question_id, {}))
         question["hand"] = hand
-        question["draw"] = None
+        question["draw"] = draw
         question.setdefault("correctDiscards", [])
-        if has_kan_choice(hand):
+        selectable = hand + ([draw] if draw else [])
+        if has_kan_choice(selectable):
             question["kanChoice"] = True
         else:
             question.pop("kanChoice", None)
@@ -541,10 +562,10 @@ def main():
         question["dora"] = dora
 
         # 赤5（0m/0p/0s）は通常5と合わせて同一牌4枚以内かを検査します。
-        all_tiles = hand + [code for meld in question["melds"] for code in meld["tiles"]]
+        all_tiles = selectable + [code for meld in question["melds"] for code in meld["tiles"]]
         counts = Counter("5" + code[1] if code.startswith("0") else code for code in all_tiles)
         issues = []
-        expected_length = 14 - meld_count * 3
+        expected_length = 14 - meld_count * 3 - int(draw is not None)
         if len(hand) != expected_length:
             issues.append(f"hand_length={len(hand)} expected={expected_length}")
         if hand != sort_hand(hand):
@@ -567,6 +588,7 @@ def main():
         report.append({
             "id": question_id,
             "handLength": len(hand),
+            "draw": draw,
             "meldCount": meld_count,
             "melds": question["melds"],
             "dora": dora,
@@ -582,7 +604,7 @@ def main():
         "withRound": sum(item.get("round") is not None for item in questions),
         "withSeat": sum(item.get("seat") is not None for item in questions),
         "withTurn": sum(item.get("turn") is not None for item in questions),
-        "needsReview": sum(bool(item["issues"]) for item in report),
+        "needsReview": sum(bool(item.get("issues")) for item in report),
         "items": report,
     }
     write_json(REPORT_PATH, summary)

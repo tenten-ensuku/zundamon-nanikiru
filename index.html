@@ -226,7 +226,7 @@
     .hand-stage {
       flex: 0 0 auto;
       container-type: inline-size;
-      padding: 15px 5px 10px;
+      padding: 25px 5px 10px;
       border-top: 1px solid rgba(242,210,123,.16);
       border-bottom: 1px solid rgba(242,210,123,.16);
       background: linear-gradient(90deg, transparent, rgba(15,73,60,.42) 8%, rgba(15,73,60,.42) 92%, transparent);
@@ -269,15 +269,22 @@
       touch-action: manipulation;
     }
 
-    .tile-button img, .meld-tile {
+    .tile-face, .meld-tile {
       height: auto;
       display: block;
       border-radius: 3px;
-      filter: drop-shadow(0 3px 2px rgba(0,0,0,.42));
       pointer-events: none;
     }
 
-    .tile-button img { width: 100%; }
+    .tile-face {
+      position: relative;
+      isolation: isolate;
+      width: 100%;
+      overflow: hidden;
+      box-shadow: 0 3px 2px rgba(0,0,0,.42);
+    }
+
+    .tile-face img { display: block; width: 100%; height: auto; }
 
     .tile-button, .meld-tile {
       width: var(--tile-width);
@@ -286,27 +293,61 @@
     }
 
     .tile-button:hover { filter: brightness(1.05); }
+    .tile-button.draw-tile { margin-left: calc(var(--tile-width) * .36); }
+    .tile-button.draw-tile::before {
+      content: "ツモ";
+      position: absolute;
+      bottom: calc(100% + 5px);
+      inset-inline: -3px;
+      color: var(--gold-light);
+      font-size: 9px;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .catalog-hand .draw-tile { margin-left: 5px; }
 
     .tile-button.dora-in-hand {
       z-index: 1;
-      filter: drop-shadow(0 0 4px rgba(247, 195, 69, .75));
     }
 
-    .tile-button.dora-in-hand::before {
+    .tile-face.is-dora {
+      box-shadow: 0 3px 2px rgba(0,0,0,.42), 0 0 4px 1px rgba(241, 202, 108, .32);
+    }
+
+    .tile-face.is-dora::before {
       content: "";
       position: absolute;
       z-index: 1;
-      inset: 2px;
-      border: 1px solid rgba(255, 232, 147, .76);
-      border-radius: 3px;
-      background: linear-gradient(126deg, rgba(255,255,255,.48) 0 14%, rgba(255,247,209,.16) 24%, transparent 42%, rgba(255,226,125,.2) 53%, transparent 69%);
-      box-shadow: inset 0 0 7px rgba(255, 206, 81, .42), 0 0 5px rgba(255, 188, 57, .38);
-      mix-blend-mode: screen;
+      inset: 0;
+      border-radius: inherit;
+      box-shadow: inset 0 0 0 1px rgba(246, 216, 142, .52), inset 0 0 4px rgba(255, 222, 147, .22);
       pointer-events: none;
     }
 
-    .tile-button.dora-in-hand.selected {
-      filter: drop-shadow(0 0 5px var(--gold-light)) drop-shadow(0 0 5px rgba(247, 195, 69, .72));
+    .tile-face.is-dora::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      inset: -35% -70%;
+      background: linear-gradient(125deg, transparent 39%, rgba(255, 241, 189, .12) 44%, rgba(255,255,255,.72) 49%, rgba(255,255,255,.2) 53%, transparent 59%);
+      opacity: 0;
+      pointer-events: none;
+      animation: dora-sheen 2.8s linear infinite;
+    }
+
+    @keyframes dora-sheen {
+      0%, 58% { transform: translate3d(-65%, -12%, 0); opacity: 0; }
+      64% { opacity: .48; }
+      80% { opacity: .58; }
+      92%, 100% { transform: translate3d(65%, 12%, 0); opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tile-face.is-dora::after {
+        animation: none;
+        transform: none;
+        opacity: .16;
+      }
     }
 
     .tile-button.selected {
@@ -469,8 +510,20 @@
     }
 
     .explanation a { color: var(--gold-light); }
+    .explanation-section + .explanation-section { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(242,210,123,.2); }
+    .explanation-speaker { display: flex; align-items: center; gap: 9px; margin-bottom: 10px; white-space: normal; }
+    .speaker-avatar { width: 40px; height: 40px; flex: 0 0 40px; border-radius: 50%; object-fit: cover; object-position: center; background: #153a2d; }
+    .speaker-initial { display: grid; place-items: center; border: 1px solid #739363; color: #e9f2bf; font-size: 13px; }
+    .explanation-speaker small { display: block; color: var(--muted); font-size: 10px; font-weight: 500; }
     .explanation strong { color: #fff8dc; font-weight: 900; }
     .explanation .explanation-red { color: #ff7165; font-weight: 900; }
+    .explanation-tile {
+      width: calc(1.18em * 66 / 90);
+      height: 1.18em;
+      margin: 0 .04em;
+      vertical-align: -.22em;
+      object-fit: contain;
+    }
 
     .review-actions {
       margin-top: 12px;
@@ -985,7 +1038,7 @@
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 58;
+    const APP_VERSION = 61;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
     const LEGACY_STORAGE_KEY = "zundamon-nanikiru-state-v2";
@@ -1022,8 +1075,8 @@
     }
 
     function mergeExplanationWithVideoSummary(baseExplanation, overrideExplanation) {
-      const base = cleanDiscordExplanationArtifacts(baseExplanation);
-      const current = cleanDiscordExplanationArtifacts(overrideExplanation ?? baseExplanation ?? "");
+      const base = String(baseExplanation || "");
+      const current = String(overrideExplanation ?? baseExplanation ?? "");
       const summary = base.match(/(?:^|\n\n)【動画要約】\n[\s\S]*$/)?.[0]?.trim() || "";
       if (!summary || current.includes("【動画要約】")) return current;
       return current ? `${current}\n\n${summary}` : summary;
@@ -1132,6 +1185,20 @@
       return `tiles/${prefix}${number}-66-90-l.png${cacheVersion}`;
     }
 
+    function explanationTilePath(code) {
+      // Older inline assets have no wind/white tiles; use the approved complete set for those.
+      if (/^[1-5]z$/.test(code)) return tilePath(code);
+      const cacheVersion = `?v=${APP_VERSION}`;
+      if (code === "0m") return "tiles/explanation/aka1-66-90-l.png" + cacheVersion;
+      if (code === "0p") return "tiles/explanation/aka2-66-90-l.png" + cacheVersion;
+      if (code === "0s") return "tiles/explanation/aka3-66-90-l.png" + cacheVersion;
+      const number = Number(code[0]);
+      const suit = code[1];
+      if (suit === "z") return `tiles/explanation/ji${number}-66-90-l.png${cacheVersion}`;
+      const prefix = { m: "man", p: "pin", s: "sou" }[suit];
+      return `tiles/explanation/${prefix}${number}-66-90-l.png${cacheVersion}`;
+    }
+
     function tileName(code) {
       const number = Number(code[0]);
       const suit = code[1];
@@ -1144,7 +1211,8 @@
     }
 
     function isHandDora(code, dora) {
-      return code === dora || isRedDora(code);
+      const normalFive = tile => isRedDora(tile) ? `5${tile[1]}` : tile;
+      return isRedDora(code) || (Boolean(dora) && normalFive(code) === normalFive(dora));
     }
 
     function roundName(value) {
@@ -1211,19 +1279,71 @@
       link.setAttribute("aria-label", label);
     }
 
+    function explanationTileCode(token) {
+      const normalized = token.normalize("NFKC").toLowerCase();
+      if (normalized === "發") return "6z";
+      if (normalized === "中") return "7z";
+      const red = /^(?:r5|赤5|0)([mps])$/u.exec(normalized);
+      if (red) return `0${red[1]}`;
+      if (/^[1-7]z$/.test(normalized)) return normalized;
+      const numbered = /^([1-9])([mps])$/u.exec(normalized);
+      return numbered ? `${numbered[1]}${numbered[2]}` : null;
+    }
+
+    function isExplanationTileBoundary(text, index, length) {
+      const adjacentText = `${text[index - 1] || ""}${text[index + length] || ""}`;
+      return !/[0-9a-zＡ-Ｚａ-ｚ]/iu.test(adjacentText);
+    }
+
+    function isMahjongMiddle(text, index) {
+      const before = text.slice(0, index);
+      const after = text.slice(index + 1);
+      const isHonorList = /(?:^|[（(、・\s])(?:白|發|中)(?:[・、\s]+(?:白|發|中))*[・、\s]*$/u.test(before)
+        || /^[・、\s]*(?:白|發|中)(?=$|[・、\s])/u.test(after);
+      if (isHonorList) return true;
+      return /^(?:牌|ポン|刻子|対子|暗刻|明刻|ドラ|単騎|待ち|切り|の(?:ポン|刻子|対子)|を(?:切|ポン|鳴|副露)|が(?:重|対子)|は(?:役牌|ドラ)|(?:を|が|は|も)?(?:切|ポン|鳴|副露|役牌)|\s*[1-4]枚)/u.test(after);
+    }
+
+    function appendExplanationText(container, text) {
+      const pattern = /(?:r[5５]|赤[5５])[mpsｍｐｓ]|[0-9０-９]+[mpsｍｐｓ]|[1-7１-７][zｚ]|發|中/giu;
+      let lastIndex = 0;
+      for (const match of text.matchAll(pattern)) {
+        const token = match[0];
+        const index = match.index ?? 0;
+        if (!isExplanationTileBoundary(text, index, token.length) || (token === "中" && !isMahjongMiddle(text, index))) continue;
+        const normalized = token.normalize("NFKC").toLowerCase();
+        const run = /^([0-9]+)([mps])$/.exec(normalized);
+        const codes = run ? [...run[1]].map(number => `${number}${run[2]}`) : [explanationTileCode(token)];
+        if (codes.some(code => !code)) continue;
+        if (index > lastIndex) container.append(document.createTextNode(text.slice(lastIndex, index)));
+        for (const code of codes) {
+          const image = document.createElement("img");
+          image.className = "explanation-tile";
+          image.src = explanationTilePath(code);
+          image.alt = tileName(code);
+          image.width = 66;
+          image.height = 90;
+          image.decoding = "async";
+          container.append(image);
+        }
+        lastIndex = index + token.length;
+      }
+      if (lastIndex < text.length) container.append(document.createTextNode(text.slice(lastIndex)));
+    }
+
     function appendFormattedText(container, text) {
       const pattern = /(\*\*[^*]+\*\*|\[red\][\s\S]*?\[\/red\])/g;
       let lastIndex = 0;
       for (const match of text.matchAll(pattern)) {
-        if (match.index > lastIndex) container.append(document.createTextNode(text.slice(lastIndex, match.index)));
+        if (match.index > lastIndex) appendExplanationText(container, text.slice(lastIndex, match.index));
         const token = match[0];
         const node = document.createElement(token.startsWith("**") ? "strong" : "span");
         if (node.tagName === "SPAN") node.className = "explanation-red";
-        node.textContent = token.startsWith("**") ? token.slice(2, -2) : token.slice(5, -6);
+        appendExplanationText(node, token.startsWith("**") ? token.slice(2, -2) : token.slice(5, -6));
         container.append(node);
         lastIndex = match.index + token.length;
       }
-      if (lastIndex < text.length) container.append(document.createTextNode(text.slice(lastIndex)));
+      if (lastIndex < text.length) appendExplanationText(container, text.slice(lastIndex));
     }
 
     function appendLinkedText(container, value) {
@@ -1453,7 +1573,7 @@
       card.className = "catalog-card";
       const meldTileCount = (question.melds || []).reduce((total, meld) => total + (meld.tiles?.length || 0), 0);
       const sidewaysCount = (question.melds || []).filter(meld => meld.open && Number.isInteger(meld.calledIndex)).length;
-      card.style.setProperty("--visual-count", String(Math.max(15, question.hand.length + meldTileCount + sidewaysCount * .36 + (question.dora ? 1.4 : 0))));
+      card.style.setProperty("--visual-count", String(Math.max(15, selectableHand(question).length + (question.draw ? .36 : 0) + meldTileCount + sidewaysCount * .36 + (question.dora ? 1.4 : 0))));
 
       const openButton = document.createElement("button");
       openButton.type = "button";
@@ -1466,6 +1586,7 @@
       const hand = document.createElement("div");
       hand.className = "catalog-hand";
       question.hand.forEach(code => hand.append(createCatalogTile(code)));
+      if (question.draw) hand.append(createCatalogTile(question.draw, "draw-tile"));
       tilesLine.append(hand);
 
       if (question.melds?.length) {
@@ -1844,7 +1965,8 @@
     function renderQuestion() {
       const question = playQuestions[currentIndex];
       const response = state.session?.responses?.[String(question.id)];
-      selectedIndex = response && Number.isInteger(response.index) ? response.index : null;
+      const previousTileIndex = response?.tile ? selectableHand(question).indexOf(response.tile) : -1;
+      selectedIndex = previousTileIndex >= 0 ? previousTileIndex : null;
       riichiSelected = Boolean(response?.riichi);
       specialChoice = response?.choice === "kan" ? "kan" : null;
       revealed = Boolean(response);
@@ -1880,27 +2002,57 @@
       window.scrollTo({ top: 0, behavior: "instant" });
     }
 
+    function selectableHand(question) {
+      return [...question.hand, ...(question.draw ? [question.draw] : [])];
+    }
+
+    function createTileFace(code, dora) {
+      const face = document.createElement("span");
+      face.className = `tile-face${isHandDora(code, dora) ? " is-dora" : ""}`;
+      face.dataset.tileCode = code;
+      const image = document.createElement("img");
+      image.src = tilePath(code);
+      image.alt = tileName(code);
+      image.width = 66;
+      image.height = 90;
+      face.append(image);
+      return face;
+    }
+
+    function updateHandSelection(hand) {
+      for (const button of hand.querySelectorAll(".tile-button")) {
+        const selected = Number(button.dataset.index) === selectedIndex;
+        button.classList.toggle("selected", selected);
+        button.setAttribute("aria-pressed", selected ? "true" : "false");
+        button.disabled = revealed;
+      }
+    }
+
     function renderHand(question) {
       const hand = document.getElementById("handTiles");
       const melds = document.getElementById("meldTiles");
+      // Keep the same tile faces while choosing/revealing an answer so the sheen never restarts on a tap.
+      const renderKey = JSON.stringify([question.id, question.hand, question.draw, question.dora, question.melds]);
+      if (hand.dataset.renderKey === renderKey) {
+        updateHandSelection(hand);
+        return;
+      }
+      hand.dataset.renderKey = renderKey;
       hand.innerHTML = "";
       melds.innerHTML = "";
 
-      question.hand.forEach((code, index) => {
+      selectableHand(question).forEach((code, index) => {
         const doraInHand = isHandDora(code, question.dora);
         const button = document.createElement("button");
         button.type = "button";
         button.className = `tile-button${doraInHand ? " dora-in-hand" : ""}${selectedIndex === index ? " selected" : ""}`;
+        const isDraw = Boolean(question.draw) && index === question.hand.length;
+        if (isDraw) button.classList.add("draw-tile");
         button.dataset.index = String(index);
-        button.setAttribute("aria-label", `${tileName(code)}を切る`);
+        button.setAttribute("aria-label", `${isDraw ? "ツモ牌 " : ""}${tileName(code)}を切る`);
         button.setAttribute("aria-pressed", selectedIndex === index ? "true" : "false");
         button.disabled = revealed;
-        const image = document.createElement("img");
-        image.src = tilePath(code);
-        image.alt = tileName(code);
-        image.width = 66;
-        image.height = 90;
-        button.append(image);
+        button.append(createTileFace(code, question.dora));
         button.addEventListener("click", () => selectTile(index));
         hand.append(button);
       });
@@ -1911,21 +2063,18 @@
         group.className = "meld-group";
         group.title = meld.type === "kan" ? "槓" : meld.type === "chi" ? "チー" : "ポン";
         meld.tiles.forEach((code, tileIndex) => {
-          const image = document.createElement("img");
-          image.className = "meld-tile";
-          if (meld.open && tileIndex === meld.calledIndex) image.classList.add("sideways");
-          image.src = tilePath(code);
-          image.alt = tileName(code);
-          image.width = 66;
-          image.height = 90;
-          group.append(image);
+          const tile = document.createElement("span");
+          tile.className = "meld-tile";
+          if (meld.open && tileIndex === meld.calledIndex) tile.classList.add("sideways");
+          tile.append(createTileFace(code, question.dora));
+          group.append(tile);
           meldTileCount += 1;
         });
         melds.append(group);
       }
       melds.hidden = meldTileCount === 0;
       const sidewaysCount = (question.melds || []).filter(meld => meld.open && Number.isInteger(meld.calledIndex)).length;
-      document.getElementById("tilesLine").style.setProperty("--visual-count", Math.max(14, question.hand.length + meldTileCount + sidewaysCount * .36));
+      document.getElementById("tilesLine").style.setProperty("--visual-count", Math.max(14, selectableHand(question).length + (question.draw ? .36 : 0) + meldTileCount + sidewaysCount * .36));
     }
 
     function selectTile(index) {
@@ -1956,7 +2105,7 @@
     }
 
     function renderDecision(question) {
-      const selected = selectedIndex === null ? null : question.hand[selectedIndex];
+      const selected = selectedIndex === null ? null : selectableHand(question)[selectedIndex];
       const supportsRiichi = question.riichiChoice === true;
       const supportsKan = question.kanChoice === true;
       const kanSelected = specialChoice === "kan";
@@ -1987,17 +2136,21 @@
       decision.hidden = revealed;
     }
 
+    function gradeAnswer(question, response) {
+      const discards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
+      const graded = discards.length > 0 || question.correctKan === true;
+      if (!graded) return { graded: false, correct: null };
+      if (response.choice === "kan") return { graded: true, correct: question.correctKan === true };
+      const gradesRiichi = typeof question.correctRiichi === "boolean";
+      return { graded: true, correct: discards.includes(response.tile) && (!gradesRiichi || response.riichi === question.correctRiichi) };
+    }
+
     function confirmSelection() {
       if ((selectedIndex === null && specialChoice !== "kan") || revealed) return;
       const question = playQuestions[currentIndex];
       const id = String(question.id);
-      const correctDiscards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
-      const graded = correctDiscards.length > 0;
-      const tile = specialChoice === "kan" ? null : question.hand[selectedIndex];
-      const gradesRiichi = typeof question.correctRiichi === "boolean";
-      const correct = graded
-        ? correctDiscards.includes(tile) && (!gradesRiichi || riichiSelected === question.correctRiichi)
-        : null;
+      const tile = specialChoice === "kan" ? null : selectableHand(question)[selectedIndex];
+      const { graded, correct } = gradeAnswer(question, { tile, choice: specialChoice, riichi: riichiSelected });
       const answeredAt = new Date().toISOString();
       const response = {
         tile,
@@ -2052,6 +2205,40 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
+    function explanationParts(question) {
+      const legacy = String(question.explanation || "");
+      const marker = legacy.indexOf("【動画要約】");
+      return {
+        author: marker < 0 ? legacy : legacy.slice(0, marker).replace(/\n+$/, ""),
+        video: typeof question.videoExplanation === "string" ? question.videoExplanation : marker < 0 ? "" : legacy.slice(marker + "【動画要約】".length).trim(),
+      };
+    }
+
+    function appendSpeakerExplanation(container, kind, text) {
+      if (!text.trim()) return;
+      const section = document.createElement("section");
+      section.className = `explanation-section explanation-section--${kind}`;
+      const header = document.createElement("div");
+      header.className = "explanation-speaker";
+      const profile = window.ZUNDAMON_CONFIG?.explanationSpeakers?.[kind] || {};
+      const name = profile.name || (kind === "video" ? "ずんだもん" : "エンスク");
+      const avatar = document.createElement(profile.image ? "img" : "span");
+      avatar.className = `speaker-avatar${profile.image ? "" : " speaker-initial"}`;
+      if (profile.image) { avatar.src = profile.image; avatar.alt = name; avatar.width = 40; avatar.height = 40; avatar.decoding = "async"; }
+      else { avatar.textContent = kind === "video" ? "ず" : "エ"; avatar.setAttribute("aria-hidden", "true"); }
+      const label = document.createElement("div");
+      const title = document.createElement("strong");
+      title.textContent = name;
+      const subtitle = document.createElement("small");
+      subtitle.textContent = kind === "video" ? "動画解説・内容を再構成" : "補足解説";
+      label.append(title, subtitle);
+      header.append(avatar, label);
+      const body = document.createElement("div");
+      appendLinkedText(body, text);
+      section.append(header, body);
+      container.append(section);
+    }
+
     function renderReview(question) {
       const review = document.getElementById("review");
       const explanation = document.getElementById("explanation");
@@ -2059,10 +2246,14 @@
       review.classList.toggle("open", revealed);
       document.body.classList.toggle("reviewing", revealed);
       explanation.innerHTML = "";
-      if (revealed) appendLinkedText(explanation, question.explanation);
+      if (revealed) {
+        const parts = explanationParts(question);
+        appendSpeakerExplanation(explanation, "video", parts.video);
+        appendSpeakerExplanation(explanation, "author", parts.author);
+      }
       const sourceVideo = document.getElementById("sourceVideo");
       const sourceVideoLink = document.getElementById("sourceVideoLink");
-      const hasSourceVideo = revealed && typeof question.sourceUrl === "string" && /^https?:\/\//.test(question.sourceUrl);
+      const hasSourceVideo = revealed && question.videoExplanationStatus !== "source-mismatch" && typeof question.sourceUrl === "string" && /^https?:\/\//.test(question.sourceUrl);
       sourceVideo.hidden = !hasSourceVideo;
       if (hasSourceVideo) {
         sourceVideoLink.href = question.sourceUrl;
@@ -2070,15 +2261,15 @@
       }
       const correctDiscards = Array.isArray(question.correctDiscards) ? question.correctDiscards : [];
       const response = state.session?.responses?.[String(question.id)];
-      if (revealed && response && correctDiscards.length) {
+      const result = response ? gradeAnswer(question, response) : { graded: false };
+      if (revealed && response && result.graded) {
         const gradesRiichi = typeof question.correctRiichi === "boolean";
-        const correct = correctDiscards.includes(response.tile)
-          && (!gradesRiichi || response.riichi === question.correctRiichi);
+        const correct = result.correct;
         feedback.hidden = false;
         feedback.className = `answer-feedback ${correct ? "correct" : "incorrect"}`;
         document.getElementById("judgment").textContent = correct ? "○ 正解" : "× 不正解";
         const riichiAnswer = gradesRiichi ? (question.correctRiichi ? "立直・" : "ダマ・") : "";
-        document.getElementById("correctAnswer").textContent = `正解：${riichiAnswer}${correctDiscards.map(tileName).join("・")}`;
+        document.getElementById("correctAnswer").textContent = question.correctKan === true ? "正解：カン！" : `正解：${riichiAnswer}${correctDiscards.map(tileName).join("・")}`;
       } else {
         feedback.hidden = true;
         feedback.className = "answer-feedback";

@@ -5,7 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const JSON_LIMIT = 64 * 1024;
+const JSON_LIMIT = 128 * 1024;
 const MAX_EXPLANATION_LENGTH = 20_000;
 const TILE_CODE = /^(?:[1-9][mps]|[1-7]z|0[mps])$/;
 const MAX_QUESTION_ID = 9999;
@@ -58,8 +58,8 @@ function cleanDiscordExplanationArtifacts(value) {
 }
 
 function mergeExplanationWithVideoSummary(baseExplanation, overrideExplanation) {
-  const base = cleanDiscordExplanationArtifacts(baseExplanation);
-  const current = cleanDiscordExplanationArtifacts(overrideExplanation ?? baseExplanation ?? "");
+  const base = String(baseExplanation || "");
+  const current = String(overrideExplanation ?? baseExplanation ?? "");
   const summary = base.match(/(?:^|\n\n)【動画要約】\n[\s\S]*$/)?.[0]?.trim() || "";
   if (!summary || current.includes("【動画要約】")) return current;
   return current ? `${current}\n\n${summary}` : summary;
@@ -113,6 +113,9 @@ function listOverrides(overrides) {
 function normalizeStructuredQuestion(value, id) {
   if (!value || typeof value !== "object" || Number(value.id) !== id || id < 1 || id > MAX_QUESTION_ID) return null;
   const hand = Array.isArray(value.hand) ? value.hand.filter((code) => TILE_CODE.test(code)) : [];
+  if (value.draw != null && !TILE_CODE.test(value.draw)) return null;
+  const draw = value.draw || null;
+  const selectable = [...hand, ...(draw ? [draw] : [])];
   const melds = Array.isArray(value.melds) ? value.melds.map((meld) => ({
     type: ["chi", "pon", "kan"].includes(meld?.type) ? meld.type : "pon",
     open: meld?.open !== false,
@@ -120,26 +123,32 @@ function normalizeStructuredQuestion(value, id) {
     tiles: Array.isArray(meld?.tiles) ? meld.tiles.filter((code) => TILE_CODE.test(code)) : [],
   })) : [];
   if (!hand.length || !TILE_CODE.test(value.dora || "") || melds.some((meld) => (meld.type === "kan" ? meld.tiles.length !== 4 : meld.tiles.length !== 3) || (meld.type === "chi" && meld.calledIndex !== 0) || meld.calledIndex < 0 || meld.calledIndex >= meld.tiles.length)) return null;
-  if (hand.length !== 14 - melds.reduce((total, meld) => total + meld.tiles.length, 0)) return null;
-  const allTiles = [...hand, ...melds.flatMap((meld) => meld.tiles)];
+  if (selectable.length !== 14 - melds.length * 3) return null;
+  const allTiles = [...selectable, ...melds.flatMap((meld) => meld.tiles)];
   const counts = new Map();
   for (const code of allTiles) {
     const normalized = code.startsWith("0") ? `5${code[1]}` : code;
     counts.set(normalized, (counts.get(normalized) || 0) + 1);
   }
   if ([...counts.values()].some((count) => count > 4)) return null;
-  const correctDiscards = Array.isArray(value.correctDiscards) ? [...new Set(value.correctDiscards.filter((code) => hand.includes(code)))] : [];
-  const explanation = typeof value.explanation === "string" ? value.explanation.trim() : "";
-  if (explanation.length > MAX_EXPLANATION_LENGTH) return null;
+  const concealedCounts = new Map();
+  for (const code of selectable) { const normalized = code.replace(/^0/, "5"); concealedCounts.set(normalized, (concealedCounts.get(normalized) || 0) + 1); }
+  const kanChoice = [...concealedCounts.values()].includes(4);
+  if (value.correctKan === true && !kanChoice) return null;
+  const correctDiscards = Array.isArray(value.correctDiscards) ? [...new Set(value.correctDiscards.filter((code) => selectable.includes(code)))] : [];
+  const explanation = typeof value.explanation === "string" ? value.explanation : "";
+  const videoExplanation = typeof value.videoExplanation === "string" ? value.videoExplanation : "";
+  if (explanation.length > MAX_EXPLANATION_LENGTH || videoExplanation.length > MAX_EXPLANATION_LENGTH) return null;
   const sourceUrl = typeof value.sourceUrl === "string" ? value.sourceUrl.trim() : "";
   if (sourceUrl && !/^https?:\/\//.test(sourceUrl)) return null;
   return {
     id, image: typeof value.image === "string" ? value.image.trim() : "", images: Array.isArray(value.images) ? value.images.filter((image) => typeof image === "string") : [],
-    explanation, sourceUrl, sourceLabel: sourceUrl ? "元動画を開く" : "",
-    createdAt: typeof value.createdAt === "string" ? value.createdAt : new Date().toISOString(), hand, draw: null, status: value.status === "reviewed" ? "reviewed" : "unreviewed",
+    explanation, ...(typeof value.videoExplanation === "string" ? { videoExplanation, explanationSchemaVersion: 2 } : {}), sourceUrl, sourceLabel: sourceUrl ? "元動画を開く" : "",
+    createdAt: typeof value.createdAt === "string" ? value.createdAt : new Date().toISOString(), hand, draw, status: value.status === "reviewed" ? "reviewed" : "unreviewed",
     meldCount: melds.length, round: /^(east|south|west|north)\d+$/.test(value.round || "") ? value.round : "east1", seat: ["east", "south", "west", "north"].includes(value.seat) ? value.seat : "west",
     turn: Math.max(0, Math.min(18, Number(value.turn) || 0)), honba: Number.isInteger(value.honba) ? value.honba : 0, points: Number.isFinite(value.points) ? value.points : 25000,
-    dora: value.dora, melds, correctDiscards, ...(value.riichiChoice === true ? { riichiChoice: true, correctRiichi: value.correctRiichi === true } : {}), ...(value.note ? { note: String(value.note) } : {}),
+    dora: value.dora, melds, correctDiscards, kanChoice, correctKan: kanChoice && typeof value.correctKan === "boolean" ? value.correctKan : null,
+    ...(value.riichiChoice === true ? { riichiChoice: true, correctRiichi: typeof value.correctRiichi === "boolean" ? value.correctRiichi : null } : {}), ...(value.note ? { note: String(value.note) } : {}),
   };
 }
 
@@ -189,7 +198,8 @@ function contentType(filePath) {
 function allowedStaticPath(rootDir, pathname) {
   if (pathname === "/") return path.join(rootDir, "index.html");
   if (pathname === "/index.html" || pathname === "/admin.html" || pathname === "/config.js") return path.join(rootDir, pathname.slice(1));
-  if (/^\/tiles\/[a-z0-9-]+\.png$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));
+  if (/^\/tiles\/(?:explanation\/)?[a-z0-9-]+\.png$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));
+  if (/^\/assets\/speakers\/[a-z0-9_-]+\.(?:png|jpe?g|webp)$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));
   if (pathname === "/public/questions.json") return path.join(rootDir, "public", "questions.json");
   if (/^\/public\/questions\/question-\d{3}(?:-\d{2})?\.png$/i.test(pathname)) {
     return path.join(rootDir, pathname.slice(1));
@@ -344,7 +354,7 @@ export function createAppServer(options = {}) {
           const correctDiscards = Array.isArray(body.correctDiscards)
             ? [...new Set(body.correctDiscards.filter((code) => typeof code === "string"))]
             : [];
-          const selectableCodes = new Set(baseQuestion.hand || []);
+          const selectableCodes = new Set([...(baseQuestion.hand || []), ...(baseQuestion.draw ? [baseQuestion.draw] : [])]);
           if (!explanation || explanation.length > MAX_EXPLANATION_LENGTH) {
             sendJson(response, 400, { error: `解説は1～${MAX_EXPLANATION_LENGTH.toLocaleString("ja-JP")}文字で入力してください。` }, origin);
             return;

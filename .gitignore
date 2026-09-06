@@ -11,5 +11,5 @@ supabase/.temp/
 __pycache__/
 *.pyc
 .DS_Store
-artifacts/video-matcher/
-artifacts/video/
+# Local source videos, transcripts, audit sheets and migration backups are private.
+artifacts/

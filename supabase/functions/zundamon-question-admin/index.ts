@@ -4,7 +4,7 @@ const FUNCTION_SLUG = "zundamon-question-admin";
 const TABLE = "zundamon_question_overrides";
 const REVIEW_TABLE = "zundamon_question_reviews";
 const MAX_EXPLANATION_LENGTH = 20_000;
-const MAX_BODY_LENGTH = 64 * 1024;
+const MAX_BODY_LENGTH = 128 * 1024;
 const TILE_CODE = /^(?:[1-9][mps]|[1-7]z|0[mps])$/;
 const DEFAULT_ALLOWED_ORIGINS = [
   "https://tenten-ensuku.github.io",
@@ -113,17 +113,31 @@ function validQuestion(value: unknown, id: number) {
   if (!value || typeof value !== "object") return null;
   const question = value as Record<string, unknown>;
   const hand = Array.isArray(question.hand) ? question.hand.filter((code) => typeof code === "string" && TILE_CODE.test(code)) : [];
+  if (question.draw != null && (typeof question.draw !== "string" || !TILE_CODE.test(question.draw))) return null;
+  const draw = typeof question.draw === "string" ? question.draw : null;
+  const selectable = [...hand, ...(draw ? [draw] : [])];
   const melds = Array.isArray(question.melds) ? question.melds : [];
   const dora = typeof question.dora === "string" ? question.dora : "";
   if (Number(question.id) !== id || !hand.length || !TILE_CODE.test(dora) || melds.some((meld) => !meld || typeof meld !== "object" || !Array.isArray((meld as Record<string, unknown>).tiles) || ![3, 4].includes(((meld as Record<string, unknown>).tiles as unknown[]).length))) return null;
   const normalizedMelds = melds.map((meld) => ({ type: ["chi", "pon", "kan"].includes(String((meld as Record<string, unknown>).type)) ? String((meld as Record<string, unknown>).type) : "pon", open: (meld as Record<string, unknown>).open !== false, calledIndex: Number((meld as Record<string, unknown>).calledIndex) || 0, tiles: ((meld as Record<string, unknown>).tiles as unknown[]).filter((code): code is string => typeof code === "string" && TILE_CODE.test(code)) }));
-  if (normalizedMelds.some((meld) => (meld.type === "kan" ? meld.tiles.length !== 4 : meld.tiles.length !== 3) || (meld.type === "chi" && meld.calledIndex !== 0) || meld.calledIndex < 0 || meld.calledIndex >= meld.tiles.length) || hand.length !== 14 - normalizedMelds.reduce((total, meld) => total + meld.tiles.length, 0)) return null;
-  const explanation = typeof question.explanation === "string" ? question.explanation.trim() : "";
+  if (normalizedMelds.some((meld) => (meld.type === "kan" ? meld.tiles.length !== 4 : meld.tiles.length !== 3) || (meld.type === "chi" && meld.calledIndex !== 0) || meld.calledIndex < 0 || meld.calledIndex >= meld.tiles.length) || selectable.length !== 14 - normalizedMelds.length * 3) return null;
+  const explanation = typeof question.explanation === "string" ? question.explanation : "";
+  const videoExplanation = typeof question.videoExplanation === "string" ? question.videoExplanation : "";
   const sourceUrl = typeof question.sourceUrl === "string" ? question.sourceUrl.trim() : "";
   if (sourceUrl && !/^https?:\/\//.test(sourceUrl)) return null;
-  if (explanation.length > MAX_EXPLANATION_LENGTH) return null;
-  const correctDiscards = Array.isArray(question.correctDiscards) ? [...new Set(question.correctDiscards.filter((code): code is string => typeof code === "string" && hand.includes(code)))] : [];
-  return { ...question, id, hand, melds: normalizedMelds, meldCount: normalizedMelds.length, dora, draw: null, explanation, sourceUrl, sourceLabel: sourceUrl ? "元動画を開く" : "", correctDiscards };
+  if (explanation.length > MAX_EXPLANATION_LENGTH || videoExplanation.length > MAX_EXPLANATION_LENGTH) return null;
+  const counts = new Map<string, number>();
+  for (const code of [...selectable, ...normalizedMelds.flatMap(meld => meld.tiles)]) {
+    const normalized = code.startsWith("0") ? `5${code[1]}` : code;
+    counts.set(normalized, (counts.get(normalized) || 0) + 1);
+  }
+  if ([...counts.values()].some(count => count > 4)) return null;
+  const concealedCounts = new Map<string, number>();
+  for (const code of selectable) { const normalized = code.replace(/^0/, "5"); concealedCounts.set(normalized, (concealedCounts.get(normalized) || 0) + 1); }
+  const kanChoice = [...concealedCounts.values()].includes(4);
+  if (question.correctKan === true && !kanChoice) return null;
+  const correctDiscards = Array.isArray(question.correctDiscards) ? [...new Set(question.correctDiscards.filter((code): code is string => typeof code === "string" && selectable.includes(code)))] : [];
+  return { ...question, id, hand, melds: normalizedMelds, meldCount: normalizedMelds.length, dora, draw, explanation, ...(typeof question.videoExplanation === "string" ? { videoExplanation, explanationSchemaVersion: 2 } : {}), sourceUrl, sourceLabel: sourceUrl ? "元動画を開く" : "", correctDiscards, kanChoice, correctKan: kanChoice && typeof question.correctKan === "boolean" ? question.correctKan : null };
 }
 
 function mergePublicRows(

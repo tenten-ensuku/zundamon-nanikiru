@@ -1,0 +1,46 @@
+{
+  "revision": 61,
+  "approvedAt": "2026-09-06",
+  "basis": "元画像・動画フレームの監査と、ユーザーの全訂正反映承認。作者本文は共有保存の原文を優先し、AIで書き換えない。",
+  "imageCorrections": {
+    "3": {"melds": [{"type":"pon","open":true,"calledIndex":0,"tiles":["7z","7z","7z"]}]},
+    "41": {"note": "2zは安全牌と想定する。"},
+    "42": {"note": "2zは3枚切れで安全牌と想定する。"},
+    "66": {"dora": "5m"},
+    "136": {"replaceTiles": [["1p","2p"]]},
+    "137": {"replaceTiles": [["8m","4m"]], "dora":"5m", "melds":[{"type":"chi","open":true,"calledIndex":0,"tiles":["7m","6m","8m"]}]},
+    "138": {"replaceTiles": [["8s","9p"]]},
+    "139": {"replaceTiles": [["8m","4m"],["4s","5m"]], "draw":"5m", "melds":[{"type":"chi","open":true,"calledIndex":0,"tiles":["0s","4s","6s"]}]},
+    "140": {"replaceTiles": [["3m","5p"]], "draw":"5p"},
+    "149": {"dora":"9s", "melds":[{"type":"pon","open":true,"calledIndex":0,"tiles":["9s","9s","9s"]}]},
+    "162": {"replaceTiles": [["4p","5p"],["5s","0s"]]},
+    "163": {"replaceTiles": [["5m","0m"]]},
+    "165": {"hand":["9m","9m","2p","2p","4p","5p","6p","7p","4s","0s","7s","8s","9s"], "draw":"6p", "dora":"9s"},
+    "166": {"replaceTiles": [["3s","6s"]]},
+    "167": {"dora":"8s", "melds":[{"type":"chi","open":true,"calledIndex":0,"tiles":["6s","7s","8s"]},{"type":"chi","open":true,"calledIndex":0,"tiles":["3p","4p","5p"]}]},
+    "169": {"dora":"7s"},
+    "171": {"melds":[{"type":"pon","open":true,"calledIndex":0,"tiles":["7z","7z","7z"]}]}
+  },
+  "auditErrata": {
+    "76": {"correctDiscards":["3m"], "reason":"21秒以降の打牌後の図は112m。旧監査の2mは誤り。"},
+    "94": {"turn":8, "reason":"元画像と21秒以降の局面は8巡目。"},
+    "109": {"reason":"9m切りで残す役は一盃口。旧監査のタンヤオは誤り。"},
+    "144": {"correctDiscards":["2m"], "reason":"21秒以降の図は2m切り。旧監査の3mは誤り。"},
+    "150": {"reason":"9s切り後の待ちは7m・8m。旧監査の2m・8mは誤り。"}
+  },
+  "instructorAlternatives": {
+    "19": ["8s","6s"],
+    "29": ["1p"],
+    "37": ["1s","2p"],
+    "47": ["1p","3p"],
+    "55": ["3s","5s"],
+    "60": ["2p","4p"]
+  },
+  "pending": {
+    "videoSourcesMissing": [1,17,18,21,24,36,37,40,44,47,48,53,156,157,158,159,160,162,163,164,165],
+    "videoSourceMismatch": [57],
+    "initialVideoAnswerUnconfirmed": [169],
+    "riichiVideoConclusionUnconfirmed": [20,66,89,166,170],
+    "rule": "資料不足を推測で補わない。確認できていない判断は、既存のユーザー設定があればその根拠として保持し、動画確認済みとはしない。"
+  }
+}

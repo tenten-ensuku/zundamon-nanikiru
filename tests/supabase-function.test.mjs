@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import * as nodeModule from "node:module";
 
 const functionPath = path.resolve("supabase/functions/zundamon-question-admin/index.ts");
 const migrationPath = path.resolve("supabase/migrations/20260716000000_create_zundamon_question_overrides.sql");
@@ -55,4 +56,22 @@ test("GitHub Pages config contains only the public function URL", async () => {
   assert.match(source, /^window\.ZUNDAMON_CONFIG/);
   assert.match(source, /https:\/\/kclkzevcgpfbavegwbnf\.supabase\.co\/functions\/v1\/zundamon-question-admin/);
   assert.doesNotMatch(source, /service_role|sb_secret_|ADMIN_PASSWORD/i);
+});
+
+test("shared structured validation preserves separate draw and author whitespace", { skip: typeof nodeModule.stripTypeScriptTypes !== "function" }, async () => {
+  const source = await readFile(functionPath, "utf8");
+  const declaration = source.match(/function validQuestion\([^]*?\n}/)?.[0];
+  assert.ok(declaration);
+  const javascript = nodeModule.stripTypeScriptTypes(declaration);
+  const validQuestion = new Function(`const TILE_CODE=/^(?:[0-9][mps]|[1-7]z)$/, MAX_EXPLANATION_LENGTH=20000; ${javascript}; return validQuestion;`)();
+  const fixture = { id: 1, hand: ["1m", "2m", "3m", "4p", "0p", "5s", "6s", "7s", "1z", "1z", "2z", "3z", "4z"], draw: "5z", dora: "2m", melds: [], explanation: " \n作者の文\n ", videoExplanation: "5zを切るのだ。", correctDiscards: ["5z"] };
+  const saved = validQuestion(fixture, 1);
+  assert.equal(saved.draw, "5z");
+  assert.equal(saved.explanation, fixture.explanation);
+  assert.equal(saved.videoExplanation, fixture.videoExplanation);
+  assert.deepEqual(saved.correctDiscards, ["5z"]);
+  assert.equal(validQuestion({ ...fixture, draw: "9z" }, 1), null);
+  assert.equal(validQuestion({ ...fixture, hand: [...fixture.hand, "9m"] }, 1), null);
+  assert.equal(validQuestion({ ...fixture, videoExplanation: "あ".repeat(20_001) }, 1), null);
+  assert.ok(validQuestion({ ...fixture, hand: fixture.hand.slice(0, 10), melds: [{ type: "kan", open: true, calledIndex: 0, tiles: ["9s", "9s", "9s", "9s"] }] }, 1));
 });

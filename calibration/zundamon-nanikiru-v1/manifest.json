@@ -25,7 +25,7 @@
       "id": 167,
       "image": "/questions/question-167.png",
       "sourceUrl": "https://youtu.be/ADWMMNXtryw",
-      "checks": ["複数チー", "赤5", "鳴いた牌を左端"]
+      "checks": ["複数チー", "手牌の赤5m", "ドラ8s", "6sチーと3pチーを左端"]
     },
     {
       "id": 168,
@@ -37,7 +37,7 @@
       "id": 169,
       "image": "/questions/question-169.png",
       "sourceUrl": "https://youtu.be/Aijtrqz70Os",
-      "checks": ["比較問題", "ドラ6s", "打2m"]
+      "checks": ["比較問題", "ドラ7s", "作者推奨は打2m・動画の初手は未確認"]
     },
     {
       "id": 170,
@@ -49,7 +49,7 @@
       "id": 171,
       "image": "/questions/question-171.png",
       "sourceUrl": "https://youtu.be/GucqM0jEhlA",
-      "checks": ["赤5m", "6zポン", "ドラ9m", "打3p"]
+      "checks": ["赤5m", "7zポン", "ドラ9m", "打3p"]
     }
   ],
   "evidenceRule": "手牌・ドラ・副露・局面は問題フレーム、打牌・立直・カンは結論フレームで確認する。字幕は補助資料であり、画面に反する場合は採用しない。"

@@ -21,20 +21,21 @@ for (const id of ids) {
     continue;
   }
   if ("course" in question) failures.push(`${id}: course categories are not used`);
-  if (question.draw !== null) failures.push(`${id}: draw must be null`);
+  if (question.draw != null && !tilePattern.test(question.draw)) failures.push(`${id}: invalid draw`);
   if (!/^https:\/\/youtu\.be\//.test(question.sourceUrl || "")) failures.push(`${id}: sourceUrl must be a YouTube short URL`);
   if (!Array.isArray(question.hand) || !question.hand.every((tile) => tilePattern.test(tile))) failures.push(`${id}: invalid concealed tile code`);
   if (!Array.isArray(question.correctDiscards) || !question.correctDiscards.every((tile) => tilePattern.test(tile))) failures.push(`${id}: invalid correct discard`);
   if (!tilePattern.test(question.dora || "")) failures.push(`${id}: invalid dora`);
-  if (/[萬万筒索]|<[^>]+>/.test(`${question.explanation || ""}\n${question.note || ""}`)) failures.push(`${id}: explanation or note is not canonical`);
+  if (/[0-9一二三四五六七八九][萬万筒索]|<[^>]+>/.test(question.videoExplanation || "")) failures.push(`${id}: video explanation is not canonical`);
   if (!Array.isArray(question.melds) || question.melds.length !== question.meldCount) failures.push(`${id}: meldCount does not match melds`);
   for (const meld of question.melds || []) {
-    if (!Array.isArray(meld.tiles) || meld.tiles.length !== 3 || !meld.tiles.every((tile) => tilePattern.test(tile))) {
+    if (!Array.isArray(meld.tiles) || meld.tiles.length !== (meld.type === "kan" ? 4 : 3) || !meld.tiles.every((tile) => tilePattern.test(tile))) {
       failures.push(`${id}: invalid meld tiles`);
     }
   }
-  if (question.hand.length !== 14 - 3 * (question.meldCount || 0)) failures.push(`${id}: concealed hand length is inconsistent`);
-  const allTiles = [...question.hand, ...(question.melds || []).flatMap((meld) => meld.tiles)];
+  const selectable = [...question.hand, ...(question.draw ? [question.draw] : [])];
+  if (selectable.length !== 14 - 3 * (question.meldCount || 0)) failures.push(`${id}: concealed hand length is inconsistent`);
+  const allTiles = [...selectable, ...(question.melds || []).flatMap((meld) => meld.tiles)];
   const counts = new Map();
   for (const tile of allTiles) counts.set(normalize(tile), (counts.get(normalize(tile)) || 0) + 1);
   if ([...counts.values()].some((count) => count > 4)) failures.push(`${id}: more than four copies of a tile`);
@@ -43,7 +44,9 @@ for (const id of ids) {
   const verified = verifiedQuestions[String(id)];
   if (verified) {
     for (const field of ["hand", "dora", "melds", "correctDiscards", "riichiChoice", "correctRiichi"]) {
-      if (field in verified && !sameJson(question[field], verified[field])) {
+      const actual = field === "hand" ? [...selectable].sort() : question[field];
+      const expected = field === "hand" ? [...verified.hand].sort() : verified[field];
+      if (field in verified && !sameJson(actual, expected)) {
         failures.push(`${id}: does not match the verified calibration for ${field}`);
       }
     }
