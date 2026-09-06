@@ -134,3 +134,14 @@ test("editor skips login only after server approval and explains shared service 
   assert.match(source, /変更は全員の問題集に反映されます/);
   assert.doesNotMatch(source, /localStorage\.setItem\([^]*?adminPassword/);
 });
+
+test("editor distinguishes a local offline server from an unreadable shared-service response", async () => {
+  const source = await readFile(new URL("../admin.html", import.meta.url), "utf8");
+  const match = source.match(/function editorAccessErrorMessage\(error, local\) \{([\s\S]+?)\n    \}/);
+  assert.ok(match);
+  const message = new Function("error", "local", match[1]);
+  assert.match(message(new TypeError("Failed to fetch"), true), /このPCのサーバー/);
+  assert.match(message(new TypeError("Failed to fetch"), false), /利用制限（HTTP 402）や通信エラーの可能性/);
+  assert.doesNotMatch(message(new TypeError("Failed to fetch"), false), /サーバーが起動/);
+  assert.equal(message({ status: 402, message: "quota response" }, false), "quota response");
+});

@@ -394,6 +394,13 @@
       renderList();
     }
 
+    function editorAccessErrorMessage(error, local) {
+      if (error.status === 402) return error.message;
+      if (local) return "保存先に接続できません。このPCのサーバーが起動しているか確認してください。";
+      // 利用制限の応答にCORSヘッダーがない場合、ブラウザにはHTTPステータスが届かない。
+      return "共有保存サービスに接続できません。利用制限（HTTP 402）や通信エラーの可能性があります。現在は共有編集できません。";
+    }
+
     async function initializeEditor() {
       const title = document.getElementById("accessTitle");
       const message = document.getElementById("accessMessage");
@@ -418,7 +425,7 @@
         }
       } catch (error) {
         title.textContent = "編集画面を開けません";
-        message.textContent = error.status === 402 ? error.message : "保存先に接続できません。サーバーが起動しているか確認してください。";
+        message.textContent = editorAccessErrorMessage(error, location.hostname === "127.0.0.1" || location.hostname === "localhost");
         retry.hidden = false;
       }
     }
