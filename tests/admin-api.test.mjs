@@ -290,11 +290,20 @@ test("hand and meld dora use the shared animated face without covering selection
   assert.match(source, /doraInHand \? " dora-in-hand" : ""/);
 });
 
-test("pre-release menu displays the canonical app version beside the title", async () => {
+test("dora keeps the flowing sheen without a yellow edge or surrounding glow", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
-  assert.match(source, /class="menu-title"><h1>重要何切る問題集（基礎）<\/h1><small class="menu-version">ver \$\{APP_VERSION\}<\/small>/);
+  assert.match(source, /\.tile-face\s*\{[^}]*box-shadow:\s*0 3px 2px rgba\(0,0,0,\.42\);/);
+  assert.doesNotMatch(source, /\.tile-face\.is-dora(?:::before)?\s*\{/);
+  assert.match(source, /\.tile-face\.is-dora::after\s*\{[^}]*animation: dora-sheen 2\.8s linear infinite;/);
+  assert.match(source, /\.tile-button\.selected\s*\{[^}]*filter: drop-shadow\(0 0 5px var\(--gold-light\)\);/);
+});
+
+test("menu keeps the canonical app version beside the title on the same line", async () => {
+  const source = await readFile(path.resolve("index.html"), "utf8");
+  assert.match(source, /class="menu-title"><h1>重要何切る問題集<span class="title-suffix">（基礎）<small class="menu-version">ver \$\{APP_VERSION\}<\/small><\/span><\/h1>/);
   assert.match(source, /<title>重要何切る問題集（基礎）<\/title>/);
-  assert.match(source, /\.menu-version\s*\{[^}]*position:\s*absolute[^}]*right:\s*1px[^}]*bottom:\s*-10px[^}]*font-size:\s*8px/s);
+  assert.match(source, /\.title-suffix\s*\{[^}]*white-space:\s*nowrap/s);
+  assert.match(source, /\.menu-version\s*\{[^}]*display:\s*inline-block[^}]*margin-left:\s*6px[^}]*font-size:\s*8px/s);
 });
 
 test("reviewing mode restores vertical scrolling after an answer", async () => {
@@ -547,10 +556,12 @@ test("question 66 shows the discard note and records a riichi choice", async () 
 
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /id="situationNote" hidden/);
-  assert.match(source, /id="riichiButton"[^>]*aria-pressed="false"[^>]*hidden>立直</);
-  assert.match(source, /function toggleRiichi\(\)/);
+  assert.match(source, /id="riichiChoices"[^>]*hidden/);
+  assert.match(source, /id="riichiButton"[^>]*aria-pressed="false">リーチ</);
+  assert.match(source, /id="damaButton"[^>]*aria-pressed="false">ダマ</);
+  assert.match(source, /function selectRiichi\(value\)/);
   assert.match(source, /question\.riichiChoice === true \? \{ riichi: riichiSelected \} : \{\}/);
-  assert.match(source, /riichiSelected \? "立直して切る" : "ダマで切る"/);
+  assert.match(source, /riichiSelected \? "リーチして切る" : "ダマで切る"/);
 });
 
 test("question 166 reproduces the YouTube problem and grades north with riichi", async () => {

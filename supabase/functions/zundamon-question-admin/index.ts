@@ -99,6 +99,11 @@ function database() {
 
 function publicOverride(row: Record<string, unknown>) {
   const questionData = row.question_data && typeof row.question_data === "object" ? row.question_data as Record<string, unknown> : null;
+  // A text-only override must not replace bundled answers or the other speaker's text.
+  if (questionData?.explanationOnly === true) {
+    const texts = Object.fromEntries(["explanation", "videoExplanation"].filter(field => typeof questionData[field] === "string").map(field => [field, questionData[field]]));
+    return { id: Number(row.question_id), questionData: texts, ...(typeof texts.explanation === "string" ? { explanation: texts.explanation } : {}), overridden: true, overrideUpdatedAt: row.updated_at || null };
+  }
   return {
     ...(questionData || {}),
     id: Number(row.question_id),
@@ -202,9 +207,10 @@ Deno.serve(async (request: Request) => {
       return json(200, { ok: true }, origin);
     }
 
-    const match = /^\/questions\/(\d+)$/.exec(pathname);
+    const match = /^\/questions\/(\d+)(\/explanation)?$/.exec(pathname);
+    const isExplanationEdit = Boolean(match?.[2]) && request.method === "PATCH";
     const isCreate = request.method === "POST" && pathname === "/questions";
-    if ((match && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
+    if ((match && (!match[2] || isExplanationEdit) && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
       if (mode === "closed") return json(403, { error: "編集は停止中です。" }, origin);
       const auth = await authenticate(request);
       if (!auth.configured) return json(503, { error: "管理パスワードが設定されていません。" }, origin);
@@ -224,6 +230,34 @@ Deno.serve(async (request: Request) => {
 
       if (request.method === "PATCH") {
         const body = await readJson(request);
+        if (isExplanationEdit) {
+          const entries = body?.changes && typeof body.changes === "object" && !Array.isArray(body.changes) ? Object.entries(body.changes) : [];
+          if (!entries.length || entries.some(([field, value]) => !["explanation", "videoExplanation"].includes(field) || typeof value !== "string" || value.length > MAX_EXPLANATION_LENGTH)
+            || !(body.expectedUpdatedAt === null || (typeof body.expectedUpdatedAt === "string" && body.expectedUpdatedAt.length < 60))) {
+            return json(400, { error: "解説は各20,000文字以内で入力してください。" }, origin);
+          }
+          const db = database();
+          const columns = "question_id, correct_discards, explanation, question_data, updated_at";
+          const current = await db.from(TABLE).select(columns).eq("question_id", id).maybeSingle();
+          if (current.error) throw current.error;
+          const existing = current.data;
+          if ((existing?.updated_at || null) !== body.expectedUpdatedAt) return json(409, { error: "他の編集が先に保存されています。" }, origin);
+          const changes = Object.fromEntries(entries);
+          const updatedAt = new Date(Math.max(Date.now(), (Date.parse(existing?.updated_at) || 0) + 1)).toISOString();
+          const row = {
+            question_id: id,
+            correct_discards: existing?.correct_discards || [],
+            explanation: typeof changes.explanation === "string" ? changes.explanation : existing?.explanation || "",
+            question_data: { ...(existing?.question_data || {}), ...(!existing ? { explanationOnly: true } : {}), ...changes },
+            updated_at: updatedAt,
+          };
+          const result = existing
+            ? await db.from(TABLE).update(row).eq("question_id", id).eq("updated_at", existing.updated_at).select(columns).maybeSingle()
+            : await db.from(TABLE).insert(row).select(columns).single();
+          if (result.error?.code === "23505" || (!result.error && !result.data)) return json(409, { error: "他の編集が先に保存されています。" }, origin);
+          if (result.error) throw result.error;
+          return json(200, { id, changes, overrideUpdatedAt: result.data.updated_at }, origin);
+        }
         if (typeof body.reviewed !== "boolean") {
           return json(400, { error: "確認完了の指定が正しくありません。" }, origin);
         }

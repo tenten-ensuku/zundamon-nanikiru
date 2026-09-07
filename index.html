@@ -310,26 +310,13 @@
       z-index: 1;
     }
 
-    .tile-face.is-dora {
-      box-shadow: 0 3px 2px rgba(0,0,0,.42), 0 0 4px 1px rgba(241, 202, 108, .32);
-    }
-
-    .tile-face.is-dora::before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      inset: 0;
-      border-radius: inherit;
-      box-shadow: inset 0 0 0 1px rgba(246, 216, 142, .52), inset 0 0 4px rgba(255, 222, 147, .22);
-      pointer-events: none;
-    }
-
+    /* ドラも通常牌と同じ無彩色の影を使い、光沢だけを重ねる。 */
     .tile-face.is-dora::after {
       content: "";
       position: absolute;
       z-index: 2;
       inset: -35% -70%;
-      background: linear-gradient(125deg, transparent 39%, rgba(255, 241, 189, .12) 44%, rgba(255,255,255,.72) 49%, rgba(255,255,255,.2) 53%, transparent 59%);
+      background: linear-gradient(125deg, transparent 38%, rgba(255,255,255,.16) 43%, rgba(255,255,255,.9) 48%, rgba(255,255,255,.98) 49%, rgba(255,255,255,.36) 54%, transparent 61%);
       opacity: 0;
       pointer-events: none;
       animation: dora-sheen 2.8s linear infinite;
@@ -337,8 +324,8 @@
 
     @keyframes dora-sheen {
       0%, 58% { transform: translate3d(-65%, -12%, 0); opacity: 0; }
-      64% { opacity: .48; }
-      80% { opacity: .58; }
+      64% { opacity: .62; }
+      80% { opacity: .82; }
       92%, 100% { transform: translate3d(65%, 12%, 0); opacity: 0; }
     }
 
@@ -401,8 +388,14 @@
     }
 
     .decision.has-option {
-      grid-template-columns: minmax(76px, .72fr) minmax(0, 1fr) minmax(126px, 1.18fr);
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.35fr);
     }
+
+    .decision .selected-panel { grid-column: 1; grid-row: 1; }
+    .decision > .primary { grid-column: 2; grid-row: 1; }
+    .decision.has-option > .primary { grid-column: 1 / -1; grid-row: 2; }
+    .decision-options { grid-column: 2; grid-row: 1; display: grid; gap: 6px; min-width: 0; }
+    .riichi-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
 
     .riichi-button, .kan-button {
       min-height: 52px;
@@ -442,6 +435,8 @@
 
     .selected-panel small { color: var(--muted); font-size: 10px; }
     .selected-name { margin-top: 2px; color: var(--gold-light); font-size: 17px; }
+    .selected-value { display: flex; align-items: center; gap: 8px; min-height: 34px; }
+    .selected-tile-image { width: 25px; height: 34px; object-fit: contain; flex-shrink: 0; }
 
     .primary {
       min-height: 52px;
@@ -510,11 +505,22 @@
     }
 
     .explanation a { color: var(--gold-light); }
-    .explanation-section + .explanation-section { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(242,210,123,.2); }
-    .explanation-speaker { display: flex; align-items: center; gap: 9px; margin-bottom: 10px; white-space: normal; }
-    .speaker-avatar { width: 40px; height: 40px; flex: 0 0 40px; border-radius: 50%; object-fit: cover; object-position: center; background: #153a2d; }
+    .review-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 9px; }
+    .review-heading h2 { margin: 0; }
+    .edit-explanation-button { padding: 7px 10px; min-height: 36px; font-size: 11px; color: var(--muted); border: 1px solid rgba(242,210,123,.25); border-radius: 6px; background: rgba(0,0,0,.16); cursor: pointer; }
+    .explanation-section { position: relative; margin: 0 0 12px 18px; padding: 9px 11px 10px 24px; min-height: 50px; border: 1px solid rgba(180,204,193,.25); border-radius: 5px 12px 12px 12px; background: #10362c; white-space: normal; }
+    .explanation-section:last-child { margin-bottom: 0; }
+    .explanation-section::before { content: ""; position: absolute; left: -5px; top: 22px; width: 8px; height: 8px; transform: rotate(45deg); background: inherit; border-left: 1px solid rgba(180,204,193,.25); border-bottom: 1px solid rgba(180,204,193,.25); }
+    .explanation-section--author { background: #102a29; }
+    .explanation-body { white-space: pre-wrap; }
+    .speaker-avatar { position: absolute; left: -20px; top: 8px; z-index: 1; width: 32px; height: 32px; border-radius: 50%; object-fit: cover; object-position: center; background: #153a2d; box-shadow: 0 2px 5px rgba(0,0,0,.3); }
     .speaker-initial { display: grid; place-items: center; border: 1px solid #739363; color: #e9f2bf; font-size: 13px; }
-    .explanation-speaker small { display: block; color: var(--muted); font-size: 10px; font-weight: 500; }
+    .inline-explanation-input { display: block; width: 100%; min-height: 130px; max-height: 55vh; padding: 8px; border: 1px solid #6f9682; border-radius: 6px; background: #061b17; color: #f6f2df; font: 500 16px/1.65 "Yu Gothic", "YuGothic", sans-serif; resize: vertical; }
+    .inline-explanation-input:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; }
+    .inline-editor-actions { display: grid; grid-template-columns: 1fr 1.35fr; gap: 8px; margin-top: 10px; }
+    .inline-editor-note { margin: 7px 0 0; color: var(--muted); font: 500 11px/1.6 "Yu Gothic", sans-serif; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .inline-editor-note:empty { display: none; }
+    .inline-editor-note.error { color: #ff9e8f; }
     .explanation strong { color: #fff8dc; font-weight: 900; }
     .explanation .explanation-red { color: #ff7165; font-weight: 900; }
     .explanation-tile {
@@ -639,13 +645,14 @@
 
     .menu-title {
       display: inline-block;
-      position: relative;
     }
 
+    .title-suffix { display: inline-block; white-space: nowrap; }
+
     .menu-version {
-      position: absolute;
-      right: 1px;
-      bottom: -10px;
+      display: inline-block;
+      margin-left: 6px;
+      vertical-align: baseline;
       color: var(--muted);
       font-family: sans-serif;
       font-size: 8px;
@@ -1038,7 +1045,7 @@
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 63;
+    const APP_VERSION = 66;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
     const LEGACY_STORAGE_KEY = "zundamon-nanikiru-state-v2";
@@ -1051,7 +1058,7 @@
     let playQuestions = [];
     let currentIndex = 0;
     let selectedIndex = null;
-    let riichiSelected = false;
+    let riichiSelected = null;
     let specialChoice = null;
     let revealed = false;
     let currentScreen = "menu";
@@ -1059,6 +1066,10 @@
     let problemSort = "default";
     let rankingMode = "ten";
     let lastResult = null;
+    let bundledQuestions = [];
+    let explanationAccess = null;
+    let explanationEditor = null;
+    let explanationEditBusy = false;
     let state = loadState();
 
     document.documentElement.dataset.appVersion = String(APP_VERSION);
@@ -1067,7 +1078,7 @@
       const local = location.hostname === "127.0.0.1" || location.hostname === "localhost";
       const base = window.ZUNDAMON_CONFIG?.apiBaseUrl?.replace(/\/$/, "") || "";
       if (local || !base) return path;
-      return `${base}${path.replace(/^\/api/, "")}`;
+      return `${base}${path.replace(/^\/api\/admin/, "").replace(/^\/api/, "")}`;
     }
 
     function cleanDiscordExplanationArtifacts(value) {
@@ -1103,7 +1114,7 @@
         };
       });
       for (const override of overrides || []) {
-        if (!override?.questionData || baseIds.has(Number(override.id))) continue;
+        if (!Array.isArray(override?.questionData?.hand) || baseIds.has(Number(override.id))) continue;
         merged.push({ ...override.questionData, reviewed: override.reviewed === true, overridden: true, overrideUpdatedAt: override.overrideUpdatedAt || null, reviewUpdatedAt: override.reviewUpdatedAt || null });
       }
       return merged.sort((left, right) => Number(left.id) - Number(right.id));
@@ -1421,7 +1432,7 @@
       app.innerHTML = `
         <header class="menu-header">
           <p class="brand-kicker">ZUNDAMON</p>
-          <div class="menu-title"><h1>重要何切る問題集（基礎）</h1><small class="menu-version">ver ${APP_VERSION}</small></div>
+          <div class="menu-title"><h1>重要何切る問題集<span class="title-suffix">（基礎）<small class="menu-version">ver ${APP_VERSION}</small></span></h1></div>
           <a class="menu-admin-entry" href="admin.html">管理画面</a>
           <button class="settings-tab-button${activeTab === "settings" ? " active" : ""}" id="settingsTab" type="button">
             <span>⚙</span><small>設定</small>
@@ -1881,6 +1892,7 @@
     }
 
     function goMenu() {
+      if (!leaveExplanationEditor()) return;
       if (state.session?.mode === "single" || state.session?.mode === "catalog") state.session = null;
       else if (state.session) state.session.position = currentIndex;
       saveState();
@@ -1925,19 +1937,26 @@
           </section>
 
           <section class="decision" id="decision">
-            <button class="riichi-button" id="riichiButton" type="button" aria-pressed="false" hidden>立直</button>
-            <button class="kan-button" id="kanButton" type="button" aria-pressed="false" hidden>カン！</button>
             <div class="selected-panel">
-              <small>選択中</small>
-              <span class="selected-name" id="selectedName">未選択</span>
+              <small>選択打牌</small>
+              <div class="selected-value"><img class="selected-tile-image" id="selectedTileImage" alt="" width="66" height="90" hidden><span class="selected-name" id="selectedName">未選択</span></div>
+            </div>
+            <div class="decision-options" id="decisionOptions" hidden>
+              <div class="riichi-choices" id="riichiChoices" role="group" aria-label="リーチかダマを選択" hidden>
+                <button class="riichi-button" id="riichiButton" type="button" aria-pressed="false">リーチ</button>
+                <button class="riichi-button" id="damaButton" type="button" aria-pressed="false">ダマ</button>
+              </div>
+              <button class="kan-button" id="kanButton" type="button" aria-pressed="false" hidden>カン！</button>
             </div>
             <button class="primary" id="confirmButton" type="button" disabled>この牌を切る</button>
           </section>
 
           <section class="review" id="review" aria-live="polite">
             <div class="answer-feedback" id="answerFeedback" hidden><strong id="judgment"></strong><span id="correctAnswer"></span></div>
-            <h2>解説</h2>
+            <div class="review-heading"><h2>解説</h2><button class="edit-explanation-button" id="editExplanationButton" type="button" hidden>解説を編集</button></div>
             <div class="explanation" id="explanation"></div>
+            <div class="inline-editor-actions" id="inlineEditorActions" hidden><button class="secondary" id="cancelExplanationEdit" type="button">キャンセル</button><button class="primary" id="saveExplanationEdit" type="button" disabled>保存</button></div>
+            <p class="inline-editor-note" id="inlineEditorNote" role="status"></p>
             <div class="source-video" id="sourceVideo" hidden><p>元動画</p><a class="source-video-link" id="sourceVideoLink" target="_blank" rel="noreferrer">↗ 元動画を開く</a></div>
             <div class="review-actions">
               <button class="secondary" id="retryButton" type="button">選び直す</button>
@@ -1953,13 +1972,19 @@
         </main>`;
 
       document.getElementById("confirmButton").addEventListener("click", confirmSelection);
-      document.getElementById("riichiButton").addEventListener("click", toggleRiichi);
+      document.getElementById("riichiButton").addEventListener("click", () => selectRiichi(true));
+      document.getElementById("damaButton").addEventListener("click", () => selectRiichi(false));
       document.getElementById("kanButton").addEventListener("click", toggleKan);
       document.getElementById("retryButton").addEventListener("click", retryQuestion);
       document.getElementById("nextButton").addEventListener("click", nextQuestionOrFinish);
       document.getElementById("previousNav").addEventListener("click", () => moveQuestion(-1));
       document.getElementById("nextNav").addEventListener("click", () => moveQuestion(1));
       document.getElementById("homeButton").addEventListener("click", goMenu);
+      document.getElementById("editExplanationButton").addEventListener("click", beginExplanationEdit);
+      document.getElementById("cancelExplanationEdit").addEventListener("click", () => {
+        if (leaveExplanationEditor()) { renderExplanationContents(playQuestions[currentIndex]); setExplanationNotice(""); }
+      });
+      document.getElementById("saveExplanationEdit").addEventListener("click", saveExplanationEdit);
     }
 
     function renderQuestion() {
@@ -1967,9 +1992,10 @@
       const response = state.session?.responses?.[String(question.id)];
       const previousTileIndex = response?.tile ? selectableHand(question).indexOf(response.tile) : -1;
       selectedIndex = previousTileIndex >= 0 ? previousTileIndex : null;
-      riichiSelected = Boolean(response?.riichi);
+      riichiSelected = typeof response?.riichi === "boolean" ? response.riichi : null;
       specialChoice = response?.choice === "kan" ? "kan" : null;
       revealed = Boolean(response);
+      setExplanationNotice("");
 
       document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${playQuestions.length} 問`;
       document.getElementById("playAdminEntry").href = `admin.html?question=${encodeURIComponent(question.id)}`;
@@ -2085,10 +2111,11 @@
       renderDecision(playQuestions[currentIndex]);
     }
 
-    function toggleRiichi() {
+    function selectRiichi(value) {
       const question = playQuestions[currentIndex];
-      if (revealed || question.riichiChoice !== true) return;
-      riichiSelected = !riichiSelected;
+      if (revealed || question.riichiChoice !== true || typeof value !== "boolean") return;
+      riichiSelected = value;
+      specialChoice = null;
       renderDecision(question);
     }
 
@@ -2098,7 +2125,7 @@
       specialChoice = specialChoice === "kan" ? null : "kan";
       if (specialChoice === "kan") {
         selectedIndex = null;
-        riichiSelected = false;
+        riichiSelected = null;
       }
       renderHand(question);
       renderDecision(question);
@@ -2111,27 +2138,33 @@
       const kanSelected = specialChoice === "kan";
       const decision = document.getElementById("decision");
       const riichiButton = document.getElementById("riichiButton");
+      const damaButton = document.getElementById("damaButton");
       const kanButton = document.getElementById("kanButton");
       decision.classList.toggle("has-option", supportsRiichi || supportsKan);
-      riichiButton.hidden = !supportsRiichi;
+      document.getElementById("decisionOptions").hidden = !supportsRiichi && !supportsKan;
+      document.getElementById("riichiChoices").hidden = !supportsRiichi;
       riichiButton.disabled = revealed;
-      riichiButton.setAttribute("aria-pressed", riichiSelected ? "true" : "false");
-      riichiButton.textContent = riichiSelected ? "立直 選択中" : "立直";
+      damaButton.disabled = revealed;
+      riichiButton.setAttribute("aria-pressed", riichiSelected === true && !kanSelected ? "true" : "false");
+      damaButton.setAttribute("aria-pressed", riichiSelected === false && !kanSelected ? "true" : "false");
       kanButton.hidden = !supportsKan;
       kanButton.disabled = revealed;
       kanButton.setAttribute("aria-pressed", kanSelected ? "true" : "false");
       document.getElementById("selectedName").textContent = kanSelected ? "カン！" : selected ? tileName(selected) : "未選択";
+      const selectedImage = document.getElementById("selectedTileImage");
+      selectedImage.hidden = !selected || kanSelected;
+      if (selected && !kanSelected) { selectedImage.src = tilePath(selected); selectedImage.alt = tileName(selected); }
       document.getElementById("handCaption").innerHTML = kanSelected
         ? "<strong>カン！</strong> を選択中"
         : selected
         ? `<strong>${tileName(selected)}</strong> を選択中`
         : "切る牌をタップしてください";
       const confirmButton = document.getElementById("confirmButton");
-      confirmButton.disabled = (selectedIndex === null && !kanSelected) || revealed;
+      confirmButton.disabled = (selectedIndex === null && !kanSelected) || (supportsRiichi && riichiSelected === null && !kanSelected) || revealed;
       confirmButton.textContent = kanSelected
         ? "カン！で回答"
         : supportsRiichi
-        ? riichiSelected ? "立直して切る" : "ダマで切る"
+        ? riichiSelected === null ? "リーチ／ダマを選択" : riichiSelected ? "リーチして切る" : "ダマで切る"
         : "この牌を切る";
       decision.hidden = revealed;
     }
@@ -2148,6 +2181,7 @@
     function confirmSelection() {
       if ((selectedIndex === null && specialChoice !== "kan") || revealed) return;
       const question = playQuestions[currentIndex];
+      if (question.riichiChoice === true && riichiSelected === null && specialChoice !== "kan") return;
       const id = String(question.id);
       const tile = specialChoice === "kan" ? null : selectableHand(question)[selectedIndex];
       const { graded, correct } = gradeAnswer(question, { tile, choice: specialChoice, riichi: riichiSelected });
@@ -2188,13 +2222,14 @@
     }
 
     function retryQuestion() {
+      if (!leaveExplanationEditor()) return;
       const question = playQuestions[currentIndex];
       const id = String(question.id);
       const sessionResponse = state.session?.responses?.[id];
       if (state.responses[id]?.answeredAt === sessionResponse?.answeredAt) delete state.responses[id];
       if (state.session?.responses) delete state.session.responses[id];
       selectedIndex = null;
-      riichiSelected = false;
+      riichiSelected = null;
       specialChoice = null;
       revealed = false;
       saveState();
@@ -2214,29 +2249,159 @@
       };
     }
 
-    function appendSpeakerExplanation(container, kind, text) {
-      if (!text.trim()) return;
+    function appendSpeakerExplanation(container, kind, text, allowEmpty = false) {
+      if (!text.trim() && !allowEmpty) return;
       const section = document.createElement("section");
       section.className = `explanation-section explanation-section--${kind}`;
-      const header = document.createElement("div");
-      header.className = "explanation-speaker";
       const profile = window.ZUNDAMON_CONFIG?.explanationSpeakers?.[kind] || {};
       const name = profile.name || (kind === "video" ? "ずんだもん" : "エンスク");
       const avatar = document.createElement(profile.image ? "img" : "span");
       avatar.className = `speaker-avatar${profile.image ? "" : " speaker-initial"}`;
-      if (profile.image) { avatar.src = profile.image; avatar.alt = name; avatar.width = 40; avatar.height = 40; avatar.decoding = "async"; }
+      if (profile.image) { avatar.src = profile.image; avatar.alt = name; avatar.width = 32; avatar.height = 32; avatar.decoding = "async"; }
       else { avatar.textContent = kind === "video" ? "ず" : "エ"; avatar.setAttribute("aria-hidden", "true"); }
-      const label = document.createElement("div");
-      const title = document.createElement("strong");
-      title.textContent = name;
-      const subtitle = document.createElement("small");
-      subtitle.textContent = kind === "video" ? "動画解説・内容を再構成" : "補足解説";
-      label.append(title, subtitle);
-      header.append(avatar, label);
+      section.setAttribute("aria-label", `${name}の解説`);
       const body = document.createElement("div");
+      body.className = "explanation-body";
       appendLinkedText(body, text);
-      section.append(header, body);
+      section.append(avatar, body);
       container.append(section);
+      return section;
+    }
+
+    function explanationChanges() {
+      if (!explanationEditor) return {};
+      return Object.fromEntries(Object.entries(explanationEditor.values).filter(([field, value]) => value !== explanationEditor.original[field]));
+    }
+
+    function setExplanationNotice(message, error = false) {
+      const note = document.getElementById("inlineEditorNote");
+      if (!note) return;
+      note.textContent = message;
+      note.classList.toggle("error", error);
+    }
+
+    function leaveExplanationEditor() {
+      if (explanationEditBusy) { setExplanationNotice("保存・読み込み中です。そのままお待ちください。"); return false; }
+      if (Object.keys(explanationChanges()).length && !window.confirm("未保存の解説があります。変更を破棄しますか？")) return false;
+      explanationEditor = null;
+      return true;
+    }
+
+    async function explanationApi(path, options = {}) {
+      let response;
+      try {
+        response = await fetch(apiUrl(path), { ...options, cache: "no-store", ...(options.body ? { headers: { "Content-Type": "application/json" } } : {}) });
+      } catch {
+        throw new Error("保存先に接続できません。入力は残っています。通信状態やサービスの利用制限を確認してください。");
+      }
+      const body = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        const message = response.status === 402 ? "共有保存サービスが利用制限で停止中です（HTTP 402）。入力は残っています。"
+          : response.status === 409 ? "他の編集が先に保存されています。入力をコピーしてからキャンセルし、編集を開き直してください。"
+          : response.status === 401 || response.status === 403 ? "直接編集は停止中です。入力は残っています。"
+          : body.error || "保存に失敗しました。入力は残っています。";
+        throw Object.assign(new Error(message), { status: response.status });
+      }
+      return body;
+    }
+
+    async function refreshExplanationAccess() {
+      explanationAccess = { mode: "loading" };
+      try { explanationAccess = await explanationApi("/api/admin/access"); }
+      catch { explanationAccess = { mode: "unavailable" }; }
+      const button = document.getElementById("editExplanationButton");
+      if (button) button.hidden = !revealed || explanationAccess.mode !== "open" || Boolean(explanationEditor);
+    }
+
+    function updateExplanationEditControls() {
+      document.getElementById("saveExplanationEdit").disabled = explanationEditBusy || !Object.keys(explanationChanges()).length;
+      document.getElementById("saveExplanationEdit").textContent = explanationEditBusy ? "保存中…" : "保存";
+      document.getElementById("cancelExplanationEdit").disabled = explanationEditBusy;
+      for (const input of document.querySelectorAll(".inline-explanation-input")) input.disabled = explanationEditBusy;
+    }
+
+    function renderExplanationContents(question) {
+      const explanation = document.getElementById("explanation");
+      explanation.replaceChildren();
+      const editing = revealed && explanationEditor?.id === question.id;
+      document.getElementById("inlineEditorActions").hidden = !editing;
+      document.getElementById("editExplanationButton").hidden = !revealed || editing || explanationAccess?.mode !== "open";
+      if (revealed) {
+        const parts = explanationParts(question);
+        for (const [kind, field, text] of [["video", "videoExplanation", parts.video], ["author", "explanation", parts.author]]) {
+          const section = appendSpeakerExplanation(explanation, kind, text, editing);
+          if (!editing) continue;
+          const input = document.createElement("textarea");
+          input.className = "inline-explanation-input";
+          input.maxLength = 20000;
+          input.rows = 5;
+          input.value = explanationEditor.values[field];
+          input.setAttribute("aria-label", kind === "video" ? "ずんだもんの解説を編集" : "エンスクの解説を編集");
+          input.placeholder = "解説を入力（牌は 9m・6s などで表記）";
+          input.addEventListener("input", () => { explanationEditor.values[field] = input.value; updateExplanationEditControls(); });
+          section.querySelector(".explanation-body").replaceChildren(input);
+        }
+      }
+      updateExplanationEditControls();
+    }
+
+    async function beginExplanationEdit() {
+      if (!revealed || explanationEditBusy || explanationEditor) return;
+      const id = playQuestions[currentIndex].id;
+      explanationEditBusy = true;
+      document.getElementById("editExplanationButton").disabled = true;
+      setExplanationNotice("最新の解説を読み込んでいます…");
+      try {
+        explanationAccess = await explanationApi("/api/admin/access");
+        if (explanationAccess.mode !== "open") throw Object.assign(new Error("直接編集は停止中です。"), { status: 403 });
+        const overrides = await explanationApi("/api/overrides");
+        const latest = mergeOverrides(bundledQuestions, overrides).filter(q => Array.isArray(q.hand) && q.hand.length);
+        const question = latest.find(q => q.id === id);
+        if (!question) throw new Error("問題が見つかりません。メニューから開き直してください。");
+        // Refresh only text here: opening an editor must not replace the displayed hand or answer.
+        for (const list of [questions, playQuestions]) {
+          const current = list.find(q => q.id === id);
+          if (current) Object.assign(current, { explanation: question.explanation, videoExplanation: question.videoExplanation, overrideUpdatedAt: question.overrideUpdatedAt });
+        }
+        const parts = explanationParts(question);
+        const original = { videoExplanation: parts.video, explanation: parts.author };
+        explanationEditor = { id, original, values: { ...original }, expectedUpdatedAt: question.overrideUpdatedAt || null };
+        renderExplanationContents(question);
+        setExplanationNotice(location.hostname === "127.0.0.1" || location.hostname === "localhost"
+          ? "このPCに保存します。公開サイトには自動反映されません。" : "保存すると全員の解説に反映されます。");
+      } catch (error) { setExplanationNotice(error.message, true); }
+      finally {
+        explanationEditBusy = false;
+        document.getElementById("editExplanationButton").disabled = false;
+        document.getElementById("editExplanationButton").hidden = explanationAccess?.mode !== "open" || Boolean(explanationEditor);
+        updateExplanationEditControls();
+      }
+    }
+
+    async function saveExplanationEdit() {
+      if (!explanationEditor || explanationEditBusy) return;
+      const changes = explanationChanges();
+      if (!Object.keys(changes).length) return;
+      const draft = explanationEditor;
+      explanationEditBusy = true;
+      updateExplanationEditControls();
+      setExplanationNotice("保存しています…");
+      try {
+        const saved = await explanationApi(`/api/admin/questions/${draft.id}/explanation`, {
+          method: "PATCH", body: JSON.stringify({ changes, expectedUpdatedAt: draft.expectedUpdatedAt }),
+        });
+        for (const list of [questions, playQuestions]) {
+          const question = list.find(q => q.id === draft.id);
+          if (question) Object.assign(question, changes, { overridden: true, overrideUpdatedAt: saved.overrideUpdatedAt });
+        }
+        explanationEditor = null;
+        renderReview(playQuestions[currentIndex]);
+        setExplanationNotice(location.hostname === "127.0.0.1" || location.hostname === "localhost"
+          ? "このPCに保存しました（公開サイトには自動反映されません）。" : "共有保存しました。");
+      } catch (error) {
+        if (error.status === 401 || error.status === 403) explanationAccess = { mode: "closed" };
+        setExplanationNotice(error.message, true);
+      } finally { explanationEditBusy = false; updateExplanationEditControls(); }
     }
 
     function renderReview(question) {
@@ -2245,12 +2410,8 @@
       const feedback = document.getElementById("answerFeedback");
       review.classList.toggle("open", revealed);
       document.body.classList.toggle("reviewing", revealed);
-      explanation.innerHTML = "";
-      if (revealed) {
-        const parts = explanationParts(question);
-        appendSpeakerExplanation(explanation, "video", parts.video);
-        appendSpeakerExplanation(explanation, "author", parts.author);
-      }
+      renderExplanationContents(question);
+      if (revealed && explanationAccess === null) refreshExplanationAccess();
       const sourceVideo = document.getElementById("sourceVideo");
       const sourceVideoLink = document.getElementById("sourceVideoLink");
       const hasSourceVideo = revealed && question.videoExplanationStatus !== "source-mismatch" && typeof question.sourceUrl === "string" && /^https?:\/\//.test(question.sourceUrl);
@@ -2285,6 +2446,7 @@
     function moveQuestion(delta) {
       const next = currentIndex + delta;
       if (next < 0 || next >= playQuestions.length) return;
+      if (!leaveExplanationEditor()) return;
       currentIndex = next;
       if (state.session) state.session.position = currentIndex;
       renderQuestion();
@@ -2292,6 +2454,7 @@
 
     function nextQuestionOrFinish() {
       if (currentIndex < playQuestions.length - 1) return moveQuestion(1);
+      if (!leaveExplanationEditor()) return;
       if (state.session?.mode === "single" || state.session?.mode === "catalog") return goMenu();
       finishSession();
     }
@@ -2354,7 +2517,12 @@
       app.querySelector("small").textContent = error?.message || String(error);
     }
 
+    window.addEventListener("beforeunload", event => {
+      if (explanationEditBusy || Object.keys(explanationChanges()).length) { event.preventDefault(); event.returnValue = ""; }
+    });
+
     document.addEventListener("keydown", event => {
+      if (event.target?.closest?.("input, textarea, [contenteditable]")) return;
       if (!questions.length || currentScreen !== "play") return;
       if (event.key === "ArrowLeft") moveQuestion(-1);
       if (event.key === "ArrowRight") moveQuestion(1);
@@ -2375,6 +2543,7 @@
       overridesRequest,
       preloadTiles()
     ]).then(([baseQuestions, overrides]) => {
+      bundledQuestions = baseQuestions;
       questions = mergeOverrides(baseQuestions, overrides)
         .filter(question => Array.isArray(question.hand) && question.hand.length);
       if (!questions.length) throw new Error("構造化済みの問題がありません。 ");

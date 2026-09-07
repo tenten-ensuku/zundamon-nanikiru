@@ -124,7 +124,9 @@ test("explanation renderer protects URLs and text, and separates speakers withou
   app.appendSpeakerExplanation(speakers, "video", "  ");
   assert.deepEqual(speakers.children.map(n => n.className), ["explanation-section explanation-section--video", "explanation-section explanation-section--author"]);
   assert.equal(descendants(speakers).find(n => n.className === "speaker-avatar").src, "assets/speakers/author.png");
-  assert.ok(source.indexOf('appendSpeakerExplanation(explanation, "video"') < source.indexOf('appendSpeakerExplanation(explanation, "author"'));
+  assert.match(source, /\[\["video", "videoExplanation", parts.video\], \["author", "explanation", parts.author\]\]/);
+  assert.equal(descendants(speakers).filter(n => n.tagName === "SMALL").length, 0);
+  assert.equal(descendants(speakers).find(n => n.className === "speaker-avatar").width, 32);
 });
 
 test("all inline application scripts parse", async () => {
@@ -144,7 +146,7 @@ test("speaker icons use the supplied local assets in circular image slots", asyn
     const bytes = await readFile(path.join(root, profiles[kind].image));
     assert.equal(bytes.subarray(1, 4).toString(), "PNG");
   }
-  assert.match(source, /\.speaker-avatar\s*\{[^}]*width: 40px;[^}]*height: 40px;[^}]*border-radius: 50%;[^}]*object-fit: cover;/);
+  assert.match(source, /\.speaker-avatar\s*\{[^}]*width: 32px;[^}]*height: 32px;[^}]*border-radius: 50%;[^}]*object-fit: cover;/);
 });
 
 test("admin API round-trips drawn discards and both large explanation sections in isolated storage", async () => {

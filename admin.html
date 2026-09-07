@@ -348,7 +348,7 @@
         };
       });
       for (const override of overrides || []) {
-        if (!override?.questionData || baseIds.has(Number(override.id))) continue;
+        if (!Array.isArray(override?.questionData?.hand) || baseIds.has(Number(override.id))) continue;
         merged.push({ ...override.questionData, reviewed: override.reviewed === true, overridden: true, overrideUpdatedAt: override.overrideUpdatedAt || null, reviewUpdatedAt: override.reviewUpdatedAt || null });
       }
       return merged.sort((left, right) => Number(left.id) - Number(right.id));

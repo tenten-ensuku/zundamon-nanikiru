@@ -87,7 +87,7 @@ function mergeQuestions(baseQuestions, overrides) {
   });
   for (const override of Object.values(overrides)) {
     const questionData = override?.questionData;
-    if (!questionData || typeof questionData !== "object" || baseIds.has(Number(questionData.id))) continue;
+    if (!Array.isArray(questionData?.hand) || baseIds.has(Number(questionData.id))) continue;
     merged.push({ ...questionData, reviewed: override?.reviewed === true, overridden: true, overrideUpdatedAt: override?.updatedAt || null, reviewUpdatedAt: override?.reviewUpdatedAt || null });
   }
   return merged.sort((left, right) => Number(left.id) - Number(right.id));
@@ -308,9 +308,12 @@ export function createAppServer(options = {}) {
         return;
       }
 
-      const adminMatch = /^\/api\/admin\/questions\/(\d+)$/.exec(pathname);
+      const adminMatch = /^\/api\/admin\/questions\/(\d+)(\/explanation)?$/.exec(pathname);
+      const isExplanationEdit = Boolean(adminMatch?.[2]) && request.method === "PATCH";
       const isCreate = request.method === "POST" && pathname === "/api/admin/questions";
-      if ((adminMatch && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
+      if ((adminMatch && (!adminMatch[2] || isExplanationEdit) && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
+        // Serialize the complete read/modify/write transaction, not just the final write.
+        const mutate = async () => {
         if (getEditMode() === "closed") {
           sendJson(response, 403, { error: "編集は停止中です。" }, origin);
           return;
@@ -346,6 +349,25 @@ export function createAppServer(options = {}) {
           }
         } else if (request.method === "PATCH") {
           const body = await readRequestJson(request);
+          if (isExplanationEdit) {
+            const entries = body?.changes && typeof body.changes === "object" && !Array.isArray(body.changes) ? Object.entries(body.changes) : [];
+            if (!entries.length || entries.some(([field, value]) => !["explanation", "videoExplanation"].includes(field) || typeof value !== "string" || value.length > MAX_EXPLANATION_LENGTH)
+              || !(body.expectedUpdatedAt === null || (typeof body.expectedUpdatedAt === "string" && body.expectedUpdatedAt.length < 60))) {
+              sendJson(response, 400, { error: "解説は各20,000文字以内で入力してください。" }, origin);
+              return;
+            }
+            if ((existing.updatedAt || null) !== body.expectedUpdatedAt) {
+              sendJson(response, 409, { error: "他の編集が先に保存されています。" }, origin);
+              return;
+            }
+            const changes = Object.fromEntries(entries);
+            const updatedAt = new Date(Math.max(Date.now(), (Date.parse(existing.updatedAt) || 0) + 1)).toISOString();
+            overrides[key] = { ...existing, questionData: { ...(existing.questionData || {}), ...changes },
+              ...(typeof changes.explanation === "string" ? { explanation: changes.explanation } : {}), updatedAt };
+            await writeJsonAtomic(overridesPath, overrides);
+            sendJson(response, 200, { id: questionId, changes, overrideUpdatedAt: updatedAt }, origin);
+            return;
+          }
           if (typeof body.reviewed !== "boolean") {
             sendJson(response, 400, { error: "確認完了の指定が正しくありません。" }, origin);
             return;
@@ -358,7 +380,7 @@ export function createAppServer(options = {}) {
             };
           } else {
             const { reviewed, reviewUpdatedAt, ...contentOverride } = existing;
-            if (Array.isArray(contentOverride.correctDiscards) || typeof contentOverride.explanation === "string") {
+            if (Array.isArray(contentOverride.correctDiscards) || typeof contentOverride.explanation === "string" || Object.keys(contentOverride.questionData || {}).length) {
               overrides[key] = contentOverride;
             } else {
               delete overrides[key];
@@ -394,10 +416,13 @@ export function createAppServer(options = {}) {
           }
         }
 
-        writeQueue = writeQueue.then(() => writeJsonAtomic(overridesPath, overrides));
-        await writeQueue;
+        await writeJsonAtomic(overridesPath, overrides);
         const merged = mergeQuestions(baseQuestions, overrides).find((question) => question.id === questionId);
         sendJson(response, 200, merged || { id: questionId, restored: true }, origin);
+        };
+        const pending = writeQueue.then(mutate, mutate);
+        writeQueue = pending.catch(() => {});
+        await pending;
         return;
       }
 

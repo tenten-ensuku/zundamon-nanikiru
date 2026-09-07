@@ -13,7 +13,7 @@ test("Supabase function applies the edit policy to every mutation and keeps secr
   const source = await readFile(functionPath, "utf8");
   assert.match(source, /Deno\.env\.get\("ADMIN_PASSWORD"\)/);
   assert.match(source, /request\.headers\.get\("X-Admin-Password"\)/);
-  assert.match(source, /match && \(request\.method === "PUT" \|\| request\.method === "PATCH" \|\| request\.method === "DELETE"\)/);
+  assert.match(source, /match && \(!match\[2\] \|\| isExplanationEdit\) && \(request\.method === "PUT" \|\| request\.method === "PATCH" \|\| request\.method === "DELETE"\)/);
   assert.match(source, /await authenticate\(request\)/);
   assert.match(source, /mode === "closed"\) return json\(403/);
   assert.match(source, /Deno\.env\.get\("QUESTION_EDIT_MODE"\)/);
