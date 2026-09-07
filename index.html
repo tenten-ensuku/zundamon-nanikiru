@@ -927,6 +927,19 @@
     .catalog-dora small { color: var(--muted); font-size: 8px; line-height: 1; }
     .catalog-info { min-height: 60px; padding-right: 86px; }
     .catalog-title { color: var(--gold-light); font-size: 13px; }
+    .audience-badge {
+      display: table;
+      padding: 2px 7px;
+      border: 1px solid #9879b2;
+      border-radius: 4px;
+      background: #32263d;
+      color: #f0dfff;
+      font-size: 11px;
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+    .catalog-audience-badge { margin-top: 4px; }
+    .play-audience-badge { margin-bottom: 7px; font-size: 12px; }
     .catalog-scene { margin-left: 5px; color: var(--muted); font-size: 10px; }
     .catalog-rate { margin: 5px 0 0; color: var(--ink); font-size: 11px; }
     .catalog-rate-bar {
@@ -1039,13 +1052,15 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <script src="config.js"></script>
+  <script src="config.js?v=68"></script>
+  <script src="question-metadata.js?v=68"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 67;
+    const APP_VERSION = 68;
+    const { previewAudienceLabel } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
     const LEGACY_STORAGE_KEY = "zundamon-nanikiru-state-v2";
@@ -1648,7 +1663,15 @@
       const rateFill = document.createElement("span");
       rateFill.style.width = `${rateValue}%`;
       rateBar.append(rateFill);
-      info.append(title, scene, rate, rateBar);
+      info.append(title, scene);
+      const audienceLabel = previewAudienceLabel(question);
+      if (audienceLabel) {
+        const badge = document.createElement("span");
+        badge.className = "audience-badge catalog-audience-badge";
+        badge.textContent = audienceLabel;
+        info.append(badge);
+      }
+      info.append(rate, rateBar);
       openButton.append(tilesLine, info);
 
       const favorite = document.createElement("button");
@@ -1911,6 +1934,7 @@
         <div class="progress" aria-label="回答進捗"><span id="progressBar"></span></div>
         <main class="board">
           <section class="situation" aria-label="局面">
+            <span class="audience-badge play-audience-badge" id="audienceBadge" hidden></span>
             <div class="situation-main">
               <div>
                 <div class="round-line">
@@ -1999,6 +2023,10 @@
 
       document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${playQuestions.length} 問`;
       document.getElementById("playAdminEntry").href = `admin.html?question=${encodeURIComponent(question.id)}`;
+      const audienceLabel = previewAudienceLabel(question);
+      const audienceBadge = document.getElementById("audienceBadge");
+      audienceBadge.textContent = audienceLabel;
+      audienceBadge.hidden = !audienceLabel;
       document.getElementById("round").textContent = roundName(question.round);
       document.getElementById("seat").textContent = `${WIND_NAMES[question.seat] || "―"}家`;
       document.getElementById("turn").textContent = `${question.turn ?? "―"}巡目`;

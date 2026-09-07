@@ -11,6 +11,7 @@ const read = file => readFile(path.join(root, file), "utf8");
 const questions = JSON.parse(await read("public/questions.json"));
 const ledger = JSON.parse(await read("data/playlist-ingestion-v67.json"));
 const preservation = JSON.parse(await read("data/author-preservation-v67.json"));
+const laterReview = JSON.parse(await read("data/playlist-review-v68.json"));
 const hash = text => createHash("sha256").update(text).digest("hex");
 const find = id => questions.find(q => q.id === id) || assert.fail(`Missing question ${id}`);
 const tile = /^(?:[0-9][mps]|[1-7]z)$/;
@@ -34,12 +35,12 @@ test("all 167 author explanations and unapproved original fields are unchanged",
     assert.equal(find(author.id).explanation.length, author.length);
   }
   for (const before of preservation.unchangedQuestions) {
-    const current = Object.fromEntries(Object.entries(find(before.id)).filter(([key]) => !preservation.allowedExistingFields.includes(key)));
+    const current = Object.fromEntries(Object.entries(find(before.id)).filter(([key]) => !preservation.allowedExistingFields.includes(key) && key !== "sourcePlaylistMembership"));
     assert.equal(hash(JSON.stringify(current)), before.sha256, `protected fields ${before.id}`);
   }
 });
 
-test("22 verified summaries are separate from authors; only 12 approved source mappings are registered", () => {
+test("22 verified summaries are separate from authors and source mappings require recorded approval", () => {
   assert.equal(ledger.existingSummaries.length, 22);
   assert.equal(ledger.existingSummaries.filter(q => q.mappingApproved).length, 12);
   const pending = [];
@@ -52,8 +53,12 @@ test("22 verified summaries are separate from authors; only 12 approved source m
       assert.equal(q.videoExplanationSource.url, item.sourceUrl);
     } else {
       pending.push(q.id);
-      assert.notEqual(q.sourceUrl, `https://youtu.be/${item.videoId}`);
-      assert.equal(q.videoExplanationStatus, "verified-content-link-pending");
+      const approval = laterReview.sourceApprovals.find(a => a.id === item.id);
+      assert.equal(approval?.mappingApproved, true);
+      assert.equal(approval.videoId, item.videoId);
+      assert.equal(q.sourceUrl, approval.sourceUrl);
+      assert.equal(q.videoExplanationSource.url, approval.sourceUrl);
+      assert.equal(q.videoExplanationStatus, "verified-parts");
     }
   }
   assert.deepEqual(pending, [1, 156, 157, 158, 159, 160, 162, 163, 164, 165]);

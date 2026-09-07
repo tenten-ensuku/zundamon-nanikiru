@@ -133,6 +133,7 @@
     summary::-webkit-details-marker { display: none; }
     .qid { color: var(--gold-light); font-size: 17px; }
     .qcontext { color: var(--muted); font-size: 12px; }
+    .audience-badge { display: table; margin-top: 4px; padding: 2px 7px; border: 1px solid #9879b2; border-radius: 4px; background: #32263d; color: #f0dfff; font-size: 11px; line-height: 1.5; white-space: nowrap; }
     .answer-state { font-size: 11px; text-align: right; }
     .answer-state.unset { color: #d0a0a0; }
     .answer-state.override { color: #9ee6b8; }
@@ -273,9 +274,11 @@
     </section>
   </main>
 
-  <script src="config.js"></script>
+  <script src="config.js?v=68"></script>
+  <script src="question-metadata.js?v=68"></script>
   <script>
     "use strict";
+    const { previewAudienceLabel } = window.ZUNDAMON_QUESTION_METADATA;
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
     const WIND_NAMES = { east: "東", south: "南", west: "西", north: "北" };
@@ -469,6 +472,7 @@
         question.id,
         question.explanation,
         question.videoExplanation,
+        previewAudienceLabel(question),
         ...(question.correctDiscards || []),
         ...(question.correctDiscards || []).map(tileName),
       ].join(" ").toLowerCase();
@@ -501,6 +505,13 @@
             <span class="answer-state ${question.overridden ? "override" : question.correctDiscards?.length || question.correctKan === true ? "" : "unset"}">${answerText}${question.overridden ? "　編集済み" : ""}</span>
           </summary>
           <div class="editor"></div>`;
+        const audienceLabel = previewAudienceLabel(question);
+        if (audienceLabel) {
+          const badge = document.createElement("span");
+          badge.className = "audience-badge";
+          badge.textContent = audienceLabel;
+          details.querySelector(".qcontext").append(badge);
+        }
         details.addEventListener("toggle", () => {
           if (details.open && !details.dataset.loaded) {
             details.dataset.loaded = "true";

@@ -144,6 +144,10 @@ function normalizeStructuredQuestion(value, id) {
   if (explanation.length > MAX_EXPLANATION_LENGTH || videoExplanation.length > MAX_EXPLANATION_LENGTH) return null;
   const sourceUrl = typeof value.sourceUrl === "string" ? value.sourceUrl.trim() : "";
   if (sourceUrl && !/^https?:\/\//.test(sourceUrl)) return null;
+  const membership = value.sourcePlaylistMembership;
+  const hasMembership = membership && /^[A-Za-z0-9_-]{11}$/.test(membership.videoId || "")
+    && Array.isArray(membership.playlistIds) && membership.playlistIds.length <= 2
+    && membership.playlistIds.every(playlistId => ["PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv", "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"].includes(playlistId));
   return {
     id, image: typeof value.image === "string" ? value.image.trim() : "", images: Array.isArray(value.images) ? value.images.filter((image) => typeof image === "string") : [],
     explanation, ...(typeof value.videoExplanation === "string" ? { videoExplanation, explanationSchemaVersion: 2 } : {}), sourceUrl, sourceLabel: sourceUrl ? "元動画を開く" : "",
@@ -151,6 +155,7 @@ function normalizeStructuredQuestion(value, id) {
     meldCount: melds.length, round: value.round === null ? null : /^(east|south|west|north)\d+$/.test(value.round || "") ? value.round : "east1", seat: value.seat === null ? null : ["east", "south", "west", "north"].includes(value.seat) ? value.seat : "west",
     turn: value.turn === null ? null : Math.max(0, Math.min(18, Number(value.turn) || 0)), honba: value.honba === null ? null : Number.isInteger(value.honba) ? value.honba : 0, points: value.points === null ? null : Number.isFinite(value.points) ? value.points : 25000,
     ...(sourceConditionsUnspecified ? { sourceConditionsUnspecified: true } : {}),
+    ...(hasMembership ? { sourcePlaylistMembership: { videoId: membership.videoId, playlistIds: [...new Set(membership.playlistIds)] } } : {}),
     dora: value.dora, melds, correctDiscards, kanChoice, correctKan: kanChoice && typeof value.correctKan === "boolean" ? value.correctKan : null,
     ...(value.riichiChoice === true ? { riichiChoice: true, correctRiichi: typeof value.correctRiichi === "boolean" ? value.correctRiichi : null } : {}), ...(value.note ? { note: String(value.note) } : {}),
   };
@@ -205,7 +210,7 @@ function allowedStaticPath(rootDir, pathname) {
   if (/^\/icons\/(?:favicon-32|apple-touch-icon-180|icon-192|icon-512|icon-maskable-512)\.png$/.test(iconPath)) return path.join(rootDir, iconPath.slice(1));
   if (iconPath === "/manifest.webmanifest") return path.join(rootDir, "manifest.webmanifest");
   if (pathname === "/") return path.join(rootDir, "index.html");
-  if (pathname === "/index.html" || pathname === "/admin.html" || pathname === "/config.js") return path.join(rootDir, pathname.slice(1));
+  if (["/index.html", "/admin.html", "/config.js", "/question-metadata.js"].includes(pathname)) return path.join(rootDir, pathname.slice(1));
   if (/^\/tiles\/(?:explanation\/)?[a-z0-9-]+\.png$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));
   if (/^\/assets\/speakers\/[a-z0-9_-]+\.(?:png|jpe?g|webp)$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));
   if (pathname === "/public/questions.json") return path.join(rootDir, "public", "questions.json");

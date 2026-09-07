@@ -40,12 +40,36 @@
     ],
     "videoExplanation": "おすすめは1p切りなのだ。\n\n筒子は離れリャンカンの形で、3p・8pのどちらを引いても聴牌できるのだ。1pを切れば、この受けと1s・4sの両面の受けを両方残せるのだ。\n\n一気通貫も見たくなるけれど、今回は赤牌を含めてドラ2があるので、良形で聴牌する受け入れを優先するのだ。先に3p・8pを引いて、1s・4s待ちでリーチできればうれしいのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": "9m",
     "sourceDrawStatus": "verified",
     "authorSource": {
       "kind": "shared-admin",
       "updatedAt": "2026-07-16 04:44:46.241+00"
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "fyPxbaLp_-Q",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/fyPxbaLp_-Q",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/fyPxbaLp_-Q",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
     }
   },
   {
@@ -115,6 +139,12 @@
       "url": "https://youtu.be/hNbn49F3pbw",
       "reviewedTimestamps": [
         37
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "hNbn49F3pbw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -195,6 +225,13 @@
         24,
         39
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "O1bmwG7uu6I",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -265,6 +302,13 @@
       "reviewedTimestamps": [
         27,
         42
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "5eF7eOULv8k",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -343,6 +387,13 @@
       "reviewedTimestamps": [
         32
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "u-e3ejx8YGo",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -411,6 +462,13 @@
       "url": "https://youtu.be/KJa-jtBUIw4",
       "reviewedTimestamps": [
         28
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "KJa-jtBUIw4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -481,6 +539,13 @@
       "reviewedTimestamps": [
         24
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "WZ-zphDYP_U",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -550,6 +615,12 @@
       "reviewedTimestamps": [
         22
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "076quV9Y1TQ",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -618,6 +689,13 @@
       "url": "https://youtu.be/MzcNkT_RznY",
       "reviewedTimestamps": [
         26
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "MzcNkT_RznY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -694,6 +772,12 @@
         111,
         131
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "t1ch2uvwqTk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -764,6 +848,12 @@
       "reviewedTimestamps": [
         25,
         55
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "BNGgOoQH1ZM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -837,6 +927,13 @@
         21,
         27,
         33
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "OpfPicoaUX4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -923,6 +1020,12 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "eHWL_ifEXjo",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -998,6 +1101,12 @@
         39,
         51
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "6duFhRJr5ks",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -1072,6 +1181,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "qKlCZANeghU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -1154,6 +1270,12 @@
         57,
         63
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "YkneBe3x-Qk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -1220,6 +1342,12 @@
         30,
         36,
         42
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "oVXo5YrpBNE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -1288,6 +1416,12 @@
         36,
         42,
         48
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "8ovWjEWUhbA",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -1360,6 +1494,13 @@
       "reviewedTimestamps": [
         25,
         55
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "Ei3DFXt0y9I",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -1440,6 +1581,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "C6sbxMSWikM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -1506,6 +1654,12 @@
         30,
         36,
         42
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "VNERzjbKb8A",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -1586,6 +1740,12 @@
         39,
         51
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "t9CdqxugLcg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -1663,6 +1823,12 @@
         45,
         51
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "tLjNf_BhcoM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -1731,6 +1897,13 @@
         42,
         48,
         54
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "aV8L3ak_s7s",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -1808,6 +1981,12 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "XRPXUIQbG4U",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -1890,6 +2069,12 @@
         63,
         69
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "d-I0fXXGY38",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -1966,6 +2151,13 @@
         45,
         51,
         57
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "3-uyZduwFzw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -2050,6 +2242,12 @@
         87,
         93
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "rGKUwhn4_68",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -2133,6 +2331,12 @@
         81,
         87
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "6WRnzt3XzRU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -2215,6 +2419,12 @@
         57,
         81,
         99
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "alqkuxKSHmI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -2309,6 +2519,13 @@
         81,
         87
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "1tyMKl52oYQ",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -2389,6 +2606,13 @@
         51,
         57,
         63
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "hUoK7DYkjro",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -2475,6 +2699,13 @@
         45,
         51
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "1s0P8Zy0SrU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -2556,6 +2787,12 @@
         51,
         57
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "vAY9UY3zdAM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -2635,6 +2872,13 @@
         45,
         51
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "0It8XxMkI6o",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -2707,6 +2951,13 @@
         84,
         96
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "qt_1DUjy63o",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -2778,6 +3029,12 @@
         84,
         90,
         108
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "iuLhmHt0a04",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -2858,6 +3115,13 @@
         219,
         261
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ofe8EPsihJQ",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -2933,6 +3197,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "s4yyRno29jM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -3004,6 +3275,13 @@
         60,
         66,
         72
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "C5jtDHzzkEE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -3079,6 +3357,13 @@
         33,
         39
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "SKhbShnBSRs",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -3153,6 +3438,13 @@
         27,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "1iFOsPFohs0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -3226,6 +3518,12 @@
         27,
         33
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "9W79YIm0-Mk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -3296,6 +3594,13 @@
         66,
         78,
         84
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "vgvJP1nmnRI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -3374,6 +3679,13 @@
         81,
         105
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "95MLpsufhvM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -3451,6 +3763,13 @@
         45,
         51
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "UQba5N0GN5g",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -3522,6 +3841,13 @@
         54,
         66
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "Q52ws6AV6Gw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -3589,6 +3915,13 @@
         36,
         42,
         48
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "YM1KRURsx5w",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -3662,6 +3995,13 @@
         27,
         33,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "QH9ikX3-uOQ",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -3737,6 +4077,13 @@
         51,
         57,
         63
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "_5vloktyoBw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -3819,6 +4166,12 @@
         69,
         99
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "hsB3vAaDUCU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -3898,7 +4251,14 @@
         63
       ]
     },
-    "correctKan": false
+    "correctKan": false,
+    "sourcePlaylistMembership": {
+      "videoId": "WVY7R68hWC4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 53,
@@ -3966,6 +4326,12 @@
         42,
         48,
         54
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "_JUL-rsQ7Sw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -4044,6 +4410,12 @@
         63,
         69
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "RkrAvExSUxM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -4114,6 +4486,12 @@
       "reviewedTimestamps": [
         26,
         46
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "seFV14o3eDs",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -4190,6 +4568,13 @@
         33,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "h08oEYh7Mg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -4261,6 +4646,13 @@
         60,
         66,
         72
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "oO0j3xVXaE8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -4342,6 +4734,13 @@
         99,
         117,
         123
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "B1aYqI9Rg8A",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -4428,6 +4827,12 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "mm8sSBK94LE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -4505,6 +4910,12 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "rx0uO-XE_PY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -4589,6 +5000,13 @@
         165,
         207
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "3jIIs_PWXT8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -4663,6 +5081,13 @@
         27,
         33,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "wbFVTC0DEIk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -4739,6 +5164,13 @@
         33,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "HxUL3ZPLN3k",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -4813,6 +5245,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "_0D-ZF1aecU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -4897,6 +5336,13 @@
         33,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "U0sBICBsaEY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -4970,6 +5416,13 @@
         15,
         25,
         33
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "iQbLSPvc84s",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -5047,6 +5500,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "SWnptC1oBdI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -5133,6 +5593,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "sukNqYlFkeg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -5208,6 +5675,13 @@
         33,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "cccsvX8D4tQ",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -5282,6 +5756,13 @@
         27,
         33,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "0Azz3hRHgOE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -5360,6 +5841,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ywwcGgKAZGY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -5436,6 +5924,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "uvHw6VB8kcQ",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -5514,6 +6009,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "-RA36-f1tM8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -5588,6 +6090,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "sCejb3STyuM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -5666,6 +6175,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "lVtqBYHgAH0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -5740,6 +6256,13 @@
         27,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "wKAdK431Bqk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -5817,6 +6340,12 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "pztV_mLLNl8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -5897,7 +6426,14 @@
         45
       ]
     },
-    "correctKan": false
+    "correctKan": false,
+    "sourcePlaylistMembership": {
+      "videoId": "uTw3TNvSNs8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 79,
@@ -5968,7 +6504,14 @@
         45
       ]
     },
-    "correctKan": true
+    "correctKan": true,
+    "sourcePlaylistMembership": {
+      "videoId": "TE_eaRe9e7I",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 80,
@@ -6042,6 +6585,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "uFMR9LZCodg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -6120,6 +6670,12 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "81wDOyaFvnY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -6187,6 +6743,13 @@
       "url": "https://youtu.be/er0yzPNz6p0",
       "reviewedTimestamps": [
         36
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "er0yzPNz6p0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -6265,6 +6828,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "-YIpWzFeLGU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -6341,6 +6911,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ju2Lae8LS50",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -6419,6 +6996,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "hbnEmu-J-RY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -6496,6 +7080,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "RVbVpbubJkM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -6582,6 +7173,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "KH-fEVUP3bs",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -6658,6 +7256,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "fpF-dRMWxxE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -6736,6 +7341,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ewkAMZToQTc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -6813,6 +7425,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "mCmsJuGZ9JE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -6887,6 +7506,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ahTKQeKqpPU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -6964,6 +7590,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "bLjbosKkpyE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -7043,6 +7676,13 @@
         23,
         43
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "yw5htsB5HUc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -7114,7 +7754,14 @@
       ]
     },
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "OFiEEk6AYf4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 95,
@@ -7189,7 +7836,14 @@
       ]
     },
     "riichiChoice": true,
-    "correctRiichi": false
+    "correctRiichi": false,
+    "sourcePlaylistMembership": {
+      "videoId": "dXn-vI0X2FA",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 96,
@@ -7261,6 +7915,13 @@
         27,
         33,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "-NMEmqrYsM4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -7340,6 +8001,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "dzI9h-Sq8-k",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -7412,6 +8080,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "mFYYwKK5KGY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -7486,6 +8161,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "6tcXKtx7m0M",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -7556,6 +8238,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "AZ-UDNFAJ_k",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -7630,7 +8319,14 @@
       ]
     },
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "4BvU5jHxmtI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 102,
@@ -7702,6 +8398,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "w4np2cnLwKs",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -7776,6 +8479,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "KVMU2MQsZ9Q",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -7847,6 +8557,13 @@
         33,
         39
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "gddQsacKZQw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -7917,6 +8634,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "OfgaT859djo",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -7990,6 +8714,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "JlG0o7Crqhc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -8072,6 +8803,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "crqsjnq8Xjc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -8145,6 +8883,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "PsfTsyq2eWk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -8217,6 +8962,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "8tW-GDTjgkU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -8293,6 +9045,12 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "LARHIb_AEFg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -8364,6 +9122,12 @@
         33,
         39
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "Np3QEVDl_28",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -8434,6 +9198,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "-rdWsrnVQg0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -8508,6 +9279,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "KkjDiyPjffo",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -8580,6 +9358,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "TJrhyGy_TLc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -8654,6 +9439,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "4czHFNrpHqs",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -8726,6 +9518,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "CfoNg-O0Beg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -8800,6 +9599,12 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "vIXmLVP9KSI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -8872,6 +9677,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "HquIRZSKz48",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -8948,7 +9760,14 @@
       ]
     },
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "Z38S59BXJ7Y",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 121,
@@ -9021,6 +9840,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "BJJBzA26iak",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -9091,6 +9917,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ECVKRtM-Kwk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -9173,6 +10006,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "pge6YCjrQ9s",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -9246,6 +10086,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "mpHrvC2BYG0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -9309,6 +10156,13 @@
       "url": "https://youtu.be/kMEqV0loSas",
       "reviewedTimestamps": [
         27
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "kMEqV0loSas",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -9383,6 +10237,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "r1l5oD4PAHY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -9456,6 +10317,12 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "jj8tQ3W13Zk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -9528,6 +10395,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "v0g92rsOUEU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -9606,6 +10480,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "iN0_hfZtO-A",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -9678,6 +10559,12 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "beXWsrV-GQg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -9752,6 +10639,12 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "FINi2UfVDco",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -9825,6 +10718,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "RYYwcejEJ50",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -9897,6 +10797,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "jjphdSwN72w",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -9977,7 +10884,14 @@
       ]
     },
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "yQRZoqTfMsw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 137,
@@ -10051,6 +10965,13 @@
         26,
         41
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ecMDMJ8eHYk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -10114,6 +11035,13 @@
       "url": "https://youtu.be/243yZ6-AeIQ",
       "reviewedTimestamps": [
         28
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "243yZ6-AeIQ",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -10187,6 +11115,13 @@
       "reviewedTimestamps": [
         25
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "JB0x3SKTtjE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -10252,6 +11187,13 @@
       "reviewedTimestamps": [
         27,
         47
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "5_zfsBe0Ock",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -10327,6 +11269,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "DsrXEBekTmI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -10400,6 +11349,12 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ScbxHpLTRe4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -10475,6 +11430,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "mlOfX9YwlsQ",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -10548,6 +11510,12 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "vxpNz8v7waI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
       ]
     }
   },
@@ -10623,6 +11591,12 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "am3w-wSCBTE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -10696,6 +11670,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "e-DMKNDonro",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -10771,6 +11752,12 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "aS6UZ292Rho",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -10845,6 +11832,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "5oeVT9_U5l0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -10917,6 +11911,13 @@
       "url": "https://youtu.be/_-2732uuBpo",
       "reviewedTimestamps": [
         35
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "_-2732uuBpo",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -10992,6 +11993,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "jj63zZl5sGs",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -11065,6 +12073,13 @@
         33,
         39,
         45
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "nTuSbrWOFqU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -11140,6 +12155,13 @@
         39,
         45
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "JSy3RkX6Yr0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -11211,6 +12233,13 @@
         27,
         33,
         39
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "BTTqaVVSZ7s",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -11288,7 +12317,14 @@
       ]
     },
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "Hxml8c6aiyg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 155,
@@ -11355,6 +12391,13 @@
         26,
         46
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "S44Wpa_yuwI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -11397,9 +12440,34 @@
     "correctDiscards": [],
     "videoExplanation": "おすすめは8p切りなのだ。\n\n孤立して見える8pと8sを比べるのだ。8sを切って7pを引けば筒子に両面はできるけれど、まだ二向聴なのだ。\n\n8pを切って7sを引いた場合は、索子に面子とリャンカンができて一向聴になるのだ。4sを引いたときも離れリャンカンができて、一向聴になるのだ。\n\n同じ孤立牌でも、隣の牌を引いた後に手全体がどう進むかは違うのだ。見た目の両面のできやすさだけでなく、次の一手の形まで比べるのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": null,
-    "sourceDrawStatus": "not-shown"
+    "sourceDrawStatus": "not-shown",
+    "sourcePlaylistMembership": {
+      "videoId": "H5Xvxd4nVUk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/H5Xvxd4nVUk",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/H5Xvxd4nVUk",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    }
   },
   {
     "id": 157,
@@ -11441,9 +12509,33 @@
     "correctDiscards": [],
     "videoExplanation": "おすすめは1s切りなのだ。\n\n孤立した1sは、隣の牌を引いてもペンチャンかカンチャンを作る形なのだ。一方、5pのある1pは、3pを引くと1p・3p・5pのリャンカンになるのだ。\n\n5pと筋になっている8pも、7pを引けば両面を作れるのだ。筋だから不要とすぐに決めず、それぞれの牌が作れる形を比較するのだ。今回の比較では、孤立した1sより筒子の牌を残すのがおすすめなのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": null,
-    "sourceDrawStatus": "not-shown"
+    "sourceDrawStatus": "not-shown",
+    "sourcePlaylistMembership": {
+      "videoId": "F_fi0wIpkbY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/F_fi0wIpkbY",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/F_fi0wIpkbY",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    }
   },
   {
     "id": 158,
@@ -11485,9 +12577,33 @@
     "correctDiscards": [],
     "videoExplanation": "動画のおすすめは7p切りなのだ。\n\n中ぶくれは両面を作りやすい強い形だけど、この手はすでに必要な両面がそろっているのだ。そこで中ぶくれの7pを1枚切り、守備に使う4zを残すのだ。\n\nまだカンチャンやペンチャンが残っている手なら、4zを切って中ぶくれの変化を残したいのだ。今回は他家の攻撃に備える方を優先するのだ。\n\n一盃口になる可能性まで含めると、動画のシミュレーションでは4z切りの期待値がわずかに上なのだ。それでも動画では、守備の余地を残す7p切りを勧めているのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": null,
-    "sourceDrawStatus": "not-shown"
+    "sourceDrawStatus": "not-shown",
+    "sourcePlaylistMembership": {
+      "videoId": "sOarGIID5n4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/sOarGIID5n4",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/sOarGIID5n4",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    }
   },
   {
     "id": 159,
@@ -11529,9 +12645,34 @@
     "correctDiscards": [],
     "videoExplanation": "おすすめは6m切りなのだ。\n\n孤立して見える6mと6pを比較するのだけど、今回は雀頭がないことが大切なのだ。筒子の2p・3p・3p・4p・6pの形を残すと、雀頭を作りながら手を進めやすいのだ。\n\n特に5pを引いたときは、2pを切って3pを雀頭にすることで、一気に聴牌できるのだ。中ぶくれは両面を作るだけでなく、雀頭を確保するのにも役立つのだ。手全体で雀頭が足りているかを確認してから、余剰牌を選ぶのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": null,
-    "sourceDrawStatus": "not-shown"
+    "sourceDrawStatus": "not-shown",
+    "sourcePlaylistMembership": {
+      "videoId": "A-WRDlb3k3s",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/A-WRDlb3k3s",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/A-WRDlb3k3s",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    }
   },
   {
     "id": 160,
@@ -11573,9 +12714,33 @@
     "correctDiscards": [],
     "videoExplanation": "おすすめは6s切りなのだ。\n\n6sと6pのどちらを残すかを比べるのだ。孤立した6sより、0p・6p・6p・7pという中ぶくれの中にある6pの方が、両面を作る変化が多いのだ。\n\n筒子は4p・5p・7p・8pを引いたときに両面を作れるのだ。ドラの7pに近く、一盃口の可能性も残るので、6pを残すのだ。\n\n動画のシミュレーションでは差はわずかだけど、余剰牌が周囲の面子とどうつながるかを考える練習になるのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": null,
-    "sourceDrawStatus": "not-shown"
+    "sourceDrawStatus": "not-shown",
+    "sourcePlaylistMembership": {
+      "videoId": "O1rH1niCclI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/O1rH1niCclI",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/O1rH1niCclI",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    }
   },
   {
     "id": 162,
@@ -11618,12 +12783,37 @@
     ],
     "videoExplanation": "おすすめは8s切りなのだ。\n\nこの手は、暗刻があり雀頭のない「暗刻ヘッドレス」の一向聴にするのが強いのだ。5p・6pを重ねれば雀頭ができ、索子の両面を待つ聴牌にできるのだ。\n\n先に両面が埋まっても、2pを1枚切って雀頭にすれば、もう一方の両面を待てるのだ。聴牌への受けは8種類28枚あり、どの有効牌でも両面聴牌にできるのだ。\n\n暗刻を雀頭としても使えることに気づくと、ヘッドレスの広い受け入れを生かせるのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": "2p",
     "sourceDrawStatus": "verified",
     "authorSource": {
       "kind": "shared-admin",
       "updatedAt": "2026-07-17 13:13:49.503+00"
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ntcRIWEd7d0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/ntcRIWEd7d0",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/ntcRIWEd7d0",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        24,
+        42
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
     }
   },
   {
@@ -11665,9 +12855,33 @@
     "correctDiscards": [],
     "videoExplanation": "おすすめは6p切りなのだ。\n\n筒子の4p・4p・6p・6p・8p・8pは、1つ飛ばしに対子が並んだ「飛び対子」なのだ。この形は真ん中の6pを1枚切ると、両面で聴牌しやすくなるのだ。\n\n4p・5p・7p・8pのどれを引いても、索子の両面を残して聴牌できるのだ。シミュレーションでも、端の対子を崩すより良形聴牌につながりやすいことを確認しているのだ。\n\n「飛び対子は真ん中を切る」を、この形と一緒に覚えておくのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": "4m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "VjOzvtUiKnU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/VjOzvtUiKnU",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/VjOzvtUiKnU",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        24
+      ],
+      "reasonSeconds": [
+        30,
+        36,
+        42,
+        48
+      ]
+    }
   },
   {
     "id": 164,
@@ -11708,9 +12922,32 @@
     "correctDiscards": [],
     "videoExplanation": "おすすめは7s切りなのだ。\n\n7s・8sを残して6s・9sの両面に固定することで、両面聴牌になりやすくするのだ。\n\n3m・5mのカンチャンは両面より弱いので、こちらには3mをフォロー牌として残しておくのだ。こうしておけば4mだけでなく、3mや3zを重ねたときも両面聴牌にできるのだ。\n\n余分な対子を1枚切るときは、弱い形の方へフォロー牌を残すのがポイントなのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": "3p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "959tnkZizvI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/959tnkZizvI",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/959tnkZizvI",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        24
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
+    }
   },
   {
     "id": 165,
@@ -11751,9 +12988,34 @@
     "correctDiscards": [],
     "videoExplanation": "おすすめは2p切りなのだ。\n\n筒子には両面とカンチャンの受けを兼ねる「両面カンチャン」の形があるのだ。2pを1枚切っても、5p・8pだけでなく3pを引いたときにも聴牌できるのだ。\n\n筒子のこの受けと、索子の3s・6sの両面を両方残すのだ。見た目だけで筒子の形を単純な両面に固定せず、面子を含めて別の組み合わせに分けられないか確認するのだ。実戦でもカンチャンの受けを見落とさないようにするのだ。",
     "explanationSchemaVersion": 2,
-    "videoExplanationStatus": "verified-content-link-pending",
+    "videoExplanationStatus": "verified-parts",
     "sourceDraw": "6p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "tauwb2NiWq8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    },
+    "sourceUrl": "https://youtu.be/tauwb2NiWq8",
+    "sourceLabel": "YouTube動画を開く",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/tauwb2NiWq8",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        24,
+        42
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
+    }
   },
   {
     "id": 166,
@@ -11822,6 +13084,13 @@
         55,
         105,
         118
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "a3yIRViy5gc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -11904,6 +13173,13 @@
         45,
         63
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "ADWMMNXtryw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -11967,6 +13243,12 @@
       "reviewedTimestamps": [
         52
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "VWOg74rytII",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
     }
   },
   {
@@ -12027,6 +13309,12 @@
     "answerSource": {
       "kind": "instructor",
       "note": "管理画面の正解2mを保持。動画の初手結論は未確認。"
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "Aijtrqz70Os",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -12094,6 +13382,12 @@
         65,
         95,
         115
+      ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "EwtJuGUcYy8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
     }
   },
@@ -12171,6 +13465,12 @@
         43,
         73
       ]
+    },
+    "sourcePlaylistMembership": {
+      "videoId": "GucqM0jEhlA",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
     }
   },
   {
@@ -12234,7 +13534,14 @@
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
     "correctRiichi": true,
-    "note": "雀魂の段位戦など、順位を重視するルールを想定。"
+    "note": "雀魂の段位戦など、順位を重視するルールを想定。",
+    "sourcePlaylistMembership": {
+      "videoId": "YmpDPeQ7bDM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 173,
@@ -12299,7 +13606,14 @@
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
     "correctRiichi": false,
-    "note": "オーラス・順位重視。東家45000点、南家28000点、西家（自分）12700点、北家14300点。動画上部の25000点表記ではなく、局面変更後の点数一覧を採用。"
+    "note": "オーラス・順位重視。東家45000点、南家28000点、西家（自分）12700点、北家14300点。動画上部の25000点表記ではなく、局面変更後の点数一覧を採用。",
+    "sourcePlaylistMembership": {
+      "videoId": "YmpDPeQ7bDM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 174,
@@ -12359,7 +13673,14 @@
       ]
     },
     "sourceDraw": "2s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "C9cIpVYSaD4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 175,
@@ -12442,7 +13763,14 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "MFvLxCF6m2U",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 176,
@@ -12502,7 +13830,14 @@
       ]
     },
     "sourceDraw": "2m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "m5k7QHBdgGw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 177,
@@ -12563,7 +13898,14 @@
       ]
     },
     "sourceDraw": "9s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "YMjlho87KhY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 178,
@@ -12625,7 +13967,14 @@
     "sourceDraw": "9s",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "Z9TEDKTdvnk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 179,
@@ -12687,7 +14036,14 @@
     "sourceDraw": "1m",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "Y41aBf0ecxU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 180,
@@ -12750,7 +14106,14 @@
       ]
     },
     "sourceDraw": "6p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "gkw4i-sa1xw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 181,
@@ -12813,7 +14176,13 @@
     "sourceDraw": "4m",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "bJ9d4GUkpPE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
+    }
   },
   {
     "id": 182,
@@ -12873,7 +14242,14 @@
       ]
     },
     "sourceDraw": "8p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "NK2RuiiFYH4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 183,
@@ -12937,7 +14313,13 @@
     "sourceDraw": "7p",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "KT6HnQWbNTo",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
+    }
   },
   {
     "id": 184,
@@ -12998,7 +14380,13 @@
       ]
     },
     "sourceDraw": "5s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "F_9a7-wUh6o",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+      ]
+    }
   },
   {
     "id": 185,
@@ -13062,7 +14450,13 @@
       ]
     },
     "sourceDraw": "9p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "alJySGX9JI8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 186,
@@ -13129,7 +14523,13 @@
       ]
     },
     "sourceDraw": "2m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "o6is2_ERCMk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 187,
@@ -13189,7 +14589,13 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "2zS7ogdnDXM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 188,
@@ -13253,7 +14659,13 @@
       ]
     },
     "sourceDraw": "8p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "lhBFzVkPI6M",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 189,
@@ -13313,7 +14725,13 @@
       ]
     },
     "sourceDraw": "7s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "a7u1L7mfTgo",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 190,
@@ -13373,7 +14791,13 @@
       ]
     },
     "sourceDraw": "6m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "x8f60GbNEqI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 191,
@@ -13434,7 +14858,13 @@
       ]
     },
     "sourceDraw": "6s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "DgX6_N4q6pc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 192,
@@ -13494,7 +14924,13 @@
       ]
     },
     "sourceDraw": "8m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "qOaCPTJ1He8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 193,
@@ -13554,7 +14990,13 @@
       ]
     },
     "sourceDraw": "6m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "V0L9XlPrQpc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 194,
@@ -13619,7 +15061,13 @@
     "sourceDraw": "7m",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": false
+    "correctRiichi": false,
+    "sourcePlaylistMembership": {
+      "videoId": "PMXTRpPlm1c",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 195,
@@ -13682,7 +15130,13 @@
       ]
     },
     "sourceDraw": "3s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "K2mAtm7vlus",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 196,
@@ -13742,7 +15196,13 @@
       ]
     },
     "sourceDraw": "7m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "tYqqSvaVX2g",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 197,
@@ -13804,7 +15264,13 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ffhIwmmFPy4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 198,
@@ -13867,7 +15333,13 @@
       ]
     },
     "sourceDraw": "2s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "Key9P4GY0LY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 199,
@@ -13930,7 +15402,13 @@
       ]
     },
     "sourceDraw": "1m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "twuKO44Ambo",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 200,
@@ -14000,7 +15478,13 @@
     },
     "sourceDraw": "4z",
     "sourceDrawStatus": "verified",
-    "note": "動画の説明に合わせ、4zは安全牌として扱う。"
+    "note": "動画の説明に合わせ、4zは安全牌として扱う。",
+    "sourcePlaylistMembership": {
+      "videoId": "Eww7heaCyJY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 201,
@@ -14061,7 +15545,13 @@
       ]
     },
     "sourceDraw": "9p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "QWjTmew3TII",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 202,
@@ -14127,7 +15617,13 @@
     "sourceDraw": "8p",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "-l14p-fXyE0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 203,
@@ -14191,7 +15687,13 @@
       ]
     },
     "sourceDraw": "9m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "XymmpJ3aUS4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 204,
@@ -14254,7 +15756,13 @@
       ]
     },
     "sourceDraw": "6m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "lo2NtxwbOmI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 205,
@@ -14317,7 +15825,13 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "T9uasSeju3Y",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 206,
@@ -14380,7 +15894,13 @@
       ]
     },
     "sourceDraw": "2p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "92C-0oPgeYU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 207,
@@ -14438,7 +15958,13 @@
       ]
     },
     "sourceDraw": "1m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "PdzE7SPwGuA",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 208,
@@ -14495,7 +16021,13 @@
       ]
     },
     "sourceDraw": "5m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "PdzE7SPwGuA",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 209,
@@ -14559,7 +16091,13 @@
       ]
     },
     "sourceDraw": "8p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "1XrXCXEYnys",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 210,
@@ -14625,7 +16163,13 @@
       ]
     },
     "sourceDraw": "8m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "SlaH3oh3Pjk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 211,
@@ -14696,7 +16240,13 @@
     },
     "sourceDraw": "8p",
     "sourceDrawStatus": "verified",
-    "note": "7zの役牌バック。8pでは役がなく、和了できない。"
+    "note": "7zの役牌バック。8pでは役がなく、和了できない。",
+    "sourcePlaylistMembership": {
+      "videoId": "kfXEOXTXXBU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 212,
@@ -14759,7 +16309,13 @@
       ]
     },
     "sourceDraw": "4p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "tePrOPqWsVQ",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 213,
@@ -14822,7 +16378,13 @@
       ]
     },
     "sourceDraw": "9p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "781mv9KODPs",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 214,
@@ -14885,7 +16447,13 @@
       ]
     },
     "sourceDraw": "5p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "uv64jtVse3A",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 215,
@@ -14947,7 +16515,13 @@
       ]
     },
     "sourceDraw": "8s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "6o68Wsq9TmY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 216,
@@ -15010,7 +16584,13 @@
       ]
     },
     "sourceDraw": "8p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "8Fdst5_WtIU",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 217,
@@ -15079,7 +16659,13 @@
       ]
     },
     "sourceDraw": "7m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "jeFp4uYWGOE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 218,
@@ -15146,7 +16732,13 @@
       ]
     },
     "sourceDraw": "3p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "oLfyQACRqcg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 219,
@@ -15213,7 +16805,13 @@
       ]
     },
     "sourceDraw": "3p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "oLfyQACRqcg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 220,
@@ -15280,7 +16878,13 @@
       ]
     },
     "sourceDraw": "9m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "HjvGKaZEEOI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 221,
@@ -15353,7 +16957,13 @@
     "sourceDraw": "7s",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": false
+    "correctRiichi": false,
+    "sourcePlaylistMembership": {
+      "videoId": "kAZGJ4r6GUg",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 222,
@@ -15426,7 +17036,13 @@
     "sourceDraw": "5m",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": false
+    "correctRiichi": false,
+    "sourcePlaylistMembership": {
+      "videoId": "9AEGTyTif2w",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 223,
@@ -15487,7 +17103,13 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "z8eU14L-d-U",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 224,
@@ -15551,7 +17173,13 @@
       ]
     },
     "sourceDraw": "2s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "yHlUlk2PwtA",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 225,
@@ -15612,7 +17240,13 @@
       ]
     },
     "sourceDraw": "3m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "kbsGxlWyLxw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 226,
@@ -15684,7 +17318,13 @@
       ]
     },
     "sourceDraw": "7s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "3B00F4TxkEA",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 227,
@@ -15753,7 +17393,13 @@
     "sourceDraw": "7m",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "hszyXnQGWa8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 228,
@@ -15815,7 +17461,13 @@
       ]
     },
     "sourceDraw": "3s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "5hmoJOGGtF0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 229,
@@ -15877,7 +17529,13 @@
       ]
     },
     "sourceDraw": "3s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "WTFsWlqSiKI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 230,
@@ -15941,7 +17599,13 @@
       ]
     },
     "sourceDraw": "4m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "u90s7MRaZuc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 231,
@@ -16002,7 +17666,13 @@
       ]
     },
     "sourceDraw": "1m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "E2Kh9FJEZlA",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 232,
@@ -16063,7 +17733,13 @@
       ]
     },
     "sourceDraw": "8m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "6XqV9szzxM8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 233,
@@ -16135,7 +17811,13 @@
       ]
     },
     "sourceDraw": "1p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "Q-HwOPSunIE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 234,
@@ -16196,7 +17878,13 @@
       ]
     },
     "sourceDraw": "3m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "tuKkam2cqEE",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 235,
@@ -16269,7 +17957,13 @@
       ]
     },
     "sourceDraw": "6s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "S8qbgBlWTkc",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 236,
@@ -16331,7 +18025,13 @@
       ]
     },
     "sourceDraw": "3m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "lZarZWfFlyM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 237,
@@ -16391,7 +18091,13 @@
       ]
     },
     "sourceDraw": "3s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "iIR5eJFFJ4g",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 238,
@@ -16452,7 +18158,13 @@
       ]
     },
     "sourceDraw": "9p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "Bh14lGQbzM0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 239,
@@ -16512,7 +18224,13 @@
       ]
     },
     "sourceDraw": "2m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "9OYd5k5Ik6I",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 240,
@@ -16572,7 +18290,13 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "WZqHpJUH84I",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 241,
@@ -16632,7 +18356,13 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "SmjvTY-RRLw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 242,
@@ -16692,7 +18422,13 @@
       ]
     },
     "sourceDraw": "1m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "QQqhmCSJ2sY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 243,
@@ -16752,7 +18488,13 @@
       ]
     },
     "sourceDraw": "2s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "9WpV_gWuXzI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 244,
@@ -16813,7 +18555,13 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "1UqFIzCGBH8",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 245,
@@ -16873,7 +18621,13 @@
       ]
     },
     "sourceDraw": "6m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "0tfcnRMHqGw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 246,
@@ -16933,7 +18687,13 @@
       ]
     },
     "sourceDraw": "4m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "S8EEX2VreuM",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 247,
@@ -16993,7 +18753,13 @@
       ]
     },
     "sourceDraw": "1m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ohxKCO8uFhI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 248,
@@ -17053,7 +18819,13 @@
       ]
     },
     "sourceDraw": "0p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "dLg0L-3ifpY",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 249,
@@ -17113,7 +18885,13 @@
       ]
     },
     "sourceDraw": "8m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "VUcPCCgYTs4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 250,
@@ -17175,7 +18953,13 @@
     "sourceDraw": "4m",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "c1hyWtXluuo",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 251,
@@ -17236,7 +19020,13 @@
       ]
     },
     "sourceDraw": "8s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "WYQtugS_Vnk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 252,
@@ -17304,7 +19094,13 @@
       ]
     },
     "sourceDraw": "8p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "d1XQnSOqLXI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 253,
@@ -17364,7 +19160,13 @@
       ]
     },
     "sourceDraw": "4m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "EYClhbeFyuA",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 254,
@@ -17424,7 +19226,13 @@
       ]
     },
     "sourceDraw": "9p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "fwnD5U8ak10",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 255,
@@ -17486,7 +19294,13 @@
     "sourceDraw": "4s",
     "sourceDrawStatus": "verified",
     "riichiChoice": true,
-    "correctRiichi": true
+    "correctRiichi": true,
+    "sourcePlaylistMembership": {
+      "videoId": "FtsysrppYr4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 256,
@@ -17546,7 +19360,13 @@
       ]
     },
     "sourceDraw": "0m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "wj29GvQ7XZw",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 257,
@@ -17606,7 +19426,13 @@
       ]
     },
     "sourceDraw": null,
-    "sourceDrawStatus": "not-shown"
+    "sourceDrawStatus": "not-shown",
+    "sourcePlaylistMembership": {
+      "videoId": "0VsmI4pYxtk",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 258,
@@ -17667,7 +19493,13 @@
       ]
     },
     "sourceDraw": null,
-    "sourceDrawStatus": "not-shown"
+    "sourceDrawStatus": "not-shown",
+    "sourcePlaylistMembership": {
+      "videoId": "cI-x7I8240I",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 259,
@@ -17728,7 +19560,13 @@
       ]
     },
     "sourceDraw": null,
-    "sourceDrawStatus": "not-shown"
+    "sourceDrawStatus": "not-shown",
+    "sourcePlaylistMembership": {
+      "videoId": "YCKPZeB1xC0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 260,
@@ -17797,7 +19635,13 @@
     },
     "sourceDraw": null,
     "sourceDrawStatus": "not-shown",
-    "note": "7zの役牌バック。役のない6sでは和了できない。"
+    "note": "7zの役牌バック。役のない6sでは和了できない。",
+    "sourcePlaylistMembership": {
+      "videoId": "X-GsZvaiY4c",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 261,
@@ -17857,7 +19701,13 @@
       ]
     },
     "sourceDraw": "7s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "jE4GwL7rKZ4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 262,
@@ -17916,7 +19766,13 @@
       ]
     },
     "sourceDraw": "4s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "3qA4fD780Q0",
+      "playlistIds": [
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 263,
@@ -17975,7 +19831,14 @@
     "sourceDraw": "2z",
     "sourceDrawStatus": "verified",
     "note": "局面・ドラの指定はない。受け入れ枚数を優先して選ぶ問題。",
-    "sourceConditionsUnspecified": true
+    "sourceConditionsUnspecified": true,
+    "sourcePlaylistMembership": {
+      "videoId": "e7yWmZ0OCiI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 264,
@@ -18035,7 +19898,14 @@
     "sourceDraw": "9p",
     "sourceDrawStatus": "verified",
     "note": "局面・ドラの指定はない。受け入れ枚数を優先して選ぶ問題。",
-    "sourceConditionsUnspecified": true
+    "sourceConditionsUnspecified": true,
+    "sourcePlaylistMembership": {
+      "videoId": "e7yWmZ0OCiI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 265,
@@ -18095,7 +19965,14 @@
     "sourceDraw": "1p",
     "sourceDrawStatus": "verified",
     "note": "局面・ドラの指定はない。受け入れ枚数を優先して選ぶ問題。",
-    "sourceConditionsUnspecified": true
+    "sourceConditionsUnspecified": true,
+    "sourcePlaylistMembership": {
+      "videoId": "e7yWmZ0OCiI",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 266,
@@ -18153,7 +20030,14 @@
       ]
     },
     "sourceDraw": "1m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 267,
@@ -18212,7 +20096,14 @@
       ]
     },
     "sourceDraw": "6p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 268,
@@ -18269,7 +20160,14 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 269,
@@ -18326,7 +20224,14 @@
       ]
     },
     "sourceDraw": "7m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 270,
@@ -18383,7 +20288,14 @@
       ]
     },
     "sourceDraw": "4s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 271,
@@ -18440,7 +20352,14 @@
       ]
     },
     "sourceDraw": "7s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 272,
@@ -18498,7 +20417,14 @@
       ]
     },
     "sourceDraw": "3m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 273,
@@ -18555,7 +20481,14 @@
       ]
     },
     "sourceDraw": "6m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 274,
@@ -18612,7 +20545,14 @@
       ]
     },
     "sourceDraw": "6p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 275,
@@ -18670,7 +20610,14 @@
       ]
     },
     "sourceDraw": "9m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 276,
@@ -18730,7 +20677,14 @@
       ]
     },
     "sourceDraw": "5p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 277,
@@ -18788,7 +20742,14 @@
       ]
     },
     "sourceDraw": "2s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 278,
@@ -18845,7 +20806,14 @@
       ]
     },
     "sourceDraw": "7s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 279,
@@ -18902,7 +20870,14 @@
       ]
     },
     "sourceDraw": "9m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 280,
@@ -18959,7 +20934,14 @@
       ]
     },
     "sourceDraw": "9s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 281,
@@ -19016,7 +20998,14 @@
       ]
     },
     "sourceDraw": "2m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 282,
@@ -19074,7 +21063,14 @@
       ]
     },
     "sourceDraw": "0m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 283,
@@ -19131,7 +21127,14 @@
       ]
     },
     "sourceDraw": "6s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "_l6L0y-mWg4",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 284,
@@ -19188,7 +21191,14 @@
       ]
     },
     "sourceDraw": "9s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 285,
@@ -19245,7 +21255,14 @@
       ]
     },
     "sourceDraw": "7p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 286,
@@ -19302,7 +21319,14 @@
       ]
     },
     "sourceDraw": "3p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 287,
@@ -19359,7 +21383,14 @@
       ]
     },
     "sourceDraw": "6s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 288,
@@ -19416,7 +21447,14 @@
       ]
     },
     "sourceDraw": "0m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 289,
@@ -19473,7 +21511,14 @@
       ]
     },
     "sourceDraw": "6s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 290,
@@ -19531,7 +21576,14 @@
       ]
     },
     "sourceDraw": "2m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 291,
@@ -19588,7 +21640,14 @@
       ]
     },
     "sourceDraw": "5m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 292,
@@ -19647,7 +21706,14 @@
       ]
     },
     "sourceDraw": "8m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 293,
@@ -19705,7 +21771,14 @@
       ]
     },
     "sourceDraw": "7s",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 294,
@@ -19762,7 +21835,14 @@
       ]
     },
     "sourceDraw": "6p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 295,
@@ -19819,7 +21899,14 @@
       ]
     },
     "sourceDraw": "4p",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   },
   {
     "id": 296,
@@ -19877,6 +21964,13 @@
       ]
     },
     "sourceDraw": "7m",
-    "sourceDrawStatus": "verified"
+    "sourceDrawStatus": "verified",
+    "sourcePlaylistMembership": {
+      "videoId": "ZrjrfUM9890",
+      "playlistIds": [
+        "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+        "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+      ]
+    }
   }
 ]
