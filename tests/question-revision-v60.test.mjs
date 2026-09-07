@@ -18,11 +18,12 @@ const sharedText = await read("artifacts/question-revision-v61/shared-before.jso
 const corrections = JSON.parse(await read("data/question-corrections-v61.json"));
 
 test("v60 source-draw review covers every question without inventing absent tiles", () => {
-  assert.equal(questions.length, 167);
-  assert.equal(questions.filter(q => q.draw).length, 145);
-  assert.deepEqual(questions.filter(q => q.sourceDrawStatus === "hand-correction-required").map(q => q.id), []);
-  assert.equal(questions.filter(q => q.sourceDrawStatus === "not-shown").length, 22);
-  for (const q of questions) {
+  const reviewed = questions.filter(q => Object.hasOwn(draws, q.id));
+  assert.equal(reviewed.length, 167);
+  assert.equal(reviewed.filter(q => q.draw).length, 145);
+  assert.deepEqual(reviewed.filter(q => q.sourceDrawStatus === "hand-correction-required").map(q => q.id), []);
+  assert.equal(reviewed.filter(q => q.sourceDrawStatus === "not-shown").length, 22);
+  for (const q of reviewed) {
     assert.equal(q.sourceDraw, draws[q.id]);
     if (q.sourceDrawStatus === "verified") assert.equal(q.draw, q.sourceDraw);
     else assert.equal(q.draw, null);
@@ -36,9 +37,11 @@ test("v60 source-draw review covers every question without inventing absent tile
   }
 });
 
-test("v60 rewrites verified video material separately and leaves missing sources empty", () => {
+test("v60 verified summaries remain unchanged when later questions and sources are added", () => {
   assert.equal(Object.keys(summaries).length, 145);
-  for (const q of questions) {
+  const reviewed = questions.filter(q => Object.hasOwn(summaries, q.id));
+  assert.equal(reviewed.length, 145);
+  for (const q of reviewed) {
     assert.equal(q.explanationSchemaVersion, 2);
     assert.equal(q.videoExplanation, summaries[q.id] || "");
     if (q.videoExplanation) {
@@ -48,13 +51,12 @@ test("v60 rewrites verified video material separately and leaves missing sources
       assert.doesNotMatch(q.videoExplanation, /\d[萬万筒索]|[一二三四五六七八九][萬万筒索]|<\/?[a-z]/i);
     }
   }
-  assert.equal(questions.find(q => q.id === 57).videoExplanationStatus, "source-mismatch");
 });
 
 test("v60/v61 preserve current author text and every unapproved field against immutable backups", { skip: !originalText || !sharedText }, () => {
   assert.equal(createHash("sha256").update(originalText).digest("hex"), "dbc27b03900d7a36225e6086f846512eff691a81012460db9f8c960c706fe92c");
   const original = JSON.parse(originalText);
-  assert.deepEqual(questions.map(q => q.id), original.map(q => q.id));
+  assert.deepEqual(questions.filter(q => original.some(before => before.id === q.id)).map(q => q.id), original.map(q => q.id));
   const shared = new Map(JSON.parse(sharedText).map(row => [row.question_id, row]));
   const changedFields = new Set(["explanation", "videoExplanation", "explanationSchemaVersion", "videoExplanationStatus", "videoExplanationSource", "sourceUrl", "sourceLabel", "sourceDraw", "sourceDrawStatus", "hand", "draw", "note", "authorSource", "correctDiscards", "videoCorrectDiscards", "answerSource", "correctKan", "correctRiichi", "riichiChoice", "reviewed", "reviewUpdatedAt"]);
   for (const before of original) {

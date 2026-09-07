@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta name="theme-color" content="#06110f">
-  <link rel="icon" type="image/png" sizes="32x32" href="/zundamon-nanikiru/icons/favicon-32.png?v=58">
-  <link rel="apple-touch-icon" sizes="180x180" href="/zundamon-nanikiru/icons/apple-touch-icon-180.png?v=58">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png?v=58">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180.png?v=58">
   <link rel="manifest" href="/zundamon-nanikiru/manifest.webmanifest?v=58">
   <title>重要何切る問題集（基礎）</title>
   <style>
@@ -1045,7 +1045,7 @@
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 66;
+    const APP_VERSION = 67;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
     const LEGACY_STORAGE_KEY = "zundamon-nanikiru-state-v2";
@@ -2002,8 +2002,16 @@
       document.getElementById("round").textContent = roundName(question.round);
       document.getElementById("seat").textContent = `${WIND_NAMES[question.seat] || "―"}家`;
       document.getElementById("turn").textContent = `${question.turn ?? "―"}巡目`;
-      document.getElementById("dora").src = tilePath(question.dora);
-      document.getElementById("dora").alt = `ドラ ${tileName(question.dora)}`;
+      const doraImage = document.getElementById("dora");
+      doraImage.hidden = !question.dora;
+      doraImage.previousElementSibling.textContent = question.dora ? "ドラ" : "ドラ指定なし";
+      if (question.dora) {
+        doraImage.src = tilePath(question.dora);
+        doraImage.alt = `ドラ ${tileName(question.dora)}`;
+      } else {
+        doraImage.removeAttribute("src");
+        doraImage.alt = "";
+      }
 
       const subItems = [];
       if (question.honba !== null && question.honba !== undefined) subItems.push(`${question.honba}本場`);

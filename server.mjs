@@ -123,7 +123,9 @@ function normalizeStructuredQuestion(value, id) {
     calledIndex: Number.isInteger(meld?.calledIndex) ? meld.calledIndex : 0,
     tiles: Array.isArray(meld?.tiles) ? meld.tiles.filter((code) => TILE_CODE.test(code)) : [],
   })) : [];
-  if (!hand.length || !TILE_CODE.test(value.dora || "") || melds.some((meld) => (meld.type === "kan" ? meld.tiles.length !== 4 : meld.tiles.length !== 3) || (meld.type === "chi" && meld.calledIndex !== 0) || meld.calledIndex < 0 || meld.calledIndex >= meld.tiles.length)) return null;
+  const sourceConditionsUnspecified = value.sourceConditionsUnspecified === true;
+  const unspecifiedDora = sourceConditionsUnspecified && value.dora === null;
+  if (!hand.length || (!unspecifiedDora && !TILE_CODE.test(value.dora || "")) || melds.some((meld) => (meld.type === "kan" ? meld.tiles.length !== 4 : meld.tiles.length !== 3) || (meld.type === "chi" && meld.calledIndex !== 0) || meld.calledIndex < 0 || meld.calledIndex >= meld.tiles.length)) return null;
   if (selectable.length !== 14 - melds.length * 3) return null;
   const allTiles = [...selectable, ...melds.flatMap((meld) => meld.tiles)];
   const counts = new Map();
@@ -146,8 +148,9 @@ function normalizeStructuredQuestion(value, id) {
     id, image: typeof value.image === "string" ? value.image.trim() : "", images: Array.isArray(value.images) ? value.images.filter((image) => typeof image === "string") : [],
     explanation, ...(typeof value.videoExplanation === "string" ? { videoExplanation, explanationSchemaVersion: 2 } : {}), sourceUrl, sourceLabel: sourceUrl ? "元動画を開く" : "",
     createdAt: typeof value.createdAt === "string" ? value.createdAt : new Date().toISOString(), hand, draw, status: value.status === "reviewed" ? "reviewed" : "unreviewed",
-    meldCount: melds.length, round: /^(east|south|west|north)\d+$/.test(value.round || "") ? value.round : "east1", seat: ["east", "south", "west", "north"].includes(value.seat) ? value.seat : "west",
-    turn: Math.max(0, Math.min(18, Number(value.turn) || 0)), honba: Number.isInteger(value.honba) ? value.honba : 0, points: Number.isFinite(value.points) ? value.points : 25000,
+    meldCount: melds.length, round: value.round === null ? null : /^(east|south|west|north)\d+$/.test(value.round || "") ? value.round : "east1", seat: value.seat === null ? null : ["east", "south", "west", "north"].includes(value.seat) ? value.seat : "west",
+    turn: value.turn === null ? null : Math.max(0, Math.min(18, Number(value.turn) || 0)), honba: value.honba === null ? null : Number.isInteger(value.honba) ? value.honba : 0, points: value.points === null ? null : Number.isFinite(value.points) ? value.points : 25000,
+    ...(sourceConditionsUnspecified ? { sourceConditionsUnspecified: true } : {}),
     dora: value.dora, melds, correctDiscards, kanChoice, correctKan: kanChoice && typeof value.correctKan === "boolean" ? value.correctKan : null,
     ...(value.riichiChoice === true ? { riichiChoice: true, correctRiichi: typeof value.correctRiichi === "boolean" ? value.correctRiichi : null } : {}), ...(value.note ? { note: String(value.note) } : {}),
   };
@@ -192,11 +195,15 @@ function contentType(filePath) {
     ".html": "text/html; charset=utf-8",
     ".js": "text/javascript; charset=utf-8",
     ".json": "application/json; charset=utf-8",
+    ".webmanifest": "application/manifest+json; charset=utf-8",
     ".png": "image/png",
   }[extension] || "application/octet-stream";
 }
 
 function allowedStaticPath(rootDir, pathname) {
+  const iconPath = pathname.replace(/^\/zundamon-nanikiru\//, "/");
+  if (/^\/icons\/(?:favicon-32|apple-touch-icon-180|icon-192|icon-512|icon-maskable-512)\.png$/.test(iconPath)) return path.join(rootDir, iconPath.slice(1));
+  if (iconPath === "/manifest.webmanifest") return path.join(rootDir, "manifest.webmanifest");
   if (pathname === "/") return path.join(rootDir, "index.html");
   if (pathname === "/index.html" || pathname === "/admin.html" || pathname === "/config.js") return path.join(rootDir, pathname.slice(1));
   if (/^\/tiles\/(?:explanation\/)?[a-z0-9-]+\.png$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));

@@ -75,5 +75,12 @@ test("shared structured validation preserves separate draw and author whitespace
   assert.equal(validQuestion({ ...fixture, draw: "9z" }, 1), null);
   assert.equal(validQuestion({ ...fixture, hand: [...fixture.hand, "9m"] }, 1), null);
   assert.equal(validQuestion({ ...fixture, videoExplanation: "あ".repeat(20_001) }, 1), null);
+  const unspecified = { ...fixture, sourceConditionsUnspecified: true, dora: null, round: null, seat: null, turn: null, honba: null, points: null };
+  const retained = validQuestion(unspecified, 1);
+  for (const key of ["dora", "round", "seat", "turn", "honba", "points"]) assert.equal(retained[key], null, key);
+  assert.equal(retained.sourceConditionsUnspecified, true);
+  assert.equal(validQuestion({ ...fixture, dora: null }, 1), null);
+  assert.equal(validQuestion({ ...unspecified, sourceConditionsUnspecified: "true" }, 1), null);
+  assert.equal(validQuestion({ ...unspecified, dora: "9z" }, 1), null);
   assert.ok(validQuestion({ ...fixture, hand: fixture.hand.slice(0, 10), melds: [{ type: "kan", open: true, calledIndex: 0, tiles: ["9s", "9s", "9s", "9s"] }] }, 1));
 });

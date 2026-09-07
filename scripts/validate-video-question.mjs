@@ -25,7 +25,7 @@ for (const id of ids) {
   if (!/^https:\/\/youtu\.be\//.test(question.sourceUrl || "")) failures.push(`${id}: sourceUrl must be a YouTube short URL`);
   if (!Array.isArray(question.hand) || !question.hand.every((tile) => tilePattern.test(tile))) failures.push(`${id}: invalid concealed tile code`);
   if (!Array.isArray(question.correctDiscards) || !question.correctDiscards.every((tile) => tilePattern.test(tile))) failures.push(`${id}: invalid correct discard`);
-  if (!tilePattern.test(question.dora || "")) failures.push(`${id}: invalid dora`);
+  if (!(question.sourceConditionsUnspecified === true && question.dora === null) && !tilePattern.test(question.dora || "")) failures.push(`${id}: invalid dora`);
   if (/[0-9一二三四五六七八九][萬万筒索]|<[^>]+>/.test(question.videoExplanation || "")) failures.push(`${id}: video explanation is not canonical`);
   if (!Array.isArray(question.melds) || question.melds.length !== question.meldCount) failures.push(`${id}: meldCount does not match melds`);
   for (const meld of question.melds || []) {
@@ -34,6 +34,7 @@ for (const id of ids) {
     }
   }
   const selectable = [...question.hand, ...(question.draw ? [question.draw] : [])];
+  if (question.correctDiscards.some(tile => !selectable.includes(tile))) failures.push(`${id}: correct discard is not selectable`);
   if (selectable.length !== 14 - 3 * (question.meldCount || 0)) failures.push(`${id}: concealed hand length is inconsistent`);
   const allTiles = [...selectable, ...(question.melds || []).flatMap((meld) => meld.tiles)];
   const counts = new Map();

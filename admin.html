@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#06110f">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png?v=58">
   <title>管理画面｜ずんだもん何切る</title>
   <style>
     :root {
@@ -620,7 +621,14 @@
         const drawRow = editor.querySelector(".draw-row"); drawRow.innerHTML = "";
         if (draft.draw) drawRow.append(tileButton(draft.draw, target?.kind === "draw", () => { target = { kind: "draw" }; redrawStructure(); }));
         else drawRow.textContent = "なし";
-        const doraRow = editor.querySelector(".dora-row"); doraRow.innerHTML = ""; doraRow.append(tileButton(draft.dora, target?.kind === "dora", () => { target = { kind: "dora" }; redrawStructure(); }));
+        const doraRow = editor.querySelector(".dora-row"); doraRow.innerHTML = "";
+        if (draft.dora) doraRow.append(tileButton(draft.dora, target?.kind === "dora", () => { target = { kind: "dora" }; redrawStructure(); }));
+        else {
+          const unspecified = document.createElement("button");
+          unspecified.type = "button"; unspecified.textContent = "原本で指定なし";
+          unspecified.addEventListener("click", () => { target = { kind: "dora" }; redrawStructure(); });
+          doraRow.append(unspecified);
+        }
         const meldEditor = editor.querySelector(".meld-editor"); meldEditor.innerHTML = "";
         draft.melds.forEach((meld, meldIndex) => {
           const row = document.createElement("div"); row.className = "meld-edit";
@@ -710,7 +718,7 @@
           draft.meldCount = draft.melds.length;
           const requiredHandCount = 14 - draft.melds.length * 3 - (draft.draw ? 1 : 0);
           if (draft.hand.length !== requiredHandCount) throw new Error(`手牌は${requiredHandCount}枚にしてください。`);
-          if (!draft.dora) throw new Error("ドラを選択してください。");
+          if (!draft.dora && !(draft.sourceConditionsUnspecified === true && draft.dora === null)) throw new Error("ドラを選択してください。");
           if (draft.correctDiscards.some(code => ![...draft.hand, draft.draw].includes(code))) throw new Error("手牌・ツモ牌にない正解打牌が選ばれています。");
           const saved = await api(question.isNew ? "/api/admin/questions" : `/api/admin/questions/${question.id}`, {
             method: question.isNew ? "POST" : "PUT",

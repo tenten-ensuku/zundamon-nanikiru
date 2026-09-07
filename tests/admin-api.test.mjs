@@ -566,7 +566,7 @@ test("question 66 shows the discard note and records a riichi choice", async () 
 
 test("question 166 reproduces the YouTube problem and grades north with riichi", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 167);
+  assert.equal(questions.filter(q => q.id <= 171).length, 167);
   const question = questions.find((item) => item.id === 166);
   assert.deepEqual(question.hand, [
     "2m", "3m", "4s", "4s", "5s", "5s", "6s", "6s", "7s", "8s", "4z", "4z", "4z",
@@ -596,7 +596,7 @@ test("question 166 reproduces the YouTube problem and grades north with riichi",
 
 test("question 167 reproduces both left-called chi melds and grades six man", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 167);
+  assert.equal(questions.filter(q => q.id <= 171).length, 167);
   const question = questions.find((item) => item.id === 167);
   assert.deepEqual(question.hand, [
     "5m", "0m", "6m", "7m", "7m", "7m", "7z", "7z",
@@ -622,7 +622,7 @@ test("question 167 reproduces both left-called chi melds and grades six man", as
 
 test("question 168 reproduces the YouTube hand and grades eight man", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 167);
+  assert.equal(questions.filter(q => q.id <= 171).length, 167);
   const question = questions.find((item) => item.id === 168);
   assert.deepEqual(question.hand, [
     "3m", "4m", "8m", "9m", "9m", "2p", "3p", "4p", "6p", "7p", "5s", "6s", "7s",
@@ -645,7 +645,7 @@ test("question 168 reproduces the YouTube hand and grades eight man", async () =
 
 test("three non-duplicate videos continue the beginner question set", async () => {
   const questions = JSON.parse(await readFile(path.resolve("public/questions.json"), "utf8"));
-  assert.equal(questions.length, 167);
+  assert.equal(questions.filter(q => q.id <= 171).length, 167);
   assert.equal(questions.some((question) => "course" in question), false);
   const added = questions.filter((question) => [169, 170, 171].includes(question.id));
   assert.deepEqual(added.map((question) => question.sourceUrl), [
@@ -720,7 +720,7 @@ test("every concealed quad offers kan as a standalone answer", async () => {
     }, new Map());
     return [...counts.values()].includes(4);
   });
-  assert.deepEqual(quadQuestions.map((question) => question.id), [52, 78, 79, 86, 97]);
+  assert.deepEqual(quadQuestions.filter(q => q.id <= 171).map((question) => question.id), [52, 78, 79, 86, 97]);
   for (const question of quadQuestions) {
     assert.equal(question.kanChoice, true);
   }

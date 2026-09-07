@@ -1,0 +1,7047 @@
+{
+  "version": 67,
+  "baseVersion": 66,
+  "baseCommit": "9f979d8bda0b173f96e001d87029338611c25840",
+  "playlists": [
+    "https://www.youtube.com/playlist?list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+    "https://www.youtube.com/playlist?list=PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+  ],
+  "uniqueVideos": 262,
+  "playlistOverlap": 134,
+  "existingVideoSources": 145,
+  "addedQuestionCount": 125,
+  "addedSourceVideoCount": 91,
+  "existingSummaries": [
+    {
+      "id": 17,
+      "videoId": "oVXo5YrpBNE",
+      "sourceUrl": "https://youtu.be/oVXo5YrpBNE",
+      "mappingApproved": true,
+      "videoExplanationSha256": "22c21c6e2c96c0284f072860e20c640c426c4506b8b63261657edfe1be89aa53",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
+    },
+    {
+      "id": 18,
+      "videoId": "8ovWjEWUhbA",
+      "sourceUrl": "https://youtu.be/8ovWjEWUhbA",
+      "mappingApproved": true,
+      "videoExplanationSha256": "933e77c55bed0ab0971fe917ea76035314c16b53b5a28375354022a973b73291",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    },
+    {
+      "id": 21,
+      "videoId": "VNERzjbKb8A",
+      "sourceUrl": "https://youtu.be/VNERzjbKb8A",
+      "mappingApproved": true,
+      "videoExplanationSha256": "354b26a21066d29f9657217bec13e5a459605a7345923c48a05e3a3e716641c8",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
+    },
+    {
+      "id": 24,
+      "videoId": "aV8L3ak_s7s",
+      "sourceUrl": "https://youtu.be/aV8L3ak_s7s",
+      "mappingApproved": true,
+      "videoExplanationSha256": "824f1e103e79a30e07d1a50a719c4c7b07e6167ba0abb06bd9a8deb3c9a09f86",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ]
+    },
+    {
+      "id": 36,
+      "videoId": "qt_1DUjy63o",
+      "sourceUrl": "https://youtu.be/qt_1DUjy63o",
+      "mappingApproved": true,
+      "videoExplanationSha256": "7786a9821b1aa66fc81321431251d26e86db63433800a6501dca1b39fca9b407",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        48,
+        54,
+        60,
+        66,
+        78,
+        84,
+        96
+      ]
+    },
+    {
+      "id": 37,
+      "videoId": "iuLhmHt0a04",
+      "sourceUrl": "https://youtu.be/iuLhmHt0a04",
+      "mappingApproved": true,
+      "videoExplanationSha256": "6f7598d4d53b6de42fd7495d88f01055aeb4f7813660b96c55f7ee6855bf25cb",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        30,
+        42,
+        54,
+        66,
+        78,
+        84,
+        90,
+        108
+      ]
+    },
+    {
+      "id": 40,
+      "videoId": "C5jtDHzzkEE",
+      "sourceUrl": "https://youtu.be/C5jtDHzzkEE",
+      "mappingApproved": true,
+      "videoExplanationSha256": "6ecdcca27d82357c658f966dc80da4a72e26a322d0958726cb5fb2af7c644b69",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72
+      ]
+    },
+    {
+      "id": 44,
+      "videoId": "vgvJP1nmnRI",
+      "sourceUrl": "https://youtu.be/vgvJP1nmnRI",
+      "mappingApproved": true,
+      "videoExplanationSha256": "32951d049087c6fcbc142dcf7daacaa805974830c63d5b9efa29b74593ed8fce",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        36,
+        42,
+        48,
+        60,
+        66,
+        78,
+        84
+      ]
+    },
+    {
+      "id": 47,
+      "videoId": "Q52ws6AV6Gw",
+      "sourceUrl": "https://youtu.be/Q52ws6AV6Gw",
+      "mappingApproved": true,
+      "videoExplanationSha256": "32fa313d3cbab1274217fcb44b2c30fdc9342e21578652fd404a17f3545f72a0",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        66
+      ]
+    },
+    {
+      "id": 48,
+      "videoId": "YM1KRURsx5w",
+      "sourceUrl": "https://youtu.be/YM1KRURsx5w",
+      "mappingApproved": true,
+      "videoExplanationSha256": "dfd0b7a9c450e3945a5f750dd373d659a66e38c1dda6b828cb2b37e45f6261d6",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    },
+    {
+      "id": 53,
+      "videoId": "_JUL-rsQ7Sw",
+      "sourceUrl": "https://youtu.be/_JUL-rsQ7Sw",
+      "mappingApproved": true,
+      "videoExplanationSha256": "fef5a0f6aadb0e08054aa6c373abed779d71ef5fdb683807be015918ed8cf463",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ]
+    },
+    {
+      "id": 57,
+      "videoId": "oO0j3xVXaE8",
+      "sourceUrl": "https://youtu.be/oO0j3xVXaE8",
+      "mappingApproved": true,
+      "videoExplanationSha256": "724c31e0f1ebe1a65e3fb7559bb7ab1b50125fb0568de5b896882024c73b859f",
+      "problemSeconds": [
+        3,
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72
+      ]
+    },
+    {
+      "id": 1,
+      "videoId": "fyPxbaLp_-Q",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "01655d997aaa7dc14cf631e1042383dc7b3f0920e9ee682704126984864a1e43",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
+    },
+    {
+      "id": 156,
+      "videoId": "H5Xvxd4nVUk",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "759ec34424974c1c8e300207a2146a6854ebec2f54b41d307f3d8f4778b1791c",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    },
+    {
+      "id": 157,
+      "videoId": "F_fi0wIpkbY",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "6433afc940d00df26c1b927b8c717af62828b131e7dcd44251076ace28330bec",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    },
+    {
+      "id": 158,
+      "videoId": "sOarGIID5n4",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "701be215ccffa0d0623e1e4d40a033ccaa1d5d2b740066eb2c5748461a97cd14",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    },
+    {
+      "id": 159,
+      "videoId": "A-WRDlb3k3s",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "596410ad1be7c1d05e5e65f16d837904ae69286d2d8eff7ef966c6c1869c24ba",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    },
+    {
+      "id": 160,
+      "videoId": "O1rH1niCclI",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "a9577fb8162d7679d5a436c0d9ba0a3cb36c34d685d0c737b7b7b6cdc006e4db",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ]
+    },
+    {
+      "id": 162,
+      "videoId": "ntcRIWEd7d0",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "842b6eb0a3ed890c2c9ac580453f9a5c098b06e812639f9bb0a15f3797c12612",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        24,
+        42
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
+    },
+    {
+      "id": 163,
+      "videoId": "VjOzvtUiKnU",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "0b7d71b8a977fa027f6120336b5a2d7a8593ef8c8fd880e3bd15443c26f5b52d",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        24
+      ],
+      "reasonSeconds": [
+        30,
+        36,
+        42,
+        48
+      ]
+    },
+    {
+      "id": 164,
+      "videoId": "959tnkZizvI",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "468d126766202fd3d10ccfc1c49865d719f2ea12b15e1480e474a282c4a05435",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        24
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
+    },
+    {
+      "id": 165,
+      "videoId": "tauwb2NiWq8",
+      "sourceUrl": null,
+      "mappingApproved": false,
+      "videoExplanationSha256": "7235908b2a2482af394499e1a2490cfc6c461debd7b8b6fdffb1565968e28c1b",
+      "problemSeconds": [
+        12
+      ],
+      "conclusionSeconds": [
+        24,
+        42
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ]
+    }
+  ],
+  "added": [
+    {
+      "id": 172,
+      "videoId": "YmpDPeQ7bDM",
+      "title": "平和ドラ1の手が役満3回分になるときとは？【初級～中級向け問題】",
+      "createdAt": "2023-02-16T00:00:00Z",
+      "sourceUrl": "https://youtu.be/YmpDPeQ7bDM?t=3",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        42,
+        48,
+        60
+      ],
+      "image": "/questions/question-172.png",
+      "imageSha256": "f3d5b38891eb0250de216c8ca863b67631c93346895028b7bcd7a1b88452388b",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "3p",
+        "5p",
+        "7p",
+        "8p",
+        "9p",
+        "6s",
+        "7s",
+        "8s",
+        "4z",
+        "4z"
+      ],
+      "draw": "4p",
+      "dora": "7p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 8,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4m"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanationSha256": "34ad93d5373809a7f9b06ddb4055d3118923579a661dd3f11f85473df577a3d1",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 173,
+      "videoId": "YmpDPeQ7bDM",
+      "title": "平和ドラ1の手が役満3回分になるときとは？【初級～中級向け問題】",
+      "createdAt": "2023-02-16T00:00:00Z",
+      "sourceUrl": "https://youtu.be/YmpDPeQ7bDM?t=72",
+      "sourceProblem": null,
+      "problemSeconds": 72,
+      "conclusionSeconds": [
+        78
+      ],
+      "reasonSeconds": [
+        84,
+        90,
+        96,
+        108,
+        132,
+        144,
+        156
+      ],
+      "image": "/questions/question-173.png",
+      "imageSha256": "0401ddff749ed72a983116bd3d463a930bd46e52791aec9a20b4076d2cff7971",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "3p",
+        "5p",
+        "7p",
+        "8p",
+        "9p",
+        "6s",
+        "7s",
+        "8s",
+        "4z",
+        "4z"
+      ],
+      "draw": "4p",
+      "dora": "7p",
+      "melds": [],
+      "round": "south4",
+      "seat": "west",
+      "turn": 8,
+      "honba": 0,
+      "points": 12700,
+      "correctDiscards": [
+        "4m"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": false,
+      "videoExplanationSha256": "7de5fee2d593af12474bebc4ddd34fbfbeaedb45e16dbcc9b34c162931850c92",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 174,
+      "videoId": "C9cIpVYSaD4",
+      "title": "昨日の解説の関連問題になっていますのでそちらもどうぞ【初級～中級向け問題】",
+      "createdAt": "2023-02-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/C9cIpVYSaD4",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-174.png",
+      "imageSha256": "9269d371b6a69efb4040463afbf578deb13928ffc8bc47b97ead28fce45b42fa",
+      "hand": [
+        "1m",
+        "1m",
+        "4m",
+        "5m",
+        "3p",
+        "0p",
+        "2s",
+        "3s",
+        "8s",
+        "9s",
+        "2z",
+        "2z",
+        "2z"
+      ],
+      "draw": "2s",
+      "dora": "5m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "8s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "91e0cca6459efe4d36a7cc5cb14de3d809ff79c7fedfcad5b4b53dc4bb56e973",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 175,
+      "videoId": "MFvLxCF6m2U",
+      "title": "【麻雀何切る1分解説】受け入れ枚数最大も正しいですけど、『手組み』はそれだけではないという問題です【初級～中級向け問題】",
+      "createdAt": "2022-11-23T00:00:00Z",
+      "sourceUrl": "https://youtu.be/MFvLxCF6m2U",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-175.png",
+      "imageSha256": "57d4c302f16bc8ae5d93e767e4ebfa70ab274b0fcd6bbcff3786a701d55cc802",
+      "hand": [
+        "2m",
+        "2m",
+        "8p",
+        "9p",
+        "1s",
+        "3s",
+        "3s",
+        "4s",
+        "6s",
+        "7s",
+        "8s",
+        "8s",
+        "9s"
+      ],
+      "draw": "7p",
+      "dora": "9p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "3s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "048746f3293d539fd28c7a8cf91a1c20cc7e9a94db02fc9ca097faa570376948",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 176,
+      "videoId": "m5k7QHBdgGw",
+      "title": "【麻雀何切る1分解説】常に一手先を想定する意識、持ってますか？【初級～中級向け問題】",
+      "createdAt": "2022-11-16T00:00:00Z",
+      "sourceUrl": "https://youtu.be/m5k7QHBdgGw",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        18,
+        24,
+        30,
+        42,
+        48
+      ],
+      "image": "/questions/question-176.png",
+      "imageSha256": "5ef0890b3baf4e56ef1cb3ca59b9b8274566e17e3b80c347af6289a081421538",
+      "hand": [
+        "3m",
+        "4m",
+        "6m",
+        "7m",
+        "4p",
+        "4p",
+        "4p",
+        "9p",
+        "9p",
+        "2s",
+        "5s",
+        "7s",
+        "9s"
+      ],
+      "draw": "2m",
+      "dora": "5s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "f671788fd91e6c305aea9dbeefe9ac17d39b56fe988c1499df1d74bfbc6b3495",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 177,
+      "videoId": "YMjlho87KhY",
+      "title": "【麻雀何切る1分解説】このペンチャン、どう見ます？【初級～中級向け問題】",
+      "createdAt": "2022-11-01T00:00:00Z",
+      "sourceUrl": "https://youtu.be/YMjlho87KhY",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        48
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-177.png",
+      "imageSha256": "164664c173b46968f8db3ab9596bb51f6ee0fdf50a3f5594055172e780c726be",
+      "hand": [
+        "1m",
+        "2m",
+        "6m",
+        "7m",
+        "2p",
+        "3p",
+        "7p",
+        "3s",
+        "6s",
+        "9s",
+        "9s",
+        "2z",
+        "2z"
+      ],
+      "draw": "9s",
+      "dora": "7m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 4,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "7p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "b8d7b77b885934a6a0af871aa7a325d34291c227adbede6cfc454a36d78f3227",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 178,
+      "videoId": "Z9TEDKTdvnk",
+      "title": "【麻雀何切る1分解説】モロヒ＝リーチ宣言牌の筋で待つこと！【初級～中級向け問題】",
+      "createdAt": "2022-10-22T00:00:00Z",
+      "sourceUrl": "https://youtu.be/Z9TEDKTdvnk",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-178.png",
+      "imageSha256": "47015692df5d0f8357fe86c64e026665e4c2afa36b93e47cd01b594ff1b388c6",
+      "hand": [
+        "9m",
+        "9m",
+        "1p",
+        "3p",
+        "5p",
+        "0p",
+        "6p",
+        "7p",
+        "4s",
+        "5s",
+        "6s",
+        "7s",
+        "8s"
+      ],
+      "draw": "9s",
+      "dora": "4s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "5p"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanationSha256": "5994f85f93f99233979b98cbf514c65db8ecbf3492362ba60fe1e71a2e38af31",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 179,
+      "videoId": "Y41aBf0ecxU",
+      "title": "【麻雀何切る1分解説】3マンとか引いてほしかった牌姿ですね【初級～中級向け問題】",
+      "createdAt": "2022-10-17T00:00:00Z",
+      "sourceUrl": "https://youtu.be/Y41aBf0ecxU",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-179.png",
+      "imageSha256": "0589823f9223612e71802aef36d8c46803cc517d2541294c78540f9b20716679",
+      "hand": [
+        "2m",
+        "4m",
+        "0m",
+        "6m",
+        "9m",
+        "9m",
+        "5p",
+        "7p",
+        "8p",
+        "9p",
+        "3s",
+        "4s",
+        "0s"
+      ],
+      "draw": "1m",
+      "dora": "1s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 9,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "5p"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanationSha256": "b7900ef5896d15e887e748a3be08a560a9dcbb0fa95a07b5fa7a9efb2b38c0d3",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 180,
+      "videoId": "gkw4i-sa1xw",
+      "title": "【麻雀何切る1分解説】答えは3つ！！？深く考えずにご覧いただけたら幸いです【雀士～雀傑】",
+      "createdAt": "2022-10-15T00:00:00Z",
+      "sourceUrl": "https://youtu.be/gkw4i-sa1xw",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        36
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-180.png",
+      "imageSha256": "1455043d7072c9eb24f944590d4edf15bcb712a9080ad5be82934aba04480ea0",
+      "hand": [
+        "1m",
+        "2m",
+        "2m",
+        "3m",
+        "3m",
+        "4m",
+        "8p",
+        "8p",
+        "2s",
+        "4s",
+        "6s",
+        "9s",
+        "9s"
+      ],
+      "draw": "6p",
+      "dora": "2m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2s",
+        "8p",
+        "6s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "1080ce1db3aa2ac2d33f6ddeef34eabe56cf12dfafd04885bce88e12063ea089",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 181,
+      "videoId": "bJ9d4GUkpPE",
+      "title": "【麻雀何切る1分解説】聴牌しました！最後の仕上げは？【初心者必見】",
+      "createdAt": "2022-09-02T00:00:00Z",
+      "sourceUrl": "https://youtu.be/bJ9d4GUkpPE",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        42
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-181.png",
+      "imageSha256": "4ab080f97dac132198260e185f5384c61433c28d27e0848571564fd48e49f6cf",
+      "hand": [
+        "2m",
+        "3m",
+        "2p",
+        "2p",
+        "3p",
+        "4p",
+        "4p",
+        "5p",
+        "0s",
+        "6s",
+        "7s",
+        "9s",
+        "9s"
+      ],
+      "draw": "4m",
+      "dora": "7s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 8,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2p"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanationSha256": "1c5cb70ce9f22593aadd19db46c080778da24de96a900cbda9f520707fb07bcf",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 182,
+      "videoId": "NK2RuiiFYH4",
+      "title": "【中級者向け？】ペンチャンの比較、この場合なら？",
+      "createdAt": "2022-08-28T00:00:00Z",
+      "sourceUrl": "https://youtu.be/NK2RuiiFYH4",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-182.png",
+      "imageSha256": "c5677d35a2a095ac97f9a551d7a14c792d654ea7a9e10daaabebfcc468b5168a",
+      "hand": [
+        "1m",
+        "2m",
+        "4m",
+        "5m",
+        "6m",
+        "1p",
+        "2p",
+        "7p",
+        "5s",
+        "6s",
+        "7s",
+        "9s",
+        "9s"
+      ],
+      "draw": "8p",
+      "dora": "9s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "1m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "27cc6ec397bae26144c72be6fd0bfd29261dca71877ff1084a95b60238d27d65",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 183,
+      "videoId": "KT6HnQWbNTo",
+      "title": "【トップを】ピンチとチャンスは表裏一体【取るために】",
+      "createdAt": "2022-08-14T00:00:00Z",
+      "sourceUrl": "https://youtu.be/KT6HnQWbNTo",
+      "sourceProblem": null,
+      "problemSeconds": 12,
+      "conclusionSeconds": [
+        24,
+        36,
+        48
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-183.png",
+      "imageSha256": "926342fb50785ec1884dac56c9ca73ee631640789bdcdc2ed99a9e89b5b7e082",
+      "hand": [
+        "3m",
+        "3m",
+        "1p",
+        "1p",
+        "8p",
+        "9p",
+        "4s",
+        "5s",
+        "0s",
+        "6s",
+        "6s",
+        "7s",
+        "3z"
+      ],
+      "draw": "7p",
+      "dora": "5z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "3z"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanationSha256": "0215976d6c4f4550cef747bb3bfd7bb73fec0eb3c0d4ceee7e6fe77e81c690ee",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 184,
+      "videoId": "F_9a7-wUh6o",
+      "title": "【初心者必修】上がり率UPの打牌を学ぼう！",
+      "createdAt": "2022-08-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/F_9a7-wUh6o",
+      "sourceProblem": null,
+      "problemSeconds": 12,
+      "conclusionSeconds": [
+        24,
+        42
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-184.png",
+      "imageSha256": "30a05e6ea41bf3ad83635477111f2ed28e6af61dc1076eb155709995177e5e79",
+      "hand": [
+        "3m",
+        "3m",
+        "4m",
+        "1p",
+        "1p",
+        "3p",
+        "7p",
+        "8p",
+        "4s",
+        "4s",
+        "7s",
+        "8s",
+        "9s"
+      ],
+      "draw": "5s",
+      "dora": "4m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "3p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "4bd9eedea773523a9e370c5dceec837629308211bfa546333a1dd4a1df1fd284",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 185,
+      "videoId": "alJySGX9JI8",
+      "title": "「最近やった問題」とありますが、一年前の投稿と同じという意味です【初級～中級向け問題】",
+      "createdAt": "2024-02-29T00:00:00Z",
+      "sourceUrl": "https://youtu.be/alJySGX9JI8",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72
+      ],
+      "image": "/questions/question-185.png",
+      "imageSha256": "8d49392692c7aaf73d597157b3fe366eb0b52190fe22f82c982d511886f8eb64",
+      "hand": [
+        "4m",
+        "4m",
+        "5m",
+        "3p",
+        "4p",
+        "5p",
+        "7p",
+        "8p",
+        "3s",
+        "3s",
+        "5s",
+        "6s",
+        "6s"
+      ],
+      "draw": "9p",
+      "dora": "9p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "5398295f1f8b05569d1988086a09fbd4b773b4ae92133a195ebe3e3e872686d5",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 186,
+      "videoId": "o6is2_ERCMk",
+      "title": "【麻雀何切る2分解説】形が決まったから安全度を考えて…??【初級～中級向け問題】",
+      "createdAt": "2024-01-15T00:00:00Z",
+      "sourceUrl": "https://youtu.be/o6is2_ERCMk",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        42,
+        48,
+        54,
+        60,
+        66,
+        78,
+        84,
+        96,
+        102,
+        114
+      ],
+      "image": "/questions/question-186.png",
+      "imageSha256": "40d9bb962659c2ce607ef034540a2efa201f2c9f77653b521a97edbea0c3cb9f",
+      "hand": [
+        "1m",
+        "3m",
+        "4m",
+        "4m",
+        "4m",
+        "6m",
+        "6m",
+        "7m",
+        "9m",
+        "4p",
+        "5p",
+        "6s",
+        "7s"
+      ],
+      "draw": "2m",
+      "dora": "4p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "9m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "d0a3bef0dab60cc0cc9ce5fa1d0dd4167f3937c4898e0512d3777562c14b582c",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 187,
+      "videoId": "2zS7ogdnDXM",
+      "title": "視野を広くして考えてみましょう！【初級～中級向け問題】",
+      "createdAt": "2023-03-20T00:00:00Z",
+      "sourceUrl": "https://youtu.be/2zS7ogdnDXM",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-187.png",
+      "imageSha256": "e37b74aafb8583090e60346f03ab748940ca72a74705e6180eacc01223fb3d42",
+      "hand": [
+        "1m",
+        "2m",
+        "4m",
+        "5m",
+        "5m",
+        "2p",
+        "3p",
+        "4p",
+        "8p",
+        "9p",
+        "2s",
+        "4s",
+        "4s"
+      ],
+      "draw": "7p",
+      "dora": "9p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "935dc97105f5e137134b1adadf7493601795bfb2ff2fb1cfddfb9068f2b7f333",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 188,
+      "videoId": "lhBFzVkPI6M",
+      "title": "聴牌時に気がついても手遅れですよ！【初級～中級向け問題】",
+      "createdAt": "2023-03-13T00:00:00Z",
+      "sourceUrl": "https://youtu.be/lhBFzVkPI6M",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        54
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        66
+      ],
+      "image": "/questions/question-188.png",
+      "imageSha256": "1ef4be4050103caba35299d31f6cde072d3e5d847af81ba0026e59b7bbad04b2",
+      "hand": [
+        "6m",
+        "7m",
+        "6p",
+        "7p",
+        "2s",
+        "3s",
+        "5s",
+        "6s",
+        "7s",
+        "7s",
+        "8s",
+        "2z",
+        "2z"
+      ],
+      "draw": "8p",
+      "dora": "2m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "7s",
+        "5s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "c61c9af158f2cd9e315ea4173e2736b7873cdb41ac4d44b4100a889776d6024b",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 189,
+      "videoId": "a7u1L7mfTgo",
+      "title": "だいぶ困った牌姿、腕を発揮してみましょう！【初級～中級向け問題】",
+      "createdAt": "2023-03-10T00:00:00Z",
+      "sourceUrl": "https://youtu.be/a7u1L7mfTgo",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-189.png",
+      "imageSha256": "07d7cc961a6414942f38d8146f56d2841d2d0be76e422fbc84fdcc7b69d3f3a8",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "4m",
+        "6m",
+        "8m",
+        "8m",
+        "4p",
+        "1s",
+        "2s",
+        "3s",
+        "6s",
+        "8s"
+      ],
+      "draw": "7s",
+      "dora": "3m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "36e385ce8c493b753d5ce7cc0827eb11046c5e27de33073fe32e4915921fa408",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 190,
+      "videoId": "x8f60GbNEqI",
+      "title": "2つの理由、きっちり当ててみましょう！【初級～中級向け問題】",
+      "createdAt": "2023-03-08T00:00:00Z",
+      "sourceUrl": "https://youtu.be/x8f60GbNEqI",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-190.png",
+      "imageSha256": "fe8b0e9816b02e24f2fed9f592bbc799986965b2be81cae1b846849e6156349c",
+      "hand": [
+        "2m",
+        "4m",
+        "5m",
+        "6m",
+        "7m",
+        "2p",
+        "3p",
+        "4p",
+        "5p",
+        "6p",
+        "6p",
+        "2s",
+        "3s"
+      ],
+      "draw": "6m",
+      "dora": "3s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "5p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "db372655825cbe191364d434c0b321cc314a2f6225e72f60701cf432a723cd1a",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 191,
+      "videoId": "DgX6_N4q6pc",
+      "title": "一盃口、どうしましょう？【初級～中級向け問題】",
+      "createdAt": "2023-03-06T00:00:00Z",
+      "sourceUrl": "https://youtu.be/DgX6_N4q6pc",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "image": "/questions/question-191.png",
+      "imageSha256": "53b552eabd6167c053ce32cd348753d08659e98903e61c26e139ec48a7f07f34",
+      "hand": [
+        "6m",
+        "7m",
+        "4p",
+        "4p",
+        "5p",
+        "0p",
+        "6p",
+        "3s",
+        "4s",
+        "0s",
+        "7s",
+        "9s",
+        "9s"
+      ],
+      "draw": "6s",
+      "dora": "7m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "5p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "0a78948542705bbcba514fb466c5834ab37dbb3a63d1237377e514ba9f5406cd",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 192,
+      "videoId": "qOaCPTJ1He8",
+      "title": "受け入れ枚数はもちろん大事。ですが、今回注目すべきは……！【初級～中級向け問題】",
+      "createdAt": "2023-03-09T00:00:00Z",
+      "sourceUrl": "https://youtu.be/qOaCPTJ1He8",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-192.png",
+      "imageSha256": "ed00a6bd117d41ef565f190a36c6ef3728a571efe96fbc7a31f42e22502325d2",
+      "hand": [
+        "1m",
+        "1m",
+        "7m",
+        "9m",
+        "3p",
+        "4p",
+        "4p",
+        "5p",
+        "6p",
+        "6p",
+        "7p",
+        "2s",
+        "4s"
+      ],
+      "draw": "8m",
+      "dora": "9m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "f1bdae3fc468afc4f3950e7425e1ee69fb67618e6563081af769695ebcd861c8",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 193,
+      "videoId": "V0L9XlPrQpc",
+      "title": "普段あまり取り扱わないテーマです【初級～中級向け問題】",
+      "createdAt": "2023-03-05T00:00:00Z",
+      "sourceUrl": "https://youtu.be/V0L9XlPrQpc",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-193.png",
+      "imageSha256": "128597006fb125f19e9c6db91754ef1e9fdcd7de4b6cfa4f656a7d51948b1cbe",
+      "hand": [
+        "5m",
+        "7m",
+        "3p",
+        "5p",
+        "7p",
+        "8p",
+        "8p",
+        "8p",
+        "1s",
+        "3s",
+        "9s",
+        "9s",
+        "9s"
+      ],
+      "draw": "6m",
+      "dora": "3p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "1s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "bbeb5b3597121939b82f5045f1ed542c2ffb184e7538d347775e151638c13aa6",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 194,
+      "videoId": "PMXTRpPlm1c",
+      "title": "リーの部分は発声していないのでセーフです【初級～中級向け問題】",
+      "createdAt": "2023-03-03T00:00:00Z",
+      "sourceUrl": "https://youtu.be/PMXTRpPlm1c",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        72
+      ],
+      "image": "/questions/question-194.png",
+      "imageSha256": "342ebe35434ed0957a73aadde2ffe4a2ba51e9b751de664b5743ee1536afd61f",
+      "hand": [
+        "2m",
+        "3m",
+        "4m",
+        "6m",
+        "8m",
+        "3p",
+        "3p",
+        "3p",
+        "4p",
+        "5p",
+        "6p",
+        "6p",
+        "6s"
+      ],
+      "draw": "7m",
+      "dora": "8m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "6p"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": false,
+      "videoExplanationSha256": "bfdab0ccbfe3a8e63b968154176426df034b752bd39a5f0d5939f4c934063a65",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 195,
+      "videoId": "K2mAtm7vlus",
+      "title": "ただ落とすだけではなく他のことにも注意を払いましょう！【初級～中級向け問題】",
+      "createdAt": "2023-03-02T00:00:00Z",
+      "sourceUrl": "https://youtu.be/K2mAtm7vlus",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        72
+      ],
+      "image": "/questions/question-195.png",
+      "imageSha256": "0fb1dadbbde353f04e42faf437b12a9df64885da505792af856495283a9ad063",
+      "hand": [
+        "5m",
+        "6m",
+        "6m",
+        "7m",
+        "8m",
+        "3p",
+        "4p",
+        "2s",
+        "4s",
+        "6s",
+        "7s",
+        "7z",
+        "7z"
+      ],
+      "draw": "3s",
+      "dora": "4p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "6m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "11daa1ce32fb9bb2e7b86cb073e77edd1a2de51376f0dba16766587071cd95d0",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 196,
+      "videoId": "tYqqSvaVX2g",
+      "title": "明らかに難しい問題ですね。ずんだもんのセリフをヒントに解いてみましょう！【中級向け問題】",
+      "createdAt": "2023-02-28T00:00:00Z",
+      "sourceUrl": "https://youtu.be/tYqqSvaVX2g",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-196.png",
+      "imageSha256": "0bc74ffde57caf8924c621ea8110885baef4271268b66172cf004dc805462ce6",
+      "hand": [
+        "8m",
+        "3p",
+        "4p",
+        "4p",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "7p",
+        "8p",
+        "3s",
+        "3s",
+        "4s"
+      ],
+      "draw": "7m",
+      "dora": "8m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "07ce92b7a9a46d57338b3cedc8cc19d47bb0fb3b326e74179277587c26689475",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 197,
+      "videoId": "ffhIwmmFPy4",
+      "title": "特に満貫ある場合には重要な考え方です。普段から意識していますか？【初級～中級向け問題】",
+      "createdAt": "2023-02-25T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ffhIwmmFPy4",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60
+      ],
+      "image": "/questions/question-197.png",
+      "imageSha256": "9d6fe52cf7e8673479e9917e08f1a317109778e6d063ede8a0dd35927aa08e3c",
+      "hand": [
+        "4m",
+        "0m",
+        "6m",
+        "7m",
+        "1p",
+        "1p",
+        "7p",
+        "3s",
+        "3s",
+        "4s",
+        "6s",
+        "7s",
+        "8s"
+      ],
+      "draw": "7p",
+      "dora": "7p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "3s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "3f5a59e9775194a1dd978e8aad158c364c1d2acf2234ce16fe05b599cac4c119",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 198,
+      "videoId": "Key9P4GY0LY",
+      "title": "完全に浮いている7マン切り？変なくっつき方をしてる3ｐ切り？【初級～中級向け問題】",
+      "createdAt": "2023-02-27T00:00:00Z",
+      "sourceUrl": "https://youtu.be/Key9P4GY0LY",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66
+      ],
+      "image": "/questions/question-198.png",
+      "imageSha256": "aaffbc0e9c99033a6ed11eb428f3cdc0ccc79ab94a3b9bae92ba604a57878271",
+      "hand": [
+        "3m",
+        "4m",
+        "7m",
+        "3p",
+        "5p",
+        "6p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "9p",
+        "1s",
+        "3s"
+      ],
+      "draw": "2s",
+      "dora": "1s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "7m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "dbda74d44534506bfdced24764cb28279070dbe92bb1f88b19f7af6e358b03f0",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 199,
+      "videoId": "twuKO44Ambo",
+      "title": "最高のツモと微妙なツモ、どちらも認識しておきましょう！【初級～中級向け問題】",
+      "createdAt": "2023-02-20T00:00:00Z",
+      "sourceUrl": "https://youtu.be/twuKO44Ambo",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        72
+      ],
+      "image": "/questions/question-199.png",
+      "imageSha256": "e3494f6a476332a931fdfbd172fdfcf1f6d99ba8a7f9c6d39cca55c82c74f270",
+      "hand": [
+        "2m",
+        "3m",
+        "1p",
+        "3p",
+        "4p",
+        "5p",
+        "6p",
+        "8p",
+        "1s",
+        "2s",
+        "3s",
+        "3s",
+        "4s"
+      ],
+      "draw": "1m",
+      "dora": "3m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "8p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "f52d9507e8c5998b9abcdb270439b46ed9e4b7522e2ee8255e2847e21b4d673a",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 200,
+      "videoId": "Eww7heaCyJY",
+      "title": "安全牌問題、東1局ですがどうしましょう？【初級～中級向け問題】",
+      "createdAt": "2023-02-19T00:00:00Z",
+      "sourceUrl": "https://youtu.be/Eww7heaCyJY",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        90
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        102,
+        108,
+        114
+      ],
+      "image": "/questions/question-200.png",
+      "imageSha256": "da07c816fe4887e410e57767b78572c88525d42d005aa29d7452ae70557c32f2",
+      "hand": [
+        "1m",
+        "2m",
+        "3m",
+        "7m",
+        "8m",
+        "9m",
+        "5p",
+        "5p",
+        "5p",
+        "6p",
+        "8p",
+        "4s",
+        "5s"
+      ],
+      "draw": "4z",
+      "dora": "9m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "8p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "5cbe9031d33bd602c22b595eb3b319048d439fca72f38fb9ab4c6094cbdce960",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 201,
+      "videoId": "QWjTmew3TII",
+      "title": "この形、最近見たような…？【初級～中級向け問題】",
+      "createdAt": "2023-02-10T00:00:00Z",
+      "sourceUrl": "https://youtu.be/QWjTmew3TII",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "image": "/questions/question-201.png",
+      "imageSha256": "f49c03e921eb6dc613c3c58076c7ad37858c5bb4ac35258f25069147dd816f7b",
+      "hand": [
+        "2m",
+        "2m",
+        "4m",
+        "2p",
+        "4p",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "9p",
+        "7s",
+        "8s"
+      ],
+      "draw": "9p",
+      "dora": "8s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "515260c4a3210a158dae6923c8ccdc609caa9ce9465e055acf72f1f05e9f0957",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 202,
+      "videoId": "-l14p-fXyE0",
+      "title": "たまーにあるチャンス、逃さないようにしましょう！【初級～中級向け問題】",
+      "createdAt": "2023-02-08T00:00:00Z",
+      "sourceUrl": "https://youtu.be/-l14p-fXyE0",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72
+      ],
+      "image": "/questions/question-202.png",
+      "imageSha256": "ad11ca57b1720ec9c86e0d89e02013320aada659331f56c456678e798e98e9cd",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "4m",
+        "5m",
+        "5m",
+        "6m",
+        "6m",
+        "7m",
+        "7p",
+        "9p",
+        "9s",
+        "9s"
+      ],
+      "draw": "8p",
+      "dora": "3p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 3,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "7m"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanationSha256": "4927e096b6d58c51fd9a4989904f0ba60d0632cfcc9cf2bd00b01a209c24f2e3",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 203,
+      "videoId": "XymmpJ3aUS4",
+      "title": "このチャンネルでも何度か扱っている形、見抜いてみましょう！【初級～中級向け問題】",
+      "createdAt": "2023-02-05T00:00:00Z",
+      "sourceUrl": "https://youtu.be/XymmpJ3aUS4",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        54,
+        60,
+        66,
+        78,
+        84
+      ],
+      "image": "/questions/question-203.png",
+      "imageSha256": "b4f0ef164a9748c1de1da4d68d946562ab6399f4904936521b4f124d51349a5d",
+      "hand": [
+        "4m",
+        "4m",
+        "5m",
+        "6m",
+        "6m",
+        "7m",
+        "8m",
+        "9m",
+        "1p",
+        "1p",
+        "2p",
+        "6s",
+        "7s"
+      ],
+      "draw": "9m",
+      "dora": "7s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "2p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "c9ba4988cdf48c1f3f85fee17988184f2179b032f496b5fe427a499db79f4cd4",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 204,
+      "videoId": "lo2NtxwbOmI",
+      "title": "ちょっとわかりにくい不要牌を探してみましょう！【初級～中級向け問題】",
+      "createdAt": "2023-02-04T00:00:00Z",
+      "sourceUrl": "https://youtu.be/lo2NtxwbOmI",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66
+      ],
+      "image": "/questions/question-204.png",
+      "imageSha256": "d9b85014dff32688f023849c424035904cbb10a2170289af455f5c3342f6757c",
+      "hand": [
+        "1m",
+        "2m",
+        "2m",
+        "2m",
+        "5m",
+        "4p",
+        "5p",
+        "0p",
+        "6p",
+        "7p",
+        "8p",
+        "9p",
+        "9p"
+      ],
+      "draw": "6m",
+      "dora": "5m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "5p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "2e1cd2ccb8f0c967f6d884d09cb4f5ea92abc4e32e70e9c1c0d089ed34c1c1cf",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 205,
+      "videoId": "T9uasSeju3Y",
+      "title": "1つめの理由はよく見るものですが、2つめの理由は何でしょう？【初級～中級向け問題】",
+      "createdAt": "2023-02-03T00:00:00Z",
+      "sourceUrl": "https://youtu.be/T9uasSeju3Y",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66
+      ],
+      "image": "/questions/question-205.png",
+      "imageSha256": "4f7f8d7c48bd137dc55eafac81972e2670748f1d79362afbd912a8c71f971bb6",
+      "hand": [
+        "3p",
+        "3p",
+        "4p",
+        "0p",
+        "6p",
+        "6p",
+        "7p",
+        "2s",
+        "3s",
+        "3s",
+        "3s",
+        "4s",
+        "0s"
+      ],
+      "draw": "7p",
+      "dora": "2m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "1f5ceb748ef9dbd059da9f2bbe5c2db4e3011932ffbbdc41c4b8938c4d2ec6ed",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 206,
+      "videoId": "92C-0oPgeYU",
+      "title": "一手先の想定が実戦では大きな差になりますよ！【初級～中級向け問題】",
+      "createdAt": "2023-02-02T00:00:00Z",
+      "sourceUrl": "https://youtu.be/92C-0oPgeYU",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66
+      ],
+      "image": "/questions/question-206.png",
+      "imageSha256": "c030a1caf7ace539b60a4056c74670fe79c3e00a20bd57f257929f6246b86b6e",
+      "hand": [
+        "5m",
+        "6m",
+        "6m",
+        "6m",
+        "7m",
+        "8m",
+        "3p",
+        "4p",
+        "7p",
+        "7p",
+        "8p",
+        "3s",
+        "4s"
+      ],
+      "draw": "2p",
+      "dora": "3p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "8p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "3694678cdb73c0a55a3a3921fd4c1d012d85c223c67a2a55e9f7c5184d414ed3",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 207,
+      "videoId": "PdzE7SPwGuA",
+      "title": "昨日の注釈についての問題です。さり気なく選択できると格好いいですよ【初級～中級向け問題】",
+      "createdAt": "2023-02-07T00:00:00Z",
+      "sourceUrl": "https://youtu.be/PdzE7SPwGuA?t=3",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36
+      ],
+      "image": "/questions/question-207.png",
+      "imageSha256": "9c4e56702f6dbbf23be1e1e5bc88f2511e12faa55c068fe1fbfe034ca40ebc92",
+      "hand": [
+        "2m",
+        "3m",
+        "4m",
+        "4m",
+        "6m",
+        "7m",
+        "7m",
+        "7p",
+        "8p",
+        "9p",
+        "6s",
+        "7s",
+        "7s"
+      ],
+      "draw": "1m",
+      "dora": "9p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "7s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "4f8c0fe4fc8e98b3b15005142d07f893533472e197463801e0310ac5497b5289",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 208,
+      "videoId": "PdzE7SPwGuA",
+      "title": "昨日の注釈についての問題です。さり気なく選択できると格好いいですよ【初級～中級向け問題】",
+      "createdAt": "2023-02-07T00:00:00Z",
+      "sourceUrl": "https://youtu.be/PdzE7SPwGuA?t=42",
+      "sourceProblem": null,
+      "problemSeconds": 42,
+      "conclusionSeconds": [
+        54
+      ],
+      "reasonSeconds": [
+        60,
+        66
+      ],
+      "image": "/questions/question-208.png",
+      "imageSha256": "b252c151f4c37fd6929f228e7770fb1a72d0b7a2dcb3f872e54ea78ac514fbed",
+      "hand": [
+        "6m",
+        "7m",
+        "3p",
+        "3p",
+        "4p",
+        "3s",
+        "3s",
+        "4s",
+        "6s",
+        "6s",
+        "7s",
+        "8s",
+        "9s"
+      ],
+      "draw": "5m",
+      "dora": "7m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "3p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "5cfa0704f6c154919156796cd2c640176d5be42a3c0e6ab72274a32fef89aa91",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 209,
+      "videoId": "1XrXCXEYnys",
+      "title": "形で選んでもＯＫ!具体的な嬉しいツモとは？【初級～中級向け問題】",
+      "createdAt": "2023-02-06T00:00:00Z",
+      "sourceUrl": "https://youtu.be/1XrXCXEYnys",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72
+      ],
+      "image": "/questions/question-209.png",
+      "imageSha256": "374cf62a1edc8b19a54fa6d9693b75de178070a41f977df5c97fce1a6eaecf91",
+      "hand": [
+        "2m",
+        "3m",
+        "4m",
+        "4m",
+        "6m",
+        "7m",
+        "7m",
+        "7p",
+        "9p",
+        "4s",
+        "6s",
+        "7s",
+        "7s"
+      ],
+      "draw": "8p",
+      "dora": "9p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "483dcadd9a7f444bb3ef452cca939a2cc67c0007fd7505ad6bde5c4286e4755d",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 210,
+      "videoId": "SlaH3oh3Pjk",
+      "title": "喜んで2ｍを切っている人はまさかいませんよね？？【初級～中級向け問題】",
+      "createdAt": "2023-02-01T00:00:00Z",
+      "sourceUrl": "https://youtu.be/SlaH3oh3Pjk",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        96
+      ],
+      "image": "/questions/question-210.png",
+      "imageSha256": "38cf4a9624af767c6e1602963ec1ec0d38a0d333909426c22ae791b8982cfb73",
+      "hand": [
+        "2m",
+        "7m",
+        "8m",
+        "1p",
+        "3p",
+        "4p",
+        "5p",
+        "7p",
+        "6s",
+        "6s",
+        "2z",
+        "2z",
+        "2z"
+      ],
+      "draw": "8m",
+      "dora": "6s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "1p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "9321678c7164bba73e8b81f43717705bbbe6bc41859a1684a856ef8501476ba8",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 211,
+      "videoId": "kfXEOXTXXBU",
+      "title": "役バック不発時の緊急対処方法、今回の場合は？【中級向け問題】",
+      "createdAt": "2023-01-30T00:00:00Z",
+      "sourceUrl": "https://youtu.be/kfXEOXTXXBU",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60
+      ],
+      "image": "/questions/question-211.png",
+      "imageSha256": "5d3fc0098a2f7e13088820e22e55a607f78853ceffb34724845c065b9f8b771f",
+      "hand": [
+        "3m",
+        "4m",
+        "5m",
+        "5p",
+        "6p",
+        "7p",
+        "8p",
+        "8p",
+        "7z",
+        "7z"
+      ],
+      "draw": "8p",
+      "dora": "9s",
+      "melds": [
+        {
+          "type": "pon",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "9s",
+            "9s",
+            "9s"
+          ]
+        }
+      ],
+      "round": "east1",
+      "seat": "west",
+      "turn": 8,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "6p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "4b8d936358c47385743fe6b78a956ed924d887eb273e744399d74f3bdbf93b90",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 212,
+      "videoId": "tePrOPqWsVQ",
+      "title": "ブロック数に関する問題、この考え方をあなたはお持ちですか？【初級～中級向け問題】",
+      "createdAt": "2023-01-27T00:00:00Z",
+      "sourceUrl": "https://youtu.be/tePrOPqWsVQ",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66
+      ],
+      "image": "/questions/question-212.png",
+      "imageSha256": "1c89b681c925670c24e19b781e1b881479c47eb5ba67d23583fc44917893c5cf",
+      "hand": [
+        "2m",
+        "2m",
+        "3m",
+        "2p",
+        "3p",
+        "7p",
+        "8p",
+        "1s",
+        "1s",
+        "4s",
+        "6s",
+        "8s",
+        "8s"
+      ],
+      "draw": "4p",
+      "dora": "1s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "2m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "b47ec678d698df9f4f08bae3a1ecaecc09ba044edff70a0ae2453cd5d576dada",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 213,
+      "videoId": "781mv9KODPs",
+      "title": "中級者なら一瞬で捌ける形、何を切りますか？【初級～中級向け問題】",
+      "createdAt": "2023-01-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/781mv9KODPs",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66
+      ],
+      "image": "/questions/question-213.png",
+      "imageSha256": "b4b067eef2d8e80a94a17b78b69ae86c2e77f087b0c3a392c83c897a3440ba27",
+      "hand": [
+        "2p",
+        "3p",
+        "5p",
+        "7p",
+        "7p",
+        "8p",
+        "3s",
+        "3s",
+        "4s",
+        "6s",
+        "7s",
+        "9s",
+        "9s"
+      ],
+      "draw": "9p",
+      "dora": "7p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "6s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "bc3a5665c4bf6b2b4f2c1814b0f65b79dc046f004715624553548ee3d65e3180",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 214,
+      "videoId": "uv64jtVse3A",
+      "title": "チャンス手をきっちりあがりきってこそ、勝利をつかむことができます【初級～中級向け問題】",
+      "createdAt": "2023-01-24T00:00:00Z",
+      "sourceUrl": "https://youtu.be/uv64jtVse3A",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        54,
+        60,
+        66,
+        72
+      ],
+      "image": "/questions/question-214.png",
+      "imageSha256": "d77de7f08690d0b1ed6b5f0377f8b710710ba495e690386b4529bab4ae0e6534",
+      "hand": [
+        "6m",
+        "6m",
+        "7m",
+        "4p",
+        "6p",
+        "6p",
+        "3s",
+        "4s",
+        "4s",
+        "5s",
+        "9s",
+        "9s",
+        "9s"
+      ],
+      "draw": "5p",
+      "dora": "9s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "7m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "e68e0a84ea6bc4d3e60cbf8048cf7fd64b656bca3ede6febf8d1eb3f1f382b58",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 215,
+      "videoId": "6o68Wsq9TmY",
+      "title": "568を残す条件、あなたはご存知ですか？【初級～中級向け問題】",
+      "createdAt": "2023-01-23T00:00:00Z",
+      "sourceUrl": "https://youtu.be/6o68Wsq9TmY",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60
+      ],
+      "image": "/questions/question-215.png",
+      "imageSha256": "c8b7e19dfa1ef6e683ea4d685bcd63495013dc409f9b477d777192c00f7dd574",
+      "hand": [
+        "1m",
+        "2m",
+        "3m",
+        "4m",
+        "8m",
+        "5p",
+        "6p",
+        "8p",
+        "7s",
+        "9s",
+        "2z",
+        "2z",
+        "2z"
+      ],
+      "draw": "8s",
+      "dora": "2z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "8m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "12fb84aa78e6ba92bdb79ecbf9220097c1ffb2bd52b948593c5293af73f549a1",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 216,
+      "videoId": "8Fdst5_WtIU",
+      "title": "見逃せない理由2つ、一瞬で分かりますか？初級者はゆっくり比較しましょう！【初級～中級向け問題】",
+      "createdAt": "2023-01-21T00:00:00Z",
+      "sourceUrl": "https://youtu.be/8Fdst5_WtIU",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66
+      ],
+      "image": "/questions/question-216.png",
+      "imageSha256": "270695fb766583148a57dcebd3fed004251a0432b08622824c144ec92b257db2",
+      "hand": [
+        "0m",
+        "6m",
+        "7m",
+        "3p",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "2s",
+        "2s",
+        "3s",
+        "9s",
+        "9s"
+      ],
+      "draw": "8p",
+      "dora": "3s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "eb4361ab876530901a87a83239520e84f12f178c5a54aa66a341d517a29d9b71",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 217,
+      "videoId": "jeFp4uYWGOE",
+      "title": "面子と雀頭固定について、慣れている人は一瞬？【初級～中級向け問題】",
+      "createdAt": "2023-01-20T00:00:00Z",
+      "sourceUrl": "https://youtu.be/jeFp4uYWGOE",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "image": "/questions/question-217.png",
+      "imageSha256": "2c9a761ea00c0a408f3046bea50162391d51cc8124f65307a8eaf75ccc97bcc8",
+      "hand": [
+        "6m",
+        "8m",
+        "8m",
+        "4p",
+        "5p",
+        "3s",
+        "4s",
+        "5s",
+        "6s",
+        "9s"
+      ],
+      "draw": "7m",
+      "dora": "5s",
+      "melds": [
+        {
+          "type": "pon",
+          "open": true,
+          "calledIndex": 2,
+          "tiles": [
+            "2m",
+            "2m",
+            "2m"
+          ]
+        }
+      ],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "6m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "64e85a0d38f0c4ed6118f8a05e2fb349a97977de9c34329274b1d2a3b36d3bc5",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 218,
+      "videoId": "oLfyQACRqcg",
+      "title": "3ヘッド最弱理論を『使わない場面』、もちろん知った上で使っていますよね？【初級～中級向け問題】",
+      "createdAt": "2023-01-15T00:00:00Z",
+      "sourceUrl": "https://youtu.be/oLfyQACRqcg?t=3",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        180,
+        192,
+        210,
+        228,
+        246,
+        264
+      ],
+      "image": "/questions/question-218.png",
+      "imageSha256": "ea09bbc448fe23046945a5ae6ce43b9f1b7d0bcf7d49af7885f0828f7e2f5b8a",
+      "hand": [
+        "2m",
+        "3m",
+        "5m",
+        "7m",
+        "7m",
+        "1p",
+        "2p",
+        "7p",
+        "7p",
+        "9p",
+        "4s",
+        "4s",
+        "6s"
+      ],
+      "draw": "3p",
+      "dora": "1p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "9p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "a4e89601611a7172d259b32c1006dce070160b1a59aa3b1d62a1b1e31ddf8142",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 219,
+      "videoId": "oLfyQACRqcg",
+      "title": "3ヘッド最弱理論を『使わない場面』、もちろん知った上で使っていますよね？【初級～中級向け問題】",
+      "createdAt": "2023-01-15T00:00:00Z",
+      "sourceUrl": "https://youtu.be/oLfyQACRqcg?t=66",
+      "sourceProblem": null,
+      "problemSeconds": 66,
+      "conclusionSeconds": [
+        78
+      ],
+      "reasonSeconds": [
+        84,
+        90,
+        96,
+        102,
+        108,
+        114,
+        120,
+        144,
+        156,
+        168,
+        264,
+        282
+      ],
+      "image": "/questions/question-219.png",
+      "imageSha256": "633a1ef84d8140e7838a4ca908f744955fb1a3edc9960c3e18f6b137fcd6ce74",
+      "hand": [
+        "2m",
+        "3m",
+        "5m",
+        "7m",
+        "7m",
+        "1p",
+        "2p",
+        "7p",
+        "7p",
+        "4s",
+        "4s",
+        "6s",
+        "8s"
+      ],
+      "draw": "3p",
+      "dora": "1p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "5a10a8addf3bb7e5780ecb49925e9f56850b36a8f17506f7a70ee5ebee056536",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 220,
+      "videoId": "HjvGKaZEEOI",
+      "title": "一通のために、ペンチャン2つを残して両面を落としますか？【初級～中級向け問題】",
+      "createdAt": "2023-01-16T00:00:00Z",
+      "sourceUrl": "https://youtu.be/HjvGKaZEEOI",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90
+      ],
+      "image": "/questions/question-220.png",
+      "imageSha256": "d5d145bf58b51080f87a602e92cd76d69417712bbec3a62fc25c2eafccb6b422",
+      "hand": [
+        "2m",
+        "3m",
+        "7m",
+        "8m",
+        "5p",
+        "5p",
+        "1s",
+        "2s",
+        "4s",
+        "5s",
+        "6s",
+        "8s",
+        "9s"
+      ],
+      "draw": "9m",
+      "dora": "1p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "3m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "bbc7426c6ac9db28169b6fdf7a54b1fcf295d28652d3a472c73ba9450689aa4c",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 221,
+      "videoId": "kAZGJ4r6GUg",
+      "title": "基本的にはリーチでＯＫ！今回の場合もリーチでまあまあＯＫ！だけど他の選択肢は？【初級～中級向け問題】",
+      "createdAt": "2023-01-17T00:00:00Z",
+      "sourceUrl": "https://youtu.be/kAZGJ4r6GUg",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        36
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        108,
+        114,
+        120
+      ],
+      "image": "/questions/question-221.png",
+      "imageSha256": "cf6e7af61d0659535995b3bf5e7df2b5cbe8be72171d3e8bd5243d89066ca53a",
+      "hand": [
+        "3m",
+        "3m",
+        "3m",
+        "6m",
+        "7m",
+        "8m",
+        "4p",
+        "5p",
+        "5p",
+        "5s",
+        "6s",
+        "7s",
+        "8s"
+      ],
+      "draw": "7s",
+      "dora": "4p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 4,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "5p"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": false,
+      "videoExplanationSha256": "4877974858c7f1c862cd766316e75a306621e165d7d5d57732a5691129cf347c",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 222,
+      "videoId": "9AEGTyTif2w",
+      "title": "実戦で似た牌姿に出くわした場合、初中級者の方はご注意くださいね！【初級～中級向け問題】",
+      "createdAt": "2023-01-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/9AEGTyTif2w",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        48,
+        54,
+        60,
+        66,
+        72,
+        84,
+        90,
+        96,
+        102,
+        120,
+        132,
+        144,
+        156
+      ],
+      "image": "/questions/question-222.png",
+      "imageSha256": "03783b77f93665e199b8d674ff475c30d47054e526da37bcc14390220819d9d1",
+      "hand": [
+        "4m",
+        "6m",
+        "7m",
+        "7m",
+        "4p",
+        "5p",
+        "5p",
+        "0p",
+        "6p",
+        "6s",
+        "7s",
+        "8s",
+        "9s"
+      ],
+      "draw": "5m",
+      "dora": "1p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "9s"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": false,
+      "videoExplanationSha256": "266c72060483bb189d959b617eb6439cdc68c4ccf5e40f53ece9b3d3bf13574d",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 223,
+      "videoId": "z8eU14L-d-U",
+      "title": "微妙な差を見つけられてこそ上級者です。あなたは違いがわかりますか？【初級～中級向け問題】",
+      "createdAt": "2022-12-23T00:00:00Z",
+      "sourceUrl": "https://youtu.be/z8eU14L-d-U",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "image": "/questions/question-223.png",
+      "imageSha256": "1103013169a927729e0ded63a7c70284acaa3616a8a9b9e88e28450fe8bd6f96",
+      "hand": [
+        "3m",
+        "4m",
+        "1p",
+        "2p",
+        "2p",
+        "3p",
+        "3p",
+        "4p",
+        "5p",
+        "5p",
+        "6p",
+        "6s",
+        "7s"
+      ],
+      "draw": "7p",
+      "dora": "2s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "1p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "a90b55d5b87c4c8481b36486d21608459d642a1386b54bcba8c3924b3f87b452",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 224,
+      "videoId": "yHlUlk2PwtA",
+      "title": "聴牌時に三面張であがりやすい！だけだとは思っていませんよね？【麻雀何切る1分解説】",
+      "createdAt": "2022-12-31T00:00:00Z",
+      "sourceUrl": "https://youtu.be/yHlUlk2PwtA",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72
+      ],
+      "image": "/questions/question-224.png",
+      "imageSha256": "84c0f374e882bb51d631fb950f1303144ff467cab531328a0500b6b293ea8f09",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "4m",
+        "5p",
+        "6p",
+        "9p",
+        "9p",
+        "3s",
+        "4s",
+        "6s",
+        "7s",
+        "7s"
+      ],
+      "draw": "2s",
+      "dora": "2p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "7s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "3384ebb775cbb7c23f3fd0ee51d86a6f3f58baf0deee797af74f36411944ef13",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 225,
+      "videoId": "kbsGxlWyLxw",
+      "title": "あなたの手牌の分解能力が問われる何切るです【麻雀何切る1分解説】",
+      "createdAt": "2023-01-09T00:00:00Z",
+      "sourceUrl": "https://youtu.be/kbsGxlWyLxw",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "image": "/questions/question-225.png",
+      "imageSha256": "03e0246bbf46cb092a20a1bf120b1043cc105286c0b874b231bcdbf4295fb536",
+      "hand": [
+        "3m",
+        "4m",
+        "6p",
+        "7p",
+        "3s",
+        "4s",
+        "4s",
+        "4s",
+        "5s",
+        "5s",
+        "6s",
+        "6s",
+        "7s"
+      ],
+      "draw": "3m",
+      "dora": "7p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "8fe5a5a94548f632d81f64ee5728eb5f32bcf1e43484423c614c9f923bfab625",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 226,
+      "videoId": "3B00F4TxkEA",
+      "title": "ボツにしてお蔵入りも考えたのですが、こういった考えもあるよということでお願いします【初級～中級向け問題】",
+      "createdAt": "2022-12-27T00:00:00Z",
+      "sourceUrl": "https://youtu.be/3B00F4TxkEA",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        84,
+        96
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96
+      ],
+      "image": "/questions/question-226.png",
+      "imageSha256": "cc95c10aafb510c75a17e188539ddb07bf0f7268db2362ba8dabf86bd1377a0c",
+      "hand": [
+        "3m",
+        "4m",
+        "5m",
+        "5m",
+        "6m",
+        "8m",
+        "8m",
+        "6p",
+        "7p",
+        "3s",
+        "4s",
+        "7s",
+        "7s"
+      ],
+      "draw": "7s",
+      "dora": "9p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "5m",
+        "6p",
+        "7p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "9aa299833778377d09b8f594af7b9d288c1feb8259d6da02d2b96ba6142cde17",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 227,
+      "videoId": "hszyXnQGWa8",
+      "title": "麻雀が上手な人は比較した上で打牌を選べる問題です。あなたはどうですか？【初級～中級向け問題】",
+      "createdAt": "2022-12-24T00:00:00Z",
+      "sourceUrl": "https://youtu.be/hszyXnQGWa8",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90
+      ],
+      "image": "/questions/question-227.png",
+      "imageSha256": "fc08f2e1fdf2a9dcc91cc0acfe008c81e05a7f8936960749616f7d46178b0ace",
+      "hand": [
+        "6m",
+        "8m",
+        "4p",
+        "4p",
+        "5p",
+        "5p",
+        "6p",
+        "6p",
+        "6p",
+        "7p",
+        "2s",
+        "3s",
+        "4s"
+      ],
+      "draw": "7m",
+      "dora": "4s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "7p"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanationSha256": "c4ac32b55ee3fb8fdc9ce71bc9f2201d3593cf4d442a0af09a65dbc0eedd615b",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 228,
+      "videoId": "5hmoJOGGtF0",
+      "title": "微差を積み上げ、大差を逃さない人がトータルで勝利を掴むゲーム。それが麻雀です【麻雀何切る1分解説】",
+      "createdAt": "2022-12-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/5hmoJOGGtF0",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60
+      ],
+      "image": "/questions/question-228.png",
+      "imageSha256": "3d7533d80de479500b6a5974b43731d4ee534b098ee98f7da5d0c9dbaf0dffec",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "5m",
+        "6m",
+        "7m",
+        "7m",
+        "7m",
+        "8m",
+        "6p",
+        "7p",
+        "4s",
+        "4s"
+      ],
+      "draw": "3s",
+      "dora": "7p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "bdd4e0badcacad862659d2453ee7bb0decaed646c1a9f92701f9a1d27afcb4e7",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 229,
+      "videoId": "WTFsWlqSiKI",
+      "title": "何切ると同時に考えなければならない「何引く」。きちんとトレーニングしていますか？【麻雀何切る1分解説】",
+      "createdAt": "2022-12-18T00:00:00Z",
+      "sourceUrl": "https://youtu.be/WTFsWlqSiKI",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60
+      ],
+      "image": "/questions/question-229.png",
+      "imageSha256": "dea85f936a21faeb46bba17394da8d5c493b75ac137f1b7c96446553a81317e4",
+      "hand": [
+        "4m",
+        "5m",
+        "4p",
+        "5p",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "2s",
+        "3s",
+        "3s",
+        "4s",
+        "5s"
+      ],
+      "draw": "3s",
+      "dora": "9m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "c7f79c82f40a98014734b2acca01cd3403c8a01176bd42e20fa1581ce2d131f9",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 230,
+      "videoId": "u90s7MRaZuc",
+      "title": "なんとなくで選んだあなた、成長が止まるかもしれませんよ？【麻雀何切る1分解説】",
+      "createdAt": "2022-12-17T00:00:00Z",
+      "sourceUrl": "https://youtu.be/u90s7MRaZuc",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72
+      ],
+      "image": "/questions/question-230.png",
+      "imageSha256": "98a28d735ffcc809fd41c80879f498ca495caf41a087aaa37b8a4b45172ea9a2",
+      "hand": [
+        "5m",
+        "6m",
+        "6m",
+        "7m",
+        "8m",
+        "8m",
+        "4p",
+        "3s",
+        "8s",
+        "8s",
+        "4z",
+        "4z",
+        "4z"
+      ],
+      "draw": "4m",
+      "dora": "4p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "3s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "2c89a3ebfaf10cf60cbf8d9bb7136e2743fa39fb905879e597af684b673fa9cf",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 231,
+      "videoId": "E2Kh9FJEZlA",
+      "title": "中級者なら想像できてほしい聴牌形に関する問題です【麻雀何切る1分解説】",
+      "createdAt": "2022-12-19T00:00:00Z",
+      "sourceUrl": "https://youtu.be/E2Kh9FJEZlA",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "image": "/questions/question-231.png",
+      "imageSha256": "42b81de526e76f91a89df1fec5d8f26dc97b972169fc5a540e79ea077f0480fb",
+      "hand": [
+        "2m",
+        "3m",
+        "0p",
+        "6p",
+        "1s",
+        "1s",
+        "2s",
+        "2s",
+        "3s",
+        "4s",
+        "5s",
+        "6s",
+        "8s"
+      ],
+      "draw": "1m",
+      "dora": "8s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "2fd06647c5bd8f883969b68ee1a5c3a15664b1b4a2a645da72546261a311b6d4",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 232,
+      "videoId": "6XqV9szzxM8",
+      "title": "初級者は気が付きにくい視点、あなたはちゃんと持っていますか？【麻雀何切る1分解説】",
+      "createdAt": "2022-12-15T00:00:00Z",
+      "sourceUrl": "https://youtu.be/6XqV9szzxM8",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "image": "/questions/question-232.png",
+      "imageSha256": "a01cce643fd8576a23c94ac9a04bda8355c43ca03c9f1f8084f2693771fa3309",
+      "hand": [
+        "7m",
+        "9m",
+        "4p",
+        "5p",
+        "3s",
+        "5s",
+        "0s",
+        "6s",
+        "7s",
+        "8s",
+        "8s",
+        "5z",
+        "5z"
+      ],
+      "draw": "8m",
+      "dora": "9m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "5s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "459a9cbd887f58cc80ef39f750333e08e7f5d70c208ce2c69a99283e47f5709d",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 233,
+      "videoId": "Q-HwOPSunIE",
+      "title": "中級者以上なら必ず理解しているとあること、あなたには見えていますか？【初級～中級向け問題】",
+      "createdAt": "2022-12-13T00:00:00Z",
+      "sourceUrl": "https://youtu.be/Q-HwOPSunIE",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108,
+        114,
+        120
+      ],
+      "image": "/questions/question-233.png",
+      "imageSha256": "b5cf32e964304c2333ee8b2179587060199ea2bbdf2fcc08ec4d0e462e31c310",
+      "hand": [
+        "1m",
+        "2m",
+        "2p",
+        "3p",
+        "4p",
+        "5p",
+        "6p",
+        "8p",
+        "9p",
+        "8s",
+        "9s",
+        "9s",
+        "9s"
+      ],
+      "draw": "1p",
+      "dora": "3s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "2m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "3faa38f164e65c328a419ddf326c261b2ed2167e7342a5da660275f16acbe9bd",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 234,
+      "videoId": "tuKkam2cqEE",
+      "title": "カン6ピンとカン6ソウの差を見抜けるあなたは上級者！【麻雀何切る1分解説】",
+      "createdAt": "2022-12-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/tuKkam2cqEE",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "image": "/questions/question-234.png",
+      "imageSha256": "92de4e266cf2cb69a6c9825e87e8c254faa48e4c84428548b5b872e5d0d9e4e8",
+      "hand": [
+        "1m",
+        "2m",
+        "5p",
+        "5p",
+        "7p",
+        "2s",
+        "3s",
+        "3s",
+        "3s",
+        "4s",
+        "5s",
+        "5s",
+        "7s"
+      ],
+      "draw": "3m",
+      "dora": "1m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "7p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "004e96725bdab8913c98c3d0a1e5eb85b028a97366cf1757bde15575666acf28",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 235,
+      "videoId": "S8qbgBlWTkc",
+      "title": "今回は受け入れ最大の打牌を模範解答にしています。枚数が多い形を覚える問題としてどうぞ【初級～中級向け問題】",
+      "createdAt": "2022-12-09T00:00:00Z",
+      "sourceUrl": "https://youtu.be/S8qbgBlWTkc",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        30
+      ],
+      "reasonSeconds": [
+        24,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108,
+        114,
+        120,
+        132
+      ],
+      "image": "/questions/question-235.png",
+      "imageSha256": "7c659dd873af20f193667bd5b7bc700e82b349e871a2491264be172587fc3a5a",
+      "hand": [
+        "2m",
+        "3m",
+        "3m",
+        "3m",
+        "4m",
+        "5m",
+        "2p",
+        "3p",
+        "3p",
+        "5s",
+        "2z",
+        "2z",
+        "2z"
+      ],
+      "draw": "6s",
+      "dora": "2z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "2m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "9da08554ef447e7ccb5b64d47bd43c9cfeff450ca2c378ffeda79c3d09bffd07",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 236,
+      "videoId": "lZarZWfFlyM",
+      "title": "この3萬ツモが非常に偉いことに、あなたは気がついていますか？【麻雀何切る1分解説】",
+      "createdAt": "2022-12-05T00:00:00Z",
+      "sourceUrl": "https://youtu.be/lZarZWfFlyM",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        24
+      ],
+      "reasonSeconds": [
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-236.png",
+      "imageSha256": "628d3f8e65b178f82cba3ab7fc3fd8665a1979c27748946aab205341f720a011",
+      "hand": [
+        "4m",
+        "5m",
+        "5m",
+        "6m",
+        "7m",
+        "8m",
+        "6p",
+        "7p",
+        "6s",
+        "7s",
+        "7s",
+        "4z",
+        "4z"
+      ],
+      "draw": "3m",
+      "dora": "3s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "7s",
+        "8m",
+        "5m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "774f6a030646cbcc3ee1d7d9b4e5a935624ad39a49cfe2b2811ec0b23d4a5dff",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 237,
+      "videoId": "iIR5eJFFJ4g",
+      "title": "一瞬で分かれば上級者、ですがゆっくり考えてもOKですよ【麻雀何切る1分解説】",
+      "createdAt": "2022-12-06T00:00:00Z",
+      "sourceUrl": "https://youtu.be/iIR5eJFFJ4g",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-237.png",
+      "imageSha256": "72a56bbd288c90b9ed57937b56f07e4ff2d4f220e24edd77db4345b446eaf62f",
+      "hand": [
+        "4m",
+        "4m",
+        "5m",
+        "5m",
+        "6m",
+        "7m",
+        "7m",
+        "7m",
+        "9m",
+        "4p",
+        "5p",
+        "1s",
+        "2s"
+      ],
+      "draw": "3s",
+      "dora": "9m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "4m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "0b1e8a7749f38b4de58a4a5a6657a0034a0049319aa1ffe97add32c933c819ec",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 238,
+      "videoId": "Bh14lGQbzM0",
+      "title": "聴牌時、どんな形になっているか想像できる人なら正解できる問題です【麻雀何切る1分解説】",
+      "createdAt": "2022-11-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/Bh14lGQbzM0",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        24
+      ],
+      "reasonSeconds": [
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-238.png",
+      "imageSha256": "ee35affb50a35c23c356b27140333248d5e966934ef0c042a483c9c380d3080f",
+      "hand": [
+        "0m",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "9p",
+        "5s",
+        "7s",
+        "8s",
+        "9s",
+        "3z",
+        "3z"
+      ],
+      "draw": "9p",
+      "dora": "9m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "5s",
+        "9p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "76429fd4cf60166b97d6ef177fcc9c2c35477656d0144cf10d6bb050e4c76f8c",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 239,
+      "videoId": "9OYd5k5Ik6I",
+      "title": "さらっと選べたらかっこいいですけど、じっくり考えてもＯＫ！そんな何切るをどうぞ！【初級～中級向け問題】",
+      "createdAt": "2022-11-27T00:00:00Z",
+      "sourceUrl": "https://youtu.be/9OYd5k5Ik6I",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-239.png",
+      "imageSha256": "9b44d9dcb25fc7bb9988461e70cf6f2d9d27e48a62a9e410f99d49ebabc950e8",
+      "hand": [
+        "1m",
+        "3m",
+        "2p",
+        "2p",
+        "3p",
+        "3p",
+        "4p",
+        "5p",
+        "6p",
+        "6p",
+        "4s",
+        "6s",
+        "6s"
+      ],
+      "draw": "2m",
+      "dora": "1m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "4s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "30086795e8c2efeb7712162a4036a3ffac3de0c36a9c8ff7446dc9390a5479c3",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 240,
+      "videoId": "WZqHpJUH84I",
+      "title": "【1分何切る】成績にはほとんど影響『しない』問題なので、時間が無ければ視聴スルーでもOKです",
+      "createdAt": "2022-11-25T00:00:00Z",
+      "sourceUrl": "https://youtu.be/WZqHpJUH84I",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        24
+      ],
+      "reasonSeconds": [
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-240.png",
+      "imageSha256": "eb78bae7a3edccd19098ec99c554b590639649201cecf0ad43a70090bd716059",
+      "hand": [
+        "1m",
+        "2m",
+        "9m",
+        "4p",
+        "0p",
+        "6p",
+        "7p",
+        "2s",
+        "2s",
+        "9s",
+        "4z",
+        "4z",
+        "4z"
+      ],
+      "draw": "7p",
+      "dora": "6s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 4,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "9m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "2a4b591355dfb6d775ad744dad273925cd4794364985ab3aa822b3d2c676ce42",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 241,
+      "videoId": "SmjvTY-RRLw",
+      "title": "【麻雀何切る1分解説】あなたのあがり率と打点が爆増する一問かもしれません",
+      "createdAt": "2022-11-22T00:00:00Z",
+      "sourceUrl": "https://youtu.be/SmjvTY-RRLw",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-241.png",
+      "imageSha256": "5dbfa5e11f0b60dc617e2259b67a6f6e78d07c777fc61597c0ccd75bc78a5f44",
+      "hand": [
+        "3m",
+        "4m",
+        "3p",
+        "4p",
+        "5p",
+        "6p",
+        "7p",
+        "3s",
+        "5s",
+        "6s",
+        "7s",
+        "7s",
+        "8s"
+      ],
+      "draw": "7p",
+      "dora": "4p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "correctDiscards": [
+        "6p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "709e07671fba4748db1f38c084ad72593dd2ab8d705dde6633a6267eecd9e98b",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 242,
+      "videoId": "QQqhmCSJ2sY",
+      "title": "【麻雀何切る1分解説】珍しく上級者向けの問題、根拠も説明できますか？",
+      "createdAt": "2022-11-19T00:00:00Z",
+      "sourceUrl": "https://youtu.be/QQqhmCSJ2sY",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-242.png",
+      "imageSha256": "5d2d09ac9e29183e761492508cc683c3099c294b41d664d2dfe167e441b4aa32",
+      "hand": [
+        "2m",
+        "3m",
+        "6p",
+        "6p",
+        "7p",
+        "2s",
+        "3s",
+        "3s",
+        "4s",
+        "5s",
+        "6s",
+        "6s",
+        "7s"
+      ],
+      "draw": "1m",
+      "dora": "6s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "6p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "1cdeddfe8d366773a011c472a28f079e4f6629a346713e42a8c4fb536728ab15",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 243,
+      "videoId": "9WpV_gWuXzI",
+      "title": "【麻雀何切る1分解説】嬉しいツモだけでなく、嬉しくないツモも考えられますか？【初級～中級向け問題】",
+      "createdAt": "2022-11-14T00:00:00Z",
+      "sourceUrl": "https://youtu.be/9WpV_gWuXzI",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        30
+      ],
+      "reasonSeconds": [
+        24,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-243.png",
+      "imageSha256": "1307a4e8627f89f20fa4c7c09d2313eb038510ee04ef9010eca28d0adddec623",
+      "hand": [
+        "3m",
+        "3m",
+        "6m",
+        "7m",
+        "5p",
+        "5p",
+        "6p",
+        "6p",
+        "6p",
+        "7p",
+        "8p",
+        "3s",
+        "4s"
+      ],
+      "draw": "2s",
+      "dora": "2p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "8p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "89504ba11843ba9cecab4e53ca5bab1ec095f494bd425e083461fc6e46b136bd",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 244,
+      "videoId": "1UqFIzCGBH8",
+      "title": "【麻雀何切る1分解説】差を見抜いて打牌を変える、あなたはできますか？【初級～中級向け問題】",
+      "createdAt": "2022-11-13T00:00:00Z",
+      "sourceUrl": "https://youtu.be/1UqFIzCGBH8",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "image": "/questions/question-244.png",
+      "imageSha256": "e14473433cef5dfeda3e579d0b3d29fa140e727cdee62d892cd54dd4fe2a6926",
+      "hand": [
+        "5m",
+        "5m",
+        "6m",
+        "7m",
+        "7m",
+        "7m",
+        "3p",
+        "3p",
+        "4p",
+        "8p",
+        "9p",
+        "2s",
+        "3s"
+      ],
+      "draw": "7p",
+      "dora": "9p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "5m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "a505ddbbb9fd3a2a933bbb1d42510156aa29791a76e720a5ffd2cab570cc7339",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 245,
+      "videoId": "0tfcnRMHqGw",
+      "title": "【麻雀何切る1分解説】理由も見抜けたら素晴らしい！【中級向け問題】",
+      "createdAt": "2022-10-31T00:00:00Z",
+      "sourceUrl": "https://youtu.be/0tfcnRMHqGw",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-245.png",
+      "imageSha256": "b4767ac0fe5ba9c159d8b07e6053f7f2a5af3c329d466fd4febb41335dba33be",
+      "hand": [
+        "1m",
+        "1m",
+        "0m",
+        "4p",
+        "5p",
+        "6p",
+        "6p",
+        "7p",
+        "7p",
+        "7p",
+        "8p",
+        "9p",
+        "9p"
+      ],
+      "draw": "6m",
+      "dora": "9s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "4p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "8cd2e11b204db66b15b0e964064ab93e34fd380b22c3e9eebc773e95c83daf5e",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 246,
+      "videoId": "S8EEX2VreuM",
+      "title": "【麻雀何切る1分解説】理由もビシッとあてたら上級者！？【中級向け問題】",
+      "createdAt": "2022-11-05T00:00:00Z",
+      "sourceUrl": "https://youtu.be/S8EEX2VreuM",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        30
+      ],
+      "reasonSeconds": [
+        24,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-246.png",
+      "imageSha256": "d4cf5dc5ffde44392a0ff7b7973fee4a5a0bc121309f45cb8354bb6ff350552f",
+      "hand": [
+        "0m",
+        "9m",
+        "9m",
+        "9m",
+        "7p",
+        "8p",
+        "8p",
+        "9p",
+        "9p",
+        "9p",
+        "3s",
+        "4s",
+        "4s"
+      ],
+      "draw": "4m",
+      "dora": "3s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "7p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "a2792d91a9310690b58526884cfbf0b7a82d5afcf80c0d59201665b7916a605e",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 247,
+      "videoId": "ohxKCO8uFhI",
+      "title": "【麻雀何切る1分解説】2つの理由、見抜けますか？【初級～中級向け問題】",
+      "createdAt": "2022-10-14T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ohxKCO8uFhI",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-247.png",
+      "imageSha256": "a01446708ae2e655ebf682f90ad9d8366c95a6aba95617fc371d19a29327843c",
+      "hand": [
+        "2m",
+        "3m",
+        "3m",
+        "4m",
+        "4m",
+        "4m",
+        "5m",
+        "7m",
+        "5p",
+        "5p",
+        "7p",
+        "2s",
+        "3s"
+      ],
+      "draw": "1m",
+      "dora": "1m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "7m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "5bd3f0f5a87bdccf99ee0e468ce88b3672fa41f7d188bb894ec7a7d2e52e5ebf",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 248,
+      "videoId": "dLg0L-3ifpY",
+      "title": "【麻雀何切る1分解説】聴牌形も比較してみよう！【中級向け問題】",
+      "createdAt": "2022-10-18T00:00:00Z",
+      "sourceUrl": "https://youtu.be/dLg0L-3ifpY",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-248.png",
+      "imageSha256": "ef2bf17e275ebd11a1a97378340362f2a00093a99023d6e6d9db9d43f7e7e804",
+      "hand": [
+        "1m",
+        "1m",
+        "2m",
+        "6p",
+        "7p",
+        "1s",
+        "1s",
+        "3s",
+        "4s",
+        "4s",
+        "5s",
+        "0s",
+        "6s"
+      ],
+      "draw": "0p",
+      "dora": "7p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "dd1de1df0f0f0398349a99583ec16b9f1aa8a833e4eee848cee9c9b9fd14c22e",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 249,
+      "videoId": "VUcPCCgYTs4",
+      "title": "【麻雀何切る1分解説】上手に捌いてみましょう！【雀士～雀傑】",
+      "createdAt": "2022-10-09T00:00:00Z",
+      "sourceUrl": "https://youtu.be/VUcPCCgYTs4",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-249.png",
+      "imageSha256": "4ef82bec0a8ecfe20d974b3e18f1a976bfa90f29e4bfb06d3277bf4ee316bb90",
+      "hand": [
+        "7m",
+        "7m",
+        "4p",
+        "5p",
+        "5p",
+        "7p",
+        "9p",
+        "1s",
+        "2s",
+        "3s",
+        "4s",
+        "0s",
+        "6s"
+      ],
+      "draw": "8m",
+      "dora": "3s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "8m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "251056ae92702172a6f0964ea43bc20ff131a3a07c277529f52c3caa3eafd476",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 250,
+      "videoId": "c1hyWtXluuo",
+      "title": "【麻雀何切る1分解説】一瞬で見抜けたらカッコイイ！【雀士～雀傑】",
+      "createdAt": "2022-10-05T00:00:00Z",
+      "sourceUrl": "https://youtu.be/c1hyWtXluuo",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-250.png",
+      "imageSha256": "d0fd381ae6c7d7fcd3635729818589c8932d8989f4e1e89c700477bf8e58122f",
+      "hand": [
+        "0m",
+        "6m",
+        "1p",
+        "1p",
+        "2p",
+        "2p",
+        "3p",
+        "4p",
+        "5p",
+        "5p",
+        "6p",
+        "6p",
+        "6p"
+      ],
+      "draw": "4m",
+      "dora": "6m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "5p"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanationSha256": "c31f3d147c20bfd2b80bc5b25b912b7ed12da4a9fb98a27295d5a1a62d2bda31",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 251,
+      "videoId": "WYQtugS_Vnk",
+      "title": "【麻雀何切る1分解説】668ｍと244ｐをどうしましょう？",
+      "createdAt": "2022-10-02T00:00:00Z",
+      "sourceUrl": "https://youtu.be/WYQtugS_Vnk",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18,
+        48
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ],
+      "image": "/questions/question-251.png",
+      "imageSha256": "78ca2ee8a534e1db044afc0a504e982b19fccb5479ddbdb18fc89aa8e3aa16a1",
+      "hand": [
+        "5m",
+        "5m",
+        "5m",
+        "6m",
+        "6m",
+        "8m",
+        "2p",
+        "4p",
+        "4p",
+        "3s",
+        "4s",
+        "7s",
+        "9s"
+      ],
+      "draw": "8s",
+      "dora": "9s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "8m",
+        "2p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "e2264b0b6997894e62bb434f7e3d3c832a4cee1532a02ff7833cebf89ca1c97c",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 252,
+      "videoId": "d1XQnSOqLXI",
+      "title": "【麻雀何切る1分解説】ちょっと複雑だけど考えてみよう！",
+      "createdAt": "2022-09-23T00:00:00Z",
+      "sourceUrl": "https://youtu.be/d1XQnSOqLXI",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-252.png",
+      "imageSha256": "aa6af21d4770225b4209fa169ff06e9d231ed8ebff7e9046bba4ff04767d78eb",
+      "hand": [
+        "2p",
+        "3p",
+        "3p",
+        "3p",
+        "4p",
+        "5p",
+        "5p",
+        "6p",
+        "7p",
+        "7p"
+      ],
+      "draw": "8p",
+      "dora": "7m",
+      "melds": [
+        {
+          "type": "pon",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "7z",
+            "7z",
+            "7z"
+          ]
+        }
+      ],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "5p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "f85f600d106c2ea03d0b6ca5b52bc3a09cdd57c9965181c531d79bf8b87e6f52",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 253,
+      "videoId": "EYClhbeFyuA",
+      "title": "【麻雀何切る1分解説】良形を追えて打点も追える。その一打とは！？",
+      "createdAt": "2022-09-22T00:00:00Z",
+      "sourceUrl": "https://youtu.be/EYClhbeFyuA",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-253.png",
+      "imageSha256": "190800c9d3660c7906300f4b924bb3264c553428d67abf93e41828bf872525de",
+      "hand": [
+        "2m",
+        "4m",
+        "2p",
+        "4p",
+        "5p",
+        "5p",
+        "6p",
+        "6p",
+        "7p",
+        "7p",
+        "7p",
+        "7s",
+        "8s"
+      ],
+      "draw": "4m",
+      "dora": "9s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "5234d6aeba564da8e3c2039e284d741f414d428231f70fef1b982688715057dd",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 254,
+      "videoId": "fwnD5U8ak10",
+      "title": "【麻雀何切る1分解説】これが解けたら牌効率はバッチリ？！",
+      "createdAt": "2022-09-21T00:00:00Z",
+      "sourceUrl": "https://youtu.be/fwnD5U8ak10",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-254.png",
+      "imageSha256": "cf37d68e7f1c74ef6bde110494cf14b48c8f3811e2f95ea3814bb1d4944a0226",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "5m",
+        "6m",
+        "6m",
+        "7m",
+        "7p",
+        "8p",
+        "3s",
+        "4s",
+        "0s",
+        "6s"
+      ],
+      "draw": "9p",
+      "dora": "7m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "6m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "16289401837630e56a4d1a8c0aa172faa325ed283694604d83c5b13e068564ed",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 255,
+      "videoId": "FtsysrppYr4",
+      "title": "【麻雀何切る1分解説】七対子にしたときのメリット？",
+      "createdAt": "2022-09-14T00:00:00Z",
+      "sourceUrl": "https://youtu.be/FtsysrppYr4",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-255.png",
+      "imageSha256": "e89292a9ae33312a1b2916c8d2c0ef5391d3faf059c85f1a6f1079e5d4330f8e",
+      "hand": [
+        "4m",
+        "4m",
+        "5m",
+        "5m",
+        "6m",
+        "6m",
+        "7p",
+        "7p",
+        "8p",
+        "9p",
+        "4s",
+        "6s",
+        "6s"
+      ],
+      "draw": "4s",
+      "dora": "5z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9p"
+      ],
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanationSha256": "f585260c6b583de9849511daace0dff938a3c6b2460d47e4be9f4ae5bf3fe291",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 256,
+      "videoId": "wj29GvQ7XZw",
+      "title": "【麻雀何切る1分解説】理屈も知っていたら素晴らしい！",
+      "createdAt": "2022-09-08T00:00:00Z",
+      "sourceUrl": "https://youtu.be/wj29GvQ7XZw",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-256.png",
+      "imageSha256": "9a8c4d3b588c8a75e64f4fe8633604b7360d234a3a72177de74f8af411f345d8",
+      "hand": [
+        "3m",
+        "4m",
+        "7p",
+        "8p",
+        "2s",
+        "2s",
+        "4s",
+        "4s",
+        "6s",
+        "7s",
+        "8s",
+        "9s",
+        "9s"
+      ],
+      "draw": "0m",
+      "dora": "8p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "4s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "ba66e28f54210eb0046c37519bc36ae7294ddd0024b632e8e8a754fe8ebd9483",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 257,
+      "videoId": "0VsmI4pYxtk",
+      "title": "【難易度】ずんだもんと答えが違っていてもＯＫ！【高め】",
+      "createdAt": "2022-08-25T00:00:00Z",
+      "sourceUrl": "https://youtu.be/0VsmI4pYxtk",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42
+      ],
+      "image": "/questions/question-257.png",
+      "imageSha256": "0a4f6648dd273175aea1462494d906af622d70d9a56c9c7af86b93680a983159",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "4m",
+        "0m",
+        "6p",
+        "7p",
+        "4s",
+        "5s",
+        "0s",
+        "6s",
+        "7s",
+        "7s",
+        "8s"
+      ],
+      "draw": null,
+      "dora": "5m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "7s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "abdedf3647415a4f8f135d74cb29f65aaff0e6e002326d03da7e36f3fcc86896",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 258,
+      "videoId": "cI-x7I8240I",
+      "title": "【受け入れMAX】理由込みで一瞬で見抜けたらかっこいい何切る問題",
+      "createdAt": "2022-08-20T00:00:00Z",
+      "sourceUrl": "https://youtu.be/cI-x7I8240I",
+      "sourceProblem": null,
+      "problemSeconds": 3,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-258.png",
+      "imageSha256": "25a15dd76fc52a953927b6a63a2f8606261d502d96e4d27004fa226ab73e9ff2",
+      "hand": [
+        "7m",
+        "8m",
+        "9m",
+        "2p",
+        "4p",
+        "4p",
+        "2s",
+        "4s",
+        "4s",
+        "0s",
+        "6s",
+        "7s",
+        "9s",
+        "9s"
+      ],
+      "draw": null,
+      "dora": "9m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "2p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "c1301ccda39ab7dd892cf7eef490cc4ccea1b18f8ab58f202a3f80c43a2ebe06",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 259,
+      "videoId": "YCKPZeB1xC0",
+      "title": "【微差は大差】一手先の変化、読めますか？",
+      "createdAt": "2022-08-16T00:00:00Z",
+      "sourceUrl": "https://youtu.be/YCKPZeB1xC0",
+      "sourceProblem": null,
+      "problemSeconds": 12,
+      "conclusionSeconds": [
+        18
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-259.png",
+      "imageSha256": "33fabb08f826744784d3538e97829e0e1f8db7f57d8b1db05ac5c034b65046d5",
+      "hand": [
+        "1m",
+        "1m",
+        "8m",
+        "3p",
+        "4p",
+        "4p",
+        "5p",
+        "8p",
+        "2s",
+        "3s",
+        "5s",
+        "5s",
+        "6s",
+        "7s"
+      ],
+      "draw": null,
+      "dora": "1m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "8m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "518687602d0d1d112c96b6b9bfc6270b19dd9dc4904698840d821959542d935d",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 260,
+      "videoId": "X-GsZvaiY4c",
+      "title": "【聴牌だからって】4索と7索どちらを切りますか？【サボっちゃだめですよ】",
+      "createdAt": "2022-08-15T00:00:00Z",
+      "sourceUrl": "https://youtu.be/X-GsZvaiY4c",
+      "sourceProblem": null,
+      "problemSeconds": 12,
+      "conclusionSeconds": [
+        36
+      ],
+      "reasonSeconds": [
+        24,
+        30,
+        42,
+        48
+      ],
+      "image": "/questions/question-260.png",
+      "imageSha256": "a6d3921aa19449f5e74a69f73d094551389467cfab06f3542f6f52d54f9342f5",
+      "hand": [
+        "7p",
+        "8p",
+        "9p",
+        "4s",
+        "5s",
+        "6s",
+        "6s",
+        "6s",
+        "7s",
+        "7z",
+        "7z"
+      ],
+      "draw": null,
+      "dora": "1p",
+      "melds": [
+        {
+          "type": "pon",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "1p",
+            "1p",
+            "1p"
+          ]
+        }
+      ],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "4s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "79c4d85336ebd0440a1bd2548fec0b5d26271b0ac216ff2d00579f21b8bf8cd1",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 261,
+      "videoId": "jE4GwL7rKZ4",
+      "title": "【広い視点で】中級者が陥りやすい罠とは？【考えよう】",
+      "createdAt": "2022-08-14T00:00:00Z",
+      "sourceUrl": "https://youtu.be/jE4GwL7rKZ4",
+      "sourceProblem": null,
+      "problemSeconds": 12,
+      "conclusionSeconds": [
+        30,
+        36
+      ],
+      "reasonSeconds": [
+        24,
+        42,
+        48
+      ],
+      "image": "/questions/question-261.png",
+      "imageSha256": "4b076719ddc4175cbb2f5ad8f527ba896adb2435c0420c64a490fa1fcce3bbb6",
+      "hand": [
+        "1m",
+        "1m",
+        "3p",
+        "4p",
+        "4p",
+        "5p",
+        "5p",
+        "5p",
+        "2s",
+        "3s",
+        "3s",
+        "6s",
+        "8s"
+      ],
+      "draw": "7s",
+      "dora": "8s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "3s",
+        "5p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "2287bcb9ee0c976fae14165997ffcc5637df3eb4d50d4c2830c090d4ccc5a909",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 262,
+      "videoId": "3qA4fD780Q0",
+      "title": "【雀力UP】ずんだもんと麻雀の勉強始まります！【何切る】",
+      "createdAt": "2022-08-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/3qA4fD780Q0?t=18",
+      "sourceProblem": null,
+      "problemSeconds": 18,
+      "conclusionSeconds": [
+        25
+      ],
+      "reasonSeconds": [
+        30,
+        36,
+        42,
+        48
+      ],
+      "image": "/questions/question-262.png",
+      "imageSha256": "5c752057e52553397b7a4beb448b8c433498afbb68636c8cc4c5928af266368f",
+      "hand": [
+        "2m",
+        "3m",
+        "5m",
+        "7m",
+        "2p",
+        "3p",
+        "4p",
+        "0p",
+        "2s",
+        "3s",
+        "3s",
+        "5s",
+        "6s"
+      ],
+      "draw": "4s",
+      "dora": "6m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "2p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "0c335f345ab1ea874419994e3a14bdd3ad5bf94c1b58d89e569886140fca2221",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 263,
+      "videoId": "e7yWmZ0OCiI",
+      "title": "【目指せ金の間】初級者必見の一向聴の解説です【初級～中級向け問題】",
+      "createdAt": "2022-11-02T00:00:00Z",
+      "sourceUrl": "https://youtu.be/e7yWmZ0OCiI?t=264",
+      "sourceProblem": null,
+      "problemSeconds": 264,
+      "conclusionSeconds": [
+        300
+      ],
+      "reasonSeconds": [
+        282,
+        300
+      ],
+      "image": "/questions/question-263.png",
+      "imageSha256": "e4835af8934b5544a1785f9f9474b40e56dbf02c96ad12288aa07dd50ed771a4",
+      "hand": [
+        "4m",
+        "4m",
+        "5m",
+        "3p",
+        "3p",
+        "3p",
+        "4p",
+        "7p",
+        "8p",
+        "9p",
+        "6s",
+        "7s",
+        "2z"
+      ],
+      "draw": "2z",
+      "dora": null,
+      "melds": [],
+      "round": null,
+      "seat": null,
+      "turn": null,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "4p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "cfba9f3946701886d8ae2b90e56fc4e6f190ced3df20b3f51ebb5b86f6b14fd9",
+      "sourceConditionsUnspecified": true
+    },
+    {
+      "id": 264,
+      "videoId": "e7yWmZ0OCiI",
+      "title": "【目指せ金の間】初級者必見の一向聴の解説です【初級～中級向け問題】",
+      "createdAt": "2022-11-02T00:00:00Z",
+      "sourceUrl": "https://youtu.be/e7yWmZ0OCiI?t=318",
+      "sourceProblem": null,
+      "problemSeconds": 318,
+      "conclusionSeconds": [
+        372
+      ],
+      "reasonSeconds": [
+        336,
+        354,
+        372
+      ],
+      "image": "/questions/question-264.png",
+      "imageSha256": "008bfc4a440df5c40dab84f80676b22e826071fdf56d8fa821b69d146277bc73",
+      "hand": [
+        "7m",
+        "5p",
+        "7p",
+        "8p",
+        "1s",
+        "1s",
+        "1s",
+        "2s",
+        "4s",
+        "5s",
+        "8s",
+        "4z",
+        "4z"
+      ],
+      "draw": "9p",
+      "dora": null,
+      "melds": [],
+      "round": null,
+      "seat": null,
+      "turn": null,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "8s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "1db3ec7b8fac0d5385d094c38e633989d5359fe64d80962cbfeab3b6d7c28712",
+      "sourceConditionsUnspecified": true
+    },
+    {
+      "id": 265,
+      "videoId": "e7yWmZ0OCiI",
+      "title": "【目指せ金の間】初級者必見の一向聴の解説です【初級～中級向け問題】",
+      "createdAt": "2022-11-02T00:00:00Z",
+      "sourceUrl": "https://youtu.be/e7yWmZ0OCiI?t=382",
+      "sourceProblem": null,
+      "problemSeconds": 382,
+      "conclusionSeconds": [
+        426
+      ],
+      "reasonSeconds": [
+        390,
+        408,
+        426
+      ],
+      "image": "/questions/question-265.png",
+      "imageSha256": "23c96abdf4b1968f7730a1af9358da1c051c93cad25cd6b92cb7430272b69699",
+      "hand": [
+        "2m",
+        "3m",
+        "7m",
+        "8m",
+        "9m",
+        "1p",
+        "1p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "5s",
+        "6s"
+      ],
+      "draw": "1p",
+      "dora": null,
+      "melds": [],
+      "round": null,
+      "seat": null,
+      "turn": null,
+      "honba": null,
+      "points": null,
+      "correctDiscards": [
+        "7p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "12c44dbb82fd752e19c5b1de51da001bea873498d2c685dd312b4e0ed8faa99c",
+      "sourceConditionsUnspecified": true
+    },
+    {
+      "id": 266,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=36",
+      "sourceProblem": "応用9",
+      "problemSeconds": 36,
+      "conclusionSeconds": [
+        48
+      ],
+      "reasonSeconds": [
+        60,
+        66,
+        72
+      ],
+      "image": "/questions/question-266.png",
+      "imageSha256": "e685972f928aafd924b8cba601f03b322309441a4b1784f1b2e017f40dbcd0ca",
+      "hand": [
+        "2m",
+        "3m",
+        "5m",
+        "6m",
+        "2p",
+        "3p",
+        "3p",
+        "4p",
+        "5p",
+        "7p",
+        "7p",
+        "9s",
+        "9s"
+      ],
+      "draw": "1m",
+      "dora": "7p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "bfbe59eb0409c4f522fd8f6f65b632bda84c087bf638e3d6e7619d1ea1f7a8b8",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 267,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=90",
+      "sourceProblem": "応用10",
+      "problemSeconds": 90,
+      "conclusionSeconds": [
+        98
+      ],
+      "reasonSeconds": [
+        102,
+        108,
+        114,
+        120
+      ],
+      "image": "/questions/question-267.png",
+      "imageSha256": "3da2567d291ef939fa0a5e3123152b52210b5408d3e00d82376f7fbda8362a25",
+      "hand": [
+        "4m",
+        "5m",
+        "5m",
+        "7p",
+        "2s",
+        "4s",
+        "4s",
+        "4s",
+        "5s",
+        "5s",
+        "6s",
+        "6s",
+        "8s"
+      ],
+      "draw": "6p",
+      "dora": "7p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "4m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "941cf8e88b930144be32af538af7b516e728740c21dd8d88d6c5799f63d990c1",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 268,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=132",
+      "sourceProblem": "応用11",
+      "problemSeconds": 132,
+      "conclusionSeconds": [
+        138
+      ],
+      "reasonSeconds": [
+        144,
+        156
+      ],
+      "image": "/questions/question-268.png",
+      "imageSha256": "abceecaab9163ef25155fc5128bb1c6746a0718d156a98c9c79e09b4b84dc08c",
+      "hand": [
+        "7m",
+        "8m",
+        "1p",
+        "2p",
+        "3p",
+        "3p",
+        "3p",
+        "5p",
+        "6p",
+        "7p",
+        "8p",
+        "1s",
+        "1s"
+      ],
+      "draw": "7p",
+      "dora": "7m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "3p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "43e44fc808155fdfe1a2b875292d97434038fbbcde791e2d8392e95b2a9c69b9",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 269,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=168",
+      "sourceProblem": "応用12",
+      "problemSeconds": 168,
+      "conclusionSeconds": [
+        180
+      ],
+      "reasonSeconds": [
+        192,
+        210
+      ],
+      "image": "/questions/question-269.png",
+      "imageSha256": "e82935e4f881b40bfa72f2cd35b8a8257a75400c054d0a06a84171801c7720fd",
+      "hand": [
+        "2m",
+        "4m",
+        "5m",
+        "6m",
+        "6m",
+        "7m",
+        "4p",
+        "5p",
+        "1s",
+        "2s",
+        "3s",
+        "9s",
+        "9s"
+      ],
+      "draw": "7m",
+      "dora": "3s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "6908ddad9a211dfa90c0fe6a350dc3ec405e798e24c1440d95357374f5a5a0e7",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 270,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=234",
+      "sourceProblem": "応用13",
+      "problemSeconds": 234,
+      "conclusionSeconds": [
+        242
+      ],
+      "reasonSeconds": [
+        246,
+        264
+      ],
+      "image": "/questions/question-270.png",
+      "imageSha256": "650bee53216f6f7a2cca22e8695f1beb5b5021d981feefa87f7f867d0e210672",
+      "hand": [
+        "1m",
+        "1m",
+        "3m",
+        "4m",
+        "5m",
+        "6p",
+        "7p",
+        "3s",
+        "4s",
+        "4s",
+        "5s",
+        "6s",
+        "8s"
+      ],
+      "draw": "4s",
+      "dora": "2m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "8s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "66220124bca8f798a354b0e8ef14408befeb0ba0b5f5f38d5cd3ba7f967ac5fa",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 271,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=276",
+      "sourceProblem": "応用14",
+      "problemSeconds": 276,
+      "conclusionSeconds": [
+        284
+      ],
+      "reasonSeconds": [
+        300,
+        306
+      ],
+      "image": "/questions/question-271.png",
+      "imageSha256": "1a28b6cc0180023d1eaa8c62814ca2c6a1d9110dd5139a908f5486a851ba65ed",
+      "hand": [
+        "2m",
+        "3m",
+        "3m",
+        "4m",
+        "5m",
+        "7m",
+        "4p",
+        "5p",
+        "0p",
+        "8s",
+        "9s",
+        "6z",
+        "6z"
+      ],
+      "draw": "7s",
+      "dora": "9s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "7m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "fae257808588a0edd31285066ee485b2ab63e938ae1c769a5db35af81c39e00f",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 272,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=318",
+      "sourceProblem": "応用15",
+      "problemSeconds": 318,
+      "conclusionSeconds": [
+        328
+      ],
+      "reasonSeconds": [
+        336,
+        354,
+        372
+      ],
+      "image": "/questions/question-272.png",
+      "imageSha256": "a178b536355d6c03410bbaa168a02a7ca4ade1e53b507238a8745b5e245dc5ac",
+      "hand": [
+        "4m",
+        "5m",
+        "3p",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "1s",
+        "1s",
+        "2s",
+        "4s",
+        "4s"
+      ],
+      "draw": "3m",
+      "dora": "4z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "4s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "151ebea92c64d8601681d12d7fb2ca4a1928e504001c1808eb992f25f380954a",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 273,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=390",
+      "sourceProblem": "応用16",
+      "problemSeconds": 390,
+      "conclusionSeconds": [
+        396
+      ],
+      "reasonSeconds": [
+        408,
+        426
+      ],
+      "image": "/questions/question-273.png",
+      "imageSha256": "d6b24222db9eb03359288e3a4aa836a81f485bee6233160724b028d87e2a7ea7",
+      "hand": [
+        "7m",
+        "8m",
+        "4p",
+        "5p",
+        "6p",
+        "8p",
+        "8p",
+        "4s",
+        "5s",
+        "5s",
+        "6s",
+        "7s",
+        "9s"
+      ],
+      "draw": "6m",
+      "dora": "8m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "d095c508db2163fe54dd9738aa222bfeb867ad8cc3d970b5f94640c261199c3c",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 274,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=444",
+      "sourceProblem": "応用17",
+      "problemSeconds": 444,
+      "conclusionSeconds": [
+        454
+      ],
+      "reasonSeconds": [
+        462,
+        468
+      ],
+      "image": "/questions/question-274.png",
+      "imageSha256": "f1552250d803a8ba829318e880e41c1f6b944f8a6118c013a6418d9683f46df1",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "5m",
+        "5m",
+        "5m",
+        "6m",
+        "7m",
+        "9m",
+        "9m",
+        "5p",
+        "9p",
+        "9p"
+      ],
+      "draw": "6p",
+      "dora": "9p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "84c3560a09af4bcf866c2f5cf0e5ccb3160b57957919bc1f232865b79917086f",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 275,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=480",
+      "sourceProblem": "応用18",
+      "problemSeconds": 480,
+      "conclusionSeconds": [
+        491
+      ],
+      "reasonSeconds": [
+        498,
+        516,
+        534
+      ],
+      "image": "/questions/question-275.png",
+      "imageSha256": "4594a0d9b2740172fd838859b73786cfdbd8ea2b8b06b193a502b4f60b31b48b",
+      "hand": [
+        "7m",
+        "8m",
+        "3p",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "1s",
+        "2s",
+        "3s",
+        "6s",
+        "7s"
+      ],
+      "draw": "9m",
+      "dora": "3s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "3p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "00cc27ca6948030a0563d3f0350676dbe554972f88ae91b235f3c331e549fd3b",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 276,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=540",
+      "sourceProblem": "応用19",
+      "problemSeconds": 540,
+      "conclusionSeconds": [
+        550
+      ],
+      "reasonSeconds": [
+        552,
+        570,
+        588,
+        606,
+        624
+      ],
+      "image": "/questions/question-276.png",
+      "imageSha256": "85ec582f88f985db9c1c109722e423bbb14a08a00f29286a965db78fa25bbad4",
+      "hand": [
+        "2m",
+        "3m",
+        "4p",
+        "6p",
+        "9p",
+        "9p",
+        "2s",
+        "2s",
+        "3s",
+        "3s",
+        "4s",
+        "0s",
+        "7s"
+      ],
+      "draw": "5p",
+      "dora": "3z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "377091edcf6c5c2486023334f31a26d12d8d2485dd3633e0ca25b59895ee48e7",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 277,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=650",
+      "sourceProblem": "応用20",
+      "problemSeconds": 650,
+      "conclusionSeconds": [
+        658
+      ],
+      "reasonSeconds": [
+        660,
+        678,
+        696
+      ],
+      "image": "/questions/question-277.png",
+      "imageSha256": "bbbacf7e97f9e2c8e123aca5c5485ff550c974c02092f09e29c842706178e022",
+      "hand": [
+        "3m",
+        "4m",
+        "2p",
+        "2p",
+        "3p",
+        "3p",
+        "4p",
+        "5p",
+        "5p",
+        "7p",
+        "8p",
+        "1s",
+        "2s"
+      ],
+      "draw": "2s",
+      "dora": "3s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "8p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "df634891a6169331a8f721c37eae9317c6fa92b35f97f00cc28457f15653d8b2",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 278,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=702",
+      "sourceProblem": "応用21",
+      "problemSeconds": 702,
+      "conclusionSeconds": [
+        712
+      ],
+      "reasonSeconds": [
+        714,
+        732
+      ],
+      "image": "/questions/question-278.png",
+      "imageSha256": "1be4a30e8156a566e7892a5781f44d5dcb60a1693969316d6c1d8560273576ba",
+      "hand": [
+        "4m",
+        "5m",
+        "3p",
+        "4p",
+        "4p",
+        "5p",
+        "6p",
+        "8p",
+        "2s",
+        "4s",
+        "6s",
+        "9s",
+        "9s"
+      ],
+      "draw": "7s",
+      "dora": "4m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "4s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "667f841f12c5f135b40463194c35bd5b19e4562f134b9495df556925f4385cab",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 279,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=738",
+      "sourceProblem": "応用22",
+      "problemSeconds": 738,
+      "conclusionSeconds": [
+        748
+      ],
+      "reasonSeconds": [
+        750,
+        768
+      ],
+      "image": "/questions/question-279.png",
+      "imageSha256": "1350ba134d214178e844ca2ee4c924026731ed9cd9b9d8f5f15e5943a3e533a8",
+      "hand": [
+        "4m",
+        "5m",
+        "5m",
+        "6m",
+        "7m",
+        "7m",
+        "7m",
+        "8m",
+        "9m",
+        "1p",
+        "1p",
+        "6s",
+        "7s"
+      ],
+      "draw": "9m",
+      "dora": "7s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "7m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "643ecc7e155063f02ff6066cf17cd86ff687503de51bf66a48ec45f4516ceb4b",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 280,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=778",
+      "sourceProblem": "応用23",
+      "problemSeconds": 778,
+      "conclusionSeconds": [
+        786
+      ],
+      "reasonSeconds": [
+        798,
+        804
+      ],
+      "image": "/questions/question-280.png",
+      "imageSha256": "cea5bb2656f544e6ba107118c77e8df6211b2bb0ac8099c35eb2b50a509c741e",
+      "hand": [
+        "2m",
+        "4m",
+        "5m",
+        "6m",
+        "7m",
+        "0p",
+        "6p",
+        "9p",
+        "9p",
+        "2s",
+        "4s",
+        "7s",
+        "8s"
+      ],
+      "draw": "9s",
+      "dora": "6s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "c98547a8809dc90189e7de80ed5b43ba61a5b490e0700e3211439b0e5e2e60bb",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 281,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=822",
+      "sourceProblem": "応用24",
+      "problemSeconds": 822,
+      "conclusionSeconds": [
+        828
+      ],
+      "reasonSeconds": [
+        840,
+        846
+      ],
+      "image": "/questions/question-281.png",
+      "imageSha256": "23a738218b665b4ff7bc727e4dbbf7ab0f81e77b90cdd6632e2f56f3e2de5b62",
+      "hand": [
+        "3m",
+        "9m",
+        "9m",
+        "1p",
+        "3p",
+        "4p",
+        "5p",
+        "5p",
+        "6p",
+        "7p",
+        "8p",
+        "9p",
+        "9p"
+      ],
+      "draw": "2m",
+      "dora": "3m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "902729e277584dc1b7eb5a28a5deaaa62f97f2d9d47baf6a4eccec58a99a5f8b",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 282,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=858",
+      "sourceProblem": "応用25",
+      "problemSeconds": 858,
+      "conclusionSeconds": [
+        870
+      ],
+      "reasonSeconds": [
+        876,
+        888,
+        894
+      ],
+      "image": "/questions/question-282.png",
+      "imageSha256": "68b9e9c3aac813d9cd66d4e646cdd75ea2f2b48527c170fdf94bee14a17b4f09",
+      "hand": [
+        "5m",
+        "3p",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "2s",
+        "3s",
+        "4s",
+        "6s",
+        "6s",
+        "7s"
+      ],
+      "draw": "0m",
+      "dora": "2z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "ab04f9c27ec0287832a5202142f8e1027949ce33d5680cc2c1fc506acd76a57f",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 283,
+      "videoId": "_l6L0y-mWg4",
+      "title": "【初心者から】リャンメンカンチャン大攻略！～後編～【上級者まで！】",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=904",
+      "sourceProblem": "応用26",
+      "problemSeconds": 904,
+      "conclusionSeconds": [
+        914
+      ],
+      "reasonSeconds": [
+        930,
+        936
+      ],
+      "image": "/questions/question-283.png",
+      "imageSha256": "21e7c3feea63e0c933999275372b31fe8af1c81fc76f2840d98a839d501ce627",
+      "hand": [
+        "1m",
+        "1m",
+        "0p",
+        "6p",
+        "2s",
+        "4s",
+        "5s",
+        "5s",
+        "5s",
+        "6s",
+        "7s",
+        "7s",
+        "9s"
+      ],
+      "draw": "6s",
+      "dora": "6p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "b650201e53569c07898e5292d506ae978d2318a888e714151f853bacb7dde0d8",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 284,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=132",
+      "sourceProblem": "基本1",
+      "problemSeconds": 132,
+      "conclusionSeconds": [
+        138
+      ],
+      "reasonSeconds": [
+        144,
+        156
+      ],
+      "image": "/questions/question-284.png",
+      "imageSha256": "0ca73cdadbd8ba34e42f89cd60eb06a94ce93b20e769e5c8b6d52ad73bbce065",
+      "hand": [
+        "3m",
+        "3m",
+        "5m",
+        "6m",
+        "7m",
+        "7m",
+        "8m",
+        "1p",
+        "1p",
+        "6p",
+        "7p",
+        "7s",
+        "8s"
+      ],
+      "draw": "9s",
+      "dora": "1p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "3m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "5fa85af279318d24d4fdeb268dad264e68172972538b39930912cab06df5a14f",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 285,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=180",
+      "sourceProblem": "基本2",
+      "problemSeconds": 180,
+      "conclusionSeconds": [
+        190
+      ],
+      "reasonSeconds": [
+        192,
+        210
+      ],
+      "image": "/questions/question-285.png",
+      "imageSha256": "a25beb7f8c46f4238e015e4ccc5dfc79544a12ca03f17ea8f0b665e2d09c43c8",
+      "hand": [
+        "3m",
+        "3m",
+        "5m",
+        "9m",
+        "9m",
+        "9m",
+        "2p",
+        "3p",
+        "3p",
+        "4p",
+        "5p",
+        "0s",
+        "6s"
+      ],
+      "draw": "7p",
+      "dora": "2z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "5m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "e8c00633d03d872a5ee05914c27254476548175f7b087e480aad47d3eb3f5614",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 286,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=218",
+      "sourceProblem": "基本3",
+      "problemSeconds": 218,
+      "conclusionSeconds": [
+        228
+      ],
+      "reasonSeconds": [
+        234,
+        246
+      ],
+      "image": "/questions/question-286.png",
+      "imageSha256": "b8bc917d9df37eca4b14684726dff4abb30975f5fe6b608a327f222d023620c9",
+      "hand": [
+        "3m",
+        "4m",
+        "8m",
+        "8m",
+        "1p",
+        "2p",
+        "2s",
+        "4s",
+        "5s",
+        "5s",
+        "6s",
+        "7s",
+        "9s"
+      ],
+      "draw": "3p",
+      "dora": "8m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "d16cbe7d8552563999c62c1057b324a3a27c1eb9748af7ce47a69250338c42d6",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 287,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=256",
+      "sourceProblem": "基本4",
+      "problemSeconds": 256,
+      "conclusionSeconds": [
+        264
+      ],
+      "reasonSeconds": [
+        270,
+        282
+      ],
+      "image": "/questions/question-287.png",
+      "imageSha256": "32b73d80003f9790e1da9d2b9f03f65fa0464572c6864e2771263baaf32bff40",
+      "hand": [
+        "9m",
+        "9m",
+        "2p",
+        "2p",
+        "4p",
+        "5p",
+        "6p",
+        "6p",
+        "7p",
+        "5s",
+        "7s",
+        "6z",
+        "6z"
+      ],
+      "draw": "6s",
+      "dora": "9m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "ff251a5ba49ca3771667340797bbf4ad45fd1e9061c81ed0beeac60c8f217105",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 288,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=290",
+      "sourceProblem": "基本5",
+      "problemSeconds": 290,
+      "conclusionSeconds": [
+        300
+      ],
+      "reasonSeconds": [
+        306,
+        318
+      ],
+      "image": "/questions/question-288.png",
+      "imageSha256": "d59ac208b251dfa5a04d5bb84c8e1e7092d69779e99e3b8d0f921bc34f0d0c95",
+      "hand": [
+        "3m",
+        "4m",
+        "2p",
+        "3p",
+        "3p",
+        "4p",
+        "5p",
+        "7p",
+        "9p",
+        "2s",
+        "3s",
+        "9s",
+        "9s"
+      ],
+      "draw": "0m",
+      "dora": "4m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "6758aad4131b639e7c08627217f99e47324b5eaf0e67c727767d045746e3579b",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 289,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=322",
+      "sourceProblem": "基本6",
+      "problemSeconds": 322,
+      "conclusionSeconds": [
+        332
+      ],
+      "reasonSeconds": [
+        336,
+        354
+      ],
+      "image": "/questions/question-289.png",
+      "imageSha256": "27b913f5d0636c2c18f3b22f7df2c7d31b788d522b224107e66b7c70ea4c8568",
+      "hand": [
+        "2m",
+        "3m",
+        "5m",
+        "6m",
+        "7m",
+        "7m",
+        "8m",
+        "9p",
+        "9p",
+        "2s",
+        "4s",
+        "5s",
+        "5s"
+      ],
+      "draw": "6s",
+      "dora": "9p",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "e7b56ae6dfa38af21c025666d3ca064dfb48f35ab9170eacd29625ceea381fc9",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 290,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=378",
+      "sourceProblem": "応用1",
+      "problemSeconds": 378,
+      "conclusionSeconds": [
+        388
+      ],
+      "reasonSeconds": [
+        390,
+        408,
+        426
+      ],
+      "image": "/questions/question-290.png",
+      "imageSha256": "92eda7380507cfa89434e60690fa3581f55ea6426c8197fa12a724ca081ffaf7",
+      "hand": [
+        "1m",
+        "3m",
+        "9m",
+        "4p",
+        "5p",
+        "5p",
+        "6p",
+        "9p",
+        "2s",
+        "4s",
+        "6s",
+        "2z",
+        "2z"
+      ],
+      "draw": "2m",
+      "dora": "2z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "8b14c26b03ac48251024c82cbdb8dbe3bc66a566c3740569a5a3efcd3700f99c",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 291,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=432",
+      "sourceProblem": "応用2",
+      "problemSeconds": 432,
+      "conclusionSeconds": [
+        452
+      ],
+      "reasonSeconds": [
+        462,
+        480
+      ],
+      "image": "/questions/question-291.png",
+      "imageSha256": "32b3886c37e19a1972ecc5ca7784ab78070608ffcb248848d34ea07ec100a7f5",
+      "hand": [
+        "3m",
+        "4m",
+        "2p",
+        "2p",
+        "4p",
+        "5p",
+        "6p",
+        "6p",
+        "7p",
+        "0s",
+        "6s",
+        "9s",
+        "9s"
+      ],
+      "draw": "5m",
+      "dora": "3m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "0bfeebf876a86b87699f0fafbe701535cf4053323fbb10c98c666c1740c1d1ac",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 292,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=558",
+      "sourceProblem": "応用4",
+      "problemSeconds": 558,
+      "conclusionSeconds": [
+        570
+      ],
+      "reasonSeconds": [
+        588,
+        606,
+        624,
+        642
+      ],
+      "image": "/questions/question-292.png",
+      "imageSha256": "e5319b7dc2b5847f3d82c7824c1a8b64cf88ab5f713b959a6c5af9a6126761be",
+      "hand": [
+        "4m",
+        "6m",
+        "7m",
+        "8m",
+        "9m",
+        "1p",
+        "2p",
+        "3p",
+        "4s",
+        "5s",
+        "5s",
+        "9s",
+        "9s"
+      ],
+      "draw": "8m",
+      "dora": "9s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "5s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "13fa6bdaed5dbba1220d3743bc539f69c8aedd500db7fb62b79926d68cabcb7a",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 293,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=648",
+      "sourceProblem": "応用5",
+      "problemSeconds": 648,
+      "conclusionSeconds": [
+        658
+      ],
+      "reasonSeconds": [
+        660,
+        678,
+        696
+      ],
+      "image": "/questions/question-293.png",
+      "imageSha256": "03210dfb8dcdba4704f5d1d2a5b23fb9fa2182fa60b5c313dfac2a53fb7b7683",
+      "hand": [
+        "1m",
+        "3m",
+        "4m",
+        "5m",
+        "5m",
+        "6m",
+        "2p",
+        "3p",
+        "3p",
+        "9p",
+        "9p",
+        "5s",
+        "6s"
+      ],
+      "draw": "7s",
+      "dora": "6s",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "3p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "4edb0f7564d3221877c806214dec54293bafb6075cc05daf6328d10a6022a8d9",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 294,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=706",
+      "sourceProblem": "応用6",
+      "problemSeconds": 706,
+      "conclusionSeconds": [
+        716
+      ],
+      "reasonSeconds": [
+        726,
+        732
+      ],
+      "image": "/questions/question-294.png",
+      "imageSha256": "9c4c75c755100c8033856c6f3480859a538dd5c9f0ddce3fb97680fbe4515f2a",
+      "hand": [
+        "4m",
+        "5m",
+        "5m",
+        "6m",
+        "7m",
+        "9m",
+        "3p",
+        "4p",
+        "4p",
+        "5p",
+        "6p",
+        "9s",
+        "9s"
+      ],
+      "draw": "6p",
+      "dora": "6z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "9m"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "0dadb1ad0e42e9e3e26e5a4a43c0c3280578010cdeeaa9ba3a9a379e0f5e16dd",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 295,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=750",
+      "sourceProblem": "応用7",
+      "problemSeconds": 750,
+      "conclusionSeconds": [
+        764
+      ],
+      "reasonSeconds": [
+        768,
+        786
+      ],
+      "image": "/questions/question-295.png",
+      "imageSha256": "4272aece0157e40bcb0a471791df77aec9c17c3620607e8e1877b3721cc722ac",
+      "hand": [
+        "2m",
+        "2m",
+        "2m",
+        "9m",
+        "9m",
+        "4p",
+        "5p",
+        "2s",
+        "4s",
+        "4s",
+        "0s",
+        "6s",
+        "8s"
+      ],
+      "draw": "4p",
+      "dora": "1z",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "4p"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "a9187d4f73817206677e81db823442546601dd84ef3d3c1be9e564fc7263dec5",
+      "sourceConditionsUnspecified": false
+    },
+    {
+      "id": 296,
+      "videoId": "ZrjrfUM9890",
+      "title": "【全問正解を】リャンメンカンチャン大攻略！～前編～【目指そう！】",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=794",
+      "sourceProblem": "応用8",
+      "problemSeconds": 794,
+      "conclusionSeconds": [
+        804
+      ],
+      "reasonSeconds": [
+        816,
+        822,
+        840
+      ],
+      "image": "/questions/question-296.png",
+      "imageSha256": "8ec847d14ff87c3bdad967319fd6383e54f5fdb23a9fcc7243402161d5aa3064",
+      "hand": [
+        "8m",
+        "9m",
+        "2p",
+        "3p",
+        "2s",
+        "3s",
+        "5s",
+        "5s",
+        "6s",
+        "7s",
+        "7s",
+        "8s",
+        "8s"
+      ],
+      "draw": "7m",
+      "dora": "8m",
+      "melds": [],
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "correctDiscards": [
+        "2s"
+      ],
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "videoExplanationSha256": "fbe1395319b3de25c364224c9b66794226fa939c24203b25091eaee6a9b24188",
+      "sourceConditionsUnspecified": false
+    }
+  ],
+  "excluded": [
+    {
+      "videoId": "QB1Nd3Y7lh8",
+      "reason": "private-video"
+    },
+    {
+      "videoId": "_B3x8FQTnYU",
+      "reason": "same-problem-supplement",
+      "mergedInto": 175
+    },
+    {
+      "videoId": "VEhNUVzaO8M",
+      "reason": "compilation-10-existing-problems"
+    },
+    {
+      "videoId": "SwCJFmyk09g",
+      "reason": "defense-lesson-with-four-safety-comparison-problems-not-full-discard-hands",
+      "problemSeconds": [
+        342,
+        420,
+        450,
+        492
+      ]
+    },
+    {
+      "videoId": "ZrjrfUM9890",
+      "reason": "application-3-asks-which-tile-to-draw-not-which-tile-to-discard",
+      "problemSeconds": [
+        504
+      ]
+    },
+    {
+      "videoId": "e7yWmZ0OCiI",
+      "reason": "closing-review-shows-decomposition-without-explicit-discard-conclusion",
+      "problemSeconds": [
+        444
+      ]
+    }
+  ]
+}

@@ -123,8 +123,9 @@ function validQuestion(value: unknown, id: number) {
   const draw = typeof question.draw === "string" ? question.draw : null;
   const selectable = [...hand, ...(draw ? [draw] : [])];
   const melds = Array.isArray(question.melds) ? question.melds : [];
-  const dora = typeof question.dora === "string" ? question.dora : "";
-  if (Number(question.id) !== id || !hand.length || !TILE_CODE.test(dora) || melds.some((meld) => !meld || typeof meld !== "object" || !Array.isArray((meld as Record<string, unknown>).tiles) || ![3, 4].includes(((meld as Record<string, unknown>).tiles as unknown[]).length))) return null;
+  const unspecifiedDora = question.sourceConditionsUnspecified === true && question.dora === null;
+  const dora = unspecifiedDora ? null : typeof question.dora === "string" ? question.dora : "";
+  if (Number(question.id) !== id || !hand.length || (!unspecifiedDora && !TILE_CODE.test(dora || "")) || melds.some((meld) => !meld || typeof meld !== "object" || !Array.isArray((meld as Record<string, unknown>).tiles) || ![3, 4].includes(((meld as Record<string, unknown>).tiles as unknown[]).length))) return null;
   const normalizedMelds = melds.map((meld) => ({ type: ["chi", "pon", "kan"].includes(String((meld as Record<string, unknown>).type)) ? String((meld as Record<string, unknown>).type) : "pon", open: (meld as Record<string, unknown>).open !== false, calledIndex: Number((meld as Record<string, unknown>).calledIndex) || 0, tiles: ((meld as Record<string, unknown>).tiles as unknown[]).filter((code): code is string => typeof code === "string" && TILE_CODE.test(code)) }));
   if (normalizedMelds.some((meld) => (meld.type === "kan" ? meld.tiles.length !== 4 : meld.tiles.length !== 3) || (meld.type === "chi" && meld.calledIndex !== 0) || meld.calledIndex < 0 || meld.calledIndex >= meld.tiles.length) || selectable.length !== 14 - normalizedMelds.length * 3) return null;
   const explanation = typeof question.explanation === "string" ? question.explanation : "";
