@@ -1052,14 +1052,14 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <script src="config.js?v=68"></script>
-  <script src="question-metadata.js?v=68"></script>
+  <script src="config.js?v=69"></script>
+  <script src="question-metadata.js?v=69"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 68;
+    const APP_VERSION = 69;
     const { previewAudienceLabel } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
@@ -1212,12 +1212,9 @@
     }
 
     function explanationTilePath(code) {
-      // Older inline assets have no wind/white tiles; use the approved complete set for those.
-      if (/^[1-5]z$/.test(code)) return tilePath(code);
+      // Keep red fives identical to the hand; older inline assets also lack winds/white.
+      if (/^0[mps]$|^[1-5]z$/.test(code)) return tilePath(code);
       const cacheVersion = `?v=${APP_VERSION}`;
-      if (code === "0m") return "tiles/explanation/aka1-66-90-l.png" + cacheVersion;
-      if (code === "0p") return "tiles/explanation/aka2-66-90-l.png" + cacheVersion;
-      if (code === "0s") return "tiles/explanation/aka3-66-90-l.png" + cacheVersion;
       const number = Number(code[0]);
       const suit = code[1];
       if (suit === "z") return `tiles/explanation/ji${number}-66-90-l.png${cacheVersion}`;
@@ -1311,6 +1308,8 @@
       if (normalized === "中") return "7z";
       const red = /^(?:r5|赤5|0)([mps])$/u.exec(normalized);
       if (red) return `0${red[1]}`;
+      const namedRed = /^aka([1-3])$/.exec(normalized);
+      if (namedRed) return `0${"mps"[Number(namedRed[1]) - 1]}`;
       if (/^[1-7]z$/.test(normalized)) return normalized;
       const numbered = /^([1-9])([mps])$/u.exec(normalized);
       return numbered ? `${numbered[1]}${numbered[2]}` : null;
@@ -1318,7 +1317,7 @@
 
     function isExplanationTileBoundary(text, index, length) {
       const adjacentText = `${text[index - 1] || ""}${text[index + length] || ""}`;
-      return !/[0-9a-zＡ-Ｚａ-ｚ]/iu.test(adjacentText);
+      return !/[0-9０-９a-zＡ-Ｚａ-ｚ]/iu.test(adjacentText);
     }
 
     function isMahjongMiddle(text, index) {
@@ -1331,7 +1330,7 @@
     }
 
     function appendExplanationText(container, text) {
-      const pattern = /(?:r[5５]|赤[5５])[mpsｍｐｓ]|[0-9０-９]+[mpsｍｐｓ]|[1-7１-７][zｚ]|發|中/giu;
+      const pattern = /[aａ][kｋ][aａ][1-3１-３]|(?:[rｒ][5５]|赤[5５])[mpsｍｐｓ]|[0-9０-９]+[mpsｍｐｓ]|[1-7１-７][zｚ]|發|中/giu;
       let lastIndex = 0;
       for (const match of text.matchAll(pattern)) {
         const token = match[0];

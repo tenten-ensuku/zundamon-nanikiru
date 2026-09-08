@@ -489,7 +489,7 @@ test("explanations render mahjong notation as inline tile images without changin
   assert.match(source, /token === "中" && !isMahjongMiddle/);
   assert.match(source, /className = "explanation-tile"/);
   assert.match(source, /function explanationTilePath/);
-  assert.match(source, /tiles\/explanation\/aka2-66-90-l\.png/);
+  assert.match(source, /tiles\/aka2-66-90-l\.png/);
   assert.match(source, /image\.src = explanationTilePath\(code\)/);
   assert.match(source, /\.explanation-tile\s*\{[^}]*height:\s*1\.18em/s);
   assert.doesNotMatch(source, /normalized === "発"/);
