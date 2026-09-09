@@ -14,7 +14,7 @@ const fixture = { id: 1, hand: ["1m", "2m", "3m", "4p", "0p", "5s", "6s", "7s", 
 test("riichi/dama choices are explicit, mutually exclusive and keep the discard on the left", () => {
   const elements = {};
   const document = { getElementById(id) { return elements[id] ||= { attributes: {}, classList: { toggle() {} }, setAttribute(key, value) { this.attributes[key] = value; } }; } };
-  const api = new Function("document", "question", `let selectedIndex=0, riichiSelected=null, specialChoice=null, revealed=false; const playQuestions=[question], currentIndex=0, tileName=x=>x, tilePath=x=>x, renderHand=()=>{}; ${["selectableHand", "renderDecision", "selectRiichi", "toggleKan", "gradeAnswer"].map(extract).join("\n")}; return { render:()=>renderDecision(question), selectRiichi, toggleKan, gradeAnswer, values:()=>({riichiSelected,specialChoice}) };`)(document, { ...fixture, kanChoice: true });
+  const api = new Function("document", "question", `let selectedIndex=0, riichiSelected=null, specialChoice=null, revealed=false; const playQuestions=[question], currentIndex=0, tileName=x=>x, tilePath=x=>x, renderHand=()=>{}, answerFeedback={unlock(){}}; ${["selectableHand", "renderDecision", "selectRiichi", "toggleKan", "gradeAnswer"].map(extract).join("\n")}; return { render:()=>renderDecision(question), selectRiichi, toggleKan, gradeAnswer, values:()=>({riichiSelected,specialChoice}) };`)(document, { ...fixture, kanChoice: true });
   api.render();
   assert.equal(elements.confirmButton.disabled, true);
   assert.equal(elements.riichiButton.attributes["aria-pressed"], "false");

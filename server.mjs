@@ -213,7 +213,7 @@ function allowedStaticPath(rootDir, pathname) {
   if (/^\/icons\/(?:favicon-32|apple-touch-icon-180|icon-192|icon-512|icon-maskable-512)\.png$/.test(iconPath)) return path.join(rootDir, iconPath.slice(1));
   if (iconPath === "/manifest.webmanifest") return path.join(rootDir, "manifest.webmanifest");
   if (pathname === "/") return path.join(rootDir, "index.html");
-  if (["/index.html", "/admin.html", "/config.js", "/question-metadata.js", "/question-review.js", "/question-review.css", "/shared-data.js", "/public/shared-overrides.json"].includes(pathname)) return path.join(rootDir, pathname.slice(1));
+  if (["/index.html", "/admin.html", "/config.js", "/question-metadata.js", "/question-review.js", "/question-review.css", "/shared-data.js", "/answer-feedback.js", "/answer-feedback.css", "/public/shared-overrides.json"].includes(pathname)) return path.join(rootDir, pathname.slice(1));
   if (/^\/tiles\/(?:explanation\/)?[a-z0-9-]+\.png$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));
   if (/^\/assets\/speakers\/[a-z0-9_-]+\.(?:png|jpe?g|webp)$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));
   if (pathname === "/public/questions.json") return path.join(rootDir, "public", "questions.json");

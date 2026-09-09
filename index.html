@@ -1052,17 +1052,19 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <link rel="stylesheet" href="question-review.css?v=70">
-  <script src="config.js?v=70"></script>
-  <script src="question-metadata.js?v=70"></script>
-  <script src="question-review.js?v=70"></script>
-  <script src="shared-data.js?v=70"></script>
+  <link rel="stylesheet" href="question-review.css?v=71">
+  <link rel="stylesheet" href="answer-feedback.css?v=71">
+  <script src="config.js?v=71"></script>
+  <script src="question-metadata.js?v=71"></script>
+  <script src="question-review.js?v=71"></script>
+  <script src="shared-data.js?v=71"></script>
+  <script src="answer-feedback.js?v=71"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 70;
+    const APP_VERSION = 71;
     const { previewAudienceLabel } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
@@ -1089,6 +1091,7 @@
     let explanationEditor = null;
     let explanationEditBusy = false;
     let state = loadState();
+    const answerFeedback = ZundamonAnswerFeedback.create({ getVolume: () => state.settings.soundVolume });
 
     document.documentElement.dataset.appVersion = String(APP_VERSION);
 
@@ -1147,7 +1150,7 @@
         favoriteIds: [],
         questionStats: {},
         results: [],
-        settings: { nickname: "" },
+        settings: { nickname: "", soundVolume: ZundamonAnswerFeedback.DEFAULT_VOLUME },
         session: null,
       };
     }
@@ -1169,6 +1172,7 @@
         },
         session: source.session && typeof source.session === "object" ? source.session : null,
       };
+      normalized.settings.soundVolume = ZundamonAnswerFeedback.normalizeVolume(normalized.settings.soundVolume);
       if (normalized.session) {
         normalized.session.ids = Array.isArray(normalized.session.ids)
           ? normalized.session.ids.map(Number).filter(Number.isFinite)
@@ -1430,6 +1434,7 @@
     }
 
     function setScreen(screen) {
+      answerFeedback.stop();
       currentScreen = screen;
       document.body.classList.toggle("menu-open", screen !== "play");
       document.body.classList.toggle("play-open", screen === "play");
@@ -1798,6 +1803,14 @@
             <input class="setting-input" id="nicknameInput" maxlength="16" autocomplete="nickname">
           </div>
           <div class="setting-group">
+            <label for="soundVolume">正解の音</label>
+            <div class="sound-setting-row">
+              <input class="sound-volume" id="soundVolume" type="range" min="0" max="100" step="5" aria-label="正解音の音量">
+              <output class="sound-volume-value" id="soundVolumeValue" for="soundVolume"></output>
+              <button class="menu-secondary sound-preview" id="previewCorrectSound" type="button">試聴</button>
+            </div>
+          </div>
+          <div class="setting-group">
             <h3>バックアップ</h3>
             <p class="menu-lead">回答履歴・復習・設定をファイルで保存、復元できます。</p>
             <div class="menu-actions">
@@ -1820,6 +1833,23 @@
         state.settings.nickname = nickname.value.slice(0, 16);
         saveState();
       });
+      const volume = document.getElementById("soundVolume");
+      const preview = document.getElementById("previewCorrectSound");
+      const updateVolumeLabel = () => {
+        const value = state.settings.soundVolume;
+        volume.value = value;
+        volume.setAttribute("aria-valuetext", value === 0 ? "消音" : `${value}%`);
+        document.getElementById("soundVolumeValue").textContent = value === 0 ? "消音" : `${value}%`;
+        preview.disabled = value === 0;
+      };
+      updateVolumeLabel();
+      volume.addEventListener("input", () => {
+        answerFeedback.stop();
+        state.settings.soundVolume = ZundamonAnswerFeedback.normalizeVolume(Number(volume.value));
+        updateVolumeLabel();
+        saveState();
+      });
+      preview.addEventListener("click", () => answerFeedback.play());
       document.getElementById("backupDownload").addEventListener("click", downloadBackup);
       document.getElementById("backupRestore").addEventListener("click", () => document.getElementById("backupFile").click());
       document.getElementById("backupFile").addEventListener("change", restoreBackup);
@@ -2016,6 +2046,7 @@
     }
 
     function renderQuestion() {
+      answerFeedback.stop();
       const question = playQuestions[currentIndex];
       const response = state.session?.responses?.[String(question.id)];
       const previousTileIndex = response?.tile ? selectableHand(question).indexOf(response.tile) : -1;
@@ -2145,6 +2176,7 @@
 
     function selectTile(index) {
       if (revealed) return;
+      void answerFeedback.unlock();
       selectedIndex = index;
       specialChoice = null;
       renderHand(playQuestions[currentIndex]);
@@ -2154,6 +2186,7 @@
     function selectRiichi(value) {
       const question = playQuestions[currentIndex];
       if (revealed || question.riichiChoice !== true || typeof value !== "boolean") return;
+      void answerFeedback.unlock();
       riichiSelected = value;
       specialChoice = null;
       renderDecision(question);
@@ -2162,6 +2195,7 @@
     function toggleKan() {
       const question = playQuestions[currentIndex];
       if (revealed || question.kanChoice !== true) return;
+      void answerFeedback.unlock();
       specialChoice = specialChoice === "kan" ? null : "kan";
       if (specialChoice === "kan") {
         selectedIndex = null;
@@ -2259,10 +2293,12 @@
       renderDecision(question);
       renderReview(question);
       renderProgress();
+      if (graded && correct) answerFeedback.play(document.getElementById("answerFeedback"));
     }
 
     function retryQuestion() {
       if (!leaveExplanationEditor()) return;
+      answerFeedback.stop();
       const question = playQuestions[currentIndex];
       const id = String(question.id);
       const sessionResponse = state.session?.responses?.[id];
