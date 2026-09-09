@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "zundamon-question-api",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-09",
+  "account_id": "e5b748838ea561070abc576dea21577d",
+  "workers_dev": true,
+  "preview_urls": false,
+  "vars": { "QUESTION_EDIT_MODE": "open", "ALLOWED_ORIGINS": "https://tenten-ensuku.github.io" },
+  "d1_databases": [{ "binding": "DB", "database_name": "zundamon-question-data", "database_id": "0938b457-6287-4fdc-aca4-6cb3c4101896", "migrations_dir": "migrations" }],
+  "ratelimits": [
+    { "name": "EDGE_LIMIT", "namespace_id": "202609100701", "simple": { "limit": 240, "period": 60 } },
+    { "name": "WRITE_LIMIT", "namespace_id": "202609100702", "simple": { "limit": 60, "period": 60 } }
+  ],
+  "observability": { "enabled": false }
+}

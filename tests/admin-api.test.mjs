@@ -267,8 +267,10 @@ test("review completion can be cleared after restoring bundled content", async (
 test("client contains a bundled-data fallback", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /fetch\("public\/questions\.json"/);
-  assert.match(source, /apiUrl\("\/api\/overrides"\)/);
-  assert.match(source, /\.catch\(\(\) => \[\]\)/);
+  assert.match(source, /ZundamonShared\.loadOverrides\(\)/);
+  const shared = await readFile(path.resolve("shared-data.js"), "utf8");
+  assert.match(shared, /public\/shared-overrides\.json/);
+  assert.match(shared, /if \(strict\) throw error; await initial\(\); return memory\.rows/);
 });
 
 test("hand and meld tiles keep the same per-tile width", async () => {
@@ -315,12 +317,14 @@ test("reviewing mode restores vertical scrolling after an answer", async () => {
   assert.match(source, /body\.play-open\.reviewing\s*\{[^}]*overflow-y:\s*auto[^}]*touch-action:\s*pan-y/s);
 });
 
-test("admin editor has a shared per-question review checkbox", async () => {
+test("admin and play share three-state review checkboxes", async () => {
   const source = await readFile(path.resolve("admin.html"), "utf8");
-  assert.match(source, /class="review-checkbox" type="checkbox"/);
-  assert.match(source, /<span>確認完了<\/span>/);
+  assert.match(source, /ZundamonReview\.createControl/);
+  const control = await readFile(path.resolve("question-review.js"), "utf8");
+  for (const mark of ["○", "△", "×"]) assert.ok(control.includes(mark));
+  assert.match(control, /input\.type = "checkbox"/);
   assert.match(source, /method:\s*"PATCH"/);
-  assert.match(source, /JSON\.stringify\(\{ reviewed: reviewCheckbox\.checked \}\)/);
+  assert.match(source, /JSON\.stringify\(\{ reviewStatus, expectedReviewUpdatedAt \}\)/);
   assert.match(source, /確認完了 \$\{reviewed\}問/);
 });
 

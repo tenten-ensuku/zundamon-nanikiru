@@ -80,6 +80,7 @@ function mergeQuestions(baseQuestions, overrides) {
         : Array.isArray(question.correctDiscards) ? question.correctDiscards : [],
       explanation: mergeExplanationWithVideoSummary(question.explanation, typeof override?.explanation === "string" ? override.explanation : undefined),
       reviewed: override?.reviewed === true,
+      reviewStatus: override?.reviewStatus || (override?.reviewed ? "complete" : null),
       overridden: hasContentOverride,
       overrideUpdatedAt: override?.updatedAt || null,
       reviewUpdatedAt: override?.reviewUpdatedAt || null,
@@ -88,7 +89,7 @@ function mergeQuestions(baseQuestions, overrides) {
   for (const override of Object.values(overrides)) {
     const questionData = override?.questionData;
     if (!Array.isArray(questionData?.hand) || baseIds.has(Number(questionData.id))) continue;
-    merged.push({ ...questionData, reviewed: override?.reviewed === true, overridden: true, overrideUpdatedAt: override?.updatedAt || null, reviewUpdatedAt: override?.reviewUpdatedAt || null });
+    merged.push({ ...questionData, reviewed: override?.reviewed === true, reviewStatus: override?.reviewStatus || (override?.reviewed ? "complete" : null), overridden: true, overrideUpdatedAt: override?.updatedAt || null, reviewUpdatedAt: override?.reviewUpdatedAt || null });
   }
   return merged.sort((left, right) => Number(left.id) - Number(right.id));
 }
@@ -99,6 +100,7 @@ function listOverrides(overrides) {
       const result = {
         id: Number(id),
         reviewed: override?.reviewed === true,
+        reviewStatus: override?.reviewStatus || (override?.reviewed ? "complete" : null),
         reviewUpdatedAt: override?.reviewUpdatedAt || null,
       };
       if (Array.isArray(override?.correctDiscards)) result.correctDiscards = override.correctDiscards;
@@ -199,6 +201,7 @@ function contentType(filePath) {
   return {
     ".html": "text/html; charset=utf-8",
     ".js": "text/javascript; charset=utf-8",
+    ".css": "text/css; charset=utf-8",
     ".json": "application/json; charset=utf-8",
     ".webmanifest": "application/manifest+json; charset=utf-8",
     ".png": "image/png",
@@ -210,7 +213,7 @@ function allowedStaticPath(rootDir, pathname) {
   if (/^\/icons\/(?:favicon-32|apple-touch-icon-180|icon-192|icon-512|icon-maskable-512)\.png$/.test(iconPath)) return path.join(rootDir, iconPath.slice(1));
   if (iconPath === "/manifest.webmanifest") return path.join(rootDir, "manifest.webmanifest");
   if (pathname === "/") return path.join(rootDir, "index.html");
-  if (["/index.html", "/admin.html", "/config.js", "/question-metadata.js"].includes(pathname)) return path.join(rootDir, pathname.slice(1));
+  if (["/index.html", "/admin.html", "/config.js", "/question-metadata.js", "/question-review.js", "/question-review.css", "/shared-data.js", "/public/shared-overrides.json"].includes(pathname)) return path.join(rootDir, pathname.slice(1));
   if (/^\/tiles\/(?:explanation\/)?[a-z0-9-]+\.png$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));
   if (/^\/assets\/speakers\/[a-z0-9_-]+\.(?:png|jpe?g|webp)$/i.test(pathname)) return path.join(rootDir, pathname.slice(1));
   if (pathname === "/public/questions.json") return path.join(rootDir, "public", "questions.json");
@@ -297,6 +300,14 @@ export function createAppServer(options = {}) {
         sendJson(response, 200, listOverrides(overrides), origin);
         return;
       }
+      const oneOverride = /^\/api\/overrides\/(\d+)$/.exec(pathname);
+      if (request.method === "GET" && oneOverride) {
+        const id = Number(oneOverride[1]);
+        if (!Number.isInteger(id) || id < 1 || id > MAX_QUESTION_ID) { sendJson(response, 404, { error: "問題が見つかりません。" }, origin); return; }
+        const { overrides } = await baseAndOverrides();
+        sendJson(response, 200, listOverrides({ [id]: overrides[id] || {} })[0], origin);
+        return;
+      }
 
       if (request.method === "POST" && pathname === "/api/admin/login") {
         if (getEditMode() === "closed") {
@@ -334,7 +345,7 @@ export function createAppServer(options = {}) {
           sendJson(response, 401, { error: "認証に失敗しました。" }, origin);
           return;
         }
-        const body = request.method === "PATCH" || request.method === "DELETE" ? null : await readRequestJson(request);
+        const body = request.method === "PATCH" ? null : await readRequestJson(request);
         const questionId = isCreate ? Number(body?.question?.id) : Number(adminMatch[1]);
         const { baseQuestions, overrides } = await baseAndOverrides();
         const baseQuestion = baseQuestions.find((question) => question.id === questionId);
@@ -346,16 +357,19 @@ export function createAppServer(options = {}) {
 
         const key = String(questionId);
         const existing = overrides[key] && typeof overrides[key] === "object" ? overrides[key] : {};
+        const oldStatus = existing.reviewStatus || (existing.reviewed ? "complete" : null);
+        const reviewFields = oldStatus ? { reviewed: oldStatus === "complete", reviewStatus: oldStatus, reviewUpdatedAt: existing.reviewUpdatedAt || null } : {};
+        if (body && Object.hasOwn(body, "expectedUpdatedAt") && body.expectedUpdatedAt !== (existing.updatedAt || null)) {
+          sendJson(response, 409, { error: "他の編集が先に保存されています。開き直してください。" }, origin);
+          return;
+        }
         if (isCreate && (baseQuestion || existingQuestion)) {
           sendJson(response, 409, { error: "同じ番号の問題がすでにあります。" }, origin);
           return;
         }
         if (request.method === "DELETE") {
-          if (existing.reviewed === true) {
-            overrides[key] = {
-              reviewed: true,
-              reviewUpdatedAt: existing.reviewUpdatedAt || new Date().toISOString(),
-            };
+          if (oldStatus) {
+            overrides[key] = reviewFields;
           } else {
             delete overrides[key];
           }
@@ -380,18 +394,24 @@ export function createAppServer(options = {}) {
             sendJson(response, 200, { id: questionId, changes, overrideUpdatedAt: updatedAt }, origin);
             return;
           }
-          if (typeof body.reviewed !== "boolean") {
+          const newStatus = Object.hasOwn(body, "reviewStatus") ? body.reviewStatus : typeof body.reviewed === "boolean" ? (body.reviewed ? "complete" : null) : undefined;
+          if (newStatus !== null && !["complete", "check", "fix"].includes(newStatus)) {
             sendJson(response, 400, { error: "確認完了の指定が正しくありません。" }, origin);
             return;
           }
-          if (body.reviewed) {
+          if (Object.hasOwn(body, "expectedReviewUpdatedAt") && body.expectedReviewUpdatedAt !== (existing.reviewUpdatedAt || null)) {
+            sendJson(response, 409, { error: "確認状態が更新されています。開き直してください。" }, origin);
+            return;
+          }
+          if (newStatus) {
             overrides[key] = {
               ...existing,
-              reviewed: true,
-              reviewUpdatedAt: new Date().toISOString(),
+              reviewed: newStatus === "complete",
+              reviewStatus: newStatus,
+              reviewUpdatedAt: new Date(Math.max(Date.now(), (Date.parse(existing.reviewUpdatedAt) || 0) + 1)).toISOString(),
             };
           } else {
-            const { reviewed, reviewUpdatedAt, ...contentOverride } = existing;
+            const { reviewed, reviewStatus, reviewUpdatedAt, ...contentOverride } = existing;
             if (Array.isArray(contentOverride.correctDiscards) || typeof contentOverride.explanation === "string" || Object.keys(contentOverride.questionData || {}).length) {
               overrides[key] = contentOverride;
             } else {
@@ -401,7 +421,7 @@ export function createAppServer(options = {}) {
         } else {
           const structured = normalizeStructuredQuestion(body?.question, questionId);
           if (structured) {
-            overrides[key] = { ...(existing.reviewed === true ? { reviewed: true, reviewUpdatedAt: existing.reviewUpdatedAt || new Date().toISOString() } : {}), questionData: structured, correctDiscards: structured.correctDiscards, explanation: structured.explanation, updatedAt: new Date().toISOString() };
+            overrides[key] = { ...reviewFields, questionData: structured, correctDiscards: structured.correctDiscards, explanation: structured.explanation, updatedAt: new Date(Math.max(Date.now(), (Date.parse(existing.updatedAt) || 0) + 1)).toISOString() };
           } else {
           const explanation = typeof body.explanation === "string" ? body.explanation.trim() : "";
           const correctDiscards = Array.isArray(body.correctDiscards)
@@ -417,10 +437,7 @@ export function createAppServer(options = {}) {
             return;
           }
           overrides[key] = {
-            ...(existing.reviewed === true ? {
-              reviewed: true,
-              reviewUpdatedAt: existing.reviewUpdatedAt || new Date().toISOString(),
-            } : {}),
+            ...reviewFields,
             correctDiscards,
             explanation,
             updatedAt: new Date().toISOString(),

@@ -1,0 +1,9 @@
+.question-review-control { display:flex; flex-wrap:wrap; gap:6px; margin:10px 0; padding:8px; border:1px solid rgba(242,210,123,.25); border-radius:8px; min-width:0; }
+.question-review-control legend { color:#f2d27b; font-size:12px; padding:0 5px; }
+.question-review-control label { display:flex; flex:1 1 72px; justify-content:center; align-items:center; gap:4px; min-height:44px; font-size:12px; cursor:pointer; background:rgba(0,0,0,.2); border-radius:5px; white-space:nowrap; }
+.question-review-control label:has(:checked) { color:#f2d27b; background:rgba(216,168,60,.15); box-shadow:inset 0 0 0 1px #d8a83c; }
+.question-review-control input { margin:0; width:16px; height:16px; accent-color:#d8a83c; }
+.question-review-control:disabled { opacity:.65; }
+.question-review-message { flex-basis:100%; font:11px/1.5 sans-serif; color:#bdcfc8; overflow-wrap:anywhere; }
+.question-review-message:empty { display:none; }
+summary .question-review-control { grid-column:1 / -1; grid-row:2; margin:4px 0 0; }

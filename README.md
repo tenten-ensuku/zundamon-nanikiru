@@ -15,10 +15,12 @@ npm run app
 **現在は全体公開前の一時的な編集開放中です。ログインなしで編集できます。** URLを知っている人による書き換えも可能です。
 
 - ローカル: 変更分をこのPCの `data/question-overrides.json` に保存します。公開サイトには自動反映されません。
-- GitHub Pages: 変更分をSupabaseの `public.zundamon_question_overrides` に保存し、利用者全員へ反映します。
-- 共有APIがHTTP 402などで停止中なら、認証をなくしても共有保存できません。編集画面は理由を表示し、保存できたようには扱いません。
+- GitHub Pages: 変更分を専用Cloudflare D1 `zundamon-question-data` に保存し、利用者全員へ反映します。
+- 共有APIが停止中なら入力を保持し、保存できたようには扱いません。公開用スナップショット・取得済み差分からの出題と端末内の採点・履歴は継続できます。
 
-回答後は「解説を編集」から動画解説・補足解説をその場で編集できます（`open` の間のみ）。`PATCH /questions/:id/explanation` は変更した解説欄だけを保存し、更新日時が変わっていれば409で上書きを拒否します。入力は失敗時も保持し、画面移動時は未保存の変更を確認します。公開時にはEdge Functionを先に更新してから、クライアントを反映してください。
+回答後は「解説を編集」から動画解説・補足解説をその場で編集できます（`open` の間のみ）。`PATCH /questions/:id/explanation` は変更した解説欄だけを保存し、更新日時が変わっていれば409で上書きを拒否します。入力は失敗時も保持し、画面移動時は未保存の変更を確認します。公開時にはWorkerを先に更新してから、クライアントを反映してください。
+
+解説の下と管理一覧に、○ 完成 / △ 要確認 / × 要修正のチェックがあります。同時選択は1種類で、選択済みをもう一度押すと未確認に戻せます。本文とは別の更新日時で競合を検出し、以前の確認済みチェックは○として保持します。
 
 #### 全体公開時に編集を停止する
 
@@ -30,21 +32,29 @@ npm run app
 | `password` | `ADMIN_PASSWORD` で認証した人だけ編集可能 |
 | `closed` | パスワードが正しくても全編集を拒否 |
 
-ローカルでは `.env` に `QUESTION_EDIT_MODE=closed` を追加して `npm run app` を再起動します。公開版は、このプロジェクトのSupabase Edge Function環境変数に同じ設定を追加します。
+ローカルでは `.env` に `QUESTION_EDIT_MODE=closed` を追加して `npm run app` を再起動します。公開版は `cloudflare/wrangler.jsonc` の `QUESTION_EDIT_MODE` を同じ設定に変更し、`npm run worker:deploy` で配信します。
 
-両方の初期値を変更する場合は `supabase/functions/zundamon-question-admin/edit-policy.mjs` の `DEFAULT_EDIT_MODE` を変更し、ローカル再起動とEdge Function再配信を行います。Edge Functionには `index.ts` と `edit-policy.mjs` の両方が必要です。環境変数が優先され、不正な値は安全側の `closed` になります。
+環境変数が優先され、不正な値は安全側の `closed` になります。完成後の全体公開時は `config.js` の `releaseStage` も `public` にし、古い編集画面からの書き込みも拒否されることを確認してください。
 
-`password` モードのローカル用パスワードは `.env`、公開版はSupabaseのSecret `ADMIN_PASSWORD` に保存します。パスワードを公開ファイルやブラウザ保存領域へ置きません。通常のアプリ更新の公開と、利用者を広く募集する「全体公開」は区別してください。
+将来 `password` モードを使う場合のローカル用パスワードは `.env`、公開版はWorker Secret `ADMIN_PASSWORD` に保存します。現在は不要です。パスワードを公開ファイルやブラウザ保存領域へ置きません。通常のアプリ更新の公開と、利用者を広く募集する「全体公開」は区別してください。
 
-### GitHub Pages + Supabase
+### GitHub Pages + Cloudflare
 
-公開画面はGitHub Pages、共有編集データはSupabaseを使用します。`config.js` に含まれるのは公開Edge Function URLだけです。Supabaseのsecret key、service role key、管理パスワードは公開ファイルへ置きません。
+公開画面と画像は既存GitHub Pages、共有編集差分と確認状態は専用D1を使用します。`config.js` に含まれるのは公開Worker URLだけです。DBをブラウザへ直接公開せず、Workerの入力検証・競合検出を通して更新します。
 
-Supabase側の構成:
+構成:
 
-- Migration: `supabase/migrations/20260716000000_create_zundamon_question_overrides.sql`
-- Edge Function: `supabase/functions/zundamon-question-admin/index.ts`
-- Production Secret: `ADMIN_PASSWORD`
+- Worker: `cloudflare/worker.mjs` / `cloudflare/wrangler.jsonc` (`zundamon-question-api`)
+- D1: `zundamon-question-data` / `cloudflare/migrations/0001_questions.sql`
+- 公開用スナップショット: `public/shared-overrides.json`（公開項目だけ。独立バックアップではありません）
+- 同期: `shared-data.js`。最大50件ずつの差分取得、10秒の公開APIキャッシュ、定期ポーリングなし。
+- 制限: IPあたり読取等240回/分・保存60回/分、アプリ全体のDB変更1,000回/UTC日。Cloudflareのアカウント共通枠は別に存在し、無料・無停止を保証しません。
+- テスト: `npm test`、配信確認: `npm run worker:check`、Worker公開: `npm run worker:deploy`。
+- GitHub Pagesはmainブランチのルート。バージョンを1つ上げ、テスト後にpushし、実配信バージョンと保存操作まで確認します。
+
+Supabaseの対象2テーブルは削除せず保存し、`service_role` の書き込み権限だけを停止しています。通常画面・管理画面・Discord取込にSupabaseへのネットワーク依存はありません。旧コードは記録として保持します。ロールバックはD1の新しい編集を先に退避・照合してから行い、単にAPI URLだけを旧版へ戻さないでください。非公開の移行記録・独立バックアップ・復元手順は作業日のローカル移行フォルダにあります。
+
+## Discord取込
 
 指定Discord親チャンネルの画像付き投稿を問題として取り込みます。通常の画像添付に加え、Discordの転送メッセージ（message snapshots）にも対応し、転送元の画像・投稿日時・メッセージURL・スレッドを取得します。各投稿のスレッドを最後まで読み、\`DISCORD_EXPLAINER_USER_ID\` と一致する投稿だけを、投稿日時順で改行連結した解説にします。
 

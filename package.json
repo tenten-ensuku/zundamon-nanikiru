@@ -10,6 +10,15 @@
     "import:questions:oldest": "node scripts/import-discord-questions.mjs --test oldest",
     "import:questions:all": "node scripts/import-discord-questions.mjs --all",
     "structure:questions": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ocr-questions.ps1 && python scripts/structure-questions.py",
-    "validate:video-question": "node scripts/validate-video-question.mjs"
+    "validate:video-question": "node scripts/validate-video-question.mjs",
+    "worker:check": "wrangler deploy -c cloudflare/wrangler.jsonc --dry-run",
+    "worker:deploy": "wrangler deploy -c cloudflare/wrangler.jsonc",
+    "db:migrate": "wrangler d1 migrations apply zundamon-question-data --remote -c cloudflare/wrangler.jsonc"
+  },
+  "devDependencies": {
+    "wrangler": "4.130.0"
+  },
+  "overrides": {
+    "sharp": "0.35.4"
   }
 }

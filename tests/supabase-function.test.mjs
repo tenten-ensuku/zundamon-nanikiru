@@ -53,10 +53,10 @@ test("review-state migration enables RLS and revokes public table access", async
   assert.match(source, /revoke all on table public\.zundamon_question_reviews from anon, authenticated/i);
 });
 
-test("GitHub Pages config contains only the public function URL", async () => {
+test("GitHub Pages config contains only the public Worker URL", async () => {
   const source = await readFile(path.resolve("config.js"), "utf8");
   assert.match(source, /^window\.ZUNDAMON_CONFIG/);
-  assert.match(source, /https:\/\/kclkzevcgpfbavegwbnf\.supabase\.co\/functions\/v1\/zundamon-question-admin/);
+  assert.match(source, /https:\/\/zundamon-question-api\.naga-study\.workers\.dev/);
   assert.doesNotMatch(source, /service_role|sb_secret_|ADMIN_PASSWORD/i);
 });
 

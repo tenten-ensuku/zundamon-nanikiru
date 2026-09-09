@@ -274,8 +274,11 @@
     </section>
   </main>
 
-  <script src="config.js?v=69"></script>
-  <script src="question-metadata.js?v=69"></script>
+  <link rel="stylesheet" href="question-review.css?v=70">
+  <script src="config.js?v=70"></script>
+  <script src="question-metadata.js?v=70"></script>
+  <script src="question-review.js?v=70"></script>
+  <script src="shared-data.js?v=70"></script>
   <script>
     "use strict";
     const { previewAudienceLabel } = window.ZUNDAMON_QUESTION_METADATA;
@@ -346,6 +349,7 @@
             : Array.isArray(question.correctDiscards) ? question.correctDiscards : [],
           explanation: mergeExplanationWithVideoSummary(question.explanation, typeof override?.explanation === "string" ? override.explanation : undefined),
           reviewed: override?.reviewed === true,
+          reviewStatus: override?.reviewStatus || (override?.reviewed ? "complete" : null),
           overridden: hasContentOverride,
           overrideUpdatedAt: override?.overrideUpdatedAt || null,
           reviewUpdatedAt: override?.reviewUpdatedAt || null,
@@ -353,7 +357,7 @@
       });
       for (const override of overrides || []) {
         if (!Array.isArray(override?.questionData?.hand) || baseIds.has(Number(override.id))) continue;
-        merged.push({ ...override.questionData, reviewed: override.reviewed === true, overridden: true, overrideUpdatedAt: override.overrideUpdatedAt || null, reviewUpdatedAt: override.reviewUpdatedAt || null });
+        merged.push({ ...override.questionData, reviewed: override.reviewed === true, reviewStatus: override.reviewStatus || (override.reviewed ? "complete" : null), overridden: true, overrideUpdatedAt: override.overrideUpdatedAt || null, reviewUpdatedAt: override.reviewUpdatedAt || null });
       }
       return merged.sort((left, right) => Number(left.id) - Number(right.id));
     }
@@ -364,7 +368,7 @@
           if (!response.ok) throw new Error("問題データを読み込めませんでした。");
           return response.json();
         }),
-        api("/api/overrides"),
+        ZundamonShared.loadOverrides({ strict: true }),
       ]);
       baseQuestions = base;
       return mergeOverrides(base, overrides);
@@ -373,7 +377,7 @@
     async function api(path, options = {}) {
       const headers = { "Content-Type": "application/json", ...(options.headers || {}) };
       if (options.admin && adminPassword) headers["X-Admin-Password"] = adminPassword;
-      const response = await fetch(apiUrl(path), { ...options, headers, cache: "no-store" });
+      const response = await fetch(apiUrl(path), { ...options, headers, signal: AbortSignal.timeout(8000), cache: "no-store" });
       const body = await response.json().catch(() => ({}));
       if (!response.ok) {
         const message = response.status === 402
@@ -381,6 +385,7 @@
           : body.error || "処理に失敗しました。";
         throw Object.assign(new Error(message), { status: response.status });
       }
+      if (options.method && options.method !== "GET" && !path.endsWith("/login")) ZundamonShared.invalidate();
       return body;
     }
 
@@ -501,7 +506,7 @@
           <summary>
             <span class="qid">第${question.id}問</span>
             <span class="qcontext">${roundName(question.round)}　${WIND_NAMES[question.seat] || "―"}家　${question.turn ?? "―"}巡目</span>
-            <label class="review-check"><input class="review-checkbox" type="checkbox" ${question.reviewed ? "checked" : ""}><span>確認完了</span></label>
+            <span class="review-control-host"></span>
             <span class="answer-state ${question.overridden ? "override" : question.correctDiscards?.length || question.correctKan === true ? "" : "unset"}">${answerText}${question.overridden ? "　編集済み" : ""}</span>
           </summary>
           <div class="editor"></div>`;
@@ -518,39 +523,25 @@
             renderEditor(details, question);
           }
         });
-        const reviewLabel = details.querySelector(".review-check");
-        const reviewCheckbox = details.querySelector(".review-checkbox");
-        reviewLabel.addEventListener("click", event => event.stopPropagation());
-        reviewCheckbox.addEventListener("change", async () => {
-          const previous = question.reviewed === true;
-          reviewCheckbox.disabled = true;
-          details.classList.toggle("reviewed", reviewCheckbox.checked);
-          try {
-            const saved = await api(`/api/admin/questions/${question.id}`, {
-              method: "PATCH",
-              admin: true,
-              body: JSON.stringify({ reviewed: reviewCheckbox.checked }),
-            });
-            question.reviewed = saved.reviewed === true;
-            question.reviewUpdatedAt = saved.reviewUpdatedAt || null;
-            reviewCheckbox.checked = question.reviewed;
-            details.classList.toggle("reviewed", question.reviewed);
-            updateSummaryLine(filtered.length);
-          } catch (error) {
-            question.reviewed = previous;
-            reviewCheckbox.checked = previous;
-            details.classList.toggle("reviewed", previous);
-            window.alert(error.message);
-          } finally {
-            reviewCheckbox.disabled = false;
-          }
-        });
+        attachReviewControl(details, question);
         list.append(details);
       }
       if (Number.isInteger(requestedQuestionId) && requestedQuestionId > 0) {
         const details = list.querySelector(`details[data-question-id="${requestedQuestionId}"]`);
         if (details) details.open = true;
       }
+    }
+
+    function attachReviewControl(details, question) {
+      const current = details.querySelector(".review-control-host, .question-review-control");
+      current.replaceWith(ZundamonReview.createControl(question,
+        (reviewStatus, expectedReviewUpdatedAt) => api(`/api/admin/questions/${question.id}`, {
+          method: "PATCH", admin: true, body: JSON.stringify({ reviewStatus, expectedReviewUpdatedAt }),
+        }), { disabled: question.isNew === true, onSaved: () => {
+          details.classList.toggle("reviewed", question.reviewed);
+          const query = document.getElementById("search").value.trim();
+          updateSummaryLine(questions.filter(item => matches(item, query)).length);
+        } }));
     }
 
     function updateSummaryLine(visibleCount = questions.length) {
@@ -734,13 +725,14 @@
           const saved = await api(question.isNew ? "/api/admin/questions" : `/api/admin/questions/${question.id}`, {
             method: question.isNew ? "POST" : "PUT",
             admin: true,
-            body: JSON.stringify({ question: draft }),
+            body: JSON.stringify({ question: draft, expectedUpdatedAt: question.overrideUpdatedAt || null }),
           });
           const updated = { ...question, ...saved };
           delete updated.isNew;
-          questions = question.isNew ? [...questions.filter(item => item !== question), updated].sort((a, b) => a.id - b.id) : questions.map(item => item.id === updated.id ? updated : item);
           Object.assign(question, updated);
           delete question.isNew;
+          questions = questions.map(item => item.id === question.id ? question : item).sort((a, b) => a.id - b.id);
+          attachReviewControl(details, question);
           editor.querySelector(".restore").disabled = false;
           itemMessage.className = "item-message success";
           itemMessage.textContent = "保存しました。通常画面にも反映されています。";
@@ -772,19 +764,21 @@
         itemMessage.className = "item-message";
         itemMessage.textContent = "元に戻しています…";
         try {
-          await api(`/api/admin/questions/${question.id}`, { method: "DELETE", admin: true });
+          await api(`/api/admin/questions/${question.id}`, { method: "DELETE", admin: true, body: JSON.stringify({ expectedUpdatedAt: question.overrideUpdatedAt || null }) });
           const bundled = baseQuestions.find(item => item.id === question.id);
           if (!bundled) { questions = questions.filter(item => item.id !== question.id); renderList(); return; }
           const restored = {
             ...structuredClone(bundled),
             correctDiscards: Array.isArray(bundled.correctDiscards) ? bundled.correctDiscards : [],
             reviewed: question.reviewed === true,
+            reviewStatus: question.reviewStatus || (question.reviewed ? "complete" : null),
             reviewUpdatedAt: question.reviewUpdatedAt || null,
             overridden: false,
             overrideUpdatedAt: null,
           };
-          questions = questions.map(item => item.id === restored.id ? restored : item);
           Object.assign(question, restored);
+          questions = questions.map(item => item.id === question.id ? question : item);
+          attachReviewControl(details, question);
           Object.assign(draft, structuredClone(restored));
           selected.clear();
           for (const code of restored.correctDiscards || []) selected.add(code);

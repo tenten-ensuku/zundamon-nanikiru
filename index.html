@@ -1052,14 +1052,17 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <script src="config.js?v=69"></script>
-  <script src="question-metadata.js?v=69"></script>
+  <link rel="stylesheet" href="question-review.css?v=70">
+  <script src="config.js?v=70"></script>
+  <script src="question-metadata.js?v=70"></script>
+  <script src="question-review.js?v=70"></script>
+  <script src="shared-data.js?v=70"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 69;
+    const APP_VERSION = 70;
     const { previewAudienceLabel } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
@@ -1123,6 +1126,7 @@
             : Array.isArray(question.correctDiscards) ? question.correctDiscards : [],
           explanation: mergeExplanationWithVideoSummary(question.explanation, typeof override?.explanation === "string" ? override.explanation : undefined),
           reviewed: override?.reviewed === true,
+          reviewStatus: override?.reviewStatus || (override?.reviewed ? "complete" : null),
           overridden: hasContentOverride,
           overrideUpdatedAt: override?.overrideUpdatedAt || null,
           reviewUpdatedAt: override?.reviewUpdatedAt || null,
@@ -1130,7 +1134,7 @@
       });
       for (const override of overrides || []) {
         if (!Array.isArray(override?.questionData?.hand) || baseIds.has(Number(override.id))) continue;
-        merged.push({ ...override.questionData, reviewed: override.reviewed === true, overridden: true, overrideUpdatedAt: override.overrideUpdatedAt || null, reviewUpdatedAt: override.reviewUpdatedAt || null });
+        merged.push({ ...override.questionData, reviewed: override.reviewed === true, reviewStatus: override.reviewStatus || (override.reviewed ? "complete" : null), overridden: true, overrideUpdatedAt: override.overrideUpdatedAt || null, reviewUpdatedAt: override.reviewUpdatedAt || null });
       }
       return merged.sort((left, right) => Number(left.id) - Number(right.id));
     }
@@ -1978,6 +1982,7 @@
             <div class="answer-feedback" id="answerFeedback" hidden><strong id="judgment"></strong><span id="correctAnswer"></span></div>
             <div class="review-heading"><h2>解説</h2><button class="edit-explanation-button" id="editExplanationButton" type="button" hidden>解説を編集</button></div>
             <div class="explanation" id="explanation"></div>
+            <div id="questionReviewControl" hidden></div>
             <div class="inline-editor-actions" id="inlineEditorActions" hidden><button class="secondary" id="cancelExplanationEdit" type="button">キャンセル</button><button class="primary" id="saveExplanationEdit" type="button" disabled>保存</button></div>
             <p class="inline-editor-note" id="inlineEditorNote" role="status"></p>
             <div class="source-video" id="sourceVideo" hidden><p>元動画</p><a class="source-video-link" id="sourceVideoLink" target="_blank" rel="noreferrer">↗ 元動画を開く</a></div>
@@ -2325,7 +2330,7 @@
     async function explanationApi(path, options = {}) {
       let response;
       try {
-        response = await fetch(apiUrl(path), { ...options, cache: "no-store", ...(options.body ? { headers: { "Content-Type": "application/json" } } : {}) });
+        response = await fetch(apiUrl(path), { ...options, signal: AbortSignal.timeout(8000), cache: "no-store", ...(options.body ? { headers: { "Content-Type": "application/json" } } : {}) });
       } catch {
         throw new Error("保存先に接続できません。入力は残っています。通信状態やサービスの利用制限を確認してください。");
       }
@@ -2346,6 +2351,23 @@
       catch { explanationAccess = { mode: "unavailable" }; }
       const button = document.getElementById("editExplanationButton");
       if (button) button.hidden = !revealed || explanationAccess.mode !== "open" || Boolean(explanationEditor);
+      if (revealed && playQuestions[currentIndex]) renderQuestionReviewControl(playQuestions[currentIndex]);
+    }
+
+    function renderQuestionReviewControl(question) {
+      const host = document.getElementById("questionReviewControl");
+      if (!host) return;
+      host.hidden = !revealed || explanationAccess?.mode !== "open";
+      if (host.hidden) return;
+      host.replaceChildren(ZundamonReview.createControl(question, async (reviewStatus, expectedReviewUpdatedAt) => {
+        const result = await explanationApi(`/api/admin/questions/${question.id}`, { method: "PATCH", body: JSON.stringify({ reviewStatus, expectedReviewUpdatedAt }) });
+        for (const list of [questions, playQuestions]) {
+          const target = list.find(item => item.id === question.id);
+          if (target) Object.assign(target, result);
+        }
+        ZundamonShared.invalidate();
+        return result;
+      }));
     }
 
     function updateExplanationEditControls() {
@@ -2389,8 +2411,8 @@
       try {
         explanationAccess = await explanationApi("/api/admin/access");
         if (explanationAccess.mode !== "open") throw Object.assign(new Error("直接編集は停止中です。"), { status: 403 });
-        const overrides = await explanationApi("/api/overrides");
-        const latest = mergeOverrides(bundledQuestions, overrides).filter(q => Array.isArray(q.hand) && q.hand.length);
+        const override = await ZundamonShared.getOverride(id);
+        const latest = mergeOverrides(bundledQuestions, [override]).filter(q => Array.isArray(q.hand) && q.hand.length);
         const question = latest.find(q => q.id === id);
         if (!question) throw new Error("問題が見つかりません。メニューから開き直してください。");
         // Refresh only text here: opening an editor must not replace the displayed hand or answer.
@@ -2430,6 +2452,7 @@
           if (question) Object.assign(question, changes, { overridden: true, overrideUpdatedAt: saved.overrideUpdatedAt });
         }
         explanationEditor = null;
+        ZundamonShared.invalidate();
         renderReview(playQuestions[currentIndex]);
         setExplanationNotice(location.hostname === "127.0.0.1" || location.hostname === "localhost"
           ? "このPCに保存しました（公開サイトには自動反映されません）。" : "共有保存しました。");
@@ -2446,6 +2469,7 @@
       review.classList.toggle("open", revealed);
       document.body.classList.toggle("reviewing", revealed);
       renderExplanationContents(question);
+      renderQuestionReviewControl(question);
       if (revealed && explanationAccess === null) refreshExplanationAccess();
       const sourceVideo = document.getElementById("sourceVideo");
       const sourceVideoLink = document.getElementById("sourceVideoLink");
@@ -2569,9 +2593,7 @@
       if (!response.ok) throw new Error(`questions.json: ${response.status}`);
       return response.json();
     });
-    const overridesRequest = fetch(apiUrl("/api/overrides"), { cache: "no-store" })
-      .then(response => response.ok ? response.json() : [])
-      .catch(() => []);
+    const overridesRequest = ZundamonShared.loadOverrides();
 
     Promise.all([
       baseQuestionsRequest,

@@ -1,0 +1,15 @@
+exclude:
+  - cloudflare
+  - node_modules
+  - scripts
+  - tests
+  - data
+  - calibration
+  - artifacts
+  - supabase
+  - AGENTS.md
+  - VIDEO_QUESTION_INGESTION.md
+  - README.md
+  - package.json
+  - package-lock.json
+  - server.mjs

@@ -13,3 +13,5 @@ __pycache__/
 .DS_Store
 # Local source videos, transcripts, audit sheets and migration backups are private.
 artifacts/
+.wrangler/
+.dev.vars
