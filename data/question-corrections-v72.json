@@ -1,0 +1,4006 @@
+{
+  "revision": 72,
+  "date": "2026-09-12",
+  "scope": "292問の現行要約・牌姿・正解を再照合。前回の全292問の画像監査に加え、疑義23問の動画フレームを再確認。",
+  "limitations": [
+    "全292本の動画の全編再視聴を意味しない。",
+    "形の検算は役や戦略的な優劣の自動判定ではない。",
+    "ユーザーの補足解説・確認マークは変更しない。"
+  ],
+  "baselineFileSha256": "7f14c4f39df0a502df11689a57e49e31e0b9c4aa627adbfae40a2796c6a35bde",
+  "beforeQuestionHashes": [
+    {
+      "id": 1,
+      "sha256": "705ecc896ee74c6cd1cb3891f36886ba71b96ca09a2ad39096af9ce49c904e1c",
+      "authorSha256": "06a424d8994502227cdfcf2f4f502ee4644266672c969231d789dead2896741c"
+    },
+    {
+      "id": 2,
+      "sha256": "825620494da955bc5d576b9fd796d9508ac703a54fc2d100ec56feab3130925a",
+      "authorSha256": "eba1fd16027e2452a237d52302dda7e59af1094d71db1fd0afd9c7a3bf36a2ee"
+    },
+    {
+      "id": 3,
+      "sha256": "615b3f0ebb226885b2dafa03c7cab434beb214fabaacbe9c38a289fc128d42a3",
+      "authorSha256": "686c5b0f952997ee67242051b689e078fa1ad22b90d620f164023d083eedcb44"
+    },
+    {
+      "id": 4,
+      "sha256": "c2f90483a030c0da72f8c3bb4d09762bb8c25c0cd8e7f35b99749900322f461c",
+      "authorSha256": "d23bb8989dce20f929818a958e75c26edc203b948d4351d2f6e223aabe6705cb"
+    },
+    {
+      "id": 5,
+      "sha256": "69a1ffee5d33be9e4554d2d81b16e2bdb89a6fa17727c4af72cf6df526798c9c",
+      "authorSha256": "e70deadc1b39e69830fa5be7f119bb6c04d95e2bffac7f79925263d75321d416"
+    },
+    {
+      "id": 6,
+      "sha256": "41b54886dafe46e311d29094ff283d88d32574ba39a45822c4d6e05c8af09e8e",
+      "authorSha256": "c4ec1d3f377d5ae217451cc45de7d03d761370f362fbaf0a51600bbbd2127001"
+    },
+    {
+      "id": 7,
+      "sha256": "c6d0858c864373f242c787ac4d8a786d9154c9f791348a3d08e85b109b6d2087",
+      "authorSha256": "9654aab3efd44c022adedfe722dbe894f5b25130f758185fe580f1d2af012ee4"
+    },
+    {
+      "id": 8,
+      "sha256": "7cf63c0b7879a20a0600d00a9d1eaa161cf9e3cff55eedf83c4bb9fbdfa5a45a",
+      "authorSha256": "e896b267f49886af7db4c472083afd6afacab596371c9c67d48520b676a23879"
+    },
+    {
+      "id": 9,
+      "sha256": "b4720584415cd44e51babadcf55688d109ca686b9166cc8084a9ccb17b83e96d",
+      "authorSha256": "c3ad2590ec6675998f970d548734fe6ddc18d6c9bbbadfb0b3f00b43b810f2d3"
+    },
+    {
+      "id": 10,
+      "sha256": "91a3fd949aa3a081f90b03d315496dab874e486a20b47e7b152960188f08bcba",
+      "authorSha256": "9893e3a4afbbb0e29640d5ad10cb40313f446e56802494a46569875a7d1dcead"
+    },
+    {
+      "id": 11,
+      "sha256": "072a3a1bda5aabe0abf9254018c1488438ee4ba579013a301fc07b9555fa8dc9",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 12,
+      "sha256": "7588a2da08f8c33377cbf3bf9d3b548f234e2f4c0bd1adb1b50f8ebc9bae1699",
+      "authorSha256": "88d05f1499ab7ecf3c75186b8cf7b50107bfdd62f47ff55bddd07b83e5df9f55"
+    },
+    {
+      "id": 13,
+      "sha256": "2f9f699113ccb9866830fc10d29b130624b2e4c7c140d554ea3497d1d252c293",
+      "authorSha256": "e8e28c5da5006aa25bdf9de23281e35c95417e4a5278493dff7c0ebaad176e0f"
+    },
+    {
+      "id": 14,
+      "sha256": "c0ed692e1118ed01f825b2211fca3acf8561e37eee9a567a7fdbb78d7de82f2f",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 15,
+      "sha256": "a141221a831bc6507aec101ef4faa0a1c34ef46ca72635542399be07ec886fa2",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 16,
+      "sha256": "7d6b9f50e35bd0db7ed75724ba02fe07b44b636c2de72e297d61a29a5a0fb82a",
+      "authorSha256": "6e8dc5695c88d5a355679756df137a37330e53f1ffa8d2589bda5d7603036174"
+    },
+    {
+      "id": 17,
+      "sha256": "a21ba3edc4e218169f0e98bd57193277a1281bed953fd8fdc749d54273ac6fcc",
+      "authorSha256": "ad68d98573b4d365f881765492e6650834cefb04c7bfad5587ca952e588750fe"
+    },
+    {
+      "id": 18,
+      "sha256": "754eb25fe6af32141a8aefce9420819d5fc43f7019e0424b3fb542e7021af78c",
+      "authorSha256": "2ba967208309d0f199ddb1ddf696c592d4266cdd054054b562c78ea8433902df"
+    },
+    {
+      "id": 19,
+      "sha256": "c8a40c1d24204e2e2f4043d1358df36657fca5b482bc4ae6062720f2735985d9",
+      "authorSha256": "ca6943dd9a51bf05b7edc7560b6e3a1517c8cd817c79ce40c5202edad02b8e03"
+    },
+    {
+      "id": 20,
+      "sha256": "bdc2a4e1cf61a43f44eb5bd36c291a0c9bc8294fd5730f8efcd85754e422a3e9",
+      "authorSha256": "aa93774b8ed775bfc765d1a2ab2995951a29dc889199f406e8f0f60d91bf16ef"
+    },
+    {
+      "id": 21,
+      "sha256": "4ce6a1604a5490972f4c2bed30dd46dc3f0dbb0874dc11afd8c0a3e11ea3d690",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 22,
+      "sha256": "cf09f0bf59fbe7e85935bef5ae74beae981bf0d5786c983044d7402d54261ae6",
+      "authorSha256": "9408faf41377710f8a08bb2035d509516507d3a5448c4ea4088eec39721100b6"
+    },
+    {
+      "id": 23,
+      "sha256": "34ecfd6729bc625800a80947a2661fde048f87da06eef2b8e69793f8a5a83ebb",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 24,
+      "sha256": "3afec61aae9ec223ebfcd8dfd6ffe74fc6e674c1244bb27140300d0b0f61f9b6",
+      "authorSha256": "011cc67a4b56ae428a8c5e2fd309e88e763f30e8ad5eb271b441fdd170a75c3d"
+    },
+    {
+      "id": 25,
+      "sha256": "9b7800587a9074ee057715a00d67202cc024c655856e160f74f9683cd9184489",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 26,
+      "sha256": "83f81c632727108b6f7fc17a35495d240f18a5cd4fe83daba7ff33227f07a753",
+      "authorSha256": "ebcd3a28ad1a177603bb1d2b5ec90817876e3d8106069c0c13eecff56a229b18"
+    },
+    {
+      "id": 27,
+      "sha256": "f90a4234d44b86f91c19fe9ab56497b038e9af840341c5d709c8956de46d1353",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 28,
+      "sha256": "88c9638bbb1d9c0f66ffc3e29b7eef640b7a751cdae0319ef4da752130bde427",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 29,
+      "sha256": "029fd4df33e7bf973228f1d04ad8cae0e59f699ce2d9fafcc7c87009e820d67f",
+      "authorSha256": "b9d8f1be77f99705c0d3886961431eb698b4358a00df23468dcf8a18d61a390d"
+    },
+    {
+      "id": 30,
+      "sha256": "2a70da9ef7e03a347aba95b336a7f261d224fd5445e8cc11f739ce8688834212",
+      "authorSha256": "0cb9b29d4c16d15728778ac717df92100cf1dc15235cd65feb365ea520508b66"
+    },
+    {
+      "id": 31,
+      "sha256": "cc7ca4179ee05b4f8eb7657c08f5247920ff01f5c766573f533ab5176b26b18d",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 32,
+      "sha256": "fd15c720f5d0bbdc8b6eb65c2c628a2be09fdcb2c293e8bb52d032e451b04de8",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 33,
+      "sha256": "3e7770a3f57e78744ad4a972bf8ad5eb2bff9eb2e1e7b25a98c317f1369ec4d2",
+      "authorSha256": "c426fcfb260641e0cbfa99fcdcee6c0dbc7d9950d0f705f8cfbb4b9ec034d797"
+    },
+    {
+      "id": 34,
+      "sha256": "1804f510f49a529f4171d2d31d0f5cb0f4d195e7f6fee78d3f3b7d084e6fa543",
+      "authorSha256": "d66747105452f6fcec81ee3702c0f52e5a63e55f589d8b64ed7055339a2b29b0"
+    },
+    {
+      "id": 35,
+      "sha256": "a021014ed200c5790511bfec04efe36ef1d8e5f3e3bb91ea2731681e64c49076",
+      "authorSha256": "185da55d8c73ee35e0fed69d40e9146841362eddb3a0811b8f89af90d2a4b7f8"
+    },
+    {
+      "id": 36,
+      "sha256": "6a80b842e31f09c3400f91af0e2dba7c0bd0345e4788c3cc92e3d2c217f42809",
+      "authorSha256": "1425676f7a3d9f9cf105fcc254b464751c1e7ba54669e8680858f7d121f27496"
+    },
+    {
+      "id": 37,
+      "sha256": "3b69e9f8e30b7f0c5ccd0c9b94a55a2d4628b50e6cbde78464c74aa3a75bc746",
+      "authorSha256": "324aac29ce3eef9d05bee6be4b36e74a11df57629708139e3d30669a2e24b1e2"
+    },
+    {
+      "id": 38,
+      "sha256": "fcd5709de2a7d70fe64ac89fa1202657fc472f7064d5048c06aef9ab8fd1e8a2",
+      "authorSha256": "891cbe059f4edc9f1a3dba87ad40fbb5ef1ae25646e3fe45d08e76ecf8d70992"
+    },
+    {
+      "id": 39,
+      "sha256": "d80766b76a9aa9f86034bf8e33463cc3b5b0ae3f94fd4d8211fb20301e8a909b",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 40,
+      "sha256": "82bfbd9b9dd5ce1e5713b2b1fdf4fb36fa15380c5a80ecdbe1eb8d488a5f040e",
+      "authorSha256": "557320f1ffb99391f064f06081791fc4fc8747ccbfecb4c48e133811b8c1b80d"
+    },
+    {
+      "id": 41,
+      "sha256": "84c81012dd05281f01fc8e371f08316a7a8a8e904ff92dd0beeb8cd4bc990372",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 42,
+      "sha256": "86a016e589715d7561cf9ff009f5ad8968341efd9bf0f1b2fafa3fc4119e2f93",
+      "authorSha256": "cfabd5be1cbd54a590fe412b8fc7b5ccc018d14d22e6e07a92495935d778c387"
+    },
+    {
+      "id": 43,
+      "sha256": "31aa31ad61782c7a71d7e996c09e56718600250c93eb629a0426698461077ade",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 44,
+      "sha256": "755e6643819a0e3eed9b27660866e54cbecc3c9496978ff8165a2e1b77da09d3",
+      "authorSha256": "c14aa426de8a538522ab59f58c34e722d67775edd2212b40ee9ad0251209a8a9"
+    },
+    {
+      "id": 45,
+      "sha256": "c0e49a0e9477be1756783881204251322d879b6967132e3ddb16bddeeb641483",
+      "authorSha256": "a3dd21689272770ea3451207c78775bc16c5714d3fd1949c6f0fe1d9ba5afc98"
+    },
+    {
+      "id": 46,
+      "sha256": "4349917759e08078644fff2b8fe5dae73acfeec1f5615eaa07ef24010788f483",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 47,
+      "sha256": "1b4c5ee56bb37e2d69cdfee94e0f7a255343ce43a1d07200889a006042c80ac0",
+      "authorSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b"
+    },
+    {
+      "id": 48,
+      "sha256": "5889e5b0888c04b2f220ec53ab18b207edc747d155949af90736a08b376114ed",
+      "authorSha256": "590574fa761cb37516c9c05416245075a19de9f9da441f15d542934750adf95d"
+    },
+    {
+      "id": 49,
+      "sha256": "7f8d40114d5818fda29f25b31446d3c5e62f8c450a4748cc32a0b4dce63ec2c1",
+      "authorSha256": "c1e95c173f08d777a2bb2e64c9d875f473f707b4c3cca68b8b39ac240dc07310"
+    },
+    {
+      "id": 50,
+      "sha256": "a99f87dd1b88cfec089eb5b377b1a1775e65fd5176463a9e617814339d3fe19a",
+      "authorSha256": "b016e39fe213e06109a4b99a87bcb80075a1fcf5a6d22f82fcb8cdf039e33178"
+    },
+    {
+      "id": 51,
+      "sha256": "cfcef9762d8c5159192aac4cde63b1c62d08241e5abaa71377479756c3bc8342",
+      "authorSha256": "bfc3964e0eeb97e1cf126119f9b6bee6241b0db8dd32f86966c761a73f0ee89b"
+    },
+    {
+      "id": 52,
+      "sha256": "68aca87954d4596ea4aca95b2ed071ea97dc58beb532b2192e0b4b11d8be5b89",
+      "authorSha256": "d0d80a563a3be507bba6ff80a414ae40bdb41852e6c2453e07951822c47ce77c"
+    },
+    {
+      "id": 53,
+      "sha256": "98403c396ba3a0cc856c56c440e7c10377b66e598c233821c25cc41b5336dc2d",
+      "authorSha256": "13cb93d5d14964f5505c776fb9e8f0c4eab43dbdc2c257025d70af6e633ac5c4"
+    },
+    {
+      "id": 54,
+      "sha256": "018c58b468a0828f44abb630301ef8db90e09f6b2b82029eefa4552b6386feb0",
+      "authorSha256": "9fd7ec3b06435cfb567c4baba4bd56b1c38dab0628bc9b1b7895c63311b3fc3f"
+    },
+    {
+      "id": 55,
+      "sha256": "80fd21223893f8ff54d3bf43dd5b80d2ef898abca31b85c1bf1afaa2390bf74b",
+      "authorSha256": "6d10c2e307abefde56206bb9399bef3380ec709a18bfd28574129f902931045a"
+    },
+    {
+      "id": 56,
+      "sha256": "c920b756b9faab6fd086110783de9d147057241c76969e1370e1a07c6a369765",
+      "authorSha256": "1392c2bc9ad8e8ea72216f35d3b4e5069b53ad12bdf84fb2871f234d2f64ddb4"
+    },
+    {
+      "id": 57,
+      "sha256": "ff848bf9f56078b63aaaf37f87931806c586a9307272bbaf299a4a3e5e9527ff",
+      "authorSha256": "40235bd384468575ca89f19b9099ac8e9882cb03b27327346bbfc132ef649231"
+    },
+    {
+      "id": 58,
+      "sha256": "389ea37c2f9653c866b46a3169ebc0a3eaa4fc9fef24bd8a1ea3a5d402b0bbae",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 59,
+      "sha256": "240cfafcd3b85c754393b7ddf3e0309f460cfa16b3b147f3115766f74857e8d3",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 60,
+      "sha256": "16c15c076f4119c555dc55609196a7f1334600135c7143ad86b39dfeef06e58f",
+      "authorSha256": "f7063dade330cbc126c0acbc0b89d70924f7571115aaec76e405ec4106dd462a"
+    },
+    {
+      "id": 61,
+      "sha256": "6e7d556489e6ce5175b19a3e2583d94f213e5f7fa479e1cd309016f67dd80570",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 62,
+      "sha256": "e374fd7d68188da8f0e5b2e884176c728d80b1f22a1c0c9b4796294fff060683",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 63,
+      "sha256": "23e9ef47c41d0fa966234e59db786750d63c7afaaf6189aef13285e98b491026",
+      "authorSha256": "19fa103be4a452e8d999a07dca085709aceee45206a30a91dd2254584e17c7e8"
+    },
+    {
+      "id": 64,
+      "sha256": "55f47ea0c5b81ea1dfa7f4651c31e82debbcc0e407e36b79ee6ec4da395bf028",
+      "authorSha256": "c0a862bc8a2112f9f002188d71b1a527be7cff601ccf22a857f2ba52b0db4820"
+    },
+    {
+      "id": 65,
+      "sha256": "57997fd23a8ae4069c5761cebeca2f298ca32406dc84d92651b27ec158224049",
+      "authorSha256": "d6bab4b3b04de93d7a2000e623b391d05a189a85d9e87a1220577e7c5d494b28"
+    },
+    {
+      "id": 66,
+      "sha256": "216e13e96e2c09ccc183d6d92bce0baccaceca0433183a3f1abaf21841f69fa0",
+      "authorSha256": "f4c243572df7b98ee95f2d5bc515f10535825967c1d688b6b937496aababf4a0"
+    },
+    {
+      "id": 67,
+      "sha256": "462fdbe212b86481a479b8ff3995cbdd194e87b42c16c2fa1d4b66bf8768b729",
+      "authorSha256": "8647e41e2c6c37468486d524fbc58157e31bcc860e280fb1ba9680593f906b63"
+    },
+    {
+      "id": 68,
+      "sha256": "9740e4a9bdcd245c1bad5dbe0c1f6e8ebcd70114f3c9c8d80dc2b9e245557cfd",
+      "authorSha256": "747a3cc0cee6aeb116fc81e0e8f51d5c20bfffa55e9885f99c37b72610fbb721"
+    },
+    {
+      "id": 69,
+      "sha256": "317768ee624d77d74bd1b0708ef4536c47b4f37467cf72625c0a80ffee1e9934",
+      "authorSha256": "d72b634bb937b3ab04978186f36dc7084063227bce22385433c4d6fb06527ce9"
+    },
+    {
+      "id": 70,
+      "sha256": "517f945f7c797838c7b23dcde6846768092dfd437d689ab6bbbe47c58d833593",
+      "authorSha256": "39ab6367ee11ba864f9465a63f2241d6d1c9a0884eaa90131f222aeff10cba0c"
+    },
+    {
+      "id": 71,
+      "sha256": "54a0412f62c170b8e4005b9e53054fd0c087b81ed8cc54ccb97e4c80f556d16c",
+      "authorSha256": "2bd06f77f3efe403c3dd014f46db93196a2d530771a0aefc7f589c3d1258ab79"
+    },
+    {
+      "id": 72,
+      "sha256": "abee758cc744f856709999d943146846425e6a7d11dd0e1e8bff1aeb13ed1b9d",
+      "authorSha256": "831502112b97ab0f66a13ffb99d5cd2fe61a58f0c289d8502566f28970c12cec"
+    },
+    {
+      "id": 73,
+      "sha256": "9f29903e2e40a80677f136b2834e47d2fc81728f5f45cd111cc70e3948a432dd",
+      "authorSha256": "1c40ce8b10c7847b3a4ee7184e4bd2b55654120c662e79b8f50057f5ae92b73f"
+    },
+    {
+      "id": 74,
+      "sha256": "e693f7f50c8f248ab958afeb396fd74a50496cf657c043b89f12837be5a62c6f",
+      "authorSha256": "94cd3738f0bbc0b49604b2d192e417bb0db242261b05d598cb65baaa344788e7"
+    },
+    {
+      "id": 75,
+      "sha256": "8fa8c165b57c8517e4e9d9b119fb3253be23cd34967b50571285fa583f915646",
+      "authorSha256": "0fd888f1481749b16c66207744f339e8159910438b4ee6ea218f93816550cce9"
+    },
+    {
+      "id": 76,
+      "sha256": "1d8bf242f83528cd39cb2168a413aae512a49baa8020f3cd2be4d81209525bd0",
+      "authorSha256": "8ff3e9868707bee91be6d9f99c3f4d237066cb8927b5df69c7998101f9275d78"
+    },
+    {
+      "id": 77,
+      "sha256": "9706a10d7392f1c08d20ddc2129752a6ba63ab3d2cd7aee635d38aa5c7efedaa",
+      "authorSha256": "3871e78bad06e36834e6c449c5c17b4d9f5456fc20331806e7dae49765101ba7"
+    },
+    {
+      "id": 78,
+      "sha256": "7f32d2f3b27f03ded4c4d4ad25f29b3d2730016a99922ae2ae193390e8d33844",
+      "authorSha256": "7715df7561fe15081b5a2f004afa3d87388d45eb3fe4041d0c05ed9c2acf471a"
+    },
+    {
+      "id": 79,
+      "sha256": "f8e04f895d9aecbfe8d861523cee2c4493698d367ac89f58de1a99bcc379c0c4",
+      "authorSha256": "6290e36787178ef57bed22aec2b0019bd022d2c93206a7753dc08c637bea53a2"
+    },
+    {
+      "id": 80,
+      "sha256": "8b56ff3d353cb940575122769d29ee4567b413d5d4a3be18f6093e3e08f68904",
+      "authorSha256": "93e497f4660d575618501d183e9354f42524e053a819b6f0ea809a276e69242f"
+    },
+    {
+      "id": 81,
+      "sha256": "93447a063789aa849d102832564bf266279df6e6f123a77880b28ba1a9ca5b71",
+      "authorSha256": "9397d5f87a314fcf99e173c03d2216ee3fe0671ae3d6837c32a8f0dfb85130e1"
+    },
+    {
+      "id": 82,
+      "sha256": "90ea5fca5daa02f123ed8f80002b6d71d757d66583cd99d6c7689ce38fcf37ae",
+      "authorSha256": "b36a122d3eec81b3e88f624514ab5d05fd62bc233dba35a11bc607ca225479f9"
+    },
+    {
+      "id": 83,
+      "sha256": "4a592d7989a29cc8624f88832afed9ff2da3cd8154afa3e7e8612aed425ce145",
+      "authorSha256": "9734dc889cd7949887b45678e01b6497d55d381bc011176a2fff31ca554d9927"
+    },
+    {
+      "id": 84,
+      "sha256": "c1e6545ef78d024f3f15930edca2049f6d32998ef92bc7833d6f0600936daf5f",
+      "authorSha256": "2c7614c4434745fd2f04df4d8efeb7d004c3e947a287b17adc908a6ee35cb993"
+    },
+    {
+      "id": 85,
+      "sha256": "3bc7f5270e90c6ba17acbe4bcd048395c3277befb9a1d15ad83f8f3375ebd138",
+      "authorSha256": "f210f2ef415680fecfa39ee0761de7d57a4916acaf204122fd5738a1b1b47ac4"
+    },
+    {
+      "id": 86,
+      "sha256": "f4f857feece0ec900c33e4e803a893c863ce433cf67e55e420f40b33f7d27eaf",
+      "authorSha256": "3019d98882e2729bb680c16b953b836579fd75559ed3311af26dddc438400d18"
+    },
+    {
+      "id": 87,
+      "sha256": "0958b05e4a9fa68d82e2a0b2639d87eadae677838cd9be7d2651bd0fcbb88b02",
+      "authorSha256": "bfe8fde47a7c794e1e61d5f49f1b8d4ad8bec37f03e8469e7b310b0d8544c494"
+    },
+    {
+      "id": 88,
+      "sha256": "ce1cc26142be86d7eb538d8aa640131e406cc4e8895d03172154193135b11c44",
+      "authorSha256": "fcfe2b4fe5a0d061fb19a10bcb9442fc95afc0eeebbee12d122da2646dd5aef1"
+    },
+    {
+      "id": 89,
+      "sha256": "165acff540f4ee84217f6a7e2626f6e1ddef122366119f2f00bc66e07d280170",
+      "authorSha256": "925a57a96d328de47e86d93228166bd2e26d4be1be850c5c2f5a2e9bf280c052"
+    },
+    {
+      "id": 90,
+      "sha256": "a13e9eb1f54a4a9c2ca55eb62499859a070dc1142f3b6a920d7dfc1ad6340f66",
+      "authorSha256": "fa0bcf069ce1a5fa7cdef624163a6d134989df1b555350cddac888b44a165c78"
+    },
+    {
+      "id": 91,
+      "sha256": "1b17a7ac9dd52968736c99ac1fd6269c0310111ab42991ec24f804c66e9b9801",
+      "authorSha256": "53df7e2d59539d80347fe026908eff84ef6eed543a8d85118eb8cc7fe8bab739"
+    },
+    {
+      "id": 92,
+      "sha256": "cd32a2c896878ef25a8d0a005250dc7dae53ed04b2deb91ad869482a6258793a",
+      "authorSha256": "d1ec119bd67e354d76993b35083bab23a24f3b508fa0eb094830e5939c2e6174"
+    },
+    {
+      "id": 93,
+      "sha256": "45b1f7c4b88331e17f7cacfebfcc87e5bfdb66c5f1597b07b83abd6e8882224b",
+      "authorSha256": "6439ba80e4eb3e809432b758eefa3d03c03310171642ab5e0dc85646b652380b"
+    },
+    {
+      "id": 94,
+      "sha256": "8d473f1a810061e308de8f12186f8400ec7999c81d927103b9c9f6581199e8d3",
+      "authorSha256": "9963fe6ff866fba08e0a99f36abbb7d07224d2acf015b0ec42b80ef531d4d7e3"
+    },
+    {
+      "id": 95,
+      "sha256": "478b93d6fc4648f4c0401e6bddb6e99550d1fde9ceeb138acf811a600b8e5d31",
+      "authorSha256": "01f86b64c44f18e28ce31611a21b237c3ea60505b15e867316acd4200f400d7f"
+    },
+    {
+      "id": 96,
+      "sha256": "6ff37f2a4458f4f8b7ca825021b85ceafd67e24acae362c361d82d8531582360",
+      "authorSha256": "d8ef029e04d6ce7e1ec968b17e747e909544342eebc8017c55eb4a1e8363485c"
+    },
+    {
+      "id": 97,
+      "sha256": "bab4ec4b7284f612cca54a50f7a03b111ac8b960d27f5a1ad19f33d96cd76111",
+      "authorSha256": "ee020e655dde04eba093b2f74afcaed3ccc4570700fde669512edb8fff910265"
+    },
+    {
+      "id": 98,
+      "sha256": "518a1fe719dd82b4d4d0b76642deca06a7d870a376f20a778c65bf6fd36216d3",
+      "authorSha256": "ebb09d4495284604b0134a10edba8f2ca5bae6146a4a8ccb5206bf2bce29347b"
+    },
+    {
+      "id": 99,
+      "sha256": "8cf6452f2be6aa2b96ce6c522c5dfa48dfac148cd84e16426567d5ecc6461ae9",
+      "authorSha256": "820ada86e4b5aa53e45b86b76640d1e10fb8ebdca540e4902d247e4c072a8fc6"
+    },
+    {
+      "id": 100,
+      "sha256": "18c934cb490f9ccacc979493764af0fe981126ad8194c3a079064be2c42b320a",
+      "authorSha256": "718a5bdfd0fd067372742be570a641eb02f73819f7722ca31a4cc897885bca82"
+    },
+    {
+      "id": 101,
+      "sha256": "c2e6dad92be6ed68ebaa183d5121910771a799335ad35aa96349878617392895",
+      "authorSha256": "78f0c3ea985e03844b91805e32e71061bbfa5bd6dd3994edc38454b57652c56f"
+    },
+    {
+      "id": 102,
+      "sha256": "cdd44b4b6f5ae208ff23110c4f0d4c57a429a4373fe1465a3fb6d9a4a140b30b",
+      "authorSha256": "1c45c7b5a1e165a560941899a44fc400d3ba8b2b9df3e9376ccae959f4f84cb6"
+    },
+    {
+      "id": 103,
+      "sha256": "d08cf3ec2d14f9a6f769e77a143036a60a552458524d1f49b22525bf31d4451b",
+      "authorSha256": "3a636aa54e8fa7704285e9126a9c68e911ea19fe788ec9fa0b45e8356aa22a96"
+    },
+    {
+      "id": 104,
+      "sha256": "a680f35ad2a5d9845aed9046ae221f8368d1dd707db4935c534ff658d1502cc6",
+      "authorSha256": "8ac98bf84c0d48c38ef2664f75072765ea296425fb4ce0b0a40e561498b7421a"
+    },
+    {
+      "id": 105,
+      "sha256": "7ddd5ec584ad8cde099d8b9f52a272b463cc7f78e72567b7a0d48cdf96c02d24",
+      "authorSha256": "ac1d6055a76a5655037cdacf230cca12c088f246f064b544075d53be33ab3ef4"
+    },
+    {
+      "id": 106,
+      "sha256": "d0b5f7ad3bd30de9485ff0b84cee7b109ffdcdb9dc505faad7d47c628689590a",
+      "authorSha256": "96c32e65f9477cec77e9c5ffb7c88378c7b0727fa5702b47237d7ea85b047b92"
+    },
+    {
+      "id": 107,
+      "sha256": "28c014f345261cdfa92de9139ac213fb3018d86c7adf146e89ec07f7f20021e5",
+      "authorSha256": "4116fec3e551be8df2c09e46293082a8afe679a3cf249da1335ad18e828b1d80"
+    },
+    {
+      "id": 108,
+      "sha256": "1acec1640a0090a0645c310b76cdcb3cf6c4f97de10a62b0250fff5933531371",
+      "authorSha256": "56244bebecd128d8ab6513a7593d45fe79c886ef8eab1361e219523345bef2e9"
+    },
+    {
+      "id": 109,
+      "sha256": "dcd73ff95d670da6eca790b2a4c703c0f59a2d7698d2e1b669cfd097956b9b3d",
+      "authorSha256": "c09b3e8302e66b3d29bf9ac671d2827354b1c471d6dae07dee7186e6eeeadf22"
+    },
+    {
+      "id": 110,
+      "sha256": "3004df99afc78c3c39ab673877f5bb65e1633fcf7144c661d32362210bc8dc27",
+      "authorSha256": "ccf9bbd3de118ace025b017d339d0ccb928c52f7c21ea2a5e6f2a81ccd6029a9"
+    },
+    {
+      "id": 111,
+      "sha256": "f4d5bd1ef3d76075bbd109938ad59ad86e2df8f8d74f37f1bfb386d19ff0d413",
+      "authorSha256": "54eb928b45daa6a15f0ed01d230a4f45be22152dcbd4d07bde794b3c5dccefb4"
+    },
+    {
+      "id": 112,
+      "sha256": "5336b96646c7644f5cbfb34d7a26140a6dae99107a7a30ca6296a4d8318de660",
+      "authorSha256": "185f595854fcecd8c9377cc80f8ab5469729e137d69b5d8c5949e71a81ec5d65"
+    },
+    {
+      "id": 113,
+      "sha256": "843adf3ee01c1cbcb0174f7bd48921f9e3216ab1c61ce64edaa036992126c510",
+      "authorSha256": "4a3ba9442ddcf45e6212d6aae5b45d46e38a160c3d16ce8ca0d2ed54c9a83515"
+    },
+    {
+      "id": 114,
+      "sha256": "ae58c804cb715038e2d343bc0173483ed49ab778044195a4aac62706c786f49d",
+      "authorSha256": "1cb8196be6a11070ac4a26e389535b62cc59a0a3b85ce52849592cc70cbe91df"
+    },
+    {
+      "id": 115,
+      "sha256": "6f2260df30be7f8ed6ffd83c9d107a3e98f2237372abe48430f91dd81363ae74",
+      "authorSha256": "4ef2c6ca6f98448bd529ecaa669cdbc55f5db5467da6dcbb98ea67595099bafd"
+    },
+    {
+      "id": 116,
+      "sha256": "635af102013beaca83ea38d81b28a81036503c7733e35e578c585e9b0456146e",
+      "authorSha256": "56d6c410773d06f69acdfe2c0d798664b674661b8ecddf5e6a6f256b395f40db"
+    },
+    {
+      "id": 118,
+      "sha256": "3aebbdd9040e876f62df219bfe6aaada335dc38623d53e91c5a32b298f73648e",
+      "authorSha256": "0d2b626894283048d7e8ed438fb8a446d2d8ad3daebca71720c650b2373889d4"
+    },
+    {
+      "id": 119,
+      "sha256": "e2b625a7a4abadd41f0641814366d7f8d70742222c8328426cd4945ecf033d10",
+      "authorSha256": "3fb9957eaddf55639d6a5e233b42ffe7f7d563c0c305f4f368448c35826dfdaa"
+    },
+    {
+      "id": 120,
+      "sha256": "d2fda7be9d4dca83cb989ac2aa63aebe0b837878169db01e4f86fb1d192b4959",
+      "authorSha256": "2be19f5bed0bae42f2e079a49ab327d76e0ff4c11a6228205138043702bb0ea6"
+    },
+    {
+      "id": 121,
+      "sha256": "dd59d81cd777891900e8e765221ffc862bdcb013ed753056a2633dc903690766",
+      "authorSha256": "4899026f3339011da8ae8706719c7096b75f624e7fc217c1987841d9ba2ad718"
+    },
+    {
+      "id": 122,
+      "sha256": "b8104bbd34b7d17feae4685b97541cad7666651f95515df0edb73383245381c6",
+      "authorSha256": "283f5aadd1a4e8048b14621369328f6d91970fc0750ed38ed75b4144e16dcfe6"
+    },
+    {
+      "id": 123,
+      "sha256": "d3d869088c6dca3418e61c9d59145dfaf05adfac42f7e505b188f18a33d1af10",
+      "authorSha256": "150d9b1448d7a0d84264f957e793f0c94f3765bc24e280fa749aa98e1d1bd881"
+    },
+    {
+      "id": 124,
+      "sha256": "e646b72ee5c12e6b7dd89ec8f879caccbaaae9fa9f46beb4d89aca83d56d7357",
+      "authorSha256": "9dca5441d75fc12f4828d4d5370476eb415d2be125a394507982faf14a3e7fd5"
+    },
+    {
+      "id": 125,
+      "sha256": "100fba021288ea3f5b264b7e0c12c866d3a33a375f73592a1173ffd831090420",
+      "authorSha256": "a1eec55532472ae7f1e8c09c3277c23281114b058d4a18d5e7b8e00fca868fbf"
+    },
+    {
+      "id": 126,
+      "sha256": "8527aa70c514bde50dd712ac2cc4760b6de64014f053256117c806e8246815e7",
+      "authorSha256": "f901456a8bc610154a8e4c7973267a7d9e8e6dd44733af2b6772ffbe51a0be13"
+    },
+    {
+      "id": 127,
+      "sha256": "861bdb57073d32d8bc9c9249b51611578257114a5b18f7733178edf45937812c",
+      "authorSha256": "213db69952197f13d2e52d2aaf4ed5eda085152b5af14a0063b1a8d9fb83d964"
+    },
+    {
+      "id": 128,
+      "sha256": "8b6c1432668d6790f758138090f56cab5583ff862d83e1492e27616f6dafec1e",
+      "authorSha256": "fd1f6e7bd15329ef2f97764d8efcd9478851990f327e19cabbe26594c7b7c8bf"
+    },
+    {
+      "id": 129,
+      "sha256": "dcde3278c998529095b1ef3453f6f720df4d9f19c5a0962b2992a9cb2001a8d4",
+      "authorSha256": "651d8a1ba70017ad7913dfcd9cd9c447d3012dc4ce0ce61c57678c6601663344"
+    },
+    {
+      "id": 132,
+      "sha256": "6b23a6cb88e11118b9f2f3a109691bcc69704f1269c03fab52a3e8284d10acad",
+      "authorSha256": "89acfa540adb9e57cb1a62ed3f00f0153205e3b443003b5ac2521679cf7d2609"
+    },
+    {
+      "id": 133,
+      "sha256": "49f6b73e8cae0dd6ce2a8e1993898795ab1d815937db9a66e1008719a19f5597",
+      "authorSha256": "07116c8084f8784fb49da2378df363921e6b467534618f986dbc7672cf4c160f"
+    },
+    {
+      "id": 134,
+      "sha256": "5d15552bef10a7f926c1b2af34e8a691565be23434b81157b95872756b695fe2",
+      "authorSha256": "50158822bf02e11c1bf0e7ec298222f8bc29c81e112493e9c9cf74b2b6856be6"
+    },
+    {
+      "id": 135,
+      "sha256": "4a6f8454e367ca6e3df3ffed4e7beb465b9e6dd1cd3eae4f63357e426b4a279b",
+      "authorSha256": "ad2f6a42cadb18774aeae33f886c34d552ea847b4a619fc6b2a3662c28a86bd1"
+    },
+    {
+      "id": 136,
+      "sha256": "6cd816eafe6fadbe93439aa54573e90a67f69ff7e25de7d77a2e61d3fd1096d5",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 137,
+      "sha256": "bd010ff8a97bb76b90801cfc0dd766bb9c00a1fb8bfa313f310ad00f5dfa46c1",
+      "authorSha256": "bac0fbe0b865cfb1a009c356d2eebf838d89816345f2767f80a664de0068022b"
+    },
+    {
+      "id": 138,
+      "sha256": "be4e31c601c4062bf910dffaebb04632a1123bb4624e6432ce03748a28a62c6d",
+      "authorSha256": "f4b2a4d69f9f3110204c03db4c3ac6a91c2cdc528ce68d704418cac542da3ae4"
+    },
+    {
+      "id": 139,
+      "sha256": "45df58605a05a8c03bf17d9bebf4695e0f2533eccee67da6e337eeff13ffa271",
+      "authorSha256": "ac8fb22816cdbaa4b107f4d6be03895e7d968a100e4480782bd966976cc91d79"
+    },
+    {
+      "id": 140,
+      "sha256": "afd24cbfb27f774d18797cbbaf54f2dc480f898a7f86fc61d58bc020e81387cc",
+      "authorSha256": "4412db8e24a84ec23e8f7bd1cc008a97b9e05fc72c58acf36cb8a22e6d6be3c5"
+    },
+    {
+      "id": 141,
+      "sha256": "cd7c5478741486cd653f7a53032cc69992074a512c1470023ed5f3db30a14dd0",
+      "authorSha256": "d63deb744b05e193bdd7eb51b2cbbb9c2465a169aee76859b2c5f01372eef3fb"
+    },
+    {
+      "id": 142,
+      "sha256": "72af17cd77b1b51d9961cf2013d3c363a3288fa000671eeba04f8be93617c063",
+      "authorSha256": "513e8a914088c6a3c1fa4faef08307ca5ee700fcdf01aa2137a8853f0a91cbff"
+    },
+    {
+      "id": 143,
+      "sha256": "61399554044abfdcfa9f69e98c510d6c83a341aee6461450b6554df3733e4cc0",
+      "authorSha256": "9cea3e37af5c788d2866925e7fce1affdcc779ac9e5b86b8d06882ffb37b4ea0"
+    },
+    {
+      "id": 144,
+      "sha256": "77a197516be41cb2b95dd8021f64e88c0ff319420cbc334148a04f6dcd1ea8b3",
+      "authorSha256": "481f060363a35e8b2b8b55b237869f5d0d1c441b3ad99dbee330888f0bfb1f1a"
+    },
+    {
+      "id": 145,
+      "sha256": "4c5cd2f9d16d924d11c31d2ea7c8c4f3f4d786756d67cbfc792850d18556f8c0",
+      "authorSha256": "ca45b4ec5ce92d4915d17902322004938ba641ac4700d329bbaba3a9631fd08d"
+    },
+    {
+      "id": 146,
+      "sha256": "aafcb61c5db319ea9d961544e43851856b9b24e58ec42ab116f60cc1386abf03",
+      "authorSha256": "92c2a4d010f221a4bd51d0de2ee348524964997d8103f93b38b421fe260bbc5f"
+    },
+    {
+      "id": 147,
+      "sha256": "f942aca0da05eaf8df865809cab3c699c280baac53b77093208344a5aac0595d",
+      "authorSha256": "9d64e96a0dc38ac539b66b561c8208d43d0f66967f7a6bf095b481a7f559f809"
+    },
+    {
+      "id": 148,
+      "sha256": "af624a0d92efc8829dfd112dbe9cad401cf3523ec5e3df284c381b683a78237b",
+      "authorSha256": "0d6131a4a1eebb33b33be8bea3b89b53dd181cabad5ec5e2ce6119492acfda71"
+    },
+    {
+      "id": 149,
+      "sha256": "43ec8258f8becf2a97344de6953f1c7060891a47803291c31b8a6e0d2ffc557a",
+      "authorSha256": "07e5eb9db3cb238917118255c4fdf2b42f3f62c04bffd318bbc58087e47774d2"
+    },
+    {
+      "id": 150,
+      "sha256": "aea8b00258f6dab2600d620646f59000d24885278fd120a200ab34546d1554b5",
+      "authorSha256": "3a460f5578dbd6f6fbf04fd02a9cf1f37d1f814070d86604caaecb11f2c6c6d0"
+    },
+    {
+      "id": 151,
+      "sha256": "3b5b9b9d60ea3b63ecf314698ed6033ef942a3b06a36eb6fb6dc2576b60bdea9",
+      "authorSha256": "eda2e18836ec7d4a3173693d1f9da2df5ec188400b3be98c239ffd8a634331a9"
+    },
+    {
+      "id": 152,
+      "sha256": "8bec2df53d0954fd651ac0907a8e658501ad7d07557f5c68aae0a7798d4d8781",
+      "authorSha256": "846d199e96a804ec6bf4bfadba22e4482d150efa3ba001605b20c209c350577a"
+    },
+    {
+      "id": 153,
+      "sha256": "6a14c764886621bc09a8970104b0255db35b4bdd1067c7b8b2df132266d6bf83",
+      "authorSha256": "91c358fdfe110ac85d64f654b17dac270c2a4e8ed89456fc17936a606680760c"
+    },
+    {
+      "id": 154,
+      "sha256": "09f4c9d335723b713ec74b4d81a6f2f644c0d02f41712e54de3466cb8cfdd2c1",
+      "authorSha256": "d36498c6e09ce028f7f1a319f927bdf54fa52b15f7a2ff16ac0d6767cac72cda"
+    },
+    {
+      "id": 155,
+      "sha256": "43aaa3538b7c8aa81b0e4d63b6de5f4bffceaf9e233eacb5e452d370a08cb462",
+      "authorSha256": "32f887418d8cedfda54d1a96092da9fed75d70c75fd46a786e90c0b316d141d7"
+    },
+    {
+      "id": 156,
+      "sha256": "0b0693da1593c1f76257e2ba350547b7fe7d20fcf5612e3ac9cf26380865ab81",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 157,
+      "sha256": "7a63c7dd08be7388d3ab986ad8bd5d3714d964275d577a4e50842bf911fc3d4e",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 158,
+      "sha256": "c83fd6ee14b116d0ca7e82b4b2784ed01106f55210717dd2c96ecad142eab74e",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 159,
+      "sha256": "460d11f66647fe1f7e91376ddf4bd026a5eeea12698eef5eb3d36703085b08ac",
+      "authorSha256": "01be5fe6b43513bd462881c37abb34bd19130813e6ca918c63edcebe314fbfda"
+    },
+    {
+      "id": 160,
+      "sha256": "3298a8fdeb772be06917f4d47dd94507f3104c2bb9d718fc0cf7c52c91fcd8cc",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 162,
+      "sha256": "4eb39a7a92a9d71d8cd802a3db273a24d203e985fafd751dfd0e1a13618a89ba",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 163,
+      "sha256": "485c4f011b5dbd7fa8cd81b62c5b8ad0a896aed0698e9988c5f458a6be9c6607",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 164,
+      "sha256": "d5b0078bc513b21fd548ca0c56db644fe0b49178ff511c0fd5077ef5d72194bc",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 165,
+      "sha256": "2627975d0ad01f98520ba7cd243650d1f9dc770a4035326d630b3f8982106cd0",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 166,
+      "sha256": "19f54596d96cdffb532a0139001178775e80bcd987515ff2d65cac48cdec344a",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 167,
+      "sha256": "d68f841b96503938469add686c530412f700e0310843ac4a1705bde92ed80769",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 168,
+      "sha256": "4b292e230ab3e05d397e25327f9f61ba3be40715193ea8e1bcf25fea9906a167",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 169,
+      "sha256": "737f112dd61e9761fec9a3195a2c38f2d58f1fa91552b65a149b9bd5d761d028",
+      "authorSha256": "a23a678f751b29891eebfa4a80b507c79c3e79091f9ea06cbec8c858d8bdea84"
+    },
+    {
+      "id": 170,
+      "sha256": "46391da02bbfddf3324ed3193923e5ded7e8751045dcdc44634fc74671902f92",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 171,
+      "sha256": "a9680803ae2a72f145ba552a310922a88a9fc30eb0c47e216ac838c96f8fa188",
+      "authorSha256": "54f32c7b41c1fd9c2657a99ac3383fa07bed0178970921b95730ab902364b041"
+    },
+    {
+      "id": 172,
+      "sha256": "e43230cb17aea2e0ec646ab9033a509e83e6697a9ea79ee8764af0d2c85890fe",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 173,
+      "sha256": "04ed662a196b0e6631592ea0d72aada1a8b2c9e5e9bb6b1ae4e91fa53cf245d5",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 174,
+      "sha256": "59a4ab39d04ef6c7ebbb30dbbce39f9e25b9782fc2be5a3276200458ec9296bf",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 175,
+      "sha256": "24e71ddeb7b188b43df14837e7aa2025f263efd26c8c10e030f630d73dc912b6",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 176,
+      "sha256": "b694441f3957a87de53c648859c349b85aeb8274f7974aed068a84cd95c7fa85",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 177,
+      "sha256": "f8ebd7a506524e12620d62df0ae52e468da39d579a917478b23ade384b8861f7",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 178,
+      "sha256": "29449707b4c27c90f7eb019bc293fa20f3e2aadd982eb86f1a415b048d05d56c",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 179,
+      "sha256": "ec8ef977013d6f3de503ca3520e52f403f598e86babe727b26c824285dea83dc",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 180,
+      "sha256": "59c41f3e818eac084a6df3b8d81036296e9d1f966c0313b3f1f432bb4ebca83f",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 181,
+      "sha256": "f182b15f6f2fe80d5e8ec87731c5251c6d707ec4bb218392b5eb82391ca75602",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 182,
+      "sha256": "ac4c9505590416b95096612a81066161ecfeaac6aa496a5b08202e39217fdc9d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 183,
+      "sha256": "f64136582782ca1732a18ac82aafe6a978f206998dc89f7099ff4789a8a02e62",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 184,
+      "sha256": "0ccd081a187961b25917ad9fa077cae103e0476f74bc4b54a78709930e0af163",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 185,
+      "sha256": "d748ae87063191957ce21a3cdd83bb7800c03375be52e2c8d00dda5c4b6e4c8a",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 186,
+      "sha256": "a83be531c597daab8cbc43659a061a04632be321969be2ab54ec3f998dd72b88",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 187,
+      "sha256": "7525b7a63970e2da62215b4e575d4547839182d74a5d43e931b48b8680732ce7",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 188,
+      "sha256": "afe9cf4d80d77840615655841dd229033b62a31f73e2fe415cb13aa79944d75d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 189,
+      "sha256": "7ef206b6f1b490d2720f2427e618e91d6cb64c2dbaa0701b421839c4eac81acd",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 190,
+      "sha256": "a6ecbf5156135228dfa0de99db9b03303e4a1db93ee9bd0014262716eece1414",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 191,
+      "sha256": "64fa9d49e0d599f452d96a844f3fc17b43d8a00055f3e47700e9a4a47b72aa20",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 192,
+      "sha256": "5068d1fb932602bcb341b73a3525bf8c208379fce6bbb4bcc807e6b4bcfd9d30",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 193,
+      "sha256": "cbaf553d8773af3bfb026759a067691c64d5146573eebccc3529fdba18e2a1c0",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 194,
+      "sha256": "30aac27adb4177d0d1c3993a47713b913be2a913ec8538a6af56ed0aaf29c627",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 195,
+      "sha256": "39b5b1ae09ef431cd12c0446b0d3209076aaa898508caad9f0a1194c91062d7d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 196,
+      "sha256": "ce2b89634f2600ca6f18b285e07e802fc25672926a6873388b0e475de966fa84",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 197,
+      "sha256": "36f3458cc6d06c03e277b8536f37c216522b5b03591bedac49fd03269b305360",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 198,
+      "sha256": "c7f9a7314209e000daaa66f1d4ab26f2d29e46aafc55c0a49337068b3a8d5f9d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 199,
+      "sha256": "19f60fcf80f3896546361280b8d6c2750a2ef1931756b95524b03a3ad66ed6bf",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 200,
+      "sha256": "75c40b906e9fb3c91c66b52487c7d8fbed8a24d304c0e20df2e1e283e1dfd1e5",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 201,
+      "sha256": "1347903f3e38fdd4e7b377d497c8321faa354ca714396ff5db25fb633f951576",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 202,
+      "sha256": "c96a8d5f8918c9400744b139273ec988eada0d3c98a92e31fe355dab0111dd65",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 203,
+      "sha256": "acb1f3b9e4b2e58de0df6532e426ce125def6dea94eaef9eba6893d12edf180a",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 204,
+      "sha256": "1f6ef7bc71c4b47917ef0751844bfece92c6d190b04be0c4e2e544a29b5266af",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 205,
+      "sha256": "d231f4b834bd4d29571793d79fdad697ccb3a02b0f960d92d737fa73253bea94",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 206,
+      "sha256": "59c81d608e7c1b9405254c67b965601e5c60626643b082cc41f9023890770577",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 207,
+      "sha256": "b0839f180a7cf90bc527a3a13465cbd159fc82e6fa172c31bdce5d12acbfff0f",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 208,
+      "sha256": "8dc3a74b806183a3d5db1d3950ad34cef0442a06796090cb7fda462714c2f510",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 209,
+      "sha256": "3fbb2aa17e51715ebc4f0ce1aa22b7fbdbbe5a522659ab74087156af6cc3f7af",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 210,
+      "sha256": "0071b2a69f94d73e00005b5c5cebd3d589326fd022c2e59561c8531c7b498ea9",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 211,
+      "sha256": "959693fabde1bbf7f1ea79f4cbb669a895af80bd067f935c4deef3aaab8f6cdb",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 212,
+      "sha256": "843fe22b7fb295a0ba49fbc4c715528f60a9f1059b6299e3d4e2f7af746611b7",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 213,
+      "sha256": "d4744a80c6842bd0890e6f4c3d009a7f16e03e1f68177d287d193783a8289800",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 214,
+      "sha256": "d755b19e0f51205778eb909f38e1dab0b9fd11622026238c4c3e7a71d991c61c",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 215,
+      "sha256": "4404b8b456f0d48ecc9876adf9942b7364a13b5b0ad175be6b042e7e19db086c",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 216,
+      "sha256": "5979e874cff57638898ed437e745957650b82a09328c012968ea16b8ba61ae2e",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 217,
+      "sha256": "b08652a54a33de7f5092ed96e12fa7442a1fae40ccb3446620c5621baad66199",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 218,
+      "sha256": "5468dfb31ca40053248de639925e5b419bc4f3bf9eb01927f91cb2fac8c76068",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 219,
+      "sha256": "ee9bbed7534808c5c62490581fcd52691ece4e1a44ae21bcc2089f78cefff2dd",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 220,
+      "sha256": "a52ab1dc9392c51e1c3779e18b3184e45d318554129acc8aded03e0530613872",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 221,
+      "sha256": "23bef138f5227e2dbc409cb78fcdd8a8670c9df4e09abd6e24adc1f26d280310",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 222,
+      "sha256": "717137404377be69f6f4e983230826c1484706ceffe23de9016d42c077f5bea4",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 223,
+      "sha256": "22b8daa7a9e55a131ccc6f477fe9973ea5851e71f708959295d90be844125246",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 224,
+      "sha256": "5838f9838c2f9311a3eeb695fdaf20a458b921cf1e87f5ef12a91b162c9fd26f",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 225,
+      "sha256": "75061b0e8bc2c0fe6cc97121c7215d973ccc1b071307a61365c8c4e6846ec4be",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 226,
+      "sha256": "3dbff32fabe5e3ad844b369acc75805366f8446050e59f81106f3904e27011de",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 227,
+      "sha256": "821da1a06318fc9e7cbfb9fbb7a191b7b087a245cdc8b2f6f15354fea6c1711b",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 228,
+      "sha256": "f71d0e1e78692de6ec5c0a2fa374f8b1560d5775070a26ab481dc8368e4c8ba1",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 229,
+      "sha256": "b9962c8ba0a6af473fc18240efa7aebefd11d1effe9b3f4142e024a85340af23",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 230,
+      "sha256": "8906d69ab445b655b4ff464bdd537f7df72bb46c6b076702457ac692c5bd149d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 231,
+      "sha256": "7c3d8a707e369e5b0baa53ed96e5f8acfb8d70a37fc5a5367759db3e7de73112",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 232,
+      "sha256": "5212303960e3c5d61a6a8252e3c09d2622d3f271a689676125fe6ca8396f4b07",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 233,
+      "sha256": "7f8b62d00b9231839e79f48493564f3a24e751f444e2da7bd70d39c078620170",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 234,
+      "sha256": "1ae515a090608d3a02d46f6317da483ffe5946b720284d44353a8a1e99b917c7",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 235,
+      "sha256": "7247d25d320939856a50588787e07727d995d2c2cca5cf6fd1e5e11c7f4cb838",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 236,
+      "sha256": "52e50cdfa1c262953f0c7eabcfa12dadb59a019d8bc8b22f274304c14b317360",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 237,
+      "sha256": "ab90a199c3b781fa0a35f2902d4bd217be68634939fa12f3bb8c1f221e3c9be7",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 238,
+      "sha256": "afd87ab33f345ca22dfe5f3ba576dd8afe51654fa309ac2086d863716c05a8e7",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 239,
+      "sha256": "377610291c4ba810dcf4b1947ce1803354f3ccdb9012f2c8edd40ee1c2025b9c",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 240,
+      "sha256": "c38ae0e9682460e90b61f12c97acb4f82127d95136115c9e35f1a39b172f6290",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 241,
+      "sha256": "f028ff53dbd5a5ad584a7f4009b519adda085a6ed6b14623d55a4e4b281715ff",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 242,
+      "sha256": "36e6e647bafd2bdf04228ba7f0840ef012e30ecdd8a3774bd948e12e7bec69ec",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 243,
+      "sha256": "4f6bfd57851edb3f40528a869d06928baee1e8778a13f7b6245967c14d54efc7",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 244,
+      "sha256": "3bb3bf1d3d1b1857b2eb98321c4844a8bd8ebcf542cf97d6f22835788a687a6c",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 245,
+      "sha256": "3da25ebc76b176cbfb52898c849085f0a652cca0f88b7d3bc95650cadf3ae7d8",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 246,
+      "sha256": "f5cd8e743a733e83287ed0ebc69d50188681a9f13a43f1e9314c6896a65d11e1",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 247,
+      "sha256": "fd0afd9cff2a883b3a6f7a1c95decf2f4c057ca302358d6ec719fefc0bef1525",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 248,
+      "sha256": "9b99189d18d10359eb744c5c002911f57cd56d2934269fd67e7f57eca833013b",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 249,
+      "sha256": "38eadedfe1aeddbc846a2e3036acac0357a41093aaa72a042a3e3869fcdf2903",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 250,
+      "sha256": "a84abe43a149014f708d6d556ece6ca7a88b530ec55fe39b79b3977c3df39f49",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 251,
+      "sha256": "0be6079d0db529dac0b91845355c6becf2bbb09fe53d50cc430da33118107896",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 252,
+      "sha256": "19058a8015ec81bda6eda02ec33301735b164830359d1aa1ffe1ea3fb4d832f8",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 253,
+      "sha256": "648d29addc9a86d5a63e238514698280251eaf6924cfacabf1cd5fab1c3638d2",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 254,
+      "sha256": "b989e517158e72ecbcd50bbb7867196bf2183e8bebaf2ebc5e04e0c856520673",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 255,
+      "sha256": "8ff31227ee429ec53a76198fda76a400020142d0e0435e0bb5afe9683786dd19",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 256,
+      "sha256": "044f75c47600720edba935cbc3eff97ccf9f69a0b528f569dcb20ab2c0e71864",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 257,
+      "sha256": "d934eff6e6695eee791c9774ffe93388dc1a3c4c97f4dce8862b7a64002863e9",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 258,
+      "sha256": "3b41cc5748f1767f2256feb344c9cdeae3bb4ea47fc282462155c90a41606027",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 259,
+      "sha256": "a716f8b660c4b8158f31feddd2f95339cd204c14959c9f97610ceafba7650416",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 260,
+      "sha256": "1e777d0d38fead72c5f9300fceee0610ba03d914bdcbfa9c3d4a92467a1cb701",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 261,
+      "sha256": "f39359992fb551dd95c8f87033e74420155b68b2fd504ec61b16841023c98830",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 262,
+      "sha256": "381f66e0b3959895187a8e00e220eb21fffab2d9807693c2f57101d6353ca380",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 263,
+      "sha256": "2ba8d5953769af7072e9eaa7402a52e580e5b49a61230eef09c9fb7698e03cf1",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 264,
+      "sha256": "2cd4d670d3b8d756a1315e7f89d4e32af86a359017e4c4fa33b2b6ef4ed08d90",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 265,
+      "sha256": "1c32c02b60efb02f64f17015f35a55ef8a24b56aa3e76c757e6c049c35f80ecf",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 266,
+      "sha256": "40f202ce2a75e920d984a2c36d8b77c9a6505c42d1be54054932effbe6586e18",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 267,
+      "sha256": "c7d01b5f2ac949836c291bbd57adf9242cb9f4d3141bd20934fedcf62fcb385d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 268,
+      "sha256": "bae5907dbeb603b0da8d7efc115c90c095bab6f3cd32bc0c098f86ab0f7cc406",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 269,
+      "sha256": "04c961abacd2fb20c3b1022ae1e1ecec1b6d84622a64113218987c0566df7ade",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 270,
+      "sha256": "fa33c1770caa480b41bd0e7f2c83727ef484b70674896e024bf5ee855d5c4e8d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 271,
+      "sha256": "7446ced5ece9a514b390044ded8fd1e4f7d82ced3676153eae5859b4d605ca75",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 272,
+      "sha256": "56fe684f2b3a57ea718622407f1712f76b8b54e4fb016b40ca7b5cce0e8d282d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 273,
+      "sha256": "ec0bd1eaa8eb0da3274925776f6eeb484b831158fa13b86aa5531818bc98b8d2",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 274,
+      "sha256": "60b8be472e59c89b059d29d849e9ee944118a2262de5095cf2592467e1009597",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 275,
+      "sha256": "e6994e68ff138d7e0c45180a2820054cdadb2075e3750be52dc01bdbd44aa780",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 276,
+      "sha256": "70dc2bd86cc2c74989a86bd1527db4e79114e793b453d83c3605d23a9e15af9a",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 277,
+      "sha256": "15886da7f9cf7218e1452f399b2a9b7a3544036bc075cad992d7edd4245412df",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 278,
+      "sha256": "938dcd91c9c399d0b481f3425c4601a0a2e7d61e848daa425ff312c4205e378f",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 279,
+      "sha256": "ab3054dced436f946fc0dc231052f690259952a81252be706bad9768373df321",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 280,
+      "sha256": "16781bfc5008daa5a9dbdd87e91025b32f4863a876eb6fa5ae94d79225920abd",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 281,
+      "sha256": "ff0e77ec5f35a671bcd221ebc4314c8849f0fd80c9e83102964e22017d21b7c2",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 282,
+      "sha256": "4428913e7a36a879fca6192f5ee8b05dc93efc792663f3b7849fc1ed52f61145",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 283,
+      "sha256": "d51297054d338ca200bdd67e1549bc60f7d4b5b83944ec3d2eb7fac488232a32",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 284,
+      "sha256": "3c5f105a248aef0e619910d01610355fb78fbd63d781cdc3ff835575cbd67cab",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 285,
+      "sha256": "08e93753266f965353433cb037296b612af68c02e29005ef0136546dedc7fc25",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 286,
+      "sha256": "50be0b8c5747ae23315aca9e4c0c8e950cc331b70cafe08b98d9d9ee2f54811d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 287,
+      "sha256": "dca78575048fab86b323daf8d1fc9185920516c0278f96529e20e222bd49739c",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 288,
+      "sha256": "e373ad0915d173406eb34d8c002d0df43e79188fc5d862fba5a29d492ee818b7",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 289,
+      "sha256": "bb86aedc9f3cb04a4addf64d6423fa305356f54adbd38532619283145e2ff71a",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 290,
+      "sha256": "5ef30e1ec9fea5eb0b12650a0ebeb7414f1dfdb7b7cc151b2e108c11c876005d",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 291,
+      "sha256": "149570504895580873a26dbdcb0a8fbc39b9c62fd11207b91cc230be51310e63",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 292,
+      "sha256": "31d81fca6ac948faa5e63262bb97961437be45ee4ca49b9d29ef0f9e61cff567",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 293,
+      "sha256": "965e97826a34501a8d01ff0af4a64fcf1c05f75ffc3aadd31c953a7a8b432797",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 294,
+      "sha256": "d284d381d1e73e1e9dc6512be12e5a8ff24f4ded049c32fcdd26ed80e574f210",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 295,
+      "sha256": "a54c44bd19e3a33780e6088b7c8c09b82b5008115150265d2f36aca3958a08a8",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 296,
+      "sha256": "54384fd9f9c2e1c63740819e7cb4944f59fe1d51ac72c162ac85ebdaaaeea1c5",
+      "authorSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "counts": {
+    "approvedImageCorrections": 17,
+    "alreadyFixedSharedImage": 1,
+    "revisedSummaries": 15,
+    "newlyRegisteredAnswers": 8,
+    "newlyConfirmedRiichi": 1,
+    "changedQuestions": 40
+  },
+  "changes": [
+    {
+      "id": 20,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "おすすめは8p切りなのだ。筒子の切り方で待ちを選ぶ問題で、7pを切ると一盃口は付くけれど、8p待ちが少ないのだ。\n\nドラ表示牌にも8pが使われているため、8p待ちは残り2枚なのだ。8pを切って9p・2zのシャンポン待ちにすれば残り4枚になるのだ。打点だけでなく、実際に何枚残っているかを数えて待ちを選びたいのだ。"
+          },
+          "after": "おすすめは8pを切ってリーチなのだ。\n\n7pを切るとカン8p待ちになるけれど、8pは手牌に1枚、ドラ表示牌に1枚あるので、残りは2枚だけなのだ。8p切りなら9p・2zのシャンポン待ちで、合計4枚残るのだ。\n\nドラの9pを2枚使えて打点は十分なので、一盃口にこだわるより和了できる枚数を優先するのだ。愚形だからとダマで待たず、今回はリーチで打点も伸ばすのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/C6sbxMSWikM",
+              "reviewedTimestamps": [
+                21,
+                27,
+                33,
+                39,
+                45
+              ],
+              "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+              "revision": 60
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/C6sbxMSWikM",
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+            "revision": 72,
+            "reviewedTimestamps": [
+              18,
+              30,
+              36,
+              42
+            ]
+          }
+        }
+      },
+      "reasons": [
+        "動画18秒のリーチ推奨を、保存済み正解判断に合わせて要約の冒頭にも明示。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/C6sbxMSWikM",
+          "seconds": 18,
+          "sha256": "20ee568a3690992e91394a1e9734bf047e026da98e15a92074237c590ee7d333"
+        },
+        {
+          "url": "https://youtu.be/C6sbxMSWikM",
+          "seconds": 30,
+          "sha256": "ae636614c28f621ec1d920d19110e1654ec16a4d37878cdc3cf5e24dec1a9a7e"
+        },
+        {
+          "url": "https://youtu.be/C6sbxMSWikM",
+          "seconds": 36,
+          "sha256": "7606ba3f995cb7f5fea8bbcd7c8723865ffb4c771166f47ce91e060788dfe5dc"
+        },
+        {
+          "url": "https://youtu.be/C6sbxMSWikM",
+          "seconds": 42,
+          "sha256": "4a77ef1fe47218c057aa2160b661ac6fc2a9d002ff737a70da64f75e6a4b630a"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "この問題は、2zが1枚切れで、4zは生牌という条件を見て選ぶのだ。動画では4zを切り、2zを残す形を比較しているのだ。\n\n同じ字牌の単騎候補でも、場に何枚見えているかによって評価は変わるのだ。巡目が深くなるにつれて生牌が他家に使われる可能性もあるので、字牌の種類だけでなく、捨て牌の状況を確認したいのだ。"
+          },
+          "after": "おすすめは4zを切ってリーチなのだ。1枚切れの2zを残し、七対子の単騎待ちにするのだ。\n\n4zは生牌なので、見えている枚数だけなら多く残っていそうに見えるのだ。でも巡目が進むほど、ほかの人の手に使われていて山に少ない可能性や、警戒されて切られにくいことも考えたいのだ。\n\n動画では、7巡目のこの条件なら生牌の4zより1枚切れの2zで待つ方を勧めているのだ。後半の12巡目・2zが2枚切れという比較でも4z切りリーチだけど、本問の条件とは分けて考えるのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/iQbLSPvc84s",
+              "reviewedTimestamps": [
+                15,
+                25,
+                33
+              ],
+              "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+              "revision": 60
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/iQbLSPvc84s",
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+            "revision": 72,
+            "reviewedTimestamps": [
+              12,
+              21.5,
+              36,
+              42,
+              48,
+              51
+            ]
+          }
+        },
+        "correctRiichi": {
+          "before": {
+            "present": false
+          },
+          "after": true
+        },
+        "answerSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "kind": "video",
+              "url": "https://youtu.be/iQbLSPvc84s",
+              "reviewedTimestamps": [
+                15,
+                25,
+                33
+              ]
+            }
+          },
+          "after": {
+            "kind": "video",
+            "url": "https://youtu.be/iQbLSPvc84s",
+            "reviewedTimestamps": [
+              21.5
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "動画21.5秒で打北リーチを確認。correctRiichiの未確定を解消し、字牌の見え枚数の意味を具体化。",
+        "21.5秒の「打北でリーチ」で未確定の判断を確定。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/iQbLSPvc84s",
+          "seconds": 12,
+          "sha256": "4df6b5325f972cb247ec61a8441adde5134ff9889fbd47e40d2b6345b503f42f"
+        },
+        {
+          "url": "https://youtu.be/iQbLSPvc84s",
+          "seconds": 21.5,
+          "sha256": "7f992042ba3d37d7504975cc972cdbffe74fa14ba201de13bb3c9cbd92030847"
+        },
+        {
+          "url": "https://youtu.be/iQbLSPvc84s",
+          "seconds": 36,
+          "sha256": "baf663ef6d58de76a9a0d6fb1ca2dd2d8fd6f3710b4b26100661ed629db74d38"
+        },
+        {
+          "url": "https://youtu.be/iQbLSPvc84s",
+          "seconds": 42,
+          "sha256": "b8ae96b093a120f5aa4ac32a628c12e7a9a5976b8511fc32b195bc3d33e65044"
+        },
+        {
+          "url": "https://youtu.be/iQbLSPvc84s",
+          "seconds": 48,
+          "sha256": "b2fb2e35c0f4105c40d5fed792abac89cffc2711716a5cec253371cb8ed38fc4"
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "ここは4p切りなのだ。8m・9m・9mと4p・4p・6pを比べ、変化しにくいペンチャン側に対子のフォローを残すのだ。\n\n4p・6pの嵌張は3pや5pを引けば一手で両面へ変わるけれど、8m・9mのペンチャンは両面になるまでに手順が必要なのだ。自力で変化しやすい筒子より、弱い萬子側を9mの対子で補強するのだ。"
+          },
+          "after": "ここは4p切りなのだ。8m・9m・9mと4p・4p・6pを比べ、変化しにくいペンチャン側に対子のフォローを残すのだ。\n\n4p・6pのカンチャンは3pや7pを引けば、一手で両面へ変えられるのだ。5pを引くのはカンチャンが完成する場合なので、両面への手替わりとは分けて考えるのだ。\n\n一方、8m・9mのペンチャンは両面になるまでに手順が必要なのだ。自力で変化しやすい筒子より、弱い萬子側を9mの対子で補強するのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/vIXmLVP9KSI",
+              "reviewedTimestamps": [
+                21,
+                27,
+                33,
+                39,
+                45
+              ],
+              "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+              "revision": 60
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/vIXmLVP9KSI",
+            "reviewedTimestamps": [
+              18,
+              24,
+              30,
+              36,
+              42
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "動画36秒の『3か5』も牌形と不整合。4p・6pが両面へ変化する牌は3p・7pで、5pは完成牌。元動画の表記まで再検証して訂正。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/vIXmLVP9KSI",
+          "seconds": 18,
+          "sha256": "1f557740fb37c76f2f5bc7dd3e077765edbb155f08743c57762fb09e95ef4c59"
+        },
+        {
+          "url": "https://youtu.be/vIXmLVP9KSI",
+          "seconds": 24,
+          "sha256": "fbc5ed7483fbc02bb535b1d6e099d9f4ce52a0920a64b0eff2ef407c205156d7"
+        },
+        {
+          "url": "https://youtu.be/vIXmLVP9KSI",
+          "seconds": 30,
+          "sha256": "db8a9256459fe924f9770c7897ff2dad0745862d094e4e7220a11c9b29bf06eb"
+        },
+        {
+          "url": "https://youtu.be/vIXmLVP9KSI",
+          "seconds": 36,
+          "sha256": "4b70eefc579cd60270feb8e642819fbf58066459ab99bee6dbba24a8f2cd0917"
+        },
+        {
+          "url": "https://youtu.be/vIXmLVP9KSI",
+          "seconds": 42,
+          "sha256": "9ac57ca232ae0a219499b25396ccdb1850e5adcad8b103a2a2857b3553cd2386"
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "ここは7p切りなのだ。索子のつながった形を崩さずに残すのだ。\n\n暗刻と対子が重なって見える形は、一つの分け方だけだと受けを見落としやすいのだ。今回は筒子の暗刻の横にある7pより、索子全体の組み替えを生かすことを優先するのだ。完成面子を抜き出し、雀頭を変える見方も試すのだ。"
+          },
+          "after": "おすすめは7p切りなのだ。すでに聴牌を取れるので、5s切りとの待ちの広さを比べるのだ。\n\n7pを切った後の索子は、4s・4s・4s・5sと5s・6s・7sに分けると、3s・6sと5sの待ちが見えるのだ。さらに4sを暗刻、5sを雀頭として見れば、残りの6s・7sから5s・8sの待ちも確認できるのだ。\n\n合わせると3s・5s・6s・8sの4種類、13枚待ちなのだ。5s切りの5p・7p・8p待ちは11枚なので、索子の複合形を残す7p切りの方が広いのだ。暗刻を固定せず、雀頭としても使えるか確かめるのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/kMEqV0loSas",
+              "reviewedTimestamps": [
+                27
+              ],
+              "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+              "revision": 60
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/kMEqV0loSas",
+            "reviewedTimestamps": [
+              18,
+              24,
+              36,
+              42
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "抽象的な説明を、動画と検算で確認した4種13枚の待ちと比較へ具体化。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/kMEqV0loSas",
+          "seconds": 18,
+          "sha256": "619ecc96b3842c4b4cb21a9c3e7c8d9747ec8e298704d4b4b075db59b41758cd"
+        },
+        {
+          "url": "https://youtu.be/kMEqV0loSas",
+          "seconds": 24,
+          "sha256": "b1c51d25f93d8b4093d89a411091c70895dea5a018c824ecf63d54c40b1ec489"
+        },
+        {
+          "url": "https://youtu.be/kMEqV0loSas",
+          "seconds": 36,
+          "sha256": "4b10a294d07282035d052bf61b22d04a4117900d771080dd0de2246dfaf9c340"
+        },
+        {
+          "url": "https://youtu.be/kMEqV0loSas",
+          "seconds": 42,
+          "sha256": "4a9dc8a1b45ad4fdbb0e2699fb645381a8fefa5769419c7cdc26e3c2bc4ba3f5"
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "ここは3sを1枚切るのだ。ドラ8sを使う形を残して、手を進めたいのだ。\n\nツモは9pで、ドラの8sをもう1枚引いた問題ではないのだ。筒子と索子の対子やターツを見比べ、ドラを使える部分を崩さないようにするのだ。まずドラとツモを区別してから、残したいターツを選ぶのだ。"
+          },
+          "after": "おすすめは3s切りなのだ。筒子の5p・5p・7p・9p・9pは、飛び対子の真ん中を1枚外した形なのだ。ここを残せば、5p・6p・8p・9pのどれからでも索子の両面を残して聴牌できるのだ。\n\n索子の中ぶくれを残して、もっと両面を作りたくなるけれど、すでに9巡目なのだ。今回は遠い手替わりを待つより、6種類20枚の広い受け入れで聴牌へ進めるのだ。\n\n先に6s・9sを引いた場合は筒子側の待ちを選ぶことになるので、河も見ながら切る牌を考えておくのだ。ドラ8sを使う両面と、飛び対子の働きを両方残すのがポイントなのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/243yZ6-AeIQ",
+              "reviewedTimestamps": [
+                28
+              ],
+              "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+              "revision": 60
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/243yZ6-AeIQ",
+            "reviewedTimestamps": [
+              18,
+              24,
+              30,
+              36,
+              42,
+              48
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "過去の取り込み誤認への注意書き中心だった要約を、元動画の飛び対子・巡目・受け入れ比較へ戻す。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/243yZ6-AeIQ",
+          "seconds": 18,
+          "sha256": "b7748f889974bdd6b478b40029975d29725988047f1223eb38185358df5cca52"
+        },
+        {
+          "url": "https://youtu.be/243yZ6-AeIQ",
+          "seconds": 24,
+          "sha256": "146c938ebe710f1bcdc463b4cd99b2830edab7cfc6839812a205c706199ef1bf"
+        },
+        {
+          "url": "https://youtu.be/243yZ6-AeIQ",
+          "seconds": 30,
+          "sha256": "e02f7a49a1603e2ba7fc68e4303f27c519f4174744777af8e77b9014ba738fcf"
+        },
+        {
+          "url": "https://youtu.be/243yZ6-AeIQ",
+          "seconds": 36,
+          "sha256": "0d34f547bac16ff6abf4d8b03bd4f668d0907c5766e0738c917c24d57ce1d9d4"
+        },
+        {
+          "url": "https://youtu.be/243yZ6-AeIQ",
+          "seconds": 42,
+          "sha256": "99a8c72f40a096004a9f20da18998592b49b6b3a233cf9164fb742dc532fd60b"
+        },
+        {
+          "url": "https://youtu.be/243yZ6-AeIQ",
+          "seconds": 48,
+          "sha256": "cb5da130e758fe2962abbca4948334bb64f0f835ea92da56a9409c95d219c42d"
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "おすすめは2pを1枚切ることなのだ。萬子の4m・5m・6mと、副露した4s・0s・6sを生かして、三色になる筒子の分け方を見るのだ。\n\n筒子の長い形は、雀頭と順子の候補を入れ替えると見通しがよくなるのだ。すでにある萬子と索子の面子に合わせ、4p・5p・6pを使える形を残すのだ。"
+          },
+          "after": "おすすめは2p切りなのだ。待ちは1p・4p・6p・7pの4種類、合計14枚なのだ。\n\n萬子の4m・5m・6m、副露の4s・0s・6sに合わせて、筒子も4p・5p・6pに分けてみるのだ。残る2p・3pと5pの雀頭から、三色の付く1p・4p待ちが見えるのだ。\n\n今度は2p・3p・4pを順子として抜くと、5p・5p・5p・6pが残るのだ。5pを雀頭にすれば4p・7p、暗刻にすれば6p単騎で、こちらはタンヤオで和了できるのだ。役ごとの分け方を合わせ、隠れた待ちを見落とさないのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/JB0x3SKTtjE",
+              "reviewedTimestamps": [
+                25
+              ],
+              "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+              "revision": 60
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/JB0x3SKTtjE",
+            "reviewedTimestamps": [
+              18,
+              24,
+              30,
+              36,
+              42
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "三色だけの抽象的な説明から、三色とタンヤオの分解を合わせた4種14枚待ちへ具体化。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/JB0x3SKTtjE",
+          "seconds": 18,
+          "sha256": "af4dd1ad742a144ba4140f8eb50dea4faf7fa0092428d048f28ceb0d80ddd59c"
+        },
+        {
+          "url": "https://youtu.be/JB0x3SKTtjE",
+          "seconds": 24,
+          "sha256": "daddc8903004e70659e25d15970649eeb986028c5d8d680a94537e177a43f1c0"
+        },
+        {
+          "url": "https://youtu.be/JB0x3SKTtjE",
+          "seconds": 30,
+          "sha256": "e2fe4777e8298f76f9493c34644d7658c355ca946318ff77649399affc4a22ac"
+        },
+        {
+          "url": "https://youtu.be/JB0x3SKTtjE",
+          "seconds": 36,
+          "sha256": "e59769b142a157c6b59d2787255197f9b46297b76b00e6d3f7bb1956e3d0dbf2"
+        },
+        {
+          "url": "https://youtu.be/JB0x3SKTtjE",
+          "seconds": 42,
+          "sha256": "7906232d958666a13cf6775c097730ff0ea775a4dc73a4ac6beb9948f7cddd6c"
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "おすすめは3pを1枚切ることなのだ。筒子の一通への変化を残して進めるのだ。\n\n副露しているのはドラ9sのポンなのだ。筒子の順子と対子をどう使うかを見直し、今の受けを取った後にも一通へ伸ばせる形を残したいのだ。筒子を短いターツだけに分けず、全体のつながりを見るのだ。"
+          },
+          "after": "おすすめは3p切りなのだ。ドラ9sをポンしているけれど、ドラだけでは役にならず、9sがあるためタンヤオも付かないのだ。7zの役牌だけに頼らず、一気通貫で和了する道も残したいのだ。\n\n3pを1枚切った筒子に5pを引けば、9pを切って8p待ちにできるのだ。8pを引いた場合も9pを切れば5p待ちで、どちらも一気通貫が付くのだ。\n\n筒子を短いターツだけに分けず、1pから9pまでのつながりを見つけるのだ。鳴いている手では、何の役で和了するかまで確認して進めるのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/_-2732uuBpo",
+              "reviewedTimestamps": [
+                35
+              ],
+              "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+              "revision": 60
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/_-2732uuBpo",
+            "reviewedTimestamps": [
+              18,
+              24,
+              30,
+              36,
+              42
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "役なしの副露手であることと、5p・8pから一通で聴牌する実際の手順を補う。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/_-2732uuBpo",
+          "seconds": 18,
+          "sha256": "e63fd510af9abd5e01a8b082aac1c2179a979097df10ded329703433a43ce896"
+        },
+        {
+          "url": "https://youtu.be/_-2732uuBpo",
+          "seconds": 24,
+          "sha256": "9ac7c3c020f130ab1b728ff855033a154351a3a9c7f88618dcfe65aad1781b48"
+        },
+        {
+          "url": "https://youtu.be/_-2732uuBpo",
+          "seconds": 30,
+          "sha256": "0e37ee0a52f4a7105bcd8023fac17b18d3733f5f32abe0449d1dd01084d52d26"
+        },
+        {
+          "url": "https://youtu.be/_-2732uuBpo",
+          "seconds": 36,
+          "sha256": "1390b124cfc0f5e705e3f3812d1be45cdd666e61cf185cc76e46a17ec26afb60"
+        },
+        {
+          "url": "https://youtu.be/_-2732uuBpo",
+          "seconds": 42,
+          "sha256": "9298ee60340628e286d2fde1e96e7e4c6ee6d1b960ca5e06cfa86764d7ad2ade"
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "fields": {
+        "correctDiscards": {
+          "before": {
+            "present": true,
+            "value": []
+          },
+          "after": [
+            "8p"
+          ]
+        },
+        "videoCorrectDiscards": {
+          "before": {
+            "present": false
+          },
+          "after": [
+            "8p"
+          ]
+        },
+        "answerSource": {
+          "before": {
+            "present": false
+          },
+          "after": {
+            "kind": "video",
+            "url": "https://youtu.be/H5Xvxd4nVUk",
+            "reviewedTimestamps": [
+              18
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "要約に記録されていた結論を元動画で再確認し、未登録の正解へ設定。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/H5Xvxd4nVUk",
+          "seconds": 18,
+          "sha256": "e5fc5e169ea74874839504d3a7f86479f205d028dc0204515273618a946d8f8e"
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "fields": {
+        "correctDiscards": {
+          "before": {
+            "present": true,
+            "value": []
+          },
+          "after": [
+            "1s"
+          ]
+        },
+        "videoCorrectDiscards": {
+          "before": {
+            "present": false
+          },
+          "after": [
+            "1s"
+          ]
+        },
+        "answerSource": {
+          "before": {
+            "present": false
+          },
+          "after": {
+            "kind": "video",
+            "url": "https://youtu.be/F_fi0wIpkbY",
+            "reviewedTimestamps": [
+              18
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "要約に記録されていた結論を元動画で再確認し、未登録の正解へ設定。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/F_fi0wIpkbY",
+          "seconds": 18,
+          "sha256": "5686351c34170f5c69cfb05c27951a8207b1c8bda1b60f850d1ef2983cdda18a"
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "fields": {
+        "correctDiscards": {
+          "before": {
+            "present": true,
+            "value": []
+          },
+          "after": [
+            "7p"
+          ]
+        },
+        "videoCorrectDiscards": {
+          "before": {
+            "present": false
+          },
+          "after": [
+            "7p"
+          ]
+        },
+        "answerSource": {
+          "before": {
+            "present": false
+          },
+          "after": {
+            "kind": "video",
+            "url": "https://youtu.be/sOarGIID5n4",
+            "reviewedTimestamps": [
+              18
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "要約に記録されていた結論を元動画で再確認し、未登録の正解へ設定。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/sOarGIID5n4",
+          "seconds": 18,
+          "sha256": "1a15dbc1f8a37de53cf36b2b42cea388f8249ca0da695784be5d59ee3b0a18a7"
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "fields": {
+        "correctDiscards": {
+          "before": {
+            "present": true,
+            "value": []
+          },
+          "after": [
+            "6m"
+          ]
+        },
+        "videoCorrectDiscards": {
+          "before": {
+            "present": false
+          },
+          "after": [
+            "6m"
+          ]
+        },
+        "answerSource": {
+          "before": {
+            "present": false
+          },
+          "after": {
+            "kind": "video",
+            "url": "https://youtu.be/A-WRDlb3k3s",
+            "reviewedTimestamps": [
+              18
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "要約に記録されていた結論を元動画で再確認し、未登録の正解へ設定。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/A-WRDlb3k3s",
+          "seconds": 18,
+          "sha256": "434c63ed9564b6012e3f703f8cb7a20bf47c686a54c34564b2ff57ff7c366119"
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "fields": {
+        "correctDiscards": {
+          "before": {
+            "present": true,
+            "value": []
+          },
+          "after": [
+            "6s"
+          ]
+        },
+        "videoCorrectDiscards": {
+          "before": {
+            "present": false
+          },
+          "after": [
+            "6s"
+          ]
+        },
+        "answerSource": {
+          "before": {
+            "present": false
+          },
+          "after": {
+            "kind": "video",
+            "url": "https://youtu.be/O1rH1niCclI",
+            "reviewedTimestamps": [
+              18
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "要約に記録されていた結論を元動画で再確認し、未登録の正解へ設定。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/O1rH1niCclI",
+          "seconds": 18,
+          "sha256": "edd5e4b2b1491622f85e0c1e4a10fcb020c32eaab048ed285cec514ac0aed098"
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "fields": {
+        "correctDiscards": {
+          "before": {
+            "present": true,
+            "value": []
+          },
+          "after": [
+            "6p"
+          ]
+        },
+        "videoCorrectDiscards": {
+          "before": {
+            "present": false
+          },
+          "after": [
+            "6p"
+          ]
+        },
+        "answerSource": {
+          "before": {
+            "present": false
+          },
+          "after": {
+            "kind": "video",
+            "url": "https://youtu.be/VjOzvtUiKnU",
+            "reviewedTimestamps": [
+              24
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "要約に記録されていた結論を元動画で再確認し、未登録の正解へ設定。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/VjOzvtUiKnU",
+          "seconds": 24,
+          "sha256": "d65e633a6ce4cf88d2951d1ca1643c8b15d3cf1607a72ba97281e364b5b44520"
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "fields": {
+        "correctDiscards": {
+          "before": {
+            "present": true,
+            "value": []
+          },
+          "after": [
+            "7s"
+          ]
+        },
+        "videoCorrectDiscards": {
+          "before": {
+            "present": false
+          },
+          "after": [
+            "7s"
+          ]
+        },
+        "answerSource": {
+          "before": {
+            "present": false
+          },
+          "after": {
+            "kind": "video",
+            "url": "https://youtu.be/959tnkZizvI",
+            "reviewedTimestamps": [
+              24
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "要約に記録されていた結論を元動画で再確認し、未登録の正解へ設定。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/959tnkZizvI",
+          "seconds": 24,
+          "sha256": "2cd4f07dad34b8818b1ccb61d68af73c0fbfb8fafe200afb6bdf0183d9247e6f"
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "fields": {
+        "correctDiscards": {
+          "before": {
+            "present": true,
+            "value": []
+          },
+          "after": [
+            "2p"
+          ]
+        },
+        "videoCorrectDiscards": {
+          "before": {
+            "present": false
+          },
+          "after": [
+            "2p"
+          ]
+        },
+        "answerSource": {
+          "before": {
+            "present": false
+          },
+          "after": {
+            "kind": "video",
+            "url": "https://youtu.be/tauwb2NiWq8",
+            "reviewedTimestamps": [
+              24
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "要約に記録されていた結論を元動画で再確認し、未登録の正解へ設定。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/tauwb2NiWq8",
+          "seconds": 24,
+          "sha256": "8968afb614b85d9126a830c3f8c53ee42e4d128db2abcb9b8624dcae408f6b63"
+        }
+      ]
+    },
+    {
+      "id": 167,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "ここは6m切りなのだ。通常の5mと赤5mを雀頭にして、7m・7zのシャンポン待ちを取るのだ。\n\n5mを切る形もあるけれど、副露手では聴牌後の変化まで比べたいのだ。萬子を組み替えたとき、先に切った牌でフリテンになるかどうかが違ってくるのだ。今の待ちだけを見て決めず、次に引いた牌で待ちを変える手順も残すのだ。"
+          },
+          "after": "おすすめは6m切りなのだ。形の上では5m・7zのシャンポン待ちだけど、5mでは役がなく和了できないのだ。7zの役牌で和了を目指す手なのだ。\n\n通常の5mを切ると、形の待ちは4m・7m・7zになるのだ。ただし4m・7mでは役がないうえ、その牌を引いてツモ切りするとフリテンになり、7zでもロンできなくなるのだ。\n\n6m切りでも5mを引けば同じ問題が起こるけれど、その5mは残り2枚なのだ。5m切りでは4mが4枚、7mが1枚で、困るツモが合計5枚あるのだ。和了できる7zの枚数は変わらないので、役なしのツモでフリテンになる危険が少ない6m切りを選ぶのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/ADWMMNXtryw",
+              "reviewedTimestamps": [
+                45,
+                63
+              ],
+              "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+              "revision": 60
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/ADWMMNXtryw",
+            "reviewedTimestamps": [
+              18,
+              30,
+              42,
+              54,
+              66,
+              78,
+              90
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "6m切り後は5m・7z待ち。元要約の7m・7z待ちは誤りで、役なしツモによるフリテンを減らす本来の比較も欠落。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/ADWMMNXtryw",
+          "seconds": 18,
+          "sha256": "040a3f8e3383b533fd0fd04af021d13b34189db4f8e4431a9d7e407f10f9fe39"
+        },
+        {
+          "url": "https://youtu.be/ADWMMNXtryw",
+          "seconds": 30,
+          "sha256": "0e0318dc9381a1241e8ba1184e3a30973d80e471c5d4253f5c3dba81fa06464c"
+        },
+        {
+          "url": "https://youtu.be/ADWMMNXtryw",
+          "seconds": 42,
+          "sha256": "ac4d24b8bc3bdaad0a9b1ea33d3dfa70dfea3e394c645bd99cec408ce2ac2787"
+        },
+        {
+          "url": "https://youtu.be/ADWMMNXtryw",
+          "seconds": 54,
+          "sha256": "949dedd3dab3b63493a2ed1d864c100d995ac53a4b143b296c0bce62e4763b36"
+        },
+        {
+          "url": "https://youtu.be/ADWMMNXtryw",
+          "seconds": 66,
+          "sha256": "a0cd6c6fffd8b7c41292154d5223d564a86e98757fc264afd777854d4cb643f6"
+        },
+        {
+          "url": "https://youtu.be/ADWMMNXtryw",
+          "seconds": 78,
+          "sha256": "5d13a600f1e6608a89b55921f1b2bed94434506b57af651cbbdff40672440bf2"
+        },
+        {
+          "url": "https://youtu.be/ADWMMNXtryw",
+          "seconds": 90,
+          "sha256": "c5f0b0ce83c6ac7c8859124526dc74d7cc4e66e728973beb2fec2af2a3ab83a2"
+        }
+      ]
+    },
+    {
+      "id": 169,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "この問題では、萬子の受け入れだけでなく、聴牌したときに平和や三色が付くかを分けて比べるのだ。\n\n6mを引いた形は三色も平和も付かない一方、9mを引いた形には三色の可能性があるけれど平和は付かないのだ。似た受けでも、付く役は同じではないのだ。受け入れの広さと打点を一緒に確認し、三色にならない変化まで三色の受けとして数えないようにするのだ。"
+          },
+          "after": "おすすめは2m切りなのだ。受け入れは6m・9m・6p・8pで、手牌に使っている分を除くと15枚なのだ。\n\n5pを切って7p・8p・9pの三色へ寄せたくなるけれど、2m切りでも手役は残るのだ。6pを先に引けば9p切りで平和の両面聴牌、8pなら5p切りで平和に加えて高め9mの三色も狙えるのだ。\n\n萬子が先に入った場合は、6mでは三色も平和も付かず、9mでは三色は付くけれど平和は付かないのだ。\n\n5p切りも15枚受けだけど、三色になるツモは増えないのだ。違いは、2m切りなら6pを引いて平和にできるところが、5p切りでは3mを引いても平和にならないことなのだ。三色に見える形へ寄せるだけでなく、引く牌ごとに最終形を比べるのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/Aijtrqz70Os",
+              "reviewedTimestamps": [
+                47
+              ],
+              "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+              "revision": 60
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/Aijtrqz70Os",
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+            "revision": 72,
+            "reviewedTimestamps": [
+              18,
+              24,
+              30,
+              36,
+              42,
+              48,
+              54,
+              60,
+              66,
+              72,
+              78,
+              84,
+              90,
+              96,
+              108,
+              120,
+              132,
+              138
+            ]
+          }
+        },
+        "videoCorrectDiscards": {
+          "before": {
+            "present": false
+          },
+          "after": [
+            "2m"
+          ]
+        },
+        "answerSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "kind": "instructor",
+              "note": "管理画面の正解2mを保持。動画の初手結論は未確認。"
+            }
+          },
+          "after": {
+            "kind": "instructor-and-video",
+            "url": "https://youtu.be/Aijtrqz70Os",
+            "reviewedTimestamps": [
+              18
+            ],
+            "revision": 72
+          }
+        }
+      },
+      "reasons": [
+        "未確認だった初手結論を動画18秒で確定し、部分比較だけだった要約を結論から組み直す。ユーザー正解2mは維持。",
+        "動画18秒の打2mを確認。ユーザー指定の正解は維持し、出典の未確認表記を解消。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 18,
+          "sha256": "afae94e2af482f86243ee02a8b4af40ccb9c33f7951b2c84cf5f3c5a1e5c9248"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 24,
+          "sha256": "06b2945ce2fd89ca1ecefe4d37f38127eb88f7f5bd626727c1dc6bc0f64c317f"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 30,
+          "sha256": "97a0240bd8ed6329801695fb956ae8529e3f6f58e1c2f97402e1705ae772975c"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 36,
+          "sha256": "97ada104216ee2308db20b93ad7b41e898edd2a162e41a895a3a826330eab4a6"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 42,
+          "sha256": "e6a8ebbf510b50ee6d0145de8914b5314c2a542a216a96bad795bcf12ad7e9a3"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 48,
+          "sha256": "26705a6eb3cea5920b1050218d277ec1c3c77b3788cb4d28b12fe32a8925762f"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 54,
+          "sha256": "eb93dbb79976a4c12af896b5a197cf28e047bb7e8ec37c9a6c859b3064c18a32"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 60,
+          "sha256": "7866859fcec94c367c80ca88a4cf8bdbed1b7dbc9baa11ae2e8da3ca5b7c9c7e"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 66,
+          "sha256": "bbc517662d56a627040b48db5193c6337939ee2e107f2a95869cbf4cf5b1d3e9"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 72,
+          "sha256": "5a923ba6f6e9f8e0cc3695add40325c7e15d8d8ff95917b4eb746a31b60d7e23"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 78,
+          "sha256": "dc8f17a2d51153c28143856f626f6f228973d3bb2abbb048206fcbfffebca4c1"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 84,
+          "sha256": "371c7094051e60645707860abd7115e7e452ae0f0dd4b87891b87279daf38045"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 90,
+          "sha256": "f1c93c3efee885ac687a877589898a3247a76500657911f7397f6551e15d9928"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 96,
+          "sha256": "56f4ee5a9fc9585d529b6d5f017b5fa0bb294011d8f3294fbe2471af029414ed"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 108,
+          "sha256": "e1763b737adec2f2483dd08534fd7ef7c82130e39aeb10be0f5b09f93317a381"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 120,
+          "sha256": "eb265950a35fee04795f2bd227d9845cdecb42a7b6a47e83413fe3404423ab72"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 132,
+          "sha256": "c98686a8665638cc580b00604f753650ae78b8287e07e7b1dbffb37e39ce8243"
+        },
+        {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "seconds": 138,
+          "sha256": "7a3d90d7f5c1df5ca5a4516ad6960c51adbaf3ae4be5ab8adf6410e5f52c5e93"
+        }
+      ]
+    },
+    {
+      "id": 176,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "3m",
+              "4m",
+              "6m",
+              "7m",
+              "4p",
+              "4p",
+              "4p",
+              "9p",
+              "9p",
+              "2s",
+              "5s",
+              "7s",
+              "9s"
+            ]
+          },
+          "after": [
+            "3m",
+            "4m",
+            "6m",
+            "7m",
+            "4p",
+            "4p",
+            "4p",
+            "9p",
+            "9p",
+            "3s",
+            "5s",
+            "7s",
+            "9s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。索子先頭は上段1本・下段2本。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/m5k7QHBdgGw?t=3",
+          "seconds": 3,
+          "sha256": "5ef0890b3baf4e56ef1cb3ca59b9b8274566e17e3b80c347af6289a081421538"
+        }
+      ]
+    },
+    {
+      "id": 177,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "1m",
+              "2m",
+              "6m",
+              "7m",
+              "2p",
+              "3p",
+              "7p",
+              "3s",
+              "6s",
+              "9s",
+              "9s",
+              "2z",
+              "2z"
+            ]
+          },
+          "after": [
+            "1m",
+            "2m",
+            "6m",
+            "7m",
+            "2p",
+            "3p",
+            "7p",
+            "3s",
+            "4s",
+            "9s",
+            "9s",
+            "2z",
+            "2z"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。3sの次は緑4本の4s。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/YMjlho87KhY?t=3",
+          "seconds": 3,
+          "sha256": "164664c173b46968f8db3ab9596bb51f6ee0fdf50a3f5594055172e780c726be"
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "動画では2s切り、8p切り、6s切りの3つを紹介しているのだ。\n\n2s切りと8p切りは、5p・7sを引いたときの両面変化を残せるのだ。この2つに大きな差はなく、実戦では捨て牌なども見て決めたいのだ。\n\n6s切りは索子の両面変化を失う代わりに、このまま聴牌すれば自分の捨てた6sの筋で待てる、という工夫なのだ。良形変化を残す選択と、待ちの出やすさを意識した選択の違いを覚える問題なのだ。"
+          },
+          "after": "動画では2s切り、8p切り、6s切りの3つを紹介しているのだ。\n\n2s切りと8p切りは、5p・7sを引いたときの両面変化を残せるのだ。この2つに大きな差はなく、実戦では捨て牌なども見て決めたいのだ。\n\n6s切りは7sを引く両面変化を失う代わりに、今の受けから聴牌すれば、切った6sの筋である3s待ちを残せるという工夫なのだ。5sを引く手替わりまでなくなるわけではないのだ。良形変化を残す選択と、待ちの出やすさを意識した選択の違いを覚える問題なのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/gkw4i-sa1xw",
+              "problemSeconds": [
+                3
+              ],
+              "conclusionSeconds": [
+                18,
+                36
+              ],
+              "reasonSeconds": [
+                24,
+                30,
+                36,
+                42,
+                48
+              ]
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/gkw4i-sa1xw",
+            "problemSeconds": [
+              3
+            ],
+            "conclusionSeconds": [
+              18,
+              36
+            ],
+            "reasonSeconds": [
+              24,
+              30,
+              36,
+              42,
+              48
+            ],
+            "revision": 72,
+            "reviewedTimestamps": [
+              18,
+              24,
+              30,
+              36,
+              42,
+              48
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+          }
+        }
+      },
+      "reasons": [
+        "6s切りで索子の両面変化を全て失うような断定をやめ、失う7s引きの変化を明示。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/gkw4i-sa1xw",
+          "seconds": 18,
+          "sha256": "5ed32d870edb5c132aa2e5c905c3e17bc15651ed66feae9bd466f1c1b03c42d4"
+        },
+        {
+          "url": "https://youtu.be/gkw4i-sa1xw",
+          "seconds": 24,
+          "sha256": "44d3e20978cdaad1d862c178f62fc19165134065eb7cadba02bf99b487e4e205"
+        },
+        {
+          "url": "https://youtu.be/gkw4i-sa1xw",
+          "seconds": 30,
+          "sha256": "581aff105e883ac4a2798e3df97e96c654eee06b2d9a4cfba384f1c1b26aa1bb"
+        },
+        {
+          "url": "https://youtu.be/gkw4i-sa1xw",
+          "seconds": 36,
+          "sha256": "8270034e64dd7c7af04824634f27f8ea0daafa5a1e5e0f410870dfe2748bee7c"
+        },
+        {
+          "url": "https://youtu.be/gkw4i-sa1xw",
+          "seconds": 42,
+          "sha256": "e0e183b93f4a9641da970932d7bbb2a901cfd1f63a6a407c87fd1c0b96673bce"
+        },
+        {
+          "url": "https://youtu.be/gkw4i-sa1xw",
+          "seconds": 48,
+          "sha256": "4e4a876a82275060419968a3c196bcfe855820457bc187cdac4021499c9ad110"
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "3m",
+              "3m",
+              "1p",
+              "1p",
+              "8p",
+              "9p",
+              "4s",
+              "5s",
+              "0s",
+              "6s",
+              "6s",
+              "7s",
+              "3z"
+            ]
+          },
+          "after": [
+            "2m",
+            "3m",
+            "1p",
+            "1p",
+            "8p",
+            "9p",
+            "4s",
+            "5s",
+            "0s",
+            "6s",
+            "6s",
+            "7s",
+            "3z"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。旧字体の萬子先頭は二萬。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/KT6HnQWbNTo?t=12",
+          "seconds": 12,
+          "sha256": "926342fb50785ec1884dac56c9ca73ee631640789bdcdc2ed99a9e89b5b7e082"
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "3m",
+              "3m",
+              "4m",
+              "1p",
+              "1p",
+              "3p",
+              "7p",
+              "8p",
+              "4s",
+              "4s",
+              "7s",
+              "8s",
+              "9s"
+            ]
+          },
+          "after": [
+            "2m",
+            "3m",
+            "4m",
+            "1p",
+            "1p",
+            "3p",
+            "7p",
+            "8p",
+            "4s",
+            "4s",
+            "7s",
+            "8s",
+            "9s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。旧字体の萬子先頭は二萬。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/F_9a7-wUh6o?t=12",
+          "seconds": 12,
+          "sha256": "30a05e6ea41bf3ad83635477111f2ed28e6af61dc1076eb155709995177e5e79"
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "1m",
+              "2m",
+              "4m",
+              "5m",
+              "5m",
+              "2p",
+              "3p",
+              "4p",
+              "8p",
+              "9p",
+              "2s",
+              "4s",
+              "4s"
+            ]
+          },
+          "after": [
+            "2m",
+            "2m",
+            "4m",
+            "5m",
+            "5m",
+            "2p",
+            "3p",
+            "4p",
+            "8p",
+            "9p",
+            "3s",
+            "4s",
+            "4s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。萬子は2mが2枚。索子先頭は3s。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/2zS7ogdnDXM?t=3",
+          "seconds": 3,
+          "sha256": "e37b74aafb8583090e60346f03ab748940ca72a74705e6180eacc01223fb3d42"
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "おすすめは7mを切ってリーチなのだ。\n\n7m切りは平和と一盃口が確定し、3m・6mの6枚待ちになるのだ。4m切りなら2m・5m・8mの広い待ちにできるけれど、一盃口は付かなくなるのだ。\n\n今回はまだ3巡目で、6枚でも十分に和了を狙えるので、打点の高い方を選ぶのだ。打点がすでに十分ある場合や、終盤に順位を守ることが重要な場合は、同じ形でも広い待ちを優先することがあるのだ。巡目・打点・点差で判断を変えるのだ。"
+          },
+          "after": "おすすめは7mを切ってリーチなのだ。\n\n7m切りは平和と一盃口が確定し、2m・5mの6枚待ちになるのだ。4m切りなら2m・5m・8mの10枚待ちにできるけれど、一盃口は付かなくなるのだ。\n\n今回はまだ3巡目で、6枚でも十分に和了を狙えるので、打点の高い方を選ぶのだ。打点がすでに十分ある場合や、終盤に順位を守ることが重要な場合は、同じ形でも広い待ちを優先することがあるのだ。巡目・打点・点差で判断を変えるのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/-l14p-fXyE0",
+              "problemSeconds": [
+                3
+              ],
+              "conclusionSeconds": [
+                18
+              ],
+              "reasonSeconds": [
+                24,
+                30,
+                36,
+                42,
+                48,
+                54,
+                60,
+                66,
+                72
+              ]
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/-l14p-fXyE0",
+            "problemSeconds": [
+              3
+            ],
+            "conclusionSeconds": [
+              18
+            ],
+            "reasonSeconds": [
+              24,
+              30,
+              36,
+              42,
+              48,
+              54,
+              60,
+              66,
+              72
+            ],
+            "revision": 72,
+            "reviewedTimestamps": [
+              18,
+              24,
+              30,
+              36,
+              42,
+              54
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+          }
+        }
+      },
+      "reasons": [
+        "7m切りの待ちは2m・5m。元要約の3m・6mは誤り。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/-l14p-fXyE0",
+          "seconds": 18,
+          "sha256": "0d86d2cd9d0a9a0cbfb552f7cfbaf00a8752ecd8871bde3156214d2d07137f8b"
+        },
+        {
+          "url": "https://youtu.be/-l14p-fXyE0",
+          "seconds": 24,
+          "sha256": "1e3d1ee610b7d45ef92d94dfa374184446e71c97a1057b9c67345d2909ff6970"
+        },
+        {
+          "url": "https://youtu.be/-l14p-fXyE0",
+          "seconds": 30,
+          "sha256": "27fede87514ca289f058b75a92c0bd62e16bbd777f0ee5664f7a09ccb257d221"
+        },
+        {
+          "url": "https://youtu.be/-l14p-fXyE0",
+          "seconds": 36,
+          "sha256": "b1b66597c99fdbbd36210b505768c75684c7c37e6ba3e65b810cad53cb6c3696"
+        },
+        {
+          "url": "https://youtu.be/-l14p-fXyE0",
+          "seconds": 42,
+          "sha256": "4385d714413a0bad20d1f16a5bab404d062a7d04df006b9cf525dd3e22acd106"
+        },
+        {
+          "url": "https://youtu.be/-l14p-fXyE0",
+          "seconds": 54,
+          "sha256": "2ca7250412bdb5af81478f228b694e8e5d6f2eb1f76c3b047ea5066062992e43"
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "2p",
+              "3p",
+              "5p",
+              "7p",
+              "7p",
+              "8p",
+              "3s",
+              "3s",
+              "4s",
+              "6s",
+              "7s",
+              "9s",
+              "9s"
+            ]
+          },
+          "after": [
+            "2p",
+            "3p",
+            "6p",
+            "7p",
+            "7p",
+            "8p",
+            "3s",
+            "3s",
+            "4s",
+            "6s",
+            "7s",
+            "9s",
+            "9s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。筒子3枚目は上2個＋下4個の6p。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/781mv9KODPs?t=3",
+          "seconds": 3,
+          "sha256": "b4b067eef2d8e80a94a17b78b69ae86c2e77f087b0c3a392c83c897a3440ba27"
+        }
+      ]
+    },
+    {
+      "id": 217,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "6m",
+              "8m",
+              "8m",
+              "4p",
+              "5p",
+              "3s",
+              "4s",
+              "5s",
+              "6s",
+              "9s"
+            ]
+          },
+          "after": [
+            "6m",
+            "8m",
+            "8m",
+            "4p",
+            "5p",
+            "3s",
+            "4s",
+            "0s",
+            "6s",
+            "7s"
+          ]
+        },
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "おすすめは6m切りなのだ。\n\n受け入れ最大は8m切りだけど、今回はすでに鳴いているので、6m・7mと外して8mを雀頭に固定するのだ。残った両面をチーして、そのまま良形聴牌を目指せるのだ。\n\n8mを切ると9sを先に引いたときだけ雀頭ができる形になりやすいのだ。同じ牌姿でも門前なら、リーチを付けるために受け入れの広い8m切りを選ぶ考え方になるのだ。鳴いているかどうかで進め方を変えるのだ。"
+          },
+          "after": "おすすめは6m切りなのだ。6m・7mを外して8mを雀頭に固定し、筒子の両面と索子の三面張を残すのだ。\n\n6m切りの受け入れは19枚で、どれが先に入っても良形で聴牌できるのだ。0sは赤牌であり、通常ドラの5sにも当たるのだ。打点を持ってすでに鳴いている今回は、チーして速く良形聴牌にできることを重視するのだ。\n\n8m切りは36枚受けと広いけれど、そのうち2s・5s・8sの11枚が先に入ると単騎待ちになるのだ。同じ形でも門前で、2mの暗刻を残してリーチを目指す条件なら8m切りを勧める、と動画では比較しているのだ。門前と副露で、雀頭と待ちの作り方を変えるのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/jeFp4uYWGOE",
+              "problemSeconds": [
+                3
+              ],
+              "conclusionSeconds": [
+                18
+              ],
+              "reasonSeconds": [
+                24,
+                30,
+                36,
+                42,
+                48,
+                54
+              ]
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/jeFp4uYWGOE",
+            "problemSeconds": [
+              3
+            ],
+            "conclusionSeconds": [
+              18
+            ],
+            "reasonSeconds": [
+              24,
+              30,
+              36,
+              42,
+              48,
+              54
+            ],
+            "revision": 72,
+            "reviewedTimestamps": [
+              18,
+              24,
+              30,
+              36,
+              42,
+              48,
+              54
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+          }
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。手牌5sは全赤、6sの次は7s。",
+        "修正後の手牌にない9sを使った説明を削除。元動画の19枚良形確定と36枚中11枚単騎の比較に修正。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/jeFp4uYWGOE?t=3",
+          "seconds": 3,
+          "sha256": "2c9a761ea00c0a408f3046bea50162391d51cc8124f65307a8eaf75ccc97bcc8"
+        },
+        {
+          "url": "https://youtu.be/jeFp4uYWGOE",
+          "seconds": 18,
+          "sha256": "82cceb08dc9dcc28bcb27932a9a57597171bf92b4c7a12e494569e6e184f66f0"
+        },
+        {
+          "url": "https://youtu.be/jeFp4uYWGOE",
+          "seconds": 24,
+          "sha256": "a742cec848992d85afee182e76c331f010bdf41fb4981cbd77b95c0ce0f59be0"
+        },
+        {
+          "url": "https://youtu.be/jeFp4uYWGOE",
+          "seconds": 30,
+          "sha256": "424079c50afc812f4119eab1386069ab75f86346947eaaa14547d00fee4b59d5"
+        },
+        {
+          "url": "https://youtu.be/jeFp4uYWGOE",
+          "seconds": 36,
+          "sha256": "f97ad05a7acf254e335f57a3486b847c3f66cf4bfa6c9cc3b00e650147e8e47b"
+        },
+        {
+          "url": "https://youtu.be/jeFp4uYWGOE",
+          "seconds": 42,
+          "sha256": "8b66af55185f33b256cfdcc2bff586c977e669531e943b85bd38284728b06971"
+        },
+        {
+          "url": "https://youtu.be/jeFp4uYWGOE",
+          "seconds": 48,
+          "sha256": "ce25b3b95557622a70dd760c6feab3df2e6fdff7dc33144da4d279a75a89feae"
+        },
+        {
+          "url": "https://youtu.be/jeFp4uYWGOE",
+          "seconds": 54,
+          "sha256": "e0920f0d3b731205c6c6d1d0a129bb1d23a5d95c82c574af83cc8820a29947ec"
+        }
+      ]
+    },
+    {
+      "id": 228,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "おすすめは4m切りなのだ。\n\n4m切りが受け入れ最大で、次の3s切りとの差は1枚なのだ。わずかな差だけど、平和の付きやすさでも4m切りが優れているのだ。\n\n2m・5mや5p・8pを引いたとき、4mを切っていれば4s切りで両面聴牌にできるのだ。3sを先に切ると、その進行では平和が付かないのだ。萬子から7mの雀頭を分けて見ると、基本的な完全一向聴の形が見えてくるのだ。"
+          },
+          "after": "おすすめは4m切りなのだ。受け入れは19枚で、3s切りの18枚より1枚広いのだ。わずかな差だけど、平和の付きやすさにも違いがあるのだ。\n\n4mを切ってから2s・5s、または5p・8pを引けば、4sを1枚切って両面聴牌にできるのだ。萬子は7mを雀頭にして、3m・4m・5mと6m・7m・8mの順子に分けられるので、平和が付くのだ。\n\n一方、3sを先に切ってから5p・8pや2m・5mを引く進行では、7mが暗刻になるため平和が付かないのだ。比較する打牌ごとに、その後引く牌と完成面子を分けて確認するのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/5hmoJOGGtF0",
+              "problemSeconds": [
+                3
+              ],
+              "conclusionSeconds": [
+                18
+              ],
+              "reasonSeconds": [
+                24,
+                30,
+                36,
+                42,
+                48,
+                54,
+                60
+              ]
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/5hmoJOGGtF0",
+            "problemSeconds": [
+              3
+            ],
+            "conclusionSeconds": [
+              18
+            ],
+            "reasonSeconds": [
+              24,
+              30,
+              36,
+              42,
+              48,
+              54,
+              60
+            ],
+            "revision": 72,
+            "reviewedTimestamps": [
+              18,
+              24,
+              30,
+              36,
+              42,
+              48,
+              54
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+          }
+        }
+      },
+      "reasons": [
+        "4m切り後の2s・5sを2m・5mと混同。異なる打牌後の進行を分離して訂正。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/5hmoJOGGtF0",
+          "seconds": 18,
+          "sha256": "0d819b42b7bdcf9f9d97a0f0eae9efe9ed663f094804dc022fa848ce38c9e5ef"
+        },
+        {
+          "url": "https://youtu.be/5hmoJOGGtF0",
+          "seconds": 24,
+          "sha256": "6a566ab4092d120836753b6ff6be480a081d8a185f906e42db1caadc5477d29d"
+        },
+        {
+          "url": "https://youtu.be/5hmoJOGGtF0",
+          "seconds": 30,
+          "sha256": "8fc03c3ec8d5afe4077594e3e54ac9fbf3febe18767b173b00a6d2e9a6d6bc6b"
+        },
+        {
+          "url": "https://youtu.be/5hmoJOGGtF0",
+          "seconds": 36,
+          "sha256": "ebcda721c18cc33fe8ab721fad414a02c7f989bd4b80b11c06cbf9b4c380d643"
+        },
+        {
+          "url": "https://youtu.be/5hmoJOGGtF0",
+          "seconds": 42,
+          "sha256": "0fa6fda21073f51d5b34881e7938ce7db538265f6747d84e9b7f3c966af8eac5"
+        },
+        {
+          "url": "https://youtu.be/5hmoJOGGtF0",
+          "seconds": 48,
+          "sha256": "70bfd7959124c6f8f8b0d1f925381a2d4aae6ea7d7cd1aa3b83bcda8c086427e"
+        },
+        {
+          "url": "https://youtu.be/5hmoJOGGtF0",
+          "seconds": 54,
+          "sha256": "88508980fd9e5f4ed83027f618098bfaef425c333d2693cba1feb4ea71f3a419"
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "1m",
+              "1m",
+              "2m",
+              "6p",
+              "7p",
+              "1s",
+              "1s",
+              "3s",
+              "4s",
+              "4s",
+              "5s",
+              "0s",
+              "6s"
+            ]
+          },
+          "after": [
+            "1m",
+            "1m",
+            "2m",
+            "6p",
+            "7p",
+            "1s",
+            "1s",
+            "3s",
+            "3s",
+            "4s",
+            "5s",
+            "0s",
+            "6s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。1s・1sに続く2枚とも3s。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/dLg0L-3ifpY?t=3",
+          "seconds": 3,
+          "sha256": "ef2bf17e275ebd11a1a97378340362f2a00093a99023d6e6d9db9d43f7e7e804"
+        }
+      ]
+    },
+    {
+      "id": 264,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "7m",
+              "5p",
+              "7p",
+              "8p",
+              "1s",
+              "1s",
+              "1s",
+              "2s",
+              "4s",
+              "5s",
+              "8s",
+              "4z",
+              "4z"
+            ]
+          },
+          "after": [
+            "7m",
+            "5p",
+            "7p",
+            "8p",
+            "1s",
+            "1s",
+            "1s",
+            "3s",
+            "4s",
+            "5s",
+            "8s",
+            "4z",
+            "4z"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。1s暗刻に続く牌が3s。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/e7yWmZ0OCiI?t=318",
+          "seconds": 318,
+          "sha256": "008bfc4a440df5c40dab84f80676b22e826071fdf56d8fa821b69d146277bc73"
+        }
+      ]
+    },
+    {
+      "id": 267,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "4m",
+              "5m",
+              "5m",
+              "7p",
+              "2s",
+              "4s",
+              "4s",
+              "4s",
+              "5s",
+              "5s",
+              "6s",
+              "6s",
+              "8s"
+            ]
+          },
+          "after": [
+            "4m",
+            "5m",
+            "5m",
+            "7p",
+            "3s",
+            "4s",
+            "4s",
+            "4s",
+            "5s",
+            "5s",
+            "6s",
+            "6s",
+            "8s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。索子先頭は上段1本・下段2本。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=90",
+          "seconds": 90,
+          "sha256": "3da2567d291ef939fa0a5e3123152b52210b5408d3e00d82376f7fbda8362a25"
+        }
+      ]
+    },
+    {
+      "id": 268,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "おすすめは3p切りなのだ。\n\n筒子の1p・2p・3pを順子として抜き出すと、3p・5p・6p・7p・7p・8pの両面嵌張が残るのだ。5p・8pだけでなく4pも受け入れになるのだ。\n\n複雑な形は完成面子を一つずつ分けて見るのだ。ツモる前から、どの牌が来たら形がよくなるか考えておくと選びやすいのだ。"
+          },
+          "after": "おすすめは3p切りなのだ。\n\n筒子の1p・2p・3pを順子として抜き出すと、3p・5p・6p・7p・7p・8pの両面カンチャンが残るのだ。3pを余剰牌として見ると6p・9pの両面、6p・7p・8pを面子として見ると3p・5p・7pのリャンカンで、4pの受けも見つかるのだ。\n\n筒子では4p・6p・9p、萬子では6m・9mの5種類18枚で聴牌できるのだ。完成面子を一通りの分け方に固定せず、隠れたカンチャンの受けを確認するのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/_l6L0y-mWg4?t=132",
+              "problemSeconds": [
+                132
+              ],
+              "conclusionSeconds": [
+                138
+              ],
+              "reasonSeconds": [
+                144,
+                156
+              ]
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/_l6L0y-mWg4?t=132",
+            "problemSeconds": [
+              132
+            ],
+            "conclusionSeconds": [
+              138
+            ],
+            "reasonSeconds": [
+              144,
+              156
+            ],
+            "revision": 72,
+            "reviewedTimestamps": [
+              138,
+              144,
+              150,
+              156,
+              162
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+          }
+        }
+      },
+      "reasons": [
+        "356778pの両面部分は6p・9p。5p・8pとの誤記を訂正。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=132",
+          "seconds": 144,
+          "sha256": "5baf9e4a6cc02fa885f99618d2068f31463558a8199b8ca1d94a42cd3e4ffbba"
+        },
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=132",
+          "seconds": 150,
+          "sha256": "88ea4648c07e9a90e9fa8bf857f58eda78dfb3086e46f2ce476286f5c12c9f54"
+        },
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=132",
+          "seconds": 156,
+          "sha256": "2617436645c6da3844753e7ca3aedbc25f9b807b39d6061f8a51bc560336bcaa"
+        },
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=132",
+          "seconds": 162,
+          "sha256": "a39c3b8c65c1e7c09ac680a82ad215b6f0b5405bd056f4e186799ca0e3c9349d"
+        }
+      ]
+    },
+    {
+      "id": 270,
+      "fields": {
+        "dora": {
+          "before": {
+            "present": true,
+            "value": "2m"
+          },
+          "after": "1m"
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。ドラ欄は一萬。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=234",
+          "seconds": 234,
+          "sha256": "650bee53216f6f7a2cca22e8695f1beb5b5021d981feefa87f7f867d0e210672"
+        }
+      ]
+    },
+    {
+      "id": 272,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "4m",
+              "5m",
+              "3p",
+              "5p",
+              "6p",
+              "7p",
+              "7p",
+              "8p",
+              "1s",
+              "1s",
+              "2s",
+              "4s",
+              "4s"
+            ]
+          },
+          "after": [
+            "4m",
+            "0m",
+            "3p",
+            "5p",
+            "6p",
+            "7p",
+            "7p",
+            "8p",
+            "1s",
+            "1s",
+            "3s",
+            "4s",
+            "4s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。動画5:18で、1s・1sに続く牌は3s、萬子の伍は赤い0mと確認。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=318",
+          "seconds": 318,
+          "sha256": "a178b536355d6c03410bbaa168a02a7ca4ade1e53b507238a8745b5e245dc5ac"
+        }
+      ]
+    },
+    {
+      "id": 273,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "7m",
+              "8m",
+              "4p",
+              "5p",
+              "6p",
+              "8p",
+              "8p",
+              "4s",
+              "5s",
+              "5s",
+              "6s",
+              "7s",
+              "9s"
+            ]
+          },
+          "after": [
+            "7m",
+            "8m",
+            "5p",
+            "5p",
+            "6p",
+            "8p",
+            "8p",
+            "4s",
+            "5s",
+            "5s",
+            "6s",
+            "7s",
+            "9s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。筒子の先頭2枚とも中央に赤い丸のある5p。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=390",
+          "seconds": 390,
+          "sha256": "d6b24222db9eb03359288e3a4aa836a81f485bee6233160724b028d87e2a7ea7"
+        }
+      ]
+    },
+    {
+      "id": 277,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "3m",
+              "4m",
+              "2p",
+              "2p",
+              "3p",
+              "3p",
+              "4p",
+              "5p",
+              "5p",
+              "7p",
+              "8p",
+              "1s",
+              "2s"
+            ]
+          },
+          "after": [
+            "3m",
+            "4m",
+            "2p",
+            "2p",
+            "3p",
+            "3p",
+            "4p",
+            "5p",
+            "5p",
+            "7p",
+            "8p",
+            "1s",
+            "3s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。動画10:50で手牌の最後は3s、ツモは2sと確認。筒子部分は現在値と一致。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=650",
+          "seconds": 650,
+          "sha256": "bbbacf7e97f9e2c8e123aca5c5485ff550c974c02092f09e29c842706178e022"
+        }
+      ]
+    },
+    {
+      "id": 282,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "5m",
+              "3p",
+              "5p",
+              "6p",
+              "7p",
+              "7p",
+              "8p",
+              "2s",
+              "3s",
+              "4s",
+              "6s",
+              "6s",
+              "7s"
+            ]
+          },
+          "after": [
+            "5m",
+            "3p",
+            "5p",
+            "6p",
+            "7p",
+            "7p",
+            "8p",
+            "2s",
+            "4s",
+            "5s",
+            "6s",
+            "6s",
+            "7s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。索子は2s・4s・5s・6s・6s・7s。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=858",
+          "seconds": 858,
+          "sha256": "68b9e9c3aac813d9cd66d4e646cdd75ea2f2b48527c170fdf94bee14a17b4f09"
+        }
+      ]
+    },
+    {
+      "id": 284,
+      "fields": {
+        "videoExplanation": {
+          "before": {
+            "present": true,
+            "value": "おすすめは3m切りなのだ。\n\n萬子の3m・5mのカンチャンに、6m・7m・7m・8mの中ぶくれがつながり、両面嵌張になるのだ。5m・8mだけでなくカン4mも受けられるのだ。\n\n対子に見える部分を残すことにこだわらず、中ぶくれとカンチャンのつながりを見つけるのだ。"
+          },
+          "after": "おすすめは3m切りなのだ。\n\n萬子の3m・5mのカンチャンに、6m・7m・7m・8mの中ぶくれがつながっているのだ。3mを余剰牌として見れば6m・9mの両面、6m・7m・8mを面子として抜けば3m・5m・7mのリャンカンで、4mも受けられるのだ。\n\n萬子の4m・6m・9mと、筒子の5p・8pを合わせて5種類19枚なのだ。対子に見える部分を残すことにこだわらず、中ぶくれとカンチャンのつながりを見つけるのだ。"
+        },
+        "videoExplanationSource": {
+          "before": {
+            "present": true,
+            "value": {
+              "url": "https://youtu.be/ZrjrfUM9890?t=132",
+              "problemSeconds": [
+                132
+              ],
+              "conclusionSeconds": [
+                138
+              ],
+              "reasonSeconds": [
+                144,
+                156
+              ]
+            }
+          },
+          "after": {
+            "url": "https://youtu.be/ZrjrfUM9890?t=132",
+            "problemSeconds": [
+              132
+            ],
+            "conclusionSeconds": [
+              138
+            ],
+            "reasonSeconds": [
+              144,
+              156
+            ],
+            "revision": 72,
+            "reviewedTimestamps": [
+              138,
+              144,
+              150,
+              156,
+              162
+            ],
+            "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+          }
+        }
+      },
+      "reasons": [
+        "356778mの両面部分は6m・9m。5m・8mとの誤記を訂正。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/ZrjrfUM9890?t=132",
+          "seconds": 144,
+          "sha256": "853afbaab45f886a76186b8703c28a9daab2b3384d885b6e029fd656dfee03e2"
+        },
+        {
+          "url": "https://youtu.be/ZrjrfUM9890?t=132",
+          "seconds": 150,
+          "sha256": "53a90ebcd2c12be537fab8fa133a0d83912467da9f78a8d5b2e2dc1a36165be3"
+        },
+        {
+          "url": "https://youtu.be/ZrjrfUM9890?t=132",
+          "seconds": 156,
+          "sha256": "3a862c87f22df535addd4d5982fbd55e7174426733af74e84014656c37ec3c7b"
+        },
+        {
+          "url": "https://youtu.be/ZrjrfUM9890?t=132",
+          "seconds": 162,
+          "sha256": "79617ea4fcc0014d0a78c3a016b0a83eaa5bc1eded9c4cbce6541b161224b50d"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "2m",
+              "3m",
+              "5m",
+              "6m",
+              "7m",
+              "7m",
+              "8m",
+              "9p",
+              "9p",
+              "2s",
+              "4s",
+              "5s",
+              "5s"
+            ]
+          },
+          "after": [
+            "2m",
+            "3m",
+            "5m",
+            "6m",
+            "7m",
+            "7m",
+            "8m",
+            "9p",
+            "9p",
+            "3s",
+            "4s",
+            "5s",
+            "5s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。原画像の索子先頭は上段1本・下段2本の3s。保存値は縦2本の2s。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/ZrjrfUM9890?t=322",
+          "seconds": 322,
+          "sha256": "27b913f5d0636c2c18f3b22f7df2c7d31b788d522b224107e66b7c70ea4c8568"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "1m",
+              "3m",
+              "9m",
+              "4p",
+              "5p",
+              "5p",
+              "6p",
+              "9p",
+              "2s",
+              "4s",
+              "6s",
+              "2z",
+              "2z"
+            ]
+          },
+          "after": [
+            "1m",
+            "3m",
+            "9m",
+            "4p",
+            "5p",
+            "5p",
+            "6p",
+            "9p",
+            "3s",
+            "4s",
+            "6s",
+            "2z",
+            "2z"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザー承認済みの原画像・動画不一致を訂正。原画像の索子先頭は上段1本・下段2本の3s。保存値は縦2本の2s。"
+      ],
+      "evidence": [
+        {
+          "url": "https://youtu.be/ZrjrfUM9890?t=378",
+          "seconds": 378,
+          "sha256": "92eda7380507cfa89434e60690fa3581f55ea6426c8197fa12a724ca081ffaf7"
+        }
+      ]
+    },
+    {
+      "id": 295,
+      "fields": {
+        "hand": {
+          "before": {
+            "present": true,
+            "value": [
+              "2m",
+              "2m",
+              "2m",
+              "9m",
+              "9m",
+              "4p",
+              "5p",
+              "2s",
+              "4s",
+              "4s",
+              "0s",
+              "6s",
+              "8s"
+            ]
+          },
+          "after": [
+            "2m",
+            "2m",
+            "2m",
+            "9m",
+            "9m",
+            "4p",
+            "5p",
+            "3s",
+            "4s",
+            "4s",
+            "0s",
+            "6s",
+            "8s"
+          ]
+        }
+      },
+      "reasons": [
+        "ユーザーが共有保存で訂正済みの3sを基礎データにも反映。共有の確認状態は保持。"
+      ],
+      "evidence": []
+    }
+  ]
+}

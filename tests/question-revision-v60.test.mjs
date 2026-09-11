@@ -6,6 +6,7 @@ import path from "node:path";
 import vm from "node:vm";
 import test from "node:test";
 import { createAppServer } from "../server.mjs";
+import { beforeV72 } from "./helpers/revision-v72.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const read = file => readFile(path.join(root, file), "utf8");
@@ -37,13 +38,13 @@ test("v60 source-draw review covers every question without inventing absent tile
   }
 });
 
-test("v60 verified summaries remain unchanged when later questions and sources are added", () => {
+test("v60 summary history is preserved apart from explicitly audited v72 corrections", () => {
   assert.equal(Object.keys(summaries).length, 145);
   const reviewed = questions.filter(q => Object.hasOwn(summaries, q.id));
   assert.equal(reviewed.length, 145);
   for (const q of reviewed) {
     assert.equal(q.explanationSchemaVersion, 2);
-    assert.equal(q.videoExplanation, summaries[q.id] || "");
+    assert.equal(beforeV72(q).videoExplanation, summaries[q.id] || "");
     if (q.videoExplanation) {
       assert.equal(q.videoExplanationStatus, "verified-parts");
       assert.equal(q.videoExplanationSource.url, q.sourceUrl);

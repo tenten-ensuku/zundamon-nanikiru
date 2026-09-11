@@ -1547,20 +1547,19 @@
     "sourceLabel": "YouTube動画を開く",
     "riichiChoice": true,
     "correctRiichi": true,
-    "videoExplanation": "おすすめは8p切りなのだ。筒子の切り方で待ちを選ぶ問題で、7pを切ると一盃口は付くけれど、8p待ちが少ないのだ。\n\nドラ表示牌にも8pが使われているため、8p待ちは残り2枚なのだ。8pを切って9p・2zのシャンポン待ちにすれば残り4枚になるのだ。打点だけでなく、実際に何枚残っているかを数えて待ちを選びたいのだ。",
+    "videoExplanation": "おすすめは8pを切ってリーチなのだ。\n\n7pを切るとカン8p待ちになるけれど、8pは手牌に1枚、ドラ表示牌に1枚あるので、残りは2枚だけなのだ。8p切りなら9p・2zのシャンポン待ちで、合計4枚残るのだ。\n\nドラの9pを2枚使えて打点は十分なので、一盃口にこだわるより和了できる枚数を優先するのだ。愚形だからとダマで待たず、今回はリーチで打点も伸ばすのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
     "videoExplanationSource": {
       "url": "https://youtu.be/C6sbxMSWikM",
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+      "revision": 72,
       "reviewedTimestamps": [
-        21,
-        27,
-        33,
-        39,
-        45
-      ],
-      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-      "revision": 60
+        18,
+        30,
+        36,
+        42
+      ]
     },
     "sourceDraw": "7m",
     "sourceDrawStatus": "verified",
@@ -5386,19 +5385,22 @@
     "correctDiscards": [
       "4z"
     ],
-    "videoExplanation": "この問題は、2zが1枚切れで、4zは生牌という条件を見て選ぶのだ。動画では4zを切り、2zを残す形を比較しているのだ。\n\n同じ字牌の単騎候補でも、場に何枚見えているかによって評価は変わるのだ。巡目が深くなるにつれて生牌が他家に使われる可能性もあるので、字牌の種類だけでなく、捨て牌の状況を確認したいのだ。",
+    "videoExplanation": "おすすめは4zを切ってリーチなのだ。1枚切れの2zを残し、七対子の単騎待ちにするのだ。\n\n4zは生牌なので、見えている枚数だけなら多く残っていそうに見えるのだ。でも巡目が進むほど、ほかの人の手に使われていて山に少ない可能性や、警戒されて切られにくいことも考えたいのだ。\n\n動画では、7巡目のこの条件なら生牌の4zより1枚切れの2zで待つ方を勧めているのだ。後半の12巡目・2zが2枚切れという比較でも4z切りリーチだけど、本問の条件とは分けて考えるのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/iQbLSPvc84s",
     "videoExplanationStatus": "verified-parts",
     "videoExplanationSource": {
       "url": "https://youtu.be/iQbLSPvc84s",
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+      "revision": 72,
       "reviewedTimestamps": [
-        15,
-        25,
-        33
-      ],
-      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-      "revision": 60
+        12,
+        21.5,
+        36,
+        42,
+        48,
+        51
+      ]
     },
     "sourceDraw": "8s",
     "sourceDrawStatus": "verified",
@@ -5413,10 +5415,9 @@
       "kind": "video",
       "url": "https://youtu.be/iQbLSPvc84s",
       "reviewedTimestamps": [
-        15,
-        25,
-        33
-      ]
+        21.5
+      ],
+      "revision": 72
     },
     "sourcePlaylistMembership": {
       "videoId": "iQbLSPvc84s",
@@ -5424,7 +5425,8 @@
         "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
         "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
-    }
+    },
+    "correctRiichi": true
   },
   {
     "id": 67,
@@ -9569,20 +9571,20 @@
     ],
     "sourceUrl": "https://youtu.be/vIXmLVP9KSI",
     "sourceLabel": "YouTube動画を開く",
-    "videoExplanation": "ここは4p切りなのだ。8m・9m・9mと4p・4p・6pを比べ、変化しにくいペンチャン側に対子のフォローを残すのだ。\n\n4p・6pの嵌張は3pや5pを引けば一手で両面へ変わるけれど、8m・9mのペンチャンは両面になるまでに手順が必要なのだ。自力で変化しやすい筒子より、弱い萬子側を9mの対子で補強するのだ。",
+    "videoExplanation": "ここは4p切りなのだ。8m・9m・9mと4p・4p・6pを比べ、変化しにくいペンチャン側に対子のフォローを残すのだ。\n\n4p・6pのカンチャンは3pや7pを引けば、一手で両面へ変えられるのだ。5pを引くのはカンチャンが完成する場合なので、両面への手替わりとは分けて考えるのだ。\n\n一方、8m・9mのペンチャンは両面になるまでに手順が必要なのだ。自力で変化しやすい筒子より、弱い萬子側を9mの対子で補強するのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
     "videoExplanationSource": {
       "url": "https://youtu.be/vIXmLVP9KSI",
       "reviewedTimestamps": [
-        21,
-        27,
-        33,
-        39,
-        45
+        18,
+        24,
+        30,
+        36,
+        42
       ],
-      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-      "revision": 60
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+      "revision": 72
     },
     "sourceDraw": "0s",
     "sourceDrawStatus": "verified",
@@ -10134,17 +10136,20 @@
     "correctDiscards": [
       "7p"
     ],
-    "videoExplanation": "ここは7p切りなのだ。索子のつながった形を崩さずに残すのだ。\n\n暗刻と対子が重なって見える形は、一つの分け方だけだと受けを見落としやすいのだ。今回は筒子の暗刻の横にある7pより、索子全体の組み替えを生かすことを優先するのだ。完成面子を抜き出し、雀頭を変える見方も試すのだ。",
+    "videoExplanation": "おすすめは7p切りなのだ。すでに聴牌を取れるので、5s切りとの待ちの広さを比べるのだ。\n\n7pを切った後の索子は、4s・4s・4s・5sと5s・6s・7sに分けると、3s・6sと5sの待ちが見えるのだ。さらに4sを暗刻、5sを雀頭として見れば、残りの6s・7sから5s・8sの待ちも確認できるのだ。\n\n合わせると3s・5s・6s・8sの4種類、13枚待ちなのだ。5s切りの5p・7p・8p待ちは11枚なので、索子の複合形を残す7p切りの方が広いのだ。暗刻を固定せず、雀頭としても使えるか確かめるのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/kMEqV0loSas",
     "videoExplanationStatus": "verified-parts",
     "videoExplanationSource": {
       "url": "https://youtu.be/kMEqV0loSas",
       "reviewedTimestamps": [
-        27
+        18,
+        24,
+        36,
+        42
       ],
-      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-      "revision": 60
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+      "revision": 72
     },
     "sourceDraw": "3m",
     "sourceDrawStatus": "verified",
@@ -11013,17 +11018,22 @@
     "correctDiscards": [
       "3s"
     ],
-    "videoExplanation": "ここは3sを1枚切るのだ。ドラ8sを使う形を残して、手を進めたいのだ。\n\nツモは9pで、ドラの8sをもう1枚引いた問題ではないのだ。筒子と索子の対子やターツを見比べ、ドラを使える部分を崩さないようにするのだ。まずドラとツモを区別してから、残したいターツを選ぶのだ。",
+    "videoExplanation": "おすすめは3s切りなのだ。筒子の5p・5p・7p・9p・9pは、飛び対子の真ん中を1枚外した形なのだ。ここを残せば、5p・6p・8p・9pのどれからでも索子の両面を残して聴牌できるのだ。\n\n索子の中ぶくれを残して、もっと両面を作りたくなるけれど、すでに9巡目なのだ。今回は遠い手替わりを待つより、6種類20枚の広い受け入れで聴牌へ進めるのだ。\n\n先に6s・9sを引いた場合は筒子側の待ちを選ぶことになるので、河も見ながら切る牌を考えておくのだ。ドラ8sを使う両面と、飛び対子の働きを両方残すのがポイントなのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/243yZ6-AeIQ",
     "videoExplanationStatus": "verified-parts",
     "videoExplanationSource": {
       "url": "https://youtu.be/243yZ6-AeIQ",
       "reviewedTimestamps": [
-        28
+        18,
+        24,
+        30,
+        36,
+        42,
+        48
       ],
-      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-      "revision": 60
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+      "revision": 72
     },
     "sourceDraw": "9p",
     "sourceDrawStatus": "verified",
@@ -11092,17 +11102,21 @@
     "correctDiscards": [
       "2p"
     ],
-    "videoExplanation": "おすすめは2pを1枚切ることなのだ。萬子の4m・5m・6mと、副露した4s・0s・6sを生かして、三色になる筒子の分け方を見るのだ。\n\n筒子の長い形は、雀頭と順子の候補を入れ替えると見通しがよくなるのだ。すでにある萬子と索子の面子に合わせ、4p・5p・6pを使える形を残すのだ。",
+    "videoExplanation": "おすすめは2p切りなのだ。待ちは1p・4p・6p・7pの4種類、合計14枚なのだ。\n\n萬子の4m・5m・6m、副露の4s・0s・6sに合わせて、筒子も4p・5p・6pに分けてみるのだ。残る2p・3pと5pの雀頭から、三色の付く1p・4p待ちが見えるのだ。\n\n今度は2p・3p・4pを順子として抜くと、5p・5p・5p・6pが残るのだ。5pを雀頭にすれば4p・7p、暗刻にすれば6p単騎で、こちらはタンヤオで和了できるのだ。役ごとの分け方を合わせ、隠れた待ちを見落とさないのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/JB0x3SKTtjE",
     "videoExplanationStatus": "verified-parts",
     "videoExplanationSource": {
       "url": "https://youtu.be/JB0x3SKTtjE",
       "reviewedTimestamps": [
-        25
+        18,
+        24,
+        30,
+        36,
+        42
       ],
-      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-      "revision": 60
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+      "revision": 72
     },
     "sourceDraw": "5m",
     "sourceDrawStatus": "verified",
@@ -11889,17 +11903,21 @@
     "correctDiscards": [
       "3p"
     ],
-    "videoExplanation": "おすすめは3pを1枚切ることなのだ。筒子の一通への変化を残して進めるのだ。\n\n副露しているのはドラ9sのポンなのだ。筒子の順子と対子をどう使うかを見直し、今の受けを取った後にも一通へ伸ばせる形を残したいのだ。筒子を短いターツだけに分けず、全体のつながりを見るのだ。",
+    "videoExplanation": "おすすめは3p切りなのだ。ドラ9sをポンしているけれど、ドラだけでは役にならず、9sがあるためタンヤオも付かないのだ。7zの役牌だけに頼らず、一気通貫で和了する道も残したいのだ。\n\n3pを1枚切った筒子に5pを引けば、9pを切って8p待ちにできるのだ。8pを引いた場合も9pを切れば5p待ちで、どちらも一気通貫が付くのだ。\n\n筒子を短いターツだけに分けず、1pから9pまでのつながりを見つけるのだ。鳴いている手では、何の役で和了するかまで確認して進めるのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/_-2732uuBpo",
     "videoExplanationStatus": "verified-parts",
     "videoExplanationSource": {
       "url": "https://youtu.be/_-2732uuBpo",
       "reviewedTimestamps": [
-        35
+        18,
+        24,
+        30,
+        36,
+        42
       ],
-      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-      "revision": 60
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+      "revision": 72
     },
     "sourceDraw": null,
     "sourceDrawStatus": "not-shown",
@@ -12437,7 +12455,9 @@
     "points": null,
     "dora": "5s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "8p"
+    ],
     "videoExplanation": "おすすめは8p切りなのだ。\n\n孤立して見える8pと8sを比べるのだ。8sを切って7pを引けば筒子に両面はできるけれど、まだ二向聴なのだ。\n\n8pを切って7sを引いた場合は、索子に面子とリャンカンができて一向聴になるのだ。4sを引いたときも離れリャンカンができて、一向聴になるのだ。\n\n同じ孤立牌でも、隣の牌を引いた後に手全体がどう進むかは違うのだ。見た目の両面のできやすさだけでなく、次の一手の形まで比べるのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
@@ -12467,6 +12487,17 @@
         42,
         48
       ]
+    },
+    "videoCorrectDiscards": [
+      "8p"
+    ],
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/H5Xvxd4nVUk",
+      "reviewedTimestamps": [
+        18
+      ],
+      "revision": 72
     }
   },
   {
@@ -12506,7 +12537,9 @@
     "points": null,
     "dora": "9s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "1s"
+    ],
     "videoExplanation": "おすすめは1s切りなのだ。\n\n孤立した1sは、隣の牌を引いてもペンチャンかカンチャンを作る形なのだ。一方、5pのある1pは、3pを引くと1p・3p・5pのリャンカンになるのだ。\n\n5pと筋になっている8pも、7pを引けば両面を作れるのだ。筋だから不要とすぐに決めず、それぞれの牌が作れる形を比較するのだ。今回の比較では、孤立した1sより筒子の牌を残すのがおすすめなのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
@@ -12535,6 +12568,17 @@
         42,
         48
       ]
+    },
+    "videoCorrectDiscards": [
+      "1s"
+    ],
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/F_fi0wIpkbY",
+      "reviewedTimestamps": [
+        18
+      ],
+      "revision": 72
     }
   },
   {
@@ -12574,7 +12618,9 @@
     "points": null,
     "dora": "9m",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "7p"
+    ],
     "videoExplanation": "動画のおすすめは7p切りなのだ。\n\n中ぶくれは両面を作りやすい強い形だけど、この手はすでに必要な両面がそろっているのだ。そこで中ぶくれの7pを1枚切り、守備に使う4zを残すのだ。\n\nまだカンチャンやペンチャンが残っている手なら、4zを切って中ぶくれの変化を残したいのだ。今回は他家の攻撃に備える方を優先するのだ。\n\n一盃口になる可能性まで含めると、動画のシミュレーションでは4z切りの期待値がわずかに上なのだ。それでも動画では、守備の余地を残す7p切りを勧めているのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
@@ -12603,6 +12649,17 @@
         42,
         48
       ]
+    },
+    "videoCorrectDiscards": [
+      "7p"
+    ],
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/sOarGIID5n4",
+      "reviewedTimestamps": [
+        18
+      ],
+      "revision": 72
     }
   },
   {
@@ -12642,7 +12699,9 @@
     "points": null,
     "dora": "9s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "6m"
+    ],
     "videoExplanation": "おすすめは6m切りなのだ。\n\n孤立して見える6mと6pを比較するのだけど、今回は雀頭がないことが大切なのだ。筒子の2p・3p・3p・4p・6pの形を残すと、雀頭を作りながら手を進めやすいのだ。\n\n特に5pを引いたときは、2pを切って3pを雀頭にすることで、一気に聴牌できるのだ。中ぶくれは両面を作るだけでなく、雀頭を確保するのにも役立つのだ。手全体で雀頭が足りているかを確認してから、余剰牌を選ぶのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
@@ -12672,6 +12731,17 @@
         42,
         48
       ]
+    },
+    "videoCorrectDiscards": [
+      "6m"
+    ],
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/A-WRDlb3k3s",
+      "reviewedTimestamps": [
+        18
+      ],
+      "revision": 72
     }
   },
   {
@@ -12711,7 +12781,9 @@
     "points": null,
     "dora": "7p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "6s"
+    ],
     "videoExplanation": "おすすめは6s切りなのだ。\n\n6sと6pのどちらを残すかを比べるのだ。孤立した6sより、0p・6p・6p・7pという中ぶくれの中にある6pの方が、両面を作る変化が多いのだ。\n\n筒子は4p・5p・7p・8pを引いたときに両面を作れるのだ。ドラの7pに近く、一盃口の可能性も残るので、6pを残すのだ。\n\n動画のシミュレーションでは差はわずかだけど、余剰牌が周囲の面子とどうつながるかを考える練習になるのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
@@ -12740,6 +12812,17 @@
         42,
         48
       ]
+    },
+    "videoCorrectDiscards": [
+      "6s"
+    ],
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/O1rH1niCclI",
+      "reviewedTimestamps": [
+        18
+      ],
+      "revision": 72
     }
   },
   {
@@ -12852,7 +12935,9 @@
     "points": null,
     "dora": "3z",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "6p"
+    ],
     "videoExplanation": "おすすめは6p切りなのだ。\n\n筒子の4p・4p・6p・6p・8p・8pは、1つ飛ばしに対子が並んだ「飛び対子」なのだ。この形は真ん中の6pを1枚切ると、両面で聴牌しやすくなるのだ。\n\n4p・5p・7p・8pのどれを引いても、索子の両面を残して聴牌できるのだ。シミュレーションでも、端の対子を崩すより良形聴牌につながりやすいことを確認しているのだ。\n\n「飛び対子は真ん中を切る」を、この形と一緒に覚えておくのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
@@ -12881,6 +12966,17 @@
         42,
         48
       ]
+    },
+    "videoCorrectDiscards": [
+      "6p"
+    ],
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/VjOzvtUiKnU",
+      "reviewedTimestamps": [
+        24
+      ],
+      "revision": 72
     }
   },
   {
@@ -12919,7 +13015,9 @@
     "points": null,
     "dora": "2p",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "7s"
+    ],
     "videoExplanation": "おすすめは7s切りなのだ。\n\n7s・8sを残して6s・9sの両面に固定することで、両面聴牌になりやすくするのだ。\n\n3m・5mのカンチャンは両面より弱いので、こちらには3mをフォロー牌として残しておくのだ。こうしておけば4mだけでなく、3mや3zを重ねたときも両面聴牌にできるのだ。\n\n余分な対子を1枚切るときは、弱い形の方へフォロー牌を残すのがポイントなのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
@@ -12947,6 +13045,17 @@
         36,
         42
       ]
+    },
+    "videoCorrectDiscards": [
+      "7s"
+    ],
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/959tnkZizvI",
+      "reviewedTimestamps": [
+        24
+      ],
+      "revision": 72
     }
   },
   {
@@ -12985,7 +13094,9 @@
     "points": null,
     "dora": "9s",
     "melds": [],
-    "correctDiscards": [],
+    "correctDiscards": [
+      "2p"
+    ],
     "videoExplanation": "おすすめは2p切りなのだ。\n\n筒子には両面とカンチャンの受けを兼ねる「両面カンチャン」の形があるのだ。2pを1枚切っても、5p・8pだけでなく3pを引いたときにも聴牌できるのだ。\n\n筒子のこの受けと、索子の3s・6sの両面を両方残すのだ。見た目だけで筒子の形を単純な両面に固定せず、面子を含めて別の組み合わせに分けられないか確認するのだ。実戦でもカンチャンの受けを見落とさないようにするのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
@@ -13015,6 +13126,17 @@
         36,
         42
       ]
+    },
+    "videoCorrectDiscards": [
+      "2p"
+    ],
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/tauwb2NiWq8",
+      "reviewedTimestamps": [
+        24
+      ],
+      "revision": 72
     }
   },
   {
@@ -13149,17 +13271,22 @@
     "correctDiscards": [
       "6m"
     ],
-    "videoExplanation": "ここは6m切りなのだ。通常の5mと赤5mを雀頭にして、7m・7zのシャンポン待ちを取るのだ。\n\n5mを切る形もあるけれど、副露手では聴牌後の変化まで比べたいのだ。萬子を組み替えたとき、先に切った牌でフリテンになるかどうかが違ってくるのだ。今の待ちだけを見て決めず、次に引いた牌で待ちを変える手順も残すのだ。",
+    "videoExplanation": "おすすめは6m切りなのだ。形の上では5m・7zのシャンポン待ちだけど、5mでは役がなく和了できないのだ。7zの役牌で和了を目指す手なのだ。\n\n通常の5mを切ると、形の待ちは4m・7m・7zになるのだ。ただし4m・7mでは役がないうえ、その牌を引いてツモ切りするとフリテンになり、7zでもロンできなくなるのだ。\n\n6m切りでも5mを引けば同じ問題が起こるけれど、その5mは残り2枚なのだ。5m切りでは4mが4枚、7mが1枚で、困るツモが合計5枚あるのだ。和了できる7zの枚数は変わらないので、役なしのツモでフリテンになる危険が少ない6m切りを選ぶのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
     "videoExplanationSource": {
       "url": "https://youtu.be/ADWMMNXtryw",
       "reviewedTimestamps": [
-        45,
-        63
+        18,
+        30,
+        42,
+        54,
+        66,
+        78,
+        90
       ],
-      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-      "revision": 60
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+      "revision": 72
     },
     "sourceDraw": null,
     "sourceDrawStatus": "not-shown",
@@ -13289,16 +13416,33 @@
     "correctDiscards": [
       "2m"
     ],
-    "videoExplanation": "この問題では、萬子の受け入れだけでなく、聴牌したときに平和や三色が付くかを分けて比べるのだ。\n\n6mを引いた形は三色も平和も付かない一方、9mを引いた形には三色の可能性があるけれど平和は付かないのだ。似た受けでも、付く役は同じではないのだ。受け入れの広さと打点を一緒に確認し、三色にならない変化まで三色の受けとして数えないようにするのだ。",
+    "videoExplanation": "おすすめは2m切りなのだ。受け入れは6m・9m・6p・8pで、手牌に使っている分を除くと15枚なのだ。\n\n5pを切って7p・8p・9pの三色へ寄せたくなるけれど、2m切りでも手役は残るのだ。6pを先に引けば9p切りで平和の両面聴牌、8pなら5p切りで平和に加えて高め9mの三色も狙えるのだ。\n\n萬子が先に入った場合は、6mでは三色も平和も付かず、9mでは三色は付くけれど平和は付かないのだ。\n\n5p切りも15枚受けだけど、三色になるツモは増えないのだ。違いは、2m切りなら6pを引いて平和にできるところが、5p切りでは3mを引いても平和にならないことなのだ。三色に見える形へ寄せるだけでなく、引く牌ごとに最終形を比べるのだ。",
     "explanationSchemaVersion": 2,
     "videoExplanationStatus": "verified-parts",
     "videoExplanationSource": {
       "url": "https://youtu.be/Aijtrqz70Os",
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+      "revision": 72,
       "reviewedTimestamps": [
-        47
-      ],
-      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-      "revision": 60
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        108,
+        120,
+        132,
+        138
+      ]
     },
     "sourceDraw": "7s",
     "sourceDrawStatus": "verified",
@@ -13307,15 +13451,22 @@
       "updatedAt": "2026-07-17 10:39:30.992+00"
     },
     "answerSource": {
-      "kind": "instructor",
-      "note": "管理画面の正解2mを保持。動画の初手結論は未確認。"
+      "kind": "instructor-and-video",
+      "url": "https://youtu.be/Aijtrqz70Os",
+      "reviewedTimestamps": [
+        18
+      ],
+      "revision": 72
     },
     "sourcePlaylistMembership": {
       "videoId": "Aijtrqz70Os",
       "playlistIds": [
         "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
       ]
-    }
+    },
+    "videoCorrectDiscards": [
+      "2m"
+    ]
   },
   {
     "id": 170,
@@ -13794,7 +13945,7 @@
       "4p",
       "9p",
       "9p",
-      "2s",
+      "3s",
       "5s",
       "7s",
       "9s"
@@ -13860,7 +14011,7 @@
       "3p",
       "7p",
       "3s",
-      "6s",
+      "4s",
       "9s",
       "9s",
       "2z",
@@ -14052,7 +14203,7 @@
       "/questions/question-180.png"
     ],
     "explanation": "",
-    "videoExplanation": "動画では2s切り、8p切り、6s切りの3つを紹介しているのだ。\n\n2s切りと8p切りは、5p・7sを引いたときの両面変化を残せるのだ。この2つに大きな差はなく、実戦では捨て牌なども見て決めたいのだ。\n\n6s切りは索子の両面変化を失う代わりに、このまま聴牌すれば自分の捨てた6sの筋で待てる、という工夫なのだ。良形変化を残す選択と、待ちの出やすさを意識した選択の違いを覚える問題なのだ。",
+    "videoExplanation": "動画では2s切り、8p切り、6s切りの3つを紹介しているのだ。\n\n2s切りと8p切りは、5p・7sを引いたときの両面変化を残せるのだ。この2つに大きな差はなく、実戦では捨て牌なども見て決めたいのだ。\n\n6s切りは7sを引く両面変化を失う代わりに、今の受けから聴牌すれば、切った6sの筋である3s待ちを残せるという工夫なのだ。5sを引く手替わりまでなくなるわけではないのだ。良形変化を残す選択と、待ちの出やすさを意識した選択の違いを覚える問題なのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/gkw4i-sa1xw",
     "sourceLabel": "YouTube動画を開く",
@@ -14103,7 +14254,17 @@
         36,
         42,
         48
-      ]
+      ],
+      "revision": 72,
+      "reviewedTimestamps": [
+        18,
+        24,
+        30,
+        36,
+        42,
+        48
+      ],
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
     },
     "sourceDraw": "6p",
     "sourceDrawStatus": "verified",
@@ -14264,7 +14425,7 @@
     "sourceLabel": "YouTube動画を開く",
     "createdAt": "2022-08-14T00:00:00Z",
     "hand": [
-      "3m",
+      "2m",
       "3m",
       "1p",
       "1p",
@@ -14334,7 +14495,7 @@
     "sourceLabel": "YouTube動画を開く",
     "createdAt": "2022-08-12T00:00:00Z",
     "hand": [
-      "3m",
+      "2m",
       "3m",
       "4m",
       "1p",
@@ -14544,7 +14705,7 @@
     "sourceLabel": "YouTube動画を開く",
     "createdAt": "2023-03-20T00:00:00Z",
     "hand": [
-      "1m",
+      "2m",
       "2m",
       "4m",
       "5m",
@@ -14554,7 +14715,7 @@
       "4p",
       "8p",
       "9p",
-      "2s",
+      "3s",
       "4s",
       "4s"
     ],
@@ -15560,7 +15721,7 @@
       "/questions/question-202.png"
     ],
     "explanation": "",
-    "videoExplanation": "おすすめは7mを切ってリーチなのだ。\n\n7m切りは平和と一盃口が確定し、3m・6mの6枚待ちになるのだ。4m切りなら2m・5m・8mの広い待ちにできるけれど、一盃口は付かなくなるのだ。\n\n今回はまだ3巡目で、6枚でも十分に和了を狙えるので、打点の高い方を選ぶのだ。打点がすでに十分ある場合や、終盤に順位を守ることが重要な場合は、同じ形でも広い待ちを優先することがあるのだ。巡目・打点・点差で判断を変えるのだ。",
+    "videoExplanation": "おすすめは7mを切ってリーチなのだ。\n\n7m切りは平和と一盃口が確定し、2m・5mの6枚待ちになるのだ。4m切りなら2m・5m・8mの10枚待ちにできるけれど、一盃口は付かなくなるのだ。\n\n今回はまだ3巡目で、6枚でも十分に和了を狙えるので、打点の高い方を選ぶのだ。打点がすでに十分ある場合や、終盤に順位を守ることが重要な場合は、同じ形でも広い待ちを優先することがあるのだ。巡目・打点・点差で判断を変えるのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/-l14p-fXyE0",
     "sourceLabel": "YouTube動画を開く",
@@ -15612,7 +15773,17 @@
         60,
         66,
         72
-      ]
+      ],
+      "revision": 72,
+      "reviewedTimestamps": [
+        18,
+        24,
+        30,
+        36,
+        42,
+        54
+      ],
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
     },
     "sourceDraw": "8p",
     "sourceDrawStatus": "verified",
@@ -16332,7 +16503,7 @@
     "hand": [
       "2p",
       "3p",
-      "5p",
+      "6p",
       "7p",
       "7p",
       "8p",
@@ -16599,7 +16770,7 @@
       "/questions/question-217.png"
     ],
     "explanation": "",
-    "videoExplanation": "おすすめは6m切りなのだ。\n\n受け入れ最大は8m切りだけど、今回はすでに鳴いているので、6m・7mと外して8mを雀頭に固定するのだ。残った両面をチーして、そのまま良形聴牌を目指せるのだ。\n\n8mを切ると9sを先に引いたときだけ雀頭ができる形になりやすいのだ。同じ牌姿でも門前なら、リーチを付けるために受け入れの広い8m切りを選ぶ考え方になるのだ。鳴いているかどうかで進め方を変えるのだ。",
+    "videoExplanation": "おすすめは6m切りなのだ。6m・7mを外して8mを雀頭に固定し、筒子の両面と索子の三面張を残すのだ。\n\n6m切りの受け入れは19枚で、どれが先に入っても良形で聴牌できるのだ。0sは赤牌であり、通常ドラの5sにも当たるのだ。打点を持ってすでに鳴いている今回は、チーして速く良形聴牌にできることを重視するのだ。\n\n8m切りは36枚受けと広いけれど、そのうち2s・5s・8sの11枚が先に入ると単騎待ちになるのだ。同じ形でも門前で、2mの暗刻を残してリーチを目指す条件なら8m切りを勧める、と動画では比較しているのだ。門前と副露で、雀頭と待ちの作り方を変えるのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/jeFp4uYWGOE",
     "sourceLabel": "YouTube動画を開く",
@@ -16612,9 +16783,9 @@
       "5p",
       "3s",
       "4s",
-      "5s",
+      "0s",
       "6s",
-      "9s"
+      "7s"
     ],
     "draw": "7m",
     "status": "unreviewed",
@@ -16656,7 +16827,18 @@
         42,
         48,
         54
-      ]
+      ],
+      "revision": 72,
+      "reviewedTimestamps": [
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
     },
     "sourceDraw": "7m",
     "sourceDrawStatus": "verified",
@@ -17408,7 +17590,7 @@
       "/questions/question-228.png"
     ],
     "explanation": "",
-    "videoExplanation": "おすすめは4m切りなのだ。\n\n4m切りが受け入れ最大で、次の3s切りとの差は1枚なのだ。わずかな差だけど、平和の付きやすさでも4m切りが優れているのだ。\n\n2m・5mや5p・8pを引いたとき、4mを切っていれば4s切りで両面聴牌にできるのだ。3sを先に切ると、その進行では平和が付かないのだ。萬子から7mの雀頭を分けて見ると、基本的な完全一向聴の形が見えてくるのだ。",
+    "videoExplanation": "おすすめは4m切りなのだ。受け入れは19枚で、3s切りの18枚より1枚広いのだ。わずかな差だけど、平和の付きやすさにも違いがあるのだ。\n\n4mを切ってから2s・5s、または5p・8pを引けば、4sを1枚切って両面聴牌にできるのだ。萬子は7mを雀頭にして、3m・4m・5mと6m・7m・8mの順子に分けられるので、平和が付くのだ。\n\n一方、3sを先に切ってから5p・8pや2m・5mを引く進行では、7mが暗刻になるため平和が付かないのだ。比較する打牌ごとに、その後引く牌と完成面子を分けて確認するのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/5hmoJOGGtF0",
     "sourceLabel": "YouTube動画を開く",
@@ -17458,7 +17640,18 @@
         48,
         54,
         60
-      ]
+      ],
+      "revision": 72,
+      "reviewedTimestamps": [
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54
+      ],
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
     },
     "sourceDraw": "3s",
     "sourceDrawStatus": "verified",
@@ -18782,7 +18975,7 @@
       "1s",
       "1s",
       "3s",
-      "4s",
+      "3s",
       "4s",
       "5s",
       "0s",
@@ -19860,7 +20053,7 @@
       "1s",
       "1s",
       "1s",
-      "2s",
+      "3s",
       "4s",
       "5s",
       "8s",
@@ -20056,7 +20249,7 @@
       "5m",
       "5m",
       "7p",
-      "2s",
+      "3s",
       "4s",
       "4s",
       "4s",
@@ -20112,7 +20305,7 @@
       "/questions/question-268.png"
     ],
     "explanation": "",
-    "videoExplanation": "おすすめは3p切りなのだ。\n\n筒子の1p・2p・3pを順子として抜き出すと、3p・5p・6p・7p・7p・8pの両面嵌張が残るのだ。5p・8pだけでなく4pも受け入れになるのだ。\n\n複雑な形は完成面子を一つずつ分けて見るのだ。ツモる前から、どの牌が来たら形がよくなるか考えておくと選びやすいのだ。",
+    "videoExplanation": "おすすめは3p切りなのだ。\n\n筒子の1p・2p・3pを順子として抜き出すと、3p・5p・6p・7p・7p・8pの両面カンチャンが残るのだ。3pを余剰牌として見ると6p・9pの両面、6p・7p・8pを面子として見ると3p・5p・7pのリャンカンで、4pの受けも見つかるのだ。\n\n筒子では4p・6p・9p、萬子では6m・9mの5種類18枚で聴牌できるのだ。完成面子を一通りの分け方に固定せず、隠れたカンチャンの受けを確認するのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=132",
     "sourceLabel": "YouTube動画を開く",
@@ -20157,7 +20350,16 @@
       "reasonSeconds": [
         144,
         156
-      ]
+      ],
+      "revision": 72,
+      "reviewedTimestamps": [
+        138,
+        144,
+        150,
+        156,
+        162
+      ],
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
     },
     "sourceDraw": "7p",
     "sourceDrawStatus": "verified",
@@ -20268,7 +20470,7 @@
     "turn": 6,
     "honba": null,
     "points": 25000,
-    "dora": "2m",
+    "dora": "1m",
     "melds": [],
     "correctDiscards": [
       "8s"
@@ -20375,7 +20577,7 @@
     "createdAt": "2022-09-26T00:00:00Z",
     "hand": [
       "4m",
-      "5m",
+      "0m",
       "3p",
       "5p",
       "6p",
@@ -20384,7 +20586,7 @@
       "8p",
       "1s",
       "1s",
-      "2s",
+      "3s",
       "4s",
       "4s"
     ],
@@ -20441,7 +20643,7 @@
     "hand": [
       "7m",
       "8m",
-      "4p",
+      "5p",
       "5p",
       "6p",
       "8p",
@@ -20711,7 +20913,7 @@
       "7p",
       "8p",
       "1s",
-      "2s"
+      "3s"
     ],
     "draw": "2s",
     "status": "unreviewed",
@@ -21028,8 +21230,8 @@
       "7p",
       "8p",
       "2s",
-      "3s",
       "4s",
+      "5s",
       "6s",
       "6s",
       "7s"
@@ -21143,7 +21345,7 @@
       "/questions/question-284.png"
     ],
     "explanation": "",
-    "videoExplanation": "おすすめは3m切りなのだ。\n\n萬子の3m・5mのカンチャンに、6m・7m・7m・8mの中ぶくれがつながり、両面嵌張になるのだ。5m・8mだけでなくカン4mも受けられるのだ。\n\n対子に見える部分を残すことにこだわらず、中ぶくれとカンチャンのつながりを見つけるのだ。",
+    "videoExplanation": "おすすめは3m切りなのだ。\n\n萬子の3m・5mのカンチャンに、6m・7m・7m・8mの中ぶくれがつながっているのだ。3mを余剰牌として見れば6m・9mの両面、6m・7m・8mを面子として抜けば3m・5m・7mのリャンカンで、4mも受けられるのだ。\n\n萬子の4m・6m・9mと、筒子の5p・8pを合わせて5種類19枚なのだ。対子に見える部分を残すことにこだわらず、中ぶくれとカンチャンのつながりを見つけるのだ。",
     "explanationSchemaVersion": 2,
     "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=132",
     "sourceLabel": "YouTube動画を開く",
@@ -21188,7 +21390,16 @@
       "reasonSeconds": [
         144,
         156
-      ]
+      ],
+      "revision": 72,
+      "reviewedTimestamps": [
+        138,
+        144,
+        150,
+        156,
+        162
+      ],
+      "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
     },
     "sourceDraw": "9s",
     "sourceDrawStatus": "verified",
@@ -21478,7 +21689,7 @@
       "8m",
       "9p",
       "9p",
-      "2s",
+      "3s",
       "4s",
       "5s",
       "5s"
@@ -21541,7 +21752,7 @@
       "5p",
       "6p",
       "9p",
-      "2s",
+      "3s",
       "4s",
       "6s",
       "2z",
@@ -21864,7 +22075,7 @@
       "9m",
       "4p",
       "5p",
-      "2s",
+      "3s",
       "4s",
       "4s",
       "0s",

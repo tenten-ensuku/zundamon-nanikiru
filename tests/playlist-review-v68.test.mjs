@@ -6,6 +6,7 @@ import path from "node:path";
 import os from "node:os";
 import vm from "node:vm";
 import { createAppServer } from "../server.mjs";
+import { beforeV72 } from "./helpers/revision-v72.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const read = file => readFile(path.join(root, file), "utf8");
@@ -32,12 +33,12 @@ test("v68 registers exactly the ten newly approved source mappings without rewri
   }
   assert.equal(review.protectedQuestions.length, 292);
   for (const item of review.protectedQuestions) {
-    const protectedFields = Object.fromEntries(Object.entries(byId(item.id)).filter(([key]) => !review.allowedFields.includes(key)));
+    const protectedFields = Object.fromEntries(Object.entries(beforeV72(byId(item.id))).filter(([key]) => !review.allowedFields.includes(key)));
     assert.equal(hash(JSON.stringify(protectedFields)), item.sha256, `unchanged question ${item.id}`);
   }
   for (const item of review.explanationHashes) {
     assert.equal(hash(byId(item.id).explanation), item.author, `author ${item.id}`);
-    assert.equal(hash(byId(item.id).videoExplanation), item.video, `video ${item.id}`);
+    assert.equal(hash(beforeV72(byId(item.id)).videoExplanation), item.video, `video history ${item.id}`);
   }
 });
 

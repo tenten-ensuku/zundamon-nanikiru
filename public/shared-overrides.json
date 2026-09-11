@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://zundamon-question-api.naga-study.workers.dev",
-  "cursor": 99,
+  "cursor": 184,
   "rows": [
     {
       "id": 1,
@@ -2904,8 +2904,15 @@
     },
     {
       "id": 20,
-      "dora": "9p",
-      "draw": "7m",
+      "image": "/questions/question-020.png",
+      "images": [
+        "/questions/question-020.png"
+      ],
+      "explanation": "||打8ｐ立直\n\nドラ表で8ｐは残り2枚。\n圧倒的大差で、シャンポン立直優位。||",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310269177021333575",
+      "discordMessageId": "1310269177021333575",
+      "threadId": "1310269177021333575",
+      "createdAt": "2024-11-24T15:41:55.426000+00:00",
       "hand": [
         "6m",
         "8m",
@@ -2921,24 +2928,46 @@
         "2z",
         "2z"
       ],
+      "draw": "7m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 6,
       "honba": 0,
-      "image": "/questions/question-020.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-020.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1310269177021333575",
-      "createdAt": "2024-11-24T15:41:55.426000+00:00",
-      "meldCount": 0,
+      "dora": "9p",
+      "melds": [],
+      "correctDiscards": [
+        "8p"
+      ],
       "sourceUrl": "https://youtu.be/C6sbxMSWikM",
-      "sourceDraw": "7m",
-      "explanation": "||打8ｐ立直\n\nドラ表で8ｐは残り2枚。\n圧倒的大差で、シャンポン立直優位。||",
       "sourceLabel": "YouTube動画を開く",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "videoExplanation": "おすすめは8pを切ってリーチなのだ。\n\n7pを切るとカン8p待ちになるけれど、8pは手牌に1枚、ドラ表示牌に1枚あるので、残りは2枚だけなのだ。8p切りなら9p・2zのシャンポン待ちで、合計4枚残るのだ。\n\nドラの9pを2枚使えて打点は十分なので、一盃口にこだわるより和了できる枚数を優先するのだ。愚形だからとダマで待たず、今回はリーチで打点も伸ばすのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/C6sbxMSWikM",
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+        "revision": 72,
+        "reviewedTimestamps": [
+          18,
+          30,
+          36,
+          42
+        ]
+      },
+      "sourceDraw": "7m",
+      "sourceDrawStatus": "verified",
+      "authorSource": {
+        "kind": "shared-admin",
+        "updatedAt": "2026-07-16 05:17:25.133+00"
+      },
+      "videoCorrectDiscards": [
+        "8p"
+      ],
       "answerSource": {
         "url": "https://youtu.be/C6sbxMSWikM",
         "kind": "video",
@@ -2950,43 +2979,29 @@
           45
         ]
       },
-      "authorSource": {
-        "kind": "shared-admin",
-        "updatedAt": "2026-07-16 05:17:25.133+00"
-      },
-      "riichiChoice": true,
-      "correctRiichi": true,
-      "correctDiscards": [
-        "8p"
-      ],
-      "discordMessageId": "1310269177021333575",
-      "sourceDrawStatus": "verified",
-      "videoExplanation": "おすすめは8p切りなのだ。筒子の切り方で待ちを選ぶ問題で、7pを切ると一盃口は付くけれど、8p待ちが少ないのだ。\n\nドラ表示牌にも8pが使われているため、8p待ちは残り2枚なのだ。8pを切って9p・2zのシャンポン待ちにすれば残り4枚になるのだ。打点だけでなく、実際に何枚残っているかを数えて待ちを選びたいのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310269177021333575",
-      "videoCorrectDiscards": [
-        "8p"
-      ],
-      "videoExplanationSource": {
-        "url": "https://youtu.be/C6sbxMSWikM",
-        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-        "revision": 60,
-        "reviewedTimestamps": [
-          21,
-          27,
-          33,
-          39,
-          45
+      "sourcePlaylistMembership": {
+        "videoId": "C6sbxMSWikM",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
         "id": 20,
-        "dora": "9p",
-        "draw": "7m",
+        "image": "/questions/question-020.png",
+        "images": [
+          "/questions/question-020.png"
+        ],
+        "explanation": "||打8ｐ立直\n\nドラ表で8ｐは残り2枚。\n圧倒的大差で、シャンポン立直優位。||",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310269177021333575",
+        "discordMessageId": "1310269177021333575",
+        "threadId": "1310269177021333575",
+        "createdAt": "2024-11-24T15:41:55.426000+00:00",
         "hand": [
           "6m",
           "8m",
@@ -3002,24 +3017,46 @@
           "2z",
           "2z"
         ],
+        "draw": "7m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 6,
         "honba": 0,
-        "image": "/questions/question-020.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-020.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1310269177021333575",
-        "createdAt": "2024-11-24T15:41:55.426000+00:00",
-        "meldCount": 0,
+        "dora": "9p",
+        "melds": [],
+        "correctDiscards": [
+          "8p"
+        ],
         "sourceUrl": "https://youtu.be/C6sbxMSWikM",
-        "sourceDraw": "7m",
-        "explanation": "||打8ｐ立直\n\nドラ表で8ｐは残り2枚。\n圧倒的大差で、シャンポン立直優位。||",
         "sourceLabel": "YouTube動画を開く",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "videoExplanation": "おすすめは8pを切ってリーチなのだ。\n\n7pを切るとカン8p待ちになるけれど、8pは手牌に1枚、ドラ表示牌に1枚あるので、残りは2枚だけなのだ。8p切りなら9p・2zのシャンポン待ちで、合計4枚残るのだ。\n\nドラの9pを2枚使えて打点は十分なので、一盃口にこだわるより和了できる枚数を優先するのだ。愚形だからとダマで待たず、今回はリーチで打点も伸ばすのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/C6sbxMSWikM",
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+          "revision": 72,
+          "reviewedTimestamps": [
+            18,
+            30,
+            36,
+            42
+          ]
+        },
+        "sourceDraw": "7m",
+        "sourceDrawStatus": "verified",
+        "authorSource": {
+          "kind": "shared-admin",
+          "updatedAt": "2026-07-16 05:17:25.133+00"
+        },
+        "videoCorrectDiscards": [
+          "8p"
+        ],
         "answerSource": {
           "url": "https://youtu.be/C6sbxMSWikM",
           "kind": "video",
@@ -3031,39 +3068,18 @@
             45
           ]
         },
-        "authorSource": {
-          "kind": "shared-admin",
-          "updatedAt": "2026-07-16 05:17:25.133+00"
-        },
-        "riichiChoice": true,
-        "correctRiichi": true,
-        "correctDiscards": [
-          "8p"
-        ],
-        "discordMessageId": "1310269177021333575",
-        "sourceDrawStatus": "verified",
-        "videoExplanation": "おすすめは8p切りなのだ。筒子の切り方で待ちを選ぶ問題で、7pを切ると一盃口は付くけれど、8p待ちが少ないのだ。\n\nドラ表示牌にも8pが使われているため、8p待ちは残り2枚なのだ。8pを切って9p・2zのシャンポン待ちにすれば残り4枚になるのだ。打点だけでなく、実際に何枚残っているかを数えて待ちを選びたいのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310269177021333575",
-        "videoCorrectDiscards": [
-          "8p"
-        ],
-        "videoExplanationSource": {
-          "url": "https://youtu.be/C6sbxMSWikM",
-          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-          "revision": 60,
-          "reviewedTimestamps": [
-            21,
-            27,
-            33,
-            39,
-            45
+        "sourcePlaylistMembership": {
+          "videoId": "C6sbxMSWikM",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "kanChoice": false,
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.613592+00"
+      "overrideUpdatedAt": "2026-09-11T20:29:27.641Z"
     },
     {
       "id": 21,
@@ -5570,7 +5586,7 @@
       "createdAt": "2024-11-28T12:46:27.173000+00:00",
       "meldCount": 0,
       "sourceDraw": "6p",
-      "explanation": "💯\n||門前手なので、受け入れMAXに。||",
+      "explanation": "打6s。\n３ヘッドなので、6s切りのロスは6sだけ。\n#弱い所をフォローして、強い所はフォローいらず。",
       "authorSource": {
         "kind": "shared-admin",
         "updatedAt": "2026-07-16 05:26:33.191+00"
@@ -5580,7 +5596,7 @@
       ],
       "discordMessageId": "1311674569790197891",
       "sourceDrawStatus": "verified",
-      "videoExplanation": "おすすめは6s切りなのだ。\n\n対子が3つあるので、8mか6sを1枚切って対子を2つにするのだ。比較のポイントは、8m・8m・9mのペンチャン対子と、6s・6s・8sのカンチャン対子のどちらにフォロー牌を残すか、なのだ。\n\nカンチャンは1手で両面に変わるけれど、ペンチャンは変化しにくいのだ。そこで弱いペンチャン側の8mを残すのだ。後で5sを引いて両面ができたとき、1m・7m・8mのどれが先に来ても両面聴牌にできるのだ。8mを先に切っていると、両面聴牌にするには7mを先に引く必要があるのだ。\n\nフォロー牌は、比較的弱い形の側へ残すと覚えるのだ。",
+      "videoExplanation": "おすすめは6s切りなのだ。\n\n対子が3つあるので、8mか6sを1枚切って対子を2つにするのだ。比較のポイントは、8m・8m・9mのペンチャン対子と、6s・6s・8sのカンチャン対子のどちらにフォロー牌を残すか、なのだ。\n\nカンチャンは1手で両面に変わるけれど、ペンチャンは変化しにくいのだ。そこで弱いペンチャン側の8mを残すのだ。後で5sを引いて両面ができたとき、1m・7m・8mのどれが先に来ても両面聴牌にできるのだ。\nフォロー牌は、比較的弱い形の側へ残すと覚えるのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1311674569790197891",
       "videoExplanationSource": {
         "url": "https://youtu.be/qt_1DUjy63o",
@@ -5605,9 +5621,9 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
-      "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewed": true,
+      "reviewStatus": "complete",
+      "reviewUpdatedAt": "2026-09-10T17:32:55.465Z",
       "questionData": {
         "id": 36,
         "dora": "1p",
@@ -5642,7 +5658,7 @@
         "createdAt": "2024-11-28T12:46:27.173000+00:00",
         "meldCount": 0,
         "sourceDraw": "6p",
-        "explanation": "💯\n||門前手なので、受け入れMAXに。||",
+        "explanation": "打6s。\n３ヘッドなので、6s切りのロスは6sだけ。\n#弱い所をフォローして、強い所はフォローいらず。",
         "authorSource": {
           "kind": "shared-admin",
           "updatedAt": "2026-07-16 05:26:33.191+00"
@@ -5652,7 +5668,7 @@
         ],
         "discordMessageId": "1311674569790197891",
         "sourceDrawStatus": "verified",
-        "videoExplanation": "おすすめは6s切りなのだ。\n\n対子が3つあるので、8mか6sを1枚切って対子を2つにするのだ。比較のポイントは、8m・8m・9mのペンチャン対子と、6s・6s・8sのカンチャン対子のどちらにフォロー牌を残すか、なのだ。\n\nカンチャンは1手で両面に変わるけれど、ペンチャンは変化しにくいのだ。そこで弱いペンチャン側の8mを残すのだ。後で5sを引いて両面ができたとき、1m・7m・8mのどれが先に来ても両面聴牌にできるのだ。8mを先に切っていると、両面聴牌にするには7mを先に引く必要があるのだ。\n\nフォロー牌は、比較的弱い形の側へ残すと覚えるのだ。",
+        "videoExplanation": "おすすめは6s切りなのだ。\n\n対子が3つあるので、8mか6sを1枚切って対子を2つにするのだ。比較のポイントは、8m・8m・9mのペンチャン対子と、6s・6s・8sのカンチャン対子のどちらにフォロー牌を残すか、なのだ。\n\nカンチャンは1手で両面に変わるけれど、ペンチャンは変化しにくいのだ。そこで弱いペンチャン側の8mを残すのだ。後で5sを引いて両面ができたとき、1m・7m・8mのどれが先に来ても両面聴牌にできるのだ。\nフォロー牌は、比較的弱い形の側へ残すと覚えるのだ。",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1311674569790197891",
         "videoExplanationSource": {
           "url": "https://youtu.be/qt_1DUjy63o",
@@ -5679,7 +5695,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-07 19:00:14.85367+00"
+      "overrideUpdatedAt": "2026-09-10T17:32:27.511Z"
     },
     {
       "id": 37,
@@ -10200,8 +10216,15 @@
     },
     {
       "id": 66,
-      "dora": "5m",
-      "draw": "8s",
+      "image": "/questions/question-066.png",
+      "images": [
+        "/questions/question-066.png"
+      ],
+      "explanation": "💯 https://youtu.be/iQbLSPvc84s?si=Iacy6Me3oiWfPK5Q",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1314236647130529893",
+      "discordMessageId": "1314236647130529893",
+      "threadId": "1314236647130529893",
+      "createdAt": "2024-12-05T14:27:14.012000+00:00",
       "hand": [
         "1m",
         "1m",
@@ -10217,67 +10240,79 @@
         "2z",
         "4z"
       ],
-      "note": "南＝1枚切れ　北＝生牌（1枚も切られていない）",
+      "draw": "8s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 7,
       "honba": 0,
-      "image": "/questions/question-066.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-066.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1314236647130529893",
-      "createdAt": "2024-12-05T14:27:14.012000+00:00",
-      "meldCount": 0,
+      "dora": "5m",
+      "note": "南＝1枚切れ　北＝生牌（1枚も切られていない）",
+      "riichiChoice": true,
+      "melds": [],
+      "correctDiscards": [
+        "4z"
+      ],
+      "videoExplanation": "おすすめは4zを切ってリーチなのだ。1枚切れの2zを残し、七対子の単騎待ちにするのだ。\n\n4zは生牌なので、見えている枚数だけなら多く残っていそうに見えるのだ。でも巡目が進むほど、ほかの人の手に使われていて山に少ない可能性や、警戒されて切られにくいことも考えたいのだ。\n\n動画では、7巡目のこの条件なら生牌の4zより1枚切れの2zで待つ方を勧めているのだ。後半の12巡目・2zが2枚切れという比較でも4z切りリーチだけど、本問の条件とは分けて考えるのだ。",
+      "explanationSchemaVersion": 2,
       "sourceUrl": "https://youtu.be/iQbLSPvc84s",
-      "sourceDraw": "8s",
-      "explanation": "💯 https://youtu.be/iQbLSPvc84s?si=Iacy6Me3oiWfPK5Q",
-      "answerSource": {
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
         "url": "https://youtu.be/iQbLSPvc84s",
-        "kind": "video",
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+        "revision": 72,
         "reviewedTimestamps": [
-          15,
-          25,
-          33
+          12,
+          21.5,
+          36,
+          42,
+          48,
+          51
         ]
       },
+      "sourceDraw": "8s",
+      "sourceDrawStatus": "verified",
       "authorSource": {
         "kind": "shared-admin",
         "updatedAt": "2026-07-16 06:58:00.888+00"
       },
-      "riichiChoice": true,
-      "correctDiscards": [
-        "4z"
-      ],
-      "discordMessageId": "1314236647130529893",
-      "sourceDrawStatus": "verified",
-      "videoExplanation": "この問題は、2zが1枚切れで、4zは生牌という条件を見て選ぶのだ。動画では4zを切り、2zを残す形を比較しているのだ。\n\n同じ字牌の単騎候補でも、場に何枚見えているかによって評価は変わるのだ。巡目が深くなるにつれて生牌が他家に使われる可能性もあるので、字牌の種類だけでなく、捨て牌の状況を確認したいのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1314236647130529893",
       "videoCorrectDiscards": [
         "4z"
       ],
-      "videoExplanationSource": {
+      "answerSource": {
+        "kind": "video",
         "url": "https://youtu.be/iQbLSPvc84s",
-        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-        "revision": 60,
         "reviewedTimestamps": [
-          15,
-          25,
-          33
+          21.5
+        ],
+        "revision": 72
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "iQbLSPvc84s",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "correctRiichi": true,
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
         "id": 66,
-        "dora": "5m",
-        "draw": "8s",
+        "image": "/questions/question-066.png",
+        "images": [
+          "/questions/question-066.png"
+        ],
+        "explanation": "💯 https://youtu.be/iQbLSPvc84s?si=Iacy6Me3oiWfPK5Q",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1314236647130529893",
+        "discordMessageId": "1314236647130529893",
+        "threadId": "1314236647130529893",
+        "createdAt": "2024-12-05T14:27:14.012000+00:00",
         "hand": [
           "1m",
           "1m",
@@ -10293,63 +10328,68 @@
           "2z",
           "4z"
         ],
-        "note": "南＝1枚切れ　北＝生牌（1枚も切られていない）",
+        "draw": "8s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 7,
         "honba": 0,
-        "image": "/questions/question-066.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-066.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1314236647130529893",
-        "createdAt": "2024-12-05T14:27:14.012000+00:00",
-        "meldCount": 0,
+        "dora": "5m",
+        "note": "南＝1枚切れ　北＝生牌（1枚も切られていない）",
+        "riichiChoice": true,
+        "melds": [],
+        "correctDiscards": [
+          "4z"
+        ],
+        "videoExplanation": "おすすめは4zを切ってリーチなのだ。1枚切れの2zを残し、七対子の単騎待ちにするのだ。\n\n4zは生牌なので、見えている枚数だけなら多く残っていそうに見えるのだ。でも巡目が進むほど、ほかの人の手に使われていて山に少ない可能性や、警戒されて切られにくいことも考えたいのだ。\n\n動画では、7巡目のこの条件なら生牌の4zより1枚切れの2zで待つ方を勧めているのだ。後半の12巡目・2zが2枚切れという比較でも4z切りリーチだけど、本問の条件とは分けて考えるのだ。",
+        "explanationSchemaVersion": 2,
         "sourceUrl": "https://youtu.be/iQbLSPvc84s",
-        "sourceDraw": "8s",
-        "explanation": "💯 https://youtu.be/iQbLSPvc84s?si=Iacy6Me3oiWfPK5Q",
-        "answerSource": {
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
           "url": "https://youtu.be/iQbLSPvc84s",
-          "kind": "video",
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+          "revision": 72,
           "reviewedTimestamps": [
-            15,
-            25,
-            33
+            12,
+            21.5,
+            36,
+            42,
+            48,
+            51
           ]
         },
+        "sourceDraw": "8s",
+        "sourceDrawStatus": "verified",
         "authorSource": {
           "kind": "shared-admin",
           "updatedAt": "2026-07-16 06:58:00.888+00"
         },
-        "riichiChoice": true,
-        "correctDiscards": [
-          "4z"
-        ],
-        "discordMessageId": "1314236647130529893",
-        "sourceDrawStatus": "verified",
-        "videoExplanation": "この問題は、2zが1枚切れで、4zは生牌という条件を見て選ぶのだ。動画では4zを切り、2zを残す形を比較しているのだ。\n\n同じ字牌の単騎候補でも、場に何枚見えているかによって評価は変わるのだ。巡目が深くなるにつれて生牌が他家に使われる可能性もあるので、字牌の種類だけでなく、捨て牌の状況を確認したいのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1314236647130529893",
         "videoCorrectDiscards": [
           "4z"
         ],
-        "videoExplanationSource": {
+        "answerSource": {
+          "kind": "video",
           "url": "https://youtu.be/iQbLSPvc84s",
-          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-          "revision": 60,
           "reviewedTimestamps": [
-            15,
-            25,
-            33
+            21.5
+          ],
+          "revision": 72
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "iQbLSPvc84s",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "correctRiichi": true,
+        "kanChoice": false,
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.61754+00"
+      "overrideUpdatedAt": "2026-09-11T20:29:29.201Z"
     },
     {
       "id": 67,
@@ -14645,6 +14685,330 @@
       "overrideUpdatedAt": "2026-09-06 05:43:49.619658+00"
     },
     {
+      "id": 118,
+      "image": "/questions/question-118.png",
+      "images": [
+        "/questions/question-118.png"
+      ],
+      "explanation": "https://youtu.be/vIXmLVP9KSI?si=iftlo-V9fPgVbbif",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324029295227572287",
+      "discordMessageId": "1324029295227572287",
+      "threadId": "1324029295227572287",
+      "createdAt": "2025-01-01T14:59:43.257000+00:00",
+      "hand": [
+        "3m",
+        "3m",
+        "8m",
+        "9m",
+        "9m",
+        "4p",
+        "4p",
+        "6p",
+        "1s",
+        "2s",
+        "3s",
+        "6s",
+        "7s"
+      ],
+      "draw": "0s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "3s",
+      "melds": [],
+      "correctDiscards": [
+        "4p"
+      ],
+      "sourceUrl": "https://youtu.be/vIXmLVP9KSI",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanation": "ここは4p切りなのだ。8m・9m・9mと4p・4p・6pを比べ、変化しにくいペンチャン側に対子のフォローを残すのだ。\n\n4p・6pのカンチャンは3pや7pを引けば、一手で両面へ変えられるのだ。5pを引くのはカンチャンが完成する場合なので、両面への手替わりとは分けて考えるのだ。\n\n一方、8m・9mのペンチャンは両面になるまでに手順が必要なのだ。自力で変化しやすい筒子より、弱い萬子側を9mの対子で補強するのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/vIXmLVP9KSI",
+        "reviewedTimestamps": [
+          18,
+          24,
+          30,
+          36,
+          42
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+        "revision": 72
+      },
+      "sourceDraw": "0s",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "4p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/vIXmLVP9KSI",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "vIXmLVP9KSI",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 118,
+        "image": "/questions/question-118.png",
+        "images": [
+          "/questions/question-118.png"
+        ],
+        "explanation": "https://youtu.be/vIXmLVP9KSI?si=iftlo-V9fPgVbbif",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324029295227572287",
+        "discordMessageId": "1324029295227572287",
+        "threadId": "1324029295227572287",
+        "createdAt": "2025-01-01T14:59:43.257000+00:00",
+        "hand": [
+          "3m",
+          "3m",
+          "8m",
+          "9m",
+          "9m",
+          "4p",
+          "4p",
+          "6p",
+          "1s",
+          "2s",
+          "3s",
+          "6s",
+          "7s"
+        ],
+        "draw": "0s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "3s",
+        "melds": [],
+        "correctDiscards": [
+          "4p"
+        ],
+        "sourceUrl": "https://youtu.be/vIXmLVP9KSI",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanation": "ここは4p切りなのだ。8m・9m・9mと4p・4p・6pを比べ、変化しにくいペンチャン側に対子のフォローを残すのだ。\n\n4p・6pのカンチャンは3pや7pを引けば、一手で両面へ変えられるのだ。5pを引くのはカンチャンが完成する場合なので、両面への手替わりとは分けて考えるのだ。\n\n一方、8m・9mのペンチャンは両面になるまでに手順が必要なのだ。自力で変化しやすい筒子より、弱い萬子側を9mの対子で補強するのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/vIXmLVP9KSI",
+          "reviewedTimestamps": [
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+          "revision": 72
+        },
+        "sourceDraw": "0s",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "4p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/vIXmLVP9KSI",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "vIXmLVP9KSI",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:30.781Z"
+    },
+    {
+      "id": 125,
+      "image": "/questions/question-125.png",
+      "images": [
+        "/questions/question-125.png"
+      ],
+      "explanation": "https://youtu.be/kMEqV0loSas?si=wc19Gd_uuj3FhHPC",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367363339980891",
+      "discordMessageId": "1324367363339980891",
+      "threadId": "1324367363339980891",
+      "createdAt": "2025-01-02T13:23:04.976000+00:00",
+      "hand": [
+        "1m",
+        "2m",
+        "6p",
+        "6p",
+        "6p",
+        "7p",
+        "4s",
+        "4s",
+        "4s",
+        "5s",
+        "5s",
+        "6s",
+        "7s"
+      ],
+      "draw": "3m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "1m",
+      "melds": [],
+      "correctDiscards": [
+        "7p"
+      ],
+      "videoExplanation": "おすすめは7p切りなのだ。すでに聴牌を取れるので、5s切りとの待ちの広さを比べるのだ。\n\n7pを切った後の索子は、4s・4s・4s・5sと5s・6s・7sに分けると、3s・6sと5sの待ちが見えるのだ。さらに4sを暗刻、5sを雀頭として見れば、残りの6s・7sから5s・8sの待ちも確認できるのだ。\n\n合わせると3s・5s・6s・8sの4種類、13枚待ちなのだ。5s切りの5p・7p・8p待ちは11枚なので、索子の複合形を残す7p切りの方が広いのだ。暗刻を固定せず、雀頭としても使えるか確かめるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/kMEqV0loSas",
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/kMEqV0loSas",
+        "reviewedTimestamps": [
+          18,
+          24,
+          36,
+          42
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+        "revision": 72
+      },
+      "sourceDraw": "3m",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "7p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/kMEqV0loSas",
+        "reviewedTimestamps": [
+          27
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "kMEqV0loSas",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 125,
+        "image": "/questions/question-125.png",
+        "images": [
+          "/questions/question-125.png"
+        ],
+        "explanation": "https://youtu.be/kMEqV0loSas?si=wc19Gd_uuj3FhHPC",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367363339980891",
+        "discordMessageId": "1324367363339980891",
+        "threadId": "1324367363339980891",
+        "createdAt": "2025-01-02T13:23:04.976000+00:00",
+        "hand": [
+          "1m",
+          "2m",
+          "6p",
+          "6p",
+          "6p",
+          "7p",
+          "4s",
+          "4s",
+          "4s",
+          "5s",
+          "5s",
+          "6s",
+          "7s"
+        ],
+        "draw": "3m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "1m",
+        "melds": [],
+        "correctDiscards": [
+          "7p"
+        ],
+        "videoExplanation": "おすすめは7p切りなのだ。すでに聴牌を取れるので、5s切りとの待ちの広さを比べるのだ。\n\n7pを切った後の索子は、4s・4s・4s・5sと5s・6s・7sに分けると、3s・6sと5sの待ちが見えるのだ。さらに4sを暗刻、5sを雀頭として見れば、残りの6s・7sから5s・8sの待ちも確認できるのだ。\n\n合わせると3s・5s・6s・8sの4種類、13枚待ちなのだ。5s切りの5p・7p・8p待ちは11枚なので、索子の複合形を残す7p切りの方が広いのだ。暗刻を固定せず、雀頭としても使えるか確かめるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/kMEqV0loSas",
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/kMEqV0loSas",
+          "reviewedTimestamps": [
+            18,
+            24,
+            36,
+            42
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+          "revision": 72
+        },
+        "sourceDraw": "3m",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "7p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/kMEqV0loSas",
+          "reviewedTimestamps": [
+            27
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "kMEqV0loSas",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:32.324Z"
+    },
+    {
       "id": 129,
       "dora": "8p",
       "draw": "3m",
@@ -14806,6 +15170,175 @@
         "videoExplanationStatus": "verified-parts",
         "explanationSchemaVersion": 2
       }
+    },
+    {
+      "id": 133,
+      "image": "/questions/question-133.png",
+      "images": [
+        "/questions/question-133.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1325788809601749056",
+      "discordMessageId": "1325788809601749056",
+      "threadId": "1325788809601749056",
+      "createdAt": "2025-01-06T11:31:24.174000+00:00",
+      "hand": [
+        "2m",
+        "3m",
+        "7m",
+        "7m",
+        "2p",
+        "3p",
+        "0p",
+        "6p",
+        "7s",
+        "8s",
+        "4z",
+        "4z",
+        "4z"
+      ],
+      "draw": "9s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "8s",
+      "melds": [],
+      "correctDiscards": [
+        "3p"
+      ],
+      "sourceUrl": "https://youtu.be/FINi2UfVDco",
+      "sourceLabel": "元動画を開く",
+      "videoExplanation": "ここは3p切りなのだ。赤5pを含む両面を残し、4pの二度受けを解消したいのだ。\n\n2p3p0p6pを残して4pを引けば三面張になるけれど、そのために受け入れを4枚減らすのはもったいないのだ。萬子の両面を残して筒子を整理するのだ。2pとの切り順では、後で危険になりやすい内側の3pを先に切るのがおすすめなのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/FINi2UfVDco",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ],
+        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+        "revision": 60
+      },
+      "sourceDraw": "9s",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "3p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/FINi2UfVDco",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "FINi2UfVDco",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "correctRiichi": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 133,
+        "image": "/questions/question-133.png",
+        "images": [
+          "/questions/question-133.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1325788809601749056",
+        "discordMessageId": "1325788809601749056",
+        "threadId": "1325788809601749056",
+        "createdAt": "2025-01-06T11:31:24.174000+00:00",
+        "hand": [
+          "2m",
+          "3m",
+          "7m",
+          "7m",
+          "2p",
+          "3p",
+          "0p",
+          "6p",
+          "7s",
+          "8s",
+          "4z",
+          "4z",
+          "4z"
+        ],
+        "draw": "9s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "8s",
+        "melds": [],
+        "correctDiscards": [
+          "3p"
+        ],
+        "sourceUrl": "https://youtu.be/FINi2UfVDco",
+        "sourceLabel": "元動画を開く",
+        "videoExplanation": "ここは3p切りなのだ。赤5pを含む両面を残し、4pの二度受けを解消したいのだ。\n\n2p3p0p6pを残して4pを引けば三面張になるけれど、そのために受け入れを4枚減らすのはもったいないのだ。萬子の両面を残して筒子を整理するのだ。2pとの切り順では、後で危険になりやすい内側の3pを先に切るのがおすすめなのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/FINi2UfVDco",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ],
+          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+          "revision": 60
+        },
+        "sourceDraw": "9s",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "3p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/FINi2UfVDco",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "FINi2UfVDco",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null,
+        "correctRiichi": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-10T01:42:17.467Z"
     },
     {
       "id": 136,
@@ -14975,6 +15508,1378 @@
       }
     },
     {
+      "id": 138,
+      "image": "/questions/question-138.png",
+      "images": [
+        "/questions/question-138.png"
+      ],
+      "explanation": "https://youtu.be/243yZ6-AeIQ?si=SCk9gzwZu5A_xiv5",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1326217931004182588",
+      "discordMessageId": "1326217931004182588",
+      "threadId": "1326217931004182588",
+      "createdAt": "2025-01-07T15:56:34.689000+00:00",
+      "hand": [
+        "1m",
+        "2m",
+        "3m",
+        "5p",
+        "5p",
+        "7p",
+        "9p",
+        "2s",
+        "3s",
+        "3s",
+        "4s",
+        "7s",
+        "8s"
+      ],
+      "draw": "9p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 9,
+      "honba": null,
+      "points": null,
+      "dora": "8s",
+      "melds": [],
+      "correctDiscards": [
+        "3s"
+      ],
+      "videoExplanation": "おすすめは3s切りなのだ。筒子の5p・5p・7p・9p・9pは、飛び対子の真ん中を1枚外した形なのだ。ここを残せば、5p・6p・8p・9pのどれからでも索子の両面を残して聴牌できるのだ。\n\n索子の中ぶくれを残して、もっと両面を作りたくなるけれど、すでに9巡目なのだ。今回は遠い手替わりを待つより、6種類20枚の広い受け入れで聴牌へ進めるのだ。\n\n先に6s・9sを引いた場合は筒子側の待ちを選ぶことになるので、河も見ながら切る牌を考えておくのだ。ドラ8sを使う両面と、飛び対子の働きを両方残すのがポイントなのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/243yZ6-AeIQ",
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/243yZ6-AeIQ",
+        "reviewedTimestamps": [
+          18,
+          24,
+          30,
+          36,
+          42,
+          48
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+        "revision": 72
+      },
+      "sourceDraw": "9p",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "3s"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/243yZ6-AeIQ",
+        "reviewedTimestamps": [
+          28
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "243yZ6-AeIQ",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 138,
+        "image": "/questions/question-138.png",
+        "images": [
+          "/questions/question-138.png"
+        ],
+        "explanation": "https://youtu.be/243yZ6-AeIQ?si=SCk9gzwZu5A_xiv5",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1326217931004182588",
+        "discordMessageId": "1326217931004182588",
+        "threadId": "1326217931004182588",
+        "createdAt": "2025-01-07T15:56:34.689000+00:00",
+        "hand": [
+          "1m",
+          "2m",
+          "3m",
+          "5p",
+          "5p",
+          "7p",
+          "9p",
+          "2s",
+          "3s",
+          "3s",
+          "4s",
+          "7s",
+          "8s"
+        ],
+        "draw": "9p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 9,
+        "honba": null,
+        "points": null,
+        "dora": "8s",
+        "melds": [],
+        "correctDiscards": [
+          "3s"
+        ],
+        "videoExplanation": "おすすめは3s切りなのだ。筒子の5p・5p・7p・9p・9pは、飛び対子の真ん中を1枚外した形なのだ。ここを残せば、5p・6p・8p・9pのどれからでも索子の両面を残して聴牌できるのだ。\n\n索子の中ぶくれを残して、もっと両面を作りたくなるけれど、すでに9巡目なのだ。今回は遠い手替わりを待つより、6種類20枚の広い受け入れで聴牌へ進めるのだ。\n\n先に6s・9sを引いた場合は筒子側の待ちを選ぶことになるので、河も見ながら切る牌を考えておくのだ。ドラ8sを使う両面と、飛び対子の働きを両方残すのがポイントなのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/243yZ6-AeIQ",
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/243yZ6-AeIQ",
+          "reviewedTimestamps": [
+            18,
+            24,
+            30,
+            36,
+            42,
+            48
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+          "revision": 72
+        },
+        "sourceDraw": "9p",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "3s"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/243yZ6-AeIQ",
+          "reviewedTimestamps": [
+            28
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "243yZ6-AeIQ",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:33.891Z"
+    },
+    {
+      "id": 139,
+      "image": "/questions/question-139.png",
+      "images": [
+        "/questions/question-139.png"
+      ],
+      "explanation": "https://youtu.be/JB0x3SKTtjE?si=CkCyePfKJsIe3znq",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1326217940495765686",
+      "discordMessageId": "1326217940495765686",
+      "threadId": "1326217940495765686",
+      "createdAt": "2025-01-07T15:56:36.952000+00:00",
+      "hand": [
+        "4m",
+        "6m",
+        "2p",
+        "2p",
+        "3p",
+        "4p",
+        "5p",
+        "5p",
+        "5p",
+        "6p"
+      ],
+      "draw": "5m",
+      "status": "unreviewed",
+      "meldCount": 1,
+      "round": "east1",
+      "seat": "west",
+      "turn": 8,
+      "honba": null,
+      "points": null,
+      "dora": "4s",
+      "melds": [
+        {
+          "type": "chi",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "0s",
+            "4s",
+            "6s"
+          ]
+        }
+      ],
+      "correctDiscards": [
+        "2p"
+      ],
+      "videoExplanation": "おすすめは2p切りなのだ。待ちは1p・4p・6p・7pの4種類、合計14枚なのだ。\n\n萬子の4m・5m・6m、副露の4s・0s・6sに合わせて、筒子も4p・5p・6pに分けてみるのだ。残る2p・3pと5pの雀頭から、三色の付く1p・4p待ちが見えるのだ。\n\n今度は2p・3p・4pを順子として抜くと、5p・5p・5p・6pが残るのだ。5pを雀頭にすれば4p・7p、暗刻にすれば6p単騎で、こちらはタンヤオで和了できるのだ。役ごとの分け方を合わせ、隠れた待ちを見落とさないのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/JB0x3SKTtjE",
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/JB0x3SKTtjE",
+        "reviewedTimestamps": [
+          18,
+          24,
+          30,
+          36,
+          42
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+        "revision": 72
+      },
+      "sourceDraw": "5m",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "2p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/JB0x3SKTtjE",
+        "reviewedTimestamps": [
+          25
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "JB0x3SKTtjE",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 139,
+        "image": "/questions/question-139.png",
+        "images": [
+          "/questions/question-139.png"
+        ],
+        "explanation": "https://youtu.be/JB0x3SKTtjE?si=CkCyePfKJsIe3znq",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1326217940495765686",
+        "discordMessageId": "1326217940495765686",
+        "threadId": "1326217940495765686",
+        "createdAt": "2025-01-07T15:56:36.952000+00:00",
+        "hand": [
+          "4m",
+          "6m",
+          "2p",
+          "2p",
+          "3p",
+          "4p",
+          "5p",
+          "5p",
+          "5p",
+          "6p"
+        ],
+        "draw": "5m",
+        "status": "unreviewed",
+        "meldCount": 1,
+        "round": "east1",
+        "seat": "west",
+        "turn": 8,
+        "honba": null,
+        "points": null,
+        "dora": "4s",
+        "melds": [
+          {
+            "type": "chi",
+            "open": true,
+            "calledIndex": 0,
+            "tiles": [
+              "0s",
+              "4s",
+              "6s"
+            ]
+          }
+        ],
+        "correctDiscards": [
+          "2p"
+        ],
+        "videoExplanation": "おすすめは2p切りなのだ。待ちは1p・4p・6p・7pの4種類、合計14枚なのだ。\n\n萬子の4m・5m・6m、副露の4s・0s・6sに合わせて、筒子も4p・5p・6pに分けてみるのだ。残る2p・3pと5pの雀頭から、三色の付く1p・4p待ちが見えるのだ。\n\n今度は2p・3p・4pを順子として抜くと、5p・5p・5p・6pが残るのだ。5pを雀頭にすれば4p・7p、暗刻にすれば6p単騎で、こちらはタンヤオで和了できるのだ。役ごとの分け方を合わせ、隠れた待ちを見落とさないのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/JB0x3SKTtjE",
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/JB0x3SKTtjE",
+          "reviewedTimestamps": [
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+          "revision": 72
+        },
+        "sourceDraw": "5m",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "2p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/JB0x3SKTtjE",
+          "reviewedTimestamps": [
+            25
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "JB0x3SKTtjE",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:35.699Z"
+    },
+    {
+      "id": 149,
+      "image": "/questions/question-149.png",
+      "images": [
+        "/questions/question-149.png"
+      ],
+      "explanation": "https://youtu.be/_-2732uuBpo?si=uTEnjBe5U1GphE3O",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1327950317207162880",
+      "discordMessageId": "1327950317207162880",
+      "threadId": "1327950317207162880",
+      "createdAt": "2025-01-12T10:40:27.746000+00:00",
+      "hand": [
+        "1p",
+        "2p",
+        "3p",
+        "3p",
+        "4p",
+        "6p",
+        "7p",
+        "9p",
+        "9p",
+        "7z",
+        "7z"
+      ],
+      "draw": null,
+      "status": "unreviewed",
+      "meldCount": 1,
+      "round": "east1",
+      "seat": "west",
+      "turn": 9,
+      "honba": null,
+      "points": null,
+      "dora": "9s",
+      "melds": [
+        {
+          "type": "pon",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "9s",
+            "9s",
+            "9s"
+          ]
+        }
+      ],
+      "correctDiscards": [
+        "3p"
+      ],
+      "videoExplanation": "おすすめは3p切りなのだ。ドラ9sをポンしているけれど、ドラだけでは役にならず、9sがあるためタンヤオも付かないのだ。7zの役牌だけに頼らず、一気通貫で和了する道も残したいのだ。\n\n3pを1枚切った筒子に5pを引けば、9pを切って8p待ちにできるのだ。8pを引いた場合も9pを切れば5p待ちで、どちらも一気通貫が付くのだ。\n\n筒子を短いターツだけに分けず、1pから9pまでのつながりを見つけるのだ。鳴いている手では、何の役で和了するかまで確認して進めるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/_-2732uuBpo",
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/_-2732uuBpo",
+        "reviewedTimestamps": [
+          18,
+          24,
+          30,
+          36,
+          42
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+        "revision": 72
+      },
+      "sourceDraw": null,
+      "sourceDrawStatus": "not-shown",
+      "videoCorrectDiscards": [
+        "3p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/_-2732uuBpo",
+        "reviewedTimestamps": [
+          35
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "_-2732uuBpo",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 149,
+        "image": "/questions/question-149.png",
+        "images": [
+          "/questions/question-149.png"
+        ],
+        "explanation": "https://youtu.be/_-2732uuBpo?si=uTEnjBe5U1GphE3O",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1327950317207162880",
+        "discordMessageId": "1327950317207162880",
+        "threadId": "1327950317207162880",
+        "createdAt": "2025-01-12T10:40:27.746000+00:00",
+        "hand": [
+          "1p",
+          "2p",
+          "3p",
+          "3p",
+          "4p",
+          "6p",
+          "7p",
+          "9p",
+          "9p",
+          "7z",
+          "7z"
+        ],
+        "draw": null,
+        "status": "unreviewed",
+        "meldCount": 1,
+        "round": "east1",
+        "seat": "west",
+        "turn": 9,
+        "honba": null,
+        "points": null,
+        "dora": "9s",
+        "melds": [
+          {
+            "type": "pon",
+            "open": true,
+            "calledIndex": 0,
+            "tiles": [
+              "9s",
+              "9s",
+              "9s"
+            ]
+          }
+        ],
+        "correctDiscards": [
+          "3p"
+        ],
+        "videoExplanation": "おすすめは3p切りなのだ。ドラ9sをポンしているけれど、ドラだけでは役にならず、9sがあるためタンヤオも付かないのだ。7zの役牌だけに頼らず、一気通貫で和了する道も残したいのだ。\n\n3pを1枚切った筒子に5pを引けば、9pを切って8p待ちにできるのだ。8pを引いた場合も9pを切れば5p待ちで、どちらも一気通貫が付くのだ。\n\n筒子を短いターツだけに分けず、1pから9pまでのつながりを見つけるのだ。鳴いている手では、何の役で和了するかまで確認して進めるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/_-2732uuBpo",
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/_-2732uuBpo",
+          "reviewedTimestamps": [
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+          "revision": 72
+        },
+        "sourceDraw": null,
+        "sourceDrawStatus": "not-shown",
+        "videoCorrectDiscards": [
+          "3p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/_-2732uuBpo",
+          "reviewedTimestamps": [
+            35
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "_-2732uuBpo",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:37.251Z"
+    },
+    {
+      "id": 156,
+      "image": "/questions/question-156.png",
+      "images": [
+        "/questions/question-156.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833001546158190",
+      "discordMessageId": "1329833001546158190",
+      "threadId": "1329833001546158190",
+      "createdAt": "2025-01-17T15:21:34.671000+00:00",
+      "hand": [
+        "4m",
+        "5m",
+        "6m",
+        "2p",
+        "3p",
+        "3p",
+        "8p",
+        "1s",
+        "3s",
+        "0s",
+        "6s",
+        "8s",
+        "4z",
+        "4z"
+      ],
+      "draw": null,
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "5s",
+      "melds": [],
+      "correctDiscards": [
+        "8p"
+      ],
+      "videoExplanation": "おすすめは8p切りなのだ。\n\n孤立して見える8pと8sを比べるのだ。8sを切って7pを引けば筒子に両面はできるけれど、まだ二向聴なのだ。\n\n8pを切って7sを引いた場合は、索子に面子とリャンカンができて一向聴になるのだ。4sを引いたときも離れリャンカンができて、一向聴になるのだ。\n\n同じ孤立牌でも、隣の牌を引いた後に手全体がどう進むかは違うのだ。見た目の両面のできやすさだけでなく、次の一手の形まで比べるのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "sourceDraw": null,
+      "sourceDrawStatus": "not-shown",
+      "sourcePlaylistMembership": {
+        "videoId": "H5Xvxd4nVUk",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "sourceUrl": "https://youtu.be/H5Xvxd4nVUk",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/H5Xvxd4nVUk",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "videoCorrectDiscards": [
+        "8p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/H5Xvxd4nVUk",
+        "reviewedTimestamps": [
+          18
+        ],
+        "revision": 72
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 156,
+        "image": "/questions/question-156.png",
+        "images": [
+          "/questions/question-156.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833001546158190",
+        "discordMessageId": "1329833001546158190",
+        "threadId": "1329833001546158190",
+        "createdAt": "2025-01-17T15:21:34.671000+00:00",
+        "hand": [
+          "4m",
+          "5m",
+          "6m",
+          "2p",
+          "3p",
+          "3p",
+          "8p",
+          "1s",
+          "3s",
+          "0s",
+          "6s",
+          "8s",
+          "4z",
+          "4z"
+        ],
+        "draw": null,
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "5s",
+        "melds": [],
+        "correctDiscards": [
+          "8p"
+        ],
+        "videoExplanation": "おすすめは8p切りなのだ。\n\n孤立して見える8pと8sを比べるのだ。8sを切って7pを引けば筒子に両面はできるけれど、まだ二向聴なのだ。\n\n8pを切って7sを引いた場合は、索子に面子とリャンカンができて一向聴になるのだ。4sを引いたときも離れリャンカンができて、一向聴になるのだ。\n\n同じ孤立牌でも、隣の牌を引いた後に手全体がどう進むかは違うのだ。見た目の両面のできやすさだけでなく、次の一手の形まで比べるのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "sourceDraw": null,
+        "sourceDrawStatus": "not-shown",
+        "sourcePlaylistMembership": {
+          "videoId": "H5Xvxd4nVUk",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "sourceUrl": "https://youtu.be/H5Xvxd4nVUk",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/H5Xvxd4nVUk",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "videoCorrectDiscards": [
+          "8p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/H5Xvxd4nVUk",
+          "reviewedTimestamps": [
+            18
+          ],
+          "revision": 72
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:38.810Z"
+    },
+    {
+      "id": 157,
+      "image": "/questions/question-157.png",
+      "images": [
+        "/questions/question-157.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833013248524329",
+      "discordMessageId": "1329833013248524329",
+      "threadId": "1329833013248524329",
+      "createdAt": "2025-01-17T15:21:37.461000+00:00",
+      "hand": [
+        "2m",
+        "3m",
+        "6m",
+        "8m",
+        "8m",
+        "1p",
+        "5p",
+        "8p",
+        "1s",
+        "6s",
+        "6s",
+        "6s",
+        "9s",
+        "9s"
+      ],
+      "draw": null,
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 3,
+      "honba": null,
+      "points": null,
+      "dora": "9s",
+      "melds": [],
+      "correctDiscards": [
+        "1s"
+      ],
+      "videoExplanation": "おすすめは1s切りなのだ。\n\n孤立した1sは、隣の牌を引いてもペンチャンかカンチャンを作る形なのだ。一方、5pのある1pは、3pを引くと1p・3p・5pのリャンカンになるのだ。\n\n5pと筋になっている8pも、7pを引けば両面を作れるのだ。筋だから不要とすぐに決めず、それぞれの牌が作れる形を比較するのだ。今回の比較では、孤立した1sより筒子の牌を残すのがおすすめなのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "sourceDraw": null,
+      "sourceDrawStatus": "not-shown",
+      "sourcePlaylistMembership": {
+        "videoId": "F_fi0wIpkbY",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+        ]
+      },
+      "sourceUrl": "https://youtu.be/F_fi0wIpkbY",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/F_fi0wIpkbY",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "videoCorrectDiscards": [
+        "1s"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/F_fi0wIpkbY",
+        "reviewedTimestamps": [
+          18
+        ],
+        "revision": 72
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 157,
+        "image": "/questions/question-157.png",
+        "images": [
+          "/questions/question-157.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833013248524329",
+        "discordMessageId": "1329833013248524329",
+        "threadId": "1329833013248524329",
+        "createdAt": "2025-01-17T15:21:37.461000+00:00",
+        "hand": [
+          "2m",
+          "3m",
+          "6m",
+          "8m",
+          "8m",
+          "1p",
+          "5p",
+          "8p",
+          "1s",
+          "6s",
+          "6s",
+          "6s",
+          "9s",
+          "9s"
+        ],
+        "draw": null,
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 3,
+        "honba": null,
+        "points": null,
+        "dora": "9s",
+        "melds": [],
+        "correctDiscards": [
+          "1s"
+        ],
+        "videoExplanation": "おすすめは1s切りなのだ。\n\n孤立した1sは、隣の牌を引いてもペンチャンかカンチャンを作る形なのだ。一方、5pのある1pは、3pを引くと1p・3p・5pのリャンカンになるのだ。\n\n5pと筋になっている8pも、7pを引けば両面を作れるのだ。筋だから不要とすぐに決めず、それぞれの牌が作れる形を比較するのだ。今回の比較では、孤立した1sより筒子の牌を残すのがおすすめなのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "sourceDraw": null,
+        "sourceDrawStatus": "not-shown",
+        "sourcePlaylistMembership": {
+          "videoId": "F_fi0wIpkbY",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+          ]
+        },
+        "sourceUrl": "https://youtu.be/F_fi0wIpkbY",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/F_fi0wIpkbY",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "videoCorrectDiscards": [
+          "1s"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/F_fi0wIpkbY",
+          "reviewedTimestamps": [
+            18
+          ],
+          "revision": 72
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:40.811Z"
+    },
+    {
+      "id": 158,
+      "image": "/questions/question-158.png",
+      "images": [
+        "/questions/question-158.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833022228529222",
+      "discordMessageId": "1329833022228529222",
+      "threadId": "1329833022228529222",
+      "createdAt": "2025-01-17T15:21:39.602000+00:00",
+      "hand": [
+        "7m",
+        "8m",
+        "9m",
+        "2p",
+        "3p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "0s",
+        "6s",
+        "9s",
+        "9s",
+        "4z"
+      ],
+      "draw": null,
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "9m",
+      "melds": [],
+      "correctDiscards": [
+        "7p"
+      ],
+      "videoExplanation": "動画のおすすめは7p切りなのだ。\n\n中ぶくれは両面を作りやすい強い形だけど、この手はすでに必要な両面がそろっているのだ。そこで中ぶくれの7pを1枚切り、守備に使う4zを残すのだ。\n\nまだカンチャンやペンチャンが残っている手なら、4zを切って中ぶくれの変化を残したいのだ。今回は他家の攻撃に備える方を優先するのだ。\n\n一盃口になる可能性まで含めると、動画のシミュレーションでは4z切りの期待値がわずかに上なのだ。それでも動画では、守備の余地を残す7p切りを勧めているのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "sourceDraw": null,
+      "sourceDrawStatus": "not-shown",
+      "sourcePlaylistMembership": {
+        "videoId": "sOarGIID5n4",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+        ]
+      },
+      "sourceUrl": "https://youtu.be/sOarGIID5n4",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/sOarGIID5n4",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "videoCorrectDiscards": [
+        "7p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/sOarGIID5n4",
+        "reviewedTimestamps": [
+          18
+        ],
+        "revision": 72
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 158,
+        "image": "/questions/question-158.png",
+        "images": [
+          "/questions/question-158.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833022228529222",
+        "discordMessageId": "1329833022228529222",
+        "threadId": "1329833022228529222",
+        "createdAt": "2025-01-17T15:21:39.602000+00:00",
+        "hand": [
+          "7m",
+          "8m",
+          "9m",
+          "2p",
+          "3p",
+          "6p",
+          "7p",
+          "7p",
+          "8p",
+          "0s",
+          "6s",
+          "9s",
+          "9s",
+          "4z"
+        ],
+        "draw": null,
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "9m",
+        "melds": [],
+        "correctDiscards": [
+          "7p"
+        ],
+        "videoExplanation": "動画のおすすめは7p切りなのだ。\n\n中ぶくれは両面を作りやすい強い形だけど、この手はすでに必要な両面がそろっているのだ。そこで中ぶくれの7pを1枚切り、守備に使う4zを残すのだ。\n\nまだカンチャンやペンチャンが残っている手なら、4zを切って中ぶくれの変化を残したいのだ。今回は他家の攻撃に備える方を優先するのだ。\n\n一盃口になる可能性まで含めると、動画のシミュレーションでは4z切りの期待値がわずかに上なのだ。それでも動画では、守備の余地を残す7p切りを勧めているのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "sourceDraw": null,
+        "sourceDrawStatus": "not-shown",
+        "sourcePlaylistMembership": {
+          "videoId": "sOarGIID5n4",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+          ]
+        },
+        "sourceUrl": "https://youtu.be/sOarGIID5n4",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/sOarGIID5n4",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "videoCorrectDiscards": [
+          "7p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/sOarGIID5n4",
+          "reviewedTimestamps": [
+            18
+          ],
+          "revision": 72
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:42.397Z"
+    },
+    {
+      "id": 159,
+      "image": "/questions/question-159.png",
+      "images": [
+        "/questions/question-159.png"
+      ],
+      "explanation": "45568ｐは**中膨れスキップ形**。\n**ヘッドレス1型と相性が良い**形。（ヘッドがある場合にはスジ被りの孤立牌なので弱い。）",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833031233699861",
+      "discordMessageId": "1329833031233699861",
+      "threadId": "1329833031233699861",
+      "createdAt": "2025-01-17T15:21:41.749000+00:00",
+      "hand": [
+        "1m",
+        "2m",
+        "3m",
+        "6m",
+        "2p",
+        "3p",
+        "3p",
+        "4p",
+        "6p",
+        "4s",
+        "5s",
+        "7s",
+        "8s",
+        "9s"
+      ],
+      "draw": null,
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "9s",
+      "melds": [],
+      "correctDiscards": [
+        "6m"
+      ],
+      "videoExplanation": "おすすめは6m切りなのだ。\n\n孤立して見える6mと6pを比較するのだけど、今回は雀頭がないことが大切なのだ。筒子の2p・3p・3p・4p・6pの形を残すと、雀頭を作りながら手を進めやすいのだ。\n\n特に5pを引いたときは、2pを切って3pを雀頭にすることで、一気に聴牌できるのだ。中ぶくれは両面を作るだけでなく、雀頭を確保するのにも役立つのだ。手全体で雀頭が足りているかを確認してから、余剰牌を選ぶのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "sourceDraw": null,
+      "sourceDrawStatus": "not-shown",
+      "sourcePlaylistMembership": {
+        "videoId": "A-WRDlb3k3s",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "sourceUrl": "https://youtu.be/A-WRDlb3k3s",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/A-WRDlb3k3s",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "videoCorrectDiscards": [
+        "6m"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/A-WRDlb3k3s",
+        "reviewedTimestamps": [
+          18
+        ],
+        "revision": 72
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 159,
+        "image": "/questions/question-159.png",
+        "images": [
+          "/questions/question-159.png"
+        ],
+        "explanation": "45568ｐは**中膨れスキップ形**。\n**ヘッドレス1型と相性が良い**形。（ヘッドがある場合にはスジ被りの孤立牌なので弱い。）",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833031233699861",
+        "discordMessageId": "1329833031233699861",
+        "threadId": "1329833031233699861",
+        "createdAt": "2025-01-17T15:21:41.749000+00:00",
+        "hand": [
+          "1m",
+          "2m",
+          "3m",
+          "6m",
+          "2p",
+          "3p",
+          "3p",
+          "4p",
+          "6p",
+          "4s",
+          "5s",
+          "7s",
+          "8s",
+          "9s"
+        ],
+        "draw": null,
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "9s",
+        "melds": [],
+        "correctDiscards": [
+          "6m"
+        ],
+        "videoExplanation": "おすすめは6m切りなのだ。\n\n孤立して見える6mと6pを比較するのだけど、今回は雀頭がないことが大切なのだ。筒子の2p・3p・3p・4p・6pの形を残すと、雀頭を作りながら手を進めやすいのだ。\n\n特に5pを引いたときは、2pを切って3pを雀頭にすることで、一気に聴牌できるのだ。中ぶくれは両面を作るだけでなく、雀頭を確保するのにも役立つのだ。手全体で雀頭が足りているかを確認してから、余剰牌を選ぶのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "sourceDraw": null,
+        "sourceDrawStatus": "not-shown",
+        "sourcePlaylistMembership": {
+          "videoId": "A-WRDlb3k3s",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "sourceUrl": "https://youtu.be/A-WRDlb3k3s",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/A-WRDlb3k3s",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "videoCorrectDiscards": [
+          "6m"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/A-WRDlb3k3s",
+          "reviewedTimestamps": [
+            18
+          ],
+          "revision": 72
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:43.924Z"
+    },
+    {
+      "id": 160,
+      "image": "/questions/question-160.png",
+      "images": [
+        "/questions/question-160.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833039810789409",
+      "discordMessageId": "1329833039810789409",
+      "threadId": "1329833039810789409",
+      "createdAt": "2025-01-17T15:21:43.794000+00:00",
+      "hand": [
+        "2m",
+        "4m",
+        "4m",
+        "7m",
+        "9m",
+        "0p",
+        "6p",
+        "6p",
+        "7p",
+        "1s",
+        "2s",
+        "6s",
+        "4z",
+        "4z"
+      ],
+      "draw": null,
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "7p",
+      "melds": [],
+      "correctDiscards": [
+        "6s"
+      ],
+      "videoExplanation": "おすすめは6s切りなのだ。\n\n6sと6pのどちらを残すかを比べるのだ。孤立した6sより、0p・6p・6p・7pという中ぶくれの中にある6pの方が、両面を作る変化が多いのだ。\n\n筒子は4p・5p・7p・8pを引いたときに両面を作れるのだ。ドラの7pに近く、一盃口の可能性も残るので、6pを残すのだ。\n\n動画のシミュレーションでは差はわずかだけど、余剰牌が周囲の面子とどうつながるかを考える練習になるのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "sourceDraw": null,
+      "sourceDrawStatus": "not-shown",
+      "sourcePlaylistMembership": {
+        "videoId": "O1rH1niCclI",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+        ]
+      },
+      "sourceUrl": "https://youtu.be/O1rH1niCclI",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/O1rH1niCclI",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "videoCorrectDiscards": [
+        "6s"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/O1rH1niCclI",
+        "reviewedTimestamps": [
+          18
+        ],
+        "revision": 72
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 160,
+        "image": "/questions/question-160.png",
+        "images": [
+          "/questions/question-160.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1329833039810789409",
+        "discordMessageId": "1329833039810789409",
+        "threadId": "1329833039810789409",
+        "createdAt": "2025-01-17T15:21:43.794000+00:00",
+        "hand": [
+          "2m",
+          "4m",
+          "4m",
+          "7m",
+          "9m",
+          "0p",
+          "6p",
+          "6p",
+          "7p",
+          "1s",
+          "2s",
+          "6s",
+          "4z",
+          "4z"
+        ],
+        "draw": null,
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "7p",
+        "melds": [],
+        "correctDiscards": [
+          "6s"
+        ],
+        "videoExplanation": "おすすめは6s切りなのだ。\n\n6sと6pのどちらを残すかを比べるのだ。孤立した6sより、0p・6p・6p・7pという中ぶくれの中にある6pの方が、両面を作る変化が多いのだ。\n\n筒子は4p・5p・7p・8pを引いたときに両面を作れるのだ。ドラの7pに近く、一盃口の可能性も残るので、6pを残すのだ。\n\n動画のシミュレーションでは差はわずかだけど、余剰牌が周囲の面子とどうつながるかを考える練習になるのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "sourceDraw": null,
+        "sourceDrawStatus": "not-shown",
+        "sourcePlaylistMembership": {
+          "videoId": "O1rH1niCclI",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+          ]
+        },
+        "sourceUrl": "https://youtu.be/O1rH1niCclI",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/O1rH1niCclI",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "videoCorrectDiscards": [
+          "6s"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/O1rH1niCclI",
+          "reviewedTimestamps": [
+            18
+          ],
+          "revision": 72
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:45.663Z"
+    },
+    {
       "id": 162,
       "dora": "9m",
       "draw": "2p",
@@ -15132,9 +17037,717 @@
       }
     },
     {
+      "id": 163,
+      "image": "/questions/question-163.png",
+      "images": [
+        "/questions/question-163.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1330352185044766752",
+      "discordMessageId": "1330352185044766752",
+      "threadId": "1330352185044766752",
+      "createdAt": "2025-01-19T01:44:37.663000+00:00",
+      "hand": [
+        "1m",
+        "2m",
+        "3m",
+        "3m",
+        "0m",
+        "4p",
+        "4p",
+        "6p",
+        "6p",
+        "8p",
+        "8p",
+        "7s",
+        "8s"
+      ],
+      "draw": "4m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "3z",
+      "melds": [],
+      "correctDiscards": [
+        "6p"
+      ],
+      "videoExplanation": "おすすめは6p切りなのだ。\n\n筒子の4p・4p・6p・6p・8p・8pは、1つ飛ばしに対子が並んだ「飛び対子」なのだ。この形は真ん中の6pを1枚切ると、両面で聴牌しやすくなるのだ。\n\n4p・5p・7p・8pのどれを引いても、索子の両面を残して聴牌できるのだ。シミュレーションでも、端の対子を崩すより良形聴牌につながりやすいことを確認しているのだ。\n\n「飛び対子は真ん中を切る」を、この形と一緒に覚えておくのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "sourceDraw": "4m",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "VjOzvtUiKnU",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "sourceUrl": "https://youtu.be/VjOzvtUiKnU",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/VjOzvtUiKnU",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          24
+        ],
+        "reasonSeconds": [
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "videoCorrectDiscards": [
+        "6p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/VjOzvtUiKnU",
+        "reviewedTimestamps": [
+          24
+        ],
+        "revision": 72
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 163,
+        "image": "/questions/question-163.png",
+        "images": [
+          "/questions/question-163.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1330352185044766752",
+        "discordMessageId": "1330352185044766752",
+        "threadId": "1330352185044766752",
+        "createdAt": "2025-01-19T01:44:37.663000+00:00",
+        "hand": [
+          "1m",
+          "2m",
+          "3m",
+          "3m",
+          "0m",
+          "4p",
+          "4p",
+          "6p",
+          "6p",
+          "8p",
+          "8p",
+          "7s",
+          "8s"
+        ],
+        "draw": "4m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "3z",
+        "melds": [],
+        "correctDiscards": [
+          "6p"
+        ],
+        "videoExplanation": "おすすめは6p切りなのだ。\n\n筒子の4p・4p・6p・6p・8p・8pは、1つ飛ばしに対子が並んだ「飛び対子」なのだ。この形は真ん中の6pを1枚切ると、両面で聴牌しやすくなるのだ。\n\n4p・5p・7p・8pのどれを引いても、索子の両面を残して聴牌できるのだ。シミュレーションでも、端の対子を崩すより良形聴牌につながりやすいことを確認しているのだ。\n\n「飛び対子は真ん中を切る」を、この形と一緒に覚えておくのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "sourceDraw": "4m",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "VjOzvtUiKnU",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "sourceUrl": "https://youtu.be/VjOzvtUiKnU",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/VjOzvtUiKnU",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            24
+          ],
+          "reasonSeconds": [
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "videoCorrectDiscards": [
+          "6p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/VjOzvtUiKnU",
+          "reviewedTimestamps": [
+            24
+          ],
+          "revision": 72
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:47.230Z"
+    },
+    {
+      "id": 164,
+      "image": "/questions/question-164.png",
+      "images": [
+        "/questions/question-164.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1330352193911390339",
+      "discordMessageId": "1330352193911390339",
+      "threadId": "1330352193911390339",
+      "createdAt": "2025-01-19T01:44:39.777000+00:00",
+      "hand": [
+        "3m",
+        "3m",
+        "5m",
+        "1p",
+        "2p",
+        "8p",
+        "8p",
+        "8p",
+        "7s",
+        "7s",
+        "8s",
+        "3z",
+        "3z"
+      ],
+      "draw": "3p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "2p",
+      "melds": [],
+      "correctDiscards": [
+        "7s"
+      ],
+      "videoExplanation": "おすすめは7s切りなのだ。\n\n7s・8sを残して6s・9sの両面に固定することで、両面聴牌になりやすくするのだ。\n\n3m・5mのカンチャンは両面より弱いので、こちらには3mをフォロー牌として残しておくのだ。こうしておけば4mだけでなく、3mや3zを重ねたときも両面聴牌にできるのだ。\n\n余分な対子を1枚切るときは、弱い形の方へフォロー牌を残すのがポイントなのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "sourceDraw": "3p",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "959tnkZizvI",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+        ]
+      },
+      "sourceUrl": "https://youtu.be/959tnkZizvI",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/959tnkZizvI",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          24
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42
+        ]
+      },
+      "videoCorrectDiscards": [
+        "7s"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/959tnkZizvI",
+        "reviewedTimestamps": [
+          24
+        ],
+        "revision": 72
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 164,
+        "image": "/questions/question-164.png",
+        "images": [
+          "/questions/question-164.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1330352193911390339",
+        "discordMessageId": "1330352193911390339",
+        "threadId": "1330352193911390339",
+        "createdAt": "2025-01-19T01:44:39.777000+00:00",
+        "hand": [
+          "3m",
+          "3m",
+          "5m",
+          "1p",
+          "2p",
+          "8p",
+          "8p",
+          "8p",
+          "7s",
+          "7s",
+          "8s",
+          "3z",
+          "3z"
+        ],
+        "draw": "3p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "2p",
+        "melds": [],
+        "correctDiscards": [
+          "7s"
+        ],
+        "videoExplanation": "おすすめは7s切りなのだ。\n\n7s・8sを残して6s・9sの両面に固定することで、両面聴牌になりやすくするのだ。\n\n3m・5mのカンチャンは両面より弱いので、こちらには3mをフォロー牌として残しておくのだ。こうしておけば4mだけでなく、3mや3zを重ねたときも両面聴牌にできるのだ。\n\n余分な対子を1枚切るときは、弱い形の方へフォロー牌を残すのがポイントなのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "sourceDraw": "3p",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "959tnkZizvI",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+          ]
+        },
+        "sourceUrl": "https://youtu.be/959tnkZizvI",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/959tnkZizvI",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            24
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42
+          ]
+        },
+        "videoCorrectDiscards": [
+          "7s"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/959tnkZizvI",
+          "reviewedTimestamps": [
+            24
+          ],
+          "revision": 72
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:48.802Z"
+    },
+    {
+      "id": 165,
+      "image": "/questions/question-165.png",
+      "images": [
+        "/questions/question-165.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1330352205508907018",
+      "discordMessageId": "1330352205508907018",
+      "threadId": "1330352205508907018",
+      "createdAt": "2025-01-19T01:44:42.542000+00:00",
+      "hand": [
+        "9m",
+        "9m",
+        "2p",
+        "2p",
+        "4p",
+        "5p",
+        "6p",
+        "7p",
+        "4s",
+        "0s",
+        "7s",
+        "8s",
+        "9s"
+      ],
+      "draw": "6p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "9s",
+      "melds": [],
+      "correctDiscards": [
+        "2p"
+      ],
+      "videoExplanation": "おすすめは2p切りなのだ。\n\n筒子には両面とカンチャンの受けを兼ねる「両面カンチャン」の形があるのだ。2pを1枚切っても、5p・8pだけでなく3pを引いたときにも聴牌できるのだ。\n\n筒子のこの受けと、索子の3s・6sの両面を両方残すのだ。見た目だけで筒子の形を単純な両面に固定せず、面子を含めて別の組み合わせに分けられないか確認するのだ。実戦でもカンチャンの受けを見落とさないようにするのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "sourceDraw": "6p",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "tauwb2NiWq8",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "sourceUrl": "https://youtu.be/tauwb2NiWq8",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/tauwb2NiWq8",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          24,
+          42
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42
+        ]
+      },
+      "videoCorrectDiscards": [
+        "2p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/tauwb2NiWq8",
+        "reviewedTimestamps": [
+          24
+        ],
+        "revision": 72
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 165,
+        "image": "/questions/question-165.png",
+        "images": [
+          "/questions/question-165.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1330352205508907018",
+        "discordMessageId": "1330352205508907018",
+        "threadId": "1330352205508907018",
+        "createdAt": "2025-01-19T01:44:42.542000+00:00",
+        "hand": [
+          "9m",
+          "9m",
+          "2p",
+          "2p",
+          "4p",
+          "5p",
+          "6p",
+          "7p",
+          "4s",
+          "0s",
+          "7s",
+          "8s",
+          "9s"
+        ],
+        "draw": "6p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "9s",
+        "melds": [],
+        "correctDiscards": [
+          "2p"
+        ],
+        "videoExplanation": "おすすめは2p切りなのだ。\n\n筒子には両面とカンチャンの受けを兼ねる「両面カンチャン」の形があるのだ。2pを1枚切っても、5p・8pだけでなく3pを引いたときにも聴牌できるのだ。\n\n筒子のこの受けと、索子の3s・6sの両面を両方残すのだ。見た目だけで筒子の形を単純な両面に固定せず、面子を含めて別の組み合わせに分けられないか確認するのだ。実戦でもカンチャンの受けを見落とさないようにするのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "sourceDraw": "6p",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "tauwb2NiWq8",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "sourceUrl": "https://youtu.be/tauwb2NiWq8",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/tauwb2NiWq8",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            24,
+            42
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42
+          ]
+        },
+        "videoCorrectDiscards": [
+          "2p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/tauwb2NiWq8",
+          "reviewedTimestamps": [
+            24
+          ],
+          "revision": 72
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:50.804Z"
+    },
+    {
+      "id": 167,
+      "image": "/questions/question-167.png",
+      "images": [
+        "/questions/question-167.png"
+      ],
+      "explanation": "",
+      "sourceUrl": "https://youtu.be/ADWMMNXtryw",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2024-06-08T10:00:08Z",
+      "hand": [
+        "5m",
+        "0m",
+        "6m",
+        "7m",
+        "7m",
+        "7m",
+        "7z",
+        "7z"
+      ],
+      "draw": null,
+      "status": "unreviewed",
+      "meldCount": 2,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "dora": "8s",
+      "note": "6sをチーした直後（ツモ牌表記なし）",
+      "melds": [
+        {
+          "type": "chi",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "6s",
+            "7s",
+            "8s"
+          ]
+        },
+        {
+          "type": "chi",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "3p",
+            "4p",
+            "5p"
+          ]
+        }
+      ],
+      "correctDiscards": [
+        "6m"
+      ],
+      "videoExplanation": "おすすめは6m切りなのだ。形の上では5m・7zのシャンポン待ちだけど、5mでは役がなく和了できないのだ。7zの役牌で和了を目指す手なのだ。\n\n通常の5mを切ると、形の待ちは4m・7m・7zになるのだ。ただし4m・7mでは役がないうえ、その牌を引いてツモ切りするとフリテンになり、7zでもロンできなくなるのだ。\n\n6m切りでも5mを引けば同じ問題が起こるけれど、その5mは残り2枚なのだ。5m切りでは4mが4枚、7mが1枚で、困るツモが合計5枚あるのだ。和了できる7zの枚数は変わらないので、役なしのツモでフリテンになる危険が少ない6m切りを選ぶのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/ADWMMNXtryw",
+        "reviewedTimestamps": [
+          18,
+          30,
+          42,
+          54,
+          66,
+          78,
+          90
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+        "revision": 72
+      },
+      "sourceDraw": null,
+      "sourceDrawStatus": "not-shown",
+      "videoCorrectDiscards": [
+        "6m"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/ADWMMNXtryw",
+        "reviewedTimestamps": [
+          45,
+          63
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "ADWMMNXtryw",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 167,
+        "image": "/questions/question-167.png",
+        "images": [
+          "/questions/question-167.png"
+        ],
+        "explanation": "",
+        "sourceUrl": "https://youtu.be/ADWMMNXtryw",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2024-06-08T10:00:08Z",
+        "hand": [
+          "5m",
+          "0m",
+          "6m",
+          "7m",
+          "7m",
+          "7m",
+          "7z",
+          "7z"
+        ],
+        "draw": null,
+        "status": "unreviewed",
+        "meldCount": 2,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": 0,
+        "points": 25000,
+        "dora": "8s",
+        "note": "6sをチーした直後（ツモ牌表記なし）",
+        "melds": [
+          {
+            "type": "chi",
+            "open": true,
+            "calledIndex": 0,
+            "tiles": [
+              "6s",
+              "7s",
+              "8s"
+            ]
+          },
+          {
+            "type": "chi",
+            "open": true,
+            "calledIndex": 0,
+            "tiles": [
+              "3p",
+              "4p",
+              "5p"
+            ]
+          }
+        ],
+        "correctDiscards": [
+          "6m"
+        ],
+        "videoExplanation": "おすすめは6m切りなのだ。形の上では5m・7zのシャンポン待ちだけど、5mでは役がなく和了できないのだ。7zの役牌で和了を目指す手なのだ。\n\n通常の5mを切ると、形の待ちは4m・7m・7zになるのだ。ただし4m・7mでは役がないうえ、その牌を引いてツモ切りするとフリテンになり、7zでもロンできなくなるのだ。\n\n6m切りでも5mを引けば同じ問題が起こるけれど、その5mは残り2枚なのだ。5m切りでは4mが4枚、7mが1枚で、困るツモが合計5枚あるのだ。和了できる7zの枚数は変わらないので、役なしのツモでフリテンになる危険が少ない6m切りを選ぶのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/ADWMMNXtryw",
+          "reviewedTimestamps": [
+            18,
+            30,
+            42,
+            54,
+            66,
+            78,
+            90
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+          "revision": 72
+        },
+        "sourceDraw": null,
+        "sourceDrawStatus": "not-shown",
+        "videoCorrectDiscards": [
+          "6m"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/ADWMMNXtryw",
+          "reviewedTimestamps": [
+            45,
+            63
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "ADWMMNXtryw",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:52.354Z"
+    },
+    {
       "id": 169,
-      "dora": "7s",
-      "draw": "7s",
+      "image": "/questions/question-169.png",
+      "images": [
+        "/questions/question-169.png"
+      ],
+      "explanation": "打2m。\n5p切りも受け入れは15枚で同じだが、打5ｐツモ3ｍ（カン8ｐ待ち）＜打2ｍツモ6ｐ（69ｍ待ち）\n\n💡8枚形ウイング形＝2面子1雀頭を作るのに強い形ですが、しっかりと受け入れを比較しましょう。今回、例えば579ｐ→556ｐならば打5ｐ。",
+      "sourceUrl": "https://youtu.be/Aijtrqz70Os",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2024-11-25T10:00:06Z",
       "hand": [
         "2m",
         "4m",
@@ -15150,55 +17763,85 @@
         "8s",
         "9s"
       ],
+      "draw": "7s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 6,
       "honba": 0,
-      "image": "/questions/question-169.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-169.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "reviewed": false,
-      "createdAt": "2024-11-25T10:00:06Z",
-      "meldCount": 0,
-      "sourceUrl": "https://youtu.be/Aijtrqz70Os",
-      "overridden": true,
-      "sourceDraw": "7s",
-      "explanation": "打2m。\n5p切りも受け入れは15枚で同じだが、打5ｐツモ3ｍ（カン8ｐ待ち）＜打2ｍツモ6ｐ（69ｍ待ち）\n\n💡8枚形ウイング形＝2面子1雀頭を作るのに強い形ですが、しっかりと受け入れを比較しましょう。今回、例えば579ｐ→556ｐならば打5ｐ。",
-      "sourceLabel": "YouTube動画を開く",
-      "answerSource": {
-        "kind": "instructor",
-        "note": "管理画面の正解2mを保持。動画の初手結論は未確認。"
+      "dora": "7s",
+      "melds": [],
+      "correctDiscards": [
+        "2m"
+      ],
+      "videoExplanation": "おすすめは2m切りなのだ。受け入れは6m・9m・6p・8pで、手牌に使っている分を除くと15枚なのだ。\n\n5pを切って7p・8p・9pの三色へ寄せたくなるけれど、2m切りでも手役は残るのだ。6pを先に引けば9p切りで平和の両面聴牌、8pなら5p切りで平和に加えて高め9mの三色も狙えるのだ。\n\n萬子が先に入った場合は、6mでは三色も平和も付かず、9mでは三色は付くけれど平和は付かないのだ。\n\n5p切りも15枚受けだけど、三色になるツモは増えないのだ。違いは、2m切りなら6pを引いて平和にできるところが、5p切りでは3mを引いても平和にならないことなのだ。三色に見える形へ寄せるだけでなく、引く牌ごとに最終形を比べるのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/Aijtrqz70Os",
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+        "revision": 72,
+        "reviewedTimestamps": [
+          18,
+          24,
+          30,
+          36,
+          42,
+          48,
+          54,
+          60,
+          66,
+          72,
+          78,
+          84,
+          90,
+          96,
+          108,
+          120,
+          132,
+          138
+        ]
       },
+      "sourceDraw": "7s",
+      "sourceDrawStatus": "verified",
       "authorSource": {
         "kind": "shared-admin",
         "updatedAt": "2026-07-17 10:39:30.992+00"
       },
-      "correctDiscards": [
-        "2m"
-      ],
-      "reviewUpdatedAt": null,
-      "sourceDrawStatus": "verified",
-      "videoExplanation": "この問題では、萬子の受け入れだけでなく、聴牌したときに平和や三色が付くかを分けて比べるのだ。\n\n6mを引いた形は三色も平和も付かない一方、9mを引いた形には三色の可能性があるけれど平和は付かないのだ。似た受けでも、付く役は同じではないのだ。受け入れの広さと打点を一緒に確認し、三色にならない変化まで三色の受けとして数えないようにするのだ。",
-      "overrideUpdatedAt": "2026-09-06 05:43:49.621061+00",
-      "videoExplanationSource": {
+      "answerSource": {
+        "kind": "instructor-and-video",
         "url": "https://youtu.be/Aijtrqz70Os",
-        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-        "revision": 60,
         "reviewedTimestamps": [
-          47
+          18
+        ],
+        "revision": 72
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "Aijtrqz70Os",
+        "playlistIds": [
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "videoCorrectDiscards": [
+        "2m"
+      ],
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
       "reviewStatus": null,
+      "reviewUpdatedAt": null,
       "questionData": {
         "id": 169,
-        "dora": "7s",
-        "draw": "7s",
+        "image": "/questions/question-169.png",
+        "images": [
+          "/questions/question-169.png"
+        ],
+        "explanation": "打2m。\n5p切りも受け入れは15枚で同じだが、打5ｐツモ3ｍ（カン8ｐ待ち）＜打2ｍツモ6ｐ（69ｍ待ち）\n\n💡8枚形ウイング形＝2面子1雀頭を作るのに強い形ですが、しっかりと受け入れを比較しましょう。今回、例えば579ｐ→556ｐならば打5ｐ。",
+        "sourceUrl": "https://youtu.be/Aijtrqz70Os",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2024-11-25T10:00:06Z",
         "hand": [
           "2m",
           "4m",
@@ -15214,51 +17857,75 @@
           "8s",
           "9s"
         ],
+        "draw": "7s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 6,
         "honba": 0,
-        "image": "/questions/question-169.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-169.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "reviewed": false,
-        "createdAt": "2024-11-25T10:00:06Z",
-        "meldCount": 0,
-        "sourceUrl": "https://youtu.be/Aijtrqz70Os",
-        "overridden": false,
-        "sourceDraw": "7s",
-        "explanation": "打2m。\n5p切りも受け入れは15枚で同じだが、打5ｐツモ3ｍ（カン8ｐ待ち）＜打2ｍツモ6ｐ（69ｍ待ち）\n\n💡8枚形ウイング形＝2面子1雀頭を作るのに強い形ですが、しっかりと受け入れを比較しましょう。今回、例えば579ｐ→556ｐならば打5ｐ。",
-        "sourceLabel": "YouTube動画を開く",
-        "answerSource": {
-          "kind": "instructor",
-          "note": "管理画面の正解2mを保持。動画の初手結論は未確認。"
+        "dora": "7s",
+        "melds": [],
+        "correctDiscards": [
+          "2m"
+        ],
+        "videoExplanation": "おすすめは2m切りなのだ。受け入れは6m・9m・6p・8pで、手牌に使っている分を除くと15枚なのだ。\n\n5pを切って7p・8p・9pの三色へ寄せたくなるけれど、2m切りでも手役は残るのだ。6pを先に引けば9p切りで平和の両面聴牌、8pなら5p切りで平和に加えて高め9mの三色も狙えるのだ。\n\n萬子が先に入った場合は、6mでは三色も平和も付かず、9mでは三色は付くけれど平和は付かないのだ。\n\n5p切りも15枚受けだけど、三色になるツモは増えないのだ。違いは、2m切りなら6pを引いて平和にできるところが、5p切りでは3mを引いても平和にならないことなのだ。三色に見える形へ寄せるだけでなく、引く牌ごとに最終形を比べるのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/Aijtrqz70Os",
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。",
+          "revision": 72,
+          "reviewedTimestamps": [
+            18,
+            24,
+            30,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90,
+            96,
+            108,
+            120,
+            132,
+            138
+          ]
         },
+        "sourceDraw": "7s",
+        "sourceDrawStatus": "verified",
         "authorSource": {
           "kind": "shared-admin",
           "updatedAt": "2026-07-17 10:39:30.992+00"
         },
-        "correctDiscards": [
-          "2m"
-        ],
-        "reviewUpdatedAt": null,
-        "sourceDrawStatus": "verified",
-        "videoExplanation": "この問題では、萬子の受け入れだけでなく、聴牌したときに平和や三色が付くかを分けて比べるのだ。\n\n6mを引いた形は三色も平和も付かない一方、9mを引いた形には三色の可能性があるけれど平和は付かないのだ。似た受けでも、付く役は同じではないのだ。受け入れの広さと打点を一緒に確認し、三色にならない変化まで三色の受けとして数えないようにするのだ。",
-        "overrideUpdatedAt": null,
-        "videoExplanationSource": {
+        "answerSource": {
+          "kind": "instructor-and-video",
           "url": "https://youtu.be/Aijtrqz70Os",
-          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
-          "revision": 60,
           "reviewedTimestamps": [
-            47
+            18
+          ],
+          "revision": 72
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "Aijtrqz70Os",
+          "playlistIds": [
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
-      }
+        "videoCorrectDiscards": [
+          "2m"
+        ],
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:53.889Z"
     },
     {
       "id": 171,
@@ -15420,6 +18087,3411 @@
         "videoExplanationStatus": "verified-parts",
         "explanationSchemaVersion": 2
       }
+    },
+    {
+      "id": 176,
+      "image": "/questions/question-176.png",
+      "images": [
+        "/questions/question-176.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは9s切りなのだ。\n\n他に打点の要素がないので、ドラの5sを使える側へ形を寄せるのだ。先に5m・8mを引いたときの待ちだけなら、端に近いカン8sの方が和了しやすいけれど、今回はドラを残す打点を優先するのだ。\n\nその後3s・7sを引いたときは、ただツモ切りするだけでなく、9pを切ってタンヤオへ向かう変化も考えるのだ。一手先にどんな牌がうれしいかを想定しておくのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/m5k7QHBdgGw",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-11-16T00:00:00Z",
+      "hand": [
+        "3m",
+        "4m",
+        "6m",
+        "7m",
+        "4p",
+        "4p",
+        "4p",
+        "9p",
+        "9p",
+        "3s",
+        "5s",
+        "7s",
+        "9s"
+      ],
+      "draw": "2m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "5s",
+      "melds": [],
+      "correctDiscards": [
+        "9s"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/m5k7QHBdgGw",
+        "problemSeconds": [
+          3
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          18,
+          24,
+          30,
+          42,
+          48
+        ]
+      },
+      "sourceDraw": "2m",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "m5k7QHBdgGw",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 176,
+        "image": "/questions/question-176.png",
+        "images": [
+          "/questions/question-176.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは9s切りなのだ。\n\n他に打点の要素がないので、ドラの5sを使える側へ形を寄せるのだ。先に5m・8mを引いたときの待ちだけなら、端に近いカン8sの方が和了しやすいけれど、今回はドラを残す打点を優先するのだ。\n\nその後3s・7sを引いたときは、ただツモ切りするだけでなく、9pを切ってタンヤオへ向かう変化も考えるのだ。一手先にどんな牌がうれしいかを想定しておくのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/m5k7QHBdgGw",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-11-16T00:00:00Z",
+        "hand": [
+          "3m",
+          "4m",
+          "6m",
+          "7m",
+          "4p",
+          "4p",
+          "4p",
+          "9p",
+          "9p",
+          "3s",
+          "5s",
+          "7s",
+          "9s"
+        ],
+        "draw": "2m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "5s",
+        "melds": [],
+        "correctDiscards": [
+          "9s"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/m5k7QHBdgGw",
+          "problemSeconds": [
+            3
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            18,
+            24,
+            30,
+            42,
+            48
+          ]
+        },
+        "sourceDraw": "2m",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "m5k7QHBdgGw",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:55.932Z"
+    },
+    {
+      "id": 177,
+      "image": "/questions/question-177.png",
+      "images": [
+        "/questions/question-177.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは7p切りなのだ。\n\n1m・2mのペンチャンを外したくなるけれど、良形ターツはすでに足りているので、今すぐ外す必要はないのだ。3mが来たらドラの絡まない両面を外し、両面のフォロー牌が来たら、その時点でペンチャンを外せばよいのだ。\n\n手が進んだり安全牌を引いたりした後に、1mを切る選択もできるのだ。弱い形があるからと反射的に壊さず、余剰牌から落ち着いて処理するのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/YMjlho87KhY",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-11-01T00:00:00Z",
+      "hand": [
+        "1m",
+        "2m",
+        "6m",
+        "7m",
+        "2p",
+        "3p",
+        "7p",
+        "3s",
+        "4s",
+        "9s",
+        "9s",
+        "2z",
+        "2z"
+      ],
+      "draw": "9s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 4,
+      "honba": null,
+      "points": 25000,
+      "dora": "7m",
+      "melds": [],
+      "correctDiscards": [
+        "7p"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/YMjlho87KhY",
+        "problemSeconds": [
+          3
+        ],
+        "conclusionSeconds": [
+          18,
+          48
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "sourceDraw": "9s",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "YMjlho87KhY",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 177,
+        "image": "/questions/question-177.png",
+        "images": [
+          "/questions/question-177.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは7p切りなのだ。\n\n1m・2mのペンチャンを外したくなるけれど、良形ターツはすでに足りているので、今すぐ外す必要はないのだ。3mが来たらドラの絡まない両面を外し、両面のフォロー牌が来たら、その時点でペンチャンを外せばよいのだ。\n\n手が進んだり安全牌を引いたりした後に、1mを切る選択もできるのだ。弱い形があるからと反射的に壊さず、余剰牌から落ち着いて処理するのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/YMjlho87KhY",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-11-01T00:00:00Z",
+        "hand": [
+          "1m",
+          "2m",
+          "6m",
+          "7m",
+          "2p",
+          "3p",
+          "7p",
+          "3s",
+          "4s",
+          "9s",
+          "9s",
+          "2z",
+          "2z"
+        ],
+        "draw": "9s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 4,
+        "honba": null,
+        "points": 25000,
+        "dora": "7m",
+        "melds": [],
+        "correctDiscards": [
+          "7p"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/YMjlho87KhY",
+          "problemSeconds": [
+            3
+          ],
+          "conclusionSeconds": [
+            18,
+            48
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "sourceDraw": "9s",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "YMjlho87KhY",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:57.479Z"
+    },
+    {
+      "id": 180,
+      "image": "/questions/question-180.png",
+      "images": [
+        "/questions/question-180.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "動画では2s切り、8p切り、6s切りの3つを紹介しているのだ。\n\n2s切りと8p切りは、5p・7sを引いたときの両面変化を残せるのだ。この2つに大きな差はなく、実戦では捨て牌なども見て決めたいのだ。\n\n6s切りは7sを引く両面変化を失う代わりに、今の受けから聴牌すれば、切った6sの筋である3s待ちを残せるという工夫なのだ。5sを引く手替わりまでなくなるわけではないのだ。良形変化を残す選択と、待ちの出やすさを意識した選択の違いを覚える問題なのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/gkw4i-sa1xw",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-10-15T00:00:00Z",
+      "hand": [
+        "1m",
+        "2m",
+        "2m",
+        "3m",
+        "3m",
+        "4m",
+        "8p",
+        "8p",
+        "2s",
+        "4s",
+        "6s",
+        "9s",
+        "9s"
+      ],
+      "draw": "6p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "2m",
+      "melds": [],
+      "correctDiscards": [
+        "2s",
+        "8p",
+        "6s"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/gkw4i-sa1xw",
+        "problemSeconds": [
+          3
+        ],
+        "conclusionSeconds": [
+          18,
+          36
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ],
+        "revision": 72,
+        "reviewedTimestamps": [
+          18,
+          24,
+          30,
+          36,
+          42,
+          48
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+      },
+      "sourceDraw": "6p",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "gkw4i-sa1xw",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 180,
+        "image": "/questions/question-180.png",
+        "images": [
+          "/questions/question-180.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "動画では2s切り、8p切り、6s切りの3つを紹介しているのだ。\n\n2s切りと8p切りは、5p・7sを引いたときの両面変化を残せるのだ。この2つに大きな差はなく、実戦では捨て牌なども見て決めたいのだ。\n\n6s切りは7sを引く両面変化を失う代わりに、今の受けから聴牌すれば、切った6sの筋である3s待ちを残せるという工夫なのだ。5sを引く手替わりまでなくなるわけではないのだ。良形変化を残す選択と、待ちの出やすさを意識した選択の違いを覚える問題なのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/gkw4i-sa1xw",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-10-15T00:00:00Z",
+        "hand": [
+          "1m",
+          "2m",
+          "2m",
+          "3m",
+          "3m",
+          "4m",
+          "8p",
+          "8p",
+          "2s",
+          "4s",
+          "6s",
+          "9s",
+          "9s"
+        ],
+        "draw": "6p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "2m",
+        "melds": [],
+        "correctDiscards": [
+          "2s",
+          "8p",
+          "6s"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/gkw4i-sa1xw",
+          "problemSeconds": [
+            3
+          ],
+          "conclusionSeconds": [
+            18,
+            36
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ],
+          "revision": 72,
+          "reviewedTimestamps": [
+            18,
+            24,
+            30,
+            36,
+            42,
+            48
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+        },
+        "sourceDraw": "6p",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "gkw4i-sa1xw",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:29:59.035Z"
+    },
+    {
+      "id": 183,
+      "image": "/questions/question-183.png",
+      "images": [
+        "/questions/question-183.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは3zを切ってリーチなのだ。\n\nリーチすると、以後は基本的にツモ切りになるので、危険牌を止められなくなるのだ。聴牌を知らせるため、他家から和了牌が出にくくなる面もあるのだ。\n\nそれでも、リーチの1翻に加え、一発や裏ドラで大きく加点できる利点があるのだ。リスクだけを怖がらず、トップを取るための打点を狙ってリーチするのがおすすめなのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/KT6HnQWbNTo",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-08-14T00:00:00Z",
+      "hand": [
+        "2m",
+        "3m",
+        "1p",
+        "1p",
+        "8p",
+        "9p",
+        "4s",
+        "5s",
+        "0s",
+        "6s",
+        "6s",
+        "7s",
+        "3z"
+      ],
+      "draw": "7p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "5z",
+      "melds": [],
+      "correctDiscards": [
+        "3z"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/KT6HnQWbNTo",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          24,
+          36,
+          48
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "sourceDraw": "7p",
+      "sourceDrawStatus": "verified",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "sourcePlaylistMembership": {
+        "videoId": "KT6HnQWbNTo",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 183,
+        "image": "/questions/question-183.png",
+        "images": [
+          "/questions/question-183.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは3zを切ってリーチなのだ。\n\nリーチすると、以後は基本的にツモ切りになるので、危険牌を止められなくなるのだ。聴牌を知らせるため、他家から和了牌が出にくくなる面もあるのだ。\n\nそれでも、リーチの1翻に加え、一発や裏ドラで大きく加点できる利点があるのだ。リスクだけを怖がらず、トップを取るための打点を狙ってリーチするのがおすすめなのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/KT6HnQWbNTo",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-08-14T00:00:00Z",
+        "hand": [
+          "2m",
+          "3m",
+          "1p",
+          "1p",
+          "8p",
+          "9p",
+          "4s",
+          "5s",
+          "0s",
+          "6s",
+          "6s",
+          "7s",
+          "3z"
+        ],
+        "draw": "7p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "5z",
+        "melds": [],
+        "correctDiscards": [
+          "3z"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/KT6HnQWbNTo",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            24,
+            36,
+            48
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "sourceDraw": "7p",
+        "sourceDrawStatus": "verified",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "sourcePlaylistMembership": {
+          "videoId": "KT6HnQWbNTo",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:01.016Z"
+    },
+    {
+      "id": 184,
+      "image": "/questions/question-184.png",
+      "images": [
+        "/questions/question-184.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは3p切りなのだ。\n\nこの形は完全一向聴と呼ばれる強い一向聴なのだ。筒子と索子にそれぞれ両面の受けがあり、1p・4sを重ねる受けも残っているのだ。\n\n聴牌へ進む有効牌のどれを引いても、もう一方の両面を残して聴牌できるのだ。余剰牌の3pを処理して、広い受け入れとよい最終形を両立させるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/F_9a7-wUh6o",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-08-12T00:00:00Z",
+      "hand": [
+        "2m",
+        "3m",
+        "4m",
+        "1p",
+        "1p",
+        "3p",
+        "7p",
+        "8p",
+        "4s",
+        "4s",
+        "7s",
+        "8s",
+        "9s"
+      ],
+      "draw": "5s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "4m",
+      "melds": [],
+      "correctDiscards": [
+        "3p"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/F_9a7-wUh6o",
+        "problemSeconds": [
+          12
+        ],
+        "conclusionSeconds": [
+          24,
+          42
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "sourceDraw": "5s",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "F_9a7-wUh6o",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 184,
+        "image": "/questions/question-184.png",
+        "images": [
+          "/questions/question-184.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは3p切りなのだ。\n\nこの形は完全一向聴と呼ばれる強い一向聴なのだ。筒子と索子にそれぞれ両面の受けがあり、1p・4sを重ねる受けも残っているのだ。\n\n聴牌へ進む有効牌のどれを引いても、もう一方の両面を残して聴牌できるのだ。余剰牌の3pを処理して、広い受け入れとよい最終形を両立させるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/F_9a7-wUh6o",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-08-12T00:00:00Z",
+        "hand": [
+          "2m",
+          "3m",
+          "4m",
+          "1p",
+          "1p",
+          "3p",
+          "7p",
+          "8p",
+          "4s",
+          "4s",
+          "7s",
+          "8s",
+          "9s"
+        ],
+        "draw": "5s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "4m",
+        "melds": [],
+        "correctDiscards": [
+          "3p"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/F_9a7-wUh6o",
+          "problemSeconds": [
+            12
+          ],
+          "conclusionSeconds": [
+            24,
+            42
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "sourceDraw": "5s",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "F_9a7-wUh6o",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:02.579Z"
+    },
+    {
+      "id": 187,
+      "image": "/questions/question-187.png",
+      "images": [
+        "/questions/question-187.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは4s切りなのだ。\n\n5mを切っても完全一向聴になるけれど、4sを切れば3mを引いたときに、2m・3m・4m、2p・3p・4p、2s・3s・4sの三色を狙う聴牌にできるのだ。同じ広さなら、うれしいツモのある方を残すのだ。\n\nただし、先に2sを引いて聴牌した場合は、三色を確定させるカンチャンより、平和ドラ1の両面リーチがおすすめなのだ。変化を残しておき、実際に入った牌に合わせて最終形を選ぶのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/2zS7ogdnDXM",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2023-03-20T00:00:00Z",
+      "hand": [
+        "2m",
+        "2m",
+        "4m",
+        "5m",
+        "5m",
+        "2p",
+        "3p",
+        "4p",
+        "8p",
+        "9p",
+        "3s",
+        "4s",
+        "4s"
+      ],
+      "draw": "7p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "dora": "9p",
+      "melds": [],
+      "correctDiscards": [
+        "4s"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/2zS7ogdnDXM",
+        "problemSeconds": [
+          3
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "sourceDraw": "7p",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "2zS7ogdnDXM",
+        "playlistIds": [
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 187,
+        "image": "/questions/question-187.png",
+        "images": [
+          "/questions/question-187.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは4s切りなのだ。\n\n5mを切っても完全一向聴になるけれど、4sを切れば3mを引いたときに、2m・3m・4m、2p・3p・4p、2s・3s・4sの三色を狙う聴牌にできるのだ。同じ広さなら、うれしいツモのある方を残すのだ。\n\nただし、先に2sを引いて聴牌した場合は、三色を確定させるカンチャンより、平和ドラ1の両面リーチがおすすめなのだ。変化を残しておき、実際に入った牌に合わせて最終形を選ぶのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/2zS7ogdnDXM",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2023-03-20T00:00:00Z",
+        "hand": [
+          "2m",
+          "2m",
+          "4m",
+          "5m",
+          "5m",
+          "2p",
+          "3p",
+          "4p",
+          "8p",
+          "9p",
+          "3s",
+          "4s",
+          "4s"
+        ],
+        "draw": "7p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": 0,
+        "points": 25000,
+        "dora": "9p",
+        "melds": [],
+        "correctDiscards": [
+          "4s"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/2zS7ogdnDXM",
+          "problemSeconds": [
+            3
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "sourceDraw": "7p",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "2zS7ogdnDXM",
+          "playlistIds": [
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:04.149Z"
+    },
+    {
+      "id": 202,
+      "image": "/questions/question-202.png",
+      "images": [
+        "/questions/question-202.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは7mを切ってリーチなのだ。\n\n7m切りは平和と一盃口が確定し、2m・5mの6枚待ちになるのだ。4m切りなら2m・5m・8mの10枚待ちにできるけれど、一盃口は付かなくなるのだ。\n\n今回はまだ3巡目で、6枚でも十分に和了を狙えるので、打点の高い方を選ぶのだ。打点がすでに十分ある場合や、終盤に順位を守ることが重要な場合は、同じ形でも広い待ちを優先することがあるのだ。巡目・打点・点差で判断を変えるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/-l14p-fXyE0",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2023-02-08T00:00:00Z",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "4m",
+        "5m",
+        "5m",
+        "6m",
+        "6m",
+        "7m",
+        "7p",
+        "9p",
+        "9s",
+        "9s"
+      ],
+      "draw": "8p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 3,
+      "honba": 0,
+      "points": 25000,
+      "dora": "3p",
+      "melds": [],
+      "correctDiscards": [
+        "7m"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/-l14p-fXyE0",
+        "problemSeconds": [
+          3
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48,
+          54,
+          60,
+          66,
+          72
+        ],
+        "revision": 72,
+        "reviewedTimestamps": [
+          18,
+          24,
+          30,
+          36,
+          42,
+          54
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+      },
+      "sourceDraw": "8p",
+      "sourceDrawStatus": "verified",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "sourcePlaylistMembership": {
+        "videoId": "-l14p-fXyE0",
+        "playlistIds": [
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 202,
+        "image": "/questions/question-202.png",
+        "images": [
+          "/questions/question-202.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは7mを切ってリーチなのだ。\n\n7m切りは平和と一盃口が確定し、2m・5mの6枚待ちになるのだ。4m切りなら2m・5m・8mの10枚待ちにできるけれど、一盃口は付かなくなるのだ。\n\n今回はまだ3巡目で、6枚でも十分に和了を狙えるので、打点の高い方を選ぶのだ。打点がすでに十分ある場合や、終盤に順位を守ることが重要な場合は、同じ形でも広い待ちを優先することがあるのだ。巡目・打点・点差で判断を変えるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/-l14p-fXyE0",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2023-02-08T00:00:00Z",
+        "hand": [
+          "3m",
+          "4m",
+          "4m",
+          "4m",
+          "5m",
+          "5m",
+          "6m",
+          "6m",
+          "7m",
+          "7p",
+          "9p",
+          "9s",
+          "9s"
+        ],
+        "draw": "8p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 3,
+        "honba": 0,
+        "points": 25000,
+        "dora": "3p",
+        "melds": [],
+        "correctDiscards": [
+          "7m"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/-l14p-fXyE0",
+          "problemSeconds": [
+            3
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66,
+            72
+          ],
+          "revision": 72,
+          "reviewedTimestamps": [
+            18,
+            24,
+            30,
+            36,
+            42,
+            54
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+        },
+        "sourceDraw": "8p",
+        "sourceDrawStatus": "verified",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "sourcePlaylistMembership": {
+          "videoId": "-l14p-fXyE0",
+          "playlistIds": [
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:05.907Z"
+    },
+    {
+      "id": 213,
+      "image": "/questions/question-213.png",
+      "images": [
+        "/questions/question-213.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは6s切りなのだ。\n\n6ブロックの手なので、6s・7sの両面を外して進めるのだ。両面を切ると受け入れが狭く見えるけれど、索子のほかの形がフォローしているので、5s・8sを引いても一向聴に進めるのだ。\n\n2p・3pを外す方が素直に見えても、こちらの方が受け入れは狭くなるのだ。別の牌を引いたときに余剰牌が出ることだけを嫌わず、複合形全体で残る受け入れを数えるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/781mv9KODPs",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2023-01-26T00:00:00Z",
+      "hand": [
+        "2p",
+        "3p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "3s",
+        "3s",
+        "4s",
+        "6s",
+        "7s",
+        "9s",
+        "9s"
+      ],
+      "draw": "9p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "dora": "7p",
+      "melds": [],
+      "correctDiscards": [
+        "6s"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/781mv9KODPs",
+        "problemSeconds": [
+          3
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48,
+          54,
+          60,
+          66
+        ]
+      },
+      "sourceDraw": "9p",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "781mv9KODPs",
+        "playlistIds": [
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 213,
+        "image": "/questions/question-213.png",
+        "images": [
+          "/questions/question-213.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは6s切りなのだ。\n\n6ブロックの手なので、6s・7sの両面を外して進めるのだ。両面を切ると受け入れが狭く見えるけれど、索子のほかの形がフォローしているので、5s・8sを引いても一向聴に進めるのだ。\n\n2p・3pを外す方が素直に見えても、こちらの方が受け入れは狭くなるのだ。別の牌を引いたときに余剰牌が出ることだけを嫌わず、複合形全体で残る受け入れを数えるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/781mv9KODPs",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2023-01-26T00:00:00Z",
+        "hand": [
+          "2p",
+          "3p",
+          "6p",
+          "7p",
+          "7p",
+          "8p",
+          "3s",
+          "3s",
+          "4s",
+          "6s",
+          "7s",
+          "9s",
+          "9s"
+        ],
+        "draw": "9p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": 0,
+        "points": 25000,
+        "dora": "7p",
+        "melds": [],
+        "correctDiscards": [
+          "6s"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/781mv9KODPs",
+          "problemSeconds": [
+            3
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48,
+            54,
+            60,
+            66
+          ]
+        },
+        "sourceDraw": "9p",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "781mv9KODPs",
+          "playlistIds": [
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:07.453Z"
+    },
+    {
+      "id": 217,
+      "image": "/questions/question-217.png",
+      "images": [
+        "/questions/question-217.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは6m切りなのだ。6m・7mを外して8mを雀頭に固定し、筒子の両面と索子の三面張を残すのだ。\n\n6m切りの受け入れは19枚で、どれが先に入っても良形で聴牌できるのだ。0sは赤牌であり、通常ドラの5sにも当たるのだ。打点を持ってすでに鳴いている今回は、チーして速く良形聴牌にできることを重視するのだ。\n\n8m切りは36枚受けと広いけれど、そのうち2s・5s・8sの11枚が先に入ると単騎待ちになるのだ。同じ形でも門前で、2mの暗刻を残してリーチを目指す条件なら8m切りを勧める、と動画では比較しているのだ。門前と副露で、雀頭と待ちの作り方を変えるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/jeFp4uYWGOE",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2023-01-20T00:00:00Z",
+      "hand": [
+        "6m",
+        "8m",
+        "8m",
+        "4p",
+        "5p",
+        "3s",
+        "4s",
+        "0s",
+        "6s",
+        "7s"
+      ],
+      "draw": "7m",
+      "status": "unreviewed",
+      "meldCount": 1,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "dora": "5s",
+      "melds": [
+        {
+          "type": "pon",
+          "open": true,
+          "calledIndex": 2,
+          "tiles": [
+            "2m",
+            "2m",
+            "2m"
+          ]
+        }
+      ],
+      "correctDiscards": [
+        "6m"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/jeFp4uYWGOE",
+        "problemSeconds": [
+          3
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48,
+          54
+        ],
+        "revision": 72,
+        "reviewedTimestamps": [
+          18,
+          24,
+          30,
+          36,
+          42,
+          48,
+          54
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+      },
+      "sourceDraw": "7m",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "jeFp4uYWGOE",
+        "playlistIds": [
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 217,
+        "image": "/questions/question-217.png",
+        "images": [
+          "/questions/question-217.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは6m切りなのだ。6m・7mを外して8mを雀頭に固定し、筒子の両面と索子の三面張を残すのだ。\n\n6m切りの受け入れは19枚で、どれが先に入っても良形で聴牌できるのだ。0sは赤牌であり、通常ドラの5sにも当たるのだ。打点を持ってすでに鳴いている今回は、チーして速く良形聴牌にできることを重視するのだ。\n\n8m切りは36枚受けと広いけれど、そのうち2s・5s・8sの11枚が先に入ると単騎待ちになるのだ。同じ形でも門前で、2mの暗刻を残してリーチを目指す条件なら8m切りを勧める、と動画では比較しているのだ。門前と副露で、雀頭と待ちの作り方を変えるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/jeFp4uYWGOE",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2023-01-20T00:00:00Z",
+        "hand": [
+          "6m",
+          "8m",
+          "8m",
+          "4p",
+          "5p",
+          "3s",
+          "4s",
+          "0s",
+          "6s",
+          "7s"
+        ],
+        "draw": "7m",
+        "status": "unreviewed",
+        "meldCount": 1,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": 0,
+        "points": 25000,
+        "dora": "5s",
+        "melds": [
+          {
+            "type": "pon",
+            "open": true,
+            "calledIndex": 2,
+            "tiles": [
+              "2m",
+              "2m",
+              "2m"
+            ]
+          }
+        ],
+        "correctDiscards": [
+          "6m"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/jeFp4uYWGOE",
+          "problemSeconds": [
+            3
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48,
+            54
+          ],
+          "revision": 72,
+          "reviewedTimestamps": [
+            18,
+            24,
+            30,
+            36,
+            42,
+            48,
+            54
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+        },
+        "sourceDraw": "7m",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "jeFp4uYWGOE",
+          "playlistIds": [
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:08.996Z"
+    },
+    {
+      "id": 228,
+      "image": "/questions/question-228.png",
+      "images": [
+        "/questions/question-228.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは4m切りなのだ。受け入れは19枚で、3s切りの18枚より1枚広いのだ。わずかな差だけど、平和の付きやすさにも違いがあるのだ。\n\n4mを切ってから2s・5s、または5p・8pを引けば、4sを1枚切って両面聴牌にできるのだ。萬子は7mを雀頭にして、3m・4m・5mと6m・7m・8mの順子に分けられるので、平和が付くのだ。\n\n一方、3sを先に切ってから5p・8pや2m・5mを引く進行では、7mが暗刻になるため平和が付かないのだ。比較する打牌ごとに、その後引く牌と完成面子を分けて確認するのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/5hmoJOGGtF0",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-12-26T00:00:00Z",
+      "hand": [
+        "3m",
+        "4m",
+        "4m",
+        "5m",
+        "6m",
+        "7m",
+        "7m",
+        "7m",
+        "8m",
+        "6p",
+        "7p",
+        "4s",
+        "4s"
+      ],
+      "draw": "3s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": 0,
+      "points": 25000,
+      "dora": "7p",
+      "melds": [],
+      "correctDiscards": [
+        "4m"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/5hmoJOGGtF0",
+        "problemSeconds": [
+          3
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48,
+          54,
+          60
+        ],
+        "revision": 72,
+        "reviewedTimestamps": [
+          18,
+          24,
+          30,
+          36,
+          42,
+          48,
+          54
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+      },
+      "sourceDraw": "3s",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "5hmoJOGGtF0",
+        "playlistIds": [
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 228,
+        "image": "/questions/question-228.png",
+        "images": [
+          "/questions/question-228.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは4m切りなのだ。受け入れは19枚で、3s切りの18枚より1枚広いのだ。わずかな差だけど、平和の付きやすさにも違いがあるのだ。\n\n4mを切ってから2s・5s、または5p・8pを引けば、4sを1枚切って両面聴牌にできるのだ。萬子は7mを雀頭にして、3m・4m・5mと6m・7m・8mの順子に分けられるので、平和が付くのだ。\n\n一方、3sを先に切ってから5p・8pや2m・5mを引く進行では、7mが暗刻になるため平和が付かないのだ。比較する打牌ごとに、その後引く牌と完成面子を分けて確認するのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/5hmoJOGGtF0",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-12-26T00:00:00Z",
+        "hand": [
+          "3m",
+          "4m",
+          "4m",
+          "5m",
+          "6m",
+          "7m",
+          "7m",
+          "7m",
+          "8m",
+          "6p",
+          "7p",
+          "4s",
+          "4s"
+        ],
+        "draw": "3s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": 0,
+        "points": 25000,
+        "dora": "7p",
+        "melds": [],
+        "correctDiscards": [
+          "4m"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/5hmoJOGGtF0",
+          "problemSeconds": [
+            3
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48,
+            54,
+            60
+          ],
+          "revision": 72,
+          "reviewedTimestamps": [
+            18,
+            24,
+            30,
+            36,
+            42,
+            48,
+            54
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+        },
+        "sourceDraw": "3s",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "5hmoJOGGtF0",
+          "playlistIds": [
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:10.843Z"
+    },
+    {
+      "id": 248,
+      "image": "/questions/question-248.png",
+      "images": [
+        "/questions/question-248.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは2m切りなのだ。\n\n索子を1sの対子で分けると、1s・3s・4s・7sが受けになるのだ。3sを1s側につなげて見ると2sの受けも見つかり、萬子の1mと合わせて広い一向聴になるのだ。\n\n4sを引いたときは一盃口が付き、リーチしなくてもロンできる形になるのだ。受け入れ、役、良形へのつながりを合わせて見ると2m切りが良いのだ。赤牌の0pと0sは使える形のまま残すのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/dLg0L-3ifpY",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-10-18T00:00:00Z",
+      "hand": [
+        "1m",
+        "1m",
+        "2m",
+        "6p",
+        "7p",
+        "1s",
+        "1s",
+        "3s",
+        "3s",
+        "4s",
+        "5s",
+        "0s",
+        "6s"
+      ],
+      "draw": "0p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "7p",
+      "melds": [],
+      "correctDiscards": [
+        "2m"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/dLg0L-3ifpY",
+        "problemSeconds": [
+          3
+        ],
+        "conclusionSeconds": [
+          18
+        ],
+        "reasonSeconds": [
+          24,
+          30,
+          36,
+          42,
+          48
+        ]
+      },
+      "sourceDraw": "0p",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "dLg0L-3ifpY",
+        "playlistIds": [
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 248,
+        "image": "/questions/question-248.png",
+        "images": [
+          "/questions/question-248.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは2m切りなのだ。\n\n索子を1sの対子で分けると、1s・3s・4s・7sが受けになるのだ。3sを1s側につなげて見ると2sの受けも見つかり、萬子の1mと合わせて広い一向聴になるのだ。\n\n4sを引いたときは一盃口が付き、リーチしなくてもロンできる形になるのだ。受け入れ、役、良形へのつながりを合わせて見ると2m切りが良いのだ。赤牌の0pと0sは使える形のまま残すのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/dLg0L-3ifpY",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-10-18T00:00:00Z",
+        "hand": [
+          "1m",
+          "1m",
+          "2m",
+          "6p",
+          "7p",
+          "1s",
+          "1s",
+          "3s",
+          "3s",
+          "4s",
+          "5s",
+          "0s",
+          "6s"
+        ],
+        "draw": "0p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "7p",
+        "melds": [],
+        "correctDiscards": [
+          "2m"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/dLg0L-3ifpY",
+          "problemSeconds": [
+            3
+          ],
+          "conclusionSeconds": [
+            18
+          ],
+          "reasonSeconds": [
+            24,
+            30,
+            36,
+            42,
+            48
+          ]
+        },
+        "sourceDraw": "0p",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "dLg0L-3ifpY",
+          "playlistIds": [
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:12.403Z"
+    },
+    {
+      "id": 264,
+      "image": "/questions/question-264.png",
+      "images": [
+        "/questions/question-264.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは8s切りなのだ。\n\nツモの9pを手の中へ入れて考えると、3面子1雀頭ができていて、くっつき一向聴なのだ。浮き牌の7m・5p・8sから選ぶのだ。\n\n端に近い8sは、7mや5pよりくっつく牌が少ないのだ。7mなら6m・8m、5pなら4p・6pで両面になるけれど、8sから両面を作れるのは7sだけなのだ。受け入れと良形変化の両方で8sを切るのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/e7yWmZ0OCiI?t=318",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-11-02T00:00:00Z",
+      "hand": [
+        "7m",
+        "5p",
+        "7p",
+        "8p",
+        "1s",
+        "1s",
+        "1s",
+        "3s",
+        "4s",
+        "5s",
+        "8s",
+        "4z",
+        "4z"
+      ],
+      "draw": "9p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": null,
+      "seat": null,
+      "turn": null,
+      "honba": null,
+      "points": null,
+      "dora": null,
+      "melds": [],
+      "correctDiscards": [
+        "8s"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/e7yWmZ0OCiI?t=318",
+        "problemSeconds": [
+          318
+        ],
+        "conclusionSeconds": [
+          372
+        ],
+        "reasonSeconds": [
+          336,
+          354,
+          372
+        ]
+      },
+      "sourceDraw": "9p",
+      "sourceDrawStatus": "verified",
+      "note": "局面・ドラの指定はない。受け入れ枚数を優先して選ぶ問題。",
+      "sourceConditionsUnspecified": true,
+      "sourcePlaylistMembership": {
+        "videoId": "e7yWmZ0OCiI",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 264,
+        "image": "/questions/question-264.png",
+        "images": [
+          "/questions/question-264.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは8s切りなのだ。\n\nツモの9pを手の中へ入れて考えると、3面子1雀頭ができていて、くっつき一向聴なのだ。浮き牌の7m・5p・8sから選ぶのだ。\n\n端に近い8sは、7mや5pよりくっつく牌が少ないのだ。7mなら6m・8m、5pなら4p・6pで両面になるけれど、8sから両面を作れるのは7sだけなのだ。受け入れと良形変化の両方で8sを切るのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/e7yWmZ0OCiI?t=318",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-11-02T00:00:00Z",
+        "hand": [
+          "7m",
+          "5p",
+          "7p",
+          "8p",
+          "1s",
+          "1s",
+          "1s",
+          "3s",
+          "4s",
+          "5s",
+          "8s",
+          "4z",
+          "4z"
+        ],
+        "draw": "9p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": null,
+        "seat": null,
+        "turn": null,
+        "honba": null,
+        "points": null,
+        "dora": null,
+        "melds": [],
+        "correctDiscards": [
+          "8s"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/e7yWmZ0OCiI?t=318",
+          "problemSeconds": [
+            318
+          ],
+          "conclusionSeconds": [
+            372
+          ],
+          "reasonSeconds": [
+            336,
+            354,
+            372
+          ]
+        },
+        "sourceDraw": "9p",
+        "sourceDrawStatus": "verified",
+        "note": "局面・ドラの指定はない。受け入れ枚数を優先して選ぶ問題。",
+        "sourceConditionsUnspecified": true,
+        "sourcePlaylistMembership": {
+          "videoId": "e7yWmZ0OCiI",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:13.961Z"
+    },
+    {
+      "id": 267,
+      "image": "/questions/question-267.png",
+      "images": [
+        "/questions/question-267.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは4m切りなのだ。\n\n索子から4s・5s・6sの順子を取り出すと、残った部分に両面嵌張が見えるのだ。5mを雀頭に固定して、この広い受け入れを残すのだ。\n\n5m切りは一向聴に進まず二向聴のままなので、形が複雑でも面子を分けて確かめるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=90",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "hand": [
+        "4m",
+        "5m",
+        "5m",
+        "7p",
+        "3s",
+        "4s",
+        "4s",
+        "4s",
+        "5s",
+        "5s",
+        "6s",
+        "6s",
+        "8s"
+      ],
+      "draw": "6p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "7p",
+      "melds": [],
+      "correctDiscards": [
+        "4m"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/_l6L0y-mWg4?t=90",
+        "problemSeconds": [
+          90
+        ],
+        "conclusionSeconds": [
+          98
+        ],
+        "reasonSeconds": [
+          102,
+          108,
+          114,
+          120
+        ]
+      },
+      "sourceDraw": "6p",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "_l6L0y-mWg4",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 267,
+        "image": "/questions/question-267.png",
+        "images": [
+          "/questions/question-267.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは4m切りなのだ。\n\n索子から4s・5s・6sの順子を取り出すと、残った部分に両面嵌張が見えるのだ。5mを雀頭に固定して、この広い受け入れを残すのだ。\n\n5m切りは一向聴に進まず二向聴のままなので、形が複雑でも面子を分けて確かめるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=90",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-26T00:00:00Z",
+        "hand": [
+          "4m",
+          "5m",
+          "5m",
+          "7p",
+          "3s",
+          "4s",
+          "4s",
+          "4s",
+          "5s",
+          "5s",
+          "6s",
+          "6s",
+          "8s"
+        ],
+        "draw": "6p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "7p",
+        "melds": [],
+        "correctDiscards": [
+          "4m"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=90",
+          "problemSeconds": [
+            90
+          ],
+          "conclusionSeconds": [
+            98
+          ],
+          "reasonSeconds": [
+            102,
+            108,
+            114,
+            120
+          ]
+        },
+        "sourceDraw": "6p",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "_l6L0y-mWg4",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:15.731Z"
+    },
+    {
+      "id": 268,
+      "image": "/questions/question-268.png",
+      "images": [
+        "/questions/question-268.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは3p切りなのだ。\n\n筒子の1p・2p・3pを順子として抜き出すと、3p・5p・6p・7p・7p・8pの両面カンチャンが残るのだ。3pを余剰牌として見ると6p・9pの両面、6p・7p・8pを面子として見ると3p・5p・7pのリャンカンで、4pの受けも見つかるのだ。\n\n筒子では4p・6p・9p、萬子では6m・9mの5種類18枚で聴牌できるのだ。完成面子を一通りの分け方に固定せず、隠れたカンチャンの受けを確認するのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=132",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "hand": [
+        "7m",
+        "8m",
+        "1p",
+        "2p",
+        "3p",
+        "3p",
+        "3p",
+        "5p",
+        "6p",
+        "7p",
+        "8p",
+        "1s",
+        "1s"
+      ],
+      "draw": "7p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "7m",
+      "melds": [],
+      "correctDiscards": [
+        "3p"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/_l6L0y-mWg4?t=132",
+        "problemSeconds": [
+          132
+        ],
+        "conclusionSeconds": [
+          138
+        ],
+        "reasonSeconds": [
+          144,
+          156
+        ],
+        "revision": 72,
+        "reviewedTimestamps": [
+          138,
+          144,
+          150,
+          156,
+          162
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+      },
+      "sourceDraw": "7p",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "_l6L0y-mWg4",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 268,
+        "image": "/questions/question-268.png",
+        "images": [
+          "/questions/question-268.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは3p切りなのだ。\n\n筒子の1p・2p・3pを順子として抜き出すと、3p・5p・6p・7p・7p・8pの両面カンチャンが残るのだ。3pを余剰牌として見ると6p・9pの両面、6p・7p・8pを面子として見ると3p・5p・7pのリャンカンで、4pの受けも見つかるのだ。\n\n筒子では4p・6p・9p、萬子では6m・9mの5種類18枚で聴牌できるのだ。完成面子を一通りの分け方に固定せず、隠れたカンチャンの受けを確認するのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=132",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-26T00:00:00Z",
+        "hand": [
+          "7m",
+          "8m",
+          "1p",
+          "2p",
+          "3p",
+          "3p",
+          "3p",
+          "5p",
+          "6p",
+          "7p",
+          "8p",
+          "1s",
+          "1s"
+        ],
+        "draw": "7p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "7m",
+        "melds": [],
+        "correctDiscards": [
+          "3p"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=132",
+          "problemSeconds": [
+            132
+          ],
+          "conclusionSeconds": [
+            138
+          ],
+          "reasonSeconds": [
+            144,
+            156
+          ],
+          "revision": 72,
+          "reviewedTimestamps": [
+            138,
+            144,
+            150,
+            156,
+            162
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+        },
+        "sourceDraw": "7p",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "_l6L0y-mWg4",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:17.339Z"
+    },
+    {
+      "id": 270,
+      "image": "/questions/question-270.png",
+      "images": [
+        "/questions/question-270.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは8s切りなのだ。\n\n4sをツモ切りすれば両面嵌張で2s・5s・7sを受けられるけれど、8sを切っても7sの受け入れはなくならないのだ。さらに4s・1mのシャンポンの受け入れも増えるのだ。\n\nすでによい形でも、新しいツモでもっと広くなることがあるのだ。両面嵌張だからと決めつけてツモ切りしないのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=234",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "hand": [
+        "1m",
+        "1m",
+        "3m",
+        "4m",
+        "5m",
+        "6p",
+        "7p",
+        "3s",
+        "4s",
+        "4s",
+        "5s",
+        "6s",
+        "8s"
+      ],
+      "draw": "4s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "1m",
+      "melds": [],
+      "correctDiscards": [
+        "8s"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/_l6L0y-mWg4?t=234",
+        "problemSeconds": [
+          234
+        ],
+        "conclusionSeconds": [
+          242
+        ],
+        "reasonSeconds": [
+          246,
+          264
+        ]
+      },
+      "sourceDraw": "4s",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "_l6L0y-mWg4",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 270,
+        "image": "/questions/question-270.png",
+        "images": [
+          "/questions/question-270.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは8s切りなのだ。\n\n4sをツモ切りすれば両面嵌張で2s・5s・7sを受けられるけれど、8sを切っても7sの受け入れはなくならないのだ。さらに4s・1mのシャンポンの受け入れも増えるのだ。\n\nすでによい形でも、新しいツモでもっと広くなることがあるのだ。両面嵌張だからと決めつけてツモ切りしないのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=234",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-26T00:00:00Z",
+        "hand": [
+          "1m",
+          "1m",
+          "3m",
+          "4m",
+          "5m",
+          "6p",
+          "7p",
+          "3s",
+          "4s",
+          "4s",
+          "5s",
+          "6s",
+          "8s"
+        ],
+        "draw": "4s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "1m",
+        "melds": [],
+        "correctDiscards": [
+          "8s"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=234",
+          "problemSeconds": [
+            234
+          ],
+          "conclusionSeconds": [
+            242
+          ],
+          "reasonSeconds": [
+            246,
+            264
+          ]
+        },
+        "sourceDraw": "4s",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "_l6L0y-mWg4",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:18.915Z"
+    },
+    {
+      "id": 272,
+      "image": "/questions/question-272.png",
+      "images": [
+        "/questions/question-272.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは4s切りなのだ。\n\n平和を残せるだけでなく、3m・4m・5m、3p・4p・5p、3s・4s・5sの三色を狙うため、筒子のカン4p受けを残すのだ。\n\nただし5sが先に入った後は、両面のリーチ・平和・ドラと、愚形のリーチ・三色・ドラの比較になるのだ。動画では今回の条件なら両面を勧めているのだ。一向聴では三色を見ながら、聴牌時には改めて待ちと打点を比べるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=318",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "hand": [
+        "4m",
+        "0m",
+        "3p",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "1s",
+        "1s",
+        "3s",
+        "4s",
+        "4s"
+      ],
+      "draw": "3m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "4z",
+      "melds": [],
+      "correctDiscards": [
+        "4s"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/_l6L0y-mWg4?t=318",
+        "problemSeconds": [
+          318
+        ],
+        "conclusionSeconds": [
+          328
+        ],
+        "reasonSeconds": [
+          336,
+          354,
+          372
+        ]
+      },
+      "sourceDraw": "3m",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "_l6L0y-mWg4",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 272,
+        "image": "/questions/question-272.png",
+        "images": [
+          "/questions/question-272.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは4s切りなのだ。\n\n平和を残せるだけでなく、3m・4m・5m、3p・4p・5p、3s・4s・5sの三色を狙うため、筒子のカン4p受けを残すのだ。\n\nただし5sが先に入った後は、両面のリーチ・平和・ドラと、愚形のリーチ・三色・ドラの比較になるのだ。動画では今回の条件なら両面を勧めているのだ。一向聴では三色を見ながら、聴牌時には改めて待ちと打点を比べるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=318",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-26T00:00:00Z",
+        "hand": [
+          "4m",
+          "0m",
+          "3p",
+          "5p",
+          "6p",
+          "7p",
+          "7p",
+          "8p",
+          "1s",
+          "1s",
+          "3s",
+          "4s",
+          "4s"
+        ],
+        "draw": "3m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "4z",
+        "melds": [],
+        "correctDiscards": [
+          "4s"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=318",
+          "problemSeconds": [
+            318
+          ],
+          "conclusionSeconds": [
+            328
+          ],
+          "reasonSeconds": [
+            336,
+            354,
+            372
+          ]
+        },
+        "sourceDraw": "3m",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "_l6L0y-mWg4",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:20.679Z"
+    },
+    {
+      "id": 273,
+      "image": "/questions/question-273.png",
+      "images": [
+        "/questions/question-273.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは9s切りなのだ。\n\n5p切りは平和が確定してタンヤオも狙える形、9s切りはタンヤオが確定して平和も狙える形なのだ。今回はタンヤオを確定させる方の打点を大切にするのだ。\n\n鳴いても役あり聴牌にできるのも長所なのだ。門前での受け入れだけでなく、タンヤオで仕掛けられる速さも比べるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=390",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "hand": [
+        "7m",
+        "8m",
+        "5p",
+        "5p",
+        "6p",
+        "8p",
+        "8p",
+        "4s",
+        "5s",
+        "5s",
+        "6s",
+        "7s",
+        "9s"
+      ],
+      "draw": "6m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "8m",
+      "melds": [],
+      "correctDiscards": [
+        "9s"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/_l6L0y-mWg4?t=390",
+        "problemSeconds": [
+          390
+        ],
+        "conclusionSeconds": [
+          396
+        ],
+        "reasonSeconds": [
+          408,
+          426
+        ]
+      },
+      "sourceDraw": "6m",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "_l6L0y-mWg4",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 273,
+        "image": "/questions/question-273.png",
+        "images": [
+          "/questions/question-273.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは9s切りなのだ。\n\n5p切りは平和が確定してタンヤオも狙える形、9s切りはタンヤオが確定して平和も狙える形なのだ。今回はタンヤオを確定させる方の打点を大切にするのだ。\n\n鳴いても役あり聴牌にできるのも長所なのだ。門前での受け入れだけでなく、タンヤオで仕掛けられる速さも比べるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=390",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-26T00:00:00Z",
+        "hand": [
+          "7m",
+          "8m",
+          "5p",
+          "5p",
+          "6p",
+          "8p",
+          "8p",
+          "4s",
+          "5s",
+          "5s",
+          "6s",
+          "7s",
+          "9s"
+        ],
+        "draw": "6m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "8m",
+        "melds": [],
+        "correctDiscards": [
+          "9s"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=390",
+          "problemSeconds": [
+            390
+          ],
+          "conclusionSeconds": [
+            396
+          ],
+          "reasonSeconds": [
+            408,
+            426
+          ]
+        },
+        "sourceDraw": "6m",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "_l6L0y-mWg4",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:22.235Z"
+    },
+    {
+      "id": 277,
+      "image": "/questions/question-277.png",
+      "images": [
+        "/questions/question-277.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは8p切りなのだ。\n\n筒子は雀頭を含んだ両面嵌張になっているのだ。5pを雀頭として見ると1p・4p受け、2pを雀頭として見ると3p・5p・7pの両嵌から4p・6p受けが見えるのだ。\n\n合わせて1p・4p・6pを受けられるのだ。雀頭をどこに置くかで見える受け入れが変わるので、分け方を一つに決めつけないのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=650",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "hand": [
+        "3m",
+        "4m",
+        "2p",
+        "2p",
+        "3p",
+        "3p",
+        "4p",
+        "5p",
+        "5p",
+        "7p",
+        "8p",
+        "1s",
+        "3s"
+      ],
+      "draw": "2s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "3s",
+      "melds": [],
+      "correctDiscards": [
+        "8p"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/_l6L0y-mWg4?t=650",
+        "problemSeconds": [
+          650
+        ],
+        "conclusionSeconds": [
+          658
+        ],
+        "reasonSeconds": [
+          660,
+          678,
+          696
+        ]
+      },
+      "sourceDraw": "2s",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "_l6L0y-mWg4",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 277,
+        "image": "/questions/question-277.png",
+        "images": [
+          "/questions/question-277.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは8p切りなのだ。\n\n筒子は雀頭を含んだ両面嵌張になっているのだ。5pを雀頭として見ると1p・4p受け、2pを雀頭として見ると3p・5p・7pの両嵌から4p・6p受けが見えるのだ。\n\n合わせて1p・4p・6pを受けられるのだ。雀頭をどこに置くかで見える受け入れが変わるので、分け方を一つに決めつけないのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=650",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-26T00:00:00Z",
+        "hand": [
+          "3m",
+          "4m",
+          "2p",
+          "2p",
+          "3p",
+          "3p",
+          "4p",
+          "5p",
+          "5p",
+          "7p",
+          "8p",
+          "1s",
+          "3s"
+        ],
+        "draw": "2s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "3s",
+        "melds": [],
+        "correctDiscards": [
+          "8p"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=650",
+          "problemSeconds": [
+            650
+          ],
+          "conclusionSeconds": [
+            658
+          ],
+          "reasonSeconds": [
+            660,
+            678,
+            696
+          ]
+        },
+        "sourceDraw": "2s",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "_l6L0y-mWg4",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:23.800Z"
+    },
+    {
+      "id": 282,
+      "image": "/questions/question-282.png",
+      "images": [
+        "/questions/question-282.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは2s切りなのだ。\n\n両面嵌張が2つあり、どちらを外しても受け入れ枚数は同じなのだ。今回は筒子のカン4p受けを残すのだ。\n\n4pが入ったとき、7pを切ってリーチすればタンヤオを確定できるのだ。6p・9p待ちを最後に残しにくくする工夫なのだ。同じ広さなら、高くなる進行で比べるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=858",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-26T00:00:00Z",
+      "hand": [
+        "5m",
+        "3p",
+        "5p",
+        "6p",
+        "7p",
+        "7p",
+        "8p",
+        "2s",
+        "4s",
+        "5s",
+        "6s",
+        "6s",
+        "7s"
+      ],
+      "draw": "0m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "2z",
+      "melds": [],
+      "correctDiscards": [
+        "2s"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/_l6L0y-mWg4?t=858",
+        "problemSeconds": [
+          858
+        ],
+        "conclusionSeconds": [
+          870
+        ],
+        "reasonSeconds": [
+          876,
+          888,
+          894
+        ]
+      },
+      "sourceDraw": "0m",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "_l6L0y-mWg4",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 282,
+        "image": "/questions/question-282.png",
+        "images": [
+          "/questions/question-282.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは2s切りなのだ。\n\n両面嵌張が2つあり、どちらを外しても受け入れ枚数は同じなのだ。今回は筒子のカン4p受けを残すのだ。\n\n4pが入ったとき、7pを切ってリーチすればタンヤオを確定できるのだ。6p・9p待ちを最後に残しにくくする工夫なのだ。同じ広さなら、高くなる進行で比べるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=858",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-26T00:00:00Z",
+        "hand": [
+          "5m",
+          "3p",
+          "5p",
+          "6p",
+          "7p",
+          "7p",
+          "8p",
+          "2s",
+          "4s",
+          "5s",
+          "6s",
+          "6s",
+          "7s"
+        ],
+        "draw": "0m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "2z",
+        "melds": [],
+        "correctDiscards": [
+          "2s"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/_l6L0y-mWg4?t=858",
+          "problemSeconds": [
+            858
+          ],
+          "conclusionSeconds": [
+            870
+          ],
+          "reasonSeconds": [
+            876,
+            888,
+            894
+          ]
+        },
+        "sourceDraw": "0m",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "_l6L0y-mWg4",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:25.953Z"
+    },
+    {
+      "id": 284,
+      "image": "/questions/question-284.png",
+      "images": [
+        "/questions/question-284.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは3m切りなのだ。\n\n萬子の3m・5mのカンチャンに、6m・7m・7m・8mの中ぶくれがつながっているのだ。3mを余剰牌として見れば6m・9mの両面、6m・7m・8mを面子として抜けば3m・5m・7mのリャンカンで、4mも受けられるのだ。\n\n萬子の4m・6m・9mと、筒子の5p・8pを合わせて5種類19枚なのだ。対子に見える部分を残すことにこだわらず、中ぶくれとカンチャンのつながりを見つけるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=132",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "hand": [
+        "3m",
+        "3m",
+        "5m",
+        "6m",
+        "7m",
+        "7m",
+        "8m",
+        "1p",
+        "1p",
+        "6p",
+        "7p",
+        "7s",
+        "8s"
+      ],
+      "draw": "9s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "1p",
+      "melds": [],
+      "correctDiscards": [
+        "3m"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/ZrjrfUM9890?t=132",
+        "problemSeconds": [
+          132
+        ],
+        "conclusionSeconds": [
+          138
+        ],
+        "reasonSeconds": [
+          144,
+          156
+        ],
+        "revision": 72,
+        "reviewedTimestamps": [
+          138,
+          144,
+          150,
+          156,
+          162
+        ],
+        "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+      },
+      "sourceDraw": "9s",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "ZrjrfUM9890",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 284,
+        "image": "/questions/question-284.png",
+        "images": [
+          "/questions/question-284.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは3m切りなのだ。\n\n萬子の3m・5mのカンチャンに、6m・7m・7m・8mの中ぶくれがつながっているのだ。3mを余剰牌として見れば6m・9mの両面、6m・7m・8mを面子として抜けば3m・5m・7mのリャンカンで、4mも受けられるのだ。\n\n萬子の4m・6m・9mと、筒子の5p・8pを合わせて5種類19枚なのだ。対子に見える部分を残すことにこだわらず、中ぶくれとカンチャンのつながりを見つけるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=132",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-12T00:00:00Z",
+        "hand": [
+          "3m",
+          "3m",
+          "5m",
+          "6m",
+          "7m",
+          "7m",
+          "8m",
+          "1p",
+          "1p",
+          "6p",
+          "7p",
+          "7s",
+          "8s"
+        ],
+        "draw": "9s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "1p",
+        "melds": [],
+        "correctDiscards": [
+          "3m"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/ZrjrfUM9890?t=132",
+          "problemSeconds": [
+            132
+          ],
+          "conclusionSeconds": [
+            138
+          ],
+          "reasonSeconds": [
+            144,
+            156
+          ],
+          "revision": 72,
+          "reviewedTimestamps": [
+            138,
+            144,
+            150,
+            156,
+            162
+          ],
+          "coverage": "確認した動画フレームと牌姿から結論・比較を再構成。待ち・受け入れを独立検算。動画全編の逐語録ではない。"
+        },
+        "sourceDraw": "9s",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "ZrjrfUM9890",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:27.484Z"
+    },
+    {
+      "id": 289,
+      "image": "/questions/question-289.png",
+      "images": [
+        "/questions/question-289.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは2m切りなのだ。\n\n2m・3mの両面を崩すようで選びにくいけれど、3m・5mのカンチャンと6m・7m・7m・8mの中ぶくれをつなげるのだ。\n\n1m受けはなくなっても、4m受けは残るのが大切なのだ。両面の数だけで判断せず、両面嵌張として残る受け入れを数えるのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=322",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "hand": [
+        "2m",
+        "3m",
+        "5m",
+        "6m",
+        "7m",
+        "7m",
+        "8m",
+        "9p",
+        "9p",
+        "3s",
+        "4s",
+        "5s",
+        "5s"
+      ],
+      "draw": "6s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "9p",
+      "melds": [],
+      "correctDiscards": [
+        "2m"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/ZrjrfUM9890?t=322",
+        "problemSeconds": [
+          322
+        ],
+        "conclusionSeconds": [
+          332
+        ],
+        "reasonSeconds": [
+          336,
+          354
+        ]
+      },
+      "sourceDraw": "6s",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "ZrjrfUM9890",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 289,
+        "image": "/questions/question-289.png",
+        "images": [
+          "/questions/question-289.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは2m切りなのだ。\n\n2m・3mの両面を崩すようで選びにくいけれど、3m・5mのカンチャンと6m・7m・7m・8mの中ぶくれをつなげるのだ。\n\n1m受けはなくなっても、4m受けは残るのが大切なのだ。両面の数だけで判断せず、両面嵌張として残る受け入れを数えるのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=322",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-12T00:00:00Z",
+        "hand": [
+          "2m",
+          "3m",
+          "5m",
+          "6m",
+          "7m",
+          "7m",
+          "8m",
+          "9p",
+          "9p",
+          "3s",
+          "4s",
+          "5s",
+          "5s"
+        ],
+        "draw": "6s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "9p",
+        "melds": [],
+        "correctDiscards": [
+          "2m"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/ZrjrfUM9890?t=322",
+          "problemSeconds": [
+            322
+          ],
+          "conclusionSeconds": [
+            332
+          ],
+          "reasonSeconds": [
+            336,
+            354
+          ]
+        },
+        "sourceDraw": "6s",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "ZrjrfUM9890",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:29.031Z"
+    },
+    {
+      "id": 290,
+      "image": "/questions/question-290.png",
+      "images": [
+        "/questions/question-290.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは9m切りなのだ。\n\n9mと9pは、7m・7pを引いたときの形で比べるのだ。9pを切って7mを引くと、萬子はカン8mにしかならないのだ。\n\n9mを切って7pを引けば、筒子には両面嵌張ができるのだ。今の受け入れは少し減っても、次の形の差が大きいので、面子につながる9pを残すのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=378",
+      "sourceLabel": "YouTube動画を開く",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "hand": [
+        "1m",
+        "3m",
+        "9m",
+        "4p",
+        "5p",
+        "5p",
+        "6p",
+        "9p",
+        "3s",
+        "4s",
+        "6s",
+        "2z",
+        "2z"
+      ],
+      "draw": "2m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "2z",
+      "melds": [],
+      "correctDiscards": [
+        "9m"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/ZrjrfUM9890?t=378",
+        "problemSeconds": [
+          378
+        ],
+        "conclusionSeconds": [
+          388
+        ],
+        "reasonSeconds": [
+          390,
+          408,
+          426
+        ]
+      },
+      "sourceDraw": "2m",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "ZrjrfUM9890",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "id": 290,
+        "image": "/questions/question-290.png",
+        "images": [
+          "/questions/question-290.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは9m切りなのだ。\n\n9mと9pは、7m・7pを引いたときの形で比べるのだ。9pを切って7mを引くと、萬子はカン8mにしかならないのだ。\n\n9mを切って7pを引けば、筒子には両面嵌張ができるのだ。今の受け入れは少し減っても、次の形の差が大きいので、面子につながる9pを残すのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=378",
+        "sourceLabel": "YouTube動画を開く",
+        "createdAt": "2022-09-12T00:00:00Z",
+        "hand": [
+          "1m",
+          "3m",
+          "9m",
+          "4p",
+          "5p",
+          "5p",
+          "6p",
+          "9p",
+          "3s",
+          "4s",
+          "6s",
+          "2z",
+          "2z"
+        ],
+        "draw": "2m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "2z",
+        "melds": [],
+        "correctDiscards": [
+          "9m"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/ZrjrfUM9890?t=378",
+          "problemSeconds": [
+            378
+          ],
+          "conclusionSeconds": [
+            388
+          ],
+          "reasonSeconds": [
+            390,
+            408,
+            426
+          ]
+        },
+        "sourceDraw": "2m",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "ZrjrfUM9890",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-11T20:30:30.641Z"
+    },
+    {
+      "id": 295,
+      "image": "/questions/question-295.png",
+      "images": [
+        "/questions/question-295.png"
+      ],
+      "explanation": "",
+      "videoExplanation": "おすすめは4p切りなのだ。\n\n4p切りも8s切りも受け入れ枚数は同じで、平和や一盃口も付かない手なのだ。それでも8sを残すと、8sを重ねたときに9mを落としてタンヤオへ向かえるのだ。\n\nこの1問では小さな差でも、手役が増える変化を毎回確認することが大切なのだ。",
+      "explanationSchemaVersion": 2,
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=750",
+      "sourceLabel": "元動画を開く",
+      "createdAt": "2022-09-12T00:00:00Z",
+      "hand": [
+        "2m",
+        "2m",
+        "2m",
+        "9m",
+        "9m",
+        "4p",
+        "5p",
+        "3s",
+        "4s",
+        "4s",
+        "0s",
+        "6s",
+        "8s"
+      ],
+      "draw": "4p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "1z",
+      "melds": [],
+      "correctDiscards": [
+        "4p"
+      ],
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/ZrjrfUM9890?t=750",
+        "problemSeconds": [
+          750
+        ],
+        "conclusionSeconds": [
+          764
+        ],
+        "reasonSeconds": [
+          768,
+          786
+        ]
+      },
+      "sourceDraw": "4p",
+      "sourceDrawStatus": "verified",
+      "sourcePlaylistMembership": {
+        "videoId": "ZrjrfUM9890",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "kanChoice": false,
+      "correctKan": null,
+      "correctRiichi": null,
+      "reviewed": false,
+      "reviewStatus": "fix",
+      "reviewUpdatedAt": "2026-09-10T17:23:36.408Z",
+      "questionData": {
+        "id": 295,
+        "image": "/questions/question-295.png",
+        "images": [
+          "/questions/question-295.png"
+        ],
+        "explanation": "",
+        "videoExplanation": "おすすめは4p切りなのだ。\n\n4p切りも8s切りも受け入れ枚数は同じで、平和や一盃口も付かない手なのだ。それでも8sを残すと、8sを重ねたときに9mを落としてタンヤオへ向かえるのだ。\n\nこの1問では小さな差でも、手役が増える変化を毎回確認することが大切なのだ。",
+        "explanationSchemaVersion": 2,
+        "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=750",
+        "sourceLabel": "元動画を開く",
+        "createdAt": "2022-09-12T00:00:00Z",
+        "hand": [
+          "2m",
+          "2m",
+          "2m",
+          "9m",
+          "9m",
+          "4p",
+          "5p",
+          "3s",
+          "4s",
+          "4s",
+          "0s",
+          "6s",
+          "8s"
+        ],
+        "draw": "4p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "1z",
+        "melds": [],
+        "correctDiscards": [
+          "4p"
+        ],
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/ZrjrfUM9890?t=750",
+          "problemSeconds": [
+            750
+          ],
+          "conclusionSeconds": [
+            764
+          ],
+          "reasonSeconds": [
+            768,
+            786
+          ]
+        },
+        "sourceDraw": "4p",
+        "sourceDrawStatus": "verified",
+        "sourcePlaylistMembership": {
+          "videoId": "ZrjrfUM9890",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "kanChoice": false,
+        "correctKan": null,
+        "correctRiichi": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-10T17:24:41.569Z"
+    },
+    {
+      "id": 9999,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null
     }
   ]
 }

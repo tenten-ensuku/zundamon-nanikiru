@@ -711,7 +711,8 @@ test("user-verified video corrections are fixed in the calibration set", async (
     }
   }
   assert.deepEqual(calibration.correctionLedger.filter(entry => entry.id).map(entry => entry.id), [169, 170]);
-  assert.equal(calibration.correctionLedger.at(-1).revision, 61);
+  assert.ok(calibration.correctionLedger.some(entry => entry.revision === 61));
+  assert.equal(calibration.correctionLedger.at(-1).revision, 72);
 });
 
 test("every concealed quad offers kan as a standalone answer", async () => {

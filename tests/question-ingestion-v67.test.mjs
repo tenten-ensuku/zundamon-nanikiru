@@ -5,6 +5,7 @@ import { createHash } from "node:crypto";
 import path from "node:path";
 import os from "node:os";
 import { createAppServer } from "../server.mjs";
+import { beforeV72 } from "./helpers/revision-v72.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const read = file => readFile(path.join(root, file), "utf8");
@@ -35,7 +36,7 @@ test("all 167 author explanations and unapproved original fields are unchanged",
     assert.equal(find(author.id).explanation.length, author.length);
   }
   for (const before of preservation.unchangedQuestions) {
-    const current = Object.fromEntries(Object.entries(find(before.id)).filter(([key]) => !preservation.allowedExistingFields.includes(key) && key !== "sourcePlaylistMembership"));
+    const current = Object.fromEntries(Object.entries(beforeV72(find(before.id))).filter(([key]) => !preservation.allowedExistingFields.includes(key) && key !== "sourcePlaylistMembership"));
     assert.equal(hash(JSON.stringify(current)), before.sha256, `protected fields ${before.id}`);
   }
 });
@@ -46,7 +47,7 @@ test("22 verified summaries are separate from authors and source mappings requir
   const pending = [];
   for (const item of ledger.existingSummaries) {
     const q = find(item.id);
-    assert.equal(hash(q.videoExplanation), item.videoExplanationSha256);
+    assert.equal(hash(beforeV72(q).videoExplanation), item.videoExplanationSha256);
     assert.equal(q.explanationSchemaVersion, 2);
     if (item.mappingApproved) {
       assert.equal(q.sourceUrl, item.sourceUrl);
@@ -69,10 +70,10 @@ test("new hands, source frames, decisions and summaries match the reviewed evide
   const distinct = new Set();
   for (const item of ledger.added) {
     const q = find(item.id);
-    for (const key of keys) assert.deepEqual(q[key], item[key], `${q.id}.${key}`);
+    for (const key of keys) assert.deepEqual(beforeV72(q)[key], item[key], `v67 history ${q.id}.${key}`);
     assert.equal(q.riichiChoice === true, item.riichiChoice);
     assert.equal(q.correctRiichi ?? null, item.correctRiichi);
-    assert.equal(hash(q.videoExplanation), item.videoExplanationSha256);
+    assert.equal(hash(beforeV72(q).videoExplanation), item.videoExplanationSha256);
     assert.equal(q.explanation, "");
     assert.equal(q.status, "unreviewed");
     const bytes = await readFile(path.join(root, "public", q.image));
@@ -98,11 +99,14 @@ test("new hands, source frames, decisions and summaries match the reviewed evide
 });
 
 test("source-specific red fives and different riichi conditions remain distinct", () => {
-  for (const videoId of ["uv64jtVse3A", "jeFp4uYWGOE", "HjvGKaZEEOI"]) {
+  for (const videoId of ["uv64jtVse3A", "HjvGKaZEEOI"]) {
     const q = find(ledger.added.find(item => item.videoId === videoId).id);
     assert.ok([...q.hand, q.draw].includes("5s"));
     assert.ok(![...q.hand, q.draw].includes("0s"));
   }
+  assert.ok(find(217).hand.includes("0s"), "source jeFp4uYWGOE uses red 5s");
+  assert.ok(find(217).hand.includes("7s"));
+  assert.ok(!find(217).hand.includes("9s"));
   const decisions = ledger.added.filter(item => item.videoId === "YmpDPeQ7bDM").map(item => find(item.id));
   assert.equal(decisions.length, 2);
   assert.deepEqual(decisions.map(q => q.correctRiichi), [true, false]);

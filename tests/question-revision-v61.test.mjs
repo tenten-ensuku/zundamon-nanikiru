@@ -41,5 +41,7 @@ test("kan-only answers are graded and non-kan or incorrect riichi answers are re
   assert.deepEqual(grade(byId(78), { tile: "2p" }), { graded: true, correct: true });
   assert.deepEqual(grade(byId(136), { tile: "9s", riichi: true }), { graded: true, correct: true });
   assert.deepEqual(grade(byId(136), { tile: "9s", riichi: false }), { graded: true, correct: false });
-  assert.deepEqual(grade(byId(165), { tile: "9s" }), { graded: false, correct: null });
+  assert.deepEqual(grade({ ...byId(165), correctDiscards: [] }, { tile: "9s" }), { graded: false, correct: null });
+  assert.deepEqual(grade(byId(165), { tile: "2p" }), { graded: true, correct: true });
+  assert.deepEqual(grade(byId(165), { tile: "9s" }), { graded: true, correct: false });
 });
