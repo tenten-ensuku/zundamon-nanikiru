@@ -68,8 +68,9 @@ test("v60/v61 preserve current author text and every unapproved field against im
     assert.equal(after.explanation, expectedAuthor, `author ${before.id}`);
     const patch = corrections.imageCorrections[before.id] || {};
     if (!patch.hand && !patch.replaceTiles) assert.deepEqual([...after.hand, ...(after.draw ? [after.draw] : [])].sort(), [...before.hand, ...(before.draw ? [before.draw] : [])].sort(), `inventory ${before.id}`);
-    for (const key of new Set([...Object.keys(before), ...Object.keys(after)])) {
-      if (!changedFields.has(key) && key !== "sourcePlaylistMembership" && !(key in patch)) assert.deepEqual(after[key], before[key], `${before.id}.${key}`);
+    const historical = beforeV72(after);
+    for (const key of new Set([...Object.keys(before), ...Object.keys(historical)])) {
+      if (!changedFields.has(key) && key !== "sourcePlaylistMembership" && !(key in patch)) assert.deepEqual(historical[key], before[key], `${before.id}.${key}`);
     }
     assert.equal(after.note, patch.note ?? (after.draw && typeof before.note === "string" ? before.note.replace(/（ツモ牌は手牌へ統合）/g, "") : before.note));
   }

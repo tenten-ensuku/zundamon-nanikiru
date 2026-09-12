@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://zundamon-question-api.naga-study.workers.dev",
-  "cursor": 184,
+  "cursor": 185,
   "rows": [
     {
       "id": 1,
@@ -525,7 +525,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "2mを切るのがおすすめなのだ。萬子の両面対子だけでなく、筒子にも両面を補強する牌があるから、2mと2pを比べる問題なのだ。\n\n筒子を残すと、3pを引いたときに一盃口を狙えるのだ。受け入れを狭めずに打点が上がる変化を残せるので、2mを切って筒子の形を大事にしたいのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309943498140549190",
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619723+00",
+      "overrideUpdatedAt": "2026-09-12T04:58:52.815Z",
       "videoCorrectDiscards": [
         "2m"
       ],
@@ -540,6 +540,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 4,
@@ -614,7 +615,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       }
     },
     {

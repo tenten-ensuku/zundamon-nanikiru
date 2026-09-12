@@ -98,3 +98,27 @@ test("validation, request limits, throttling and database failure reject without
     const failure=await h.request("/overrides/1");assert.equal(failure.status,503);assert.doesNotMatch(await failure.text(),/private SQL/);
   }finally{h.sqlite.close();}
 });
+
+test("difficulty-only D1 edits preserve both speakers, answers, shapes and independent review stamps", async () => {
+  const h=harness();try {
+    const saved=await h.request('/questions/1','PUT',{question:fixture,expectedUpdatedAt:null}).then(r=>r.json());
+    const review=await h.request('/questions/1','PATCH',{reviewStatus:'complete',expectedReviewUpdatedAt:null}).then(r=>r.json());
+    const r=await h.request('/questions/1/difficulty','PATCH',{difficulty:'advanced',expectedUpdatedAt:saved.overrideUpdatedAt});assert.equal(r.status,200);
+    const changed=await r.json();const row=await h.request('/overrides/1').then(r=>r.json());
+    assert.equal(row.difficulty,'advanced');assert.equal(row.reviewUpdatedAt,review.reviewUpdatedAt);
+    for(const key of Object.keys(fixture))assert.deepEqual(row.questionData[key],fixture[key],key);
+    assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty:'beginner',expectedUpdatedAt:saved.overrideUpdatedAt})).status,409);
+    for(const difficulty of [null,'','expert',[],{}])assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty,expectedUpdatedAt:changed.overrideUpdatedAt})).status,400);
+    for(const mode of ['closed','password']){h.env.QUESTION_EDIT_MODE=mode;assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty:'beginner',expectedUpdatedAt:changed.overrideUpdatedAt})).status,mode==='closed'?403:401);}
+    h.env.QUESTION_EDIT_MODE='open';
+    assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty:'beginner',expectedUpdatedAt:changed.overrideUpdatedAt},{Origin:'https://other.example'})).status,403);
+    // No existing full override: only difficulty must be returned to clients.
+    assert.equal((await h.request('/questions/2/difficulty','PATCH',{difficulty:'intermediate',expectedUpdatedAt:null})).status,200);
+    let partial=await h.request('/overrides/2').then(r=>r.json());
+    assert.deepEqual(partial.questionData,{difficulty:'intermediate'});assert.equal('explanation' in partial,false);assert.equal('correctDiscards' in partial,false);
+    await h.request('/questions/2/explanation','PATCH',{changes:{videoExplanation:'new'},expectedUpdatedAt:partial.overrideUpdatedAt});
+    partial=await h.request('/overrides/2').then(r=>r.json());assert.deepEqual(partial.questionData,{videoExplanation:'new',difficulty:'intermediate'});
+    const delta=await h.request('/sync?since=0').then(r=>r.json());assert.equal(delta.rows.find(row=>row.id===2).questionData.difficulty,'intermediate');
+    assert.equal(validQuestion({...fixture,difficulty:'impossible'},1),null);
+  }finally{h.sqlite.close();}
+});

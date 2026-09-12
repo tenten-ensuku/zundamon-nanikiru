@@ -3,6 +3,7 @@ import { createServer } from "node:http";
 import { readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { validDifficulty, validStamp } from "./cloudflare/worker-model.mjs";
 import { resolveEditMode, editAccess } from "./supabase/functions/zundamon-question-admin/edit-policy.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -115,6 +116,7 @@ function listOverrides(overrides) {
 
 function normalizeStructuredQuestion(value, id) {
   if (!value || typeof value !== "object" || Number(value.id) !== id || id < 1 || id > MAX_QUESTION_ID) return null;
+  if (Object.hasOwn(value, "difficulty") && !validDifficulty(value.difficulty)) return null;
   const hand = Array.isArray(value.hand) ? value.hand.filter((code) => TILE_CODE.test(code)) : [];
   if (value.draw != null && !TILE_CODE.test(value.draw)) return null;
   const draw = value.draw || null;
@@ -152,6 +154,7 @@ function normalizeStructuredQuestion(value, id) {
     && membership.playlistIds.every(playlistId => ["PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv", "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"].includes(playlistId));
   return {
     id, image: typeof value.image === "string" ? value.image.trim() : "", images: Array.isArray(value.images) ? value.images.filter((image) => typeof image === "string") : [],
+    ...(validDifficulty(value.difficulty) ? { difficulty: value.difficulty } : {}),
     explanation, ...(typeof value.videoExplanation === "string" ? { videoExplanation, explanationSchemaVersion: 2 } : {}), sourceUrl, sourceLabel: sourceUrl ? "元動画を開く" : "",
     createdAt: typeof value.createdAt === "string" ? value.createdAt : new Date().toISOString(), hand, draw, status: value.status === "reviewed" ? "reviewed" : "unreviewed",
     meldCount: melds.length, round: value.round === null ? null : /^(east|south|west|north)\d+$/.test(value.round || "") ? value.round : "east1", seat: value.seat === null ? null : ["east", "south", "west", "north"].includes(value.seat) ? value.seat : "west",
@@ -331,10 +334,11 @@ export function createAppServer(options = {}) {
         return;
       }
 
-      const adminMatch = /^\/api\/admin\/questions\/(\d+)(\/explanation)?$/.exec(pathname);
-      const isExplanationEdit = Boolean(adminMatch?.[2]) && request.method === "PATCH";
+      const adminMatch = /^\/api\/admin\/questions\/(\d+)(\/(?:explanation|difficulty))?$/.exec(pathname);
+      const isExplanationEdit = adminMatch?.[2] === "/explanation" && request.method === "PATCH";
+      const isDifficultyEdit = adminMatch?.[2] === "/difficulty" && request.method === "PATCH";
       const isCreate = request.method === "POST" && pathname === "/api/admin/questions";
-      if ((adminMatch && (!adminMatch[2] || isExplanationEdit) && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
+      if ((adminMatch && (!adminMatch[2] || isExplanationEdit || isDifficultyEdit) && (request.method === "PUT" || request.method === "PATCH" || request.method === "DELETE")) || isCreate) {
         // Serialize the complete read/modify/write transaction, not just the final write.
         const mutate = async () => {
         if (getEditMode() === "closed") {
@@ -375,6 +379,18 @@ export function createAppServer(options = {}) {
           }
         } else if (request.method === "PATCH") {
           const body = await readRequestJson(request);
+          if (isDifficultyEdit) {
+            if (!validDifficulty(body.difficulty) || !Object.hasOwn(body, "expectedUpdatedAt") || !validStamp(body.expectedUpdatedAt)) {
+              sendJson(response, 400, { error: "難易度と更新日時を確認してください。" }, origin); return;
+            }
+            if ((existing.updatedAt || null) !== body.expectedUpdatedAt) {
+              sendJson(response, 409, { error: "他の編集が先に保存されています。" }, origin); return;
+            }
+            const updatedAt = new Date(Math.max(Date.now(), (Date.parse(existing.updatedAt) || 0) + 1)).toISOString();
+            overrides[key] = { ...existing, questionData: { ...(existing.questionData || {}), difficulty: body.difficulty }, updatedAt };
+            await writeJsonAtomic(overridesPath, overrides);
+            sendJson(response, 200, { id: questionId, difficulty: body.difficulty, overrideUpdatedAt: updatedAt }, origin); return;
+          }
           if (isExplanationEdit) {
             const entries = body?.changes && typeof body.changes === "object" && !Array.isArray(body.changes) ? Object.entries(body.changes) : [];
             if (!entries.length || entries.some(([field, value]) => !["explanation", "videoExplanation"].includes(field) || typeof value !== "string" || value.length > MAX_EXPLANATION_LENGTH)

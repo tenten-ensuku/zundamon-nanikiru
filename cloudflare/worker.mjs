@@ -1,4 +1,4 @@
-import { publicRow, validQuestion, validId, validStamp, isObject, MAX_TEXT } from "./worker-model.mjs";
+import { publicRow, validQuestion, validId, validStamp, validDifficulty, isObject, MAX_TEXT } from "./worker-model.mjs";
 import BASE_IDS from "./base-question-ids.json" with { type: "json" };
 const baseIds = new Set(BASE_IDS);
 const joinColumns = `i.question_id,o.correct_discards,o.explanation,o.question_data,o.updated_at,r.review_status,r.updated_at AS review_updated_at`;
@@ -58,7 +58,7 @@ export default { async fetch(request,env,ctx={}) {
   try {
     const ip=request.headers.get("CF-Connecting-IP")||"unknown";
     if(env.EDGE_LIMIT&&!((await env.EDGE_LIMIT.limit({key:ip})).success))return json(429,{error:"アクセスが多いため、少し待ってください。"},{"Retry-After":"60"});
-    if(request.method==="GET"&&url.pathname==="/health")return json(200,{ok:true,app:"zundamon-nanikiru",version:70,storage:"d1"});
+    if(request.method==="GET"&&url.pathname==="/health")return json(200,{ok:true,app:"zundamon-nanikiru",version:73,storage:"d1"});
     if(request.method==="GET"&&url.pathname==="/access")return json(200,{mode:modeOf(env),requiresPassword:modeOf(env)==="password",canEdit:modeOf(env)==="open"});
     if(request.method==="POST"&&url.pathname==="/login"){
       if(env.WRITE_LIMIT&&!((await env.WRITE_LIMIT.limit({key:ip})).success))return json(429,{error:"少し待ってから操作してください。"},{"Retry-After":"60"});
@@ -85,7 +85,7 @@ export default { async fetch(request,env,ctx={}) {
     }
     const readMatch=/^\/overrides\/([0-9]+)$/.exec(url.pathname);
     if(request.method==="GET"&&readMatch){const id=Number(readMatch[1]);if(!validId(id))throw fail(404,"問題が見つかりません。");return json(200,publicRow(await currentRow(db,id)));}
-    const match=/^\/questions\/([0-9]+)(\/explanation)?$/.exec(url.pathname);
+    const match=/^\/questions\/([0-9]+)(\/(?:explanation|difficulty))?$/.exec(url.pathname);
     const create=request.method==="POST"&&url.pathname==="/questions";
     if(!create&&(!match||!["PUT","PATCH","DELETE"].includes(request.method)||(match[2]&&request.method!=="PATCH")))throw fail(404,"APIが見つかりません。");
     await writeAuth(request,env);
@@ -121,6 +121,13 @@ export default { async fetch(request,env,ctx={}) {
     }
     const stamp=timestamp(existing?.updated_at);
     let row;
+    if(match?.[2]==="/difficulty"){
+      if(!validDifficulty(body.difficulty))throw fail(400,"難易度は初級・中級・中級～上級から選択してください。");
+      const data=existing?.question_data?JSON.parse(existing.question_data):{explanationOnly:true};
+      row={question_id:id,correct_discards:existing?.correct_discards||"[]",explanation:existing?.explanation||"",question_data:JSON.stringify({...data,difficulty:body.difficulty}),updated_at:stamp};
+      await saveOverride(db,row,existing?.updated_at||null);
+      return json(200,{id,difficulty:body.difficulty,overrideUpdatedAt:stamp});
+    }
     if(match?.[2]){
       const entries=isObject(body.changes)?Object.entries(body.changes):[];
       if(!entries.length||entries.some(([key,value])=>!["explanation","videoExplanation"].includes(key)||typeof value!=="string"||value.length>MAX_TEXT))throw fail(400,"解説は各20,000文字以内で入力してください。");

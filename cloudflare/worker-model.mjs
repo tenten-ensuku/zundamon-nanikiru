@@ -1,5 +1,6 @@
 export const TILE_CODE = /^(?:[1-9][mps]|[1-7]z|0[mps])$/;
 export const MAX_TEXT = 20000;
+export const validDifficulty = value => ["beginner", "intermediate", "advanced"].includes(value);
 export const isObject = value => value !== null && typeof value === "object" && !Array.isArray(value);
 export const validId = id => Number.isInteger(id) && id > 0 && id <= 9999;
 export const validStamp = value => value === null || (typeof value === "string" && value.length < 60 && Number.isFinite(Date.parse(value)));
@@ -11,7 +12,7 @@ export function publicRow(row) {
   if (row.updated_at) {
     const data = typeof row.question_data === "string" ? JSON.parse(row.question_data) : row.question_data || {};
     if (data.explanationOnly === true) {
-      const texts = Object.fromEntries(["explanation", "videoExplanation"].filter(key => typeof data[key] === "string").map(key => [key, data[key]]));
+      const texts = Object.fromEntries(["explanation", "videoExplanation", "difficulty"].filter(key => typeof data[key] === "string").map(key => [key, data[key]]));
       item = { ...item, questionData: texts, ...(typeof texts.explanation === "string" ? { explanation: texts.explanation } : {}) };
     } else {
       item = { ...data, ...item, correctDiscards: typeof row.correct_discards === "string" ? JSON.parse(row.correct_discards) : row.correct_discards, explanation: row.explanation, questionData: data };
@@ -23,6 +24,7 @@ export function publicRow(row) {
 }
 export function validQuestion(value, id) {
   if (!isObject(value) || value.id !== id || !validId(id)) return null;
+  if (Object.hasOwn(value, "difficulty") && !validDifficulty(value.difficulty)) return null;
   if (!Array.isArray(value.hand) || !value.hand.length || value.hand.some(code => typeof code !== "string" || !TILE_CODE.test(code))) return null;
   if (value.draw != null && (typeof value.draw !== "string" || !TILE_CODE.test(value.draw))) return null;
   const draw = value.draw ?? null, hand = value.hand;

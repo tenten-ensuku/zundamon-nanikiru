@@ -328,9 +328,9 @@ test("admin and play share three-state review checkboxes", async () => {
   assert.match(source, /確認完了 \$\{reviewed\}問/);
 });
 
-test("client has one continuous beginner question set without an ura mode", async () => {
+test("client provides difficulty-based challenges without an ura mode", async () => {
   const source = await readFile(path.resolve("index.html"), "utf8");
-  for (const label of ["初級編", "復習", "問題一覧", "自己分析", "順位", "設定"]) {
+  for (const label of ["挑戦", "復習", "問題一覧", "自己分析", "順位", "設定"]) {
     assert.match(source, new RegExp(label));
   }
   assert.match(source, /class="menu-admin-entry" href="admin\.html">管理画面<\/a>/);
@@ -338,7 +338,8 @@ test("client has one continuous beginner question set without an ura mode", asyn
   assert.match(source, /playAdminEntry"\)\.href = `admin\.html\?question=\$\{encodeURIComponent\(question\.id\)\}`/);
   assert.match(source, /data-start-mode="ten"/);
   assert.match(source, /data-start-mode="all"/);
-  assert.doesNotMatch(source, /中級編|intermediate|questionCourse|courseQuestions/);
+  assert.match(source, /difficultyOptions\(state.settings.difficulty\)/);
+  assert.match(source, /filterByDifficulty\(questions, difficulty\)/);
   assert.doesNotMatch(source, /出題タイプを選んですぐ開始できます/);
   assert.match(source, /id="homeButton"[^>]*>メニュー</);
   assert.doesNotMatch(source, /裏モード/);

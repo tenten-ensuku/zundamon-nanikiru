@@ -221,6 +221,12 @@
     }
     .editor-actions { margin-top: 11px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .save, .restore { min-height: 44px; border-radius: 7px; }
+    .difficulty-field { margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid rgba(242,210,123,.2); }
+    .difficulty-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .difficulty-row select, #difficultyFilter { min-height: 44px; max-width: 100%; padding: 8px; border: 1px solid rgba(242,210,123,.35); border-radius: 7px; color: var(--ink); background: #0a211c; font: inherit; }
+    .difficulty-save { min-height: 44px; padding: 8px 14px; border: 1px solid var(--gold-light); border-radius: 7px; background: #51331a; cursor: pointer; }
+    .difficulty-save:disabled { opacity: .5; cursor: default; }
+    .difficulty-filter-row { display: flex; gap: 10px; align-items: center; margin-top: 12px; }
     .save { border: 1px solid #efad5e; background: linear-gradient(#cf7434, #8b3d16); }
     .restore { border: 1px solid rgba(255,255,255,.18); background: rgba(0,0,0,.3); }
     .restore:disabled { opacity: .3; cursor: default; }
@@ -269,19 +275,20 @@
         <button class="add-question" id="addQuestion" type="button">＋追加</button>
         <button class="logout" id="logout" type="button">終了</button>
       </div>
+      <label class="difficulty-filter-row">難易度<select id="difficultyFilter"><option value="all">すべて</option></select></label>
       <p class="summary-line" id="summaryLine"></p>
       <div class="question-list" id="questionList"></div>
     </section>
   </main>
 
-  <link rel="stylesheet" href="question-review.css?v=72">
-  <script src="config.js?v=72"></script>
-  <script src="question-metadata.js?v=72"></script>
-  <script src="question-review.js?v=72"></script>
-  <script src="shared-data.js?v=72"></script>
+  <link rel="stylesheet" href="question-review.css?v=73">
+  <script src="config.js?v=73"></script>
+  <script src="question-metadata.js?v=73"></script>
+  <script src="question-review.js?v=73"></script>
+  <script src="shared-data.js?v=73"></script>
   <script>
     "use strict";
-    const { previewAudienceLabel } = window.ZUNDAMON_QUESTION_METADATA;
+    const { DIFFICULTIES, questionDifficulty, difficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
     const SUIT_NAMES = { m: "萬", p: "筒", s: "索" };
     const HONOR_NAMES = { 1: "東", 2: "南", 3: "西", 4: "北", 5: "白", 6: "發", 7: "中" };
     const WIND_NAMES = { east: "東", south: "南", west: "西", north: "北" };
@@ -457,6 +464,9 @@
     });
 
     document.getElementById("search").addEventListener("input", renderList);
+    const difficultyFilter = document.getElementById("difficultyFilter");
+    DIFFICULTIES.forEach(item => difficultyFilter.add(new Option(item.label, item.id)));
+    difficultyFilter.addEventListener("change", renderList);
     document.getElementById("logout").addEventListener("click", () => {
       adminPassword = "";
       document.getElementById("password").value = "";
@@ -465,6 +475,7 @@
     document.getElementById("addQuestion").addEventListener("click", () => {
       const id = Math.max(0, ...questions.map(question => Number(question.id) || 0)) + 1;
       questions.push({ id, image: "", images: [], explanation: "", sourceUrl: "", sourceLabel: "YouTube動画を開く", createdAt: new Date().toISOString(), hand: [], draw: null, status: "unreviewed", meldCount: 0, round: "east1", seat: "west", turn: 6, honba: 0, points: 25000, dora: "1m", melds: [], correctDiscards: [], isNew: true });
+      questions.at(-1).difficulty = difficultyFilter.value === "all" ? "beginner" : difficultyFilter.value;
       document.getElementById("search").value = String(id);
       renderList();
       const details = document.querySelector(".question-list details");
@@ -477,7 +488,7 @@
         question.id,
         question.explanation,
         question.videoExplanation,
-        previewAudienceLabel(question),
+        difficultyLabel(question),
         ...(question.correctDiscards || []),
         ...(question.correctDiscards || []).map(tileName),
       ].join(" ").toLowerCase();
@@ -486,7 +497,7 @@
 
     function renderList() {
       const query = document.getElementById("search").value.trim();
-      const filtered = questions.filter(question => matches(question, query));
+      const filtered = filterByDifficulty(questions, difficultyFilter.value).filter(question => matches(question, query));
       const list = document.getElementById("questionList");
       list.innerHTML = "";
       updateSummaryLine(filtered.length);
@@ -510,7 +521,7 @@
             <span class="answer-state ${question.overridden ? "override" : question.correctDiscards?.length || question.correctKan === true ? "" : "unset"}">${answerText}${question.overridden ? "　編集済み" : ""}</span>
           </summary>
           <div class="editor"></div>`;
-        const audienceLabel = previewAudienceLabel(question);
+        const audienceLabel = difficultyLabel(question);
         if (audienceLabel) {
           const badge = document.createElement("span");
           badge.className = "audience-badge";
@@ -557,6 +568,12 @@
       let target = null;
       const allTiles = [...Array.from({ length: 9 }, (_, index) => `${index + 1}m`), "0m", ...Array.from({ length: 9 }, (_, index) => `${index + 1}p`), "0p", ...Array.from({ length: 9 }, (_, index) => `${index + 1}s`), "0s", ...Array.from({ length: 7 }, (_, index) => `${index + 1}z`)];
       editor.innerHTML = `
+        <div class="difficulty-field">
+          <label for="difficulty-${question.id}">難易度</label>
+          <div class="difficulty-row"><select class="difficulty-input" id="difficulty-${question.id}">${DIFFICULTIES.map(item => `<option value="${item.id}">${item.label}</option>`).join("")}</select><button class="difficulty-save" type="button" ${question.isNew ? "hidden" : ""}>分類を保存</button></div>
+          <p class="hint">分類だけを保存できます。初級・中級の初期分類は仮分類です。</p>
+          <p class="difficulty-message item-message" role="status"></p>
+        </div>
         <p class="field-title">牌姿</p><p class="hint">牌を選ぶと金枠になります。下の牌を押すと差し替え、未選択なら手牌へ追加します。</p>
         <div class="tile-editor-row hand-row"></div><div class="tile-controls"><button type="button" class="delete-selected">選択牌を削除</button><button type="button" class="clear-hand">手牌を全消去</button></div>
         <p class="field-title">ツモ牌（原本で明示されている場合のみ）</p><div class="tile-editor-row draw-row"></div>
@@ -591,6 +608,28 @@
         </div>
         <p class="item-message" aria-live="polite"></p>`;
       const tiles = editor.querySelector(".answer-tiles");
+      const difficultyInput = editor.querySelector(".difficulty-input");
+      const difficultySave = editor.querySelector(".difficulty-save");
+      const difficultyMessage = editor.querySelector(".difficulty-message");
+      difficultyInput.value = questionDifficulty(question);
+      difficultySave.disabled = true;
+      let saveBusy = false;
+      difficultyInput.addEventListener("change", () => { draft.difficulty = difficultyInput.value; difficultySave.disabled = saveBusy || difficultyInput.value === questionDifficulty(question); });
+      difficultySave.addEventListener("click", async () => {
+        if (saveBusy) return;
+        saveBusy = true; difficultySave.disabled = true; difficultyInput.disabled = true;
+        editor.querySelector(".save").disabled = true; editor.querySelector(".restore").disabled = true;
+        difficultyMessage.textContent = "分類を保存しています…";
+        try {
+          const saved = await api(`/api/admin/questions/${question.id}/difficulty`, { method: "PATCH", admin: true, body: JSON.stringify({ difficulty: difficultyInput.value, expectedUpdatedAt: question.overrideUpdatedAt || null }) });
+          Object.assign(question, saved, { overridden: true });
+          draft.difficulty = saved.difficulty;
+          draft.overrideUpdatedAt = saved.overrideUpdatedAt;
+          updateSummary(details, question);
+          difficultyMessage.textContent = "分類を保存しました。解説・牌姿・確認マークは変更していません。";
+        } catch (error) { difficultyMessage.textContent = error.message; }
+        finally { saveBusy = false; difficultyInput.disabled = false; difficultySave.disabled = difficultyInput.value === questionDifficulty(question); editor.querySelector(".save").disabled = false; editor.querySelector(".restore").disabled = !question.overridden; }
+      });
       const textarea = editor.querySelector("#explanationText");
       const videoTextarea = editor.querySelector("#videoExplanationText");
       const sourceUrlInput = editor.querySelector("#sourceUrl");
@@ -601,7 +640,7 @@
         riichiAnswerInput.value = typeof draft.correctRiichi === "boolean" ? String(draft.correctRiichi) : "";
       };
       restoreDecisionInputs();
-      const itemMessage = editor.querySelector(".item-message");
+      const itemMessage = editor.querySelector(".editor-actions + .item-message");
       const marker = String(draft.explanation || "").indexOf("【動画要約】");
       textarea.value = marker < 0 ? draft.explanation || "" : draft.explanation.slice(0, marker).replace(/\n+$/, "");
       videoTextarea.value = typeof draft.videoExplanation === "string" ? draft.videoExplanation : marker < 0 ? "" : draft.explanation.slice(marker + "【動画要約】".length).trim();
@@ -704,9 +743,13 @@
       redrawTiles();
 
       editor.querySelector(".save").addEventListener("click", async () => {
+        if (saveBusy) return;
+        saveBusy = true; difficultySave.disabled = true; difficultyInput.disabled = true;
+        editor.querySelector(".save").disabled = true; editor.querySelector(".restore").disabled = true;
         itemMessage.className = "item-message";
         itemMessage.textContent = "保存しています…";
         try {
+          draft.difficulty = difficultyInput.value;
           draft.explanation = textarea.value;
           draft.videoExplanation = videoTextarea.value;
           draft.explanationSchemaVersion = 2;
@@ -731,6 +774,7 @@
           delete updated.isNew;
           Object.assign(question, updated);
           delete question.isNew;
+          difficultySave.hidden = false;
           questions = questions.map(item => item.id === question.id ? question : item).sort((a, b) => a.id - b.id);
           attachReviewControl(details, question);
           editor.querySelector(".restore").disabled = false;
@@ -739,7 +783,7 @@
           updateSummary(details, question);
         } catch (error) {
           itemMessage.textContent = error.message;
-        }
+        } finally { saveBusy = false; difficultyInput.disabled = false; difficultySave.disabled = difficultyInput.value === questionDifficulty(question); editor.querySelector(".save").disabled = false; editor.querySelector(".restore").disabled = !question.overridden; }
       });
 
       const restoreButton = editor.querySelector(".restore");
@@ -785,6 +829,9 @@
           textarea.value = restored.explanation || "";
           videoTextarea.value = restored.videoExplanation || "";
           sourceUrlInput.value = restored.sourceUrl || "";
+          difficultyInput.value = questionDifficulty(restored);
+          difficultySave.disabled = true;
+          difficultyMessage.textContent = "";
           restoreDecisionInputs();
           redrawStructure();
           redrawTiles();
@@ -799,6 +846,7 @@
     }
 
     function updateSummary(details, question) {
+      details.querySelector(".audience-badge").textContent = difficultyLabel(question);
       const state = details.querySelector(".answer-state");
       const answerText = question.correctKan === true ? "カン！" : question.correctDiscards?.length ? question.correctDiscards.map(tileName).join("・") : "正解未設定";
       state.className = `answer-state ${question.overridden ? "override" : question.correctDiscards?.length || question.correctKan === true ? "" : "unset"}`;

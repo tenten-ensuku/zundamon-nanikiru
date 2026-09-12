@@ -758,6 +758,13 @@
     }
 
     .course-card h2 { margin: 0 0 10px; }
+    .difficulty-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin: 12px 0 16px; }
+    .difficulty-options.with-all { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .difficulty-choice { min-height: 54px; padding: 7px 2px; border: 1px solid rgba(242,210,123,.28); border-radius: 9px; color: var(--ink); background: #091e19; font-size: 13px; cursor: pointer; }
+    .difficulty-choice small { display: block; margin-top: 3px; font-size: 10px; opacity: .8; }
+    .difficulty-choice[aria-pressed="true"] { color: #251607; border-color: var(--gold-light); background: linear-gradient(#f2d27b, #ad782e); box-shadow: 0 2px 0 #54360e; }
+    .difficulty-choice:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; }
+    .difficulty-options.with-all .difficulty-choice { font-size: 11px; }
 
     .mode-grid { display: grid; gap: 10px; }
 
@@ -1052,20 +1059,20 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <link rel="stylesheet" href="question-review.css?v=72">
-  <link rel="stylesheet" href="answer-feedback.css?v=72">
-  <script src="config.js?v=72"></script>
-  <script src="question-metadata.js?v=72"></script>
-  <script src="question-review.js?v=72"></script>
-  <script src="shared-data.js?v=72"></script>
-  <script src="answer-feedback.js?v=72"></script>
+  <link rel="stylesheet" href="question-review.css?v=73">
+  <link rel="stylesheet" href="answer-feedback.css?v=73">
+  <script src="config.js?v=73"></script>
+  <script src="question-metadata.js?v=73"></script>
+  <script src="question-review.js?v=73"></script>
+  <script src="shared-data.js?v=73"></script>
+  <script src="answer-feedback.js?v=73"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 72;
-    const { previewAudienceLabel } = window.ZUNDAMON_QUESTION_METADATA;
+    const APP_VERSION = 73;
+    const { DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
     const LEGACY_STORAGE_KEY = "zundamon-nanikiru-state-v2";
@@ -1084,6 +1091,8 @@
     let currentScreen = "menu";
     let activeTab = "challenge";
     let problemSort = "default";
+    let problemDifficulty = "all";
+    let rankingDifficulty = "all";
     let rankingMode = "ten";
     let lastResult = null;
     let bundledQuestions = [];
@@ -1150,7 +1159,7 @@
         favoriteIds: [],
         questionStats: {},
         results: [],
-        settings: { nickname: "", soundVolume: ZundamonAnswerFeedback.DEFAULT_VOLUME },
+        settings: { nickname: "", soundVolume: ZundamonAnswerFeedback.DEFAULT_VOLUME, difficulty: "beginner" },
         session: null,
       };
     }
@@ -1173,6 +1182,7 @@
         session: source.session && typeof source.session === "object" ? source.session : null,
       };
       normalized.settings.soundVolume = ZundamonAnswerFeedback.normalizeVolume(normalized.settings.soundVolume);
+      normalized.settings.difficulty = isDifficulty(normalized.settings.difficulty) ? normalized.settings.difficulty : "beginner";
       if (normalized.session) {
         normalized.session.ids = Array.isArray(normalized.session.ids)
           ? normalized.session.ids.map(Number).filter(Number.isFinite)
@@ -1446,7 +1456,7 @@
       setScreen("menu");
       app.className = "app menu-app";
       const tabs = [
-        ["challenge", "⚡", "初級編"],
+        ["challenge", "⚡", "挑戦"],
         ["review", "↻", "復習"],
         ["problems", "▤", "問題一覧"],
         ["analysis", "↗", "自己分析"],
@@ -1490,7 +1500,8 @@
     }
 
     function renderChallengePanel(panel) {
-      const answered = Object.keys(state.responses).length;
+      const items = filterByDifficulty(questions, state.settings.difficulty);
+      const answered = items.filter(q => state.responses[String(q.id)]).length;
       const activeSession = state.session && state.session.mode !== "single" ? state.session : null;
       const createModeButtons = (items) => `
         <div class="mode-grid">
@@ -1504,24 +1515,35 @@
       panel.innerHTML = `
         <section class="menu-panel">
           <section class="course-card">
-            <h2>初級編</h2>
-            ${createModeButtons(questions)}
+            <h2>難易度を選択</h2>
+            ${difficultyOptions(state.settings.difficulty)}
+            ${createModeButtons(items)}
           </section>
           ${activeSession ? `
             <div class="resume-card">
-              <h3>途中の${sessionLabel(activeSession.mode)}</h3>
+              <h3>${difficultyLabel(activeSession.difficulty)}・途中の${sessionLabel(activeSession.mode)}</h3>
               <p class="menu-lead">${Object.keys(activeSession.responses || {}).length} / ${activeSession.ids.length} 問回答済み</p>
               <button class="menu-primary" id="resumeSession" type="button">続きから</button>
             </div>` : ""}
           <div class="summary-grid">
-            <div class="summary-card"><strong>${answered}</strong><small>回答した問題</small></div>
-            <div class="summary-card"><strong>${state.wrongIds.length}</strong><small>復習中</small></div>
+            <div class="summary-card"><strong>${answered} / ${items.length}</strong><small>${difficultyLabel(state.settings.difficulty)}の回答問題</small></div>
+            <div class="summary-card"><strong>${state.wrongIds.length}</strong><small>全難易度の復習中</small></div>
           </div>
         </section>`;
       panel.querySelectorAll("[data-start-mode]").forEach(button => {
         button.addEventListener("click", () => startChallenge(button.dataset.startMode));
       });
       document.getElementById("resumeSession")?.addEventListener("click", resumeSession);
+      bindDifficultyOptions(panel, id => { state.settings.difficulty = id; saveState(); renderMenu("challenge"); });
+    }
+
+    function difficultyOptions(selected, includeAll = false) {
+      const options = includeAll ? [{ id: "all", label: "すべて" }, ...DIFFICULTIES] : DIFFICULTIES;
+      return `<div class="difficulty-options${includeAll ? " with-all" : ""}" role="group" aria-label="難易度">${options.map(item => `<button class="difficulty-choice" type="button" data-difficulty="${item.id}" aria-pressed="${selected === item.id}">${item.label}<small>${filterByDifficulty(questions, item.id).length}問</small></button>`).join("")}</div>`;
+    }
+
+    function bindDifficultyOptions(panel, select) {
+      panel.querySelectorAll("[data-difficulty]").forEach(button => button.addEventListener("click", () => select(button.dataset.difficulty)));
     }
 
     function renderReviewPanel(panel) {
@@ -1545,7 +1567,7 @@
     }
 
     function renderProblemPanel(panel) {
-      const sorted = [...questions].sort((a, b) => {
+      const sorted = filterByDifficulty(questions, problemDifficulty).sort((a, b) => {
         if (problemSort === "default") return a.id - b.id;
         const aStat = state.questionStats[String(a.id)] || { total: 0, correct: 0 };
         const bStat = state.questionStats[String(b.id)] || { total: 0, correct: 0 };
@@ -1555,7 +1577,8 @@
       });
       panel.innerHTML = `
         <section class="menu-panel">
-          <div class="catalog-heading"><h2>問題一覧</h2><small>${questions.length}問</small></div>
+          <div class="catalog-heading"><h2>問題一覧</h2><small>${sorted.length}問</small></div>
+          ${difficultyOptions(problemDifficulty, true)}
           <p class="menu-lead">問題をタップすると、その問題だけ確認できます。</p>
           <div class="catalog-tools">
             <button class="menu-secondary${problemSort === "default" ? " active" : ""}" type="button" data-sort="default">通常順</button>
@@ -1571,6 +1594,7 @@
       });
       const list = document.getElementById("problemList");
       sorted.forEach(question => list.append(createCatalogCard(question)));
+      bindDifficultyOptions(panel, id => { problemDifficulty = id; renderMenu("problems"); });
     }
 
     function createCatalogTile(code, className = "") {
@@ -1672,7 +1696,7 @@
       rateFill.style.width = `${rateValue}%`;
       rateBar.append(rateFill);
       info.append(title, scene);
-      const audienceLabel = previewAudienceLabel(question);
+      const audienceLabel = difficultyLabel(question);
       if (audienceLabel) {
         const badge = document.createElement("span");
         badge.className = "audience-badge catalog-audience-badge";
@@ -1700,7 +1724,7 @@
       const number = document.createElement("strong");
       number.textContent = `第${question.id}問`;
       const scene = document.createElement("span");
-      scene.textContent = `${roundName(question.round)} ${WIND_NAMES[question.seat] || "―"}家 ${question.turn ?? "―"}巡目`;
+      scene.textContent = `${difficultyLabel(question)} / ${roundName(question.round)} ${WIND_NAMES[question.seat] || "―"}家 ${question.turn ?? "―"}巡目`;
       const status = document.createElement("em");
       if (showRate && stat.total) status.textContent = `${Math.round(stat.correct / stat.total * 100)}% (${stat.correct}/${stat.total})`;
       else if (!response) status.textContent = "未回答";
@@ -1742,7 +1766,7 @@
     function renderRankingPanel(panel) {
       const modes = [["ten", "10問"], ["all", "全問"]];
       const rows = state.results
-        .filter(result => result.mode === rankingMode)
+        .filter(result => result.mode === rankingMode && (rankingDifficulty === "all" || result.difficulty === rankingDifficulty))
         .sort((a, b) => {
           const aRate = a.graded ? a.correct / a.graded : -1;
           const bRate = b.graded ? b.correct / b.graded : -1;
@@ -1752,6 +1776,7 @@
       panel.innerHTML = `
         <section class="menu-panel">
           <h2>順位</h2>
+          ${difficultyOptions(rankingDifficulty, true)}
           <p class="menu-lead">この端末内の挑戦記録を、正答率とタイムで並べます。</p>
           <div class="catalog-tools">
             ${modes.map(([id, label]) => `<button class="menu-secondary${rankingMode === id ? " active" : ""}" type="button" data-ranking-mode="${id}">${label}</button>`).join("")}
@@ -1765,6 +1790,7 @@
         });
       });
       const list = document.getElementById("rankingList");
+      bindDifficultyOptions(panel, id => { rankingDifficulty = id; renderMenu("ranking"); });
       if (!rows.length) {
         list.innerHTML = `<div class="menu-note"><p class="menu-lead">この出題タイプの記録はまだありません。</p></div>`;
         return;
@@ -1780,7 +1806,7 @@
       rank.textContent = showPlace ? String(place) : sessionLabel(result.mode);
       const detail = document.createElement("div");
       const title = document.createElement("div");
-      title.textContent = `${result.correct ?? 0} / ${result.graded ?? 0} 正解`;
+      title.textContent = `${difficultyLabel(result.difficulty)}・${result.correct ?? 0} / ${result.graded ?? 0} 正解`;
       const date = document.createElement("small");
       date.textContent = new Date(result.finishedAt).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
       detail.append(title, date);
@@ -1886,8 +1912,8 @@
       }
     }
 
-    function shuffledIds() {
-      const ids = questions.map(question => question.id);
+    function shuffledIds(items = questions) {
+      const ids = items.map(question => question.id);
       for (let index = ids.length - 1; index > 0; index -= 1) {
         const swap = Math.floor(Math.random() * (index + 1));
         [ids[index], ids[swap]] = [ids[swap], ids[index]];
@@ -1895,9 +1921,10 @@
       return ids;
     }
 
-    function createSession(mode, ids, position = 0) {
+    function createSession(mode, ids, position = 0, difficulty = null) {
       state.session = {
         mode,
+        difficulty,
         ids,
         position,
         startedAt: new Date().toISOString(),
@@ -1908,10 +1935,11 @@
       resumeSession();
     }
 
-    function startChallenge(mode) {
-      if (!questions.length) return;
-      const ids = mode === "ten" ? shuffledIds().slice(0, Math.min(10, questions.length)) : questions.map(question => question.id);
-      createSession(mode, ids);
+    function startChallenge(mode, difficulty = state.settings.difficulty) {
+      const items = filterByDifficulty(questions, difficulty);
+      if (!items.length) return;
+      const ids = mode === "ten" ? shuffledIds(items).slice(0, 10) : items.map(question => question.id);
+      createSession(mode, ids, 0, difficulty);
     }
 
     function startReview() {
@@ -1924,7 +1952,7 @@
     }
 
     function openCatalogQuestion(id) {
-      const ids = questions.map(question => question.id);
+      const ids = filterByDifficulty(questions, problemDifficulty).map(question => question.id);
       const position = ids.indexOf(Number(id));
       if (position >= 0) createSession("catalog", ids, position);
     }
@@ -2058,7 +2086,7 @@
 
       document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${playQuestions.length} 問`;
       document.getElementById("playAdminEntry").href = `admin.html?question=${encodeURIComponent(question.id)}`;
-      const audienceLabel = previewAudienceLabel(question);
+      const audienceLabel = difficultyLabel(question);
       const audienceBadge = document.getElementById("audienceBadge");
       audienceBadge.textContent = audienceLabel;
       audienceBadge.hidden = !audienceLabel;
@@ -2569,6 +2597,7 @@
       const elapsedSeconds = Math.max(0, (Date.now() - new Date(finishedSession.startedAt).getTime()) / 1000);
       const result = {
         mode: finishedSession.mode,
+        difficulty: isDifficulty(finishedSession.difficulty) ? finishedSession.difficulty : null,
         total: sessionQuestions.length,
         answered,
         graded: gradedResponses.length,
@@ -2593,7 +2622,7 @@
       app.innerHTML = `
         <section class="menu-panel result-panel">
           <p class="brand-kicker">RESULT</p>
-          <h2>${sessionLabel(result.mode)} 完了</h2>
+          <h2>${difficultyLabel(result.difficulty)}・${sessionLabel(result.mode)} 完了</h2>
           <div class="result-score">${percentage === null ? "--" : `${percentage}%`}</div>
           <p class="result-detail">${result.answered} / ${result.total} 問回答<br>${result.correct} / ${result.graded} 問正解<br>タイム ${formatElapsed(result.elapsedSeconds)}${result.graded < result.answered ? `<br>採点待ち ${result.answered - result.graded}問` : ""}</p>
           <div class="menu-actions" style="justify-content:center;margin-top:18px">
@@ -2602,7 +2631,7 @@
           </div>
         </section>`;
       document.getElementById("resultMenu").addEventListener("click", () => renderMenu("challenge"));
-      document.getElementById("resultRetry")?.addEventListener("click", () => startChallenge(result.mode));
+      document.getElementById("resultRetry")?.addEventListener("click", () => startChallenge(result.mode, isDifficulty(result.difficulty) ? result.difficulty : "all"));
       window.scrollTo({ top: 0, behavior: "instant" });
     }
 

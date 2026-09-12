@@ -84,7 +84,7 @@ test("duplicate audit keeps only independently different situations and visually
   for (const [a, b] of [[4, 181], [207, 209], [218, 219]]) assert.notEqual(inventory(byId(a)), inventory(byId(b)));
 });
 
-test("catalog, play and admin use one shared preview-only classification rule", async () => {
+test("catalog, play and admin use the shared difficulty rule while retaining source history", async () => {
   const appSource = await read("index.html");
   const appVersion = /const APP_VERSION = (\d+);/.exec(appSource)?.[1];
   assert.ok(appVersion);
@@ -92,8 +92,8 @@ test("catalog, play and admin use one shared preview-only classification rule", 
     const source = await read(file);
     assert.ok(source.includes(`<script src="question-metadata.js?v=${appVersion}"></script>`));
     assert.ok(source.includes(`<script src="config.js?v=${appVersion}"></script>`));
-    assert.match(source, /const \{ previewAudienceLabel \} = window\.ZUNDAMON_QUESTION_METADATA/);
-    assert.match(source, /previewAudienceLabel\(question\)/);
+    assert.match(source, /const \{[^\n]*difficultyLabel[^\n]*\} = window\.ZUNDAMON_QUESTION_METADATA/);
+    assert.match(source, /difficultyLabel\(question\)/);
   }
   assert.match(appSource, /id="audienceBadge" hidden/);
   assert.match(appSource, /audienceBadge\.hidden = !audienceLabel/);

@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 import vm from "node:vm";
 const script = await readFile(new URL("../answer-feedback.js", import.meta.url), "utf8");
 const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+const metadata = await readFile(new URL("../question-metadata.js", import.meta.url), "utf8");
 const extract = name => html.match(new RegExp(`    (?:async )?function ${name}\\([^]*?\\n    }`))?.[0] || assert.fail(name);
 const flush = () => new Promise(resolve => setImmediate(resolve));
 function harness({ reduced = false, defer = false, unsupported = false } = {}) {
@@ -43,7 +44,9 @@ test("sound volume defaults safely, respects zero and clamps restored settings",
   assert.equal(api.DEFAULT_VOLUME, 40);
   for (const value of [undefined,null,"broken",NaN,Infinity]) assert.equal(api.normalizeVolume(value),40);
   assert.equal(api.normalizeVolume(0),0);assert.equal(api.normalizeVolume(-1),0);assert.equal(api.normalizeVolume(200),100);
-  const normalize = new Function("ZundamonAnswerFeedback", `${extract("defaultState")}\n${extract("normalizeState")} return normalizeState;`)(api);
+  const metadataContext = {window:{},URL};
+  vm.runInNewContext(metadata, metadataContext);
+  const normalize = new Function("ZundamonAnswerFeedback", "isDifficulty", `${extract("defaultState")}\n${extract("normalizeState")} return normalizeState;`)(api, metadataContext.window.ZUNDAMON_QUESTION_METADATA.isDifficulty);
   const data = normalize({ settings: { nickname: "保存名", soundVolume: 0 }, favoriteIds: [3], questionStats: {3:{correct:1,total:2}} });
   assert.equal(data.settings.soundVolume,0);assert.equal(data.settings.nickname,"保存名");assert.deepEqual(data.favoriteIds,[3]);assert.equal(data.questionStats[3].total,2);
   assert.equal(normalize({settings:{nickname:"旧データ"}}).settings.soundVolume,40);

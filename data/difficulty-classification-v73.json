@@ -1,0 +1,2939 @@
+{
+  "revision": 73,
+  "baseRevision": 72,
+  "classifier": "GPT-6 Astra",
+  "canonicalSources": [
+    { "title": "【基本序列】", "documentId": "1ltSjkugjAjWXf_pJfxQIdFNFKblAP_N5USet8T0UCKM", "revision": "ANLCKQm4vducjd-pVaYkP77v3q1fiqnc7IhzPwGCZNARnfVpukASXizElwmwvdhxUAlmRFiESnLIWTaszd9ydw", "use": "孤立牌・ターツ比較の基準" },
+    { "title": "セオリー集（随時更新）", "documentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA", "revision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw", "use": "手組・打点・立直判断の基準。タブ2は空を確認" },
+    { "title": "一向聴（基礎講義）", "documentId": "1eLvRIePIbduCcXKTtZ_A4j2kuTrChOcMEuMQ6ReMrmA", "revision": "ANLCKQmjUNkuOE43BkQfZchm3HPAILacmBKMQC6E4OFHG5t2SJqTggdk7NaD6GFEYXz2C6ipOrI3aIAxyBQeZQ", "use": "基本の一向聴と複合形の分解の区別" }
+  ],
+  "reviewedAt": "2026-09-12T04:45:25.984Z",
+  "criteria": "初級=基本の形・打点判断。中級=複合形と複数進行の比較。中級～上級=既存81問を継承。仮分類は管理画面で修正可能。",
+  "counts": {
+    "beginner": 58,
+    "intermediate": 153,
+    "advanced": 81
+  },
+  "entries": [
+    {
+      "id": 1,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/fyPxbaLp_-Q",
+      "contentSha256": "7955a1b005d828f3bca4759a218dfc7945b31c7debde48326d99640910973db6",
+      "beforeSha256": "705ecc896ee74c6cd1cb3891f36886ba71b96ca09a2ad39096af9ce49c904e1c"
+    },
+    {
+      "id": 2,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/hNbn49F3pbw",
+      "contentSha256": "927470c3a323666fc49c03b2188f3bc16ed20078b209f2246790d4bb320826ca",
+      "beforeSha256": "825620494da955bc5d576b9fd796d9508ac703a54fc2d100ec56feab3130925a"
+    },
+    {
+      "id": 3,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/O1bmwG7uu6I",
+      "contentSha256": "f377602cfea936eb50d64cdaa49def28622d7cdbe13337427153c15673b00c1b",
+      "beforeSha256": "615b3f0ebb226885b2dafa03c7cab434beb214fabaacbe9c38a289fc128d42a3"
+    },
+    {
+      "id": 4,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/5eF7eOULv8k",
+      "contentSha256": "a5ea52e48abc79f5aa53c5be2c5500573748fd54f5c81237798c261ceded93d8",
+      "beforeSha256": "c2f90483a030c0da72f8c3bb4d09762bb8c25c0cd8e7f35b99749900322f461c"
+    },
+    {
+      "id": 5,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/u-e3ejx8YGo",
+      "contentSha256": "ab5e1fae020adfd38d998b904ce77c95a446a8f5ae57afcdd742bb0ebd7ef2f2",
+      "beforeSha256": "69a1ffee5d33be9e4554d2d81b16e2bdb89a6fa17727c4af72cf6df526798c9c"
+    },
+    {
+      "id": 6,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/KJa-jtBUIw4",
+      "contentSha256": "178caccef8a63b773e1c400cb8e776bc1ed63f8379ef737097a883828272b743",
+      "beforeSha256": "41b54886dafe46e311d29094ff283d88d32574ba39a45822c4d6e05c8af09e8e"
+    },
+    {
+      "id": 7,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/WZ-zphDYP_U",
+      "contentSha256": "7eec771d40db77c171d6e9c6fbd6b2e42fd5d866ad59ed3f4aca945727ff499d",
+      "beforeSha256": "c6d0858c864373f242c787ac4d8a786d9154c9f791348a3d08e85b109b6d2087"
+    },
+    {
+      "id": 8,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/076quV9Y1TQ",
+      "contentSha256": "a869117c88ad496471f4b0e64aa4f247fd0929ae075b8ececd7432efe1382cbc",
+      "beforeSha256": "7cf63c0b7879a20a0600d00a9d1eaa161cf9e3cff55eedf83c4bb9fbdfa5a45a"
+    },
+    {
+      "id": 9,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/MzcNkT_RznY",
+      "contentSha256": "b4a1eb0b2e967fe8bb27891300b222bf4d427b98a55aa527a0b8bc5e80fba56d",
+      "beforeSha256": "b4720584415cd44e51babadcf55688d109ca686b9166cc8084a9ccb17b83e96d"
+    },
+    {
+      "id": 10,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/t1ch2uvwqTk",
+      "contentSha256": "b2970da4682b18e651b58b5e5c9193cee72285bb9d8cb9f901ffbc40e8b02b96",
+      "beforeSha256": "91a3fd949aa3a081f90b03d315496dab874e486a20b47e7b152960188f08bcba"
+    },
+    {
+      "id": 11,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/BNGgOoQH1ZM",
+      "contentSha256": "9ddf68969b1a554c8b83e7da06b73b68da05d38e6e766a910ad71c8633a668a0",
+      "beforeSha256": "072a3a1bda5aabe0abf9254018c1488438ee4ba579013a301fc07b9555fa8dc9"
+    },
+    {
+      "id": 12,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/OpfPicoaUX4",
+      "contentSha256": "8620a921d6f73fb387535d7cded39849a007fd940cf205ea0ee05b0258dd8de1",
+      "beforeSha256": "7588a2da08f8c33377cbf3bf9d3b548f234e2f4c0bd1adb1b50f8ebc9bae1699"
+    },
+    {
+      "id": 13,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/eHWL_ifEXjo",
+      "contentSha256": "f9e7e8253531c340f6417a85e353d13dd2c6290d67fde874d84770b797070f4a",
+      "beforeSha256": "2f9f699113ccb9866830fc10d29b130624b2e4c7c140d554ea3497d1d252c293"
+    },
+    {
+      "id": 14,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/6duFhRJr5ks",
+      "contentSha256": "ee8dcc7f38c2284861ac712610b5e64654227a568133020507c0cc8cc82d0bf2",
+      "beforeSha256": "c0ed692e1118ed01f825b2211fca3acf8561e37eee9a567a7fdbb78d7de82f2f"
+    },
+    {
+      "id": 15,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/qKlCZANeghU",
+      "contentSha256": "c25efb36eebc67df4ec80d557959e1b6bfdb1cdd7f46ff679089eb4a3ec249fe",
+      "beforeSha256": "a141221a831bc6507aec101ef4faa0a1c34ef46ca72635542399be07ec886fa2"
+    },
+    {
+      "id": 16,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/YkneBe3x-Qk",
+      "contentSha256": "01c9e98d676210326e9ab747544a414586e021d9f09eb41db426c1af45e09396",
+      "beforeSha256": "7d6b9f50e35bd0db7ed75724ba02fe07b44b636c2de72e297d61a29a5a0fb82a"
+    },
+    {
+      "id": 17,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/oVXo5YrpBNE",
+      "contentSha256": "05190e74b8a035cba689a7ae8840f62f92f7c81d2b15343cefe669a910195a6e",
+      "beforeSha256": "a21ba3edc4e218169f0e98bd57193277a1281bed953fd8fdc749d54273ac6fcc"
+    },
+    {
+      "id": 18,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/8ovWjEWUhbA",
+      "contentSha256": "a1b03d976f42fd783a252643a18f0075f58f697a3de42fbcd26778cc65fd4fe4",
+      "beforeSha256": "754eb25fe6af32141a8aefce9420819d5fc43f7019e0424b3fb542e7021af78c"
+    },
+    {
+      "id": 19,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/Ei3DFXt0y9I",
+      "contentSha256": "a5e291da842b5da38928286914dc31d2725d714f86714b2adfec47baca625bc2",
+      "beforeSha256": "c8a40c1d24204e2e2f4043d1358df36657fca5b482bc4ae6062720f2735985d9"
+    },
+    {
+      "id": 20,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/C6sbxMSWikM",
+      "contentSha256": "d433d83216d7d0a8f01f7c5f38a39d866d700b41c7557a0707ae5b84bb0edb5e",
+      "beforeSha256": "c44c6460c8629daea75073af8e256deee7dd5571a6c1101e9d3fc56406ef399a"
+    },
+    {
+      "id": 21,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/VNERzjbKb8A",
+      "contentSha256": "9e3ed1d8e6248f07024c0d42b12c261161db6a7f4c901160dff4a767711cfbbd",
+      "beforeSha256": "4ce6a1604a5490972f4c2bed30dd46dc3f0dbb0874dc11afd8c0a3e11ea3d690"
+    },
+    {
+      "id": 22,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/t9CdqxugLcg",
+      "contentSha256": "08f4833539daf73834082eebe174793fc8102c63df7c22d2d2291f0c5a30ce27",
+      "beforeSha256": "cf09f0bf59fbe7e85935bef5ae74beae981bf0d5786c983044d7402d54261ae6"
+    },
+    {
+      "id": 23,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/tLjNf_BhcoM",
+      "contentSha256": "7b3af971b711a03fd26816af784b894b0ea531b1fa3d531ad57a82729183807c",
+      "beforeSha256": "34ecfd6729bc625800a80947a2661fde048f87da06eef2b8e69793f8a5a83ebb"
+    },
+    {
+      "id": 24,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/aV8L3ak_s7s",
+      "contentSha256": "be81300c5c5008b80efdac53628888d68e7d9ed6319c6e3e7ee834d09662c988",
+      "beforeSha256": "3afec61aae9ec223ebfcd8dfd6ffe74fc6e674c1244bb27140300d0b0f61f9b6"
+    },
+    {
+      "id": 25,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/XRPXUIQbG4U",
+      "contentSha256": "7e987db40a64b6caaee29dd4d44a6d87bc8d3064275b623de99affc865bdfb11",
+      "beforeSha256": "9b7800587a9074ee057715a00d67202cc024c655856e160f74f9683cd9184489"
+    },
+    {
+      "id": 26,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/d-I0fXXGY38",
+      "contentSha256": "6ac5db60f13a5f2dc29691aff9f67ce3f7199025df3b441cb4bcf6dc4401f7f4",
+      "beforeSha256": "83f81c632727108b6f7fc17a35495d240f18a5cd4fe83daba7ff33227f07a753"
+    },
+    {
+      "id": 27,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/3-uyZduwFzw",
+      "contentSha256": "e9bfb4c83a257a7f614a2b2841ad0b1ad318d983fb20e460ad96e40e3a267383",
+      "beforeSha256": "f90a4234d44b86f91c19fe9ab56497b038e9af840341c5d709c8956de46d1353"
+    },
+    {
+      "id": 28,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/rGKUwhn4_68",
+      "contentSha256": "498e15c457431808d5fd2692a811310ff1002bdf58562ee8769b2af6a67b7650",
+      "beforeSha256": "88c9638bbb1d9c0f66ffc3e29b7eef640b7a751cdae0319ef4da752130bde427"
+    },
+    {
+      "id": 29,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/6WRnzt3XzRU",
+      "contentSha256": "0b0317c8242d5d1c3da372075cc69613d22a0a3444d723df08feca4f740a2436",
+      "beforeSha256": "029fd4df33e7bf973228f1d04ad8cae0e59f699ce2d9fafcc7c87009e820d67f"
+    },
+    {
+      "id": 30,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/alqkuxKSHmI",
+      "contentSha256": "294e797394150cadf167bf6001005b6f2332713def815dbefeb517bc68b9a384",
+      "beforeSha256": "2a70da9ef7e03a347aba95b336a7f261d224fd5445e8cc11f739ce8688834212"
+    },
+    {
+      "id": 31,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/1tyMKl52oYQ",
+      "contentSha256": "f39520aa825eebd0553947d324d0cf57dbe92a7efa8fefefdc94f38f2e573a44",
+      "beforeSha256": "cc7ca4179ee05b4f8eb7657c08f5247920ff01f5c766573f533ab5176b26b18d"
+    },
+    {
+      "id": 32,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/hUoK7DYkjro",
+      "contentSha256": "5d442503e0c3432451cbe430c9eef107b09e551f0e5bc8a3a030aaae0ae72d3b",
+      "beforeSha256": "fd15c720f5d0bbdc8b6eb65c2c628a2be09fdcb2c293e8bb52d032e451b04de8"
+    },
+    {
+      "id": 33,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/1s0P8Zy0SrU",
+      "contentSha256": "65ec3accaf011d0724ee98c0478c977ba8e3822d27b806fbfdec17fd4089c77f",
+      "beforeSha256": "3e7770a3f57e78744ad4a972bf8ad5eb2bff9eb2e1e7b25a98c317f1369ec4d2"
+    },
+    {
+      "id": 34,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/vAY9UY3zdAM",
+      "contentSha256": "ea28fd8d9b09d66bbd4701c0e6ef8b5872acf30feeaa453f9d6a23773b6fa101",
+      "beforeSha256": "1804f510f49a529f4171d2d31d0f5cb0f4d195e7f6fee78d3f3b7d084e6fa543"
+    },
+    {
+      "id": 35,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/0It8XxMkI6o",
+      "contentSha256": "2657a7870a87a6c9a7855fff9be4b113baedd09ed9c9300d7529821e9f3635b1",
+      "beforeSha256": "a021014ed200c5790511bfec04efe36ef1d8e5f3e3bb91ea2731681e64c49076"
+    },
+    {
+      "id": 36,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/qt_1DUjy63o",
+      "contentSha256": "d43b8c850bf5719ff5f88155f32c48abdd7ab0cf329c6f6168e1f8d8fe41944f",
+      "beforeSha256": "6a80b842e31f09c3400f91af0e2dba7c0bd0345e4788c3cc92e3d2c217f42809"
+    },
+    {
+      "id": 37,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/iuLhmHt0a04",
+      "contentSha256": "cbf766dab9e4fdaa22ded09b542e76fd868c8a2711530505a50a12710ac22fd1",
+      "beforeSha256": "3b69e9f8e30b7f0c5ccd0c9b94a55a2d4628b50e6cbde78464c74aa3a75bc746"
+    },
+    {
+      "id": 38,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ofe8EPsihJQ",
+      "contentSha256": "f3acf3cc0e675449c60f5e7693fc7349347dc66861d88397615879bfb6312ee5",
+      "beforeSha256": "fcd5709de2a7d70fe64ac89fa1202657fc472f7064d5048c06aef9ab8fd1e8a2"
+    },
+    {
+      "id": 39,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/s4yyRno29jM",
+      "contentSha256": "a3e053a1bae3fe63aeb9ed7f494d0fed06dffe7e7b280c9134381ec009234985",
+      "beforeSha256": "d80766b76a9aa9f86034bf8e33463cc3b5b0ae3f94fd4d8211fb20301e8a909b"
+    },
+    {
+      "id": 40,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/C5jtDHzzkEE",
+      "contentSha256": "b406cd3d518349e58e18d62d0a6614de0ed5c95cd3112f1fea2bdcd4fa791c8f",
+      "beforeSha256": "82bfbd9b9dd5ce1e5713b2b1fdf4fb36fa15380c5a80ecdbe1eb8d488a5f040e"
+    },
+    {
+      "id": 41,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/SKhbShnBSRs",
+      "contentSha256": "791ec4be13200c2c5ad8a99f7b0def1245490460365a4b183f2324a563458d18",
+      "beforeSha256": "84c81012dd05281f01fc8e371f08316a7a8a8e904ff92dd0beeb8cd4bc990372"
+    },
+    {
+      "id": 42,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/1iFOsPFohs0",
+      "contentSha256": "ec1fcfba7c6563620b645cb5a2a8722505b7fd2ca203b918ddccf065a90ad264",
+      "beforeSha256": "86a016e589715d7561cf9ff009f5ad8968341efd9bf0f1b2fafa3fc4119e2f93"
+    },
+    {
+      "id": 43,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/9W79YIm0-Mk",
+      "contentSha256": "c8d894decb08966ba89b5ee2c0ebd16c69796c6a01dd7478e6dd8debc751e144",
+      "beforeSha256": "31aa31ad61782c7a71d7e996c09e56718600250c93eb629a0426698461077ade"
+    },
+    {
+      "id": 44,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/vgvJP1nmnRI",
+      "contentSha256": "76afb1b43a5d18998c1165e809fd5be41c420a47076da1b569bb129d722f8c53",
+      "beforeSha256": "755e6643819a0e3eed9b27660866e54cbecc3c9496978ff8165a2e1b77da09d3"
+    },
+    {
+      "id": 45,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/95MLpsufhvM",
+      "contentSha256": "b75857e229d8e329039edb62843de5c67653e941668d96dee66b71143276db10",
+      "beforeSha256": "c0e49a0e9477be1756783881204251322d879b6967132e3ddb16bddeeb641483"
+    },
+    {
+      "id": 46,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/UQba5N0GN5g",
+      "contentSha256": "50c6165ffbbe99c29280f30f1ecc6ac4bc756c2df79f4000fd2c07e3661aa048",
+      "beforeSha256": "4349917759e08078644fff2b8fe5dae73acfeec1f5615eaa07ef24010788f483"
+    },
+    {
+      "id": 47,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/Q52ws6AV6Gw",
+      "contentSha256": "341aa6b1276b8c553f4e887f8610c0e3e7ebb91c4a8d96939c1bba0677944a25",
+      "beforeSha256": "1b4c5ee56bb37e2d69cdfee94e0f7a255343ce43a1d07200889a006042c80ac0"
+    },
+    {
+      "id": 48,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/YM1KRURsx5w",
+      "contentSha256": "cb31b90fab32d82d573fdb354dc644454650c8bda5ca2339720d0a763d268fd5",
+      "beforeSha256": "5889e5b0888c04b2f220ec53ab18b207edc747d155949af90736a08b376114ed"
+    },
+    {
+      "id": 49,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/QH9ikX3-uOQ",
+      "contentSha256": "12cd93a2502c3674a7b43ca70ea272964648022ad345dc3004bb6dce2f0d602f",
+      "beforeSha256": "7f8d40114d5818fda29f25b31446d3c5e62f8c450a4748cc32a0b4dce63ec2c1"
+    },
+    {
+      "id": 50,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_5vloktyoBw",
+      "contentSha256": "b0f61c133ffdfd048cb8571e66b72e15722a77518cebc6d41b59f04c59fe1f28",
+      "beforeSha256": "a99f87dd1b88cfec089eb5b377b1a1775e65fd5176463a9e617814339d3fe19a"
+    },
+    {
+      "id": 51,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/hsB3vAaDUCU",
+      "contentSha256": "31326b3e726bdf9f75574bf6d4ea9fbf0e9b2de58802a9a23c016baabbfbf39d",
+      "beforeSha256": "cfcef9762d8c5159192aac4cde63b1c62d08241e5abaa71377479756c3bc8342"
+    },
+    {
+      "id": 52,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "暗槓前後の雀頭と最終待ちの比較",
+      "sourceUrl": "https://youtu.be/WVY7R68hWC4",
+      "contentSha256": "7598dfdec1cbe7101407adf0afb4806ad77eafe0e0bfb58a7e0c2c54c8a6f61b",
+      "beforeSha256": "68aca87954d4596ea4aca95b2ed071ea97dc58beb532b2192e0b4b11d8be5b89"
+    },
+    {
+      "id": 53,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_JUL-rsQ7Sw",
+      "contentSha256": "d83a580447e6353e7a51cd7190d62f05cc2fc6f67032b190d9ab320928b7d373",
+      "beforeSha256": "98403c396ba3a0cc856c56c440e7c10377b66e598c233821c25cc41b5336dc2d"
+    },
+    {
+      "id": 54,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/RkrAvExSUxM",
+      "contentSha256": "93ff4e6181eeac5419b200f40afec3832f12060d86b18ea8b21a55fb3a04675e",
+      "beforeSha256": "018c58b468a0828f44abb630301ef8db90e09f6b2b82029eefa4552b6386feb0"
+    },
+    {
+      "id": 55,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/seFV14o3eDs",
+      "contentSha256": "57237c80cf81fac21d5bc296f2db01a3423449884ffb3a5cc7c90b94ed4c8297",
+      "beforeSha256": "80fd21223893f8ff54d3bf43dd5b80d2ef898abca31b85c1bf1afaa2390bf74b"
+    },
+    {
+      "id": 56,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/h08oEYh7Mg4",
+      "contentSha256": "fda1f256dfaaa11120fc34971b6123b21e2e38e0da31d75c0454ac0e94daac79",
+      "beforeSha256": "c920b756b9faab6fd086110783de9d147057241c76969e1370e1a07c6a369765"
+    },
+    {
+      "id": 57,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/oO0j3xVXaE8",
+      "contentSha256": "7cbb3889db6128bd703753b5d84654292861a89eeed6b57213f9e39393972387",
+      "beforeSha256": "ff848bf9f56078b63aaaf37f87931806c586a9307272bbaf299a4a3e5e9527ff"
+    },
+    {
+      "id": 58,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/B1aYqI9Rg8A",
+      "contentSha256": "e54a471b09f7f8a6f9b4360e3faa6fc55424f5d829c07eaa1030d81d51eae009",
+      "beforeSha256": "389ea37c2f9653c866b46a3169ebc0a3eaa4fc9fef24bd8a1ea3a5d402b0bbae"
+    },
+    {
+      "id": 59,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/mm8sSBK94LE",
+      "contentSha256": "c454fa363b0d626a49358dd3f474a56916d6a6e82561cf38fc0a25e2f3567289",
+      "beforeSha256": "240cfafcd3b85c754393b7ddf3e0309f460cfa16b3b147f3115766f74857e8d3"
+    },
+    {
+      "id": 60,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/rx0uO-XE_PY",
+      "contentSha256": "0302ddacd233b1a2884779344e6fb0f1fada5aecdebe2518ae84c123ef130bc3",
+      "beforeSha256": "16c15c076f4119c555dc55609196a7f1334600135c7143ad86b39dfeef06e58f"
+    },
+    {
+      "id": 61,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/3jIIs_PWXT8",
+      "contentSha256": "81bc5e45ce2d0fadc2abcd224a62d852334b0bb47b2b84ba71b798f3cd57f78e",
+      "beforeSha256": "6e7d556489e6ce5175b19a3e2583d94f213e5f7fa479e1cd309016f67dd80570"
+    },
+    {
+      "id": 62,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/wbFVTC0DEIk",
+      "contentSha256": "9f8a52c12e089ed1c4c43e4a5a8af8856ef8c2b831033cfbac652a180bc6af51",
+      "beforeSha256": "e374fd7d68188da8f0e5b2e884176c728d80b1f22a1c0c9b4796294fff060683"
+    },
+    {
+      "id": 63,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/HxUL3ZPLN3k",
+      "contentSha256": "7b6106d7f96701463e07627807f71d46d18a9bb91a180eeba62371b4d06c672a",
+      "beforeSha256": "23e9ef47c41d0fa966234e59db786750d63c7afaaf6189aef13285e98b491026"
+    },
+    {
+      "id": 64,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_0D-ZF1aecU",
+      "contentSha256": "e39de80de2925c09c9ac2ab29efaa45d30f837c12ea3573aaff309e88a1ebe42",
+      "beforeSha256": "55f47ea0c5b81ea1dfa7f4651c31e82debbcc0e407e36b79ee6ec4da395bf028"
+    },
+    {
+      "id": 65,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/U0sBICBsaEY",
+      "contentSha256": "f7cd34f1d90312ca2956fa4ffa4a1d0251214192036200a0bed38cc5b595302b",
+      "beforeSha256": "57997fd23a8ae4069c5761cebeca2f298ca32406dc84d92651b27ec158224049"
+    },
+    {
+      "id": 66,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "場に見えた字牌枚数・巡目から七対子の待ちを選ぶ",
+      "sourceUrl": "https://youtu.be/iQbLSPvc84s",
+      "contentSha256": "a336c09b2bf1fc65f7d0eb86969f859215521baa9e1588e0a9770cf6d26f9c22",
+      "beforeSha256": "831b077044f73347b5af70e3de202ba4146fc0e32a584db18d78aaf4ff96a333"
+    },
+    {
+      "id": 67,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/SWnptC1oBdI",
+      "contentSha256": "befc50b16e1f8509b6930706dc772c00e3a057797787514e3da9888431497fd2",
+      "beforeSha256": "462fdbe212b86481a479b8ff3995cbdd194e87b42c16c2fa1d4b66bf8768b729"
+    },
+    {
+      "id": 68,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/sukNqYlFkeg",
+      "contentSha256": "f2fa5d57ff470cf8a6c9b0d99809b95cb85e316ab5f5d68d12e089711a716662",
+      "beforeSha256": "9740e4a9bdcd245c1bad5dbe0c1f6e8ebcd70114f3c9c8d80dc2b9e245557cfd"
+    },
+    {
+      "id": 69,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/cccsvX8D4tQ",
+      "contentSha256": "b04edb4cfdd61709b0839de43360b416818ca5ea99414b05c0726835a87419df",
+      "beforeSha256": "317768ee624d77d74bd1b0708ef4536c47b4f37467cf72625c0a80ffee1e9934"
+    },
+    {
+      "id": 70,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/0Azz3hRHgOE",
+      "contentSha256": "da620d907261e05b027ee32825b554357315b122f32ca378e65ed5fa73268892",
+      "beforeSha256": "517f945f7c797838c7b23dcde6846768092dfd437d689ab6bbbe47c58d833593"
+    },
+    {
+      "id": 71,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ywwcGgKAZGY",
+      "contentSha256": "f2dae9148cae36c074e48f952a5c40c8adf37cf37c3f0cee4f3f1a55e035d30d",
+      "beforeSha256": "54a0412f62c170b8e4005b9e53054fd0c087b81ed8cc54ccb97e4c80f556d16c"
+    },
+    {
+      "id": 72,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/uvHw6VB8kcQ",
+      "contentSha256": "ea86934898c023edaeb576c6d6f4e8474a0ae12ac0b4911617a81c2febdd8b3f",
+      "beforeSha256": "abee758cc744f856709999d943146846425e6a7d11dd0e1e8bff1aeb13ed1b9d"
+    },
+    {
+      "id": 73,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/-RA36-f1tM8",
+      "contentSha256": "d5124da62ed6feab8b4c008f41a43b22ed9c03bc640a6a400750d63ddd4ebb62",
+      "beforeSha256": "9f29903e2e40a80677f136b2834e47d2fc81728f5f45cd111cc70e3948a432dd"
+    },
+    {
+      "id": 74,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/sCejb3STyuM",
+      "contentSha256": "bbafa7872f76f91719e6f487eb53999bc0e75caf8e49f27c584633584157b327",
+      "beforeSha256": "e693f7f50c8f248ab958afeb396fd74a50496cf657c043b89f12837be5a62c6f"
+    },
+    {
+      "id": 75,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/lVtqBYHgAH0",
+      "contentSha256": "0ed8b492cf0829e51eec909a43a4399b7e2d7871fd47376c7681a43b91953cbb",
+      "beforeSha256": "8fa8c165b57c8517e4e9d9b119fb3253be23cd34967b50571285fa583f915646"
+    },
+    {
+      "id": 76,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/wKAdK431Bqk",
+      "contentSha256": "c93f4afc77eb9f6ffce4faed1e5d3ea9801e0d5af6a7332ed64b0a52b3fe6f8e",
+      "beforeSha256": "1d8bf242f83528cd39cb2168a413aae512a49baa8020f3cd2be4d81209525bd0"
+    },
+    {
+      "id": 77,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/pztV_mLLNl8",
+      "contentSha256": "2acf43ff333b01f77622249f711f5bad335611de0eb15db7924b541aa6162bbd",
+      "beforeSha256": "9706a10d7392f1c08d20ddc2129752a6ba63ab3d2cd7aee635d38aa5c7efedaa"
+    },
+    {
+      "id": 78,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "暗槓前後の雀頭と最終待ちの比較",
+      "sourceUrl": "https://youtu.be/uTw3TNvSNs8",
+      "contentSha256": "7d0ad239e07a23795aa6ae086caa6cf609761a1cabf361539351cab0bded8260",
+      "beforeSha256": "7f32d2f3b27f03ded4c4d4ad25f29b3d2730016a99922ae2ae193390e8d33844"
+    },
+    {
+      "id": 79,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "暗槓後の受け入れ・最終形の判断",
+      "sourceUrl": "https://youtu.be/TE_eaRe9e7I",
+      "contentSha256": "73021bfbad4a1b8b2a2f7c1b343a21902e1a12cfb1e1661bb811545dc29db4aa",
+      "beforeSha256": "f8e04f895d9aecbfe8d861523cee2c4493698d367ac89f58de1a99bcc379c0c4"
+    },
+    {
+      "id": 80,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/uFMR9LZCodg",
+      "contentSha256": "ad07b550ebe5dc5e1ca19c3b95db1084d4108b72c6561e20b4331f031bb86bc9",
+      "beforeSha256": "8b56ff3d353cb940575122769d29ee4567b413d5d4a3be18f6093e3e08f68904"
+    },
+    {
+      "id": 81,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/81wDOyaFvnY",
+      "contentSha256": "e109a366a7b08163a47a7f8f518847a17040da4237e59462a8ac9dd3ae6c289b",
+      "beforeSha256": "93447a063789aa849d102832564bf266279df6e6f123a77880b28ba1a9ca5b71"
+    },
+    {
+      "id": 82,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/er0yzPNz6p0",
+      "contentSha256": "ca0f4f7cf9590ab47c6c5f73ff18190e5b281476c9d2b4b4bddb56d06703face",
+      "beforeSha256": "90ea5fca5daa02f123ed8f80002b6d71d757d66583cd99d6c7689ce38fcf37ae"
+    },
+    {
+      "id": 83,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/-YIpWzFeLGU",
+      "contentSha256": "ea0b0b4c3b5a8404eff1bbe8acc41b6beb133aa21d6e7c7524d6ba0e8bb1c150",
+      "beforeSha256": "4a592d7989a29cc8624f88832afed9ff2da3cd8154afa3e7e8612aed425ce145"
+    },
+    {
+      "id": 84,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ju2Lae8LS50",
+      "contentSha256": "b93ab89f203b4e65fa79932e51e0b20348295ef546e6d875ac62bf80c0e6a7db",
+      "beforeSha256": "c1e6545ef78d024f3f15930edca2049f6d32998ef92bc7833d6f0600936daf5f"
+    },
+    {
+      "id": 85,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/hbnEmu-J-RY",
+      "contentSha256": "1be648c15de85e8edf44239e93e92e6da90c29d7ff08fcdda63a5fb68c954151",
+      "beforeSha256": "3bc7f5270e90c6ba17acbe4bcd048395c3277befb9a1d15ad83f8f3375ebd138"
+    },
+    {
+      "id": 86,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "槓を見送り多面張と役を残す判断",
+      "sourceUrl": "https://youtu.be/RVbVpbubJkM",
+      "contentSha256": "31557e8d7489e055d5239e1b4d6446cb86109d0a3cafbd3dca4e60d1751d0543",
+      "beforeSha256": "f4f857feece0ec900c33e4e803a893c863ce433cf67e55e420f40b33f7d27eaf"
+    },
+    {
+      "id": 87,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/KH-fEVUP3bs",
+      "contentSha256": "bfa57a8e05384f5fa284e7391622c0c4c4c26bb2e7aa637d52d3b1abac01d4b6",
+      "beforeSha256": "0958b05e4a9fa68d82e2a0b2639d87eadae677838cd9be7d2651bd0fcbb88b02"
+    },
+    {
+      "id": 88,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/fpF-dRMWxxE",
+      "contentSha256": "a76653577914cea123f73f771ab7674e4799653bca3b3cc77a4b82edab824d83",
+      "beforeSha256": "ce1cc26142be86d7eb538d8aa640131e406cc4e8895d03172154193135b11c44"
+    },
+    {
+      "id": 89,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ewkAMZToQTc",
+      "contentSha256": "3a327475511b37e1d3f06e9f5c54b3d040e11a7e43d39dbe39f534425cb8fde5",
+      "beforeSha256": "165acff540f4ee84217f6a7e2626f6e1ddef122366119f2f00bc66e07d280170"
+    },
+    {
+      "id": 90,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/mCmsJuGZ9JE",
+      "contentSha256": "f30a9a2af1e5ad5d3e9af0ca1d18785cf4a65985bd4908465c6a946d6b4a824c",
+      "beforeSha256": "a13e9eb1f54a4a9c2ca55eb62499859a070dc1142f3b6a920d7dfc1ad6340f66"
+    },
+    {
+      "id": 91,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ahTKQeKqpPU",
+      "contentSha256": "7a70b7f20a3366b1d18daaf59347ba4a678431ad3f56a081403a030dee1a777e",
+      "beforeSha256": "1b17a7ac9dd52968736c99ac1fd6269c0310111ab42991ec24f804c66e9b9801"
+    },
+    {
+      "id": 92,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/bLjbosKkpyE",
+      "contentSha256": "f260d1e147732c613940332df85a34e23e8c8ebb90cd4429fe5f9e5d75412ea3",
+      "beforeSha256": "cd32a2c896878ef25a8d0a005250dc7dae53ed04b2deb91ad869482a6258793a"
+    },
+    {
+      "id": 93,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/yw5htsB5HUc",
+      "contentSha256": "8fbef35db85c977b38d8c1b73df3aa68cae5d5eaaa0cb3f68eb568b1b28fe3f5",
+      "beforeSha256": "45b1f7c4b88331e17f7cacfebfcc87e5bfdb66c5f1597b07b83abd6e8882224b"
+    },
+    {
+      "id": 94,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "巡目と手替わり価値を比べるリーチ判断",
+      "sourceUrl": "https://youtu.be/OFiEEk6AYf4",
+      "contentSha256": "1519c51c19b0f02f61304aa02625018d8b0a9c83a90e1ed5e859ae747824a0bd",
+      "beforeSha256": "8d473f1a810061e308de8f12186f8400ec7999c81d927103b9c9f6581199e8d3"
+    },
+    {
+      "id": 95,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "聴牌維持と聴牌外しの期待を比較",
+      "sourceUrl": "https://youtu.be/dXn-vI0X2FA",
+      "contentSha256": "5dae79513a49a08cd302eb2df424571893eeff142fe04bd13a56bcbd96d9bf90",
+      "beforeSha256": "478b93d6fc4648f4c0401e6bddb6e99550d1fde9ceeb138acf811a600b8e5d31"
+    },
+    {
+      "id": 96,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/-NMEmqrYsM4",
+      "contentSha256": "7ddd1d86c945b64a0668acdef65398bf4f84a6a1d0e6f2a0fd72017de18968a0",
+      "beforeSha256": "6ff37f2a4458f4f8b7ca825021b85ceafd67e24acae362c361d82d8531582360"
+    },
+    {
+      "id": 97,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "槓判断と複合多面張の比較",
+      "sourceUrl": "https://youtu.be/dzI9h-Sq8-k",
+      "contentSha256": "2ba8e37b26fbbecb0a41ce8c4355abcd9db446353f4e656a255f8895552a97cd",
+      "beforeSha256": "bab4ec4b7284f612cca54a50f7a03b111ac8b960d27f5a1ad19f33d96cd76111"
+    },
+    {
+      "id": 98,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/mFYYwKK5KGY",
+      "contentSha256": "8685ec16b28e147553a7da2ec84528c85112b218dc027194b6f9c02920d3f699",
+      "beforeSha256": "518a1fe719dd82b4d4d0b76642deca06a7d870a376f20a778c65bf6fd36216d3"
+    },
+    {
+      "id": 99,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/6tcXKtx7m0M",
+      "contentSha256": "88fb548bbad1352db9726844a16a4bc7620ee6a5a8bf0c0cbd7f9809efeeec45",
+      "beforeSha256": "8cf6452f2be6aa2b96ce6c522c5dfa48dfac148cd84e16426567d5ecc6461ae9"
+    },
+    {
+      "id": 100,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/AZ-UDNFAJ_k",
+      "contentSha256": "dcc7b936af3985a3bc7b145ce1d9126e2c2f93b0cc89da1bc724afc7353188e9",
+      "beforeSha256": "18c934cb490f9ccacc979493764af0fe981126ad8194c3a079064be2c42b320a"
+    },
+    {
+      "id": 101,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役牌待ちと両面の和了率・打点比較",
+      "sourceUrl": "https://youtu.be/4BvU5jHxmtI",
+      "contentSha256": "47c5f05912231f2ec3cc0beb082928b7f7c1ffa283e52f16d72658366af79935",
+      "beforeSha256": "c2e6dad92be6ed68ebaa183d5121910771a799335ad35aa96349878617392895"
+    },
+    {
+      "id": 102,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/w4np2cnLwKs",
+      "contentSha256": "14441aa6900894a04f06f97f4addea10589e05bced77adcc0cf4217883a49e74",
+      "beforeSha256": "cdd44b4b6f5ae208ff23110c4f0d4c57a429a4373fe1465a3fb6d9a4a140b30b"
+    },
+    {
+      "id": 103,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/KVMU2MQsZ9Q",
+      "contentSha256": "0f46b002f455a7cf5e5cf0d668b3f7d0059c0f38bdb787f9987e64dfb3c24fc2",
+      "beforeSha256": "d08cf3ec2d14f9a6f769e77a143036a60a552458524d1f49b22525bf31d4451b"
+    },
+    {
+      "id": 104,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/gddQsacKZQw",
+      "contentSha256": "d264da158e4de8fb318d3d03c3aac04ae2900c1e3d0f7f3f0c98b6cb81bf5ec6",
+      "beforeSha256": "a680f35ad2a5d9845aed9046ae221f8368d1dd707db4935c534ff658d1502cc6"
+    },
+    {
+      "id": 105,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/OfgaT859djo",
+      "contentSha256": "4e02be1a6d938b9dbf8335ff1f478d81ce5c605ad77b238c29eba58d88bd0234",
+      "beforeSha256": "7ddd5ec584ad8cde099d8b9f52a272b463cc7f78e72567b7a0d48cdf96c02d24"
+    },
+    {
+      "id": 106,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/JlG0o7Crqhc",
+      "contentSha256": "c776e3a1bb10a732b9058cf8668c0b9fcb308b8179c6edbcf0b5fca0e3e1ff82",
+      "beforeSha256": "d0b5f7ad3bd30de9485ff0b84cee7b109ffdcdb9dc505faad7d47c628689590a"
+    },
+    {
+      "id": 107,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/crqsjnq8Xjc",
+      "contentSha256": "611a7e8e947c183e3c3a60f1e7d754178e76d7b78131aeb1499de5ba824eaac5",
+      "beforeSha256": "28c014f345261cdfa92de9139ac213fb3018d86c7adf146e89ec07f7f20021e5"
+    },
+    {
+      "id": 108,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/PsfTsyq2eWk",
+      "contentSha256": "831375db28c81666c636c967875b40b91ff2490a9fc07aed29e3069694093e54",
+      "beforeSha256": "1acec1640a0090a0645c310b76cdcb3cf6c4f97de10a62b0250fff5933531371"
+    },
+    {
+      "id": 109,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/8tW-GDTjgkU",
+      "contentSha256": "0da3a03c46f66f31c6eca59a31842938a08467140bfe4c0588153c5bf1f8ed16",
+      "beforeSha256": "dcd73ff95d670da6eca790b2a4c703c0f59a2d7698d2e1b669cfd097956b9b3d"
+    },
+    {
+      "id": 110,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/LARHIb_AEFg",
+      "contentSha256": "34e8f679d385d351eb3bc777a4e2f03ce1be4eb6aef1d2de6361e2d5a8b393f5",
+      "beforeSha256": "3004df99afc78c3c39ab673877f5bb65e1633fcf7144c661d32362210bc8dc27"
+    },
+    {
+      "id": 111,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/Np3QEVDl_28",
+      "contentSha256": "69e7d5bf97c989a1da01554e1a39b806c75f7ebc185aa0b13ef7f00f73d71c07",
+      "beforeSha256": "f4d5bd1ef3d76075bbd109938ad59ad86e2df8f8d74f37f1bfb386d19ff0d413"
+    },
+    {
+      "id": 112,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/-rdWsrnVQg0",
+      "contentSha256": "40cc8857dc7d636ff4af29cf88f4b58f5eb43116cc80046b4edddcff8b759880",
+      "beforeSha256": "5336b96646c7644f5cbfb34d7a26140a6dae99107a7a30ca6296a4d8318de660"
+    },
+    {
+      "id": 113,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/KkjDiyPjffo",
+      "contentSha256": "715aaca7c3fa80ee6ec6148229bf0fdc7a7d7210f167aa2502fd96f60b18f8a8",
+      "beforeSha256": "843adf3ee01c1cbcb0174f7bd48921f9e3216ab1c61ce64edaa036992126c510"
+    },
+    {
+      "id": 114,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/TJrhyGy_TLc",
+      "contentSha256": "561dfa31c48fb5a5b4115ef445cc751b99e8e1f6c10c45e973ccfdd2fd475d1d",
+      "beforeSha256": "ae58c804cb715038e2d343bc0173483ed49ab778044195a4aac62706c786f49d"
+    },
+    {
+      "id": 115,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/4czHFNrpHqs",
+      "contentSha256": "dd6d8c2223b7e271eeba16ea856a1dd7c9b542ffb6c618a007a61c3df726c9a4",
+      "beforeSha256": "6f2260df30be7f8ed6ffd83c9d107a3e98f2237372abe48430f91dd81363ae74"
+    },
+    {
+      "id": 116,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/CfoNg-O0Beg",
+      "contentSha256": "f7a5ffac0d0de04fe81f7d44a67d4bf3aa5c721c34e28a1b68a48849f2f266cd",
+      "beforeSha256": "635af102013beaca83ea38d81b28a81036503c7733e35e578c585e9b0456146e"
+    },
+    {
+      "id": 118,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/vIXmLVP9KSI",
+      "contentSha256": "7a9f80d6380822a9c46e648e87c95b5d4b92662af8de35177e8bf6fc12a8509d",
+      "beforeSha256": "8995b89dc38cb4d87e1919f7de084309c9222df3996d8330fc1b1c7b55614cf6"
+    },
+    {
+      "id": 119,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/HquIRZSKz48",
+      "contentSha256": "9b9165e567ce6a2354f8637908e6905234a059308fe9b0b4382d4b14d31e4437",
+      "beforeSha256": "e2b625a7a4abadd41f0641814366d7f8d70742222c8328426cd4945ecf033d10"
+    },
+    {
+      "id": 120,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/Z38S59BXJ7Y",
+      "contentSha256": "0b39f144ae6d82376b7870a14ba05a8145477c960b55a0cd07e30b9ef560a927",
+      "beforeSha256": "d2fda7be9d4dca83cb989ac2aa63aebe0b837878169db01e4f86fb1d192b4959"
+    },
+    {
+      "id": 121,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/BJJBzA26iak",
+      "contentSha256": "c84968e603e9f33480db52af40f746e63079b29821c24569877bc3085759911d",
+      "beforeSha256": "dd59d81cd777891900e8e765221ffc862bdcb013ed753056a2633dc903690766"
+    },
+    {
+      "id": 122,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ECVKRtM-Kwk",
+      "contentSha256": "14389bb339684c438062b4cfb5685e972381482867948b9950cd984ac17ce411",
+      "beforeSha256": "b8104bbd34b7d17feae4685b97541cad7666651f95515df0edb73383245381c6"
+    },
+    {
+      "id": 123,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/pge6YCjrQ9s",
+      "contentSha256": "291b1f2cd508dabf49a4b8f3ab068c6d0de0d9aebf16b8eae20ca8d169193be8",
+      "beforeSha256": "d3d869088c6dca3418e61c9d59145dfaf05adfac42f7e505b188f18a33d1af10"
+    },
+    {
+      "id": 124,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/mpHrvC2BYG0",
+      "contentSha256": "bb08e0295c45998bf78ffc0a59e0ead816b455f779488cac123ebb8bf2e16667",
+      "beforeSha256": "e646b72ee5c12e6b7dd89ec8f879caccbaaae9fa9f46beb4d89aca83d56d7357"
+    },
+    {
+      "id": 125,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/kMEqV0loSas",
+      "contentSha256": "35bba6f86b1aa528b4fbaa98b9eb3ec126238189e57cff5bb96153e44e8a7a6b",
+      "beforeSha256": "7f544c3a065ae471c261741736fe6ac89d8236d530aed29fc3d23ecd54e76113"
+    },
+    {
+      "id": 126,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/r1l5oD4PAHY",
+      "contentSha256": "97745d651b106179e4e3bbcbe785d2a03e80d6810f395e5203d7613269c0f6a7",
+      "beforeSha256": "8527aa70c514bde50dd712ac2cc4760b6de64014f053256117c806e8246815e7"
+    },
+    {
+      "id": 127,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/jj8tQ3W13Zk",
+      "contentSha256": "666e6cd5f52d04740d8a3dc90d89b5152d00456e8dc687b9fd69a4f0a06354a7",
+      "beforeSha256": "861bdb57073d32d8bc9c9249b51611578257114a5b18f7733178edf45937812c"
+    },
+    {
+      "id": 128,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/v0g92rsOUEU",
+      "contentSha256": "a9950f1424a000fd06d9bafe206e59fe1a0694b115810bdf056bed3962a2d8d5",
+      "beforeSha256": "8b6c1432668d6790f758138090f56cab5583ff862d83e1492e27616f6dafec1e"
+    },
+    {
+      "id": 129,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/iN0_hfZtO-A",
+      "contentSha256": "4372e924a3be7dbfc61dc13275767e66292f47d34a929bb7c81bcd1105b45750",
+      "beforeSha256": "dcde3278c998529095b1ef3453f6f720df4d9f19c5a0962b2992a9cb2001a8d4"
+    },
+    {
+      "id": 132,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/beXWsrV-GQg",
+      "contentSha256": "dfc9407ed8f1f4e3a3dfff37050ae75655a0dd7511f15e1bfbd30c2a0b65bff3",
+      "beforeSha256": "6b23a6cb88e11118b9f2f3a109691bcc69704f1269c03fab52a3e8284d10acad"
+    },
+    {
+      "id": 133,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/FINi2UfVDco",
+      "contentSha256": "50cd8c637787c24ebd26b8256be5ab7713f2d0c529ac637839a2714a57f7b53b",
+      "beforeSha256": "49f6b73e8cae0dd6ce2a8e1993898795ab1d815937db9a66e1008719a19f5597"
+    },
+    {
+      "id": 134,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/RYYwcejEJ50",
+      "contentSha256": "0527453ee6262f2f687eb708071ce8ce00f70cd1996216778675dcf891f54044",
+      "beforeSha256": "5d15552bef10a7f926c1b2af34e8a691565be23434b81157b95872756b695fe2"
+    },
+    {
+      "id": 135,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/jjphdSwN72w",
+      "contentSha256": "57b680517b8a45ecb607c8a0910f4b0ed747a489f03dd9bb1498daab23acdfb4",
+      "beforeSha256": "4a6f8454e367ca6e3df3ffed4e7beb465b9e6dd1cd3eae4f63357e426b4a279b"
+    },
+    {
+      "id": 136,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/yQRZoqTfMsw",
+      "contentSha256": "a82a2c1c0d229eee968dea4fb378d2207b8af1dcd4a932190620afee4358397f",
+      "beforeSha256": "6cd816eafe6fadbe93439aa54573e90a67f69ff7e25de7d77a2e61d3fd1096d5"
+    },
+    {
+      "id": 137,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ecMDMJ8eHYk",
+      "contentSha256": "0c91a2eb19ba7f44c9eba8bdbf07c3168911b87fd4e48b63dbe8eef465d18fcc",
+      "beforeSha256": "bd010ff8a97bb76b90801cfc0dd766bb9c00a1fb8bfa313f310ad00f5dfa46c1"
+    },
+    {
+      "id": 138,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/243yZ6-AeIQ",
+      "contentSha256": "c0a3adf138671f55460664999736b63f531a0a399f9d669648851c07eb51cb0f",
+      "beforeSha256": "123b986092b56869a78ba6c5c888f151cae3fc94dd1d71efc354e63dd584a494"
+    },
+    {
+      "id": 139,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/JB0x3SKTtjE",
+      "contentSha256": "c869d17dc15cb7f6e7f02917d81bd513bf7c5ac2323bc15aadf12393a6ea3cd1",
+      "beforeSha256": "9daa1a91c43b904cc91f4d566c1a203cfa344728c54ccb9bdfe60b9f574fd62c"
+    },
+    {
+      "id": 140,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/5_zfsBe0Ock",
+      "contentSha256": "9586d814661496d3e64b46b300b6784dd387814190940356e36fb438789b8138",
+      "beforeSha256": "afd24cbfb27f774d18797cbbaf54f2dc480f898a7f86fc61d58bc020e81387cc"
+    },
+    {
+      "id": 141,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/DsrXEBekTmI",
+      "contentSha256": "d33770a6f662fd4b8b529d9b85d7fe60e807faaf6b80ac3e8a788ecabd39deb7",
+      "beforeSha256": "cd7c5478741486cd653f7a53032cc69992074a512c1470023ed5f3db30a14dd0"
+    },
+    {
+      "id": 142,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/ScbxHpLTRe4",
+      "contentSha256": "a2122654782079654727a7220dbe11c3b4c05cc79acf5f315b56c31b2bdb1e08",
+      "beforeSha256": "72af17cd77b1b51d9961cf2013d3c363a3288fa000671eeba04f8be93617c063"
+    },
+    {
+      "id": 143,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/mlOfX9YwlsQ",
+      "contentSha256": "9aa1fa429693250fd3977162cb5adb65e1ed69bce3e1e6a08accee5ad5b0d956",
+      "beforeSha256": "61399554044abfdcfa9f69e98c510d6c83a341aee6461450b6554df3733e4cc0"
+    },
+    {
+      "id": 144,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/vxpNz8v7waI",
+      "contentSha256": "dba62857cae13e438a5ec2edcd5440d10f3fa46b8b2feefee19e56715ccc29e8",
+      "beforeSha256": "77a197516be41cb2b95dd8021f64e88c0ff319420cbc334148a04f6dcd1ea8b3"
+    },
+    {
+      "id": 145,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/am3w-wSCBTE",
+      "contentSha256": "77a5e2544901660af110db19913120a012a49582a994a311e1aecc3d65eb4578",
+      "beforeSha256": "4c5cd2f9d16d924d11c31d2ea7c8c4f3f4d786756d67cbfc792850d18556f8c0"
+    },
+    {
+      "id": 146,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/e-DMKNDonro",
+      "contentSha256": "1aea2185e92d70a21effcd675ff24ede158ec6381c1a6d741365aa6d012eec61",
+      "beforeSha256": "aafcb61c5db319ea9d961544e43851856b9b24e58ec42ab116f60cc1386abf03"
+    },
+    {
+      "id": 147,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/aS6UZ292Rho",
+      "contentSha256": "5f70e20ffa1600958bed28d9b9b2246ecc04702240728a68ca0c080b25a3190a",
+      "beforeSha256": "f942aca0da05eaf8df865809cab3c699c280baac53b77093208344a5aac0595d"
+    },
+    {
+      "id": 148,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/5oeVT9_U5l0",
+      "contentSha256": "3501e66f36f85ffd046fe035bdab2a07ff4661cb92f204c863d6a2429193244e",
+      "beforeSha256": "af624a0d92efc8829dfd112dbe9cad401cf3523ec5e3df284c381b683a78237b"
+    },
+    {
+      "id": 149,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_-2732uuBpo",
+      "contentSha256": "5db48798664b1f3b48cf6331ec519a4d78e9f7c1c1bb4a754c1b51f4678c4dcb",
+      "beforeSha256": "c05e6c4bd9e5bf9e91ed6cc35d978eaf9c2630dafeb1d125664ef849f37c74e7"
+    },
+    {
+      "id": 150,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/jj63zZl5sGs",
+      "contentSha256": "187b7111bec8d79ae2e03bdc3dcadfee3eb52ac1c6cd9b5280900aeed1d7cd17",
+      "beforeSha256": "aea8b00258f6dab2600d620646f59000d24885278fd120a200ab34546d1554b5"
+    },
+    {
+      "id": 151,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/nTuSbrWOFqU",
+      "contentSha256": "7e968afc42fec3588198dbd370ff41db8cf72f082d3687e00a2da25d7a2246eb",
+      "beforeSha256": "3b5b9b9d60ea3b63ecf314698ed6033ef942a3b06a36eb6fb6dc2576b60bdea9"
+    },
+    {
+      "id": 152,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/JSy3RkX6Yr0",
+      "contentSha256": "40b0afa520e748fcc49a8b69c045646542065ed8e434bbbd699cd40a5bd3476f",
+      "beforeSha256": "8bec2df53d0954fd651ac0907a8e658501ad7d07557f5c68aae0a7798d4d8781"
+    },
+    {
+      "id": 153,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/BTTqaVVSZ7s",
+      "contentSha256": "6a3904151a861988535cf3dd3090b2ac1c2ffcd4eea78ed846f450de8e0a119c",
+      "beforeSha256": "6a14c764886621bc09a8970104b0255db35b4bdd1067c7b8b2df132266d6bf83"
+    },
+    {
+      "id": 154,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/Hxml8c6aiyg",
+      "contentSha256": "26728475a611b5566cbdae4d3f08bcab11629bd5dc29ed2887b1d019b25285ab",
+      "beforeSha256": "09f4c9d335723b713ec74b4d81a6f2f644c0d02f41712e54de3466cb8cfdd2c1"
+    },
+    {
+      "id": 155,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/S44Wpa_yuwI",
+      "contentSha256": "be7b06254689c54a5dedd4d4bf9283c242617978bfec1eb9f4e64bdc247d6ed4",
+      "beforeSha256": "43aaa3538b7c8aa81b0e4d63b6de5f4bffceaf9e233eacb5e452d370a08cb462"
+    },
+    {
+      "id": 156,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/H5Xvxd4nVUk",
+      "contentSha256": "e9a35c15c8aa7271e5281cc0cc3e18ba52a9edd6c6ae7eb5f1d1e06dc7fd2fe6",
+      "beforeSha256": "af3c2a24709dfd14fa8ad1c042137b0b20ab10e3acf1d2e8b3d6b454ef6da906"
+    },
+    {
+      "id": 157,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/F_fi0wIpkbY",
+      "contentSha256": "423c87109bb462a059fcc040e6b783ce5d0852c8a1a4737638a371a5d762ef06",
+      "beforeSha256": "fdc2142f4615131c3ea8e23f81ff34472649629c9aebba84729b5beb111b4209"
+    },
+    {
+      "id": 158,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/sOarGIID5n4",
+      "contentSha256": "ab3a3732a9505abe9e654e4c7ce6ca2b6be20adee5528ab40f26624e6a8e4eaa",
+      "beforeSha256": "77f1c8adbc151380f21fee8481fd422db6d2e8568537ace7c1e35a8607ef67a4"
+    },
+    {
+      "id": 159,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/A-WRDlb3k3s",
+      "contentSha256": "1dd1e77d85ef103798bdb7e22b4f7c560f04255188e97d47d3a46f7bef4348b2",
+      "beforeSha256": "8dd073feeec3f6c4c447110a3421e278c5918b1e03b19cee4fde648bc685ff9a"
+    },
+    {
+      "id": 160,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/O1rH1niCclI",
+      "contentSha256": "6710ce90e1684ec31ec05fb725cb7656055e2b8ed76a67f894fc80d2f57e0b96",
+      "beforeSha256": "bfc0cfae573e150c6da757be2674255e789b0e10ec4a9155e87204b0402d288a"
+    },
+    {
+      "id": 162,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ntcRIWEd7d0",
+      "contentSha256": "30a90f09a594eb857b3f5754d1a32e1fc56c93005195ebe31bec371926dadbde",
+      "beforeSha256": "4eb39a7a92a9d71d8cd802a3db273a24d203e985fafd751dfd0e1a13618a89ba"
+    },
+    {
+      "id": 163,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/VjOzvtUiKnU",
+      "contentSha256": "9a8d7b087bc6f2de9071bb4699081bbaf6d44fa77c374c5f8d6877940bd67460",
+      "beforeSha256": "f8c110588196bd218c73ecd08a57474b8fcc9f2ffb46dfdc2b30272c553b663d"
+    },
+    {
+      "id": 164,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/959tnkZizvI",
+      "contentSha256": "0827856e5a2c2160e1e79bebf130ac686323250619952891de822bed937771c9",
+      "beforeSha256": "9ed0ebfe40b8d0f2ab5b281027f64156c93fac719083aa52be05bafdf601750c"
+    },
+    {
+      "id": 165,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/tauwb2NiWq8",
+      "contentSha256": "f32b4e1d0805ae03b3a767d968e59dbc1f081115ee735ed8a2b6fc9f60c11a39",
+      "beforeSha256": "dd2f96bb1b3febb2c0de192b717af6b0f30dd9b2f7396d3835f463498600d28d"
+    },
+    {
+      "id": 166,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/a3yIRViy5gc",
+      "contentSha256": "717558f9a056fda78568ef783d068bd9ab5db2ed25a876ea1df4bed149f4d168",
+      "beforeSha256": "19f54596d96cdffb532a0139001178775e80bcd987515ff2d65cac48cdec344a"
+    },
+    {
+      "id": 167,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役なしの待ちを引くことで発生するフリテンの比較",
+      "sourceUrl": "https://youtu.be/ADWMMNXtryw",
+      "contentSha256": "bf37c5018d0c6f4aecb176d8ccddd79c770bf9c2ce5eb8e731e8c3ed07d3eb89",
+      "beforeSha256": "32dcd10bd254add0afd252917efd0cd1606294a446844e65cf4fa8d88dd5d9ec"
+    },
+    {
+      "id": 168,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/VWOg74rytII",
+      "contentSha256": "e0c910e28d38498862e57ba3e6b4d7978aac47683d78cf7c166907211597f3e6",
+      "beforeSha256": "4b292e230ab3e05d397e25327f9f61ba3be40715193ea8e1bcf25fea9906a167"
+    },
+    {
+      "id": 169,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/Aijtrqz70Os",
+      "contentSha256": "79febee9d0fed5ba2d69fce98be6a70ed4ec3d6b42625bc7d56513e6a8f8b731",
+      "beforeSha256": "0aa8eeca3a21ccae3bcf23bf96c9842bfe3f2bdaa474f46d225adca2e6f74e76"
+    },
+    {
+      "id": 170,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/EwtJuGUcYy8",
+      "contentSha256": "ec7b1c68170c56c097ab4fd1551657dff4d2858918ddc0318608e7fa3c9734e5",
+      "beforeSha256": "46391da02bbfddf3324ed3193923e5ded7e8751045dcdc44634fc74671902f92"
+    },
+    {
+      "id": 171,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/GucqM0jEhlA",
+      "contentSha256": "c51ac7f97c33bd037fbb6a3c11e6cc5b971e4a0fac628439682118b2dfad193c",
+      "beforeSha256": "a9680803ae2a72f145ba552a310922a88a9fc30eb0c47e216ac838c96f8fa188"
+    },
+    {
+      "id": 172,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/YmpDPeQ7bDM?t=3",
+      "contentSha256": "536a68594d464ea2e7d93c4f3a0f03ca2e4522393faf62bded01159c704724c3",
+      "beforeSha256": "e43230cb17aea2e0ec646ab9033a509e83e6697a9ea79ee8764af0d2c85890fe"
+    },
+    {
+      "id": 173,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "オーラスの順位条件によるダマ判断",
+      "sourceUrl": "https://youtu.be/YmpDPeQ7bDM?t=72",
+      "contentSha256": "ba747b866384d23c57dc89d20fae648ed01395ea85f040853444769db7baf768",
+      "beforeSha256": "04ed662a196b0e6631592ea0d72aada1a8b2c9e5e9bb6b1ae4e91fa53cf245d5"
+    },
+    {
+      "id": 174,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/C9cIpVYSaD4",
+      "contentSha256": "86f02131b7dd66c499100945377852697d3564cca4f8a3a77695795c0f96e6cc",
+      "beforeSha256": "59a4ab39d04ef6c7ebbb30dbbce39f9e25b9782fc2be5a3276200458ec9296bf"
+    },
+    {
+      "id": 175,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/MFvLxCF6m2U",
+      "contentSha256": "bcadb1059701bdf9629eba2b8b4be6498fdfa8d5eedd93dba48a9c23d168b8e3",
+      "beforeSha256": "24e71ddeb7b188b43df14837e7aa2025f263efd26c8c10e030f630d73dc912b6"
+    },
+    {
+      "id": 176,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/m5k7QHBdgGw",
+      "contentSha256": "d8971ca7ba00f50c25aaebf27480196225eb82eeb6784cca584e059fa4ecb85f",
+      "beforeSha256": "f98444f9775c0528dd45ffb6319619754f1890d7df89e3debb1ed60264cfad61"
+    },
+    {
+      "id": 177,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/YMjlho87KhY",
+      "contentSha256": "189a3bb439635f08c5345203d291a1920014325dc8e6f472adfd24abe0cad250",
+      "beforeSha256": "49c3490b5f4b4e52e7ec0f34be1a1d7995c5802c8e0d85f13d85cd4ffd741ccc"
+    },
+    {
+      "id": 178,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/Z9TEDKTdvnk",
+      "contentSha256": "c159a9485102431565fdb42c311ac907f86964e278ac2019a5f23985b6f55a10",
+      "beforeSha256": "29449707b4c27c90f7eb019bc293fa20f3e2aadd982eb86f1a415b048d05d56c"
+    },
+    {
+      "id": 179,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "巡目・打点を含む聴牌外しと即リーチの比較",
+      "sourceUrl": "https://youtu.be/Y41aBf0ecxU",
+      "contentSha256": "a3906edfdaea3fe0589558084c4c7bb89b867719560b1561861ed20939028e10",
+      "beforeSha256": "ec8ef977013d6f3de503ca3520e52f403f598e86babe727b26c824285dea83dc"
+    },
+    {
+      "id": 180,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/gkw4i-sa1xw",
+      "contentSha256": "f32510b5b71abc31a6a6518ef168847ab4869588bb0b472e0b868bc8a5820fe4",
+      "beforeSha256": "81e158e9ff004197959d1e58434a2afef92e9cd3f91d6360dcebfd595496978c"
+    },
+    {
+      "id": 181,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/bJ9d4GUkpPE",
+      "contentSha256": "90dcbbbd2897ededb10be4b648c7126c8525993f93297b6ee814476ca98db730",
+      "beforeSha256": "f182b15f6f2fe80d5e8ec87731c5251c6d707ec4bb218392b5eb82391ca75602"
+    },
+    {
+      "id": 182,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/NK2RuiiFYH4",
+      "contentSha256": "fe3feeec40e76d097bc4481058b7e5b18b4c685186f39cc6a94ce9e6459680bb",
+      "beforeSha256": "ac4c9505590416b95096612a81066161ecfeaac6aa496a5b08202e39217fdc9d"
+    },
+    {
+      "id": 183,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/KT6HnQWbNTo",
+      "contentSha256": "ba7553047a9ed7686ce97dd5e613d35c583f71d66ec61c2eff3f0dbde7fab474",
+      "beforeSha256": "4cc0e93f48532878517241f2e4af81be8b79325ca7857beeababacd531ec4d7d"
+    },
+    {
+      "id": 184,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/F_9a7-wUh6o",
+      "contentSha256": "eecdde2c2172f3f30e0a1b6234ddcc1cecd19a5b50e51034df5f8cd3ff224598",
+      "beforeSha256": "1f3d78d816b9e98dff2c31b5a50315f59bfc3bb2b567e875c246312003e78147"
+    },
+    {
+      "id": 185,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/alJySGX9JI8",
+      "contentSha256": "7f86e66aedad5bbc2d2a5c5be93939cd0af831d0ea4994eeb6a2b606b4ec66ac",
+      "beforeSha256": "d748ae87063191957ce21a3cdd83bb7800c03375be52e2c8d00dda5c4b6e4c8a"
+    },
+    {
+      "id": 186,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/o6is2_ERCMk",
+      "contentSha256": "b9757b30023d1f377d9d216ad4b2125f20efbdd80de92adf081ce5f575736ad2",
+      "beforeSha256": "a83be531c597daab8cbc43659a061a04632be321969be2ab54ec3f998dd72b88"
+    },
+    {
+      "id": 187,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/2zS7ogdnDXM",
+      "contentSha256": "58572597a919a36df1a9a6037d51a4b48ee820b7d6967a7fc8bfd6a323a5f28c",
+      "beforeSha256": "577dc9d4d7198b8dc758a5e6a70b060375d4430226ade94d2bc849ca240d5300"
+    },
+    {
+      "id": 188,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/lhBFzVkPI6M",
+      "contentSha256": "16510af8992d729a70a6034fc81bea1672e940bb24f1a5a6e861fda903d42fc0",
+      "beforeSha256": "afe9cf4d80d77840615655841dd229033b62a31f73e2fe415cb13aa79944d75d"
+    },
+    {
+      "id": 189,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/a7u1L7mfTgo",
+      "contentSha256": "e691e9fc9b1ae7ee938695f9bb287acfecae87859d99954588d3c9600c0e6273",
+      "beforeSha256": "7ef206b6f1b490d2720f2427e618e91d6cb64c2dbaa0701b421839c4eac81acd"
+    },
+    {
+      "id": 190,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/x8f60GbNEqI",
+      "contentSha256": "77ad06612e369c49d956db754bcecfdfb37297f3a9a40087c7f6bbea97753608",
+      "beforeSha256": "a6ecbf5156135228dfa0de99db9b03303e4a1db93ee9bd0014262716eece1414"
+    },
+    {
+      "id": 191,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/DgX6_N4q6pc",
+      "contentSha256": "c607917e05e321348ea61afec2b815638bda2be890c4df53a98b58958c695413",
+      "beforeSha256": "64fa9d49e0d599f452d96a844f3fc17b43d8a00055f3e47700e9a4a47b72aa20"
+    },
+    {
+      "id": 192,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/qOaCPTJ1He8",
+      "contentSha256": "16d71de413b672a67689b241fb98801d273aba51676442e232f387cea5eee023",
+      "beforeSha256": "5068d1fb932602bcb341b73a3525bf8c208379fce6bbb4bcc807e6b4bcfd9d30"
+    },
+    {
+      "id": 193,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/V0L9XlPrQpc",
+      "contentSha256": "b5ba4f03cffadf994d11229bd9a9331b06ea5239538ad86d2780afdb75db9e5d",
+      "beforeSha256": "cbaf553d8773af3bfb026759a067691c64d5146573eebccc3529fdba18e2a1c0"
+    },
+    {
+      "id": 194,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/PMXTRpPlm1c",
+      "contentSha256": "feb4b783724658af3ce6d9cc238d19d91cea23f7d05b5eea1892f4bcf1b77dd3",
+      "beforeSha256": "30aac27adb4177d0d1c3993a47713b913be2a913ec8538a6af56ed0aaf29c627"
+    },
+    {
+      "id": 195,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/K2mAtm7vlus",
+      "contentSha256": "c48dac87014bdc9df7786d0fc231010d33b0c69761d8b39830b09bc73388ca19",
+      "beforeSha256": "39b5b1ae09ef431cd12c0446b0d3209076aaa898508caad9f0a1194c91062d7d"
+    },
+    {
+      "id": 196,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/tYqqSvaVX2g",
+      "contentSha256": "aae10f182dcef5befffd462e76ba6f01ccd1199cff9b55ab2b0d6b1707fabbb4",
+      "beforeSha256": "ce2b89634f2600ca6f18b285e07e802fc25672926a6873388b0e475de966fa84"
+    },
+    {
+      "id": 197,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/ffhIwmmFPy4",
+      "contentSha256": "de766809e64fce1f8420a1e5ccab7d8b5ac259ed9fc8005c78d5f83a5f0b952f",
+      "beforeSha256": "36f3458cc6d06c03e277b8536f37c216522b5b03591bedac49fd03269b305360"
+    },
+    {
+      "id": 198,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/Key9P4GY0LY",
+      "contentSha256": "0f3ef612a18caac03fcc7d5c902b3424291e2ec9be4e87a78161a977d5b39e2c",
+      "beforeSha256": "c7f9a7314209e000daaa66f1d4ab26f2d29e46aafc55c0a49337068b3a8d5f9d"
+    },
+    {
+      "id": 199,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/twuKO44Ambo",
+      "contentSha256": "d3e1a1ca4442ae83750b6000ebad47d98fc1ca3c20c552aeec86f221c5655dfd",
+      "beforeSha256": "19f60fcf80f3896546361280b8d6c2750a2ef1931756b95524b03a3ad66ed6bf"
+    },
+    {
+      "id": 200,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/Eww7heaCyJY",
+      "contentSha256": "20bb4a90ddbe96e13ec16b8fbbef99f30ff276323042d8f0a39290636f3b0b82",
+      "beforeSha256": "75c40b906e9fb3c91c66b52487c7d8fbed8a24d304c0e20df2e1e283e1dfd1e5"
+    },
+    {
+      "id": 201,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/QWjTmew3TII",
+      "contentSha256": "51402d4cf8f881188fc22f712f253b583cf81a091868d034539820c80abc27e4",
+      "beforeSha256": "1347903f3e38fdd4e7b377d497c8321faa354ca714396ff5db25fb633f951576"
+    },
+    {
+      "id": 202,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/-l14p-fXyE0",
+      "contentSha256": "ea5d7b7aab16c118196a7248ad9c3339140ba6c5dc3f86b3e13894c832a39aa3",
+      "beforeSha256": "21e7ffbe952ac388e08a6d9e778958c2a52f94731c55f4b9829ab0c750a95992"
+    },
+    {
+      "id": 203,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/XymmpJ3aUS4",
+      "contentSha256": "ae3815c67ca6f478ed07525489b2f69d3fa8e47cc16eb421d4d3f3691547c4db",
+      "beforeSha256": "acb1f3b9e4b2e58de0df6532e426ce125def6dea94eaef9eba6893d12edf180a"
+    },
+    {
+      "id": 204,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/lo2NtxwbOmI",
+      "contentSha256": "d2519e67a5b99a03bc74fa21545b3339c83b76441101eff38c7100e90e5a2dfc",
+      "beforeSha256": "1f6ef7bc71c4b47917ef0751844bfece92c6d190b04be0c4e2e544a29b5266af"
+    },
+    {
+      "id": 205,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/T9uasSeju3Y",
+      "contentSha256": "6ed7553bf9f6eea51ff5ad041a38ccf4ee030e3b0492642d0eadd47cbbb93dce",
+      "beforeSha256": "d231f4b834bd4d29571793d79fdad697ccb3a02b0f960d92d737fa73253bea94"
+    },
+    {
+      "id": 206,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/92C-0oPgeYU",
+      "contentSha256": "c000c078db571d89e9bfacdb63ce14c5e216b1b3b97ba5821f40dde66924d573",
+      "beforeSha256": "59c81d608e7c1b9405254c67b965601e5c60626643b082cc41f9023890770577"
+    },
+    {
+      "id": 207,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/PdzE7SPwGuA?t=3",
+      "contentSha256": "1a138c28bcde580d8c74c373bdb77f1b7a88195625c28d6e276ee3040826bad1",
+      "beforeSha256": "b0839f180a7cf90bc527a3a13465cbd159fc82e6fa172c31bdce5d12acbfff0f"
+    },
+    {
+      "id": 208,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/PdzE7SPwGuA?t=42",
+      "contentSha256": "12975ad6995c21200292a14acb30d67f5e8d30286d20bc672b03d603df5ceb79",
+      "beforeSha256": "8dc3a74b806183a3d5db1d3950ad34cef0442a06796090cb7fda462714c2f510"
+    },
+    {
+      "id": 209,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/1XrXCXEYnys",
+      "contentSha256": "428ff0d1ead8a64f3c09399658552d0858b5af7d44e6b902ee4bcaaea5af7c1a",
+      "beforeSha256": "3fbb2aa17e51715ebc4f0ce1aa22b7fbdbbe5a522659ab74087156af6cc3f7af"
+    },
+    {
+      "id": 210,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/SlaH3oh3Pjk",
+      "contentSha256": "734037adad7c6ae32068c48828c94987cee04b3e5a54822d876cfe2a3615b03a",
+      "beforeSha256": "0071b2a69f94d73e00005b5c5cebd3d589326fd022c2e59561c8531c7b498ea9"
+    },
+    {
+      "id": 211,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/kfXEOXTXXBU",
+      "contentSha256": "bf3633c12ed2b503213e7a19d0b8bd059e98fb9872cdad8b3e3408b45dc75c0b",
+      "beforeSha256": "959693fabde1bbf7f1ea79f4cbb669a895af80bd067f935c4deef3aaab8f6cdb"
+    },
+    {
+      "id": 212,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/tePrOPqWsVQ",
+      "contentSha256": "d259354c7acd596c08ae9b6ae2689bde7bd6702cd90342711bb8e9b84bdb7f53",
+      "beforeSha256": "843fe22b7fb295a0ba49fbc4c715528f60a9f1059b6299e3d4e2f7af746611b7"
+    },
+    {
+      "id": 213,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/781mv9KODPs",
+      "contentSha256": "a2c141c8dc7759f457b48b7bc40f3d3f2ec3d2eadb5227918a1e6115808dd150",
+      "beforeSha256": "bef3c410229b780ff06a1998d3526f1d5ca1f2152da5a825ba01bcd2b857fecf"
+    },
+    {
+      "id": 214,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/uv64jtVse3A",
+      "contentSha256": "a2e64e260ab492cce27977cb41843fcdf33d44a92ac2eafe0d295832daf49c78",
+      "beforeSha256": "d755b19e0f51205778eb909f38e1dab0b9fd11622026238c4c3e7a71d991c61c"
+    },
+    {
+      "id": 215,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/6o68Wsq9TmY",
+      "contentSha256": "a4a19f77230b54d4462300db42c9082f97f7dbb7362cfdffe759943f517676a3",
+      "beforeSha256": "4404b8b456f0d48ecc9876adf9942b7364a13b5b0ad175be6b042e7e19db086c"
+    },
+    {
+      "id": 216,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/8Fdst5_WtIU",
+      "contentSha256": "0d2818c1f10cf850182a3063613d62ff573ee96442a451709b65cffb1d4f617e",
+      "beforeSha256": "5979e874cff57638898ed437e745957650b82a09328c012968ea16b8ba61ae2e"
+    },
+    {
+      "id": 217,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/jeFp4uYWGOE",
+      "contentSha256": "0335a9a0cf7c4cce0b4f386fcf25fa1ac08602ed94def248bed70ec7eebfcd94",
+      "beforeSha256": "d4eda7b4e37985b492eb113c9568c70ef984c9d585d5f27792e87e6b07c93a7f"
+    },
+    {
+      "id": 218,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/oLfyQACRqcg?t=3",
+      "contentSha256": "3a53d5f5e8dfcc9543eae5704295b3dcd2fcddfb76c9e7560aa4490a4ef642fa",
+      "beforeSha256": "5468dfb31ca40053248de639925e5b419bc4f3bf9eb01927f91cb2fac8c76068"
+    },
+    {
+      "id": 219,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/oLfyQACRqcg?t=66",
+      "contentSha256": "c1d6d1d40d4503de3bd6323380cb1f4fd7b84e42877f0d16ed746bb23e409f82",
+      "beforeSha256": "ee9bbed7534808c5c62490581fcd52691ece4e1a44ae21bcc2089f78cefff2dd"
+    },
+    {
+      "id": 220,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/HjvGKaZEEOI",
+      "contentSha256": "d25006c865de4f2fc420e44830e2104918431921567f5429c5eb1b755b1f992f",
+      "beforeSha256": "a52ab1dc9392c51e1c3779e18b3184e45d318554129acc8aded03e0530613872"
+    },
+    {
+      "id": 221,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/kAZGJ4r6GUg",
+      "contentSha256": "07f5256fe5ebdf79f6d6ba03c9a7a4fd9da5b548b9eb2b1c00310b64c07cf93d",
+      "beforeSha256": "23bef138f5227e2dbc409cb78fcdd8a8670c9df4e09abd6e24adc1f26d280310"
+    },
+    {
+      "id": 222,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/9AEGTyTif2w",
+      "contentSha256": "a0f7cb4805d98bc219cf6eed5202587862e93c25dee7f4de5dd929accc6bcd69",
+      "beforeSha256": "717137404377be69f6f4e983230826c1484706ceffe23de9016d42c077f5bea4"
+    },
+    {
+      "id": 223,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/z8eU14L-d-U",
+      "contentSha256": "6a7479e3cd795b2ba3b906b14a237ca147759edca7f35dc41bcaadde0ddf46e5",
+      "beforeSha256": "22b8daa7a9e55a131ccc6f477fe9973ea5851e71f708959295d90be844125246"
+    },
+    {
+      "id": 224,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/yHlUlk2PwtA",
+      "contentSha256": "b3a205e656cefc47236ff2a62f4644018950082810f150ea219b754d5d3d4091",
+      "beforeSha256": "5838f9838c2f9311a3eeb695fdaf20a458b921cf1e87f5ef12a91b162c9fd26f"
+    },
+    {
+      "id": 225,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/kbsGxlWyLxw",
+      "contentSha256": "9a69233a57e4f1ff444a857ca35e650877b8ed7b4c6c7bff63d5e989dd8f3b50",
+      "beforeSha256": "75061b0e8bc2c0fe6cc97121c7215d973ccc1b071307a61365c8c4e6846ec4be"
+    },
+    {
+      "id": 226,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/3B00F4TxkEA",
+      "contentSha256": "c7da4d2664aa0b3f4e277117b82b55bcc803affeb5e0303900f815574ff3cd3a",
+      "beforeSha256": "3dbff32fabe5e3ad844b369acc75805366f8446050e59f81106f3904e27011de"
+    },
+    {
+      "id": 227,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/hszyXnQGWa8",
+      "contentSha256": "dca46bdac15e23cf8190a52d2c8781acc2a8a8434db7044aabb19a05894cb3e1",
+      "beforeSha256": "821da1a06318fc9e7cbfb9fbb7a191b7b087a245cdc8b2f6f15354fea6c1711b"
+    },
+    {
+      "id": 228,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/5hmoJOGGtF0",
+      "contentSha256": "2984ae711ae4b151232a9b275b9f6b2086f90595a23ccf49d7716b6a8cdd9321",
+      "beforeSha256": "2cfda51d98708dd58043d5864229cef5c91f5b5c5fbeeae06eaadead2799ccae"
+    },
+    {
+      "id": 229,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/WTFsWlqSiKI",
+      "contentSha256": "77ed8ba585ed037cef8a7888fff87d98ba3dd6a813488d879385605931cc1152",
+      "beforeSha256": "b9962c8ba0a6af473fc18240efa7aebefd11d1effe9b3f4142e024a85340af23"
+    },
+    {
+      "id": 230,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/u90s7MRaZuc",
+      "contentSha256": "ab9eb73ab0b719faa9d64aa1eb2eeaf7b6a429e8241661effcaa10a607b22546",
+      "beforeSha256": "8906d69ab445b655b4ff464bdd537f7df72bb46c6b076702457ac692c5bd149d"
+    },
+    {
+      "id": 231,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/E2Kh9FJEZlA",
+      "contentSha256": "748f1fc9b9510266cb9dbbdaff475c6f9f3f61c50df451bb20bb7511700eff73",
+      "beforeSha256": "7c3d8a707e369e5b0baa53ed96e5f8acfb8d70a37fc5a5367759db3e7de73112"
+    },
+    {
+      "id": 232,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/6XqV9szzxM8",
+      "contentSha256": "5786afb3231c96f13204b00e592c7172fc9fd557131b519f52f7ba1454435725",
+      "beforeSha256": "5212303960e3c5d61a6a8252e3c09d2622d3f271a689676125fe6ca8396f4b07"
+    },
+    {
+      "id": 233,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/Q-HwOPSunIE",
+      "contentSha256": "ec607b47827734d07da01985ae5d861bc3cd11efe84990b5983689c6d8cbd759",
+      "beforeSha256": "7f8b62d00b9231839e79f48493564f3a24e751f444e2da7bd70d39c078620170"
+    },
+    {
+      "id": 234,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/tuKkam2cqEE",
+      "contentSha256": "4b28d654c3646d56ef94b97bd7e9396a8de2f3295c08e872b212bdcd96d08096",
+      "beforeSha256": "1ae515a090608d3a02d46f6317da483ffe5946b720284d44353a8a1e99b917c7"
+    },
+    {
+      "id": 235,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/S8qbgBlWTkc",
+      "contentSha256": "a4f47948af6ceab298592764d155758bb62cabbe686cb7289229197f633ac2ac",
+      "beforeSha256": "7247d25d320939856a50588787e07727d995d2c2cca5cf6fd1e5e11c7f4cb838"
+    },
+    {
+      "id": 236,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/lZarZWfFlyM",
+      "contentSha256": "7f76b82978735a6306653e31d955fd21b546a0d31334442ff1dc612d4c9726d3",
+      "beforeSha256": "52e50cdfa1c262953f0c7eabcfa12dadb59a019d8bc8b22f274304c14b317360"
+    },
+    {
+      "id": 237,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/iIR5eJFFJ4g",
+      "contentSha256": "8e2a52622edbaac99a0b0808adbc5e91a509d884bb5a39546a76aca73cdf1c88",
+      "beforeSha256": "ab90a199c3b781fa0a35f2902d4bd217be68634939fa12f3bb8c1f221e3c9be7"
+    },
+    {
+      "id": 238,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/Bh14lGQbzM0",
+      "contentSha256": "7288695001fe5eb41df07ae5c7520da56e312702e12175262640909c3319b927",
+      "beforeSha256": "afd87ab33f345ca22dfe5f3ba576dd8afe51654fa309ac2086d863716c05a8e7"
+    },
+    {
+      "id": 239,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/9OYd5k5Ik6I",
+      "contentSha256": "8e5576d1e050708f84f10cb3ee5728bf40947ee2890fca5255a6dd5bd063f1db",
+      "beforeSha256": "377610291c4ba810dcf4b1947ce1803354f3ccdb9012f2c8edd40ee1c2025b9c"
+    },
+    {
+      "id": 240,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/WZqHpJUH84I",
+      "contentSha256": "d9811285229ac119f4bd95e85a8470e6098f2805b4479b6fe9b9637ab64c1681",
+      "beforeSha256": "c38ae0e9682460e90b61f12c97acb4f82127d95136115c9e35f1a39b172f6290"
+    },
+    {
+      "id": 241,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/SmjvTY-RRLw",
+      "contentSha256": "450437b83a582238ac9483d52a9451f9eec197aef3c8c59253b7f71f6801284c",
+      "beforeSha256": "f028ff53dbd5a5ad584a7f4009b519adda085a6ed6b14623d55a4e4b281715ff"
+    },
+    {
+      "id": 242,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/QQqhmCSJ2sY",
+      "contentSha256": "583a728c704ff9702c4cb5f56fa5b473ace5ae0df960b782f56ab41a8f281f60",
+      "beforeSha256": "36e6e647bafd2bdf04228ba7f0840ef012e30ecdd8a3774bd948e12e7bec69ec"
+    },
+    {
+      "id": 243,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/9WpV_gWuXzI",
+      "contentSha256": "2cdd697cd1f504f6a9005cd4e376c090e15616e56f9cdee97ece56b2ea32f6fe",
+      "beforeSha256": "4f6bfd57851edb3f40528a869d06928baee1e8778a13f7b6245967c14d54efc7"
+    },
+    {
+      "id": 244,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/1UqFIzCGBH8",
+      "contentSha256": "ef13b7f8c9531a3ed2206832198bad7cf6aa08ae129ed972cc8ba270fa64ff69",
+      "beforeSha256": "3bb3bf1d3d1b1857b2eb98321c4844a8bd8ebcf542cf97d6f22835788a687a6c"
+    },
+    {
+      "id": 245,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/0tfcnRMHqGw",
+      "contentSha256": "5dc22cf7ab4b3ae1a1c91d0ca938caddc1723f71a9cfb03057d39e9650d18d03",
+      "beforeSha256": "3da25ebc76b176cbfb52898c849085f0a652cca0f88b7d3bc95650cadf3ae7d8"
+    },
+    {
+      "id": 246,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/S8EEX2VreuM",
+      "contentSha256": "4ebb3e7ddfe2e543e7826422eda0f0dc0c609dde4e6d7bfb46c7240ef12dd5f2",
+      "beforeSha256": "f5cd8e743a733e83287ed0ebc69d50188681a9f13a43f1e9314c6896a65d11e1"
+    },
+    {
+      "id": 247,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/ohxKCO8uFhI",
+      "contentSha256": "b8e3dd26993f151deea19685587abe62d71d11c488d7f4c76b080322bc48380d",
+      "beforeSha256": "fd0afd9cff2a883b3a6f7a1c95decf2f4c057ca302358d6ec719fefc0bef1525"
+    },
+    {
+      "id": 248,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/dLg0L-3ifpY",
+      "contentSha256": "1ed3dc4cce1e593a6422846e5be149827a128ea00263dc2b59ce0e55f0209ece",
+      "beforeSha256": "57bf2187fdf4f2790d46d270732a6b3eac38d7f32c92594e42af70b188bac3c4"
+    },
+    {
+      "id": 249,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/VUcPCCgYTs4",
+      "contentSha256": "578e934d7522e13b9df09c95a50494d42de786e667525fe3d302db47cb893386",
+      "beforeSha256": "38eadedfe1aeddbc846a2e3036acac0357a41093aaa72a042a3e3869fcdf2903"
+    },
+    {
+      "id": 250,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/c1hyWtXluuo",
+      "contentSha256": "00c2556555ee26a5d35cff1d475699bddb4b4996eb4e07dd37e2c02655c881ad",
+      "beforeSha256": "a84abe43a149014f708d6d556ece6ca7a88b530ec55fe39b79b3977c3df39f49"
+    },
+    {
+      "id": 251,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/WYQtugS_Vnk",
+      "contentSha256": "b93209f12b930e81d52dd6f3332f2c929f993938d8b7b94affb27f4f5a2a1cdd",
+      "beforeSha256": "0be6079d0db529dac0b91845355c6becf2bbb09fe53d50cc430da33118107896"
+    },
+    {
+      "id": 252,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/d1XQnSOqLXI",
+      "contentSha256": "4d9e8a063d823f3b8eac27f810c823c6f6483e7e65ac67988fb4d550ca62507d",
+      "beforeSha256": "19058a8015ec81bda6eda02ec33301735b164830359d1aa1ffe1ea3fb4d832f8"
+    },
+    {
+      "id": 253,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/EYClhbeFyuA",
+      "contentSha256": "2aa12020e6101c623a4c32116adce6fb10d3fa96d29fe6281499fe5c61a1130f",
+      "beforeSha256": "648d29addc9a86d5a63e238514698280251eaf6924cfacabf1cd5fab1c3638d2"
+    },
+    {
+      "id": 254,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/fwnD5U8ak10",
+      "contentSha256": "49a8800f2f733918b7143fe0a6ca2d78379d888499e14f89b229aa5bf6ac6400",
+      "beforeSha256": "b989e517158e72ecbcd50bbb7867196bf2183e8bebaf2ebc5e04e0c856520673"
+    },
+    {
+      "id": 255,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/FtsysrppYr4",
+      "contentSha256": "29c4f6e15bdaacb8e97bc814665642da29640edca842325266fa41d9a6f77b08",
+      "beforeSha256": "8ff31227ee429ec53a76198fda76a400020142d0e0435e0bb5afe9683786dd19"
+    },
+    {
+      "id": 256,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/wj29GvQ7XZw",
+      "contentSha256": "9f96794fffc1a55e1c14817b946d2f927226c818f974c9c4791525731e05c36b",
+      "beforeSha256": "044f75c47600720edba935cbc3eff97ccf9f69a0b528f569dcb20ab2c0e71864"
+    },
+    {
+      "id": 257,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/0VsmI4pYxtk",
+      "contentSha256": "06936da98749ce2e55197890651091e3e742dd6146fbcc6a6810f1ae9b563ead",
+      "beforeSha256": "d934eff6e6695eee791c9774ffe93388dc1a3c4c97f4dce8862b7a64002863e9"
+    },
+    {
+      "id": 258,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/cI-x7I8240I",
+      "contentSha256": "077961eda80252596d66b9e409812dee0af45c5b15cda5837f8ca097fb50ef35",
+      "beforeSha256": "3b41cc5748f1767f2256feb344c9cdeae3bb4ea47fc282462155c90a41606027"
+    },
+    {
+      "id": 259,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/YCKPZeB1xC0",
+      "contentSha256": "b9b4353d542293009c7281e1a3dd727d95e8ea7555aa1d51b7caa264e953f3f1",
+      "beforeSha256": "a716f8b660c4b8158f31feddd2f95339cd204c14959c9f97610ceafba7650416"
+    },
+    {
+      "id": 260,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/X-GsZvaiY4c",
+      "contentSha256": "a293c40b338fa6810149c83b38acf62ad31396e21f8d4687ac2f8e38526f7348",
+      "beforeSha256": "1e777d0d38fead72c5f9300fceee0610ba03d914bdcbfa9c3d4a92467a1cb701"
+    },
+    {
+      "id": 261,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/jE4GwL7rKZ4",
+      "contentSha256": "973617c5308a40cd1f995bc464898a3f941b29ebebce665a9253e48d0eda2042",
+      "beforeSha256": "f39359992fb551dd95c8f87033e74420155b68b2fd504ec61b16841023c98830"
+    },
+    {
+      "id": 262,
+      "difficulty": "advanced",
+      "provisional": false,
+      "basis": "approved-81-migration",
+      "reason": "従来の「中上級者向け」81問をユーザー指定により継承",
+      "sourceUrl": "https://youtu.be/3qA4fD780Q0?t=18",
+      "contentSha256": "978c371e1c4bba51ec455989a62d33b3abe55490ae6cc36d5df9105d86dc1332",
+      "beforeSha256": "381f66e0b3959895187a8e00e220eb21fffab2d9807693c2f57101d6353ca380"
+    },
+    {
+      "id": 263,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "ターツの強弱・弱い形へのフォロー・基本の5ブロック／完全形を主に問う",
+      "sourceUrl": "https://youtu.be/e7yWmZ0OCiI?t=264",
+      "contentSha256": "1f19cf65d3a0bbb9353d112c458a7bc905af822aae7d50a01e013db55a0a4c7e",
+      "beforeSha256": "2ba8d5953769af7072e9eaa7402a52e580e5b49a61230eef09c9fb7698e03cf1"
+    },
+    {
+      "id": 264,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "孤立牌の位置、順子との近さ、中ぶくれ・四連形の基本比較を主に問う",
+      "sourceUrl": "https://youtu.be/e7yWmZ0OCiI?t=318",
+      "contentSha256": "ecc54fc83ef7c47c1ca1a0ec2a0d33b4a1d3543fe4e1eb4fcbb24dca6d8feefc",
+      "beforeSha256": "3a71b0cbbf05e9502db126d70e14a8cfaae592db185a185a936ff709aea979a3"
+    },
+    {
+      "id": 265,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/e7yWmZ0OCiI?t=382",
+      "contentSha256": "52c4877321f6c1969973069bd5a40c822febd6f5e3eb970363a14db8fc6e44eb",
+      "beforeSha256": "1c32c02b60efb02f64f17015f35a55ef8a24b56aa3e76c757e6c049c35f80ecf"
+    },
+    {
+      "id": 266,
+      "difficulty": "beginner",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "役・ドラの確保、同じ受けでの打点差、基本的なリーチを主に問う",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=36",
+      "contentSha256": "d082148a0ab0c32c44f19926298b0c6e5eeb9ee42487a20d0d63011e39d73bac",
+      "beforeSha256": "40f202ce2a75e920d984a2c36d8b77c9a6505c42d1be54054932effbe6586e18"
+    },
+    {
+      "id": 267,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=90",
+      "contentSha256": "61d28bea98090dbb7c12d35943325dfb1d58721f2382785788150eb7cea60f11",
+      "beforeSha256": "f97e5b63b92a2cd189e067be878d76379952a4449eeb2f9f07c5f090964cbddd"
+    },
+    {
+      "id": 268,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=132",
+      "contentSha256": "ff6a8870eaeb31c6b9761882964919375845a164bdf4dd92e7dd6f1474158a35",
+      "beforeSha256": "9e4529c1af8021716fa953843a737dc32e208908032a7c2aeb113faf4998a1c6"
+    },
+    {
+      "id": 269,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=168",
+      "contentSha256": "8d7a70b020d2f0afd06372adb01a3cdf6cdc7bfe03aa5d1f3b3b25a725a00938",
+      "beforeSha256": "04c961abacd2fb20c3b1022ae1e1ecec1b6d84622a64113218987c0566df7ade"
+    },
+    {
+      "id": 270,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=234",
+      "contentSha256": "fef049b0b7a8d7ea54df843dd83ab4cb48e0e5419a6f308f97e60b5f6d030d3c",
+      "beforeSha256": "2506c3995b7fab702d87e5434cd70d8705a579dad4d850e68cb8ef2e688962d8"
+    },
+    {
+      "id": 271,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=276",
+      "contentSha256": "900b7c97a16f588b774d7eff69c6c1adbb81f60259fca2fce116d26928ac3673",
+      "beforeSha256": "7446ced5ece9a514b390044ded8fd1e4f7d82ced3676153eae5859b4d605ca75"
+    },
+    {
+      "id": 272,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=318",
+      "contentSha256": "876e633df6d746935d1174c38ca6acf109545bad046e91e01901d6fc62945cee",
+      "beforeSha256": "c1cdc050a31b6274ea51ca4106a824fe22235b9652ff857b2f7fdce50043125f"
+    },
+    {
+      "id": 273,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=390",
+      "contentSha256": "b4bf25d57b73070e1e2a67a4ab4d51823b2d948dd22e8610420fb6e79b25f439",
+      "beforeSha256": "20a04f903a405c75cdc5788a7833073684b4f39a5830b00c2da6df472fc0a50f"
+    },
+    {
+      "id": 274,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=444",
+      "contentSha256": "8d648aebb2d835625b346d97e64c6986a517a8d6197fd0f5ff17130a0196fce3",
+      "beforeSha256": "60b8be472e59c89b059d29d849e9ee944118a2262de5095cf2592467e1009597"
+    },
+    {
+      "id": 275,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=480",
+      "contentSha256": "54f998d2de8b182539bc142587e6ee9cc0af7d05f58ffbcd23e9a1dd74a89462",
+      "beforeSha256": "e6994e68ff138d7e0c45180a2820054cdadb2075e3750be52dc01bdbd44aa780"
+    },
+    {
+      "id": 276,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=540",
+      "contentSha256": "e1ab42e8708acad45dee1e982d9ff118f393d2d3f4b7a0a4ea4ae1ae817f6b59",
+      "beforeSha256": "70dc2bd86cc2c74989a86bd1527db4e79114e793b453d83c3605d23a9e15af9a"
+    },
+    {
+      "id": 277,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=650",
+      "contentSha256": "31a6b2a671a9504a0b6b9373ef67cd756e0d6fae77328baf137e7d04720017bd",
+      "beforeSha256": "9a3e8eaec591a28f82da0cb22ee927732a2ba46c68896feae3e747ed6d571944"
+    },
+    {
+      "id": 278,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=702",
+      "contentSha256": "cbd26781b008ee3231f963c7cd17af677a94b04f4571175906f989712742bace",
+      "beforeSha256": "938dcd91c9c399d0b481f3425c4601a0a2e7d61e848daa425ff312c4205e378f"
+    },
+    {
+      "id": 279,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=738",
+      "contentSha256": "cf7056b923f81840a64b1464b7ca3e6f4a76d840eeac8a27004b6a802e783d94",
+      "beforeSha256": "ab3054dced436f946fc0dc231052f690259952a81252be706bad9768373df321"
+    },
+    {
+      "id": 280,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=778",
+      "contentSha256": "df2c8105fd556145a34c5ea716e96264ec33e40fc475fe9e824912eb3453a0a6",
+      "beforeSha256": "16781bfc5008daa5a9dbdd87e91025b32f4863a876eb6fa5ae94d79225920abd"
+    },
+    {
+      "id": 281,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=822",
+      "contentSha256": "733118f923d5ba30f0a778f84f9dced2247ca7492173810ab2ac25adfd4c3932",
+      "beforeSha256": "ff0e77ec5f35a671bcd221ebc4314c8849f0fd80c9e83102964e22017d21b7c2"
+    },
+    {
+      "id": 282,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=858",
+      "contentSha256": "64b2a867ff3123e2a3abf477f3ee3474a51bda1ecc88a9dae7e8dce88a169d87",
+      "beforeSha256": "73ba3f461d0afc863b78b419de0bf4cc3662feed72058462b0778c3740177db0"
+    },
+    {
+      "id": 283,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/_l6L0y-mWg4?t=904",
+      "contentSha256": "7c39132f2e4f3571d278a4039327c1fc81fb9c34ecb8c13436f5410c803eaf8b",
+      "beforeSha256": "d51297054d338ca200bdd67e1549bc60f7d4b5b83944ec3d2eb7fac488232a32"
+    },
+    {
+      "id": 284,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=132",
+      "contentSha256": "a48321860785b057363c31200a6ed9a4da1a8f2dbedb8b51d74893f8cb883aa2",
+      "beforeSha256": "dadf3575df38ba99db2e888264c47f5192f56746eac76da592fbd40943384b10"
+    },
+    {
+      "id": 285,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=180",
+      "contentSha256": "f35547336619204e86fa29e15f14cb1f91d513844d2d2e130c41211a2191cde1",
+      "beforeSha256": "08e93753266f965353433cb037296b612af68c02e29005ef0136546dedc7fc25"
+    },
+    {
+      "id": 286,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=218",
+      "contentSha256": "e81424203dd7840e156d7cde66b8e5314990146d4a6074d55aa5d4074e6c9ede",
+      "beforeSha256": "50be0b8c5747ae23315aca9e4c0c8e950cc331b70cafe08b98d9d9ee2f54811d"
+    },
+    {
+      "id": 287,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=256",
+      "contentSha256": "ee57eda8766fd1aec4078b877a790628713037e6b51f36e1a25bf6f107ec4127",
+      "beforeSha256": "dca78575048fab86b323daf8d1fc9185920516c0278f96529e20e222bd49739c"
+    },
+    {
+      "id": 288,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=290",
+      "contentSha256": "94c63c941f3f6660022a8cbd0b3c0aad4280fac9505425ddd59ca27ea7ad33f6",
+      "beforeSha256": "e373ad0915d173406eb34d8c002d0df43e79188fc5d862fba5a29d492ee818b7"
+    },
+    {
+      "id": 289,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=322",
+      "contentSha256": "e74b3fb45d144e311b2d6c28953e5dd0e9a333949aa201160301d79efa4beb26",
+      "beforeSha256": "e49db7af2d8de1e3cd4fdfd67dfbeff87f04cfff34bbca9ce6870672d00a9895"
+    },
+    {
+      "id": 290,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=378",
+      "contentSha256": "b344d8e33edc3eb2a0a74cc68138aa0a0428bbca7877c287a4335f9e22e6caea",
+      "beforeSha256": "5edbd29415157933e248cdd4c4a9187bcd17546e32bf1882c7bae0739a237cd6"
+    },
+    {
+      "id": 291,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=432",
+      "contentSha256": "26b423ae8fbe6012dc2971e4dfbc22bf4e0569fd5a8841bc6ae89393533c51f2",
+      "beforeSha256": "149570504895580873a26dbdcb0a8fbc39b9c62fd11207b91cc230be51310e63"
+    },
+    {
+      "id": 292,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=558",
+      "contentSha256": "4b00e2b27bfe8539fad3f31915813f3eb149e7cb02009af5582a4a1ef521c8ca",
+      "beforeSha256": "31d81fca6ac948faa5e63262bb97961437be45ee4ca49b9d29ef0f9e61cff567"
+    },
+    {
+      "id": 293,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=648",
+      "contentSha256": "f8f9fb44c85821477e5562b75ea4492c20a1b50131d3e5b9112c1cf3666ce947",
+      "beforeSha256": "965e97826a34501a8d01ff0af4a64fcf1c05f75ffc3aadd31c953a7a8b432797"
+    },
+    {
+      "id": 294,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=706",
+      "contentSha256": "bf80e6e2bb513d15e90a752987f3f3719585acf8fcabf699f30115e1b7d94db9",
+      "beforeSha256": "d284d381d1e73e1e9dc6512be12e5a8ff24f4ded049c32fcdd26ed80e574f210"
+    },
+    {
+      "id": 295,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=750",
+      "contentSha256": "c8e4264db10a8a6a0b38dda7d4798a3b2524dced8a5bc89d1a77af2e0043b732",
+      "beforeSha256": "bef50e6f47962c3ad47ee04af80ef9b9b454fe9f98efd3b020f4ba28c6ba670b"
+    },
+    {
+      "id": 296,
+      "difficulty": "intermediate",
+      "provisional": true,
+      "basis": "editorial-content-review",
+      "reason": "複合形の分解、最終待ち・打点・次の変化を組み合わせて比較する",
+      "sourceUrl": "https://youtu.be/ZrjrfUM9890?t=794",
+      "contentSha256": "f7ecd437d29e6d190d5f3b1dcf56117c5fd634c87924f716e27c3b000725349d",
+      "beforeSha256": "54384fd9f9c2e1c63740819e7cb4944f59fe1d51ac72c162ac85ebdaaaeea1c5"
+    }
+  ]
+}
