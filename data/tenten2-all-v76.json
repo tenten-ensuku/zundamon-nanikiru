@@ -1,0 +1,1393 @@
+{
+  "schemaVersion": 1,
+  "revision": 76,
+  "generatedBy": "tenten-2",
+  "status": "awaiting-user-review",
+  "recordedAt": "2026-09-14T18:53:11.370Z",
+  "requestedCount": 136,
+  "savedCount": 136,
+  "skipped": {},
+  "finalDrift": [],
+  "protectedOmittedFields": [
+    "explanation",
+    "overridden",
+    "overrideUpdatedAt"
+  ],
+  "untouched": {
+    "beforeCount": 156,
+    "afterCount": 156,
+    "beforeSha256": "9a5d40ad318b7ccec93ff81678311da0264d8c28086ac0dff0d7e2b76fc9c2b3",
+    "afterSha256": "9a5d40ad318b7ccec93ff81678311da0264d8c28086ac0dff0d7e2b76fc9c2b3",
+    "unchanged": true
+  },
+  "preservedAuthored": {
+    "count": 156,
+    "beforeSha256": "114a2598bef383baa3e29c97410d2dae9d9ae459e77f96f1867e1c3a76a389fb",
+    "afterSha256": "114a2598bef383baa3e29c97410d2dae9d9ae459e77f96f1867e1c3a76a389fb",
+    "unchanged": true
+  },
+  "entries": [
+    {
+      "id": 157,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "ff4d581f9f996ffb022b7dc5fda307df51e4fd84d7fcd1c2fb9071adc021992c",
+      "newTextSha256": "950781f13e3a98c74ae4748f44e60ba4d6d1f312895632852723dba7d6088527",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:32.411Z",
+      "protectedSha256": "ca52cf7917a3532883fa12940d06c73c3958e6748111c3bb8003d33c3b82ad2f",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 158,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "fff74d4adafd2d9d82492bf90d3001c83e1f7c20924c2f876f39aa1f5fa8854e",
+      "newTextSha256": "2b48eafba1fc49dc2f5e17828bc608b532b96a3a49fa600b690502288902e1e5",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:33.773Z",
+      "protectedSha256": "ebadea1bc28ef8c2e0f1c1e6b5f433cd2b482a8146576a83b6e98fc1d8c2c961",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 160,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "5d6441ac18b8f8c996e018ba622559cf2209267c26571b2c3b896346381e7bc3",
+      "newTextSha256": "7f9bff442c954021d7c4c445e1a1a781dbcbbd2bda97c42f0442933ec5f1b3ca",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:35.383Z",
+      "protectedSha256": "807cdb9ea180bb7182ce679f7cb67a1956305ee20200db626db56a67cafb73a4",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 162,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "4cbbd04be8cc68dc4f9f9ce3ff489652f69ca9e30da67b316cd9d5fea32ffc03",
+      "newTextSha256": "c014f93d9b7151bd8904412e48ac63498e16acc917504bace1f423e94b03a8a6",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:36.996Z",
+      "protectedSha256": "4f22584b6a1d00cd5836181cd3d93600f3514662268ab13327e8727351cc7980",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 163,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "39e78bdc040fe19c5d44171880c85bb3aaf8180b660813cf218e1b10e28df8ce",
+      "newTextSha256": "d6e175496ed854dcc0ac97ea3dbbc433fa97635704e2c5c3e5755fe248abf4e3",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:38.594Z",
+      "protectedSha256": "1b1fa28ee2fea3ef42cc8045ba0310f82cbec4f64540e3332409c0a439260062",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 164,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "57c3f1889c3589d4682a4caeb1350c06f9633fa6b6b644ec43c3d5c399e8dc01",
+      "newTextSha256": "3109d88c7c3ce4225ab13f29c2cc49c5321eec92751c53b878caed176ba2d0ad",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:40.196Z",
+      "protectedSha256": "0e76eda2b2223297d8daaecd19ee1428385243b3ff5652258426754738e699ba",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 165,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "465e1b998c8632d6a54dcb595f39320963b3b8641f0618d4524339c9dd4b3b22",
+      "newTextSha256": "0618841011e199f98455edfbb16f225136259c4cb2d423718d5ec40584529735",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:41.799Z",
+      "protectedSha256": "db73771a594e38aeb64e69b3c15bfbb26f071668256218b02a424e257bb26320",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 166,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "7337d9c0565506931138e4d8ce2c7b35dd0f6d9ede31ae8db74dd1157691ceb0",
+      "newTextSha256": "061728aadd4a7f6f05b334a4d5b3760665d5ed96ef64b9c79a59c8aff8f72ca0",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:43.413Z",
+      "protectedSha256": "916939d9cdf9b53cebd576fd2b4fdd3c3ebf434c08998830b1116fd8e4ca3c2c",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 167,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "7667987e91a797c4244259e3bb650e68cdb325c113e54cdff2899415f91373df",
+      "newTextSha256": "1cbb090101068af38ad2595394d84dd2aa2ae96dc89f8d2484ddfde939708cc3",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:45.021Z",
+      "protectedSha256": "396b05a6e3e04e04e1543098885d692f095578b7b5a1623af6daddd9c1fbe7bb",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 168,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "6818268c088e3f1dacae56c1f0fdab2f126434f443ac4ef88cff4acda3fde9b1",
+      "newTextSha256": "f4c5f197737d260cc4cbd94365052803dce748b5216a0608e201935587b63539",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:46.626Z",
+      "protectedSha256": "08115ceff98bddce2e5702d2a396410ba2f1469d7fb85b1f85aa0dee9d8ae6aa",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 170,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "d7896e8a1c0a6e9cf4351b799ed652017d22abef7ce7e8386bff62ea5e9c2c0a",
+      "newTextSha256": "d65399dcc84b439ec4019154f07b256218d173af55dc5cd74a7b11d43a12f550",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:48.228Z",
+      "protectedSha256": "065acc1335b084188fc3098d5ea5389a876b692d4a03bd9ea5d969ba50b2cff8",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 172,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "855c454ec9c712e9e632e8e92c3490e7583fa9e335a1a7e02e434327ee2b2b8b",
+      "newTextSha256": "e3777b21d86aeaa3c348fb79a005001b70504c8142c3c2c39729ea7996ab02f2",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:49.851Z",
+      "protectedSha256": "4674abc5043275b8e601b54b5f3eebfac1f20ca0fddf4cd9d264747bcd696ef6",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 173,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "e4997b359a3202ab2ee46ec2ec273d280e166d2d8297a0c516fd1610923f0692",
+      "newTextSha256": "0909c91b24eb630c6fdd0a8c9bb14790e138753b7accab8282c387487788245c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:51.455Z",
+      "protectedSha256": "83f198f71ace89af45052b83896e5ff3260b97e7f8a25793d89b179a18138f15",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 174,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "74e478315287304b96c9ffb3b001e3731db828badb3d1c7574b9c2822e847262",
+      "newTextSha256": "4047f1d343d083e93d82f33b0e0635d8ec62eefc91079d1bb6846ac5dbd77989",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:53.055Z",
+      "protectedSha256": "4ea37a97ba4fc1451a7a309c7721d465fa4919f218db4e221022223fe7801165",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 175,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "37dc5b21528717bf8659a0e91a27429927b38265827b31ad2c730cabd0bb2e60",
+      "newTextSha256": "819c05e9d1a4296468ec7be3c4ba2ebed001c051ad5aa0d960b376a5da773c33",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:54.676Z",
+      "protectedSha256": "618a67dd2f25ac8bea32d0f0d00d097d9aec3d2c27829fb08df809301f433c00",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 176,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "567ed033e450f43d6173aad364173f17970f0ba3dd3bbd4f61ae0380ff5424ff",
+      "newTextSha256": "8cbe17f7fab0447db19c50495378871bc4501badc7fbdaf31489dfa62a3cbcbb",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:56.280Z",
+      "protectedSha256": "ba6797c5de782eae010eb90f07f916a77d0603c60d8a89a5c668d19875e4a0a4",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 177,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "de487ee51f29e915362b9a5be65e4d57da70673ca14d5baaa13ef715dc7519b8",
+      "newTextSha256": "84d7a67cbc4dfd0fb98f9e8c172b2f2c0f4920c83d1bb411c9f75858ad5ddaf1",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:57.901Z",
+      "protectedSha256": "c2e477e6966cc3bfc631495cde9bdc796c5386ce39c6dbf0daaae6618607ef8c",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 178,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "cbea2380b52bb7f965f0c611d276b6d6c044e14c1557d5cfc467ed53af48747b",
+      "newTextSha256": "72ab3d65bf82b35bbee9f59113d7f360f5ca6499475e165cd8c8f06139f04b20",
+      "savedOverrideUpdatedAt": "2026-09-14T18:49:59.503Z",
+      "protectedSha256": "429f9ca1f2d95f1f65a176e3c416336813f8ec793d9388990cac0572b8fee161",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 179,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "24861cb9d5680e0b0787f8c741adfedb4ad8d4a8bdc4713540fa5916b372147f",
+      "newTextSha256": "64b50447d6d97a769682a3ff96ea5d7c9033750636db2ae007129b47bf9da32e",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:01.117Z",
+      "protectedSha256": "bd498904146c41f0fb68c32dcffcd608c4d9c3be4eaeeef7d0ad022e125f2fba",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 180,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "58c10cff01c348a5a2718aff99b00e3634c1293bb6b48a395e35fd211d6d98de",
+      "newTextSha256": "1de345ca6d62b41fd136ee3b2a48dd5686710617b8ebfbef30daee0acd37087a",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:02.722Z",
+      "protectedSha256": "992d1f0520ba8a2209599adf2a755bc68972b2ee5c790001b5a3f13c9aa97550",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 181,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "4dd093790e9e9109f0c718cd28292f507a22a48760f47d03dcf490749424c316",
+      "newTextSha256": "8ca6c3191fdfd78aa655cfc41cc4c10058f1bdf96a04f099e42cb9a3e2967180",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:04.323Z",
+      "protectedSha256": "af453fcf93ca52cef15283d63b9c75ce19a73dceb51a2aa096af552d628b5b29",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 182,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "543896e429f55854403d97f04766a39ab5743f45046805c7077540a86778b7e8",
+      "newTextSha256": "0021cd5c5bfb33d415b9bdfd1137fe8ccfd0d0ea827c54ee95ffaadef6da3b8c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:05.933Z",
+      "protectedSha256": "7267aedeceefab477723962bbd693270d7be3292e4ecb8795d8b8ae59b41ae0a",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 183,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "0a0e7cf34e169e3a76ff758f5b4998a8ea3f64fcfbcce04acd48f1ee841a2f91",
+      "newTextSha256": "c17adc8df2610e86adc1429325db7821854152c1acb51dcfabc3dbc9e71365f8",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:07.541Z",
+      "protectedSha256": "18c7f40625fcdfb25d2ebf29f9294774fda226cd2d33139208ad37b7ce13b27f",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 184,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "4403046e2a93686a2f5f7058425b2a8660707fc928e92ef302f9d9910c347512",
+      "newTextSha256": "a1732de5ff88ab80866acd8ad7d73465807c6a677a963eb51f0999fb380857e8",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:09.143Z",
+      "protectedSha256": "2a9528b6a8f534bcf6df3871c52db32837cc698b618abee01e844519f1feeb9b",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 185,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "365a4e4bcd195f4281008a443c65600f3614dcc716ad9c3e4027eaa4e7958c90",
+      "newTextSha256": "b79afea682c6f60e455827b96db5de937e0949d3d978eaea642e7eebd28f26ac",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:10.760Z",
+      "protectedSha256": "506e645c1844f63e7f48dcf7bdbb7bcbc4e26c2f4c955140f02aaca5963cab37",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 186,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "3e0e6d258a9c72d3bd178b689c7f3a98c2713441aec8518181de9e69b2d012ac",
+      "newTextSha256": "92fde3b203884df13b45fad897eb68019ff88f4c6a0ecb4f8afc86d590854021",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:12.355Z",
+      "protectedSha256": "f9eee7929236fa360c3ed1488328eb36f37584ad31274df349568a8ca142d52a",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 187,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "9e661fbbb4f2b822c8d4a598a254a93ab64b05929d20ddce691039f5e4237b6e",
+      "newTextSha256": "7b198f9fe6d2059b30f8dae39e2282bee6f0dca1638c7e51317165ca2f59ed3c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:13.962Z",
+      "protectedSha256": "1c1033fe37f29c8f75393d76325d7dbc7e2dd06daf9c267f983f1f94212b15d3",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 188,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "160952dee6f1c4a96e62c8ce54c06aa8e90176c224bccf283201e9f6fee88aba",
+      "newTextSha256": "6f7b9f55c27eb10f58d8a227695f1d60e2ed978d93433d21a6c7f7a2070a7fb5",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:15.573Z",
+      "protectedSha256": "f5dda16c05d15f4a91f6091e9898bd6eba06a9470a3572c32ac24b6522d20707",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 189,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "b1851d13fbc7ea756bb1555af8822af904669d3b9194c7f18b9d74cc85f68dfc",
+      "newTextSha256": "0f5a58a1f77cf366f00e9aebf9f61e99b7a471aca5d37e37810e59ece9f2d5c0",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:17.187Z",
+      "protectedSha256": "b5a253856f93dd8d1fc2ab645d20d5dea3312e0b5a09cddbab5c527ca10ba7fa",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 190,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "a2280f7e87fdf1f8f9adec45c60741f585d3802e336f8a0e1fcc35ee6ccd3df9",
+      "newTextSha256": "861609767a707ed4df2b4d6abfc155b8cd6db3465d07c6d801d3d0c3989d1358",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:18.779Z",
+      "protectedSha256": "29b36224c034ea1caa7db1f7dadb874fa2ea19c3a34edb8719a143ef7f94e081",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 191,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "e4d5771bd5b9ffc4946774f0aafd1b2ea9b7a2df1fcf54df1198a19a142b1b30",
+      "newTextSha256": "47aa35bb7a7c653e952cbe3fde7a39194e0b49940d15e637c334f115fa6235d7",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:20.388Z",
+      "protectedSha256": "de28aa0494d0a64008f6e328bbcb2b13d22a134d2e483956f4bcf1a8acf23cf5",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 192,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "5c8fc8f019080bf69f9fa92c638e9afce4123f4a02922583d40566f80917f102",
+      "newTextSha256": "5e313ac5611523ac59979d304574940735f5b9d5e121da365bcba606a0118c47",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:22.002Z",
+      "protectedSha256": "d80604e559213124700e2880eee1cdd86151c5ddfabbf234f08dcc3de8d41e71",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 193,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "34663901fd4ae8e92327b9517ecf50ae68f571a2a7cf905ee1314c4947d3a340",
+      "newTextSha256": "abe5e16d2eef42293efef153bc93e70b39a78a4f80d72edfce416982b1dab72e",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:23.616Z",
+      "protectedSha256": "d4611a6ac78c4e23931be6a5f314a555d4ad4bf00c7b466164553aff8c25c206",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 194,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "72cb854c556e769651687cfab531f689070581059f1aeade1d52ae2dc361a968",
+      "newTextSha256": "4967a50777d68d375008d4172756cd2b0f8980a7114e610f1f3fa4357bef7683",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:25.220Z",
+      "protectedSha256": "8c5d6133ef0c8ee1d4854e2e9ada64948129f178b23868566715a6a3e04d0c83",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 195,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "b2132134177cccc1ece61db91901e9d04f8e700c7aaf67fbab2ae09254fbe415",
+      "newTextSha256": "476919c4522a5b0c680cea506ab3fbd70686b410313cee92b8aec76aca169ceb",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:26.843Z",
+      "protectedSha256": "89c6342c48c3481dececbeb688495e5a34e6b6f5aae87b568a14beec8a3470ca",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 196,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "eb3682fce868b97f801f22d84001b9561f894e14dc8eedcf0ef725f8ba2cadec",
+      "newTextSha256": "6472cbaa817bcb96848520da7c244ec67fbd42cd8be256fc9fe5c37956057899",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:28.436Z",
+      "protectedSha256": "132eec31f9b931a83db10ba2e1904b980019c46e36382dcbdc146bd340287c78",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 197,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "d1d747389f85edf793c62f2112f97350cb1dd36250c7f1dc296fa7b5efcce7c8",
+      "newTextSha256": "79a310250b2512c995cff55537d3d716ded38ea409e25f5cc4eb2b1dc8f8f8ab",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:30.059Z",
+      "protectedSha256": "fce8f70d685262fe20715268451c67496be022bfd0610c950a4734c0f5722b59",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 198,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "1b10811bdbd28f68d8a795559813962df69418ece9c661acfa9bf6a9e1364202",
+      "newTextSha256": "3816f6cc2d92d0aed487a4c54cbb1964844866d06d831d187ae43607aaaac0e1",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:31.675Z",
+      "protectedSha256": "00d6a3215dd3bf67d243169e5e895e6b81250ac6d7a00178bc5711740227e573",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 199,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "5600a8a10fc0fa2adbeeb0279e364c6beef9a94f9434adf355d08bad4be659e0",
+      "newTextSha256": "bbffa11fc6733066c3ce505bc5cb37e03b89884c3569e08580c54e0e79b72afd",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:33.272Z",
+      "protectedSha256": "863fb72992620c1ec1225fa7d1ee18d6c0a1c0761945fd409e3fee7b8a6dcde4",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 200,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "6eade0dbea30a4f259e2e76473c5df8a777625ec8f2d3628c50e447bca05d0f2",
+      "newTextSha256": "9d75c824584da46b522491b7dc95ba5cd27dfd14edf430be8556b74ae50b2503",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:34.882Z",
+      "protectedSha256": "9b0278fd7ce8ca157f1c9f09033509e40e7701bcc72d7965bf5fbe258f120484",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 201,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "15b06882b0e052b7e937d16c06756cc9c55fc0115083ac97c8e112d31aefc81c",
+      "newTextSha256": "d16b54396987a0318463b1b63730e5a569293b0e326f7ca758aa988813cdc765",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:36.474Z",
+      "protectedSha256": "9ee3d049518d365fb52b4fb3845af340d397cdbb06059e61c60902955b566877",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 202,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "cb9860aaa99126708b5d50375dabfac25c16565aec4e13b72b20cd5db11d409f",
+      "newTextSha256": "bb4a15af924011624cdf6ff788eeb06d85aa305f290b9ec37bc10dc21948d43c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:38.085Z",
+      "protectedSha256": "432bf008d68b7842494efddeb3b40700b6ce5f29941697404b198cab059113e2",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 203,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "ae689a96f9594542134a9de66911c7f269d9836610c23fdc0ce4258d4a7a289c",
+      "newTextSha256": "cc64d53ef1649e575e9b5fb2f20e46ae45cdfa9edc053f94e3fceb9d184766de",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:39.692Z",
+      "protectedSha256": "61cd51accfce5e367dd13a9ef6f7432ee0008c7dd5679d1bd142ca7537f1ca44",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 204,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "e9e41071bfb0c5728f3af0a9facf7e3a6fb7068d38990ce7fa8d64e094f7b756",
+      "newTextSha256": "005d131d8023ec117e2998dbc95baffb8e9294ab9dad964d0aa6800cb7accdb1",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:41.312Z",
+      "protectedSha256": "14f3c923c454539650f4ac6b1dda91458845ca5320b649a5976101b745d619ca",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 205,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "ce13941e5b49e7bea1c72da3ba99b87290be21f15ef89e9e2ad345939caf95db",
+      "newTextSha256": "d477973680da106696bf49ed243f6426d1ffeca98c37e63e71d7a73a8421c844",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:42.924Z",
+      "protectedSha256": "08c72e2323984483493fd4d9db8d47113b7b8d11b9b54cccc63e276e36da6f82",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 206,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "ee51bbedde052f633a519099fa38afd8db79e67010134a3fab3814770970d315",
+      "newTextSha256": "b268d988432a685419c4e012dda6f5b4fccb365a17d059f38eccc9a978117d8c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:44.535Z",
+      "protectedSha256": "dcddf968e11102ed5750a25ed3c299f69be465c7fa808008b491cd99a25b0e1f",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 207,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "6f7a0a43d49472a1d8f518c67fcae63edb2bf357bccb566e339d1248bf17d7a8",
+      "newTextSha256": "8b0c89f175225c0502c699eb86534d25fd7b86f50529c8848a5a862a2aa9fdf4",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:46.137Z",
+      "protectedSha256": "92c8879d866ef5c691465758a78c5fc7879f0c1f252630c98725978ebd615dd4",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 208,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "fea9773f93ac23c951d6d26dc23d53470cd54e3c5c174328854bbea6f4cfcf09",
+      "newTextSha256": "8243eaf77179e49197ffcf0dea0b2c291b7ebda49336ff774ba7c45321606545",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:47.755Z",
+      "protectedSha256": "87dba094bae8d4f8ab60349cf0742163f597d9f3388602c2f35355c6dabd3f24",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 209,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "a51a170664e50c8d87d86e26cdd5b0c5927ae4fa010bdce19c301a24e1e33dcb",
+      "newTextSha256": "de0c441b928074240571088596a216d53d5a634888646345fc3534985285677c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:49.353Z",
+      "protectedSha256": "9883745891593f496780309a4299672681e027c844f2b026fa91ca616e3f7d67",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 210,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "cf25f63f9fda1dc720023a360f8470aa1b15c9801642b01bee64ee74da8ea081",
+      "newTextSha256": "ee2bee6006b3de3cd359580927f6ee209141cefbdc562f2f3031c17991e8a73a",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:50.978Z",
+      "protectedSha256": "52475a0f8cd958d474f6c5f96c493aeb8ee7b07596a79600cb7b1344bde52fb8",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 211,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "f7bea1d87b6098185605e81fa99140ff26df812cd177003c3c436a7f3dd4cc17",
+      "newTextSha256": "5a544b443c555ad63a7b2e953d560f5457928454f74b4b70c87314c479dbfb56",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:52.579Z",
+      "protectedSha256": "58f90d8426a3925070193f368ff7fb477925129197c9f540d06408d85d5a765b",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 212,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "f7d72523bc14e7ac19aacfa56839001104627be9f4ba9997546d866c6e087b47",
+      "newTextSha256": "a3f554dfa9c0f17b1eea0e7b05aaf7e4b10d8190e97bfebc6fdc8fbaec70d4cb",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:54.175Z",
+      "protectedSha256": "587b12f629a10f7437e0c3c0083571df02a0d480bc79f796eb790b3e7c48bb89",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 213,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "00b40add1cc43cd767249b241dcc05de8395eee19d558c73c990b3cc453bf978",
+      "newTextSha256": "f8494abca5677a17a4dd5d7049b72ecd4a550377eddb1eb5c899d3e1d9d34513",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:55.780Z",
+      "protectedSha256": "51e520ac92aa512dadfd8bda2843bf763d9fbb1d6837b44f9e428aba5874385e",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 214,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "f18fb3500090f6fea1ef46689a5f60fa4794ced4fc0ce24bf5b5aa3d80d153f4",
+      "newTextSha256": "9104424001485c6268e89698754d798f2f47be4a22e8f6c33770d7e9151c88f0",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:57.398Z",
+      "protectedSha256": "7ccd8520cd3717ef3596239fa920f3e60b2831f4c50050c1129ed4c9f843447a",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 215,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "d09462044569ea1827e2f241b3d402b43c907d37edf4e733c2398fedfb190ff1",
+      "newTextSha256": "20468086b7e01116d929e3d040a3652e910279b8bc721b434e1f82375911b713",
+      "savedOverrideUpdatedAt": "2026-09-14T18:50:59.002Z",
+      "protectedSha256": "357faf841baad531804b096f012f1f44e3180a1d7d8354d6fb7e1f04d0d87246",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 216,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "7e639f3c831a6d587e883a9becf2bb529a849d73c590af145536b588ae5be12c",
+      "newTextSha256": "999d6ba529b64bb3e3972578fa4bafe5a86a4ed345726adce3418da84d3df900",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:00.608Z",
+      "protectedSha256": "193639a81c4e24a8ab607cb4c3bdefc08127bc41176e5e33d0bd1026e0d5bc77",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 217,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "8a2b790e7a1665599033dc2daa625b7c9d53bb96feef9d76a5378a5084c42fb3",
+      "newTextSha256": "5f5900580dc6d6f6e1deb717300ace1db7ceecb8bfd3eb64778b3de14682e27a",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:02.221Z",
+      "protectedSha256": "f906db5148ead3cbbbbe40e7e85300664fe8384f5de52a8887093a4b3c9ffb56",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 218,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "b5a7b9430a6e613e828885a4cb5950c32e4a76265392e182f7154762a23925c7",
+      "newTextSha256": "2aca0f5c15e7f07765fe5e0d81309ce9d0935f307d38b8fd85a1b252fefde615",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:03.814Z",
+      "protectedSha256": "ea82a9f2bb670240711fdc819ae5a9f40da6867c4d0dab2afbef6dad532e7ceb",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 219,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "f698a65f9e0cb1e4b5cda20b514b0df7341c3eec98e558ec6559e866701b6abe",
+      "newTextSha256": "6a9c40daaff742cb9a6efb7b84c112640a0e500f76faef1160ed5e2e1b4fbe8b",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:05.424Z",
+      "protectedSha256": "bdba81c2660e6faa0b2be9fa029a0f85a4722452d1b956870fc5e0342536e0c1",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 220,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "ae90e2ad78035e89ad7a27ecf38701e561325b609c644ff46be0622947686d46",
+      "newTextSha256": "eb6da3f030132ae1601458fd03b741d3606bcf5b25974137b1f91a9c30602211",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:07.036Z",
+      "protectedSha256": "913cec3f779400320168b10f173999d7ce3b13d903defbc843fb11e5db4fb2eb",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 221,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "9b4e2e9fd712577bdcd3a5d0c3d0d23672e7b52ca35a0e8948b1706a42a77263",
+      "newTextSha256": "b37809011cc1ff6156db19fd5898de8f2a967b7c22e10b0cb7df5433eb12f239",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:08.645Z",
+      "protectedSha256": "b2b6b3974b9f23a59394d0673ad256dc0de9ea9532fc0ff713a593062306240b",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 222,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "9c78b31ff4ee9b72c53ad5dee345c4e2524c48481767999508e4455518ec0708",
+      "newTextSha256": "09c13a819ac2150e62bb283708f7fb75fffe4ce897e44195b203404d4c242d61",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:10.253Z",
+      "protectedSha256": "624a4b3dc0cf2b798017b75dac05eae3855d0649231117888a3656b6e3208ca6",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 223,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "59d06b42b3372bd95193e7ff2e92f42056710bc5a1c37fee3d84f54623e85569",
+      "newTextSha256": "0bb7209bfbacdb3bd99f10409ea2d14dbfae10025ab10f5c6b973262263b6360",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:11.860Z",
+      "protectedSha256": "4471625d7c30098b37b5982cc8c364be8628fdfda0497ae2451efce3a3cc7887",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 224,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "60c26dc2bbc2a5dc701bc924209147eefefda8a47bd45aa3e2ffa15c37b0329d",
+      "newTextSha256": "eb3349bd2478c319faab3f4916b7cd104c2f6189dcf95a7e13cc0ca868f5d9b1",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:13.463Z",
+      "protectedSha256": "ad91f44cb6f16a332bffa88dcfaebaba9de088d7a070576a639b30f73ae4240a",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 225,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "0734f34e594d0d3bb82324e6c83ee9f22b51a26be862fb62246692a1119dfa01",
+      "newTextSha256": "06dbb29696cedf18dbc85d28693411dd5bc4702ecee8552342fb2b7fa0df8b2a",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:15.086Z",
+      "protectedSha256": "c8d2aa8318a28dcf66a55ce8983c74d4abea074918209e6c33ece8281c1bd33a",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 226,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "b4ecb905286ad19acd8a93d420435e1191bd1bc3f759074f445889e341a3383d",
+      "newTextSha256": "6fcfec292c79d13813303006a305f31da51e93de5de49217fde0dc0f9d5fbaea",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:16.689Z",
+      "protectedSha256": "ece9e2e5d74f444c3f4e235b615cc33b904860ff26cfbed91834339fe4bf3f9e",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 227,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "9d20c3aea03e0d37f7142d9ed7e5efefdabd5b2c72f4121dd8723924329153d7",
+      "newTextSha256": "c1fd6339f7b6a0670c5827446d4e0c0a036ba8e4684aca739e58cb81263e6c6f",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:18.294Z",
+      "protectedSha256": "f46bb5c7f6c9979e1aad0f0857a48059780a7b9b48d588e44ac1d051053d99a3",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 228,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "8f3e47178e6128c98e1d15fa9cf1830fcd6a69559c2f25ffc4b130c9a09a236a",
+      "newTextSha256": "bf2ef997321c6f5735f9f823a5f7105d6fad0832ea1950d3b838d81d61a9f50e",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:19.912Z",
+      "protectedSha256": "d4be9a8daa9e4f6ba244ad60581366d81d5be2f25afe72d44f35f42c798b980e",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 229,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "d66d08fb4837a07490713d9fb601b39de0017d81c5cc1abd71850d0b0521b68d",
+      "newTextSha256": "dd7a8d98421e3ee28ad1df92147ab444f3c9714812ca7eb062d6ff36d70755fd",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:21.514Z",
+      "protectedSha256": "961eb96355244bfb508543581b4ccba3dc149974889401b8362e5a7eafcb17db",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 230,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "4825ce2e6aebe0771b76fafe00c3356c6d501c51bcb07e2463798cd77778ce57",
+      "newTextSha256": "efa8e6e40ebb2ddd769a5cec2912f27805936221fb45792c8a3e04fab6f50c07",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:23.129Z",
+      "protectedSha256": "401f9beaf3265ae6beba5fbe82c9debc549e7aa8e8ffe8c5bf249edfab0dda68",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 231,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "acd8aab76cf4f8d999ec81dc0cd8d412e81bb213e2aaaaebb963d9416fb91db4",
+      "newTextSha256": "8121367b7a4e0b42bc30d933d20de0abd4b5dac02bf312206e9cd4a1e8dcc80e",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:24.743Z",
+      "protectedSha256": "cad25e4a8a0c598a75cb7bfeb6971ddbc93d702cd8fb0f1c15e26246fbf80526",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 232,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "271979441b3443453fa1031599e6d59e8da3d4be2205876f83472db120efea61",
+      "newTextSha256": "73c75cbbfc7bb6c7c882203a0eec15293269dfd9d7149e8d0d81ba8a52beaa68",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:26.372Z",
+      "protectedSha256": "52573b970b7ed39a3d38d7fa88bdfabf652decfba6f68cf450580f2d7f7d3fcb",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 233,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "7c06337f1f85c15aff1e8406f09cdc8192eb0c0407645d6617a3c254675aea22",
+      "newTextSha256": "add00181b276b34e64e2860846f9ae2d74d2d61cbba3989b1bb5b0dd1ab0f065",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:27.962Z",
+      "protectedSha256": "bab0035d52a94ae4ed732b677d9deb3659dfc8d563906c9a9b7a3544d86ef4a7",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 234,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "c9486c2b9841586974171087526f3f88752a7895aea7d60fafd2669011b815be",
+      "newTextSha256": "431831b39c2278baed145d8586537b6c0ab484c2da8e7563931315ba112c72ad",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:29.571Z",
+      "protectedSha256": "06496aa066ececd39cf2a3327d00c918c66457730225e240b46607e5d67b75c7",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 235,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "30d7c852f08fd810ba544943a188d90fc2e5ddd1335eb2645ac1ff4a83c8e0ec",
+      "newTextSha256": "9b654f1753c1b54593385965370a4a1eb48917042a5d8eca2a746828ec7a5a6e",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:31.172Z",
+      "protectedSha256": "301d50412c9681604f5eaa4e5d1762e24a260fa71cc48b69292eaa74dbcd3f4a",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 236,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "b6f3603e3ff3d4e720e9888b86a914094b1cbaf634e2b70a8f25f68c2ea07ccf",
+      "newTextSha256": "a7e5316d83d62ad1a8522ac808988fdb6b2095230ace93a6db59b98d5e2a2d88",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:32.782Z",
+      "protectedSha256": "389429f204eb8fd7c09b8b64a87d2389faccf7a40433a610f44f1a2335aa5dbd",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 237,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "45be8a230b005ab4cc263ab21bdff2ccd05549615d7d410e633798dbedf01b0d",
+      "newTextSha256": "a5e7cea63d693c4ad5ef7388db3891be505d00a56dd99087e88e9ba16dd00264",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:34.402Z",
+      "protectedSha256": "8eb429195ca2f96b32d3bb03eb8fb108c05feadfec7ef14c1da78814d09ce5a5",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 238,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "ea82893267d4a6ccd8744ff0d8b62f9bbb0093d778e66dc0f1557f91346cdb90",
+      "newTextSha256": "c468f55f3663d779a391d3e0d0697446483cc22afa8cd1f3404fb6795f0c4ac7",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:36.014Z",
+      "protectedSha256": "15030295f01383e13d70d3bca5b30035d7f1e2368bb08716a2292f963b9d7d2b",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 239,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "5b0156b8f427856cbff5bc60cb7a55a0ed29cebb2490bc19ea4df5258829fc0f",
+      "newTextSha256": "8b9e65f39d6d06b3d20e6d5731de015c9bd0f43af7b6771cbe80b5c3c382f219",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:37.619Z",
+      "protectedSha256": "c2a39437a9050ba23a03fad6c8f052a7bafad1f8fea6ee365cecff7694da178c",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 240,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "0d3a57d9f7c2f77ab7994f22fde0ed9fa9c5d8dae2da75522fef964a9e873ba5",
+      "newTextSha256": "b6c4b56e9e8215d370d9f12e96aad8d51e658b59431009e2b88e73013afb2d24",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:39.220Z",
+      "protectedSha256": "b23cc100a6cc2d50bbbd78897263510efd4cb1ccc22acbd1c25e6c757b7ec429",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 241,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "b1819919cc49ed513050fb36a0b3f7eac470e5509e06fe3617fb24558451415f",
+      "newTextSha256": "db992e8fda292313a6bbaa33688a4c54481e3dae275f82bc39f9ed8d0a15d865",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:40.840Z",
+      "protectedSha256": "8b065c223eca3127a95d7589fa5728c7ec2fa5952e04019c80c4ca445458cd4d",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 242,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "06949c416d4f1f1268f24f8b7fd24951ce6f9dc659456f9d78a2838cc7d5dead",
+      "newTextSha256": "4084564db5d1219ae809cec77a894968d621fe3f118a6f6319f6804e52ba3e1d",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:42.428Z",
+      "protectedSha256": "dae6f07e83e9cbb3d1d645645cd396817a8475e628120c27ac8f37eba6819667",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 243,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "27079b819e69faff3b5c0afdb119cc5c718bbf0d64946bb9126aacc56ce921b8",
+      "newTextSha256": "501693e45664b5416512b9310be638b4f36ddc316625feaa83d65694304a4e08",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:44.048Z",
+      "protectedSha256": "6bf6db33b799728097870420472a1f9b6904ad817e0e66acacec0489d61ec6ff",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 244,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "6be49c3ad2193addae1968aea992dbb811b455795cd093b1bdb21b0b2d7da1b7",
+      "newTextSha256": "9a475864f720d76ea75bdcfa7177811d136987ce97a9c8b45f016852b6ce6dee",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:45.641Z",
+      "protectedSha256": "37346853f2e15fab417e6d902b936de57acec0c125f6a87e68fb82f516bbe2ae",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 245,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "d6ced8fe15724f3925c3c7ace1f13ede7fdf6d7540e7666e4a842aea3590f41d",
+      "newTextSha256": "fa00bc20bfad06b7341d2fdba30e8da2b86cb8d3e07849d0a076e02a3df62e21",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:47.256Z",
+      "protectedSha256": "07a1bd5e913ecb7abe753018014d867a607101ac904d21c7efc105545da890df",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 246,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "48f2e5fb510d0a706cd46fb5ce49bfc408475ff4b6449cd9531a163706b397e0",
+      "newTextSha256": "a8b302aba3a70b95ff5cad3bab813323d5e9b73e3ca1c7a5235666bd342db53f",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:48.861Z",
+      "protectedSha256": "ad5f7bf7bff30ea856e47c02b1ec09534b6634be537d4229340146fd560405db",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 247,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "a275c281c17cfb89f917be7161a82ce5ef204d6c518586e8c4bdd55f52e8ae66",
+      "newTextSha256": "334608885f97cf0e79a770277ff29988cfbdd72103ceeebe6cffbf8968acd9de",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:50.465Z",
+      "protectedSha256": "880dd20ec056db616e0bc8d574a9ad17741e4433e66227a6d56c4acf3110af54",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 248,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "9971f19b4ffcb2881a4c3e3ab6b7b0f75182f6818478f827ea47fe6cc0f024a8",
+      "newTextSha256": "61a09ac1afbbc1a3e3667ddb5faa3de0fc72d6f77c6448575aa5d9c3e6aff48c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:52.073Z",
+      "protectedSha256": "0b618abbd840973c3725ce470ba6b8b6dcb7e78619d7a301d658266a442c796b",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 249,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "a43bea1d0f66b5644eaae26219099c3feb87417fb8061480b609d479291c6b4a",
+      "newTextSha256": "b8f6398d7406e6d3374b21390924b0e2c8d2ee90452558e6a0a4fdc57b74160e",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:53.678Z",
+      "protectedSha256": "1e4b6cc049255312ac894b16b7f984f1b70c6a1a1a2f77593b5a0451bcdc80a0",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 250,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "85eced2228c7a68c80bf6f7c5bd53899c6c3ba5e82f40e8b138ffe97bb41dc7c",
+      "newTextSha256": "e8be972bf4f057cbdc7085c25e9d6d67a300d44778068f20ef1376f65f6f9e19",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:55.290Z",
+      "protectedSha256": "5cab40c0f36e601d995b2a0d10e932b2dca86a6b3ff7a12cbac1ddfea198bd06",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 251,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "b431a3066675012b225a96bb9f24542b4b78db26523fd664a1399e728de0781e",
+      "newTextSha256": "a96a2c9bd06dc9d82ef3406c0ed567d07bf274b41bc23cfa71e507532fe8aa4e",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:56.899Z",
+      "protectedSha256": "d0821f3475d302030d792315103bc6937b7b595c8954e02540501a0893fe5637",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 252,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "e506ed363f76753effa81e579c08d36d68ffc090c12c1805eaf3d822fe6c42ac",
+      "newTextSha256": "1aebd8d0f3f5bc4c598873b27e044a02532e227189eca9e9a66b2b501ccde6e5",
+      "savedOverrideUpdatedAt": "2026-09-14T18:51:58.504Z",
+      "protectedSha256": "40073986fa9a0109b947c9f9e47913d8fc86177a180fd644fdccb2a0ffd993af",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 253,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "43142ebc3d4179aa9a7a84f2e6f1499fde2de5aff292c0bd7c0b814550f49314",
+      "newTextSha256": "5ce8637b1366bd76909bb98246fab8d55c7d9b9979e8d60d6d43a47dd6cd1caa",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:00.137Z",
+      "protectedSha256": "37998e115171d0b58568e6d0ecffd80cdeb16811143c565727ea4477a9e53eac",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 254,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "9492dd96978962929b8b52a86d138d0f69da310318e275d3902f7ee3f9f3b520",
+      "newTextSha256": "38ea8de166102e158d8e6f556b3fb25c065a855c85d8d7a5a3f2b39a23b30c38",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:01.719Z",
+      "protectedSha256": "d6a619b75d6c338825449df2743065e93baea7c8ab0027ae5c150681dc0f3dd1",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 255,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "354d254a2ab992c6e335c3f5c92c1dd7eb1391dd3f5d855c4c81119d27e1fcd5",
+      "newTextSha256": "100f55411bd0c93cdc345efc51d05562f315348fb021017df06029f218dbab5f",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:03.339Z",
+      "protectedSha256": "2d0d794000ba87ab11fad8a1332cf80a3c9563392b4f7d629a31c741abb38a52",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 256,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "7daa45aa5ec90c5f1259a1440bbb2e6cfb013b37a51dd0db57306d89c27b303c",
+      "newTextSha256": "a63f3074a9c2938a851bfe14892055d20df411e8135ce094b2fde8b10ba93ae5",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:04.942Z",
+      "protectedSha256": "04caeebeae75edcf27d7ef6641fda7e89a17a20f718bc4c286c5c3325db56897",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 257,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "d500ea02acf4b7646f8dad7541560ed8ea0ba654f6bdf042952f92de33fa6793",
+      "newTextSha256": "9bddeb3e8c07aaf0bd2240272fe2a7dfc496a395dbfa7814c457e3e4c13d2101",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:06.543Z",
+      "protectedSha256": "6de36ccc3ec9d9c5137406f327049adbcebc91561afac7bd1a0194de954295c2",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 258,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "81c37887839361a3756cd9fe871a80138d08af62b1fa7e2784da777fc700fe55",
+      "newTextSha256": "59478f2c0cae7e9a59ba51caeefe3de22f36f67930449c2b8e17498cbac6aa19",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:08.157Z",
+      "protectedSha256": "3e83bb5896cf77ed447db12c055704d0a6b0afda0d4196f22d9957c28a8e8895",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 259,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "299a5565443a2a773892e8478eabf14052a99fdf9d234684f0089b0881b178ea",
+      "newTextSha256": "3d937ee062c5b07b86cd409b14621ac88cdb28529efc147f5a7e55eaf815beb7",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:09.771Z",
+      "protectedSha256": "1cb492a42a5cc2d3f4ca41ac9bbe5b601313f463232bad45ac23e050278f9079",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 260,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "46c926e6c5658491ce857e2246add575ef29472e6cd1e2cc70023cb4025fe961",
+      "newTextSha256": "d6084b9e620ce878c2a640f776626bcbe7df62634d634793bec6f3362627d0ab",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:11.377Z",
+      "protectedSha256": "fc78ed54b13a4fea2841ca52d1b52dbb81e186767d8236e36e212003345de245",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 261,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "cbf209e1a14125ccb08f40e7ae322f1554fc215fd0b4e50afa502227a00834ae",
+      "newTextSha256": "a2e1baa8db95228d3c645aab2a5be2575ba4b0862141eae03c3898283597ffe3",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:12.982Z",
+      "protectedSha256": "40eec07a003b50fdb15892648fb5d6d27d08d7283af5629b0c4f6fe2118f39dc",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 262,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "e317ef2f85cbcfa4cf00da922a94ec478e9cd8bdcd8f5e98b29ec2f3d6c074f4",
+      "newTextSha256": "8de550aba7d382ea7fd0ae3e291dacf716f5a4f5c86181397baf0be56bd81439",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:14.587Z",
+      "protectedSha256": "d44e078e358082a5820cce63195d4ab0531a27ea201f2b1f3562845435e3ef87",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 263,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "00394d840506c4db720e5fa49999315bd36308b7cdcd2c3aaaea7466be538e23",
+      "newTextSha256": "dbc2f40cb5262077d17046c42055d925d8769c52bbfba956dab64b4dbc6c4064",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:16.186Z",
+      "protectedSha256": "6fc63c3cd18439d3c370b1a26330fdd5046ca0d5ca710ded8d4f09eeff371389",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 264,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "3cea5a70c698097fe26bddc3e55c10c16035d7cb9076210db83c8c032f3879bd",
+      "newTextSha256": "a2cd47623ea29f2893b5251c12d5407ffc36fc2a91e6aa322c9786f0c1231b1e",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:17.794Z",
+      "protectedSha256": "80f3c4e8a9dbabb32d990d10603d23d8fca1725ccf6fa4015a2e1f7af4de891b",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 265,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "0b6de84efc1548fb81f41996d7f670906d38d5ee6bec85f797cab7ba48c64a82",
+      "newTextSha256": "63ca5d8a3d123a342f7274e8b2026959b90a3006108ff4ffb5c40d3fc31a04c2",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:19.401Z",
+      "protectedSha256": "71186d63330bc7947fb12b5ff8c0858742a3b3a6db8b4abaf3c2b16aea2543be",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 266,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "9d5786b445192c1d8c3841086d88f0eb38315b2c317b6be3160b4f49f62ffe38",
+      "newTextSha256": "bc3f72fd98e61ff6ba5ba4675b7bb8c70583fa5914f4ecad60622be99baf5841",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:21.003Z",
+      "protectedSha256": "be93d845a1cd2c2440b55d304b1454b4186622ecf1dbe54b3dc8b7ea96704265",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 267,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "544bc8dd80250ceff6daea80c9b7a8dcda43dfbfdec8ebfec124d0c152945942",
+      "newTextSha256": "b55f077c9ddc20cbae5504138d77ae842ba22ecc54b97eded7f9d9f5dd320e66",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:22.611Z",
+      "protectedSha256": "02215150d738d15ed1a56f51af13e0fa43c0387360704da6b3ea5296637869a8",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 268,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "e02f53fe00ba7bc83ec8e6514142a6857ab270da5162155a49aaf3a04111243e",
+      "newTextSha256": "55f8e78bd8ae999ec8cf9d116ed91f5fc0ce263c55050ba9461c7762b70cb983",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:24.225Z",
+      "protectedSha256": "ea14b497644c2f4fc7deef86664c3162c9d04e27a5ee6abd790a29ebf932dc7a",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 269,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "53792df17cfdc622c239203bba3eff1e7488d21b57f93a8830a99fa66fd14e4f",
+      "newTextSha256": "d7d5802aa34bb64ff47757dd3b348ae5fe724e1e0a60ef7bb0f502e980a8987c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:25.831Z",
+      "protectedSha256": "f9efe3ce3fdd7202ce37c85ab9a91a2ff759f38b509fd595f2bfd5e698cd68ed",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 270,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "b295e508e059eeb470bef046b81e5f41dc73b1d70acef99dc4f9b5a0348c1bb0",
+      "newTextSha256": "797416457cdbbb0044e5b25bb8fb692533e04a76fbfa6c7356a6a3e29c0c58d7",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:27.444Z",
+      "protectedSha256": "e53a73629ec86b339449d877d62f775fbd9cd4fa6fac100eb5a61eeb3a6184d8",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 271,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "e16e7fd8c05e603a9d91e9dc2a7c1be66e7edad8a0a440fe1ea66511c9299b93",
+      "newTextSha256": "f2337c564718c39e3b8422c2ef5076ff2f6da5862ac3eafabe4fce3bb406cd38",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:29.043Z",
+      "protectedSha256": "9533e2e71e0b6720c78f936ce37374e766201ee289fa7872c16ba2afc38b68b9",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 272,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "39f3d8993aae0ec94ca14c342845ffc4d01c2445296023e5fd7c6e730c0e4e7d",
+      "newTextSha256": "02e57c3238bbac3e98e7c25199023b7205f72371e73f9c10e15cbcd3eaabf741",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:30.647Z",
+      "protectedSha256": "37817523a0515f32deccf30af5cc52ccd3944ae379143f24e2042acf55752e69",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 273,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "aa39263d2d541a08d1f91ca4926c76ca21342eb9376be591fe9da4d4f2da47af",
+      "newTextSha256": "f272e9f9463079ec06273dcfe80e898d4a42f6a8ce21d5a6e7e4b7ff8fe4c88a",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:32.263Z",
+      "protectedSha256": "e91e8ec468e23ec9b48f12b59e15fdbc8032989245d9290228fd1bcf4d3e4b1e",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 274,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "355dcba86bb536d9b1f3708f17e021fa9f4d2d4daa7b96da8bfb51a0f8af637c",
+      "newTextSha256": "943415a4e085ae6552a059c467102d5d0bdd64bb1d54c3a6dd3957b20909e2c9",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:33.875Z",
+      "protectedSha256": "77830a5afc2664cc28864885aaf2c56cf6df7ff93bb9c4e6974ed567caa4c0cf",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 275,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "61414475f50059cb0e5481f8d59bed613f78a77d613d8bfe494fd7f02606deac",
+      "newTextSha256": "79bad15119538c3eb6ecc9d34f99ef6751361f777a5e692a2f1b10a934937ffa",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:35.477Z",
+      "protectedSha256": "04bc0162b2e19ea963d95f519402fcea21911bf03de43d2f9cfe330efd8d0922",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 276,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "e503b189d7ac0a73af276c4a6c2c6bb8b7940ff5af8366c4745436dce92a39e8",
+      "newTextSha256": "9dea7f54fef4060bbf433b4b94444e7425bbd5df2849239eb0e60fe5d6264841",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:37.086Z",
+      "protectedSha256": "0af006e55229e5d5620bb0aa7f44e9dc563e4bf6938b1dbc434b43701adf9e34",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 277,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "b6425527a4e45dab3dc472239b9d278f57e14cb0057638159bfc7b7c5c2f80d0",
+      "newTextSha256": "af25a21607ca0c23bf88bc700228e925bc3668eb30f150c138eaa65dc33ab166",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:38.693Z",
+      "protectedSha256": "8bce1392a8b80d936b05e4ee733797fad70d8574f56d5932025bb14d3f90f852",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 278,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "891e8098514e21fe5a2b796119e336268a3aebfc41923914dd082daaddb57e75",
+      "newTextSha256": "3b0381f1b1e0270da27196c0a80b39ed413245e96aa0f9184e9bcfe9bcd124db",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:40.295Z",
+      "protectedSha256": "092ab57c37cb9e0971bc77f96b4dc3873b09c35fcf6eec8764078291da8b8e57",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 279,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "09ac904cf5234eb0fc0b321f1795fa46bc3f9aa7119f2587b397cecf9395260d",
+      "newTextSha256": "d83b9fd04e0aeff07361ed086175a9b0986100f780e7781ec82b7bfe775d7632",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:41.902Z",
+      "protectedSha256": "10afbb51ca55a0aa5745f0e39b676db057a3def69732fedd04663d06b4c509a6",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 280,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "f55b0d60df0078338f0e6d4b0f81392b70f1e218a56b12fd70fe8c87adba6547",
+      "newTextSha256": "a165c790a6d3c2d9c1362bec2f8294a65a04ed601bd698728b25fe8bc9f6ba59",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:43.515Z",
+      "protectedSha256": "bebd63cfd7574972edc0adf047bc1a4f102193f90f178a206ecd989f8c65099b",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 281,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "c4940696df6b09355c5b1b1066b3263bec3bbab2365d2a60c30404993d888470",
+      "newTextSha256": "ebcebcf2f9f551cb540f2220d3b51c9ef188517b5a7559f18ecf4f990eac3379",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:45.123Z",
+      "protectedSha256": "a29d460897e8fd0ee09099cbcc7e31588570c1c03482704443e28e94e9f507ac",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 282,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "dc251aa07a9bd849114a3013beb1830760d38bfb92f84ed68e28fde19c60667f",
+      "newTextSha256": "7951168ab65f6c5249384b94b20635e6f46e4dd603f202f3a53bd95eccabcc18",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:46.726Z",
+      "protectedSha256": "e1d2853598e2549d52ec6df710cbec312b19d6afda494df3512529d9c174bdcd",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 283,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "5a446b7d701156fd968de1b0a1fce0886d40218bd3ee00a04d42d13329c2e220",
+      "newTextSha256": "774434236f50343688e415cfde9a9112ab0d00aa7d597460e7fd8ee2e8dee31d",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:48.337Z",
+      "protectedSha256": "b088c3db7062ad07485695bf808064ccb4751b08948a380241305c75d0dfe11e",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 284,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "047d4d2fa79826c400bb828f3c08aa9b4703a7f0f990f0392e095e7f34775580",
+      "newTextSha256": "32ba30bfb62bee1b6d4f986d2854938d37ef7f1fc977064c84c46d9b2acb397c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:49.941Z",
+      "protectedSha256": "96012cc06eeaa5efea831273810d128e95e4e62020b9162467f313c01baccb7e",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 285,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "e10054be4cf3955d80957cbf75b619a9cba221561e4d0cec726c263b66191d99",
+      "newTextSha256": "a9dcb3c216e482ebe4b6be3e4e6dc59887cc82422a10bac9386c343a403147e8",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:51.562Z",
+      "protectedSha256": "381c5b3d90b3fb32491651d42562c3c220b7fc329d6b71e826e64a24031b47a2",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 286,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "6646130cccfb41ca86a7d2a6deda12551626f4f52b20cf63bc6b7eb71d9ef78b",
+      "newTextSha256": "d5e7aebf9bbbe3bc305460e52e6b2454ca07718f997bf2c04fadfdbdf34bc460",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:53.166Z",
+      "protectedSha256": "b65365f9547bf5f010ed1920347cd156d110817cd8e8a892f75d2b4112025792",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 287,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "42782bc81fc362db5f5601ddf143fbf5b355c11efd2539b6048a8cf7d30496a4",
+      "newTextSha256": "16d49ed190d0e60352f67f8bf38d4d345bdec77622d99d95c61cdf989d24ef45",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:54.768Z",
+      "protectedSha256": "a7de7bf6219faff8997dfa79c99861faee242714e59a007e51d4d9a9a6fdfea0",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 288,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "eb36f9f894e482035737a207e88033cba6ac52764fe38b211bede0f4be4128da",
+      "newTextSha256": "0160a69a1bf3bd8fbaa7e9aea91eb6ed57ee3c7817a86c5d775243793fe33f51",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:56.389Z",
+      "protectedSha256": "af390542670a000a0d3ab4935af33eb7bf800e7148a08793071554f361cd12bf",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 289,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "14af24cce2f199f3cdb4adda2cf6452eee382dc5edb1b91c3b6eded9a826c270",
+      "newTextSha256": "42ad2dc99ee92640a83fc8e82a20af39a8ff7a0b70b9a666bcbd9330c52176c8",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:57.983Z",
+      "protectedSha256": "a0c67929f1697150641763ae751ecc9a334a6db3d53e2bc9fcbb08908a6551dc",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 290,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "57d2cacc1d473c853c82cad6bacf867c4e093e7d7d9b5e73919d4ef6449c970f",
+      "newTextSha256": "8d9aca98895937fc20c5cd48c240bdaafc34588a3dd8542cb96b85c69daf91c3",
+      "savedOverrideUpdatedAt": "2026-09-14T18:52:59.581Z",
+      "protectedSha256": "325d5ec8fd915ebcdab2d2f4a824565abd3a2d19bf8e52104dee3762399fc756",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 291,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "52f2f59ea61eb272c41ff6671c36bf30fa8f4844a5abc3624fe7e520356bd8df",
+      "newTextSha256": "e80dcba7d35ba45bd16f4194c26ab7d2c8b1e3b518b3b9f0fee7b6b04b3fa936",
+      "savedOverrideUpdatedAt": "2026-09-14T18:53:01.198Z",
+      "protectedSha256": "80eaf4d057b82ab121d3adfd74c3b28c81ba52a09f5fdd8b53864eca803b98b2",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 292,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "7e5043bbcf28c20847fff3ebac22fbe2b796c714b52bc3920f00904cf41c45d4",
+      "newTextSha256": "84ffdc10c70676c9529a14a614e924b3fc86e94e3ccb93f4f621f46a800dc051",
+      "savedOverrideUpdatedAt": "2026-09-14T18:53:02.820Z",
+      "protectedSha256": "dca4a2e774038cdff9863f500a1a15c4abec5491c5d0cdd6949a8ae46362714a",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 293,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "917888b612408fdb387be6be3d001fd0f86b2f13015cbfaf9431167178a4f2d9",
+      "newTextSha256": "d05ca23bd93fdb3c8176f50481dd5d30cd76d3c993da0ad65d024d4a058d4353",
+      "savedOverrideUpdatedAt": "2026-09-14T18:53:04.422Z",
+      "protectedSha256": "fdc438b9140cf8d51f78aae5bebf48b03b1ec5d652d8bd4dd3291be4405bc7df",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 294,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "aa2498312118c0f7242b35ac075b67960e5adc82a2fcf3e1eb60e3c85295331c",
+      "newTextSha256": "f16bd0f98881f16d3299dc9a19e99c7c1ef433b9432a6d9a8c86a80b2274734c",
+      "savedOverrideUpdatedAt": "2026-09-14T18:53:06.028Z",
+      "protectedSha256": "c1df53ba10f1a7b8864d72382d944eeedf72c019d331ec464d9ab3a186d45b87",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 295,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "a976f4d9ea436df549398c10d5caf7723a0b1e79c7f45df7c02536ec665e1808",
+      "newTextSha256": "933cbc455e1dd7b09ee995b726e483c78319c5babf1571b5d330e669e2e6b568",
+      "savedOverrideUpdatedAt": "2026-09-14T18:53:07.634Z",
+      "protectedSha256": "b0c5989b2dc00136aaacb7ec8477707060962b69e5c6532564b0fa136b479fd3",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    },
+    {
+      "id": 296,
+      "beforeExplanation": "",
+      "beforeQuestionSha256": "de7a44549507fc0f398b728329ffd88265ecc98baeb5ae7af062148f5d3e4252",
+      "newTextSha256": "810a3c77e49c7c7cfbee42c71c39c52f75bd77cd240502c788e9af3d6c23219f",
+      "savedOverrideUpdatedAt": "2026-09-14T18:53:09.242Z",
+      "protectedSha256": "d25d549079b0ea04e4cd8e068a9532fde588ffc87a33e93ac35b8504cb6478ac",
+      "generatedBy": "tenten-2",
+      "status": "awaiting-user-review"
+    }
+  ],
+  "snapshotCursor": 344,
+  "note": "既存の解説156件を維持し、空欄136件へてんてん2号の確認用解説を追加。牌姿・正解・動画要約・難易度・確認マークは変更していない。連続した牌姿は同種のコンパクト表記、待ちや選択肢は適宜区切り、表示時だけ牌画像へ展開する。"
+}

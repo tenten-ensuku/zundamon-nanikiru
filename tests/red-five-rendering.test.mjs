@@ -81,6 +81,15 @@ test("invalid aliases, English identifiers and fullwidth digits around a token s
   assert.equal(text(target), input);
 });
 
+test("the ordinary word 真ん中 stays text while an actual 中 discard still renders", () => {
+  const input = "飛び対子は真ん中を切る。真ん中の牌。中を切る。7zを切る。";
+  const target = new Element("div");
+  app.appendExplanationText(target, input);
+  assert.equal(tiles(target).length, 2);
+  assert.ok(tiles(target).every(image => image.alt === "中"));
+  assert.equal(text(target), "飛び対子は真ん中を切る。真ん中の牌。を切る。を切る。");
+});
+
 test("bold/color rendering keeps red-five aliases correct and never transforms URLs", () => {
   const target = new Element("div");
   const input = "**Ｒ５Ｍ** [red]aka2[/red] 赤５ｓ https://example.com/aka1?r5p=0s <img src=x>";
