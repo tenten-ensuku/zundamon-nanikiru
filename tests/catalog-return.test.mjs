@@ -30,9 +30,11 @@ function menuHarness(session, allowed=true) {
   const calls=[];
   const api = new Function("session", "allowed", "calls", `
     const state={session}, playQuestions=[{id:54},{id:55}];
+    const questions=[{id:2,difficulty:"beginner"},{id:54,difficulty:"intermediate"},{id:55,difficulty:"beginner"}];
+    const questionDifficulty=question=>question.difficulty;
     let currentIndex=1, problemDifficulty="all", problemSort="default";
     const leaveExplanationEditor=()=>allowed, saveState=()=>calls.push("saved");
-    const isDifficulty=x=>["beginner","intermediate","advanced"].includes(x);
+    const isDifficulty=x=>["beginner","intermediate"].includes(x);
     const renderMenu=(...args)=>calls.push(args);
     ${extract("goMenu")}
     return {goMenu, get:()=>({state, problemDifficulty, problemSort})};
@@ -45,7 +47,7 @@ test("catalog return keeps original card after moving to another question and re
   const api = menuHarness({ mode:"catalog", catalogReturn:position, position:1, responses:{54:{tile:"5m"}} });
   api.goMenu();
   assert.deepEqual(api.calls, ["saved", ["problems", position]]);
-  assert.deepEqual(api.get(), { state:{session:null}, problemDifficulty:"advanced", problemSort:"weak" });
+  assert.deepEqual(api.get(), { state:{session:null}, problemDifficulty:"intermediate", problemSort:"weak" });
 });
 
 test("cancelled or busy explanation editor prevents clearing session and navigation", () => {
@@ -54,6 +56,14 @@ test("cancelled or busy explanation editor prevents clearing session and navigat
   api.goMenu();
   assert.deepEqual(api.calls,[]);
   assert.equal(api.get().state.session,session);
+});
+
+test("catalog return follows its original question when the two-level migration moved it", () => {
+  const position={questionId:2,difficulty:"intermediate",sort:"weak",scrollY:4800,offset:240};
+  const api=menuHarness({mode:"catalog",catalogReturn:position});
+  api.goMenu();
+  assert.equal(api.get().problemDifficulty,"beginner");
+  assert.deepEqual(api.calls[1],["problems",position]);
 });
 
 test("normal challenges and review keep existing menu behavior and progress", () => {

@@ -758,8 +758,8 @@
     }
 
     .course-card h2 { margin: 0 0 10px; }
-    .difficulty-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin: 12px 0 16px; }
-    .difficulty-options.with-all { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .difficulty-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin: 12px 0 16px; }
+    .difficulty-options.with-all { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .difficulty-choice { min-height: 54px; padding: 7px 2px; border: 1px solid rgba(242,210,123,.28); border-radius: 9px; color: var(--ink); background: #091e19; font-size: 13px; cursor: pointer; }
     .difficulty-choice small { display: block; margin-top: 3px; font-size: 10px; opacity: .8; }
     .difficulty-choice[aria-pressed="true"] { color: #251607; border-color: var(--gold-light); background: linear-gradient(#f2d27b, #ad782e); box-shadow: 0 2px 0 #54360e; }
@@ -1066,20 +1066,20 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <link rel="stylesheet" href="question-review.css?v=76">
-  <link rel="stylesheet" href="answer-feedback.css?v=76">
-  <script src="config.js?v=76"></script>
-  <script src="question-metadata.js?v=76"></script>
-  <script src="question-review.js?v=76"></script>
-  <script src="shared-data.js?v=76"></script>
-  <script src="answer-feedback.js?v=76"></script>
+  <link rel="stylesheet" href="question-review.css?v=77">
+  <link rel="stylesheet" href="answer-feedback.css?v=77">
+  <script src="config.js?v=77"></script>
+  <script src="question-metadata.js?v=77"></script>
+  <script src="question-review.js?v=77"></script>
+  <script src="shared-data.js?v=77"></script>
+  <script src="answer-feedback.js?v=77"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 76;
-    const { DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
+    const APP_VERSION = 77;
+    const { DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, recordDifficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
     const LEGACY_STORAGE_KEY = "zundamon-nanikiru-state-v2";
@@ -1189,7 +1189,7 @@
         session: source.session && typeof source.session === "object" ? source.session : null,
       };
       normalized.settings.soundVolume = ZundamonAnswerFeedback.normalizeVolume(normalized.settings.soundVolume);
-      normalized.settings.difficulty = isDifficulty(normalized.settings.difficulty) ? normalized.settings.difficulty : "beginner";
+      normalized.settings.difficulty = normalized.settings.difficulty === "advanced" ? "intermediate" : isDifficulty(normalized.settings.difficulty) ? normalized.settings.difficulty : "beginner";
       if (normalized.session) {
         normalized.session.ids = Array.isArray(normalized.session.ids)
           ? normalized.session.ids.map(Number).filter(Number.isFinite)
@@ -1531,7 +1531,7 @@
           </section>
           ${activeSession ? `
             <div class="resume-card">
-              <h3>${difficultyLabel(activeSession.difficulty)}・途中の${sessionLabel(activeSession.mode)}</h3>
+              <h3>${recordDifficultyLabel(activeSession)}・途中の${sessionLabel(activeSession.mode)}</h3>
               <p class="menu-lead">${Object.keys(activeSession.responses || {}).length} / ${activeSession.ids.length} 問回答済み</p>
               <button class="menu-primary" id="resumeSession" type="button">続きから</button>
             </div>` : ""}
@@ -1817,7 +1817,7 @@
       rank.textContent = showPlace ? String(place) : sessionLabel(result.mode);
       const detail = document.createElement("div");
       const title = document.createElement("div");
-      title.textContent = `${difficultyLabel(result.difficulty)}・${result.correct ?? 0} / ${result.graded ?? 0} 正解`;
+      title.textContent = `${recordDifficultyLabel(result)}・${result.correct ?? 0} / ${result.graded ?? 0} 正解`;
       const date = document.createElement("small");
       date.textContent = new Date(result.finishedAt).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
       detail.append(title, date);
@@ -1936,6 +1936,7 @@
       state.session = {
         mode,
         difficulty,
+        difficultyRevision: 77,
         ids,
         position,
         startedAt: new Date().toISOString(),
@@ -2022,7 +2023,9 @@
       else if (state.session) state.session.position = currentIndex;
       saveState();
       if (catalogReturn) {
-        problemDifficulty = isDifficulty(catalogReturn.difficulty) ? catalogReturn.difficulty : "all";
+        problemDifficulty = catalogReturn.difficulty === "advanced" ? "intermediate" : isDifficulty(catalogReturn.difficulty) ? catalogReturn.difficulty : "all";
+        const anchor = questions.find(question => question.id === Number(catalogReturn.questionId));
+        if (anchor && problemDifficulty !== "all" && questionDifficulty(anchor) !== problemDifficulty) problemDifficulty = questionDifficulty(anchor);
         problemSort = catalogReturn.sort === "weak" ? "weak" : "default";
         renderMenu("problems", catalogReturn);
       } else renderMenu("challenge");
@@ -2642,7 +2645,8 @@
       const elapsedSeconds = Math.max(0, (Date.now() - new Date(finishedSession.startedAt).getTime()) / 1000);
       const result = {
         mode: finishedSession.mode,
-        difficulty: isDifficulty(finishedSession.difficulty) ? finishedSession.difficulty : null,
+        difficulty: isDifficulty(finishedSession.difficulty) || finishedSession.difficulty === "advanced" ? finishedSession.difficulty : null,
+        difficultyRevision: finishedSession.difficultyRevision || null,
         total: sessionQuestions.length,
         answered,
         graded: gradedResponses.length,
@@ -2667,7 +2671,7 @@
       app.innerHTML = `
         <section class="menu-panel result-panel">
           <p class="brand-kicker">RESULT</p>
-          <h2>${difficultyLabel(result.difficulty)}・${sessionLabel(result.mode)} 完了</h2>
+          <h2>${recordDifficultyLabel(result)}・${sessionLabel(result.mode)} 完了</h2>
           <div class="result-score">${percentage === null ? "--" : `${percentage}%`}</div>
           <p class="result-detail">${result.answered} / ${result.total} 問回答<br>${result.correct} / ${result.graded} 問正解<br>タイム ${formatElapsed(result.elapsedSeconds)}${result.graded < result.answered ? `<br>採点待ち ${result.answered - result.graded}問` : ""}</p>
           <div class="menu-actions" style="justify-content:center;margin-top:18px">
@@ -2676,7 +2680,7 @@
           </div>
         </section>`;
       document.getElementById("resultMenu").addEventListener("click", () => renderMenu("challenge"));
-      document.getElementById("resultRetry")?.addEventListener("click", () => startChallenge(result.mode, isDifficulty(result.difficulty) ? result.difficulty : "all"));
+      document.getElementById("resultRetry")?.addEventListener("click", () => startChallenge(result.mode, result.difficulty === "advanced" ? "intermediate" : isDifficulty(result.difficulty) ? result.difficulty : "all"));
       window.scrollTo({ top: 0, behavior: "instant" });
     }
 

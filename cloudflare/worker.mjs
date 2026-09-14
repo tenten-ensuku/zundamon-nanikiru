@@ -58,7 +58,7 @@ export default { async fetch(request,env,ctx={}) {
   try {
     const ip=request.headers.get("CF-Connecting-IP")||"unknown";
     if(env.EDGE_LIMIT&&!((await env.EDGE_LIMIT.limit({key:ip})).success))return json(429,{error:"アクセスが多いため、少し待ってください。"},{"Retry-After":"60"});
-    if(request.method==="GET"&&url.pathname==="/health")return json(200,{ok:true,app:"zundamon-nanikiru",version:76,storage:"d1"});
+    if(request.method==="GET"&&url.pathname==="/health")return json(200,{ok:true,app:"zundamon-nanikiru",version:77,storage:"d1"});
     if(request.method==="GET"&&url.pathname==="/access")return json(200,{mode:modeOf(env),requiresPassword:modeOf(env)==="password",canEdit:modeOf(env)==="open"});
     if(request.method==="POST"&&url.pathname==="/login"){
       if(env.WRITE_LIMIT&&!((await env.WRITE_LIMIT.limit({key:ip})).success))return json(429,{error:"少し待ってから操作してください。"},{"Retry-After":"60"});
@@ -122,7 +122,7 @@ export default { async fetch(request,env,ctx={}) {
     const stamp=timestamp(existing?.updated_at);
     let row;
     if(match?.[2]==="/difficulty"){
-      if(!validDifficulty(body.difficulty))throw fail(400,"難易度は初級・中級・中級～上級から選択してください。");
+      if(!validDifficulty(body.difficulty))throw fail(400,"難易度は初級・中級から選択してください。旧版を開いている場合は再読み込みしてください。");
       const data=existing?.question_data?JSON.parse(existing.question_data):{explanationOnly:true};
       row={question_id:id,correct_discards:existing?.correct_discards||"[]",explanation:existing?.explanation||"",question_data:JSON.stringify({...data,difficulty:body.difficulty}),updated_at:stamp};
       await saveOverride(db,row,existing?.updated_at||null);
@@ -137,6 +137,7 @@ export default { async fetch(request,env,ctx={}) {
       await saveOverride(db,row,existing?.updated_at||null);
       return json(200,{id,changes,overrideUpdatedAt:stamp});
     }
+    if(isObject(body.question)&&Object.hasOwn(body.question,"difficulty")&&!validDifficulty(body.question.difficulty))throw fail(400,"難易度は初級・中級から選択してください。旧版を開いている場合は再読み込みしてください。");
     const question=validQuestion(body.question,id);
     if(!question)throw fail(400,"牌姿・ドラ・正解・解説の入力を確認してください。");
     row={question_id:id,correct_discards:JSON.stringify(question.correctDiscards),explanation:question.explanation,question_data:JSON.stringify(question),updated_at:stamp};

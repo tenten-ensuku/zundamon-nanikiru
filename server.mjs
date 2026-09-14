@@ -380,8 +380,11 @@ export function createAppServer(options = {}) {
         } else if (request.method === "PATCH") {
           const body = await readRequestJson(request);
           if (isDifficultyEdit) {
-            if (!validDifficulty(body.difficulty) || !Object.hasOwn(body, "expectedUpdatedAt") || !validStamp(body.expectedUpdatedAt)) {
-              sendJson(response, 400, { error: "難易度と更新日時を確認してください。" }, origin); return;
+            if (!validDifficulty(body.difficulty)) {
+              sendJson(response, 400, { error: "難易度は初級・中級から選択してください。旧版を開いている場合は再読み込みしてください。" }, origin); return;
+            }
+            if (!Object.hasOwn(body, "expectedUpdatedAt") || !validStamp(body.expectedUpdatedAt)) {
+              sendJson(response, 400, { error: "更新日時を確認してください。" }, origin); return;
             }
             if ((existing.updatedAt || null) !== body.expectedUpdatedAt) {
               sendJson(response, 409, { error: "他の編集が先に保存されています。" }, origin); return;
@@ -435,6 +438,9 @@ export function createAppServer(options = {}) {
             }
           }
         } else {
+          if (body?.question && Object.hasOwn(body.question, "difficulty") && !validDifficulty(body.question.difficulty)) {
+            sendJson(response, 400, { error: "難易度は初級・中級から選択してください。旧版を開いている場合は再読み込みしてください。" }, origin); return;
+          }
           const structured = normalizeStructuredQuestion(body?.question, questionId);
           if (structured) {
             overrides[key] = { ...reviewFields, questionData: structured, correctDiscards: structured.correctDiscards, explanation: structured.explanation, updatedAt: new Date(Math.max(Date.now(), (Date.parse(existing.updatedAt) || 0) + 1)).toISOString() };

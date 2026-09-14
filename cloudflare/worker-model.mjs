@@ -1,6 +1,6 @@
 export const TILE_CODE = /^(?:[1-9][mps]|[1-7]z|0[mps])$/;
 export const MAX_TEXT = 20000;
-export const validDifficulty = value => ["beginner", "intermediate", "advanced"].includes(value);
+export const validDifficulty = value => ["beginner", "intermediate"].includes(value);
 export const isObject = value => value !== null && typeof value === "object" && !Array.isArray(value);
 export const validId = id => Number.isInteger(id) && id > 0 && id <= 9999;
 export const validStamp = value => value === null || (typeof value === "string" && value.length < 60 && Number.isFinite(Date.parse(value)));

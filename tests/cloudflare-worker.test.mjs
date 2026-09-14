@@ -3,7 +3,7 @@ import test from "node:test";
 import { readFile } from "node:fs/promises";
 import { DatabaseSync } from "node:sqlite";
 import worker from "../cloudflare/worker.mjs";
-import { validQuestion } from "../cloudflare/worker-model.mjs";
+import { validQuestion, validDifficulty } from "../cloudflare/worker-model.mjs";
 import { importSql, checksum } from "../cloudflare/prepare-import.mjs";
 const schema=await readFile(new URL("../cloudflare/migrations/0001_questions.sql",import.meta.url),"utf8");
 const fixture={id:1,hand:["1m","2m","3m","4p","0p","5s","6s","7s","1z","1z","2z","3z","4z"],draw:"5z",dora:"2m",melds:[],explanation:"  作者の文\n",videoExplanation:"5zを切るのだ。",correctDiscards:["5z"]};
@@ -103,12 +103,12 @@ test("difficulty-only D1 edits preserve both speakers, answers, shapes and indep
   const h=harness();try {
     const saved=await h.request('/questions/1','PUT',{question:fixture,expectedUpdatedAt:null}).then(r=>r.json());
     const review=await h.request('/questions/1','PATCH',{reviewStatus:'complete',expectedReviewUpdatedAt:null}).then(r=>r.json());
-    const r=await h.request('/questions/1/difficulty','PATCH',{difficulty:'advanced',expectedUpdatedAt:saved.overrideUpdatedAt});assert.equal(r.status,200);
+    const r=await h.request('/questions/1/difficulty','PATCH',{difficulty:'intermediate',expectedUpdatedAt:saved.overrideUpdatedAt});assert.equal(r.status,200);
     const changed=await r.json();const row=await h.request('/overrides/1').then(r=>r.json());
-    assert.equal(row.difficulty,'advanced');assert.equal(row.reviewUpdatedAt,review.reviewUpdatedAt);
+    assert.equal(row.difficulty,'intermediate');assert.equal(row.reviewUpdatedAt,review.reviewUpdatedAt);
     for(const key of Object.keys(fixture))assert.deepEqual(row.questionData[key],fixture[key],key);
     assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty:'beginner',expectedUpdatedAt:saved.overrideUpdatedAt})).status,409);
-    for(const difficulty of [null,'','expert',[],{}])assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty,expectedUpdatedAt:changed.overrideUpdatedAt})).status,400);
+    for(const difficulty of [null,'','advanced','expert',[],{}])assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty,expectedUpdatedAt:changed.overrideUpdatedAt})).status,400);
     for(const mode of ['closed','password']){h.env.QUESTION_EDIT_MODE=mode;assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty:'beginner',expectedUpdatedAt:changed.overrideUpdatedAt})).status,mode==='closed'?403:401);}
     h.env.QUESTION_EDIT_MODE='open';
     assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty:'beginner',expectedUpdatedAt:changed.overrideUpdatedAt},{Origin:'https://other.example'})).status,403);
@@ -120,5 +120,36 @@ test("difficulty-only D1 edits preserve both speakers, answers, shapes and indep
     partial=await h.request('/overrides/2').then(r=>r.json());assert.deepEqual(partial.questionData,{videoExplanation:'new',difficulty:'intermediate'});
     const delta=await h.request('/sync?since=0').then(r=>r.json());assert.equal(delta.rows.find(row=>row.id===2).questionData.difficulty,'intermediate');
     assert.equal(validQuestion({...fixture,difficulty:'impossible'},1),null);
+  }finally{h.sqlite.close();}
+});
+
+test("two-level writes reject legacy advanced without rewriting stored content on reads or unrelated edits", async () => {
+  assert.equal(validDifficulty('beginner'),true);assert.equal(validDifficulty('intermediate'),true);
+  assert.equal(validDifficulty('advanced'),false);
+  assert.equal(validQuestion({...fixture,difficulty:'advanced'},1),null);
+  const h=harness();try {
+    const legacy={...fixture,difficulty:'advanced'};
+    const stamp='2026-09-12T00:00:00.000Z';
+    h.sqlite.prepare('INSERT INTO zundamon_question_overrides(question_id,correct_discards,explanation,question_data,updated_at) VALUES(?,?,?,?,?)').run(1,JSON.stringify(fixture.correctDiscards),fixture.explanation,JSON.stringify(legacy),stamp);
+    const before=await h.request('/overrides/1').then(r=>r.json());
+    assert.deepEqual(before.questionData,legacy);
+    for(const [url,method,body] of [
+      ['/questions/1/difficulty','PATCH',{difficulty:'advanced',expectedUpdatedAt:stamp}],
+      ['/questions/1','PUT',{question:legacy,expectedUpdatedAt:stamp}],
+      ['/questions','POST',{question:{...legacy,id:9999},expectedUpdatedAt:null}],
+    ]) {
+      const rejected=await h.request(url,method,body);assert.equal(rejected.status,400);
+      assert.match((await rejected.json()).error,/初級・中級から/);
+    }
+    assert.deepEqual(await h.request('/overrides/1').then(r=>r.json()),before);
+    const edit=await h.request('/questions/1/explanation','PATCH',{changes:{explanation:'作者の追記'},expectedUpdatedAt:stamp});assert.equal(edit.status,200);
+    const edited=await edit.json();
+    const after=await h.request('/overrides/1').then(r=>r.json());assert.equal(after.questionData.difficulty,'advanced');
+    assert.equal(after.videoExplanation,fixture.videoExplanation);
+    assert.deepEqual(after.hand,fixture.hand);assert.deepEqual(after.correctDiscards,fixture.correctDiscards);
+    assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty:'intermediate',expectedUpdatedAt:stamp})).status,409);
+    assert.equal((await h.request('/questions/1/difficulty','PATCH',{difficulty:'intermediate',expectedUpdatedAt:edited.overrideUpdatedAt})).status,200);
+    const migrated=await h.request('/overrides/1').then(r=>r.json());
+    assert.equal(migrated.difficulty,'intermediate');assert.equal(migrated.explanation,'作者の追記');
   }finally{h.sqlite.close();}
 });

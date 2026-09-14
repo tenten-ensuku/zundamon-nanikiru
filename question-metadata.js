@@ -5,18 +5,26 @@
   const DIFFICULTIES = Object.freeze([
     Object.freeze({ id: "beginner", label: "初級" }),
     Object.freeze({ id: "intermediate", label: "中級" }),
-    Object.freeze({ id: "advanced", label: "中級～上級" }),
   ]);
   const isDifficulty = value => DIFFICULTIES.some(item => item.id === value);
 
   // Explicit saved choices always win over historical playlist membership.
   function questionDifficulty(question) {
     if (isDifficulty(question?.difficulty)) return question.difficulty;
-    return previewAudienceLabel(question, "preview") ? "advanced" : "beginner";
+    // Read old caches without offering a third category for new choices.
+    if (question?.difficulty === "advanced") return "intermediate";
+    const membership = question?.sourcePlaylistMembership;
+    const verified = membership?.videoId === youtubeVideoId(question?.sourceUrl) && Array.isArray(membership?.playlistIds);
+    return verified && membership.playlistIds.includes(BEGINNER_PLAYLIST) && !membership.playlistIds.includes(INTERMEDIATE_PLAYLIST) ? "beginner" : "intermediate";
   }
   function difficultyLabel(value) {
     const id = typeof value === "object" && value !== null ? questionDifficulty(value) : value;
+    if (id === "advanced") return "中級～上級（旧区分）";
     return DIFFICULTIES.find(item => item.id === id)?.label || "全難易度";
+  }
+  function recordDifficultyLabel(record) {
+    const label = difficultyLabel(record?.difficulty);
+    return record?.difficultyRevision >= 77 || !isDifficulty(record?.difficulty) ? label : `${label}（旧区分）`;
   }
   function filterByDifficulty(questions, difficulty = "all") {
     return difficulty === "all" ? [...questions] : questions.filter(q => questionDifficulty(q) === difficulty);
@@ -39,5 +47,5 @@
     return membership.playlistIds.includes(INTERMEDIATE_PLAYLIST) && !membership.playlistIds.includes(BEGINNER_PLAYLIST) ? "中上級者向け" : "";
   }
 
-  window.ZUNDAMON_QUESTION_METADATA = Object.freeze({ youtubeVideoId, previewAudienceLabel, DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, filterByDifficulty });
+  window.ZUNDAMON_QUESTION_METADATA = Object.freeze({ youtubeVideoId, previewAudienceLabel, DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, recordDifficultyLabel, filterByDifficulty });
 })();

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://zundamon-question-api.naga-study.workers.dev",
-  "cursor": 344,
+  "cursor": 549,
   "rows": [
     {
       "id": 1,
@@ -75,6 +75,7 @@
           "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
         ]
       },
+      "difficulty": "beginner",
       "reviewed": true,
       "reviewStatus": "complete",
       "reviewUpdatedAt": "2026-07-16 09:59:01.013+00",
@@ -149,10 +150,11 @@
             "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
             "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
           ]
-        }
+        },
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-13T11:15:00.119Z"
+      "overrideUpdatedAt": "2026-09-14T20:08:15.996Z"
     },
     {
       "id": 2,
@@ -213,7 +215,7 @@
       "sourceDrawStatus": "not-shown",
       "videoExplanation": "おすすめは3s切りなのだ。7s切りは受け入れが広いけれど、ドラを使い切れなかったり、ドラ単騎の聴牌になったりするのが気になるのだ。\n\n3sを切った後の索子は、2sを雀頭に取る見方と、7sを雀頭に取る見方の両方があるのだ。どちらか一つの分け方に決めつけずに受けを数えると、1sの受けも見つかるのだ。ドラを使いながら好形で聴牌できる形を残したいのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309943410311958570",
-      "overrideUpdatedAt": "2026-09-06 05:43:49.6198+00",
+      "overrideUpdatedAt": "2026-09-14T20:08:17.596Z",
       "videoCorrectDiscards": [
         "3s"
       ],
@@ -227,6 +229,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 2,
@@ -300,7 +303,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       }
     },
     {
@@ -381,6 +385,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -461,10 +466,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.602636+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:19.203Z"
     },
     {
       "id": 4,
@@ -987,7 +993,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "1巡目でも、ここは1zを切るのだ。役牌を残して端の数牌を切りたくなるけれど、今回は雀頭がないので数牌のつながりを大切にしたいのだ。\n\n1pや9sを残しておけば、間の牌を引いたときに四連形へ育つ可能性があるのだ。雀頭がない手では、端牌を含む四連形も手を広く進める助けになるのだ。1zと5zの比較では、親にダブ東を鳴かれる前に1zから整理するのがおすすめなのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309969143491199077",
-      "overrideUpdatedAt": "2026-09-06 05:43:49.622337+00",
+      "overrideUpdatedAt": "2026-09-14T20:08:20.827Z",
       "videoCorrectDiscards": [
         "1z"
       ],
@@ -1001,6 +1007,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 7,
@@ -1073,7 +1080,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       }
     },
     {
@@ -1134,7 +1142,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "おすすめは2s切りなのだ。索子の2s・3s・4s・4s・5sは、3s・6sの両面として使える形なのだ。まず完成面子を抜き出して、残るターツを見つけるのだ。\n\n索子の両面はそのままで十分に強いから、フォローする牌は萬子の嵌張側に残したいのだ。目先の受け入れ枚数だけでなく、どの牌を引くと両面聴牌できるかで比べるのだ。ドラもあるので、一盃口だけにこだわらず好形を優先したいのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309969164840075437",
-      "overrideUpdatedAt": "2026-09-13T11:20:09.210Z",
+      "overrideUpdatedAt": "2026-09-14T20:08:22.426Z",
       "videoCorrectDiscards": [
         "2s"
       ],
@@ -1148,6 +1156,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 8,
@@ -1220,7 +1229,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       }
     },
     {
@@ -1431,7 +1441,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "おすすめは8s切りなのだ。1pを雀頭として手牌を分解すると、聴牌する受け入れは合計16枚なのだ。ドラの1pを引いても、そのまま聴牌できるのがうれしいところなのだ。\n\n4s切りと比べると、そちらは自分で7sを1枚使っているため受け入れが15枚になるのだ。9mが暗刻なので、両面とリャンカンを残しても平和は付かないのだ。枚数とドラの使いやすさを重視し、8sを切るのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1309942244995891351/1309969218418114611",
-      "overrideUpdatedAt": "2026-09-13T12:19:19.989Z",
+      "overrideUpdatedAt": "2026-09-14T20:08:24.039Z",
       "videoCorrectDiscards": [
         "8s"
       ],
@@ -1448,6 +1458,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 10,
@@ -1526,7 +1537,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       }
     },
     {
@@ -1921,7 +1933,7 @@
           "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
         ]
       },
-      "difficulty": "intermediate",
+      "difficulty": "beginner",
       "kanChoice": false,
       "correctKan": null,
       "correctRiichi": null,
@@ -2018,13 +2030,13 @@
             "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
           ]
         },
-        "difficulty": "intermediate",
+        "difficulty": "beginner",
         "kanChoice": false,
         "correctKan": null,
         "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T15:53:29.616Z"
+      "overrideUpdatedAt": "2026-09-14T20:08:25.632Z"
     },
     {
       "id": 14,
@@ -2464,7 +2476,7 @@
           "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
         ]
       },
-      "difficulty": "intermediate",
+      "difficulty": "beginner",
       "kanChoice": false,
       "correctKan": null,
       "correctRiichi": null,
@@ -2557,13 +2569,13 @@
             "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
           ]
         },
-        "difficulty": "intermediate",
+        "difficulty": "beginner",
         "kanChoice": false,
         "correctKan": null,
         "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T15:55:46.496Z"
+      "overrideUpdatedAt": "2026-09-14T20:08:27.243Z"
     },
     {
       "id": 17,
@@ -2637,7 +2649,7 @@
           "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
         ]
       },
-      "difficulty": "intermediate",
+      "difficulty": "beginner",
       "kanChoice": false,
       "correctKan": null,
       "correctRiichi": null,
@@ -2716,13 +2728,13 @@
             "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
           ]
         },
-        "difficulty": "intermediate",
+        "difficulty": "beginner",
         "kanChoice": false,
         "correctKan": null,
         "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T15:56:23.278Z"
+      "overrideUpdatedAt": "2026-09-14T20:08:28.842Z"
     },
     {
       "id": 18,
@@ -2797,7 +2809,7 @@
           "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
         ]
       },
-      "difficulty": "intermediate",
+      "difficulty": "beginner",
       "kanChoice": false,
       "correctKan": null,
       "correctRiichi": null,
@@ -2877,13 +2889,13 @@
             "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
           ]
         },
-        "difficulty": "intermediate",
+        "difficulty": "beginner",
         "kanChoice": false,
         "correctKan": null,
         "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T15:56:43.384Z"
+      "overrideUpdatedAt": "2026-09-14T20:08:30.449Z"
     },
     {
       "id": 19,
@@ -2956,6 +2968,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -3029,10 +3042,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.613547+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:32.061Z"
     },
     {
       "id": 20,
@@ -3267,7 +3281,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "おすすめは5p切りなのだ。\n\n5pは受け入れを増やしていない余剰牌で、ここを切ると聴牌への受け入れが21枚、そのうち良形聴牌になる受け入れが10枚残るのだ。\n\n1p・4pを引いたら9m切り、2p・3pを引いたら通常の5m切りで両面聴牌にできるのだ。目先の形だけで不要な牌を決めず、聴牌するまでの道筋も確認するのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1310539832002482176",
-      "overrideUpdatedAt": "2026-09-07 19:00:14.853473+00",
+      "overrideUpdatedAt": "2026-09-14T20:08:33.676Z",
       "videoExplanationSource": {
         "url": "https://youtu.be/VNERzjbKb8A",
         "reasonSeconds": [
@@ -3286,6 +3300,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 21,
@@ -3359,7 +3374,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       }
     },
     {
@@ -4062,6 +4078,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -4144,10 +4161,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.613815+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:35.314Z"
     },
     {
       "id": 27,
@@ -4225,6 +4243,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -4303,10 +4322,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T16:59:07.991Z"
+      "overrideUpdatedAt": "2026-09-14T20:08:36.914Z"
     },
     {
       "id": 28,
@@ -4390,6 +4410,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -4474,10 +4495,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.613926+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:38.507Z"
     },
     {
       "id": 29,
@@ -4732,6 +4754,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -4816,10 +4839,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T16:41:40.128Z"
+      "overrideUpdatedAt": "2026-09-14T20:08:40.131Z"
     },
     {
       "id": 31,
@@ -5263,6 +5287,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -5349,10 +5374,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.614278+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:41.733Z"
     },
     {
       "id": 34,
@@ -5599,6 +5625,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -5679,10 +5706,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.614544+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:43.340Z"
     },
     {
       "id": 36,
@@ -5898,6 +5926,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -5969,10 +5998,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-07 19:00:14.854455+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:44.955Z"
     },
     {
       "id": 38,
@@ -6211,6 +6241,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -6287,10 +6318,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.616175+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:46.547Z"
     },
     {
       "id": 40,
@@ -6510,6 +6542,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -6585,10 +6618,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.616324+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:48.148Z"
     },
     {
       "id": 42,
@@ -7272,6 +7306,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -7350,10 +7385,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.616505+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:49.763Z"
     },
     {
       "id": 47,
@@ -7423,6 +7459,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -7493,10 +7530,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-07 19:00:14.858938+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:51.375Z"
     },
     {
       "id": 48,
@@ -7563,6 +7601,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -7630,10 +7669,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-07 19:00:14.859012+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:52.974Z"
     },
     {
       "id": 49,
@@ -7707,6 +7747,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -7781,10 +7822,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.616699+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:54.594Z"
     },
     {
       "id": 50,
@@ -7860,6 +7902,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -7936,10 +7979,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.61678+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:56.189Z"
     },
     {
       "id": 51,
@@ -8021,6 +8065,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -8103,10 +8148,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.616822+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:57.796Z"
     },
     {
       "id": 52,
@@ -8337,6 +8383,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -8405,10 +8452,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-07 19:00:14.859148+00"
+      "overrideUpdatedAt": "2026-09-14T20:08:59.408Z"
     },
     {
       "id": 54,
@@ -9084,7 +9132,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "ここは3p切りなのだ。3m切りも好形で聴牌する完全形に見えるけれど、3pを切ったときには6mの受けも残っているのだ。\n\n萬子を一つの分け方だけで数えると、この6mを見落としやすいのだ。動画の比較では、3m切りは19枚、3p切りは6mの4枚も加えて22枚なのだ。どちらも好形でドラを使えるなら、受け入れの広い方を選びたいのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132919828643891",
-      "overrideUpdatedAt": "2026-09-14T16:59:08.413Z",
+      "overrideUpdatedAt": "2026-09-14T20:09:00.994Z",
       "videoCorrectDiscards": [
         "3p"
       ],
@@ -9104,6 +9152,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 58,
@@ -9188,7 +9237,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       }
     },
     {
@@ -9447,6 +9497,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -9526,10 +9577,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.617352+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:02.601Z"
     },
     {
       "id": 61,
@@ -9596,7 +9648,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "おすすめは4z切りなのだ。5sを切って一通を見ながら安全牌を持つ案もあるけれど、今回は索子で雀頭を作り替え、タンヤオへ向かいやすいのだ。\n\n索子は順子と四連形がくっついた形なので、2s・5s・8sなどを引くと雀頭を作れるのだ。そうなれば1pの対子を整理して、タンヤオ・平和のある手へ進められるのだ。\n\n赤牌もあって、立直・タンヤオ・平和で満貫を目指せるのだ。一通の高めだけにこだわるより、確実な打点と好形を残したいのだ。ドラがない場合は比較が変わるので、形と打点を一緒に見るのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313838592078118922",
-      "overrideUpdatedAt": "2026-09-14T16:59:09.245Z",
+      "overrideUpdatedAt": "2026-09-14T20:09:04.206Z",
       "videoCorrectDiscards": [
         "4z"
       ],
@@ -9617,6 +9669,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 61,
@@ -9703,7 +9756,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       }
     },
     {
@@ -9767,7 +9821,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "ここは4s切りなのだ。雀頭がなくて不安に見えるけれど、完成面子とターツに分けると受け入れの広いヘッドレスの一向聴なのだ。\n\n特に萬子には面子とターツがつながった連続形があるので、雀頭を作りながら手を進めやすいのだ。無理に雀頭を固定するより、このつながりを残した方が受け入れと好形の両方を生かせるのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313838607978594345",
-      "overrideUpdatedAt": "2026-09-14T16:59:09.694Z",
+      "overrideUpdatedAt": "2026-09-14T20:09:05.808Z",
       "videoCorrectDiscards": [
         "4s"
       ],
@@ -9784,6 +9838,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 62,
@@ -9862,7 +9917,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       }
     },
     {
@@ -9939,6 +9995,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -10015,10 +10072,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.617419+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:07.429Z"
     },
     {
       "id": 64,
@@ -10094,6 +10152,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -10170,10 +10229,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.61746+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:09.023Z"
     },
     {
       "id": 65,
@@ -10431,6 +10491,7 @@
       "correctRiichi": true,
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -10518,10 +10579,11 @@
         },
         "correctRiichi": true,
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-11T20:29:29.201Z"
+      "overrideUpdatedAt": "2026-09-14T20:09:10.641Z"
     },
     {
       "id": 67,
@@ -11086,6 +11148,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -11162,10 +11225,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618449+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:12.237Z"
     },
     {
       "id": 71,
@@ -11243,6 +11307,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -11321,10 +11386,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.61849+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:13.841Z"
     },
     {
       "id": 72,
@@ -11402,6 +11468,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -11480,10 +11547,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618549+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:15.456Z"
     },
     {
       "id": 73,
@@ -11718,6 +11786,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -11794,10 +11863,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618624+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:17.073Z"
     },
     {
       "id": 75,
@@ -12350,6 +12420,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -12430,10 +12501,22 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618847+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:18.701Z"
+    },
+    {
+      "id": 79,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:20.287Z"
     },
     {
       "id": 80,
@@ -12666,6 +12749,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -12744,10 +12828,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618928+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:21.907Z"
     },
     {
       "id": 82,
@@ -12966,6 +13051,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -13044,10 +13130,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619024+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:23.518Z"
     },
     {
       "id": 84,
@@ -13125,6 +13212,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -13203,10 +13291,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619068+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:25.105Z"
     },
     {
       "id": 85,
@@ -13284,6 +13373,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -13362,10 +13452,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619137+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:26.720Z"
     },
     {
       "id": 86,
@@ -13612,6 +13703,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -13698,10 +13790,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619229+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:28.321Z"
     },
     {
       "id": 88,
@@ -13779,6 +13872,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -13857,10 +13951,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619297+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:29.933Z"
     },
     {
       "id": 89,
@@ -13938,6 +14033,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -14016,10 +14112,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619339+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:31.526Z"
     },
     {
       "id": 90,
@@ -14254,6 +14351,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -14330,10 +14428,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619546+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:33.140Z"
     },
     {
       "id": 92,
@@ -14411,6 +14510,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -14489,10 +14589,11 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619581+00"
+      "overrideUpdatedAt": "2026-09-14T20:09:34.743Z"
     },
     {
       "id": 93,
@@ -14656,6 +14757,28 @@
       "overrideUpdatedAt": "2026-09-06 05:43:49.619619+00"
     },
     {
+      "id": 94,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:36.346Z"
+    },
+    {
+      "id": 95,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:37.950Z"
+    },
+    {
       "id": 97,
       "dora": "1p",
       "draw": "4m",
@@ -14815,6 +14938,160 @@
       },
       "overridden": true,
       "overrideUpdatedAt": "2026-09-06 05:43:49.619658+00"
+    },
+    {
+      "id": 98,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:39.554Z"
+    },
+    {
+      "id": 99,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:41.173Z"
+    },
+    {
+      "id": 101,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:42.766Z"
+    },
+    {
+      "id": 102,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:44.384Z"
+    },
+    {
+      "id": 103,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:45.989Z"
+    },
+    {
+      "id": 106,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:47.593Z"
+    },
+    {
+      "id": 107,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:49.198Z"
+    },
+    {
+      "id": 108,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:50.809Z"
+    },
+    {
+      "id": 109,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:52.412Z"
+    },
+    {
+      "id": 110,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:54.031Z"
+    },
+    {
+      "id": 111,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:55.628Z"
+    },
+    {
+      "id": 112,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:57.238Z"
+    },
+    {
+      "id": 113,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:09:58.851Z"
+    },
+    {
+      "id": 116,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:00.464Z"
     },
     {
       "id": 118,
@@ -14984,6 +15261,61 @@
       "overrideUpdatedAt": "2026-09-11T20:29:30.781Z"
     },
     {
+      "id": 120,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:02.078Z"
+    },
+    {
+      "id": 121,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:03.680Z"
+    },
+    {
+      "id": 122,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:05.282Z"
+    },
+    {
+      "id": 123,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:06.882Z"
+    },
+    {
+      "id": 124,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:08.492Z"
+    },
+    {
       "id": 125,
       "image": "/questions/question-125.png",
       "images": [
@@ -15139,6 +15471,28 @@
       },
       "overridden": true,
       "overrideUpdatedAt": "2026-09-11T20:29:32.324Z"
+    },
+    {
+      "id": 126,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:10.087Z"
+    },
+    {
+      "id": 128,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:11.695Z"
     },
     {
       "id": 129,
@@ -15473,6 +15827,28 @@
       "overrideUpdatedAt": "2026-09-14T16:59:10.104Z"
     },
     {
+      "id": 134,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:13.292Z"
+    },
+    {
+      "id": 135,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:14.896Z"
+    },
+    {
       "id": 136,
       "dora": "2p",
       "draw": "7p",
@@ -15536,7 +15912,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "ここは9sを切って立直なのだ。7s切りと待ちは同じでも、付く役によって打点が変わるのだ。\n\n7s切りなら立直・平和・ドラ1で3900点、9s切りなら立直・タンヤオ・ドラ1で5200点になるのだ。同じ待ちなら高い方を選ぶのだ。役があるのでダマでも和了できるけれど、この局面の両面待ちなら立直で打点を目指したいのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1326217897130852394",
-      "overrideUpdatedAt": "2026-09-14T16:59:10.517Z",
+      "overrideUpdatedAt": "2026-09-14T20:10:16.505Z",
       "videoCorrectDiscards": [
         "9s"
       ],
@@ -15554,6 +15930,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "intermediate",
       "reviewStatus": null,
       "questionData": {
         "id": 136,
@@ -15636,7 +16013,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "intermediate"
       }
     },
     {
@@ -15716,6 +16094,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -15795,10 +16174,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-11T20:29:33.891Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:18.108Z"
     },
     {
       "id": 139,
@@ -15976,6 +16356,50 @@
       "overrideUpdatedAt": "2026-09-11T20:29:35.699Z"
     },
     {
+      "id": 143,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:19.708Z"
+    },
+    {
+      "id": 146,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:21.326Z"
+    },
+    {
+      "id": 147,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:22.917Z"
+    },
+    {
+      "id": 148,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:24.532Z"
+    },
+    {
       "id": 149,
       "image": "/questions/question-149.png",
       "images": [
@@ -16060,6 +16484,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -16147,10 +16572,66 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-11T20:29:37.251Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:26.136Z"
+    },
+    {
+      "id": 150,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:27.742Z"
+    },
+    {
+      "id": 151,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:29.360Z"
+    },
+    {
+      "id": 152,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:30.962Z"
+    },
+    {
+      "id": 153,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:32.577Z"
+    },
+    {
+      "id": 155,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "difficulty": "beginner"
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-14T20:10:34.181Z"
     },
     {
       "id": 156,
@@ -16578,6 +17059,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -16662,10 +17144,11 @@
           "revision": 72
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:49:33.773Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:35.797Z"
     },
     {
       "id": 159,
@@ -16750,6 +17233,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -16835,10 +17319,11 @@
           "revision": 72
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-11T20:29:43.924Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:37.414Z"
     },
     {
       "id": 160,
@@ -17062,7 +17547,7 @@
       "sourceDrawStatus": "verified",
       "videoExplanation": "おすすめは8s切りなのだ。\n\nこの手は、暗刻があり雀頭のない「暗刻ヘッドレス」の一向聴にするのが強いのだ。5p・6pを重ねれば雀頭ができ、索子の両面を待つ聴牌にできるのだ。\n\n先に両面が埋まっても、2pを1枚切って雀頭にすれば、もう一方の両面を待てるのだ。聴牌への受けは8種類28枚あり、どの有効牌でも両面聴牌にできるのだ。\n\n暗刻を雀頭としても使えることに気づくと、ヘッドレスの広い受け入れを生かせるのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1330352176723398797",
-      "overrideUpdatedAt": "2026-09-14T18:49:36.996Z",
+      "overrideUpdatedAt": "2026-09-14T20:10:39.025Z",
       "videoExplanationSource": {
         "url": "https://youtu.be/ntcRIWEd7d0",
         "reasonSeconds": [
@@ -17088,6 +17573,7 @@
           "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
         ]
       },
+      "difficulty": "beginner",
       "reviewStatus": null,
       "questionData": {
         "id": 162,
@@ -17165,7 +17651,8 @@
             "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
             "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
           ]
-        }
+        },
+        "difficulty": "beginner"
       }
     },
     {
@@ -17586,6 +18073,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -17670,10 +18158,11 @@
           "revision": 72
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:49:41.799Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:40.621Z"
     },
     {
       "id": 166,
@@ -17888,11 +18377,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8m。打7sと直接の受け入れは同じなので、その後の嬉しい変化で比較したい。\n索子の5677sを残すと、4sや7sを引いた時に索子で雀頭を確保し、99mを整理してタンヤオへ向かう余地がある。今は同じ一向聴でも、不要になり得る端牌の対子を手放せる形にしておく価値がある。\n8mを残す受けにも働きはあるが、今回は手全体の打点変化まで見て7sを残す。牌単体の強さではなく、『このツモで手全体がどう嬉しくなるか』が比較の軸。"
+        "explanation": "打8m。打7sと直接の受け入れは同じなので、その後の嬉しい変化で比較したい。\n索子の5677sを残すと、4sや7sを引いた時に索子で雀頭を確保し、99mを整理してタンヤオへ向かう余地がある。今は同じ一向聴でも、不要になり得る端牌の対子を手放せる形にしておく価値がある。\n8mを残す受けにも働きはあるが、今回は手全体の打点変化まで見て7sを残す。牌単体の強さではなく、『このツモで手全体がどう嬉しくなるか』が比較の軸。",
+        "difficulty": "beginner"
       },
       "explanation": "打8m。打7sと直接の受け入れは同じなので、その後の嬉しい変化で比較したい。\n索子の5677sを残すと、4sや7sを引いた時に索子で雀頭を確保し、99mを整理してタンヤオへ向かう余地がある。今は同じ一向聴でも、不要になり得る端牌の対子を手放せる形にしておく価値がある。\n8mを残す受けにも働きはあるが、今回は手全体の打点変化まで見て7sを残す。牌単体の強さではなく、『このツモで手全体がどう嬉しくなるか』が比較の軸。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:49:46.626Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:42.221Z"
     },
     {
       "id": 169,
@@ -17985,6 +18475,7 @@
       ],
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "intermediate",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -18078,10 +18569,11 @@
           "2m"
         ],
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "intermediate"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-11T20:29:53.889Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:43.827Z"
     },
     {
       "id": 170,
@@ -18089,11 +18581,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2sでリーチ。待ちは2m・5m・6m。単に三面張を取るだけでなく、どの和了牌で高くなるかを比較したい。\n2m・5mなら萬子に雀頭ができ、777m・999p・333sの三暗刻がそのまま残る。ロンでも三暗刻になる受けが十分にあるのが、この待ちの良さ。\n打2mなどで取る索子側の待ちは、合計枚数では少し広いが、三暗刻になる受けが少ない。待ちの枚数を数えた後に、打点の高い和了牌が何枚あるかまで見る問題。"
+        "explanation": "打2sでリーチ。待ちは2m・5m・6m。単に三面張を取るだけでなく、どの和了牌で高くなるかを比較したい。\n2m・5mなら萬子に雀頭ができ、777m・999p・333sの三暗刻がそのまま残る。ロンでも三暗刻になる受けが十分にあるのが、この待ちの良さ。\n打2mなどで取る索子側の待ちは、合計枚数では少し広いが、三暗刻になる受けが少ない。待ちの枚数を数えた後に、打点の高い和了牌が何枚あるかまで見る問題。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2sでリーチ。待ちは2m・5m・6m。単に三面張を取るだけでなく、どの和了牌で高くなるかを比較したい。\n2m・5mなら萬子に雀頭ができ、777m・999p・333sの三暗刻がそのまま残る。ロンでも三暗刻になる受けが十分にあるのが、この待ちの良さ。\n打2mなどで取る索子側の待ちは、合計枚数では少し広いが、三暗刻になる受けが少ない。待ちの枚数を数えた後に、打点の高い和了牌が何枚あるかまで見る問題。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:49:48.228Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:45.427Z"
     },
     {
       "id": 171,
@@ -18159,7 +18652,7 @@
       "reviewUpdatedAt": null,
       "sourceDrawStatus": "verified",
       "videoExplanation": "ここは3p切りなのだ。今の受け入れだけでなく、赤5pをチーして打点を上げる変化を残したいのだ。\n\n3pを切っておけば、上家から0pが出たときにチーし、2pを切って進められるのだ。6p切りとの比較では、赤を鳴いた後にどの牌が余るかを確認するのだ。副露手は自分のツモだけでなく、赤牌を鳴いて使える手順も大切なのだ。",
-      "overrideUpdatedAt": "2026-09-06 05:43:49.620918+00",
+      "overrideUpdatedAt": "2026-09-14T20:10:47.048Z",
       "videoCorrectDiscards": [
         "3p"
       ],
@@ -18174,6 +18667,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
+      "difficulty": "intermediate",
       "reviewStatus": null,
       "questionData": {
         "id": 171,
@@ -18253,7 +18747,8 @@
           ]
         },
         "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "explanationSchemaVersion": 2,
+        "difficulty": "intermediate"
       }
     },
     {
@@ -18274,11 +18769,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4mでダマ。牌姿だけならリーチしたい両面だが、今回はオーラスの着順条件が優先。\n自分は12700点、3着は14300点で、その差は1600点。ダマの2000点を誰からロンしても3着に上がれる。必要な点数をすでに満たしているので、リーチ棒を出して打点を増やすより、相手に警戒されず和了する価値が高い。\n『両面はリーチ』という基準を知らないからダマなのではない。基準を理解した上で、今回は和了すれば目的を達成する、と判断してダマを選ぶ。"
+        "explanation": "打4mでダマ。牌姿だけならリーチしたい両面だが、今回はオーラスの着順条件が優先。\n自分は12700点、3着は14300点で、その差は1600点。ダマの2000点を誰からロンしても3着に上がれる。必要な点数をすでに満たしているので、リーチ棒を出して打点を増やすより、相手に警戒されず和了する価値が高い。\n『両面はリーチ』という基準を知らないからダマなのではない。基準を理解した上で、今回は和了すれば目的を達成する、と判断してダマを選ぶ。",
+        "difficulty": "beginner"
       },
       "explanation": "打4mでダマ。牌姿だけならリーチしたい両面だが、今回はオーラスの着順条件が優先。\n自分は12700点、3着は14300点で、その差は1600点。ダマの2000点を誰からロンしても3着に上がれる。必要な点数をすでに満たしているので、リーチ棒を出して打点を増やすより、相手に警戒されず和了する価値が高い。\n『両面はリーチ』という基準を知らないからダマなのではない。基準を理解した上で、今回は和了すれば目的を達成する、と判断してダマを選ぶ。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:49:51.455Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:48.638Z"
     },
     {
       "id": 174,
@@ -18286,11 +18782,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8s。『一番嬉しいツモを引いた時、本当に使うか』で整理したい。\n先に9sを切って8sを残せば、7sを引いた時に78sの両面になる。しかし今回は赤0pを含む30pのカンチャンがあり、両面ができたからといって赤を手放すとは限らない。使わない可能性の高いターツなら、その変化を待って抱え続ける必要はない。\n8sを先に外し、9sは後で整理する候補にする。いまの河が分からないので安全度は断定せず、『将来使わない内側の数牌を先に処理する』という順序を意識したい。"
+        "explanation": "打8s。『一番嬉しいツモを引いた時、本当に使うか』で整理したい。\n先に9sを切って8sを残せば、7sを引いた時に78sの両面になる。しかし今回は赤0pを含む30pのカンチャンがあり、両面ができたからといって赤を手放すとは限らない。使わない可能性の高いターツなら、その変化を待って抱え続ける必要はない。\n8sを先に外し、9sは後で整理する候補にする。いまの河が分からないので安全度は断定せず、『将来使わない内側の数牌を先に処理する』という順序を意識したい。",
+        "difficulty": "beginner"
       },
       "explanation": "打8s。『一番嬉しいツモを引いた時、本当に使うか』で整理したい。\n先に9sを切って8sを残せば、7sを引いた時に78sの両面になる。しかし今回は赤0pを含む30pのカンチャンがあり、両面ができたからといって赤を手放すとは限らない。使わない可能性の高いターツなら、その変化を待って抱え続ける必要はない。\n8sを先に外し、9sは後で整理する候補にする。いまの河が分からないので安全度は断定せず、『将来使わない内側の数牌を先に処理する』という順序を意識したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:49:53.055Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:50.254Z"
     },
     {
       "id": 175,
@@ -18610,11 +19107,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5pでリーチ。ペン3m待ちでも、赤0mと赤0sの2枚があり、リーチするだけの打点がある。\n打1mとして形を広げると、受け入れの多い一向聴にはなる。しかしそれは『広い聴牌』ではなく、もう一度牌を引く必要のある状態。9巡目の今、すでにできている価値のある聴牌を外すだけの見返りがあるかを考えたい。\n今回は赤2枚を使った聴牌を優先する。愚形を嫌うこと自体が目的にならないよう、巡目・現在の打点・戻した後の上積みをセットで比較する。"
+        "explanation": "打5pでリーチ。ペン3m待ちでも、赤0mと赤0sの2枚があり、リーチするだけの打点がある。\n打1mとして形を広げると、受け入れの多い一向聴にはなる。しかしそれは『広い聴牌』ではなく、もう一度牌を引く必要のある状態。9巡目の今、すでにできている価値のある聴牌を外すだけの見返りがあるかを考えたい。\n今回は赤2枚を使った聴牌を優先する。愚形を嫌うこと自体が目的にならないよう、巡目・現在の打点・戻した後の上積みをセットで比較する。",
+        "difficulty": "beginner"
       },
       "explanation": "打5pでリーチ。ペン3m待ちでも、赤0mと赤0sの2枚があり、リーチするだけの打点がある。\n打1mとして形を広げると、受け入れの多い一向聴にはなる。しかしそれは『広い聴牌』ではなく、もう一度牌を引く必要のある状態。9巡目の今、すでにできている価値のある聴牌を外すだけの見返りがあるかを考えたい。\n今回は赤2枚を使った聴牌を優先する。愚形を嫌うこと自体が目的にならないよう、巡目・現在の打点・戻した後の上積みをセットで比較する。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:01.117Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:51.867Z"
     },
     {
       "id": 180,
@@ -18803,11 +19301,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打1m。12mと12pは、いまの受け入れだけなら同じペンチャンだが、外した後のリカバリーが違う。\n萬子は456mが近くにある。1mを切った後に裏目の3mを引いても、23456mという長い連続形として使える。将来フリテンになっても、三面張への変化を見込める形。\n筒子の12pには、同じように近くで支える順子がない。不要候補が同じ形なら、切った直後だけでなく、裏目を引いた時に残った牌とつながるかまで比較したい。"
+        "explanation": "打1m。12mと12pは、いまの受け入れだけなら同じペンチャンだが、外した後のリカバリーが違う。\n萬子は456mが近くにある。1mを切った後に裏目の3mを引いても、23456mという長い連続形として使える。将来フリテンになっても、三面張への変化を見込める形。\n筒子の12pには、同じように近くで支える順子がない。不要候補が同じ形なら、切った直後だけでなく、裏目を引いた時に残った牌とつながるかまで比較したい。",
+        "difficulty": "beginner"
       },
       "explanation": "打1m。12mと12pは、いまの受け入れだけなら同じペンチャンだが、外した後のリカバリーが違う。\n萬子は456mが近くにある。1mを切った後に裏目の3mを引いても、23456mという長い連続形として使える。将来フリテンになっても、三面張への変化を見込める形。\n筒子の12pには、同じように近くで支える順子がない。不要候補が同じ形なら、切った直後だけでなく、裏目を引いた時に残った牌とつながるかまで比較したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:05.933Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:53.479Z"
     },
     {
       "id": 183,
@@ -19107,11 +19606,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4m。受け入れが同じなら、手役になる変化を残す。\n33566sを残しておくと、4sを引いた時に3sを1枚切り、34566sとできる。索子に345sと雀頭ができ、萬子の45mを3mで埋めれば345の三色が付く。\n打6sでも直接の受け入れは変わらないが、この嬉しい変化を逃す。三色を無理に狙って受けを狭めるのではなく、同じ速度の候補から三色の種が残る方を選ぶ、という順番で考えたい。"
+        "explanation": "打4m。受け入れが同じなら、手役になる変化を残す。\n33566sを残しておくと、4sを引いた時に3sを1枚切り、34566sとできる。索子に345sと雀頭ができ、萬子の45mを3mで埋めれば345の三色が付く。\n打6sでも直接の受け入れは変わらないが、この嬉しい変化を逃す。三色を無理に狙って受けを狭めるのではなく、同じ速度の候補から三色の種が残る方を選ぶ、という順番で考えたい。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4m。受け入れが同じなら、手役になる変化を残す。\n33566sを残しておくと、4sを引いた時に3sを1枚切り、34566sとできる。索子に345sと雀頭ができ、萬子の45mを3mで埋めれば345の三色が付く。\n打6sでも直接の受け入れは変わらないが、この嬉しい変化を逃す。三色を無理に狙って受けを狭めるのではなく、同じ速度の候補から三色の種が残る方を選ぶ、という順番で考えたい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:10.760Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:55.085Z"
     },
     {
       "id": 186,
@@ -19119,11 +19619,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9m。打7mと直接の受け入れは同じなので、次の変化で比較する。\n7mを残せば、5mや8mを引いた時に萬子の内側へつながりを伸ばせる。暗刻を雀頭として使い直す形も含め、将来123mを組み替えてタンヤオへ向かう余地が残る。\nいまタンヤオが完成しているわけではないが、同じ速度なら内側に伸びる材料を残したい。牌の近くに面子がある時は、その面子を固定して眺めるだけでなく、組み替えられないかも考える。"
+        "explanation": "打9m。打7mと直接の受け入れは同じなので、次の変化で比較する。\n7mを残せば、5mや8mを引いた時に萬子の内側へつながりを伸ばせる。暗刻を雀頭として使い直す形も含め、将来123mを組み替えてタンヤオへ向かう余地が残る。\nいまタンヤオが完成しているわけではないが、同じ速度なら内側に伸びる材料を残したい。牌の近くに面子がある時は、その面子を固定して眺めるだけでなく、組み替えられないかも考える。",
+        "difficulty": "intermediate"
       },
       "explanation": "打9m。打7mと直接の受け入れは同じなので、次の変化で比較する。\n7mを残せば、5mや8mを引いた時に萬子の内側へつながりを伸ばせる。暗刻を雀頭として使い直す形も含め、将来123mを組み替えてタンヤオへ向かう余地が残る。\nいまタンヤオが完成しているわけではないが、同じ速度なら内側に伸びる材料を残したい。牌の近くに面子がある時は、その面子を固定して眺めるだけでなく、組み替えられないかも考える。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:12.355Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:56.697Z"
     },
     {
       "id": 187,
@@ -19192,6 +19693,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "intermediate",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -19261,10 +19763,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "intermediate"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:13.962Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:58.317Z"
     },
     {
       "id": 188,
@@ -19272,11 +19775,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7sまたは打5s。今回は良形か愚形かではなく、三色による打点上昇を重視する。\n打2sは受け入れ最大で、どの有効牌を引いても平和の両面聴牌を選べる。ただしドラがなく、打点には不満が残る。5sや7sを外せば、23sと67mの両面を残しつつ、678の三色の種を維持できる。\n例えば8mを引いた時は、残った5sまたは7sを切れば三色の付く1s・4s待ちにできる。受け入れ最大を否定するのでなく、失う広さと増える打点を比較しよう。ドラが十分ある手なら、2s切りの広さを優先したい。"
+        "explanation": "打7sまたは打5s。今回は良形か愚形かではなく、三色による打点上昇を重視する。\n打2sは受け入れ最大で、どの有効牌を引いても平和の両面聴牌を選べる。ただしドラがなく、打点には不満が残る。5sや7sを外せば、23sと67mの両面を残しつつ、678の三色の種を維持できる。\n例えば8mを引いた時は、残った5sまたは7sを切れば三色の付く1s・4s待ちにできる。受け入れ最大を否定するのでなく、失う広さと増える打点を比較しよう。ドラが十分ある手なら、2s切りの広さを優先したい。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7sまたは打5s。今回は良形か愚形かではなく、三色による打点上昇を重視する。\n打2sは受け入れ最大で、どの有効牌を引いても平和の両面聴牌を選べる。ただしドラがなく、打点には不満が残る。5sや7sを外せば、23sと67mの両面を残しつつ、678の三色の種を維持できる。\n例えば8mを引いた時は、残った5sまたは7sを切れば三色の付く1s・4s待ちにできる。受け入れ最大を否定するのでなく、失う広さと増える打点を比較しよう。ドラが十分ある手なら、2s切りの広さを優先したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:15.573Z"
+      "overrideUpdatedAt": "2026-09-14T20:10:59.929Z"
     },
     {
       "id": 189,
@@ -19284,11 +19788,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4p。孤立4pへのくっつきを残すより、萬子の複合形でドラ3mを使い切ることを優先する。\n打6mは受け入れが広い一向聴になるが、4pの周辺にくっついた時、広い形を取ろうとすると萬子のドラ3mを手放す場面が生じる。受け入れが増えても、今ある打点を失うなら同じ価値ではない。\n萬子を面子ごとに固定せず、暗刻・雀頭・順子を組み替えられる形として読む。今回は『何枚で聴牌か』に加え、『ドラを使ったまま聴牌か』を判断基準にしたい。"
+        "explanation": "打4p。孤立4pへのくっつきを残すより、萬子の複合形でドラ3mを使い切ることを優先する。\n打6mは受け入れが広い一向聴になるが、4pの周辺にくっついた時、広い形を取ろうとすると萬子のドラ3mを手放す場面が生じる。受け入れが増えても、今ある打点を失うなら同じ価値ではない。\n萬子を面子ごとに固定せず、暗刻・雀頭・順子を組み替えられる形として読む。今回は『何枚で聴牌か』に加え、『ドラを使ったまま聴牌か』を判断基準にしたい。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4p。孤立4pへのくっつきを残すより、萬子の複合形でドラ3mを使い切ることを優先する。\n打6mは受け入れが広い一向聴になるが、4pの周辺にくっついた時、広い形を取ろうとすると萬子のドラ3mを手放す場面が生じる。受け入れが増えても、今ある打点を失うなら同じ価値ではない。\n萬子を面子ごとに固定せず、暗刻・雀頭・順子を組み替えられる形として読む。今回は『何枚で聴牌か』に加え、『ドラを使ったまま聴牌か』を判断基準にしたい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:17.187Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:01.535Z"
     },
     {
       "id": 190,
@@ -19296,11 +19801,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5p。245667mという6枚の完全形を残し、筒子は2pを残す。\n打2pでも直接の受け入れは同じだが、2pを残せば234の三色が見える。たとえば萬子に3mを引けば、234mと567mに組み替えられ、索子の23sを4sで埋める和了で三色になる。\n6枚形の受けをきちんと確保した上で、余剰牌同士は打点の種で比較する。三色を狙って手を遅らせるのではなく、同じ受け入れなら可能性を残す、という判断。"
+        "explanation": "打5p。245667mという6枚の完全形を残し、筒子は2pを残す。\n打2pでも直接の受け入れは同じだが、2pを残せば234の三色が見える。たとえば萬子に3mを引けば、234mと567mに組み替えられ、索子の23sを4sで埋める和了で三色になる。\n6枚形の受けをきちんと確保した上で、余剰牌同士は打点の種で比較する。三色を狙って手を遅らせるのではなく、同じ受け入れなら可能性を残す、という判断。",
+        "difficulty": "intermediate"
       },
       "explanation": "打5p。245667mという6枚の完全形を残し、筒子は2pを残す。\n打2pでも直接の受け入れは同じだが、2pを残せば234の三色が見える。たとえば萬子に3mを引けば、234mと567mに組み替えられ、索子の23sを4sで埋める和了で三色になる。\n6枚形の受けをきちんと確保した上で、余剰牌同士は打点の種で比較する。三色を狙って手を遅らせるのではなく、同じ受け入れなら可能性を残す、という判断。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:18.779Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:03.146Z"
     },
     {
       "id": 191,
@@ -19308,11 +19814,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "通常の5p切り。赤0pを残し、必要な受け入れを維持する。\nすでに赤0p・赤0sとドラ7mがある。さらに一盃口を狙うために中ぶくれへこだわるより、今の打点を確実に使って和了へ向かいたい。打4pとの比較では、その後の雀頭やタンヤオへの変化も含めて5p切りを選ぶ。\n同じ5でも赤と通常牌は別物。赤を切っても形の受け入れは変わらないが、1翻を失う。打点がある時は、もう一役を追うことより、既存のドラを残した良い一向聴を大切にする。"
+        "explanation": "通常の5p切り。赤0pを残し、必要な受け入れを維持する。\nすでに赤0p・赤0sとドラ7mがある。さらに一盃口を狙うために中ぶくれへこだわるより、今の打点を確実に使って和了へ向かいたい。打4pとの比較では、その後の雀頭やタンヤオへの変化も含めて5p切りを選ぶ。\n同じ5でも赤と通常牌は別物。赤を切っても形の受け入れは変わらないが、1翻を失う。打点がある時は、もう一役を追うことより、既存のドラを残した良い一向聴を大切にする。",
+        "difficulty": "intermediate"
       },
       "explanation": "通常の5p切り。赤0pを残し、必要な受け入れを維持する。\nすでに赤0p・赤0sとドラ7mがある。さらに一盃口を狙うために中ぶくれへこだわるより、今の打点を確実に使って和了へ向かいたい。打4pとの比較では、その後の雀頭やタンヤオへの変化も含めて5p切りを選ぶ。\n同じ5でも赤と通常牌は別物。赤を切っても形の受け入れは変わらないが、1翻を失う。打点がある時は、もう一役を追うことより、既存のドラを残した良い一向聴を大切にする。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:20.388Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:04.748Z"
     },
     {
       "id": 192,
@@ -19320,11 +19827,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。24sのカンチャンを外し、筒子の長い複合形を生かす。\n3445667pは、固定した順子と余りに分けず、34p・456p・67pのように組み替えて読むこともできる。外側にも内側にも受けがあり、聴牌時に良い待ちを残しやすい。\n打4pや打6pは、聴牌する枚数だけなら増えるが、カン3s待ちが残る受けも増える。『一向聴では、直接受けの多さだけでなく聴牌後の待ちを優先』を使い、カンチャン側から整理したい。"
+        "explanation": "打2s。24sのカンチャンを外し、筒子の長い複合形を生かす。\n3445667pは、固定した順子と余りに分けず、34p・456p・67pのように組み替えて読むこともできる。外側にも内側にも受けがあり、聴牌時に良い待ちを残しやすい。\n打4pや打6pは、聴牌する枚数だけなら増えるが、カン3s待ちが残る受けも増える。『一向聴では、直接受けの多さだけでなく聴牌後の待ちを優先』を使い、カンチャン側から整理したい。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2s。24sのカンチャンを外し、筒子の長い複合形を生かす。\n3445667pは、固定した順子と余りに分けず、34p・456p・67pのように組み替えて読むこともできる。外側にも内側にも受けがあり、聴牌時に良い待ちを残しやすい。\n打4pや打6pは、聴牌する枚数だけなら増えるが、カン3s待ちが残る受けも増える。『一向聴では、直接受けの多さだけでなく聴牌後の待ちを優先』を使い、カンチャン側から整理したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:22.002Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:06.365Z"
     },
     {
       "id": 193,
@@ -19332,11 +19840,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打1s。打3pは受け入れが広いものの、その3pはドラ。切ってしまうと、低打点の聴牌へ進む受けが増える。\n13sを外すなら、3sは残しておく。4sを引けば34sの両面として使えるので、1sより次の働きがある。現時点の広さだけでドラを切らず、打点を保ちながら形を改善する余地を残したい。\n『狭くてもドラは絶対に切らない』という話ではない。今回は、広くした結果の打点と、ドラを残した場合の変化を比較して1sを選ぶ。"
+        "explanation": "打1s。打3pは受け入れが広いものの、その3pはドラ。切ってしまうと、低打点の聴牌へ進む受けが増える。\n13sを外すなら、3sは残しておく。4sを引けば34sの両面として使えるので、1sより次の働きがある。現時点の広さだけでドラを切らず、打点を保ちながら形を改善する余地を残したい。\n『狭くてもドラは絶対に切らない』という話ではない。今回は、広くした結果の打点と、ドラを残した場合の変化を比較して1sを選ぶ。",
+        "difficulty": "intermediate"
       },
       "explanation": "打1s。打3pは受け入れが広いものの、その3pはドラ。切ってしまうと、低打点の聴牌へ進む受けが増える。\n13sを外すなら、3sは残しておく。4sを引けば34sの両面として使えるので、1sより次の働きがある。現時点の広さだけでドラを切らず、打点を保ちながら形を改善する余地を残したい。\n『狭くてもドラは絶対に切らない』という話ではない。今回は、広くした結果の打点と、ドラを残した場合の変化を比較して1sを選ぶ。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:23.616Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:07.988Z"
     },
     {
       "id": 194,
@@ -19344,11 +19853,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打6pでダマ。6sの単騎聴牌を取り、良い待ちへの手替わりを待つ。\nタンヤオとドラがあり、いまもダマで和了できる。一方、6s単騎のままリーチすると、豊富な変化を使えなくなる。たとえば5sを引いて3pを切れば47s、7sなら同じく3p切りで58sの両面に変えられる。\n暗刻を雀頭へ振り替えられるため、単騎でも変化の幅が広い。『聴牌したから即リーチ』ではなく、今の待ちと、無理なく得られる次の待ちを比較してダマにする。"
+        "explanation": "打6pでダマ。6sの単騎聴牌を取り、良い待ちへの手替わりを待つ。\nタンヤオとドラがあり、いまもダマで和了できる。一方、6s単騎のままリーチすると、豊富な変化を使えなくなる。たとえば5sを引いて3pを切れば47s、7sなら同じく3p切りで58sの両面に変えられる。\n暗刻を雀頭へ振り替えられるため、単騎でも変化の幅が広い。『聴牌したから即リーチ』ではなく、今の待ちと、無理なく得られる次の待ちを比較してダマにする。",
+        "difficulty": "intermediate"
       },
       "explanation": "打6pでダマ。6sの単騎聴牌を取り、良い待ちへの手替わりを待つ。\nタンヤオとドラがあり、いまもダマで和了できる。一方、6s単騎のままリーチすると、豊富な変化を使えなくなる。たとえば5sを引いて3pを切れば47s、7sなら同じく3p切りで58sの両面に変えられる。\n暗刻を雀頭へ振り替えられるため、単騎でも変化の幅が広い。『聴牌したから即リーチ』ではなく、今の待ちと、無理なく得られる次の待ちを比較してダマにする。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:25.220Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:09.598Z"
     },
     {
       "id": 195,
@@ -19356,11 +19866,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打6m。56678mを5678mの4連形として残す。\n萬子にもう一つターツ候補を抱えても、ドラ4pを含む34pや67sの両面を押しのけて使うとは限らない。それより4連形を残し、5mや8mを引いて雀頭を作り直す変化を見たい。\n役牌の7z・7zを整理できれば、タンヤオや平和による打点上昇が狙える。単にブロック数を減らすだけでなく、『残した1枚に、次に何をしてほしいか』を考えて4連形を残す。"
+        "explanation": "打6m。56678mを5678mの4連形として残す。\n萬子にもう一つターツ候補を抱えても、ドラ4pを含む34pや67sの両面を押しのけて使うとは限らない。それより4連形を残し、5mや8mを引いて雀頭を作り直す変化を見たい。\n役牌の7z・7zを整理できれば、タンヤオや平和による打点上昇が狙える。単にブロック数を減らすだけでなく、『残した1枚に、次に何をしてほしいか』を考えて4連形を残す。",
+        "difficulty": "intermediate"
       },
       "explanation": "打6m。56678mを5678mの4連形として残す。\n萬子にもう一つターツ候補を抱えても、ドラ4pを含む34pや67sの両面を押しのけて使うとは限らない。それより4連形を残し、5mや8mを引いて雀頭を作り直す変化を見たい。\n役牌の7z・7zを整理できれば、タンヤオや平和による打点上昇が狙える。単にブロック数を減らすだけでなく、『残した1枚に、次に何をしてほしいか』を考えて4連形を残す。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:26.843Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:11.199Z"
     },
     {
       "id": 196,
@@ -19368,11 +19879,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4p。直接の受け入れは打4sと近いが、聴牌した後の待ちが違う。\n4pを外すと、筒子は34567778p。順子・暗刻・対子の取り方を変えられる複合形として残り、索子の34sを生かして良形聴牌へ進みやすい。\n一方、33sを雀頭に固定すると、筒子の777pを暗刻として使い、愚形が残る進み方が増える。完成した面子を一度固定してしまわず、どこを雀頭にできるかまで比較するのがポイント。受け入れの1枚差に加えて、最終待ちの質も比較したい。"
+        "explanation": "打4p。直接の受け入れは打4sと近いが、聴牌した後の待ちが違う。\n4pを外すと、筒子は34567778p。順子・暗刻・対子の取り方を変えられる複合形として残り、索子の34sを生かして良形聴牌へ進みやすい。\n一方、33sを雀頭に固定すると、筒子の777pを暗刻として使い、愚形が残る進み方が増える。完成した面子を一度固定してしまわず、どこを雀頭にできるかまで比較するのがポイント。受け入れの1枚差に加えて、最終待ちの質も比較したい。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4p。直接の受け入れは打4sと近いが、聴牌した後の待ちが違う。\n4pを外すと、筒子は34567778p。順子・暗刻・対子の取り方を変えられる複合形として残り、索子の34sを生かして良形聴牌へ進みやすい。\n一方、33sを雀頭に固定すると、筒子の777pを暗刻として使い、愚形が残る進み方が増える。完成した面子を一度固定してしまわず、どこを雀頭にできるかまで比較するのがポイント。受け入れの1枚差に加えて、最終待ちの質も比較したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:28.436Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:12.806Z"
     },
     {
       "id": 197,
@@ -19380,11 +19892,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打3s。愚形や端牌の対子を残したまま受け入れだけを最大にするより、タンヤオへ動ける形を優先する。\n萬子の4067mは4連形として残し、索子は34sの両面にする。赤0mとドラ7pの対子で打点があるため、鳴いて和了へ近づける価値が高い。\nいまは11pがあるので、チーすればすぐタンヤオになるわけではない。11pを整理できる展開も含め、内側の牌を使いやすくしておく。『タンヤオ正義』は、完成までのブロックの置き換えとセットで考えたい。"
+        "explanation": "打3s。愚形や端牌の対子を残したまま受け入れだけを最大にするより、タンヤオへ動ける形を優先する。\n萬子の4067mは4連形として残し、索子は34sの両面にする。赤0mとドラ7pの対子で打点があるため、鳴いて和了へ近づける価値が高い。\nいまは11pがあるので、チーすればすぐタンヤオになるわけではない。11pを整理できる展開も含め、内側の牌を使いやすくしておく。『タンヤオ正義』は、完成までのブロックの置き換えとセットで考えたい。",
+        "difficulty": "intermediate"
       },
       "explanation": "打3s。愚形や端牌の対子を残したまま受け入れだけを最大にするより、タンヤオへ動ける形を優先する。\n萬子の4067mは4連形として残し、索子は34sの両面にする。赤0mとドラ7pの対子で打点があるため、鳴いて和了へ近づける価値が高い。\nいまは11pがあるので、チーすればすぐタンヤオになるわけではない。11pを整理できる展開も含め、内側の牌を使いやすくしておく。『タンヤオ正義』は、完成までのブロックの置き換えとセットで考えたい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:30.059Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:14.436Z"
     },
     {
       "id": 198,
@@ -19392,11 +19905,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7m。孤立7mより、筒子の複合形が持つ直接の受けを残す。\n35667789pは長く見えるが、順子を固定せずに組み替えると、対子やターツの働きを複数持っている。3pを先に切って形を単純にすると、その分だけ聴牌につながる受けを失う。\n一向聴では『新しく良い形ができそう』より、いま残せる聴牌の受けをまず確認する。どこが雀頭になり、残りで何面子作れるかを一度整理してから、働きの薄い7mを外したい。"
+        "explanation": "打7m。孤立7mより、筒子の複合形が持つ直接の受けを残す。\n35667789pは長く見えるが、順子を固定せずに組み替えると、対子やターツの働きを複数持っている。3pを先に切って形を単純にすると、その分だけ聴牌につながる受けを失う。\n一向聴では『新しく良い形ができそう』より、いま残せる聴牌の受けをまず確認する。どこが雀頭になり、残りで何面子作れるかを一度整理してから、働きの薄い7mを外したい。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7m。孤立7mより、筒子の複合形が持つ直接の受けを残す。\n35667789pは長く見えるが、順子を固定せずに組み替えると、対子やターツの働きを複数持っている。3pを先に切って形を単純にすると、その分だけ聴牌につながる受けを失う。\n一向聴では『新しく良い形ができそう』より、いま残せる聴牌の受けをまず確認する。どこが雀頭になり、残りで何面子作れるかを一度整理してから、働きの薄い7mを外したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:31.675Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:16.032Z"
     },
     {
       "id": 199,
@@ -19404,11 +19918,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8p。打1pと受け入れは同じなので、123の三色を残す。\n1pを残しておけば、2pを引いた時に筒子を123456pの二面子にできる。その後3sを1枚切れば、1234sのノベタン形となり、三色を含む和了を見込める。\nいまのペンチャンやカンチャンを一つずつ見るだけでなく、完成している123m・123sとのつながりを見ること。三色のために速度を落とす場面ではなく、同じ速度の余剰牌比較だからこそ、手役の種を残す。"
+        "explanation": "打8p。打1pと受け入れは同じなので、123の三色を残す。\n1pを残しておけば、2pを引いた時に筒子を123456pの二面子にできる。その後3sを1枚切れば、1234sのノベタン形となり、三色を含む和了を見込める。\nいまのペンチャンやカンチャンを一つずつ見るだけでなく、完成している123m・123sとのつながりを見ること。三色のために速度を落とす場面ではなく、同じ速度の余剰牌比較だからこそ、手役の種を残す。",
+        "difficulty": "intermediate"
       },
       "explanation": "打8p。打1pと受け入れは同じなので、123の三色を残す。\n1pを残しておけば、2pを引いた時に筒子を123456pの二面子にできる。その後3sを1枚切れば、1234sのノベタン形となり、三色を含む和了を見込める。\nいまのペンチャンやカンチャンを一つずつ見るだけでなく、完成している123m・123sとのつながりを見ること。三色のために速度を落とす場面ではなく、同じ速度の余剰牌比較だからこそ、手役の種を残す。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:33.272Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:17.636Z"
     },
     {
       "id": 200,
@@ -19416,11 +19931,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8p。今回は注記にある安全牌の4zを残す価値も考える。\n打4zでめいっぱいにすれば直接の受けは増えるが、増える受けにはカン7pなど、和了しにくい聴牌も含まれる。8pを外しても暗刻の555pを雀頭へ振り替えられ、形の良い進み方を残せる。\n『一向聴はめいっぱい』が基本でも、増える受けがどれほど嬉しいかと、安全牌を持つ価値は比較してよい。今回は安全性が問題文で与えられている4zを残し、攻守のバランスを取る。"
+        "explanation": "打8p。今回は注記にある安全牌の4zを残す価値も考える。\n打4zでめいっぱいにすれば直接の受けは増えるが、増える受けにはカン7pなど、和了しにくい聴牌も含まれる。8pを外しても暗刻の555pを雀頭へ振り替えられ、形の良い進み方を残せる。\n『一向聴はめいっぱい』が基本でも、増える受けがどれほど嬉しいかと、安全牌を持つ価値は比較してよい。今回は安全性が問題文で与えられている4zを残し、攻守のバランスを取る。",
+        "difficulty": "intermediate"
       },
       "explanation": "打8p。今回は注記にある安全牌の4zを残す価値も考える。\n打4zでめいっぱいにすれば直接の受けは増えるが、増える受けにはカン7pなど、和了しにくい聴牌も含まれる。8pを外しても暗刻の555pを雀頭へ振り替えられ、形の良い進み方を残せる。\n『一向聴はめいっぱい』が基本でも、増える受けがどれほど嬉しいかと、安全牌を持つ価値は比較してよい。今回は安全性が問題文で与えられている4zを残し、攻守のバランスを取る。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:34.882Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:19.250Z"
     },
     {
       "id": 201,
@@ -19428,11 +19944,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4m。筒子の245679pという離れリャンカン形を残す。\n長い筒子から789pを一面子として分けると、残りの6枚形が見える。3pを引けば234567p、8pなら456789pへ組み替えられるため、両側のカンチャンを使える。\n先に2pを切ると3pの受けを失う。萬子には22mの雀頭があり、4mへのくっつきを残すより、筒子の直接受けを維持したい。複合形は『できている順子と余り』ではなく、組み替え可能なまとまりとして読む。"
+        "explanation": "打4m。筒子の245679pという離れリャンカン形を残す。\n長い筒子から789pを一面子として分けると、残りの6枚形が見える。3pを引けば234567p、8pなら456789pへ組み替えられるため、両側のカンチャンを使える。\n先に2pを切ると3pの受けを失う。萬子には22mの雀頭があり、4mへのくっつきを残すより、筒子の直接受けを維持したい。複合形は『できている順子と余り』ではなく、組み替え可能なまとまりとして読む。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4m。筒子の245679pという離れリャンカン形を残す。\n長い筒子から789pを一面子として分けると、残りの6枚形が見える。3pを引けば234567p、8pなら456789pへ組み替えられるため、両側のカンチャンを使える。\n先に2pを切ると3pの受けを失う。萬子には22mの雀頭があり、4mへのくっつきを残すより、筒子の直接受けを維持したい。複合形は『できている順子と余り』ではなく、組み替え可能なまとまりとして読む。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:36.474Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:20.845Z"
     },
     {
       "id": 202,
@@ -19517,6 +20034,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "intermediate",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -19602,10 +20120,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "intermediate"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:38.085Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:22.454Z"
     },
     {
       "id": 203,
@@ -19613,11 +20132,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2p。112pを雀頭の11pに固定し、萬子の長い複合形を残す。\n萬子は面子や雀頭の取り方を変えられ、3mを引く変化も使える。一方、打4mで12pのペンチャンを残すと、目先の受け入れは少し増えるものの、愚形を残した聴牌に進む受けも増える。\n今回は、数えやすいペンチャンを残すことより、複合形の組み替えでできる最終待ちを重視する。『いま1枚広いか』の比較で止めず、その受けで和了しやすい聴牌になるかまで確認したい。"
+        "explanation": "打2p。112pを雀頭の11pに固定し、萬子の長い複合形を残す。\n萬子は面子や雀頭の取り方を変えられ、3mを引く変化も使える。一方、打4mで12pのペンチャンを残すと、目先の受け入れは少し増えるものの、愚形を残した聴牌に進む受けも増える。\n今回は、数えやすいペンチャンを残すことより、複合形の組み替えでできる最終待ちを重視する。『いま1枚広いか』の比較で止めず、その受けで和了しやすい聴牌になるかまで確認したい。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2p。112pを雀頭の11pに固定し、萬子の長い複合形を残す。\n萬子は面子や雀頭の取り方を変えられ、3mを引く変化も使える。一方、打4mで12pのペンチャンを残すと、目先の受け入れは少し増えるものの、愚形を残した聴牌に進む受けも増える。\n今回は、数えやすいペンチャンを残すことより、複合形の組み替えでできる最終待ちを重視する。『いま1枚広いか』の比較で止めず、その受けで和了しやすい聴牌になるかまで確認したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:39.692Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:24.074Z"
     },
     {
       "id": 204,
@@ -19625,11 +20145,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "通常の5p切り。赤0pは残し、1222mを含む受けの広い一向聴にする。\n端の1mは一見不要に見えるが、暗刻と組み合わさった形の一部。先に1mを切ってタンヤオへ寄せると、聴牌につながる受けを減らしてしまう。\n今回は赤とドラで打点があり、タンヤオを付けることだけにこだわる必要はない。『タンヤオ正義』も手全体との比較で使うもの。受け入れを保ったまま既存の打点を使い、まず和了へ近づく5p切りを選ぶ。"
+        "explanation": "通常の5p切り。赤0pは残し、1222mを含む受けの広い一向聴にする。\n端の1mは一見不要に見えるが、暗刻と組み合わさった形の一部。先に1mを切ってタンヤオへ寄せると、聴牌につながる受けを減らしてしまう。\n今回は赤とドラで打点があり、タンヤオを付けることだけにこだわる必要はない。『タンヤオ正義』も手全体との比較で使うもの。受け入れを保ったまま既存の打点を使い、まず和了へ近づく5p切りを選ぶ。",
+        "difficulty": "intermediate"
       },
       "explanation": "通常の5p切り。赤0pは残し、1222mを含む受けの広い一向聴にする。\n端の1mは一見不要に見えるが、暗刻と組み合わさった形の一部。先に1mを切ってタンヤオへ寄せると、聴牌につながる受けを減らしてしまう。\n今回は赤とドラで打点があり、タンヤオを付けることだけにこだわる必要はない。『タンヤオ正義』も手全体との比較で使うもの。受け入れを保ったまま既存の打点を使い、まず和了へ近づく5p切りを選ぶ。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:41.312Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:25.671Z"
     },
     {
       "id": 205,
@@ -19637,11 +20158,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。筒子の複合形を残し、タンヤオの付く和了へ寄せる。\n打3pなら聴牌する枚数は増えるが、索子の外側を使ってタンヤオが消える進み方も残る。2sを外すと直接の受けは少し減る一方、赤0p・赤0sにタンヤオを重ねやすい。\n見た目の広い形が、そのまま高くて和了しやすい形とは限らない。今回は『何枚受けが減るか』だけでなく、『残る受けでどの役を確保できるか』を比較し、打点のある内側の形を大切にする。"
+        "explanation": "打2s。筒子の複合形を残し、タンヤオの付く和了へ寄せる。\n打3pなら聴牌する枚数は増えるが、索子の外側を使ってタンヤオが消える進み方も残る。2sを外すと直接の受けは少し減る一方、赤0p・赤0sにタンヤオを重ねやすい。\n見た目の広い形が、そのまま高くて和了しやすい形とは限らない。今回は『何枚受けが減るか』だけでなく、『残る受けでどの役を確保できるか』を比較し、打点のある内側の形を大切にする。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2s。筒子の複合形を残し、タンヤオの付く和了へ寄せる。\n打3pなら聴牌する枚数は増えるが、索子の外側を使ってタンヤオが消える進み方も残る。2sを外すと直接の受けは少し減る一方、赤0p・赤0sにタンヤオを重ねやすい。\n見た目の広い形が、そのまま高くて和了しやすい形とは限らない。今回は『何枚受けが減るか』だけでなく、『残る受けでどの役を確保できるか』を比較し、打点のある内側の形を大切にする。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:42.924Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:27.291Z"
     },
     {
       "id": 206,
@@ -19649,11 +20171,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8p。566678mという萬子の6枚形を残し、筒子は77pの雀頭にする。\n打5mの方が直接の受け入れはわずかに多いが、聴牌後の役まで見ると打8pに良さがある。たとえば2sを引き6mを切れば、4m・7mの両面待ちになり、タンヤオも確定する。\n面子に見える部分を固定してしまうと、6枚全体での組み替えを見落とす。受け入れの僅差だけで決めず、良形と役を同時に得られる受けがどちらにあるかを比べたい。"
+        "explanation": "打8p。566678mという萬子の6枚形を残し、筒子は77pの雀頭にする。\n打5mの方が直接の受け入れはわずかに多いが、聴牌後の役まで見ると打8pに良さがある。たとえば2sを引き6mを切れば、4m・7mの両面待ちになり、タンヤオも確定する。\n面子に見える部分を固定してしまうと、6枚全体での組み替えを見落とす。受け入れの僅差だけで決めず、良形と役を同時に得られる受けがどちらにあるかを比べたい。",
+        "difficulty": "intermediate"
       },
       "explanation": "打8p。566678mという萬子の6枚形を残し、筒子は77pの雀頭にする。\n打5mの方が直接の受け入れはわずかに多いが、聴牌後の役まで見ると打8pに良さがある。たとえば2sを引き6mを切れば、4m・7mの両面待ちになり、タンヤオも確定する。\n面子に見える部分を固定してしまうと、6枚全体での組み替えを見落とす。受け入れの僅差だけで決めず、良形と役を同時に得られる受けがどちらにあるかを比べたい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:44.535Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:28.890Z"
     },
     {
       "id": 207,
@@ -19661,11 +20184,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7s。門前の3対子なので、両面対子を両面に固定する。7mと7sの比較では、次に何を切るかまで見よう。\n\n5mを引いた場合、打7sからなら1mを切って5s・8s待ちの立直にできる。打7mからだと、同じ待ちにするために7sを切ることになる。\n\n受け入れの差ではなく、将来の余剰牌の比較。河が見えていないので1mを安全牌とは呼べないが、同じ形なら後で内側の牌を切らずに済む方を選ぶ。微差の工夫として覚えよう。"
+        "explanation": "打7s。門前の3対子なので、両面対子を両面に固定する。7mと7sの比較では、次に何を切るかまで見よう。\n\n5mを引いた場合、打7sからなら1mを切って5s・8s待ちの立直にできる。打7mからだと、同じ待ちにするために7sを切ることになる。\n\n受け入れの差ではなく、将来の余剰牌の比較。河が見えていないので1mを安全牌とは呼べないが、同じ形なら後で内側の牌を切らずに済む方を選ぶ。微差の工夫として覚えよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7s。門前の3対子なので、両面対子を両面に固定する。7mと7sの比較では、次に何を切るかまで見よう。\n\n5mを引いた場合、打7sからなら1mを切って5s・8s待ちの立直にできる。打7mからだと、同じ待ちにするために7sを切ることになる。\n\n受け入れの差ではなく、将来の余剰牌の比較。河が見えていないので1mを安全牌とは呼べないが、同じ形なら後で内側の牌を切らずに済む方を選ぶ。微差の工夫として覚えよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:46.137Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:30.485Z"
     },
     {
       "id": 208,
@@ -19673,11 +20197,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打3p。3対子から両面固定するなら、筒子を固定して索子のフォローを残す。\n\n3pでも3sでも直接の聴牌受けは同じ。差が出るのは5s引きで、3pを先に切っていれば9sを切って、タンヤオ付きの2p・5p待ちにできる。索子の長い形には、端牌を使わない面子の組み替えが残っている。\n\n💡受け入れが同じなら、手役の種を残す。3ヘッドを見つけて終わらず、どちらを両面固定すると嬉しい聴牌が増えるかまで比べよう。"
+        "explanation": "打3p。3対子から両面固定するなら、筒子を固定して索子のフォローを残す。\n\n3pでも3sでも直接の聴牌受けは同じ。差が出るのは5s引きで、3pを先に切っていれば9sを切って、タンヤオ付きの2p・5p待ちにできる。索子の長い形には、端牌を使わない面子の組み替えが残っている。\n\n💡受け入れが同じなら、手役の種を残す。3ヘッドを見つけて終わらず、どちらを両面固定すると嬉しい聴牌が増えるかまで比べよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打3p。3対子から両面固定するなら、筒子を固定して索子のフォローを残す。\n\n3pでも3sでも直接の聴牌受けは同じ。差が出るのは5s引きで、3pを先に切っていれば9sを切って、タンヤオ付きの2p・5p待ちにできる。索子の長い形には、端牌を使わない面子の組み替えが残っている。\n\n💡受け入れが同じなら、手役の種を残す。3ヘッドを見つけて終わらず、どちらを両面固定すると嬉しい聴牌が増えるかまで比べよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:47.755Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:32.124Z"
     },
     {
       "id": 209,
@@ -19685,11 +20210,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4s。萬子の2344677mを残して、良形への変化を多く持つ。\n\n打4mとの直接の聴牌受けは同じだが、萬子を残すと1m・3m・4mで良形への変化がある。3m引きなら一盃口の種にもなる。一方、打4mで残す索子の4677sは、3s・4sによる良形変化が中心となる。\n\n💡同じ受け入れなら、次に嬉しい形になる方へ。完成した234mを早々に別物とせず、隣の4mとのつながりをまとめて見よう。"
+        "explanation": "打4s。萬子の2344677mを残して、良形への変化を多く持つ。\n\n打4mとの直接の聴牌受けは同じだが、萬子を残すと1m・3m・4mで良形への変化がある。3m引きなら一盃口の種にもなる。一方、打4mで残す索子の4677sは、3s・4sによる良形変化が中心となる。\n\n💡同じ受け入れなら、次に嬉しい形になる方へ。完成した234mを早々に別物とせず、隣の4mとのつながりをまとめて見よう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4s。萬子の2344677mを残して、良形への変化を多く持つ。\n\n打4mとの直接の聴牌受けは同じだが、萬子を残すと1m・3m・4mで良形への変化がある。3m引きなら一盃口の種にもなる。一方、打4mで残す索子の4677sは、3s・4sによる良形変化が中心となる。\n\n💡同じ受け入れなら、次に嬉しい形になる方へ。完成した234mを早々に別物とせず、隣の4mとのつながりをまとめて見よう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:49.353Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:33.711Z"
     },
     {
       "id": 210,
@@ -19697,11 +20223,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打1p。孤立牌の比較は、その牌に嬉しいツモを入れてから考える。\n\n1pに都合のよい2pを引いても、今の3457pを234pと57pに分ければ形は残る。6pを引いた時も、34567pのつながりを利用できる。1pだけの仕事は、見た目ほど多くない。\n\n一方、2mは3mで独立した両面を作れる。ドラ6sの対子もあるので、役のない2zの暗刻を崩さず、良い5ブロックへ育てよう。順子そばというだけで孤立牌を過大評価しない。"
+        "explanation": "打1p。孤立牌の比較は、その牌に嬉しいツモを入れてから考える。\n\n1pに都合のよい2pを引いても、今の3457pを234pと57pに分ければ形は残る。6pを引いた時も、34567pのつながりを利用できる。1pだけの仕事は、見た目ほど多くない。\n\n一方、2mは3mで独立した両面を作れる。ドラ6sの対子もあるので、役のない2zの暗刻を崩さず、良い5ブロックへ育てよう。順子そばというだけで孤立牌を過大評価しない。",
+        "difficulty": "intermediate"
       },
       "explanation": "打1p。孤立牌の比較は、その牌に嬉しいツモを入れてから考える。\n\n1pに都合のよい2pを引いても、今の3457pを234pと57pに分ければ形は残る。6pを引いた時も、34567pのつながりを利用できる。1pだけの仕事は、見た目ほど多くない。\n\n一方、2mは3mで独立した両面を作れる。ドラ6sの対子もあるので、役のない2zの暗刻を崩さず、良い5ブロックへ育てよう。順子そばというだけで孤立牌を過大評価しない。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:50.978Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:35.312Z"
     },
     {
       "id": 211,
@@ -19709,11 +20236,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打6p。今回は7zの役牌バック。引いた8pでは役が付かず、和了できない。\n\n8pをツモ切ると、8p・7z待ち全体がフリテンになる。6pを切っておけば、5pや7pを引き直した後に7zでロンできる形へ戻せる。上家の6p・9pを78pでチーし、5pを切るルートもある。\n\nなお、打6p直後も形だけならカン6pの聴牌だが、役なしでその牌は自分でも切っている。大事なのは形の聴牌維持ではなく、役のある和了へ戻れる道を残すこと。"
+        "explanation": "打6p。今回は7zの役牌バック。引いた8pでは役が付かず、和了できない。\n\n8pをツモ切ると、8p・7z待ち全体がフリテンになる。6pを切っておけば、5pや7pを引き直した後に7zでロンできる形へ戻せる。上家の6p・9pを78pでチーし、5pを切るルートもある。\n\nなお、打6p直後も形だけならカン6pの聴牌だが、役なしでその牌は自分でも切っている。大事なのは形の聴牌維持ではなく、役のある和了へ戻れる道を残すこと。",
+        "difficulty": "intermediate"
       },
       "explanation": "打6p。今回は7zの役牌バック。引いた8pでは役が付かず、和了できない。\n\n8pをツモ切ると、8p・7z待ち全体がフリテンになる。6pを切っておけば、5pや7pを引き直した後に7zでロンできる形へ戻せる。上家の6p・9pを78pでチーし、5pを切るルートもある。\n\nなお、打6p直後も形だけならカン6pの聴牌だが、役なしでその牌は自分でも切っている。大事なのは形の聴牌維持ではなく、役のある和了へ戻れる道を残すこと。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:52.579Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:36.919Z"
     },
     {
       "id": 212,
@@ -19721,11 +20249,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2m。見た目の6ブロックを機械的に整理するのではなく、4688sを一つの面子候補としてまとめて見る。\n\n4sを切るとすっきりするが、5s引きの働きを失う。2mを切って4688sを残せば、5sから456sと88sに分けられ、残した萬子と筒子の両面を生かせる。ドラ11sも残るので打点を犠牲にしない。\n\n💡5ブロック化は、弱い所をフォローするためのもの。ブロックの数を減らすこと自体を目的にせず、どの形を一つとして育てると良い待ちが残るか考えよう。"
+        "explanation": "打2m。見た目の6ブロックを機械的に整理するのではなく、4688sを一つの面子候補としてまとめて見る。\n\n4sを切るとすっきりするが、5s引きの働きを失う。2mを切って4688sを残せば、5sから456sと88sに分けられ、残した萬子と筒子の両面を生かせる。ドラ11sも残るので打点を犠牲にしない。\n\n💡5ブロック化は、弱い所をフォローするためのもの。ブロックの数を減らすこと自体を目的にせず、どの形を一つとして育てると良い待ちが残るか考えよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2m。見た目の6ブロックを機械的に整理するのではなく、4688sを一つの面子候補としてまとめて見る。\n\n4sを切るとすっきりするが、5s引きの働きを失う。2mを切って4688sを残せば、5sから456sと88sに分けられ、残した萬子と筒子の両面を生かせる。ドラ11sも残るので打点を犠牲にしない。\n\n💡5ブロック化は、弱い所をフォローするためのもの。ブロックの数を減らすこと自体を目的にせず、どの形を一つとして育てると良い待ちが残るか考えよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:54.175Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:38.540Z"
     },
     {
       "id": 213,
@@ -19797,6 +20326,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "intermediate",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -19869,10 +20399,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "intermediate"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:55.780Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:40.147Z"
     },
     {
       "id": 214,
@@ -19880,11 +20411,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7m。ドラ暗刻があるので、今回は打点を増やすより良い待ちで和了する準備を優先する。\n\nくっつき一向聴の選択で、6mを雀頭に固定し、4566pと3445sのくっつきを残す。中ぶくれは強いが、両面対子との組み合わせでは雀頭ができにくく、強さをそのまま足し算できない。\n\n💡くっつき一向聴では『中ぶくれは強いが、両面対子とは相性が悪い』。強そうな部品を全部残すのでなく、どこで頭を作ってどこを待ちにするかをセットで見よう。"
+        "explanation": "打7m。ドラ暗刻があるので、今回は打点を増やすより良い待ちで和了する準備を優先する。\n\nくっつき一向聴の選択で、6mを雀頭に固定し、4566pと3445sのくっつきを残す。中ぶくれは強いが、両面対子との組み合わせでは雀頭ができにくく、強さをそのまま足し算できない。\n\n💡くっつき一向聴では『中ぶくれは強いが、両面対子とは相性が悪い』。強そうな部品を全部残すのでなく、どこで頭を作ってどこを待ちにするかをセットで見よう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7m。ドラ暗刻があるので、今回は打点を増やすより良い待ちで和了する準備を優先する。\n\nくっつき一向聴の選択で、6mを雀頭に固定し、4566pと3445sのくっつきを残す。中ぶくれは強いが、両面対子との組み合わせでは雀頭ができにくく、強さをそのまま足し算できない。\n\n💡くっつき一向聴では『中ぶくれは強いが、両面対子とは相性が悪い』。強そうな部品を全部残すのでなく、どこで頭を作ってどこを待ちにするかをセットで見よう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:57.398Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:41.758Z"
     },
     {
       "id": 215,
@@ -19892,11 +20424,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8m。三面子あって雀頭がないので、まずヘッドレス一向聴と気付こう。\n\n568pの8pを単なる余り牌と見ない。5pを引けば55pを雀頭、68pをターツにして、1mを切ってカン7p聴牌にできる。4pにも456pと8p単騎の受けがあり、孤立8mより働きが多い。\n\n💡ヘッドレス1型ではスキップ牌を確認。頭がある時の孤立牌序列をそのまま使わず、頭を作れる引きまで数えよう。ドラ2zの暗刻は残したまま進める。"
+        "explanation": "打8m。三面子あって雀頭がないので、まずヘッドレス一向聴と気付こう。\n\n568pの8pを単なる余り牌と見ない。5pを引けば55pを雀頭、68pをターツにして、1mを切ってカン7p聴牌にできる。4pにも456pと8p単騎の受けがあり、孤立8mより働きが多い。\n\n💡ヘッドレス1型ではスキップ牌を確認。頭がある時の孤立牌序列をそのまま使わず、頭を作れる引きまで数えよう。ドラ2zの暗刻は残したまま進める。",
+        "difficulty": "intermediate"
       },
       "explanation": "打8m。三面子あって雀頭がないので、まずヘッドレス一向聴と気付こう。\n\n568pの8pを単なる余り牌と見ない。5pを引けば55pを雀頭、68pをターツにして、1mを切ってカン7p聴牌にできる。4pにも456pと8p単騎の受けがあり、孤立8mより働きが多い。\n\n💡ヘッドレス1型ではスキップ牌を確認。頭がある時の孤立牌序列をそのまま使わず、頭を作れる引きまで数えよう。ドラ2zの暗刻は残したまま進める。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:50:59.002Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:43.364Z"
     },
     {
       "id": 216,
@@ -19904,11 +20437,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。ドラ3sを使う23sの両面を固定し、筒子の複合形を残す。\n\n356778pから678pを抜けば357pのリャンカンが見える。4pを引いた時は7pを切ればよく、3pは浮き牌ではなく聴牌受けを増やすフォロー牌。6p・9pの横受けも残る。\n\n3pを切る形では、2s・9sが先に暗刻になるとドラ3sが余る。受け入れを落とさず、ドラを使い切れて弱い所もフォローできる方へ。6枚形は順子の抜き方を変えて確認しよう。"
+        "explanation": "打2s。ドラ3sを使う23sの両面を固定し、筒子の複合形を残す。\n\n356778pから678pを抜けば357pのリャンカンが見える。4pを引いた時は7pを切ればよく、3pは浮き牌ではなく聴牌受けを増やすフォロー牌。6p・9pの横受けも残る。\n\n3pを切る形では、2s・9sが先に暗刻になるとドラ3sが余る。受け入れを落とさず、ドラを使い切れて弱い所もフォローできる方へ。6枚形は順子の抜き方を変えて確認しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2s。ドラ3sを使う23sの両面を固定し、筒子の複合形を残す。\n\n356778pから678pを抜けば357pのリャンカンが見える。4pを引いた時は7pを切ればよく、3pは浮き牌ではなく聴牌受けを増やすフォロー牌。6p・9pの横受けも残る。\n\n3pを切る形では、2s・9sが先に暗刻になるとドラ3sが余る。受け入れを落とさず、ドラを使い切れて弱い所もフォローできる方へ。6枚形は順子の抜き方を変えて確認しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:00.608Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:44.974Z"
     },
     {
       "id": 217,
@@ -19997,6 +20531,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "intermediate",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -20086,10 +20621,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "intermediate"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:02.221Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:46.591Z"
     },
     {
       "id": 218,
@@ -20097,11 +20633,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9p。3対子あっても、対子なら何でもほぐしてよいわけではない。\n\n4sを切ると、77pだけが雀頭を担当する形になる。その後6mを引けば9pが余剰牌になり、索子の縦受けがない一向聴になってしまう。9pを先に切れば、6m引きでも44sの縦受けを残せる。\n\n5mには4mによる連続形、6sには7sによる両面変化もある。今回は単独の雀頭を決める9p切り。3ヘッドの格言を使う前に、それぞれを面子と頭のどちらに使いたいか整理しよう。"
+        "explanation": "打9p。3対子あっても、対子なら何でもほぐしてよいわけではない。\n\n4sを切ると、77pだけが雀頭を担当する形になる。その後6mを引けば9pが余剰牌になり、索子の縦受けがない一向聴になってしまう。9pを先に切れば、6m引きでも44sの縦受けを残せる。\n\n5mには4mによる連続形、6sには7sによる両面変化もある。今回は単独の雀頭を決める9p切り。3ヘッドの格言を使う前に、それぞれを面子と頭のどちらに使いたいか整理しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打9p。3対子あっても、対子なら何でもほぐしてよいわけではない。\n\n4sを切ると、77pだけが雀頭を担当する形になる。その後6mを引けば9pが余剰牌になり、索子の縦受けがない一向聴になってしまう。9pを先に切れば、6m引きでも44sの縦受けを残せる。\n\n5mには4mによる連続形、6sには7sによる両面変化もある。今回は単独の雀頭を決める9p切り。3ヘッドの格言を使う前に、それぞれを面子と頭のどちらに使いたいか整理しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:03.814Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:48.201Z"
     },
     {
       "id": 219,
@@ -20109,11 +20646,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4s。今度は77pが単独の雀頭なので、索子は面子を作る役目に集中できる。\n\n4468sを468sのリャンカンにすると、5sと7sの両方を受けられる。8sを切って446sにするよりも、一向聴へ進む受けが広い。頭は別にあるので、4sの対子を残す必要性が下がっている。\n\n💡雀頭がどこにあるかで、同じ部分形の切り方は変わる。対子の数を数えたら、次はそのうち一つを頭に置き、残りのブロックの作りやすさを比べよう。"
+        "explanation": "打4s。今度は77pが単独の雀頭なので、索子は面子を作る役目に集中できる。\n\n4468sを468sのリャンカンにすると、5sと7sの両方を受けられる。8sを切って446sにするよりも、一向聴へ進む受けが広い。頭は別にあるので、4sの対子を残す必要性が下がっている。\n\n💡雀頭がどこにあるかで、同じ部分形の切り方は変わる。対子の数を数えたら、次はそのうち一つを頭に置き、残りのブロックの作りやすさを比べよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4s。今度は77pが単独の雀頭なので、索子は面子を作る役目に集中できる。\n\n4468sを468sのリャンカンにすると、5sと7sの両方を受けられる。8sを切って446sにするよりも、一向聴へ進む受けが広い。頭は別にあるので、4sの対子を残す必要性が下がっている。\n\n💡雀頭がどこにあるかで、同じ部分形の切り方は変わる。対子の数を数えたら、次はそのうち一つを頭に置き、残りのブロックの作りやすさを比べよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:05.424Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:49.795Z"
     },
     {
       "id": 220,
@@ -20121,11 +20659,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打3m。今回は両面を外し、索子の一気通貫を残す例外的な選択。\n\nドラもほかの手役もない。ペンチャンを払うと、聴牌してもリーチのみやリーチ・平和になりやすい。一気通貫を残せば、3s・7sのどちらが先に来ても、残るペンチャンでリーチ・一気通貫を狙える。\n\n💡手牌価値は受け入れだけで決まらない。今回は2翻役の種が既にほぼ揃っているから両面を外せるのであり、遠い一気通貫のために毎回両面を壊す、という規則にはしない。"
+        "explanation": "打3m。今回は両面を外し、索子の一気通貫を残す例外的な選択。\n\nドラもほかの手役もない。ペンチャンを払うと、聴牌してもリーチのみやリーチ・平和になりやすい。一気通貫を残せば、3s・7sのどちらが先に来ても、残るペンチャンでリーチ・一気通貫を狙える。\n\n💡手牌価値は受け入れだけで決まらない。今回は2翻役の種が既にほぼ揃っているから両面を外せるのであり、遠い一気通貫のために毎回両面を壊す、という規則にはしない。",
+        "difficulty": "intermediate"
       },
       "explanation": "打3m。今回は両面を外し、索子の一気通貫を残す例外的な選択。\n\nドラもほかの手役もない。ペンチャンを払うと、聴牌してもリーチのみやリーチ・平和になりやすい。一気通貫を残せば、3s・7sのどちらが先に来ても、残るペンチャンでリーチ・一気通貫を狙える。\n\n💡手牌価値は受け入れだけで決まらない。今回は2翻役の種が既にほぼ揃っているから両面を外せるのであり、遠い一気通貫のために毎回両面を壊す、という規則にはしない。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:07.036Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:51.397Z"
     },
     {
       "id": 221,
@@ -20133,11 +20672,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5p、聴牌を外す。両面聴牌は基本的に立直したいが、今回はまだ4巡目で、ドラ4pを生かす変化が多い。\n\n4pを切ると6s・9s待ちで、9sではリーチのみ。5pを切って45pを残せば、索子に頭ができた時にドラを使った両面聴牌へ進める。例えば8sを引いて7sを切れば、タンヤオ・ドラの3p・6p待ちになる。\n\n💡立直の基本から外れるなら、その理由を具体的に。今回は早い巡目と大きな打点改善が理由で、中盤以降まで同じように聴牌を外す判断ではない。"
+        "explanation": "打5p、聴牌を外す。両面聴牌は基本的に立直したいが、今回はまだ4巡目で、ドラ4pを生かす変化が多い。\n\n4pを切ると6s・9s待ちで、9sではリーチのみ。5pを切って45pを残せば、索子に頭ができた時にドラを使った両面聴牌へ進める。例えば8sを引いて7sを切れば、タンヤオ・ドラの3p・6p待ちになる。\n\n💡立直の基本から外れるなら、その理由を具体的に。今回は早い巡目と大きな打点改善が理由で、中盤以降まで同じように聴牌を外す判断ではない。",
+        "difficulty": "intermediate"
       },
       "explanation": "打5p、聴牌を外す。両面聴牌は基本的に立直したいが、今回はまだ4巡目で、ドラ4pを生かす変化が多い。\n\n4pを切ると6s・9s待ちで、9sではリーチのみ。5pを切って45pを残せば、索子に頭ができた時にドラを使った両面聴牌へ進める。例えば8sを引いて7sを切れば、タンヤオ・ドラの3p・6p待ちになる。\n\n💡立直の基本から外れるなら、その理由を具体的に。今回は早い巡目と大きな打点改善が理由で、中盤以降まで同じように聴牌を外す判断ではない。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:08.645Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:53.014Z"
     },
     {
       "id": 222,
@@ -20145,11 +20685,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9s、ダマ。7m・5p待ちだが、5pは赤を含めて3枚使っていて、待ちは合計3枚しかない。\n\nタンヤオと赤で既にロンできるので、今の和了を拾いながら変化を待つ。萬子は四連形、筒子は中ぶくれを含み、両面や三面張、一盃口へ変わる道が多い。例えば3mを引いて7mを切れば、2m・5m・8m待ちの三面張になる。\n\n💡愚形だから即ダマ、ではない。現在の待ちの弱さ、役あり、良い変化の多さを合わせて、今回のダマを選ぼう。"
+        "explanation": "打9s、ダマ。7m・5p待ちだが、5pは赤を含めて3枚使っていて、待ちは合計3枚しかない。\n\nタンヤオと赤で既にロンできるので、今の和了を拾いながら変化を待つ。萬子は四連形、筒子は中ぶくれを含み、両面や三面張、一盃口へ変わる道が多い。例えば3mを引いて7mを切れば、2m・5m・8m待ちの三面張になる。\n\n💡愚形だから即ダマ、ではない。現在の待ちの弱さ、役あり、良い変化の多さを合わせて、今回のダマを選ぼう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打9s、ダマ。7m・5p待ちだが、5pは赤を含めて3枚使っていて、待ちは合計3枚しかない。\n\nタンヤオと赤で既にロンできるので、今の和了を拾いながら変化を待つ。萬子は四連形、筒子は中ぶくれを含み、両面や三面張、一盃口へ変わる道が多い。例えば3mを引いて7mを切れば、2m・5m・8m待ちの三面張になる。\n\n💡愚形だから即ダマ、ではない。現在の待ちの弱さ、役あり、良い変化の多さを合わせて、今回のダマを選ぼう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:10.253Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:54.617Z"
     },
     {
       "id": 223,
@@ -20157,11 +20698,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打1p。22pを雀頭に決め、萬子と索子の両面を生かす。\n\n2pや5pを切ると瞬間の受け入れは広いが、外側の両面が先に埋まった時に単騎待ちになる。1pか3pを切って頭を残す比較なら、1pを切って334pの重なりを残したい。4p引きで一盃口を狙う道があるため。\n\n💡連続形のないヘッドレス2型に無理にせず、平和となる両面形を大切に。雀頭を確保する際も、一盃口の種まで一緒に消さないようにしよう。"
+        "explanation": "打1p。22pを雀頭に決め、萬子と索子の両面を生かす。\n\n2pや5pを切ると瞬間の受け入れは広いが、外側の両面が先に埋まった時に単騎待ちになる。1pか3pを切って頭を残す比較なら、1pを切って334pの重なりを残したい。4p引きで一盃口を狙う道があるため。\n\n💡連続形のないヘッドレス2型に無理にせず、平和となる両面形を大切に。雀頭を確保する際も、一盃口の種まで一緒に消さないようにしよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打1p。22pを雀頭に決め、萬子と索子の両面を生かす。\n\n2pや5pを切ると瞬間の受け入れは広いが、外側の両面が先に埋まった時に単騎待ちになる。1pか3pを切って頭を残す比較なら、1pを切って334pの重なりを残したい。4p引きで一盃口を狙う道があるため。\n\n💡連続形のないヘッドレス2型に無理にせず、平和となる両面形を大切に。雀頭を確保する際も、一盃口の種まで一緒に消さないようにしよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:11.860Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:56.227Z"
     },
     {
       "id": 224,
@@ -20169,11 +20711,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7s。受け入れ最大の3m切りと比べ、萬子に手役を作る種を残す。\n\n3444mは単なる3mと暗刻ではない。2m・5mを引くと順子と雀頭に分け直せるため、99pを整理してタンヤオ・平和へ向かう道ができる。3m引きでも萬子に雀頭を作れる。\n\n今の手はドラがなく、速く聴牌してもリーチのみになりやすい。💡余剰牌を残すなら役割を言えるように。今回は打点の種だが、ドラが十分ある手なら、この変化より受け入れを優先しよう。"
+        "explanation": "打7s。受け入れ最大の3m切りと比べ、萬子に手役を作る種を残す。\n\n3444mは単なる3mと暗刻ではない。2m・5mを引くと順子と雀頭に分け直せるため、99pを整理してタンヤオ・平和へ向かう道ができる。3m引きでも萬子に雀頭を作れる。\n\n今の手はドラがなく、速く聴牌してもリーチのみになりやすい。💡余剰牌を残すなら役割を言えるように。今回は打点の種だが、ドラが十分ある手なら、この変化より受け入れを優先しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7s。受け入れ最大の3m切りと比べ、萬子に手役を作る種を残す。\n\n3444mは単なる3mと暗刻ではない。2m・5mを引くと順子と雀頭に分け直せるため、99pを整理してタンヤオ・平和へ向かう道ができる。3m引きでも萬子に雀頭を作れる。\n\n今の手はドラがなく、速く聴牌してもリーチのみになりやすい。💡余剰牌を残すなら役割を言えるように。今回は打点の種だが、ドラが十分ある手なら、この変化より受け入れを優先しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:13.463Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:57.850Z"
     },
     {
       "id": 225,
@@ -20181,11 +20724,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4m。33mを雀頭にして、索子に完成している一盃口を生かす。\n\n344455667sから456sを二つ抜くと、347sが残る。ここに2s・5sを引けば一盃口を保ったまま聴牌でき、7sを引いた時も3sを切れば567s二組に組み替えられる。\n\n7s切りでも一盃口は残るが、聴牌への受けが狭くなる。💡長い形は、見つけた順子を一組ずつ適当に抜かない。一盃口の二面子を先に確認し、残りが何を受けるか調べよう。"
+        "explanation": "打4m。33mを雀頭にして、索子に完成している一盃口を生かす。\n\n344455667sから456sを二つ抜くと、347sが残る。ここに2s・5sを引けば一盃口を保ったまま聴牌でき、7sを引いた時も3sを切れば567s二組に組み替えられる。\n\n7s切りでも一盃口は残るが、聴牌への受けが狭くなる。💡長い形は、見つけた順子を一組ずつ適当に抜かない。一盃口の二面子を先に確認し、残りが何を受けるか調べよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4m。33mを雀頭にして、索子に完成している一盃口を生かす。\n\n344455667sから456sを二つ抜くと、347sが残る。ここに2s・5sを引けば一盃口を保ったまま聴牌でき、7sを引いた時も3sを切れば567s二組に組み替えられる。\n\n7s切りでも一盃口は残るが、聴牌への受けが狭くなる。💡長い形は、見つけた順子を一組ずつ適当に抜かない。一盃口の二面子を先に確認し、残りが何を受けるか調べよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:15.086Z"
+      "overrideUpdatedAt": "2026-09-14T20:11:59.460Z"
     },
     {
       "id": 226,
@@ -20193,11 +20737,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5mを推奨。6p・7pの両面外しも認める、微差の比較。\n\n5mを切った後に裏目の7mを引いても、8mを切れば萬子の連続形を使った広い一向聴に組み替えられる。一方、筒子を外した後の8pには同じ働きがない。裏目を引いても使える方を残す考え方。\n\nただし筒子の待ちに残る8pはドラ表示牌で、残り枚数も少ない。待ちの質を重く見て筒子を外す判断もある。💡裏目カバーと最終待ちの比較であり、別解を大きなミスとしない。"
+        "explanation": "打5mを推奨。6p・7pの両面外しも認める、微差の比較。\n\n5mを切った後に裏目の7mを引いても、8mを切れば萬子の連続形を使った広い一向聴に組み替えられる。一方、筒子を外した後の8pには同じ働きがない。裏目を引いても使える方を残す考え方。\n\nただし筒子の待ちに残る8pはドラ表示牌で、残り枚数も少ない。待ちの質を重く見て筒子を外す判断もある。💡裏目カバーと最終待ちの比較であり、別解を大きなミスとしない。",
+        "difficulty": "intermediate"
       },
       "explanation": "打5mを推奨。6p・7pの両面外しも認める、微差の比較。\n\n5mを切った後に裏目の7mを引いても、8mを切れば萬子の連続形を使った広い一向聴に組み替えられる。一方、筒子を外した後の8pには同じ働きがない。裏目を引いても使える方を残す考え方。\n\nただし筒子の待ちに残る8pはドラ表示牌で、残り枚数も少ない。待ちの質を重く見て筒子を外す判断もある。💡裏目カバーと最終待ちの比較であり、別解を大きなミスとしない。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:16.689Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:01.079Z"
     },
     {
       "id": 227,
@@ -20205,11 +20750,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7p、立直。筒子の待ちを一つの分け方に固定しない。\n\n7pを切ると3p・4p・5p・6pの9枚待ち。6pを切る4p・7p待ちの5枚より広い。4p・5pで和了しても、立直・タンヤオ・ドラで十分な打点があり、6pでは平和と一盃口まで付く。\n\n💡打点ができている時は、役の名前を増やすために和了しやすさを落とさない。暗刻として見る形と雀頭として見る形を両方確認して、広い待ちで立直しよう。"
+        "explanation": "打7p、立直。筒子の待ちを一つの分け方に固定しない。\n\n7pを切ると3p・4p・5p・6pの9枚待ち。6pを切る4p・7p待ちの5枚より広い。4p・5pで和了しても、立直・タンヤオ・ドラで十分な打点があり、6pでは平和と一盃口まで付く。\n\n💡打点ができている時は、役の名前を増やすために和了しやすさを落とさない。暗刻として見る形と雀頭として見る形を両方確認して、広い待ちで立直しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7p、立直。筒子の待ちを一つの分け方に固定しない。\n\n7pを切ると3p・4p・5p・6pの9枚待ち。6pを切る4p・7p待ちの5枚より広い。4p・5pで和了しても、立直・タンヤオ・ドラで十分な打点があり、6pでは平和と一盃口まで付く。\n\n💡打点ができている時は、役の名前を増やすために和了しやすさを落とさない。暗刻として見る形と雀頭として見る形を両方確認して、広い待ちで立直しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:18.294Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:02.683Z"
     },
     {
       "id": 228,
@@ -20291,6 +20837,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "intermediate",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -20373,10 +20920,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "intermediate"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:19.912Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:04.297Z"
     },
     {
       "id": 229,
@@ -20384,11 +20932,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。5p切りと直接の受け入れは同じなので、三色と一盃口の種を残す。\n\n3m・3pが来た時は7p切りで345の三色、6m・6sが来た時は5p切りで456の三色を狙える。6pが先なら一盃口の付く聴牌に取れる。\n\n💡手役は一つに決め打ちせず、次のツモに応じて使い分ける。完成順子に見える234sを固定しないことで、333sの暗刻も345sの順子も利用できる。一手先の嬉しい受け入れを残そう。"
+        "explanation": "打2s。5p切りと直接の受け入れは同じなので、三色と一盃口の種を残す。\n\n3m・3pが来た時は7p切りで345の三色、6m・6sが来た時は5p切りで456の三色を狙える。6pが先なら一盃口の付く聴牌に取れる。\n\n💡手役は一つに決め打ちせず、次のツモに応じて使い分ける。完成順子に見える234sを固定しないことで、333sの暗刻も345sの順子も利用できる。一手先の嬉しい受け入れを残そう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2s。5p切りと直接の受け入れは同じなので、三色と一盃口の種を残す。\n\n3m・3pが来た時は7p切りで345の三色、6m・6sが来た時は5p切りで456の三色を狙える。6pが先なら一盃口の付く聴牌に取れる。\n\n💡手役は一つに決め打ちせず、次のツモに応じて使い分ける。完成順子に見える234sを固定しないことで、333sの暗刻も345sの順子も利用できる。一手先の嬉しい受け入れを残そう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:21.514Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:05.891Z"
     },
     {
       "id": 230,
@@ -20396,11 +20945,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打3s。くっつき一向聴だが、8mを単独の孤立8と比べない。\n\n萬子は4566788mとつながっており、単に8mの周囲だけでなく、順子の組み替えも利用できる。3m・6m・7mでは一盃口の種になる。一方、3sにくっついて聴牌すると、ドラ4pを切る進行が多い。\n\n💡孤立牌の数字より、つながりと打点を見る。4zの暗刻は西家では役牌でないので、ドラ4pと萬子の手役変化を残す価値が高い。受け入れの小さな差だけでドラの種を捨てない。"
+        "explanation": "打3s。くっつき一向聴だが、8mを単独の孤立8と比べない。\n\n萬子は4566788mとつながっており、単に8mの周囲だけでなく、順子の組み替えも利用できる。3m・6m・7mでは一盃口の種になる。一方、3sにくっついて聴牌すると、ドラ4pを切る進行が多い。\n\n💡孤立牌の数字より、つながりと打点を見る。4zの暗刻は西家では役牌でないので、ドラ4pと萬子の手役変化を残す価値が高い。受け入れの小さな差だけでドラの種を捨てない。",
+        "difficulty": "intermediate"
       },
       "explanation": "打3s。くっつき一向聴だが、8mを単独の孤立8と比べない。\n\n萬子は4566788mとつながっており、単に8mの周囲だけでなく、順子の組み替えも利用できる。3m・6m・7mでは一盃口の種になる。一方、3sにくっついて聴牌すると、ドラ4pを切る進行が多い。\n\n💡孤立牌の数字より、つながりと打点を見る。4zの暗刻は西家では役牌でないので、ドラ4pと萬子の手役変化を残す価値が高い。受け入れの小さな差だけでドラの種を捨てない。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:23.129Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:07.499Z"
     },
     {
       "id": 231,
@@ -20408,11 +20958,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。赤0pに加えてドラ8sも使いたいので、受け入れ最大の8s切りとはしない。\n\n2sを切れば、1sを雀頭として索子の連続形を生かせる。7sを引いたら2sを切って、8sを引いたら1sを切って、ドラを使った4p・7pの両面聴牌になる。筒子が先に完成した時は、8sを切って1s・4s・7sの三面張を選べる。\n\n💡ドラを何が何でも使うのではなく、使える引きでは残し、使えない時も良い待ちへ。頭を決めることで、その両方を用意する。"
+        "explanation": "打2s。赤0pに加えてドラ8sも使いたいので、受け入れ最大の8s切りとはしない。\n\n2sを切れば、1sを雀頭として索子の連続形を生かせる。7sを引いたら2sを切って、8sを引いたら1sを切って、ドラを使った4p・7pの両面聴牌になる。筒子が先に完成した時は、8sを切って1s・4s・7sの三面張を選べる。\n\n💡ドラを何が何でも使うのではなく、使える引きでは残し、使えない時も良い待ちへ。頭を決めることで、その両方を用意する。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2s。赤0pに加えてドラ8sも使いたいので、受け入れ最大の8s切りとはしない。\n\n2sを切れば、1sを雀頭として索子の連続形を生かせる。7sを引いたら2sを切って、8sを引いたら1sを切って、ドラを使った4p・7pの両面聴牌になる。筒子が先に完成した時は、8sを切って1s・4s・7sの三面張を選べる。\n\n💡ドラを何が何でも使うのではなく、使える引きでは残し、使えない時も良い待ちへ。頭を決めることで、その両方を用意する。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:24.743Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:09.092Z"
     },
     {
       "id": 232,
@@ -20420,11 +20971,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5s。通常の5sを切り、赤0sは残す。8s切りと直接の聴牌受けは同じなので、後の待ち方で比較する。\n\n先に3p・6pを引いたら3sを切り、8sと5zのシャンポン待ちにできる。自分が先に5sを切っているため、相手から8sが筋に見える形を作れるのが小さな利点。\n\n💡受け入れと打点に差がなければ、最終待ちの見え方も考える。ただし筋はシャンポンを否定しないので、安全確定ではない。微差の工夫と、確実な安全情報は区別しよう。"
+        "explanation": "打5s。通常の5sを切り、赤0sは残す。8s切りと直接の聴牌受けは同じなので、後の待ち方で比較する。\n\n先に3p・6pを引いたら3sを切り、8sと5zのシャンポン待ちにできる。自分が先に5sを切っているため、相手から8sが筋に見える形を作れるのが小さな利点。\n\n💡受け入れと打点に差がなければ、最終待ちの見え方も考える。ただし筋はシャンポンを否定しないので、安全確定ではない。微差の工夫と、確実な安全情報は区別しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打5s。通常の5sを切り、赤0sは残す。8s切りと直接の聴牌受けは同じなので、後の待ち方で比較する。\n\n先に3p・6pを引いたら3sを切り、8sと5zのシャンポン待ちにできる。自分が先に5sを切っているため、相手から8sが筋に見える形を作れるのが小さな利点。\n\n💡受け入れと打点に差がなければ、最終待ちの見え方も考える。ただし筋はシャンポンを否定しないので、安全確定ではない。微差の工夫と、確実な安全情報は区別しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:26.372Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:10.693Z"
     },
     {
       "id": 233,
@@ -20432,11 +20984,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2m。一気通貫がないとリーチのみ愚形になりやすいので、手役を使える受けを重視する。\n\n8s切りは受け入れ最大でも、8p・9pが重なって聴牌すると一気通貫が崩れる。2mを切れば、1m・7p・7s・8sのどれで聴牌しても一気通貫を使える。7pが先なら1mを切って7s・8s待ちにもできる。\n\n💡リーチのみ愚形を解消する種があるなら、その種を大切に。単なる聴牌枚数ではなく、和了した時に欲しい価値が残る受け入れを数えよう。"
+        "explanation": "打2m。一気通貫がないとリーチのみ愚形になりやすいので、手役を使える受けを重視する。\n\n8s切りは受け入れ最大でも、8p・9pが重なって聴牌すると一気通貫が崩れる。2mを切れば、1m・7p・7s・8sのどれで聴牌しても一気通貫を使える。7pが先なら1mを切って7s・8s待ちにもできる。\n\n💡リーチのみ愚形を解消する種があるなら、その種を大切に。単なる聴牌枚数ではなく、和了した時に欲しい価値が残る受け入れを数えよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2m。一気通貫がないとリーチのみ愚形になりやすいので、手役を使える受けを重視する。\n\n8s切りは受け入れ最大でも、8p・9pが重なって聴牌すると一気通貫が崩れる。2mを切れば、1m・7p・7s・8sのどれで聴牌しても一気通貫を使える。7pが先なら1mを切って7s・8s待ちにもできる。\n\n💡リーチのみ愚形を解消する種があるなら、その種を大切に。単なる聴牌枚数ではなく、和了した時に欲しい価値が残る受け入れを数えよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:27.962Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:12.337Z"
     },
     {
       "id": 234,
@@ -20444,11 +20997,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7p。7pと7sのどちらを切っても受け入れは同じ。差はカンチャンが埋まった後にある。\n\n7sを切って6pを引くと、3s・5sのシャンポン待ち。一方、7pを切って6sを引けば、3sを切って1s・4sの両面待ちにできる。索子の長い形は、暗刻と見ていた3sを順子と雀頭へ使い直せる。\n\n💡一向聴では、ダイレクトで聴牌した時の待ちを重視。両方ともカンチャンだから同じ、とせず、埋まった後の形まで一度作って比べよう。"
+        "explanation": "打7p。7pと7sのどちらを切っても受け入れは同じ。差はカンチャンが埋まった後にある。\n\n7sを切って6pを引くと、3s・5sのシャンポン待ち。一方、7pを切って6sを引けば、3sを切って1s・4sの両面待ちにできる。索子の長い形は、暗刻と見ていた3sを順子と雀頭へ使い直せる。\n\n💡一向聴では、ダイレクトで聴牌した時の待ちを重視。両方ともカンチャンだから同じ、とせず、埋まった後の形まで一度作って比べよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7p。7pと7sのどちらを切っても受け入れは同じ。差はカンチャンが埋まった後にある。\n\n7sを切って6pを引くと、3s・5sのシャンポン待ち。一方、7pを切って6sを引けば、3sを切って1s・4sの両面待ちにできる。索子の長い形は、暗刻と見ていた3sを順子と雀頭へ使い直せる。\n\n💡一向聴では、ダイレクトで聴牌した時の待ちを重視。両方ともカンチャンだから同じ、とせず、埋まった後の形まで一度作って比べよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:29.571Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:13.924Z"
     },
     {
       "id": 235,
@@ -20456,11 +21010,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2m。ドラ暗刻があるので、まず広く良形聴牌を目指す。\n\n打2pとの受けの違いだけを取り出すと、1m・4mを残すか、1p・4pを残すかの比較になる。4mは手の中で既に1枚使っているので、筒子の両面を残す2m切りの方が1枚広い。\n\n💡複雑な形の枚数比較は、共通の受けを消してから。233345mの六枚形にも目を向け、3mの暗刻としての見方だけでなく、雀頭へ組み替える受けを落とさないようにしよう。"
+        "explanation": "打2m。ドラ暗刻があるので、まず広く良形聴牌を目指す。\n\n打2pとの受けの違いだけを取り出すと、1m・4mを残すか、1p・4pを残すかの比較になる。4mは手の中で既に1枚使っているので、筒子の両面を残す2m切りの方が1枚広い。\n\n💡複雑な形の枚数比較は、共通の受けを消してから。233345mの六枚形にも目を向け、3mの暗刻としての見方だけでなく、雀頭へ組み替える受けを落とさないようにしよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2m。ドラ暗刻があるので、まず広く良形聴牌を目指す。\n\n打2pとの受けの違いだけを取り出すと、1m・4mを残すか、1p・4pを残すかの比較になる。4mは手の中で既に1枚使っているので、筒子の両面を残す2m切りの方が1枚広い。\n\n💡複雑な形の枚数比較は、共通の受けを消してから。233345mの六枚形にも目を向け、3mの暗刻としての見方だけでなく、雀頭へ組み替える受けを落とさないようにしよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:31.172Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:15.539Z"
     },
     {
       "id": 236,
@@ -20468,11 +21023,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7sを推奨。8m・5m切りの受け入れ最大も認める問題。今回は打点のない手なので、三色を二通り残してみる。\n\n5pを引いたら8mを切って567の三色へ。8sを引いたら5mを切って678の三色へ向かえる。萬子の余剰牌は、ただ余っているのでなく、ツモに合わせて使う打点の種になっている。\n\n💡6ブロック目や余剰牌を残すなら役割を持たせる。今回は三色の分岐を残す選択であり、受け入れを優先した別解を大きなミスとして扱わない。"
+        "explanation": "打7sを推奨。8m・5m切りの受け入れ最大も認める問題。今回は打点のない手なので、三色を二通り残してみる。\n\n5pを引いたら8mを切って567の三色へ。8sを引いたら5mを切って678の三色へ向かえる。萬子の余剰牌は、ただ余っているのでなく、ツモに合わせて使う打点の種になっている。\n\n💡6ブロック目や余剰牌を残すなら役割を持たせる。今回は三色の分岐を残す選択であり、受け入れを優先した別解を大きなミスとして扱わない。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7sを推奨。8m・5m切りの受け入れ最大も認める問題。今回は打点のない手なので、三色を二通り残してみる。\n\n5pを引いたら8mを切って567の三色へ。8sを引いたら5mを切って678の三色へ向かえる。萬子の余剰牌は、ただ余っているのでなく、ツモに合わせて使う打点の種になっている。\n\n💡6ブロック目や余剰牌を残すなら役割を持たせる。今回は三色の分岐を残す選択であり、受け入れを優先した別解を大きなミスとして扱わない。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:32.782Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:17.141Z"
     },
     {
       "id": 237,
@@ -20480,11 +21036,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4m。受け入れ最大の9m切りは、唯一のドラを先に失ってしまう。\n\n4mを切った45567779mは、暗刻や順子の分け方を変えると受けが見える。3m・5m・6mではドラを切って聴牌でき、8m・9mなら5mを切ってドラを使ったまま聴牌にできる。\n\n💡ドラを残すなら、実際に使える受けを言えるように。今回はドラ9mを孤立させて抱えるのでなく、777mとのつながりを利用している。受け入れとドラ使用の道を両立しよう。"
+        "explanation": "打4m。受け入れ最大の9m切りは、唯一のドラを先に失ってしまう。\n\n4mを切った45567779mは、暗刻や順子の分け方を変えると受けが見える。3m・5m・6mではドラを切って聴牌でき、8m・9mなら5mを切ってドラを使ったまま聴牌にできる。\n\n💡ドラを残すなら、実際に使える受けを言えるように。今回はドラ9mを孤立させて抱えるのでなく、777mとのつながりを利用している。受け入れとドラ使用の道を両立しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4m。受け入れ最大の9m切りは、唯一のドラを先に失ってしまう。\n\n4mを切った45567779mは、暗刻や順子の分け方を変えると受けが見える。3m・5m・6mではドラを切って聴牌でき、8m・9mなら5mを切ってドラを使ったまま聴牌にできる。\n\n💡ドラを残すなら、実際に使える受けを言えるように。今回はドラ9mを孤立させて抱えるのでなく、777mとのつながりを利用している。受け入れとドラ使用の道を両立しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:34.402Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:18.765Z"
     },
     {
       "id": 238,
@@ -20492,11 +21049,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5sを推奨。受け入れ最大の9p切りも認めるが、今回は赤0mと筒子の手役変化を残す。\n\n5sにくっついて聴牌すると赤が出やすく、3s・7sではリーチのみ愚形になりやすい。一方、筒子は5677899pとつながっていて、8pなら良形、4p・7pなら一盃口、6p・9pなら役牌3zを使う可能性を残せる。\n\n💡くっつきの候補は、広さだけでなく嬉しい聴牌の数で比較。今回は赤と手役を残す選択だが、速度優先の9p切りも妥当な別案として覚えよう。"
+        "explanation": "打5sを推奨。受け入れ最大の9p切りも認めるが、今回は赤0mと筒子の手役変化を残す。\n\n5sにくっついて聴牌すると赤が出やすく、3s・7sではリーチのみ愚形になりやすい。一方、筒子は5677899pとつながっていて、8pなら良形、4p・7pなら一盃口、6p・9pなら役牌3zを使う可能性を残せる。\n\n💡くっつきの候補は、広さだけでなく嬉しい聴牌の数で比較。今回は赤と手役を残す選択だが、速度優先の9p切りも妥当な別案として覚えよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打5sを推奨。受け入れ最大の9p切りも認めるが、今回は赤0mと筒子の手役変化を残す。\n\n5sにくっついて聴牌すると赤が出やすく、3s・7sではリーチのみ愚形になりやすい。一方、筒子は5677899pとつながっていて、8pなら良形、4p・7pなら一盃口、6p・9pなら役牌3zを使う可能性を残せる。\n\n💡くっつきの候補は、広さだけでなく嬉しい聴牌の数で比較。今回は赤と手役を残す選択だが、速度優先の9p切りも妥当な別案として覚えよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:36.014Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:20.378Z"
     },
     {
       "id": 239,
@@ -20504,11 +21062,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4s。66sを雀頭に決め、筒子の22334566pを丸ごと使う。\n\n6p切りの方が瞬間の受けは少し広いが、5s・6sが先に入ると、筒子の一盃口を狙いにくくなる。4sを切って6p・6sを引けば、5pを切って1p・4p待ちにでき、4pでは一盃口も付く。\n\n💡頭をどこに置くと、残る複合形が生きるか。筒子の順子を先に抜いてしまわず、雀頭を外へ置いた時に作れる待ちと手役を比較しよう。"
+        "explanation": "打4s。66sを雀頭に決め、筒子の22334566pを丸ごと使う。\n\n6p切りの方が瞬間の受けは少し広いが、5s・6sが先に入ると、筒子の一盃口を狙いにくくなる。4sを切って6p・6sを引けば、5pを切って1p・4p待ちにでき、4pでは一盃口も付く。\n\n💡頭をどこに置くと、残る複合形が生きるか。筒子の順子を先に抜いてしまわず、雀頭を外へ置いた時に作れる待ちと手役を比較しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4s。66sを雀頭に決め、筒子の22334566pを丸ごと使う。\n\n6p切りの方が瞬間の受けは少し広いが、5s・6sが先に入ると、筒子の一盃口を狙いにくくなる。4sを切って6p・6sを引けば、5pを切って1p・4p待ちにでき、4pでは一盃口も付く。\n\n💡頭をどこに置くと、残る複合形が生きるか。筒子の順子を先に抜いてしまわず、雀頭を外へ置いた時に作れる待ちと手役を比較しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:37.619Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:21.986Z"
     },
     {
       "id": 240,
@@ -20516,11 +21075,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9m。9mと9sはいま直接の聴牌受けを増やしていないので、嬉しい次のツモで比較する。\n\n9sに7sがくっつけば79sのカンチャンとなり、さらにドラ6sを引いた時に67sへ作り替えられる。12mのペンチャンを入れ替える、打点と良形の種として残したい。9m側には同じドラの利点がない。\n\n💡余剰牌を残すなら役割を持たせる。今回はまだ4巡目だが、進まないまま中盤までドラ筋の9sを抱え続けるのではなく、安全牌との入れ替えも見直そう。"
+        "explanation": "打9m。9mと9sはいま直接の聴牌受けを増やしていないので、嬉しい次のツモで比較する。\n\n9sに7sがくっつけば79sのカンチャンとなり、さらにドラ6sを引いた時に67sへ作り替えられる。12mのペンチャンを入れ替える、打点と良形の種として残したい。9m側には同じドラの利点がない。\n\n💡余剰牌を残すなら役割を持たせる。今回はまだ4巡目だが、進まないまま中盤までドラ筋の9sを抱え続けるのではなく、安全牌との入れ替えも見直そう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打9m。9mと9sはいま直接の聴牌受けを増やしていないので、嬉しい次のツモで比較する。\n\n9sに7sがくっつけば79sのカンチャンとなり、さらにドラ6sを引いた時に67sへ作り替えられる。12mのペンチャンを入れ替える、打点と良形の種として残したい。9m側には同じドラの利点がない。\n\n💡余剰牌を残すなら役割を持たせる。今回はまだ4巡目だが、進まないまま中盤までドラ筋の9sを抱え続けるのではなく、安全牌との入れ替えも見直そう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:39.220Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:23.588Z"
     },
     {
       "id": 241,
@@ -20528,11 +21088,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打6p。3p切りと同じ受け入れを残しながら、345の三色を狙う。\n\n索子の356778sは、678sを抜くと357sのリャンカン。4sも聴牌受けであり、6s・9sの横受けだけではない。4sを引いて7sを切れば、345mを高目とする2m・5m待ちになる。\n\n💡完全形では六枚形を見落とさない。まず受け入れ最大を押さえ、その後で同じ枚数を残す候補の手役を比べる。筒子を345pで固定できる6p切りに意味がある。"
+        "explanation": "打6p。3p切りと同じ受け入れを残しながら、345の三色を狙う。\n\n索子の356778sは、678sを抜くと357sのリャンカン。4sも聴牌受けであり、6s・9sの横受けだけではない。4sを引いて7sを切れば、345mを高目とする2m・5m待ちになる。\n\n💡完全形では六枚形を見落とさない。まず受け入れ最大を押さえ、その後で同じ枚数を残す候補の手役を比べる。筒子を345pで固定できる6p切りに意味がある。",
+        "difficulty": "intermediate"
       },
       "explanation": "打6p。3p切りと同じ受け入れを残しながら、345の三色を狙う。\n\n索子の356778sは、678sを抜くと357sのリャンカン。4sも聴牌受けであり、6s・9sの横受けだけではない。4sを引いて7sを切れば、345mを高目とする2m・5m待ちになる。\n\n💡完全形では六枚形を見落とさない。まず受け入れ最大を押さえ、その後で同じ枚数を残す候補の手役を比べる。筒子を345pで固定できる6p切りに意味がある。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:40.840Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:25.193Z"
     },
     {
       "id": 242,
@@ -20540,11 +21101,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打6p。索子の二つの中ぶくれを生かす問題だが、今回は形だけでなくドラ6sを確認する。\n\n6pを切って67pの両面を残すと、索子に雀頭を作って平和聴牌へ向かえる。7pを切って66pを雀頭にすると一盃口も狙いやすいが、1s・2s・4sで広い聴牌に取るとドラ6sが出ていく。\n\n💡同じ複合形でも、ドラの位置で選択は変わる。覚えた形の推奨を丸暗記せず、実際の有効牌を一枚入れて、何を切らされるかまで確認しよう。"
+        "explanation": "打6p。索子の二つの中ぶくれを生かす問題だが、今回は形だけでなくドラ6sを確認する。\n\n6pを切って67pの両面を残すと、索子に雀頭を作って平和聴牌へ向かえる。7pを切って66pを雀頭にすると一盃口も狙いやすいが、1s・2s・4sで広い聴牌に取るとドラ6sが出ていく。\n\n💡同じ複合形でも、ドラの位置で選択は変わる。覚えた形の推奨を丸暗記せず、実際の有効牌を一枚入れて、何を切らされるかまで確認しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打6p。索子の二つの中ぶくれを生かす問題だが、今回は形だけでなくドラ6sを確認する。\n\n6pを切って67pの両面を残すと、索子に雀頭を作って平和聴牌へ向かえる。7pを切って66pを雀頭にすると一盃口も狙いやすいが、1s・2s・4sで広い聴牌に取るとドラ6sが出ていく。\n\n💡同じ複合形でも、ドラの位置で選択は変わる。覚えた形の推奨を丸暗記せず、実際の有効牌を一枚入れて、何を切らされるかまで確認しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:42.428Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:26.806Z"
     },
     {
       "id": 243,
@@ -20552,11 +21114,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8p。受け入れ最大の5p切りより少し狭くなるが、タンヤオが確定する方を選ぶ。\n\n5pを切ると9pで聴牌した時にタンヤオが付かない。8pを切って556667pを残せば、7p引きで一盃口を確保できる。先に5m・8mを引いた時も、一盃口を含む両面待ちに取れる。\n\n💡僅かな受け入れ差と、自然な打点上昇を比べる。単に8pが不要なのではなく、8pを残すことで増える9pの受けの価値が低い、という見方をしよう。"
+        "explanation": "打8p。受け入れ最大の5p切りより少し狭くなるが、タンヤオが確定する方を選ぶ。\n\n5pを切ると9pで聴牌した時にタンヤオが付かない。8pを切って556667pを残せば、7p引きで一盃口を確保できる。先に5m・8mを引いた時も、一盃口を含む両面待ちに取れる。\n\n💡僅かな受け入れ差と、自然な打点上昇を比べる。単に8pが不要なのではなく、8pを残すことで増える9pの受けの価値が低い、という見方をしよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打8p。受け入れ最大の5p切りより少し狭くなるが、タンヤオが確定する方を選ぶ。\n\n5pを切ると9pで聴牌した時にタンヤオが付かない。8pを切って556667pを残せば、7p引きで一盃口を確保できる。先に5m・8mを引いた時も、一盃口を含む両面待ちに取れる。\n\n💡僅かな受け入れ差と、自然な打点上昇を比べる。単に8pが不要なのではなく、8pを残すことで増える9pの受けの価値が低い、という見方をしよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:44.048Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:28.407Z"
     },
     {
       "id": 244,
@@ -20564,11 +21127,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5m。556777mを見て、対子も暗刻も残したくなるが、ここは7mを雀頭に使い直せる。\n\n5mを切ると56777m。567mと77mに分ければ、ほかの両面を生かせるし、筒子の334pも縦受けを持ったままになる。単純に3pを切って萬子のカンチャン受けを残すより広い。\n\n💡暗刻は普段は壊さないが、聴牌時に頭へ使う見方は大切。部分形だけで『フォローを残す』と覚えず、別の場所に雀頭があるかを毎回確認しよう。"
+        "explanation": "打5m。556777mを見て、対子も暗刻も残したくなるが、ここは7mを雀頭に使い直せる。\n\n5mを切ると56777m。567mと77mに分ければ、ほかの両面を生かせるし、筒子の334pも縦受けを持ったままになる。単純に3pを切って萬子のカンチャン受けを残すより広い。\n\n💡暗刻は普段は壊さないが、聴牌時に頭へ使う見方は大切。部分形だけで『フォローを残す』と覚えず、別の場所に雀頭があるかを毎回確認しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打5m。556777mを見て、対子も暗刻も残したくなるが、ここは7mを雀頭に使い直せる。\n\n5mを切ると56777m。567mと77mに分ければ、ほかの両面を生かせるし、筒子の334pも縦受けを持ったままになる。単純に3pを切って萬子のカンチャン受けを残すより広い。\n\n💡暗刻は普段は壊さないが、聴牌時に頭へ使う見方は大切。部分形だけで『フォローを残す』と覚えず、別の場所に雀頭があるかを毎回確認しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:45.641Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:30.018Z"
     },
     {
       "id": 245,
@@ -20576,11 +21140,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4p。7p切りと受け入れが同じなら、一盃口になるツモを多く残す。\n\n4pを切った566777899pは、5pを引いて9pを切れば567p二組、8pを引いて6pを切れば789p二組に組み替えられる。両側の一盃口を使い分けられる形。\n\n萬子の4m・7mが先に来ても、9pを切って一盃口を含む5p・8p待ちにできる。💡長い形は一つの手役に固定しない。受け入れが等しい候補では、ツモごとの面子の組み替えを一度確認しよう。"
+        "explanation": "打4p。7p切りと受け入れが同じなら、一盃口になるツモを多く残す。\n\n4pを切った566777899pは、5pを引いて9pを切れば567p二組、8pを引いて6pを切れば789p二組に組み替えられる。両側の一盃口を使い分けられる形。\n\n萬子の4m・7mが先に来ても、9pを切って一盃口を含む5p・8p待ちにできる。💡長い形は一つの手役に固定しない。受け入れが等しい候補では、ツモごとの面子の組み替えを一度確認しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4p。7p切りと受け入れが同じなら、一盃口になるツモを多く残す。\n\n4pを切った566777899pは、5pを引いて9pを切れば567p二組、8pを引いて6pを切れば789p二組に組み替えられる。両側の一盃口を使い分けられる形。\n\n萬子の4m・7mが先に来ても、9pを切って一盃口を含む5p・8p待ちにできる。💡長い形は一つの手役に固定しない。受け入れが等しい候補では、ツモごとの面子の組み替えを一度確認しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:47.256Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:31.613Z"
     },
     {
       "id": 246,
@@ -20588,11 +21153,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7p。ドラ3sを切ることになる受けがあっても、その時に何の役が残るかで比較する。\n\n7pを切った後、8p・4sが暗刻になれば、3sを切って三暗刻の両面聴牌にできる。8p切りでは、6p・9p・4sでドラが余っても、三暗刻を作れない進行がある。\n\n4sを先に切ってドラを固定する案もあるが、その分受け入れを失う。💡ドラを切るか残すかの二択にせず、切った後の役と待ちまで評価する。今回は受け入れと三暗刻の種を両立しよう。"
+        "explanation": "打7p。ドラ3sを切ることになる受けがあっても、その時に何の役が残るかで比較する。\n\n7pを切った後、8p・4sが暗刻になれば、3sを切って三暗刻の両面聴牌にできる。8p切りでは、6p・9p・4sでドラが余っても、三暗刻を作れない進行がある。\n\n4sを先に切ってドラを固定する案もあるが、その分受け入れを失う。💡ドラを切るか残すかの二択にせず、切った後の役と待ちまで評価する。今回は受け入れと三暗刻の種を両立しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7p。ドラ3sを切ることになる受けがあっても、その時に何の役が残るかで比較する。\n\n7pを切った後、8p・4sが暗刻になれば、3sを切って三暗刻の両面聴牌にできる。8p切りでは、6p・9p・4sでドラが余っても、三暗刻を作れない進行がある。\n\n4sを先に切ってドラを固定する案もあるが、その分受け入れを失う。💡ドラを切るか残すかの二択にせず、切った後の役と待ちまで評価する。今回は受け入れと三暗刻の種を両立しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:48.861Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:33.233Z"
     },
     {
       "id": 247,
@@ -20600,11 +21166,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7m。7pを残して6pを引けば、5pを切って平和の1s・4s待ちになる。\n\n逆に7pを切って6mを引くと、4mが暗刻として残るため平和が付かない。受け入れが同じでも、カンチャンを埋めた後の面子の姿が違う。\n\nまた、7mを切った後に6mを引いても、7pを切って一向聴を保ち、後で索子が埋まれば2m・5m待ちにできる。7mは待ちに含まれない。💡聴牌後の役と、裏目を引いた時の逃げ道を合わせて比べよう。"
+        "explanation": "打7m。7pを残して6pを引けば、5pを切って平和の1s・4s待ちになる。\n\n逆に7pを切って6mを引くと、4mが暗刻として残るため平和が付かない。受け入れが同じでも、カンチャンを埋めた後の面子の姿が違う。\n\nまた、7mを切った後に6mを引いても、7pを切って一向聴を保ち、後で索子が埋まれば2m・5m待ちにできる。7mは待ちに含まれない。💡聴牌後の役と、裏目を引いた時の逃げ道を合わせて比べよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7m。7pを残して6pを引けば、5pを切って平和の1s・4s待ちになる。\n\n逆に7pを切って6mを引くと、4mが暗刻として残るため平和が付かない。受け入れが同じでも、カンチャンを埋めた後の面子の姿が違う。\n\nまた、7mを切った後に6mを引いても、7pを切って一向聴を保ち、後で索子が埋まれば2m・5m待ちにできる。7mは待ちに含まれない。💡聴牌後の役と、裏目を引いた時の逃げ道を合わせて比べよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:50.465Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:34.841Z"
     },
     {
       "id": 248,
@@ -20673,6 +21240,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "intermediate",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -20742,10 +21310,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "intermediate"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:52.073Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:36.453Z"
     },
     {
       "id": 249,
@@ -20753,11 +21322,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8m。77mを雀頭に固定し、筒子の45579pを面子候補として残す。\n\n6pを引いたら9p切り、8pを引いたら5p切りで、どちらも3p・6pの両面待ちにできる。両方のカンチャン受けが、良形聴牌につながる。\n\n4p切りや7m切りは、8pが先に入った時以外は良い待ちを作りにくい。💡一向聴では、頭を決めた後の二つの受けを比べる。残る枚数だけでなく、どちらが先に入っても嬉しい形へ進める方を選ぼう。"
+        "explanation": "打8m。77mを雀頭に固定し、筒子の45579pを面子候補として残す。\n\n6pを引いたら9p切り、8pを引いたら5p切りで、どちらも3p・6pの両面待ちにできる。両方のカンチャン受けが、良形聴牌につながる。\n\n4p切りや7m切りは、8pが先に入った時以外は良い待ちを作りにくい。💡一向聴では、頭を決めた後の二つの受けを比べる。残る枚数だけでなく、どちらが先に入っても嬉しい形へ進める方を選ぼう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打8m。77mを雀頭に固定し、筒子の45579pを面子候補として残す。\n\n6pを引いたら9p切り、8pを引いたら5p切りで、どちらも3p・6pの両面待ちにできる。両方のカンチャン受けが、良形聴牌につながる。\n\n4p切りや7m切りは、8pが先に入った時以外は良い待ちを作りにくい。💡一向聴では、頭を決めた後の二つの受けを比べる。残る枚数だけでなく、どちらが先に入っても嬉しい形へ進める方を選ぼう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:53.678Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:38.053Z"
     },
     {
       "id": 250,
@@ -20765,11 +21335,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5p、立直。待ちを一つ見つけただけで止まらず、6pの暗刻を雀頭としても見てみよう。\n\n6pを暗刻として抜けば1p・2pのシャンポン。6pを雀頭に置けば、123pと456pを使うペン3p待ちもある。合わせて1p・2p・3pの7枚待ちとなる。3pでは一盃口も付く。\n\n💡複合待ちは、雀頭の位置を変えて確認する。赤0mとドラ6mがあり、今の待ちにも十分な価値がある。タンヤオ変化を待つために、この広い立直を逃さないようにしよう。"
+        "explanation": "打5p、立直。待ちを一つ見つけただけで止まらず、6pの暗刻を雀頭としても見てみよう。\n\n6pを暗刻として抜けば1p・2pのシャンポン。6pを雀頭に置けば、123pと456pを使うペン3p待ちもある。合わせて1p・2p・3pの7枚待ちとなる。3pでは一盃口も付く。\n\n💡複合待ちは、雀頭の位置を変えて確認する。赤0mとドラ6mがあり、今の待ちにも十分な価値がある。タンヤオ変化を待つために、この広い立直を逃さないようにしよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打5p、立直。待ちを一つ見つけただけで止まらず、6pの暗刻を雀頭としても見てみよう。\n\n6pを暗刻として抜けば1p・2pのシャンポン。6pを雀頭に置けば、123pと456pを使うペン3p待ちもある。合わせて1p・2p・3pの7枚待ちとなる。3pでは一盃口も付く。\n\n💡複合待ちは、雀頭の位置を変えて確認する。赤0mとドラ6mがあり、今の待ちにも十分な価値がある。タンヤオ変化を待つために、この広い立直を逃さないようにしよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:55.290Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:39.654Z"
     },
     {
       "id": 251,
@@ -20777,11 +21348,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8mを推奨。2p切りも受け入れ最大なので、まずこの二択に絞れればよい。\n\n次に裏目を比較する。8mを切った後に7mを引いても、索子が埋まれば萬子を4m・7m待ちにでき、8mを切ったことによるフリテンにはならない。2pを切って3pを引く方は、後で2pを含む両面が残りうる。\n\n💡裏目が痛くない方を選ぶ。今回は枚数ではなく、引き直した後にその形を採用できるかの比較。全ての裏目を無理にカバーするのでなく、使い道のある方を残そう。"
+        "explanation": "打8mを推奨。2p切りも受け入れ最大なので、まずこの二択に絞れればよい。\n\n次に裏目を比較する。8mを切った後に7mを引いても、索子が埋まれば萬子を4m・7m待ちにでき、8mを切ったことによるフリテンにはならない。2pを切って3pを引く方は、後で2pを含む両面が残りうる。\n\n💡裏目が痛くない方を選ぶ。今回は枚数ではなく、引き直した後にその形を採用できるかの比較。全ての裏目を無理にカバーするのでなく、使い道のある方を残そう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打8mを推奨。2p切りも受け入れ最大なので、まずこの二択に絞れればよい。\n\n次に裏目を比較する。8mを切った後に7mを引いても、索子が埋まれば萬子を4m・7m待ちにでき、8mを切ったことによるフリテンにはならない。2pを切って3pを引く方は、後で2pを含む両面が残りうる。\n\n💡裏目が痛くない方を選ぶ。今回は枚数ではなく、引き直した後にその形を採用できるかの比較。全ての裏目を無理にカバーするのでなく、使い道のある方を残そう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:56.899Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:41.256Z"
     },
     {
       "id": 252,
@@ -20789,11 +21361,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5p。打2pでも待ちは6p・9pで同じ。今の待ちを変えず、一気通貫の種を残そう。\n\n5pを切った後、1pを引いて7pを切れば、123pと456pを作って9pで一気通貫になる。1pをチーして同じ形にする道もある。先に2pを切ると、この123pを作る材料が足りない。\n\n💡受け入れが同じなら、打点や手役の種を残す。ただし、既に混一色で十分高い手。追加のチーで警戒される損もあるので、鳴くかどうかはその時に改めて判断しよう。"
+        "explanation": "打5p。打2pでも待ちは6p・9pで同じ。今の待ちを変えず、一気通貫の種を残そう。\n\n5pを切った後、1pを引いて7pを切れば、123pと456pを作って9pで一気通貫になる。1pをチーして同じ形にする道もある。先に2pを切ると、この123pを作る材料が足りない。\n\n💡受け入れが同じなら、打点や手役の種を残す。ただし、既に混一色で十分高い手。追加のチーで警戒される損もあるので、鳴くかどうかはその時に改めて判断しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打5p。打2pでも待ちは6p・9pで同じ。今の待ちを変えず、一気通貫の種を残そう。\n\n5pを切った後、1pを引いて7pを切れば、123pと456pを作って9pで一気通貫になる。1pをチーして同じ形にする道もある。先に2pを切ると、この123pを作る材料が足りない。\n\n💡受け入れが同じなら、打点や手役の種を残す。ただし、既に混一色で十分高い手。追加のチーで警戒される損もあるので、鳴くかどうかはその時に改めて判断しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:51:58.504Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:42.866Z"
     },
     {
       "id": 253,
@@ -20801,11 +21374,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2m。打2pと直接の聴牌受け入れは同じなので、嵌張が埋まった時の打点を比較する。\n\n打2mから3pを引き、7pを切ると筒子は234p+567p+567p。一盃口と平和が付く6s・9s待ちにできる。打2pから3mを引いた場合には、同じ一盃口は付かない。\n\n最初から7pを切って一盃口に固定すると、受け入れを減らしてしまう。まずは広さを保ち、嬉しい受け入れが来た時に高くする、という順番で考えよう。"
+        "explanation": "打2m。打2pと直接の聴牌受け入れは同じなので、嵌張が埋まった時の打点を比較する。\n\n打2mから3pを引き、7pを切ると筒子は234p+567p+567p。一盃口と平和が付く6s・9s待ちにできる。打2pから3mを引いた場合には、同じ一盃口は付かない。\n\n最初から7pを切って一盃口に固定すると、受け入れを減らしてしまう。まずは広さを保ち、嬉しい受け入れが来た時に高くする、という順番で考えよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2m。打2pと直接の聴牌受け入れは同じなので、嵌張が埋まった時の打点を比較する。\n\n打2mから3pを引き、7pを切ると筒子は234p+567p+567p。一盃口と平和が付く6s・9s待ちにできる。打2pから3mを引いた場合には、同じ一盃口は付かない。\n\n最初から7pを切って一盃口に固定すると、受け入れを減らしてしまう。まずは広さを保ち、嬉しい受け入れが来た時に高くする、という順番で考えよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:00.137Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:44.476Z"
     },
     {
       "id": 254,
@@ -20813,11 +21387,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打6m。今回大事なのは、広い一向聴を保ちながらドラ7mを使い切ること。\n\n打4mと打6mは直接の受け入れが同じ。ところが索子にくっついた時、打4mの形では聴牌を取るために7mが出ていく進行がある。打6mなら4mの対子と567mを残すことができ、ドラを手の中に収められる。\n\n💡複雑な形でも、嬉しいツモを一枚入れて『聴牌時に何を切るか』まで確認しよう。受け入れの数が同じでも、完成時の打点は同じとは限らない。"
+        "explanation": "打6m。今回大事なのは、広い一向聴を保ちながらドラ7mを使い切ること。\n\n打4mと打6mは直接の受け入れが同じ。ところが索子にくっついた時、打4mの形では聴牌を取るために7mが出ていく進行がある。打6mなら4mの対子と567mを残すことができ、ドラを手の中に収められる。\n\n💡複雑な形でも、嬉しいツモを一枚入れて『聴牌時に何を切るか』まで確認しよう。受け入れの数が同じでも、完成時の打点は同じとは限らない。",
+        "difficulty": "intermediate"
       },
       "explanation": "打6m。今回大事なのは、広い一向聴を保ちながらドラ7mを使い切ること。\n\n打4mと打6mは直接の受け入れが同じ。ところが索子にくっついた時、打4mの形では聴牌を取るために7mが出ていく進行がある。打6mなら4mの対子と567mを残すことができ、ドラを手の中に収められる。\n\n💡複雑な形でも、嬉しいツモを一枚入れて『聴牌時に何を切るか』まで確認しよう。受け入れの数が同じでも、完成時の打点は同じとは限らない。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:01.719Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:46.071Z"
     },
     {
       "id": 255,
@@ -20825,11 +21400,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9p、立直。七対子の8p単騎を選ぶ。\n\n打7pなら4s・6sのシャンポンで4枚待ち。打9pは8pの3枚待ちだが、七対子にタンヤオが付く。子のロンなら、前者の立直・一盃口は2600点、後者の立直・七対子・タンヤオは6400点となる。※一発・裏ドラなし。\n\n💡七対子は先制立直の価値が高い手。今回は待ち1枚の差より打点差が大きい。面子手の聴牌が見えても、七対子の完成形まで必ず比較しよう。"
+        "explanation": "打9p、立直。七対子の8p単騎を選ぶ。\n\n打7pなら4s・6sのシャンポンで4枚待ち。打9pは8pの3枚待ちだが、七対子にタンヤオが付く。子のロンなら、前者の立直・一盃口は2600点、後者の立直・七対子・タンヤオは6400点となる。※一発・裏ドラなし。\n\n💡七対子は先制立直の価値が高い手。今回は待ち1枚の差より打点差が大きい。面子手の聴牌が見えても、七対子の完成形まで必ず比較しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打9p、立直。七対子の8p単騎を選ぶ。\n\n打7pなら4s・6sのシャンポンで4枚待ち。打9pは8pの3枚待ちだが、七対子にタンヤオが付く。子のロンなら、前者の立直・一盃口は2600点、後者の立直・七対子・タンヤオは6400点となる。※一発・裏ドラなし。\n\n💡七対子は先制立直の価値が高い手。今回は待ち1枚の差より打点差が大きい。面子手の聴牌が見えても、七対子の完成形まで必ず比較しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:03.339Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:47.686Z"
     },
     {
       "id": 256,
@@ -20837,11 +21413,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4s。対子を三つとも雀頭候補として抱えるのではなく、索子全体のつながりを使おう。\n\n4sを1枚外すと、2s・9sの縦受けに加えて3s・5sも聴牌の受け入れになる。2sや9sを切った形より、残る受け入れが広い。例えば3sを引いて2sを切れば、索子を234s+678s+99sに分けられる。\n\n💡6枚以上の複合形は、対子と面子の区切りを固定しない。『真ん中の対子を外すと、左右がどうつながるか』を一度確認しよう。"
+        "explanation": "打4s。対子を三つとも雀頭候補として抱えるのではなく、索子全体のつながりを使おう。\n\n4sを1枚外すと、2s・9sの縦受けに加えて3s・5sも聴牌の受け入れになる。2sや9sを切った形より、残る受け入れが広い。例えば3sを引いて2sを切れば、索子を234s+678s+99sに分けられる。\n\n💡6枚以上の複合形は、対子と面子の区切りを固定しない。『真ん中の対子を外すと、左右がどうつながるか』を一度確認しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4s。対子を三つとも雀頭候補として抱えるのではなく、索子全体のつながりを使おう。\n\n4sを1枚外すと、2s・9sの縦受けに加えて3s・5sも聴牌の受け入れになる。2sや9sを切った形より、残る受け入れが広い。例えば3sを引いて2sを切れば、索子を234s+678s+99sに分けられる。\n\n💡6枚以上の複合形は、対子と面子の区切りを固定しない。『真ん中の対子を外すと、左右がどうつながるか』を一度確認しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:04.942Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:49.281Z"
     },
     {
       "id": 257,
@@ -20849,11 +21426,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7s。赤とドラがあるので、鳴いても役と良い待ちが残る形にしたい。\n\n4mを雀頭に見ると、索子は2面子を作る部分。7sを切って450678sを残せば、筒子が先に完成した時に8sを切り、3s・6s待ちにできる。赤0sを残したまま、どちらで和了してもタンヤオが付く形だ。\n\n💡副露を使える手では、鳴いた後の待ちと役まで確認しよう。三面張という名前だけでなく、役のない端牌待ちが混ざらない経路も残すのが大事。"
+        "explanation": "打7s。赤とドラがあるので、鳴いても役と良い待ちが残る形にしたい。\n\n4mを雀頭に見ると、索子は2面子を作る部分。7sを切って450678sを残せば、筒子が先に完成した時に8sを切り、3s・6s待ちにできる。赤0sを残したまま、どちらで和了してもタンヤオが付く形だ。\n\n💡副露を使える手では、鳴いた後の待ちと役まで確認しよう。三面張という名前だけでなく、役のない端牌待ちが混ざらない経路も残すのが大事。",
+        "difficulty": "intermediate"
       },
       "explanation": "打7s。赤とドラがあるので、鳴いても役と良い待ちが残る形にしたい。\n\n4mを雀頭に見ると、索子は2面子を作る部分。7sを切って450678sを残せば、筒子が先に完成した時に8sを切り、3s・6s待ちにできる。赤0sを残したまま、どちらで和了してもタンヤオが付く形だ。\n\n💡副露を使える手では、鳴いた後の待ちと役まで確認しよう。三面張という名前だけでなく、役のない端牌待ちが混ざらない経路も残すのが大事。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:06.543Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:50.904Z"
     },
     {
       "id": 258,
@@ -20861,11 +21439,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2p。244pと244sだけなら同じ形だが、索子には406sと799sにつながる見方がある。\n\n2pを切った後に8sを引き、9sを切れば、索子は24s+406s+789s。カン3s待ちの聴牌にできる。先に2sを切った形では、この8sを直接の聴牌受けにできない。\n\n💡部分形が同じでも、周囲の面子とのつながりまで含めて比較する。完成した順子を先に隠してしまわず、別の分け方で増える受け入れを探そう。"
+        "explanation": "打2p。244pと244sだけなら同じ形だが、索子には406sと799sにつながる見方がある。\n\n2pを切った後に8sを引き、9sを切れば、索子は24s+406s+789s。カン3s待ちの聴牌にできる。先に2sを切った形では、この8sを直接の聴牌受けにできない。\n\n💡部分形が同じでも、周囲の面子とのつながりまで含めて比較する。完成した順子を先に隠してしまわず、別の分け方で増える受け入れを探そう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2p。244pと244sだけなら同じ形だが、索子には406sと799sにつながる見方がある。\n\n2pを切った後に8sを引き、9sを切れば、索子は24s+406s+789s。カン3s待ちの聴牌にできる。先に2sを切った形では、この8sを直接の聴牌受けにできない。\n\n💡部分形が同じでも、周囲の面子とのつながりまで含めて比較する。完成した順子を先に隠してしまわず、別の分け方で増える受け入れを探そう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:08.157Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:52.508Z"
     },
     {
       "id": 259,
@@ -20873,11 +21452,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打8m。孤立8mと8pを、次の6m・6pを引いた形で比較しよう。\n\n8mに6mがくっついても、できるのは単独の68m。一方、8pに6pがくっつくと344568pになり、両面嵌張を含む広い形へ育つ。筒子の順子とつながる8pは、ただの孤立8ではない。\n\n今の受け入れだけなら8p切りが広いが、まだ二向聴。今回はその先の聴牌しやすさを重視する。\n\n💡孤立牌は『その牌に嬉しいツモを入れたら、何になるか』で比べよう。"
+        "explanation": "打8m。孤立8mと8pを、次の6m・6pを引いた形で比較しよう。\n\n8mに6mがくっついても、できるのは単独の68m。一方、8pに6pがくっつくと344568pになり、両面嵌張を含む広い形へ育つ。筒子の順子とつながる8pは、ただの孤立8ではない。\n\n今の受け入れだけなら8p切りが広いが、まだ二向聴。今回はその先の聴牌しやすさを重視する。\n\n💡孤立牌は『その牌に嬉しいツモを入れたら、何になるか』で比べよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打8m。孤立8mと8pを、次の6m・6pを引いた形で比較しよう。\n\n8mに6mがくっついても、できるのは単独の68m。一方、8pに6pがくっつくと344568pになり、両面嵌張を含む広い形へ育つ。筒子の順子とつながる8pは、ただの孤立8ではない。\n\n今の受け入れだけなら8p切りが広いが、まだ二向聴。今回はその先の聴牌しやすさを重視する。\n\n💡孤立牌は『その牌に嬉しいツモを入れたら、何になるか』で比べよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:09.771Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:54.119Z"
     },
     {
       "id": 260,
@@ -20885,11 +21465,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4s。これは7zで和了する役牌バック。『待ちが広いほど良い』とは限らない。\n\n打7sは3s・6s・7z待ちだが、3sと6sでは役がない。それをツモ切りすると、7zもロンできないフリテンになる。打4sなら6s・7z待ちとなり、役のない牌を引く範囲を減らせる。\n\n和了できる7zの枚数はどちらも同じ。\n\n💡役牌バックは、形の待ちと実際に和了できる待ちを分けて確認する。ドラが3枚あっても、それだけでは役にならない。"
+        "explanation": "打4s。これは7zで和了する役牌バック。『待ちが広いほど良い』とは限らない。\n\n打7sは3s・6s・7z待ちだが、3sと6sでは役がない。それをツモ切りすると、7zもロンできないフリテンになる。打4sなら6s・7z待ちとなり、役のない牌を引く範囲を減らせる。\n\n和了できる7zの枚数はどちらも同じ。\n\n💡役牌バックは、形の待ちと実際に和了できる待ちを分けて確認する。ドラが3枚あっても、それだけでは役にならない。",
+        "difficulty": "intermediate"
       },
       "explanation": "打4s。これは7zで和了する役牌バック。『待ちが広いほど良い』とは限らない。\n\n打7sは3s・6s・7z待ちだが、3sと6sでは役がない。それをツモ切りすると、7zもロンできないフリテンになる。打4sなら6s・7z待ちとなり、役のない牌を引く範囲を減らせる。\n\n和了できる7zの枚数はどちらも同じ。\n\n💡役牌バックは、形の待ちと実際に和了できる待ちを分けて確認する。ドラが3枚あっても、それだけでは役にならない。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:11.377Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:55.734Z"
     },
     {
       "id": 261,
@@ -20897,11 +21478,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打3sを推奨。打5pで一盃口を狙う案も、間違いと決め付けるほどのものではない。\n\nただし今回は、344555pという6枚形を残す方が聴牌への受け入れは広い。打3sと打5pには5枚の差があり、既にドラ8sも使えている。追加の一盃口だけを追って、この広さを落としたくない。\n\n💡『一向聴はめいいっぱいに』が比較の出発点。手役の種を残す時も、代わりにどれだけの直接受けを失うのかを確認して判断しよう。"
+        "explanation": "打3sを推奨。打5pで一盃口を狙う案も、間違いと決め付けるほどのものではない。\n\nただし今回は、344555pという6枚形を残す方が聴牌への受け入れは広い。打3sと打5pには5枚の差があり、既にドラ8sも使えている。追加の一盃口だけを追って、この広さを落としたくない。\n\n💡『一向聴はめいいっぱいに』が比較の出発点。手役の種を残す時も、代わりにどれだけの直接受けを失うのかを確認して判断しよう。",
+        "difficulty": "intermediate"
       },
       "explanation": "打3sを推奨。打5pで一盃口を狙う案も、間違いと決め付けるほどのものではない。\n\nただし今回は、344555pという6枚形を残す方が聴牌への受け入れは広い。打3sと打5pには5枚の差があり、既にドラ8sも使えている。追加の一盃口だけを追って、この広さを落としたくない。\n\n💡『一向聴はめいいっぱいに』が比較の出発点。手役の種を残す時も、代わりにどれだけの直接受けを失うのかを確認して判断しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:12.982Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:57.331Z"
     },
     {
       "id": 262,
@@ -20909,11 +21491,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2p。ドラ6mを受ける57mは残し、2340pから通常の2pを外す。赤0pを切って同じような形を残しても、打点を一つ失うだけだ。\n\n索子の3sを雀頭、456sを面子と見れば、一向聴の骨格が分かる。今は無理に三色へ決め打ちせず、ドラ受けとタンヤオで鳴ける道を残したい。\n\n💡面子と雀頭を先に確認し、打点の種を守ったうえで余剰牌を比較する。手役の形が見えても、既にある赤やドラ受けより常に偉いわけではない。"
+        "explanation": "打2p。ドラ6mを受ける57mは残し、2340pから通常の2pを外す。赤0pを切って同じような形を残しても、打点を一つ失うだけだ。\n\n索子の3sを雀頭、456sを面子と見れば、一向聴の骨格が分かる。今は無理に三色へ決め打ちせず、ドラ受けとタンヤオで鳴ける道を残したい。\n\n💡面子と雀頭を先に確認し、打点の種を守ったうえで余剰牌を比較する。手役の形が見えても、既にある赤やドラ受けより常に偉いわけではない。",
+        "difficulty": "intermediate"
       },
       "explanation": "打2p。ドラ6mを受ける57mは残し、2340pから通常の2pを外す。赤0pを切って同じような形を残しても、打点を一つ失うだけだ。\n\n索子の3sを雀頭、456sを面子と見れば、一向聴の骨格が分かる。今は無理に三色へ決め打ちせず、ドラ受けとタンヤオで鳴ける道を残したい。\n\n💡面子と雀頭を先に確認し、打点の種を守ったうえで余剰牌を比較する。手役の形が見えても、既にある赤やドラ受けより常に偉いわけではない。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:14.587Z"
+      "overrideUpdatedAt": "2026-09-14T20:12:58.951Z"
     },
     {
       "id": 263,
@@ -21076,11 +21659,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7p。1pをツモ切りする前に、面子がいくつになったか数えよう。\n\n789m、111p、678pの三面子を確保すると、残りは23mと56s。7pを切ればヘッドレス2型となり、ターツが面子になる牌だけでなく、雀頭になる縦引きも受けられる。\n\n打1pでは面子を一つ崩し、二面子の一向聴へ戻してしまう。\n\n💡単独暗刻は聴牌前に安易に崩さない。『頭がないから弱い』ではなく、三面子の強さと頭を作れる範囲を確認しよう。"
+        "explanation": "打7p。1pをツモ切りする前に、面子がいくつになったか数えよう。\n\n789m、111p、678pの三面子を確保すると、残りは23mと56s。7pを切ればヘッドレス2型となり、ターツが面子になる牌だけでなく、雀頭になる縦引きも受けられる。\n\n打1pでは面子を一つ崩し、二面子の一向聴へ戻してしまう。\n\n💡単独暗刻は聴牌前に安易に崩さない。『頭がないから弱い』ではなく、三面子の強さと頭を作れる範囲を確認しよう。",
+        "difficulty": "beginner"
       },
       "explanation": "打7p。1pをツモ切りする前に、面子がいくつになったか数えよう。\n\n789m、111p、678pの三面子を確保すると、残りは23mと56s。7pを切ればヘッドレス2型となり、ターツが面子になる牌だけでなく、雀頭になる縦引きも受けられる。\n\n打1pでは面子を一つ崩し、二面子の一向聴へ戻してしまう。\n\n💡単独暗刻は聴牌前に安易に崩さない。『頭がないから弱い』ではなく、三面子の強さと頭を作れる範囲を確認しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:19.401Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:00.551Z"
     },
     {
       "id": 266,
@@ -21309,6 +21893,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -21385,10 +21970,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:24.225Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:02.170Z"
     },
     {
       "id": 269,
@@ -21396,11 +21982,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2m。打7mの両面嵌張と、打2mの完全形は直接の受け入れ枚数が同じ。今回は一盃口の種を残す。\n\n5mを引いた時、4mを切れば萬子を567m+567mにでき、平和と一盃口が付く。既にドラ3sもあり、この進行の打点上昇は嬉しい。\n\nただし、7mや9sを重ねる進行では平和が付かない。\n\n💡手役を確定させるかだけでなく、『広さを落とさず高くなる受け入れを残せるか』を比較しよう。"
+        "explanation": "打2m。打7mの両面嵌張と、打2mの完全形は直接の受け入れ枚数が同じ。今回は一盃口の種を残す。\n\n5mを引いた時、4mを切れば萬子を567m+567mにでき、平和と一盃口が付く。既にドラ3sもあり、この進行の打点上昇は嬉しい。\n\nただし、7mや9sを重ねる進行では平和が付かない。\n\n💡手役を確定させるかだけでなく、『広さを落とさず高くなる受け入れを残せるか』を比較しよう。",
+        "difficulty": "beginner"
       },
       "explanation": "打2m。打7mの両面嵌張と、打2mの完全形は直接の受け入れ枚数が同じ。今回は一盃口の種を残す。\n\n5mを引いた時、4mを切れば萬子を567m+567mにでき、平和と一盃口が付く。既にドラ3sもあり、この進行の打点上昇は嬉しい。\n\nただし、7mや9sを重ねる進行では平和が付かない。\n\n💡手役を確定させるかだけでなく、『広さを落とさず高くなる受け入れを残せるか』を比較しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:25.831Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:03.764Z"
     },
     {
       "id": 270,
@@ -21467,6 +22054,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -21534,10 +22122,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:27.444Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:05.366Z"
     },
     {
       "id": 271,
@@ -21545,11 +22134,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7m。今回の6zは単なる雀頭候補ではなく、鳴いて役を付けられる牌。\n\n7mを切っておけば、6zをポンして4pを切り、1m・4mの両面聴牌にできる。赤0pも雀頭に残る。萬子が先に完成した時は、3p・6pの両面にするか、6zを含むシャンポンにするかも選べる。\n\n💡役牌のある手では『ポンした後、何を切り、何待ちになるか』を先に考えよう。直接受けが同じでも、役と鳴きの経路が残る形を選ぶ。"
+        "explanation": "打7m。今回の6zは単なる雀頭候補ではなく、鳴いて役を付けられる牌。\n\n7mを切っておけば、6zをポンして4pを切り、1m・4mの両面聴牌にできる。赤0pも雀頭に残る。萬子が先に完成した時は、3p・6pの両面にするか、6zを含むシャンポンにするかも選べる。\n\n💡役牌のある手では『ポンした後、何を切り、何待ちになるか』を先に考えよう。直接受けが同じでも、役と鳴きの経路が残る形を選ぶ。",
+        "difficulty": "beginner"
       },
       "explanation": "打7m。今回の6zは単なる雀頭候補ではなく、鳴いて役を付けられる牌。\n\n7mを切っておけば、6zをポンして4pを切り、1m・4mの両面聴牌にできる。赤0pも雀頭に残る。萬子が先に完成した時は、3p・6pの両面にするか、6zを含むシャンポンにするかも選べる。\n\n💡役牌のある手では『ポンした後、何を切り、何待ちになるか』を先に考えよう。直接受けが同じでも、役と鳴きの経路が残る形を選ぶ。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:29.043Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:06.979Z"
     },
     {
       "id": 272,
@@ -21617,6 +22207,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -21685,10 +22276,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:30.647Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:08.583Z"
     },
     {
       "id": 273,
@@ -21755,6 +22347,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -21822,10 +22415,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:32.263Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:10.194Z"
     },
     {
       "id": 274,
@@ -21833,11 +22427,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9m。ドラ9pを雀頭にして、萬子の広い複合形を残す。\n\n345mを一組抜くと、455679mの両面嵌張が見える。3m・6mに加えて8mも受けられる。8mが先に入ると一盃口は付かないが、平和とドラ2を残せるので十分な打点がある。\n\n💡既に打点を持っている手では、追加の手役より直接の受け入れを大事にする。長い同色部分も、完成面子を一組だけ抜き、残った6枚の受けを確認しよう。"
+        "explanation": "打9m。ドラ9pを雀頭にして、萬子の広い複合形を残す。\n\n345mを一組抜くと、455679mの両面嵌張が見える。3m・6mに加えて8mも受けられる。8mが先に入ると一盃口は付かないが、平和とドラ2を残せるので十分な打点がある。\n\n💡既に打点を持っている手では、追加の手役より直接の受け入れを大事にする。長い同色部分も、完成面子を一組だけ抜き、残った6枚の受けを確認しよう。",
+        "difficulty": "beginner"
       },
       "explanation": "打9m。ドラ9pを雀頭にして、萬子の広い複合形を残す。\n\n345mを一組抜くと、455679mの両面嵌張が見える。3m・6mに加えて8mも受けられる。8mが先に入ると一盃口は付かないが、平和とドラ2を残せるので十分な打点がある。\n\n💡既に打点を持っている手では、追加の手役より直接の受け入れを大事にする。長い同色部分も、完成面子を一組だけ抜き、残った6枚の受けを確認しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:33.875Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:11.804Z"
     },
     {
       "id": 275,
@@ -21845,11 +22440,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打3p。両面嵌張という形を残すより、今回はヘッドレス2型の連続形を生かす。\n\n56778pは、順子とターツがつながった5枚形。筒子の4pから9pまで、面子を作る引きも雀頭を作る引きも受けられる。索子の6s・7sを重ねる引きも聴牌になる。\n\n💡『ヘッドレスは連続形含みの2型を目指せ』。同じ6枚形でも、ほかに雀頭がある時とない時では役割が違う。頭を無理に固定せず、つながった形全体の広さを使おう。"
+        "explanation": "打3p。両面嵌張という形を残すより、今回はヘッドレス2型の連続形を生かす。\n\n56778pは、順子とターツがつながった5枚形。筒子の4pから9pまで、面子を作る引きも雀頭を作る引きも受けられる。索子の6s・7sを重ねる引きも聴牌になる。\n\n💡『ヘッドレスは連続形含みの2型を目指せ』。同じ6枚形でも、ほかに雀頭がある時とない時では役割が違う。頭を無理に固定せず、つながった形全体の広さを使おう。",
+        "difficulty": "beginner"
       },
       "explanation": "打3p。両面嵌張という形を残すより、今回はヘッドレス2型の連続形を生かす。\n\n56778pは、順子とターツがつながった5枚形。筒子の4pから9pまで、面子を作る引きも雀頭を作る引きも受けられる。索子の6s・7sを重ねる引きも聴牌になる。\n\n💡『ヘッドレスは連続形含みの2型を目指せ』。同じ6枚形でも、ほかに雀頭がある時とない時では役割が違う。頭を無理に固定せず、つながった形全体の広さを使おう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:35.477Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:13.403Z"
     },
     {
       "id": 276,
@@ -21857,11 +22453,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。赤0sを使い切り、平和が付く聴牌を残す。\n\n打7sでも受け入れは同じだが、4sを引いて一盃口にする時には0sが余ってしまう。一盃口を付けても赤を失えば、その進行では打点を増やせていない。さらに対子が暗刻になる進行では平和も消える。\n\n💡手役の名前が増えたことと、点数が上がったことは別。完成した手から出ていく赤やドラまで含めて数えよう。今回は赤と平和を安定して残す方を選ぶ。"
+        "explanation": "打2s。赤0sを使い切り、平和が付く聴牌を残す。\n\n打7sでも受け入れは同じだが、4sを引いて一盃口にする時には0sが余ってしまう。一盃口を付けても赤を失えば、その進行では打点を増やせていない。さらに対子が暗刻になる進行では平和も消える。\n\n💡手役の名前が増えたことと、点数が上がったことは別。完成した手から出ていく赤やドラまで含めて数えよう。今回は赤と平和を安定して残す方を選ぶ。",
+        "difficulty": "beginner"
       },
       "explanation": "打2s。赤0sを使い切り、平和が付く聴牌を残す。\n\n打7sでも受け入れは同じだが、4sを引いて一盃口にする時には0sが余ってしまう。一盃口を付けても赤を失えば、その進行では打点を増やせていない。さらに対子が暗刻になる進行では平和も消える。\n\n💡手役の名前が増えたことと、点数が上がったことは別。完成した手から出ていく赤やドラまで含めて数えよう。今回は赤と平和を安定して残す方を選ぶ。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:37.086Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:15.008Z"
     },
     {
       "id": 277,
@@ -22008,11 +22605,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打4s。6ブロックを5ブロックに整理し、筒子の両面嵌張を残す。\n\n344568pの8pは、ただの浮き牌ではなくカン7pを受けるフォロー。こちらを残して24sを外せば、萬子と索子の両面も使える。8pを切って6ブロックを抱えるより、残す形の働きがはっきりする。\n\n今回は両面が既にあるので、24sは内側の4sから処理する。\n\n💡まず残す5ブロックを決め、それから切り順を考える。4s切りを、今すぐ一向聴に進む打牌とは取り違えないように。"
+        "explanation": "打4s。6ブロックを5ブロックに整理し、筒子の両面嵌張を残す。\n\n344568pの8pは、ただの浮き牌ではなくカン7pを受けるフォロー。こちらを残して24sを外せば、萬子と索子の両面も使える。8pを切って6ブロックを抱えるより、残す形の働きがはっきりする。\n\n今回は両面が既にあるので、24sは内側の4sから処理する。\n\n💡まず残す5ブロックを決め、それから切り順を考える。4s切りを、今すぐ一向聴に進む打牌とは取り違えないように。",
+        "difficulty": "beginner"
       },
       "explanation": "打4s。6ブロックを5ブロックに整理し、筒子の両面嵌張を残す。\n\n344568pの8pは、ただの浮き牌ではなくカン7pを受けるフォロー。こちらを残して24sを外せば、萬子と索子の両面も使える。8pを切って6ブロックを抱えるより、残す形の働きがはっきりする。\n\n今回は両面が既にあるので、24sは内側の4sから処理する。\n\n💡まず残す5ブロックを決め、それから切り順を考える。4s切りを、今すぐ一向聴に進む打牌とは取り違えないように。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:40.295Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:16.612Z"
     },
     {
       "id": 279,
@@ -22020,11 +22618,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打7m。789mを一組取り出すと、残りは455679mの両面嵌張になる。\n\n打9mと直接の受け入れは同じだが、打7mなら平和を確定できる。8mを引いて5mを切れば、456m+789m+789mとなり、一盃口も付く。\n\n💡『広い形か、手役か』の二択にしなくてよい。今回は直接の広さを保ち、平和と一盃口の種まで残せる。長い萬子の暗刻だけに目を奪われず、順子として分け直してみよう。"
+        "explanation": "打7m。789mを一組取り出すと、残りは455679mの両面嵌張になる。\n\n打9mと直接の受け入れは同じだが、打7mなら平和を確定できる。8mを引いて5mを切れば、456m+789m+789mとなり、一盃口も付く。\n\n💡『広い形か、手役か』の二択にしなくてよい。今回は直接の広さを保ち、平和と一盃口の種まで残せる。長い萬子の暗刻だけに目を奪われず、順子として分け直してみよう。",
+        "difficulty": "beginner"
       },
       "explanation": "打7m。789mを一組取り出すと、残りは455679mの両面嵌張になる。\n\n打9mと直接の受け入れは同じだが、打7mなら平和を確定できる。8mを引いて5mを切れば、456m+789m+789mとなり、一盃口も付く。\n\n💡『広い形か、手役か』の二択にしなくてよい。今回は直接の広さを保ち、平和と一盃口の種まで残せる。長い萬子の暗刻だけに目を奪われず、順子として分け直してみよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:41.902Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:18.228Z"
     },
     {
       "id": 280,
@@ -22032,11 +22631,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。24mと24sの比較では、面子につながった萬子を残したい。\n\n萬子は6mを引くと245667mになり、両面嵌張へ育つ。単独の24sには同じ変化がない。一方、索子を払う時は4sを残しておけば、3s・5sで両面を作り、萬子の嵌張と入れ替える道が残る。\n\n💡愚形を選ぶ時は、完成までの受けだけでなく良形への育ち方も比較する。まだ両面が欲しい今回は、孤立牌として強い4sを残す切り順にしよう。"
+        "explanation": "打2s。24mと24sの比較では、面子につながった萬子を残したい。\n\n萬子は6mを引くと245667mになり、両面嵌張へ育つ。単独の24sには同じ変化がない。一方、索子を払う時は4sを残しておけば、3s・5sで両面を作り、萬子の嵌張と入れ替える道が残る。\n\n💡愚形を選ぶ時は、完成までの受けだけでなく良形への育ち方も比較する。まだ両面が欲しい今回は、孤立牌として強い4sを残す切り順にしよう。",
+        "difficulty": "beginner"
       },
       "explanation": "打2s。24mと24sの比較では、面子につながった萬子を残したい。\n\n萬子は6mを引くと245667mになり、両面嵌張へ育つ。単独の24sには同じ変化がない。一方、索子を払う時は4sを残しておけば、3s・5sで両面を作り、萬子の嵌張と入れ替える道が残る。\n\n💡愚形を選ぶ時は、完成までの受けだけでなく良形への育ち方も比較する。まだ両面が欲しい今回は、孤立牌として強い4sを残す切り順にしよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:43.515Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:19.841Z"
     },
     {
       "id": 281,
@@ -22044,11 +22644,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9p。789pを一組取り出すと、残りは134556pの両面嵌張。広さを保ちながら一気通貫の種を残せる。\n\n2pを引いて5pを切ると、筒子は123456789pとなり、一気通貫が完成する。先に1pを切ると、この打点上昇の経路がなくなる。\n\n💡同じ受け入れ枚数でも、どの引きが嬉しいかは違う。打点の種を残すために広さを大きく犠牲にしていないかを確認し、今回は両立できる9p切りを選ぼう。"
+        "explanation": "打9p。789pを一組取り出すと、残りは134556pの両面嵌張。広さを保ちながら一気通貫の種を残せる。\n\n2pを引いて5pを切ると、筒子は123456789pとなり、一気通貫が完成する。先に1pを切ると、この打点上昇の経路がなくなる。\n\n💡同じ受け入れ枚数でも、どの引きが嬉しいかは違う。打点の種を残すために広さを大きく犠牲にしていないかを確認し、今回は両立できる9p切りを選ぼう。",
+        "difficulty": "beginner"
       },
       "explanation": "打9p。789pを一組取り出すと、残りは134556pの両面嵌張。広さを保ちながら一気通貫の種を残せる。\n\n2pを引いて5pを切ると、筒子は123456789pとなり、一気通貫が完成する。先に1pを切ると、この打点上昇の経路がなくなる。\n\n💡同じ受け入れ枚数でも、どの引きが嬉しいかは違う。打点の種を残すために広さを大きく犠牲にしていないかを確認し、今回は両立できる9p切りを選ぼう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:45.123Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:21.445Z"
     },
     {
       "id": 282,
@@ -22116,6 +22717,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -22184,10 +22786,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:46.726Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:23.048Z"
     },
     {
       "id": 283,
@@ -22195,11 +22798,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。索子から567sを一組抜くと、455679sの両面嵌張が残る。\n\n9sを切ると3s・6s受けになるが、2sを切れば8sも直接の聴牌受けになる。6sは自分で2枚使っているので、別の4枚ある受けを残す価値も大きい。\n\n8sが入る進行で一盃口は消えても、赤0pとドラ6pが既にある。\n\n💡打点を持っている一向聴は、追加の手役より広さを優先しやすい。重なった順子の外側に隠れた嵌張受けを見つけよう。"
+        "explanation": "打2s。索子から567sを一組抜くと、455679sの両面嵌張が残る。\n\n9sを切ると3s・6s受けになるが、2sを切れば8sも直接の聴牌受けになる。6sは自分で2枚使っているので、別の4枚ある受けを残す価値も大きい。\n\n8sが入る進行で一盃口は消えても、赤0pとドラ6pが既にある。\n\n💡打点を持っている一向聴は、追加の手役より広さを優先しやすい。重なった順子の外側に隠れた嵌張受けを見つけよう。",
+        "difficulty": "beginner"
       },
       "explanation": "打2s。索子から567sを一組抜くと、455679sの両面嵌張が残る。\n\n9sを切ると3s・6s受けになるが、2sを切れば8sも直接の聴牌受けになる。6sは自分で2枚使っているので、別の4枚ある受けを残す価値も大きい。\n\n8sが入る進行で一盃口は消えても、赤0pとドラ6pが既にある。\n\n💡打点を持っている一向聴は、追加の手役より広さを優先しやすい。重なった順子の外側に隠れた嵌張受けを見つけよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:48.337Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:24.651Z"
     },
     {
       "id": 284,
@@ -22275,6 +22879,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -22351,10 +22956,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:49.941Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:26.262Z"
     },
     {
       "id": 285,
@@ -22362,11 +22968,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5m。3mの対子を雀頭にし、筒子の両面嵌張を残す。\n\n233457pは、1p・4pの両面にカン6pが加わる6枚形。先に7pを切ると、その6p受けを失う。一方の335mは雀頭を含む形なので、5mを残すことが同じように広さを増やすわけではない。\n\n💡対子を雀頭として使う場所と、面子を作る場所を分けて考える。『どちらも嵌張がある』だけで同じ価値にせず、引いた後に何面子できるかまで確認しよう。"
+        "explanation": "打5m。3mの対子を雀頭にし、筒子の両面嵌張を残す。\n\n233457pは、1p・4pの両面にカン6pが加わる6枚形。先に7pを切ると、その6p受けを失う。一方の335mは雀頭を含む形なので、5mを残すことが同じように広さを増やすわけではない。\n\n💡対子を雀頭として使う場所と、面子を作る場所を分けて考える。『どちらも嵌張がある』だけで同じ価値にせず、引いた後に何面子できるかまで確認しよう。",
+        "difficulty": "beginner"
       },
       "explanation": "打5m。3mの対子を雀頭にし、筒子の両面嵌張を残す。\n\n233457pは、1p・4pの両面にカン6pが加わる6枚形。先に7pを切ると、その6p受けを失う。一方の335mは雀頭を含む形なので、5mを残すことが同じように広さを増やすわけではない。\n\n💡対子を雀頭として使う場所と、面子を作る場所を分けて考える。『どちらも嵌張がある』だけで同じ価値にせず、引いた後に何面子できるかまで確認しよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:51.562Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:27.867Z"
     },
     {
       "id": 286,
@@ -22374,11 +22981,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。455679sを残すと、3s・6sの両面にカン8sの受け入れが加わる。\n\n打9sでは、この8sの4枚を失う。2sと9sがどちらも端寄りの浮き牌に見えても、9sは中ぶくれとつながる6枚形の一部として働いている。\n\n💡完全形一向聴では、孤立牌の基本序列だけで選ばない。今の聴牌受けを増やしている牌かを先に見る。ドラ8mの対子を保ち、広い索子から先に完成させよう。"
+        "explanation": "打2s。455679sを残すと、3s・6sの両面にカン8sの受け入れが加わる。\n\n打9sでは、この8sの4枚を失う。2sと9sがどちらも端寄りの浮き牌に見えても、9sは中ぶくれとつながる6枚形の一部として働いている。\n\n💡完全形一向聴では、孤立牌の基本序列だけで選ばない。今の聴牌受けを増やしている牌かを先に見る。ドラ8mの対子を保ち、広い索子から先に完成させよう。",
+        "difficulty": "beginner"
       },
       "explanation": "打2s。455679sを残すと、3s・6sの両面にカン8sの受け入れが加わる。\n\n打9sでは、この8sの4枚を失う。2sと9sがどちらも端寄りの浮き牌に見えても、9sは中ぶくれとつながる6枚形の一部として働いている。\n\n💡完全形一向聴では、孤立牌の基本序列だけで選ばない。今の聴牌受けを増やしている牌かを先に見る。ドラ8mの対子を保ち、広い索子から先に完成させよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:53.166Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:29.479Z"
     },
     {
       "id": 287,
@@ -22386,11 +22994,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2p。ドラ9mと役牌6zの対子を残し、筒子を245667pの両面嵌張にする。\n\n3p・5p・8pの受けに加え、9mや6zの縦引きも嬉しい。6zをポンして2pを切れば、5p・8p待ちの役あり聴牌になる。役牌を鳴いた後も、雀頭は9mで足りている。\n\n💡役牌対子は、雀頭にも面子にもなる。その両方を使えるよう、別の雀頭と良い待ちを残そう。形の受け入れと、鳴ける受け入れを一緒に確認したい。"
+        "explanation": "打2p。ドラ9mと役牌6zの対子を残し、筒子を245667pの両面嵌張にする。\n\n3p・5p・8pの受けに加え、9mや6zの縦引きも嬉しい。6zをポンして2pを切れば、5p・8p待ちの役あり聴牌になる。役牌を鳴いた後も、雀頭は9mで足りている。\n\n💡役牌対子は、雀頭にも面子にもなる。その両方を使えるよう、別の雀頭と良い待ちを残そう。形の受け入れと、鳴ける受け入れを一緒に確認したい。",
+        "difficulty": "beginner"
       },
       "explanation": "打2p。ドラ9mと役牌6zの対子を残し、筒子を245667pの両面嵌張にする。\n\n3p・5p・8pの受けに加え、9mや6zの縦引きも嬉しい。6zをポンして2pを切れば、5p・8p待ちの役あり聴牌になる。役牌を鳴いた後も、雀頭は9mで足りている。\n\n💡役牌対子は、雀頭にも面子にもなる。その両方を使えるよう、別の雀頭と良い待ちを残そう。形の受け入れと、鳴ける受け入れを一緒に確認したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:54.768Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:31.106Z"
     },
     {
       "id": 288,
@@ -22398,11 +23007,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9p。79pの嵌張を残すことより、233457pという6枚形の受け入れを優先する。\n\n9pを切ると8p受けは消えるが、1p・4p・6pを受けられる両面嵌張が残る。対子側を切ってリャンカンだけにする案より、全体で直接の聴牌受けが広い。\n\n💡個別の裏目が一つ見えても、それだけで悪い打牌にはならない。失う受けと残る受けをまとめて比較しよう。今回は赤0mとドラ4mがあるので、まず広く聴牌を目指したい。"
+        "explanation": "打9p。79pの嵌張を残すことより、233457pという6枚形の受け入れを優先する。\n\n9pを切ると8p受けは消えるが、1p・4p・6pを受けられる両面嵌張が残る。対子側を切ってリャンカンだけにする案より、全体で直接の聴牌受けが広い。\n\n💡個別の裏目が一つ見えても、それだけで悪い打牌にはならない。失う受けと残る受けをまとめて比較しよう。今回は赤0mとドラ4mがあるので、まず広く聴牌を目指したい。",
+        "difficulty": "beginner"
       },
       "explanation": "打9p。79pの嵌張を残すことより、233457pという6枚形の受け入れを優先する。\n\n9pを切ると8p受けは消えるが、1p・4p・6pを受けられる両面嵌張が残る。対子側を切ってリャンカンだけにする案より、全体で直接の聴牌受けが広い。\n\n💡個別の裏目が一つ見えても、それだけで悪い打牌にはならない。失う受けと残る受けをまとめて比較しよう。今回は赤0mとドラ4mがあるので、まず広く聴牌を目指したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:56.389Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:32.708Z"
     },
     {
       "id": 289,
@@ -22469,6 +23079,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -22536,10 +23147,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:57.983Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:34.317Z"
     },
     {
       "id": 290,
@@ -22607,6 +23219,7 @@
       },
       "kanChoice": false,
       "correctKan": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
@@ -22675,10 +23288,11 @@
           ]
         },
         "kanChoice": false,
-        "correctKan": null
+        "correctKan": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:52:59.581Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:35.922Z"
     },
     {
       "id": 291,
@@ -22686,11 +23300,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9s。9sの対子を外し、2pを雀頭にしたタンヤオの一向聴へ向かう。\n\n2pを切れば両面嵌張になって直接受けは増えるが、9sの雀頭が残りタンヤオは付かない。今回は萬子のドラと索子の赤もあり、タンヤオを加える打点差が嬉しい。鳴いても役が残るのも長所だ。\n\n💡タンヤオ正義は、タンヤオで5ブロックを想定できることが条件。今回は頭と両面を確保できるので、9sを落とす筋が通っている。"
+        "explanation": "打9s。9sの対子を外し、2pを雀頭にしたタンヤオの一向聴へ向かう。\n\n2pを切れば両面嵌張になって直接受けは増えるが、9sの雀頭が残りタンヤオは付かない。今回は萬子のドラと索子の赤もあり、タンヤオを加える打点差が嬉しい。鳴いても役が残るのも長所だ。\n\n💡タンヤオ正義は、タンヤオで5ブロックを想定できることが条件。今回は頭と両面を確保できるので、9sを落とす筋が通っている。",
+        "difficulty": "beginner"
       },
       "explanation": "打9s。9sの対子を外し、2pを雀頭にしたタンヤオの一向聴へ向かう。\n\n2pを切れば両面嵌張になって直接受けは増えるが、9sの雀頭が残りタンヤオは付かない。今回は萬子のドラと索子の赤もあり、タンヤオを加える打点差が嬉しい。鳴いても役が残るのも長所だ。\n\n💡タンヤオ正義は、タンヤオで5ブロックを想定できることが条件。今回は頭と両面を確保できるので、9sを落とす筋が通っている。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:53:01.198Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:37.532Z"
     },
     {
       "id": 292,
@@ -22698,11 +23313,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打5s。今回は瞬間の受け入れ最大より、聴牌した時の良い待ちを残す。\n\n萬子の467889mは、789mを抜けば468mのリャンカン。5m・7mのどちらを引いても、余った萬子を切って索子の3s・6s待ちにできる。打8mでは7m受けがなく、萬子に先に入って良形になるのは5mだけだ。\n\n💡一向聴では、次の変化より直接聴牌した時の待ちを重視。受け入れ枚数だけでなく、『嬉しい聴牌になる牌』を数えて選ぼう。"
+        "explanation": "打5s。今回は瞬間の受け入れ最大より、聴牌した時の良い待ちを残す。\n\n萬子の467889mは、789mを抜けば468mのリャンカン。5m・7mのどちらを引いても、余った萬子を切って索子の3s・6s待ちにできる。打8mでは7m受けがなく、萬子に先に入って良形になるのは5mだけだ。\n\n💡一向聴では、次の変化より直接聴牌した時の待ちを重視。受け入れ枚数だけでなく、『嬉しい聴牌になる牌』を数えて選ぼう。",
+        "difficulty": "beginner"
       },
       "explanation": "打5s。今回は瞬間の受け入れ最大より、聴牌した時の良い待ちを残す。\n\n萬子の467889mは、789mを抜けば468mのリャンカン。5m・7mのどちらを引いても、余った萬子を切って索子の3s・6s待ちにできる。打8mでは7m受けがなく、萬子に先に入って良形になるのは5mだけだ。\n\n💡一向聴では、次の変化より直接聴牌した時の待ちを重視。受け入れ枚数だけでなく、『嬉しい聴牌になる牌』を数えて選ぼう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:53:02.820Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:39.138Z"
     },
     {
       "id": 293,
@@ -22710,11 +23326,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打3p。打1mの完全形と受け入れ枚数は同じなので、平和が付く方を選ぶ。\n\n134556mは、4m・7mの両面にカン2mが加わる両面嵌張。これを残し、筒子を23pの両面に固定すれば、直接聴牌した時に平和を取れる。打1mから3pや9pを重ねる進行では平和が付かない。\n\n💡『弱い所をフォローして、強い所はフォローいらず』。端にかかる1p・4pの両面を固定し、萬子側を広く持つ。今回は広さと打点を両立できる。"
+        "explanation": "打3p。打1mの完全形と受け入れ枚数は同じなので、平和が付く方を選ぶ。\n\n134556mは、4m・7mの両面にカン2mが加わる両面嵌張。これを残し、筒子を23pの両面に固定すれば、直接聴牌した時に平和を取れる。打1mから3pや9pを重ねる進行では平和が付かない。\n\n💡『弱い所をフォローして、強い所はフォローいらず』。端にかかる1p・4pの両面を固定し、萬子側を広く持つ。今回は広さと打点を両立できる。",
+        "difficulty": "beginner"
       },
       "explanation": "打3p。打1mの完全形と受け入れ枚数は同じなので、平和が付く方を選ぶ。\n\n134556mは、4m・7mの両面にカン2mが加わる両面嵌張。これを残し、筒子を23pの両面に固定すれば、直接聴牌した時に平和を取れる。打1mから3pや9pを重ねる進行では平和が付かない。\n\n💡『弱い所をフォローして、強い所はフォローいらず』。端にかかる1p・4pの両面を固定し、萬子側を広く持つ。今回は広さと打点を両立できる。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:53:04.422Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:40.735Z"
     },
     {
       "id": 294,
@@ -22722,11 +23339,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打9m。ドラのない今回は、直接の受け入れを保ちながら一盃口の種を残す。\n\n打6pなら両面嵌張で平和が確定するが、打9mも受け入れ枚数は同じ。5pを引いて3pを切れば、筒子が456p+456pとなり、萬子の3m・6m待ちで平和と一盃口が付く。\n\nもちろん、縦引きで平和が消える進行もある。\n\n💡打点が既にある手と、まだない手で比較の重みを変えよう。形の名前だけで固定せず、自然に高くなる受け入れを残したい。"
+        "explanation": "打9m。ドラのない今回は、直接の受け入れを保ちながら一盃口の種を残す。\n\n打6pなら両面嵌張で平和が確定するが、打9mも受け入れ枚数は同じ。5pを引いて3pを切れば、筒子が456p+456pとなり、萬子の3m・6m待ちで平和と一盃口が付く。\n\nもちろん、縦引きで平和が消える進行もある。\n\n💡打点が既にある手と、まだない手で比較の重みを変えよう。形の名前だけで固定せず、自然に高くなる受け入れを残したい。",
+        "difficulty": "beginner"
       },
       "explanation": "打9m。ドラのない今回は、直接の受け入れを保ちながら一盃口の種を残す。\n\n打6pなら両面嵌張で平和が確定するが、打9mも受け入れ枚数は同じ。5pを引いて3pを切れば、筒子が456p+456pとなり、萬子の3m・6m待ちで平和と一盃口が付く。\n\nもちろん、縦引きで平和が消える進行もある。\n\n💡打点が既にある手と、まだない手で比較の重みを変えよう。形の名前だけで固定せず、自然に高くなる受け入れを残したい。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:53:06.028Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:42.340Z"
     },
     {
       "id": 295,
@@ -22794,6 +23412,7 @@
       "kanChoice": false,
       "correctKan": null,
       "correctRiichi": null,
+      "difficulty": "beginner",
       "reviewed": false,
       "reviewStatus": "fix",
       "reviewUpdatedAt": "2026-09-10T17:23:36.408Z",
@@ -22862,10 +23481,11 @@
         },
         "kanChoice": false,
         "correctKan": null,
-        "correctRiichi": null
+        "correctRiichi": null,
+        "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T18:53:07.634Z"
+      "overrideUpdatedAt": "2026-09-14T20:13:43.951Z"
     },
     {
       "id": 296,

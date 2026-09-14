@@ -1,0 +1,2366 @@
+{
+  "schemaVersion": 1,
+  "revision": 77,
+  "recordedAt": "2026-09-14T20:13:46.601Z",
+  "snapshotCursor": 549,
+  "policy": "Two levels. Beginner-exclusive playlist questions are beginner; other classifications are reviewed initial assignments and remain editable.",
+  "questionCount": 292,
+  "changedCount": 205,
+  "verifiedChangedCount": 205,
+  "counts": {
+    "beginner": 180,
+    "intermediate": 112
+  },
+  "skipped": {},
+  "finalDrift": [],
+  "targetFingerprint": "f7aeba1671502461679c25c38b6405821e0fde83de75a6b24ae68e5426bf00b1",
+  "protectedOmittedFields": [
+    "difficulty",
+    "overridden",
+    "overrideUpdatedAt"
+  ],
+  "protected": {
+    "count": 292,
+    "beforeSha256": "30890f537b9c54634012ac66f9be31193ad378410c6edbc78203bd221e595d8d",
+    "afterSha256": "30890f537b9c54634012ac66f9be31193ad378410c6edbc78203bd221e595d8d",
+    "unchanged": true
+  },
+  "entries": [
+    {
+      "id": 1,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "3632b7b40b373ff53ba3f75278fa60451dc95e82dd621b213e4ea01ffd1fddee",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:15.996Z"
+    },
+    {
+      "id": 2,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "4371deced1c527f933f8b4b6ea3626082e770b5bfbf361af06d4b97d9ca513cc",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:17.596Z"
+    },
+    {
+      "id": 3,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "11ab843fbb406ce92c636899eec247880c8dbe4597b318e223e5fafd1433c67d",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:19.203Z"
+    },
+    {
+      "id": 4,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "f559285f539c87a21781c25f4dce2fcf0d5e3cb56e617c082a06ed713f96b70d",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 5,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "現在の待ちは同じでも、赤0mを後からチーして合法的に入れ替えられるかが違う。重なった順子と喰い替え制限を踏まえ、チー後の打牌まで読む必要がある。",
+      "protectedSha256": "a396f9e0d0471eb2898e3862d48176564ff192927c051b4c0ca70f029881d551",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 6,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "445677sの雀頭を4s・7sに置き換え、両方のくっつき受けを合算する。孤立牌同士の比較に見えて、雀頭の流動性を含む複合形の評価が必要。",
+      "protectedSha256": "e71f845447b0f836d5d7e71b6f399cf43beeba5bb6b4ba39cf892953985aca9b",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 7,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "ad8fe52e276a17c8e5a3cec85b6a01777cb0c8ede32a7f4b3b0bb157fc516a08",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:20.827Z"
+    },
+    {
+      "id": 8,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "9e6f09d4df993d4e5b887143ffde990ad7544fd89198297a1308d124702356e7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:22.426Z"
+    },
+    {
+      "id": 9,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "984d0b56bba97292b7b4c7ac84d23e46c3dbd09f430a1d9523635842d5ebb9b4",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 10,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "a49d494c8887fc65a442870f216921f2b47b17d02e6dad4d9d24716aee75a650",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:24.039Z"
+    },
+    {
+      "id": 11,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "e64aaf86c4c0e628664e50e2b4d7b3738ea40f20d3111eb6a9aeef549927c4be",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 12,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "d28232cd43af6d2ab24b03bebb06c69375dce09fb1ce0d25ce3541ddc86b14bc",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 13,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "b032e6a6b52642b0e5f8884a6984d704f8feac6b0227356ef2f012df1c163837",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:25.632Z"
+    },
+    {
+      "id": 14,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "db14312af90183546cf8027525a246ed29239bdd1e11d705754b4f15914bb27d",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 15,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "受け入れ最大のヘッドレス2型を避け、三面張を残す1型へ取る例外。目先の28枚と20枚だけでなく、各ツモ後の最終形とドラの使い切りを比較する。",
+      "protectedSha256": "10766f1332efb70a532b0d7cb39f12cb341a3d2782ff77a9476327c066980562",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 16,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "01f946678b538dc175089e4a750bc5a4929ee7c190f0e3ad3735b55677b745eb",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:27.243Z"
+    },
+    {
+      "id": 17,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "6f7c8052b38ec68c2c35f498d44752b9b02621d69c160d3e9577213199c56e9a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:28.842Z"
+    },
+    {
+      "id": 18,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "7d9860add6461a4ae30d4cd0758e1f5f6c0815ce83793b772fa8acb188aa59cb",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:30.449Z"
+    },
+    {
+      "id": 19,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "9a2acacfa47c24f12147c6d4d39414feb2d263ed48bc69fad36d4a90516da96c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:32.061Z"
+    },
+    {
+      "id": 20,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "30bfbe80588b55904f0d9c9f5ce8df4498bba0806384728072ef604f1fe31d63",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 21,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "1ef259e06e3a8d62e717e9c54dad1bbd915f530b49ef23ff39e1f8f4e7673fcf",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:33.676Z"
+    },
+    {
+      "id": 22,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "a48b4cc3dd168ec41004e4fd3fa56d938d21cb75e7b5e18ddbe37d48558d581a",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 23,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "2f54b0e020a635594177e62f550df31d87ab2c7e337c24da7f94e106015114bc",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 24,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "ヘッドレス2型、雀頭固定、三面張を残す1型という三候補を、受け入れ・最終形・ドラ保持の三点で比較する。単純な両面優先では解けない。",
+      "protectedSha256": "f11433720e5fece4feb27824739e4dc2e1d5513869debf9884c8a66434da76e5",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 25,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "0da40c79ade4989e2024d070e056029bd45706045c86205cd8ea4108916b5890",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 26,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "884d4f534feb037f92fccef074eb71748c9780de49f151f14147cdc381daf9f3",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:35.314Z"
+    },
+    {
+      "id": 27,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "92b8cb502b55c71f80da561de04ad9e5e239aaf21f0ddb3999864546426b00e2",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:36.914Z"
+    },
+    {
+      "id": 28,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "4b0a7e13ca3f4320f73ba9c53ca466c1e60420ad02f65b3c05323ef5092f8646",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:38.507Z"
+    },
+    {
+      "id": 29,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "ae207566796a4f5b7db8be43a9155cce7ec9f394eeca79396e3d879a6e4d36c5",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 30,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "169c7cd2d9e535da9bfe168c5fe685d3ba3704028187e0d567fed85c99d57ada",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:40.131Z"
+    },
+    {
+      "id": 31,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "52c80222c9cad099dbb2672c6ff2c5743f206ed2b84b5e6504ebd76943b8bb60",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 32,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "b5194de4bf36fe13b0ee7cdb3e9b57ea0017ef06f12ce0ed8c44bb2e8cfcf633",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 33,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "183ab4a8cfb4c2c12a7965fbd4a8eeec621bbd31fba5b2b273691f0f9116261d",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:41.733Z"
+    },
+    {
+      "id": 34,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "57c4a62877b8a401d7f435afc7b027e24793b2f850a428d827d1f62a30f5b1db",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 35,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "20b1d2127eea2beee3daa335b727604c22e01ae8b39477e97970748f181237bd",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:43.340Z"
+    },
+    {
+      "id": 36,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "28c264a4839a7072da74014ef992b209f5818374d118c6deeeb6d61afd95396e",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 37,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "ab4b8b781407a1b39b44484d348281bdfd63493fbd9259ce8f99ea6e2563f738",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:44.955Z"
+    },
+    {
+      "id": 38,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "長い筒子から順子を複数の位置で抜き、飛び対子と愚形フォローを見つける。短い飛び対子の定石を、重なった面子を含む形へ応用する問題。",
+      "protectedSha256": "188636e34106686aec27cf9dad39082cdef40456f7c925c2215095f6d2af4240",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 39,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "34d56b3323edd922ae44696e40772e64eb1d601d06004d62a25339b320ccff5c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:46.547Z"
+    },
+    {
+      "id": 40,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "暗刻と雀頭を入れ替えて5種類の待ちを読み、見えている両面より複合形を優先する。三面張に単騎を加える見方とドラの両面を残す判断を併用する。",
+      "protectedSha256": "c29f3aa9b9cbe181c348707410792975b8e765e310fd74792f641d1e76f42524",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 41,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "48e02e969a947652fde38976532fb2ebfce35196616a2b1d758a0efa22a6b829",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:48.148Z"
+    },
+    {
+      "id": 42,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "358c4e5d908f7ac849e4e3b041e376224901a25b5503e6eed58fb5f2f06b01e2",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 43,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "8114594713f4c1db9fca21339fb8cb3fa658665fe6b55237cda887043a47d1f6",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 44,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "暗刻を含む長い筒子の4種類14枚待ちと3種類9枚待ちを読み分け、安目でタンヤオが消えても十分な打点があるかまで比べる。",
+      "protectedSha256": "934d344f73f8a33930cac7882b3bb3fb21935575c861783e4cada1e738b74d28",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 45,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "長い筒子から二種類の6枚形を抽出し、さらにタンヤオを確定する第三案も比べる。受け入れが似た候補の平和・一盃口・赤の使い方を整理する複合判断。",
+      "protectedSha256": "008a5eb30a2d77ae4f437278f7d73aebb81e660128c6121bc274c1395b73d92c",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 46,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "635bcd83683c12edf695d1c90859a2392c7e142868b522be399906d5d8409ff3",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:49.763Z"
+    },
+    {
+      "id": 47,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "8664eadea517b41d4350203181f4582b5e0b56debf879eb6a7ed2dd2653ab2d7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:51.375Z"
+    },
+    {
+      "id": 48,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "bffe6ce92803896e3fda25a7db7e370b831db839461f92b3de893403a1cfd469",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:52.974Z"
+    },
+    {
+      "id": 49,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "fe69dac2701f7bdb63dd64504aa13dab886136c91eaa8e4df91ae729ddb2a8e5",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:54.594Z"
+    },
+    {
+      "id": 50,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "73cbc849eff22c804337b10748de3db0c324a73a183f1641efbc474d41bd7fb7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:56.189Z"
+    },
+    {
+      "id": 51,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "f763d1c9a22afc137e7a43ad34e85b70b7e6aac3233038cc3e17765c47ba6b6c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:57.796Z"
+    },
+    {
+      "id": 52,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "暗槓前後の聴牌枚数が同じでも待ちの質が変わる。いまは対子を外して良形を残し、5pを引いた時だけカンするというタイミングまで判断する。",
+      "protectedSha256": "39dfc80dbf936ea186872210f96667a1fe91175d440655921805c7f8a5865f95",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 53,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "463183ccf3cf7b7289b7061cd83a686344d49252e5585f85385c144d1789d01e",
+      "savedOverrideUpdatedAt": "2026-09-14T20:08:59.408Z"
+    },
+    {
+      "id": 54,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "1464e52a4ae9fada3bd5b4c9f34e76181fdb6c7530baa0aaa41da82b2221c76b",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 55,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "7dfd41ffda9ef9194b10f4f37f5faad8bf23c86c4b46c37ace0ecc1857a01916",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 56,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "52158d746c840328017a470ce08a2732e4b7c9341858b0fd415a58ad4c63e63a",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 57,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "煙突形の変則三面張と両面を、ドラ表示牌で減る枚数まで含めて比較する。さらに平和と一盃口の打点差を加味して、1枚少ない両面を選ぶ。",
+      "protectedSha256": "87c2483088604a1a0830b25fefcce6a186b044772804f83ea0ead724f24f2447",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 58,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "fb91edf9a97defb220ee79b499eecdf096e3523ea595a61c636d1c81e0da5b75",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:00.994Z"
+    },
+    {
+      "id": 59,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "783bbb9f61e6308e8507f2b7c4da6227aa0627f005ca137642be64ba20dedb13",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 60,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "cccbd05c800813fb4adc444c3c2a46b252190575c44449ef7da432ff0df08be5",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:02.601Z"
+    },
+    {
+      "id": 61,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "ea4c15291e01cbbf388a6dc9bbf6af953f55e25537aeb8407b39301f4f1b9c3c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:04.206Z"
+    },
+    {
+      "id": 62,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "7098e8483281beb9a6c602aac02f57230862a4016d202dbaa86c1b40f269438a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:05.808Z"
+    },
+    {
+      "id": 63,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "e9333618fc1f7514ef35b70ca846b23df2011856823808570d46e192506540b7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:07.429Z"
+    },
+    {
+      "id": 64,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "1bfbf094ec7f248c202fc38f7213015de47fa51d288df1dc9c6691b6bea44259",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:09.023Z"
+    },
+    {
+      "id": 65,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "同じ嵌張聴牌の取り方でも、後の1pツモから3pを切って変則三面張へ変化できるかが違う。副露後の聴牌を維持しながら一手先の待ちを組み直す。",
+      "protectedSha256": "295cf770f5091e483e5e120f1e075c7f3d8a5e6a5fa1070a9778872d213ac00d",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 66,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "4936503ec3dabf4e6af7c31a694f74d367d75754d149671413c4c6aee06e6164",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:10.641Z"
+    },
+    {
+      "id": 67,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "5a7a04711a066595d9c4c30c9a8dd7da01bfbcded79e1597d8d4efcc36245555",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 68,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "1da4825d657bd0f605f28b53da89b49be2693c423042f99133bbf9439792af57",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 69,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "841c01d62b11416d7988fa31605d7aa23810a1f9405ac670e20d9792613d2837",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 70,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "dd40740fe70bd568b59119a8a64d932eb0d29f48659995e68af048683d40c11c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:12.237Z"
+    },
+    {
+      "id": 71,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "97e06f8747414e1ea09816851e0d43093e63e5ab69ea70f1aa2dc6913acf8be2",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:13.841Z"
+    },
+    {
+      "id": 72,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "ca2f461c945a7fb71984a9e877b258cd5e7d6f61d8b049a3fe02c2308f47b4f0",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:15.456Z"
+    },
+    {
+      "id": 73,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "雀頭そばの孤立牌は受け入れが狭いという原則より、両面対子と四連形の相性を優先するケース。総受け入れと良形聴牌の受け入れを分けて数える。",
+      "protectedSha256": "0778be427cdceddfa5d731186fbc6e02deb8fc17c0f2331b178a43745ed148ff",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 74,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "d28f51e0cbc112258a5ef82d0f2026ca0b7c5b40569f65e430f0dbbce3457f9e",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:17.073Z"
+    },
+    {
+      "id": 75,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "c88baae18d5146264ed0bcb64200a8f310f4a094ffeab121462656459e67863b",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 76,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "連続形を含むヘッドレス2型を広く取る原則の例外。端に偏った77889sでは雀頭を作った後の待ちが弱く、平和を確定する形を優先する。",
+      "protectedSha256": "8e014cf18f363da9c4bd21826c360dc5bb38cb1ccfd9eb768abd84706abc1d59",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 77,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "322e74e630fa79a3c6f82686672755a74be66e1f79b285e4335d90e00e62f8c4",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 78,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "65878944a4090c1d5a7e9461db4c74330581de0c4a967345bfff37b448e67963",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:18.701Z"
+    },
+    {
+      "id": 79,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "901c4a591a171008ba650184d31b7b1d36a19387ce40c0df8b342eb8fc8e2c7a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:20.287Z"
+    },
+    {
+      "id": 80,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "22630ba38392c5fd98863c61273a1ba575d9d182f0d23349aa619cef20fc6b54",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 81,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "51802c223270d01d74e788b45f73b0c84c1e5b661e60ae59d3c96aab751f9689",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:21.907Z"
+    },
+    {
+      "id": 82,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "e2bb793f9ec8786dfe896b4017363c255dc64471c71553bd8fcefeeab4f187fb",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 83,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "a8168b02a4597d72d97a56eb0ac69a7da75aca272838d2b8a8abd970aa0fb69d",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:23.518Z"
+    },
+    {
+      "id": 84,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "199a662688acdab8bc8ac27b4fe18ee8cda2f04c1a2fcc8dd6d1c92a2073eca6",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:25.105Z"
+    },
+    {
+      "id": 85,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "a70c18905f9077e82ceff5c37b87d12f8a79a0e76c1005c09ddeb46b732e1a29",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:26.720Z"
+    },
+    {
+      "id": 86,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "同色の槓子・暗刻・対子が重なった形を、順子と雀頭へ何通りにも組み替える。カンの可否を、待ちの減少と平和・一盃口・三暗刻の両立から判断する。",
+      "protectedSha256": "bc460968772c2a5b43ba3ec6f679d0ca405ed6ce913b79886d6d4b39b23661cd",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 87,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "1e2cadb1ebd11388343b6b433bac3fa9819c2837c78ab8bc727beb4376546957",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:28.321Z"
+    },
+    {
+      "id": 88,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "433d5ee1352e5b4da774bf723f6feaba1f114e5ae1c41202b1379ecb21c93d58",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:29.933Z"
+    },
+    {
+      "id": 89,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "c260a48f327912cc9af89cb3c1745fa9ded56afc1e88f27950eeb16068b99402",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:31.526Z"
+    },
+    {
+      "id": 90,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "暗刻周辺をリャンカンと見るだけでなく、雀頭を移動してヘッドレスの別解釈を使う。目先の受けと、重なり時の両面変化・変則待ちを両方比較する。",
+      "protectedSha256": "7eb2e90fd5b70beab618197e8e4fe688c62893ca3cec24f845e59f52c336ae3e",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 91,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "249649853e73e084eaa7088ab64c9ce7458e40ba1d11a3c9e8c82a01dff22d69",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:33.140Z"
+    },
+    {
+      "id": 92,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "88b088990d823e627cc5764ad107236d04f4c310ab88c1d0c187b05883aff125",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:34.743Z"
+    },
+    {
+      "id": 93,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "0a4407d47c0314c42772ae4b5d55d07ea66ab175c8849c968c51d501a4cfd447",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 94,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "a1a51bb1253a7787532289655b7d0250009ece8c15b220283c2ad42553737985",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:36.346Z"
+    },
+    {
+      "id": 95,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "a62392afb7f74ac364feab9bea344f8bbd7bc293a17309a792604f7ed9bb8ba7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:37.950Z"
+    },
+    {
+      "id": 96,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "広いヘッドレス2型より、暗刻と隣接孤立牌を残す1型を選ぶ例外。カンチャンを払った後、複数のツモでどのように良形聴牌するかを読む必要がある。",
+      "protectedSha256": "34d19f5f558cab23bbc524ed2bbfc961ce287572bfa1417a1a45f32670ebd030",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 97,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "カンをせず4種類の待ちを残し、別の広い待ちとのタンヤオ差まで比べる。暗刻・雀頭・ノベタンの複数分解に加え、ドラ表示牌による枚数補正も必要。",
+      "protectedSha256": "38efda7ec7592d32b0f6484d0bc38abd3302dc57fc150f7a0075586ed6b92b79",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 98,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "aa3ed539f06b045eb48f0153db8aaa6382bd56a9377bf4da3203c5571af066d7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:39.554Z"
+    },
+    {
+      "id": 99,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "a2432dbad83c9a47b1b417638f08f1aa80630f0232b8d3e0a23b2e72d16f0b36",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:41.173Z"
+    },
+    {
+      "id": 100,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "302c17b4ea15b62271d26845359ea6c571d01c46e9c9a5440c575bfcfc8066ea",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 101,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "71fd0e7fc92d08ffabde3fef21c5debd712161596d9573e446bab0c76a716490",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:42.766Z"
+    },
+    {
+      "id": 102,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "f2214771accccc9ce2e158e7069d6cf1d7130950a069b3d113fc2812e5229860",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:44.384Z"
+    },
+    {
+      "id": 103,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "92d815e5a5569a8515fc5dbd6c8cda7231234b6f38b2f50371e0aac4cd6ebcea",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:45.989Z"
+    },
+    {
+      "id": 104,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "1725d9c4b718c13bced4da514144866ac1b92b9b381630262573331ab9520ba4",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 105,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "8fc5c70165a0804a6aa215303914c97dc4fe96a8270a6edd00e4bbb2f9112199",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 106,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "98b28e0cf519ac9be5a7c22af4b4fee9a203f678764fd880da99971d82c9f072",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:47.593Z"
+    },
+    {
+      "id": 107,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "88a9cde1a03099bdac0d115322016590a06bbf73298adcbf7cab1022ba22c291",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:49.198Z"
+    },
+    {
+      "id": 108,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "478a58babc56804eb369ffd3ddcd57de8c1b5df1ab68859103536f68d57d3402",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:50.809Z"
+    },
+    {
+      "id": 109,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "580499ebe1b8f7ad97d49017d6225075d8b0d60f60bd2c02826802e6fb455eb2",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:52.412Z"
+    },
+    {
+      "id": 110,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "77af9d2645956d361afd78fd1fed74c1f78fb2a4bfe9af68386018876185df04",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:54.031Z"
+    },
+    {
+      "id": 111,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "5a2dc8101bee554958d888ec1d430639e6572d480b34c706b8c84b0c7f817496",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:55.628Z"
+    },
+    {
+      "id": 112,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "812de8556a07c4e082b21cba96bf39606949463850f34e24b6ffe80af37f5bcb",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:57.238Z"
+    },
+    {
+      "id": 113,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "cf35231e840e8568021ec627a2b21dc1351e42715c2aa36dff2c9f048216c4d3",
+      "savedOverrideUpdatedAt": "2026-09-14T20:09:58.851Z"
+    },
+    {
+      "id": 114,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "6ba2944ced2240998a754300be50f4ff4fa1f55193120671c864abd703816141",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 115,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "85edb87a4add12b0a93833102585da298504d7c788e72e51f121a6601cf02dbf",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 116,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "fc17d34d960239aed73f9be73ee5a1c46e986b5da153d771bc14f0f5a4f516f5",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:00.464Z"
+    },
+    {
+      "id": 118,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "d277e8f277bbf8bac8b410c03211f11ab2a635f2032eb098499d7554901275b8",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 119,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "06d627cbcfbcdc920072f233264ef1e76043cf14e54c908597028587b4c56152",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 120,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "a5477dfe8b26700d1e5f99d6afe29a3bd75a011a77afdd0959028daada59ed8b",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:02.078Z"
+    },
+    {
+      "id": 121,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "79ee3252d3ffb0b4873679ccf119a639eaa82d1925c9db9af2c3d8b35a6badc1",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:03.680Z"
+    },
+    {
+      "id": 122,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "be758e1a12c293b685b739ef405ed17988f005e05f6b53ef9adfbc7185850f21",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:05.282Z"
+    },
+    {
+      "id": 123,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "d0acfe5f1f01b4246c951e56a2fe947812333192570f1e2559d7f3403c29a67d",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:06.882Z"
+    },
+    {
+      "id": 124,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "bebd5ff8b7c9fc2a144c86f46741238dd8ce1d2929290da2450f4872921d2468",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:08.492Z"
+    },
+    {
+      "id": 125,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "索子の7枚形を暗刻・雀頭・順子に分け直し、3s・5s・6s・8sの4種類を漏れなく数える。別色の変則三面張との実枚数比較が必要。",
+      "protectedSha256": "09886445440403b0885c2ff67ae0695168adf64f5ea91c8d16738302f2539069",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 126,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "5c3bdaa403f14fdafb036115f58f8e7d802b209defc5bdf29db60e6e87c6576b",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:10.087Z"
+    },
+    {
+      "id": 127,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "81b71a801c8fa1475d883597fb47db60e544b6a7edf0619412f07471dbd86247",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 128,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "08785022256ff8c1d9529d62a7f180977a735f6237f2f392fd4d705628ed5655",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:11.695Z"
+    },
+    {
+      "id": 129,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "e4d1e5905c77fb7fd1ca27dd1d9fbf1a80dac04eefd0105a0edae517c91e4de4",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 132,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "1b419d3a4929d64c8c206d77ada7048657ce97871179f27bd3af831fc0994e5b",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 133,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "b3c3a77bb9b413d5fcd2c02f85d47b1184ac3a477e351c4418ceaf310047dfed",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 134,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "d2f4ef371ca1369c413fdb0329b3a7db8a192f3580e3e49466170a13de99eba9",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:13.292Z"
+    },
+    {
+      "id": 135,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "f38015ba9f86f2f6c26b0dd9a5be93af8bf68568a44fd522a77fd29c1705d954",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:14.896Z"
+    },
+    {
+      "id": 136,
+      "before": "beginner",
+      "after": "intermediate",
+      "reason": "待ちも翻数も同じ二つの立直を、暗刻が残る40符と平和の30符による5200点・3900点の差で選ぶ。手役名だけではなく符計算まで要求する。",
+      "protectedSha256": "80b2371e089398007ae26cb76c7638194384e4c00256b46ee4db662e8b9860db",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:16.505Z"
+    },
+    {
+      "id": 137,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "副露手の33556sを残し、4sチー後に3sを切って両面へ取れることを読む。短い見た目の違いで裏目の有無が変わるため、鳴いた後の面子と打牌を確認する必要がある。",
+      "protectedSha256": "c22d9cbfbf8a20075608da34e3d86d28762d734cdabd63d9080034883ebe4d0b",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 138,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "0eceda8c73ec3ccb09d91ba7f1f77df7b6a5293b0d7d48f2eeed20bef9cf949d",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:18.108Z"
+    },
+    {
+      "id": 139,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "副露した長い筒子の4種類待ちを、三色になる分解とタンヤオになる分解の両方で求める。待ちの列挙に加えて各和了牌の役を確認する。",
+      "protectedSha256": "233ec2153be998e13d204d416b5701fb9d9bb0c2801558aeb57bb4da8106b91e",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 140,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "筒子の9枚形を複数の順子・雀頭へ分け、6p切り20枚と9p切り19枚の微差を数える。さらに外側の両面が残る待ちと打点を確認する。",
+      "protectedSha256": "fa6bcb20b9723a9b26642968bca8f8e316126f91e88660d3e1e1e58df851c1a5",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 141,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "f2edea30c7c099cc330d88694d8c4ae2d6ec24d19d4f3a5ee8a2d961a30f9e0d",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 142,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "0888d94e50b6a2d03c16ff8e026897a6e399e121be3115c1858de3855649cdbf",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 143,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "60e592141f5e728fc0d781c67e94fe0294f8326405571ec23635c017b97573a0",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:19.708Z"
+    },
+    {
+      "id": 144,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "f8679ca1d55035438c4597a25e85d16b657d797cb8606cef9971df71ea46ebe7",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 145,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "ed61a609e06151e0046911eb22b5f6b76f5ca5f0a65881cb98fdfb14ab638497",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 146,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "b7a456f1ae4e9ff195f47bcd9c755e2cb827d70086479aafff7766c3ef7a7360",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:21.326Z"
+    },
+    {
+      "id": 147,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "d9b00e84f395ef7de739780c01366b508b1f825dab385ce94987e93d52add0e5",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:22.917Z"
+    },
+    {
+      "id": 148,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "858ad0d8b2cc1b55059a8433da570de3ca820827cedc32a683032055907985e2",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:24.532Z"
+    },
+    {
+      "id": 149,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "197565a414ddc1d2fd850cf764da5989cd1021bcb14eb06a94676a4c40228785",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:26.136Z"
+    },
+    {
+      "id": 150,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "860cb34b16615552783a93a6bf021f63f05ca6a5538088ab3b6d8db4b45f8d8c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:27.742Z"
+    },
+    {
+      "id": 151,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "1d86e80961c69a6f64c8b7429462c7272ea1beed5a01f40b40320a96944200a8",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:29.360Z"
+    },
+    {
+      "id": 152,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "0b03dbda749ea8edde335d4e913513f7867073098a9a2884b7d1db6b6e7a3ccc",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:30.962Z"
+    },
+    {
+      "id": 153,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "4c991ab4f6ea4ce896052ead7fcf4190e09aa746fee5dde357ffad1b857fe0ee",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:32.577Z"
+    },
+    {
+      "id": 154,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "暗刻を固定すると見落とす2p待ちを発見し、変則三面張10枚とノベタン6枚を比較する。離れた暗刻と雀頭を同色の7枚形として組み替える応用。",
+      "protectedSha256": "d97551839248eb5d4ef6bc31f46423693a6990de3c5f7f6b36f0cf806576a1ea",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 155,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "92864958708fb050733b5480261f8bca7e204e10c8c5b04625e88e0828d747f8",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:34.181Z"
+    },
+    {
+      "id": 156,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "孤立牌8p・8sを、都合のよいツモを入れた後の向聴数と最終形で比較する。索子が離れリャンカンへ育つ複合変化を二手先まで読む必要がある。",
+      "protectedSha256": "04698f9e01d977ef19e234088431cb0360a59ee971b0b953552a8843bc781fe9",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 157,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "b581cf14a8c4d471d69f8ad97dd9be6f06f685ef8b59fc863c270a954a8f4e38",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 158,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "b9b70137864c5cf1aa7dca964593e01f0726d7717299d5260bf984d387bd6335",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:35.797Z"
+    },
+    {
+      "id": 159,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "127c79387296e0dd18d16d405401cda8e239dab23619bdf85a49a5920c94faa7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:37.414Z"
+    },
+    {
+      "id": 160,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "a0bc56903aa79e4d329175dc37b4decca81965eb7874c7799e7c0bd3e7b8ec5a",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 162,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "4f1b8a8e6876dedec35bc5770c508b9d154a7743fc50f68181f5d75ae2e219cf",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:39.025Z"
+    },
+    {
+      "id": 163,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "657c3ad1fd708cd20d01b68373d1938291c1648c1360e344cb0be3bde55d3af5",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 164,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "083f48ccb5ddaa4022482426a693df25c1656e2c3cd57ab3d883cd4f8f6e7346",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 165,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "1dec596093527060f1c0153364385eb3cb68d5497b92ff10e7cefe0595a0d78a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:40.621Z"
+    },
+    {
+      "id": 166,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "ドラ暗刻を崩して8枚形の三面張を取り、残るドラ・平和・一盃口で打点を補う。複数の聴牌候補の実枚数と和了牌ごとの役を合わせて比較する。",
+      "protectedSha256": "d86a09453c84f09bc6d707b68dfd527ec3998b273f7f68f508267678ba4c57e4",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 167,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "副露手の形の待ちと役ありの和了牌を区別し、役なし牌をツモ切ると待ち全体がフリテンになる点を使う。和了可能枚数ではなくフリテンになるツモの2枚対5枚を比較する特殊判断。",
+      "protectedSha256": "c7c69d6c3059c32dbf3928f5619656c420ef0ec9535d551a3fe37a7e67336fbb",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 168,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "78c89914716c5545e06d2ba5d16f5430e06becf75a6ebb120d1d2e8353401c32",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:42.221Z"
+    },
+    {
+      "id": 169,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "56352adcfe073c01be57ff9315bf70a1264c07a2e2f4ede32172cab88b5181f1",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:43.827Z"
+    },
+    {
+      "id": 170,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "e56688b8f7fd2ef88cba52f78b507685f3b4c94176739f675e6ba18e36ea1ce7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:45.427Z"
+    },
+    {
+      "id": 171,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "88502112aa4a91e989ecc7d4b10141a76a4de563c03da9c5cde5f36aa41b6fec",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:47.048Z"
+    },
+    {
+      "id": 172,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "422c0ba75a0aa65967262fb19d11d69b7637a32081f70bb7a526ff2aad97e815",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 173,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "717770e9a2780351334dc881fa0c6bf2e8b6403a5c465ac5200b4c9647aa4c84",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:48.638Z"
+    },
+    {
+      "id": 174,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "d229fe8cb5809d7970b4aa230f997d84117aa449935f693e5cab0ddb5af7d472",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:50.254Z"
+    },
+    {
+      "id": 175,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "長い索子の三候補を、受け入れ最大・一通・平和の付き方で比較する。補足動画の比較も含め、増える受けが愚形安手にならないかを選別する必要がある。",
+      "protectedSha256": "d4a51109942e80fef93fae8a0077bba63f3e4638e7b4ab45ea2ced3ea6078eb6",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 176,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "170f84b94a42ac294e0d35d22ae8a2f42b03e080295d09d5f72b59c7e8ad6dd0",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 177,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "a2004a5c1db0ae79f5f2fb443635fca84889ff01df202d086f7ed26aae997000",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 178,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "e89c8cc5b684028df5b0ff2313377c3d1945b7f5e222bca5d01c9320fbb38842",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 179,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "3ba693b08da49bccf4fe88a84a32541ea3eb3b53b32bf5717ee79f38f639a468",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:51.867Z"
+    },
+    {
+      "id": 180,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "複数の正解候補にそれぞれ異なる狙いがあり、両面変化・スジ待ち・将来のフリテンを使い分ける。手牌だけで一つの打牌を機械的に最大化する問題ではない。",
+      "protectedSha256": "0890e4cb527350f420d8480d98e07f2e297d412096a5919635bf21b1e197551d",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 181,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "c9b974306b5f667734483fd5ff26e1ea2114df224c887a9eb50a3412eb80b46e",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 182,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "d61a8005f8f27b62bb3270f95acf0247d32b89ba553e1742e0d208ea4d2a97ad",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:53.479Z"
+    },
+    {
+      "id": 183,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "4cf497eb7102628d20a8ee0f1c3ef1602ae0e13e56cf6ac1fc3fddbe0a7b770b",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 184,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "初級用再生リストにのみ所属。ユーザー指定により初級。",
+      "protectedSha256": "308056b9317b7135b7674ed4620a94330484a01cf0edfbc6ad53131fdeabd92d",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 185,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "b1012c554b32cacb38db4d9423f27d23000ce491d4be03efc4bf424e8f586241",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:55.085Z"
+    },
+    {
+      "id": 186,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "7154b23391d0025ef0d1becab315ba7a45f9058a96b8e2a4d65b798a9e42e9c9",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:56.697Z"
+    },
+    {
+      "id": 187,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "38453f6330a56d5efd0c9afacb5ae7d37801a569685a1b591e4627f0f414941e",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:58.317Z"
+    },
+    {
+      "id": 188,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "ec1ca7e6ce8944418b8619a85ecd91c1c49ed1a6b96ef7281c8ee5dae408f55c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:10:59.929Z"
+    },
+    {
+      "id": 189,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "a832acb0b23fed36c2996f53f49bfeb9b91ee2dacdbfaa61001115bbab8b0ed0",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:01.535Z"
+    },
+    {
+      "id": 190,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "f0ecdb882f026696e8e2adbef9dfbb7668ea72734bc63cf519030146660adc2e",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:03.146Z"
+    },
+    {
+      "id": 191,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "bf25056488d04cd9f82068b13e28143efb7179f3b27082fcba32c31711c4abdf",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:04.748Z"
+    },
+    {
+      "id": 192,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "a8c97571b38cb703045965f7ce9c0eeacfc377bcf7d2c0bcd96175dc5473fed8",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:06.365Z"
+    },
+    {
+      "id": 193,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "67c3fa5497d99e1f3b71a73835da73b20933bb2f2f9e421e5f78323e69a27d75",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:07.988Z"
+    },
+    {
+      "id": 194,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "b9791192cd2998999024f07c09f6a28d7fcd08f95f4868c0a04cda72cabd6142",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:09.598Z"
+    },
+    {
+      "id": 195,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "3cd063959076b40ef19a92cc843e4026d2d29fe89dae6f1dce08290219003bf7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:11.199Z"
+    },
+    {
+      "id": 196,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "f3fae0d5229da44d45bd3ffa0f5b68dee192377e0beac1dbd79a127c51525c00",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:12.806Z"
+    },
+    {
+      "id": 197,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "afc71a86646accf2915307db4f655a946d5ac2481941ca2aac7edf4cf98979d3",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:14.436Z"
+    },
+    {
+      "id": 198,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "986bbf8e2ab2ef1c5f6ee7fd41579216fa292ae321bfae62bc7c2241dbdaee1a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:16.032Z"
+    },
+    {
+      "id": 199,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "71f6774c28e5b26008845760f36f2b83ef9c2067f40655d36bb274159b8bcf67",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:17.636Z"
+    },
+    {
+      "id": 200,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "172ecf5485a34b23a69faa9a0924712286045ddb326bd8e64b42877326c0411f",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:19.250Z"
+    },
+    {
+      "id": 201,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "84309e4a9706b3f26e3c884013715c6c32e7e1d2148ef06bb80d2c9c2b9597cf",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:20.845Z"
+    },
+    {
+      "id": 202,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "5f0b85c8c46e796a05994f53b0e1e32ecb5f69c8586f36b28670aaadc921e598",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:22.454Z"
+    },
+    {
+      "id": 203,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "ff017b83d95ca49557c13c81336c0ea2475fb1685b5c7a0f3efc27937978a971",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:24.074Z"
+    },
+    {
+      "id": 204,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "b85cc5e3264834dd5e2ad6d69059ac58e695e8d39c2b806a35c1cb646a2b3c46",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:25.671Z"
+    },
+    {
+      "id": 205,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "10a8cc333eb86a7f0741010732f70d20c990c6343aa9561ac3f1975c73c017e3",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:27.291Z"
+    },
+    {
+      "id": 206,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "306e078316514e335183388478fb43f9a96872392d811a8336a9675686da0703",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:28.890Z"
+    },
+    {
+      "id": 207,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "2102f1cdf4c07b82f0cb2d8b2932ca1c4ea5ddb6a44824686ec4ac2105bec390",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:30.485Z"
+    },
+    {
+      "id": 208,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "06e9c31e903e84476306aea47b331c3a121469e64b39f9ba23f301f118cafee9",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:32.124Z"
+    },
+    {
+      "id": 209,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "1d31248e6ef8818cfbbb3743908518db94f97cb4a46899ec96113113bcbe1ad2",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:33.711Z"
+    },
+    {
+      "id": 210,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "3398bf9a65b096409ad49dba078d96e7440590c493bb6971a549b647789156af",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:35.312Z"
+    },
+    {
+      "id": 211,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "5b812bb8b753030ce49551a271257f7688aeb779d231e9e609dcbe2e9087a44d",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:36.919Z"
+    },
+    {
+      "id": 212,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "da4262c1df554f371d4b7eaad0c81fae01a217a2ed36dc702bea0ad69b652f1f",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:38.540Z"
+    },
+    {
+      "id": 213,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "fb57b95a6e1e6293a0192e9d6a0b19a281e177e006faeee0917326cd2b3133f1",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:40.147Z"
+    },
+    {
+      "id": 214,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "ab53cd90de4ab70f0d5e095088592a7cd8c68c7fcab3b2e5c24d3d77e82e79ad",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:41.758Z"
+    },
+    {
+      "id": 215,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "78ea0aee68d7bf2669dbcdac63c9d27ec8549364f4316ea30dcf0bc78cfc833e",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:43.364Z"
+    },
+    {
+      "id": 216,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "3c04fbc22f33919f4f01c1fbe45b8fed3e9c3b7e0de43799efd043addfc776a4",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:44.974Z"
+    },
+    {
+      "id": 217,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "f6182404410c8f1ce4eaf541f233cc736155e6e10f3d0d506212fcf479d5d8b1",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:46.591Z"
+    },
+    {
+      "id": 218,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "079c7e56c3d285d53f53e5dc4875d1e76515625f901498abf8b240cd7bf5dcd9",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:48.201Z"
+    },
+    {
+      "id": 219,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "0fd49add455cd121b21aa60c8701fd03d34c2e56851a7cc0afc13d1aba7cc2b3",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:49.795Z"
+    },
+    {
+      "id": 220,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "81366c8f34f6e96b72f860542988ba54d33cfc593616704cecf1c8f287f600a4",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:51.397Z"
+    },
+    {
+      "id": 221,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "fb03ddc22fad7121850592850095dc6affbfc8e4377b270eecfc5793fd3c2a55",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:53.014Z"
+    },
+    {
+      "id": 222,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "a990e4f60af3621b9e3e9f24374371cd9dcbbc9e430f769820bede46ec274a0c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:54.617Z"
+    },
+    {
+      "id": 223,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "839bc137a22c06f4916ece5f0bef19f747eebc63160cbf6dde50f2fc2e76dfe5",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:56.227Z"
+    },
+    {
+      "id": 224,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "aef582a2c6f2e27218e3d024fff29606fc0dfe8505af8f2cdd3c81068e123222",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:57.850Z"
+    },
+    {
+      "id": 225,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "ca552706a28ab6ea85e2a5083ce65cb8b70b6677951220f64c1811b9e583ec6a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:11:59.460Z"
+    },
+    {
+      "id": 226,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "1b67d6fb3fd172d5ea27dfda3a05d01de486ade0e2f13351e0c7377643206106",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:01.079Z"
+    },
+    {
+      "id": 227,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "d06ce49e7b27dd2a84d38133b673ff3da60bf44eb31190e08cb828b60f8fc618",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:02.683Z"
+    },
+    {
+      "id": 228,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "0f315156f8daef2c5c22de1cfd081248a3d1263cd5214918c9d2757d08c1e8a3",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:04.297Z"
+    },
+    {
+      "id": 229,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "7e98ad36331144c442e31547416ac7ed662a992b5dd4f42656a544bc3e66427d",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:05.891Z"
+    },
+    {
+      "id": 230,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "3252bcbcc24278d219341058022da5383ad0106e9e5f9ead2c9938368101ec43",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:07.499Z"
+    },
+    {
+      "id": 231,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "50a8e56ecdddf84afd7b7848d298a9ab36053525af18bf86514fda52a6ed0837",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:09.092Z"
+    },
+    {
+      "id": 232,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "6f3244e6bc23f48449265e3303b77271d96ebf01e1746d85b6d092b870cb974c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:10.693Z"
+    },
+    {
+      "id": 233,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "29c57e285497b2c39f97e272ac02f8ada029a8364ce5dc96df094920fae181d3",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:12.337Z"
+    },
+    {
+      "id": 234,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "fa22c90bc4a9e237c23f96cb1c02f351ada0fb87a10251af13ed45951136e29a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:13.924Z"
+    },
+    {
+      "id": 235,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "1259fe5928cd3db8242209cc15c8c133ca8bbdd36e6d6ef1fd92ff28bde98356",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:15.539Z"
+    },
+    {
+      "id": 236,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "016fa9653a3bb140a8fa261161abcddfdd5d84a3f084e080a81ec45429c5d337",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:17.141Z"
+    },
+    {
+      "id": 237,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "c368a805035b11d291837bfb4b86fc1431c0c411124def5cd000237eead94343",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:18.765Z"
+    },
+    {
+      "id": 238,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "7fe16705fa53f903028287989f3bb79e59654baa77c1d08b7bfd7eda03e4e3a7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:20.378Z"
+    },
+    {
+      "id": 239,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "0cd738794663e9d052de6fc7ba604997a273585d77dccc84fb1cb50f231a7102",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:21.986Z"
+    },
+    {
+      "id": 240,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "9348b155aab85934ab6d837807e6a0fc4580de33db45a1b15f794c9ac495c675",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:23.588Z"
+    },
+    {
+      "id": 241,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "64be2fb4cbc0b0774241fe0e24186dbe5464c40b03269c2e313aeed3334e6441",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:25.193Z"
+    },
+    {
+      "id": 242,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "add6c2f8eb20f726ebed0cab9fd521b56e14d82a7cd0acb007f079ca54f46e78",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:26.806Z"
+    },
+    {
+      "id": 243,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "be158d04c958ef8d67f57e33e3a26996fa7c0166a00b6cf5320b5c9532be608a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:28.407Z"
+    },
+    {
+      "id": 244,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "8c935d16f3d0b538227cb40f55e5918081e87e11ea97e8f95c06521802179cab",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:30.018Z"
+    },
+    {
+      "id": 245,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "4a94ccdddd4a8e860fc327bc547a7585acc3ccc8dcc2da858c638f4b3f93d0b8",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:31.613Z"
+    },
+    {
+      "id": 246,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "de9e31a5eea887f48c91314d44ff95926da8d0149daf8b95a5ff47d3cfdc6787",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:33.233Z"
+    },
+    {
+      "id": 247,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "a6ed863436ff70482e33e0d1c6ac3719bc5f567c1428d40a30ef791945b7e198",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:34.841Z"
+    },
+    {
+      "id": 248,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "31978b91664393a2eab7fedc4e8c0d67f5afe58e034cd9be2f94aca38717cd50",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:36.453Z"
+    },
+    {
+      "id": 249,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "a9f81f72e5961cf23071daff4e460f5b1b2bc29b277bb4b0f8f3591ce3b7bef9",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:38.053Z"
+    },
+    {
+      "id": 250,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "912ad634b04f40e680f868a404f674a7d69dc4319e221dcea7bc445e35a8449e",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:39.654Z"
+    },
+    {
+      "id": 251,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "b88a105ba8c9535b6c0b1a71b33213d36bd5bde2ac211b8c57ff085aa595613f",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:41.256Z"
+    },
+    {
+      "id": 252,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "f916f859501920c209c681cf69ba87b302cbfa1aa25f3858171f1506efd13ca8",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:42.866Z"
+    },
+    {
+      "id": 253,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "2f1a730212a2def47f8d139bdd357a4a7f1b7270e2021b416b435894c22109a2",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:44.476Z"
+    },
+    {
+      "id": 254,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "5c2baa36df7672ed70e4c0fefa8988ae830dcaba3e50ec949b2654aa6af26faf",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:46.071Z"
+    },
+    {
+      "id": 255,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "93d9d9d36036632a64b259e90ddfec7a6e0c2d3969df40939ee3e0e1f02dd283",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:47.686Z"
+    },
+    {
+      "id": 256,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "3eebcdc363c1e54ff0517b66facd9812ecfb6af7c4c6d8666f755881dcd5d86f",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:49.281Z"
+    },
+    {
+      "id": 257,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "a8dcab5d33a84dd484abedf4148b05eb6fea7295eb0572d01b7cd55b20393c87",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:50.904Z"
+    },
+    {
+      "id": 258,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "7f663a55b6f5874e42ee5b14e4ba1eed0000651b90ed02831518f7c46edb6c55",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:52.508Z"
+    },
+    {
+      "id": 259,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "9fe581abca3e20f44d968907a20d27a6815f25ddd88fd27cbf60046812d76825",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:54.119Z"
+    },
+    {
+      "id": 260,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "4d83d1a313c1d4a9dc3b30e86d10af78fd242a92071bd04bbc02e8b0da550621",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:55.734Z"
+    },
+    {
+      "id": 261,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "e67bd7ebe008c2d14a13e28cf019c4040737d2f1ddfd06402e4f0334570691d0",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:57.331Z"
+    },
+    {
+      "id": 262,
+      "before": "advanced",
+      "after": "intermediate",
+      "reason": "中級以上の再生リストにのみ所属。旧中級～上級から中級へ引き継ぐ。",
+      "protectedSha256": "69fd2b88104b38f1ad6ea2b0f8439946ad41b37b5ed6f1a360acb0e19f5074f5",
+      "savedOverrideUpdatedAt": "2026-09-14T20:12:58.951Z"
+    },
+    {
+      "id": 263,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "2b28cb46ac9cac721e0eddfa52dd90f5be837b9d0f1ec45a5ba1b0d7d63de626",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 264,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "b0f9492f47dcf29af1f6acc1ceb23aa96c5ca8b5cfa9c4e3f32100dad9d6473a",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 265,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "098c20563b70d099da3f7653fd57f15e2975656c1584b570b4fa8c081ca4f14a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:00.551Z"
+    },
+    {
+      "id": 266,
+      "before": "beginner",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "e8a0a8cb751858dc32877e44e96cce2e581f05efa3a1ac7400549e48bcabf2ca",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 267,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "索子9枚の中から面子を抜き、雀頭を萬子に固定して6枚形の受けを読む。両面対子を残すと二向聴のままになる落とし穴を、手全体の必要部品から見抜く。",
+      "protectedSha256": "975b8f5100d7df71f5aec3c2f4215355333f73dc2acdda28812cbf1d1ac5efe0",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 268,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "101c7212126fea3e34bf1d28c67339d55266551d3bd3c9dce946b6a4970b5bee",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:02.170Z"
+    },
+    {
+      "id": 269,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "2c79aa46154d6d3a9c775c0c62a4d052edd614d6fa05453dbd11a14816c5a2fc",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:03.764Z"
+    },
+    {
+      "id": 270,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "55b763244c429f7bced0911bc60f67bd032ebf8b971d0181166abfe3e3e34e07",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:05.366Z"
+    },
+    {
+      "id": 271,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "f5b91b866e4148e5fdf45d6d7dd30307d64d8374d9e4a22efc1211ba00e08901",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:06.979Z"
+    },
+    {
+      "id": 272,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "054bc9d49522c15f631a65f88300a488609c50cc11082f4f34ca98ec5efffcb0",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:08.583Z"
+    },
+    {
+      "id": 273,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "1d8d21ea750326e34b134acb30f4993841165fb6ffcbc5b29e2d239d4803e531",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:10.194Z"
+    },
+    {
+      "id": 274,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "0288c238585cbf6eb3f2edc278c7ffd5e52f5a954da5b39b9a482cd1fcd72f6f",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:11.804Z"
+    },
+    {
+      "id": 275,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "026f88c85dececf081bd1c77816eaed73b6911b804592c7d42ad4e5ac4f9ed9e",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:13.403Z"
+    },
+    {
+      "id": 276,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "87392a113d05dde8b00a34f14a07a6a53fef5f70104a9353cefbc78b7436a80b",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:15.008Z"
+    },
+    {
+      "id": 277,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "22334557pという雀頭込みの8枚形で、頭を5pから2pへ移して隠れたカン6p受けを見つける。固定の雀頭が別にある標準6枚形より分解の自由度が高い。",
+      "protectedSha256": "6b90a374bd72ae1e24f14581351b97735d6b826adaa6c22d5d4958068d17044e",
+      "savedOverrideUpdatedAt": null
+    },
+    {
+      "id": 278,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "3814e3d7bcb2d0326a8fb22c5cea51876522c0df05ce4f4ac3a3568c576ce5b1",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:16.612Z"
+    },
+    {
+      "id": 279,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "e1fd88242cdf3de6e6f956be1e957669f182f3946352a58fdb699f98b98ed81c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:18.228Z"
+    },
+    {
+      "id": 280,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "4b88e7d686ac777b4fada4381573e44a7b54face44b943cb36e7d7716e2c3864",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:19.841Z"
+    },
+    {
+      "id": 281,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "fdeb202cb38c121ed155bf7e193c53c8ab527f34c5ca8c562a1a8e647930dddc",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:21.445Z"
+    },
+    {
+      "id": 282,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "41c90441236f37a80244ee4018660ea93e127935efbbac49f8a3b55ddaae318a",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:23.048Z"
+    },
+    {
+      "id": 283,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "87c02ee8aacc0f9d1db089f83f85e5697dbdb7110c4885768d0a143e20aecf6c",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:24.651Z"
+    },
+    {
+      "id": 284,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "fed92fc549132cd92d8afd036441667b3fa0bd5a403679606dd18f2dc64d9eab",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:26.262Z"
+    },
+    {
+      "id": 285,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "862032d4022012aa4b54e5604e1c3477932e9407e8a006a544261e7abc130a39",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:27.867Z"
+    },
+    {
+      "id": 286,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "d31fc99eeba82742976f1f6e754ae2a28a01493a40aa6678c0cfd191e464b47d",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:29.479Z"
+    },
+    {
+      "id": 287,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "7073af5e3dd67a05fda2c3fb6de742cd7b142d181e8e98ab438f3fd214a6b552",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:31.106Z"
+    },
+    {
+      "id": 288,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "38c3a75060afdac8a345d78300101905da0d66345b60b1b273924935303080be",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:32.708Z"
+    },
+    {
+      "id": 289,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "88ee49f5c59f4dbbb990103cc281f40979ad5c3999d24d7680dcef64b36f4d20",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:34.317Z"
+    },
+    {
+      "id": 290,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "1ba60f97c532e1f7c2827c67b6f11036a4fe1d834d8155442e1130baa3b62cb7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:35.922Z"
+    },
+    {
+      "id": 291,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "f50a34af9f7c63eadd21490155d5dc9cff24e9b09db62469b222df4e477bbccb",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:37.532Z"
+    },
+    {
+      "id": 292,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "7ced93259481c05b70f0c85592810ff3dd7d709db0da18ef17afc411a79876b7",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:39.138Z"
+    },
+    {
+      "id": 293,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "bc09cbbb4568c72c4e87160c91ecdd8c166c65f19a455fedd0bd03d092ed68cd",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:40.735Z"
+    },
+    {
+      "id": 294,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "931046aea6f3a63598a0e44f411ce6bc9d303e3cf7b414876fcf5ef986277dbd",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:42.340Z"
+    },
+    {
+      "id": 295,
+      "before": "intermediate",
+      "after": "beginner",
+      "reason": "両リストに所属。基本序列・標準的な一向聴・手役やドラの基本比較を学ぶ初級の練習として仮分類。",
+      "protectedSha256": "e6ff850c33aa26dc2bef462e74f2ffde7d0a4786040fd193efd38b29c6433510",
+      "savedOverrideUpdatedAt": "2026-09-14T20:13:43.951Z"
+    },
+    {
+      "id": 296,
+      "before": "intermediate",
+      "after": "intermediate",
+      "reason": "35567788sという雀頭込みの8枚形で、頭を5sと8sに置き換え、4s・6s・9sを合算する。両面の見た目に隠れた嵌張を雀頭移動で抽出する応用。",
+      "protectedSha256": "83b7eb6d8886a99fff3d929d0d168d77911f9eb9b26a8682f0de0419cfccc215",
+      "savedOverrideUpdatedAt": null
+    }
+  ]
+}
