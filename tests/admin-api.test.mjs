@@ -341,7 +341,7 @@ test("client provides difficulty-based challenges without an ura mode", async ()
   assert.match(source, /difficultyOptions\(state.settings.difficulty\)/);
   assert.match(source, /filterByDifficulty\(questions, difficulty\)/);
   assert.doesNotMatch(source, /出題タイプを選んですぐ開始できます/);
-  assert.match(source, /id="homeButton"[^>]*>メニュー</);
+  assert.match(source, /id="homeButton"[^>]*>\$\{state\.session\?\.mode === "catalog" \? "一覧へ戻る" : "メニュー"\}</);
   assert.doesNotMatch(source, /裏モード/);
 });
 
@@ -399,7 +399,7 @@ test("problem catalog opens a consecutive question session and link chips use se
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /openButton\.addEventListener\("click", \(\) => openCatalogQuestion\(question\.id\)\)/);
   assert.match(source, /function openCatalogQuestion\(id\)/);
-  assert.match(source, /createSession\("catalog", ids, position\)/);
+  assert.match(source, /createSession\("catalog", ids, position, null, captureCatalogPosition\(id\)\)/);
   assert.match(source, /state\.session\?\.mode === "single" \|\| state\.session\?\.mode === "catalog"/);
   assert.match(source, /function createLinkIcon\(kind\)/);
   assert.match(source, /kind === "youtube"/);

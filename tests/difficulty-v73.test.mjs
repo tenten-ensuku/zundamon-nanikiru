@@ -67,7 +67,7 @@ test('catalog and mixed cache merge respect manual difficulty, without erasing c
   assert.equal(merged[0].difficulty,other);for(const key of ['hand','explanation','videoExplanation','correctDiscards','draw','melds'])assert.deepEqual(merged[0][key],q[key]);
   const legacy=merge([q],[{id:q.id,questionData:{note:'existing'}}]);assert.equal(legacy[0].difficulty,q.difficulty);
   assert.equal(metadata.filterByDifficulty(merged,other).length,1);assert.equal(metadata.filterByDifficulty(merged,q.difficulty).length,0);
-  const catalog=new Function('questions','filterByDifficulty',`let problemDifficulty='intermediate',session;function createSession(mode,ids,position){session={mode,ids,position}};${extract('openCatalogQuestion')};return {openCatalogQuestion,get:()=>session};`)(questions,metadata.filterByDifficulty);
+  const catalog=new Function('questions','filterByDifficulty',`let problemDifficulty='intermediate',session;const captureCatalogPosition=id=>({questionId:id});function createSession(mode,ids,position){session={mode,ids,position}};${extract('openCatalogQuestion')};return {openCatalogQuestion,get:()=>session};`)(questions,metadata.filterByDifficulty);
   const target=questions.find(q=>q.difficulty==='intermediate');catalog.openCatalogQuestion(target.id);assert.equal(catalog.get().ids.length,153);assert.equal(catalog.get().ids[catalog.get().position],target.id);
 });
 test('local difficulty-only save validates, detects conflicts and preserves content/review after reload',async()=>{

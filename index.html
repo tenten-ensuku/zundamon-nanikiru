@@ -1021,7 +1021,14 @@
       color: var(--gold-light);
       background: rgba(0,0,0,.28);
       font-size: 10px;
+      white-space: nowrap;
       cursor: pointer;
+    }
+
+    @media (max-width: 539px) {
+      .play-app .topbar { grid-template-columns: minmax(0, 1fr); gap: 7px; }
+      .play-app .topbar h1 { font-size: 24px; }
+      .play-app .top-actions .counter { margin-left: auto; }
     }
 
     .result-app { justify-content: center; }
@@ -1059,19 +1066,19 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <link rel="stylesheet" href="question-review.css?v=74">
-  <link rel="stylesheet" href="answer-feedback.css?v=74">
-  <script src="config.js?v=74"></script>
-  <script src="question-metadata.js?v=74"></script>
-  <script src="question-review.js?v=74"></script>
-  <script src="shared-data.js?v=74"></script>
-  <script src="answer-feedback.js?v=74"></script>
+  <link rel="stylesheet" href="question-review.css?v=75">
+  <link rel="stylesheet" href="answer-feedback.css?v=75">
+  <script src="config.js?v=75"></script>
+  <script src="question-metadata.js?v=75"></script>
+  <script src="question-review.js?v=75"></script>
+  <script src="shared-data.js?v=75"></script>
+  <script src="answer-feedback.js?v=75"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 74;
+    const APP_VERSION = 75;
     const { DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
@@ -1451,7 +1458,7 @@
       if (screen !== "play") document.body.classList.remove("reviewing");
     }
 
-    function renderMenu(tab = activeTab) {
+    function renderMenu(tab = activeTab, catalogReturn = null) {
       activeTab = tab;
       setScreen("menu");
       app.className = "app menu-app";
@@ -1486,7 +1493,8 @@
         renderMenu(activeTab === "settings" ? "challenge" : "settings");
       });
       renderMenuPanel();
-      window.scrollTo({ top: 0, behavior: "instant" });
+      if (tab === "problems" && catalogReturn) restoreCatalogPosition(catalogReturn);
+      else window.scrollTo({ top: 0, behavior: "instant" });
     }
 
     function renderMenuPanel() {
@@ -1629,6 +1637,7 @@
       const stat = state.questionStats[String(question.id)] || { total: 0, correct: 0 };
       const card = document.createElement("article");
       card.className = "catalog-card";
+      card.dataset.questionId = String(question.id);
       const meldTileCount = (question.melds || []).reduce((total, meld) => total + (meld.tiles?.length || 0), 0);
       const sidewaysCount = (question.melds || []).filter(meld => meld.open && Number.isInteger(meld.calledIndex)).length;
       card.style.setProperty("--visual-count", String(Math.max(15, selectableHand(question).length + (question.draw ? .36 : 0) + meldTileCount + sidewaysCount * .36 + (question.dora ? 1.4 : 0))));
@@ -1921,7 +1930,7 @@
       return ids;
     }
 
-    function createSession(mode, ids, position = 0, difficulty = null) {
+    function createSession(mode, ids, position = 0, difficulty = null, catalogReturn = null) {
       state.session = {
         mode,
         difficulty,
@@ -1930,6 +1939,7 @@
         startedAt: new Date().toISOString(),
         answeredIds: [],
         responses: {},
+        ...(mode === "catalog" && catalogReturn ? { catalogReturn } : {}),
       };
       saveState();
       resumeSession();
@@ -1954,7 +1964,33 @@
     function openCatalogQuestion(id) {
       const ids = filterByDifficulty(questions, problemDifficulty).map(question => question.id);
       const position = ids.indexOf(Number(id));
-      if (position >= 0) createSession("catalog", ids, position);
+      if (position >= 0) createSession("catalog", ids, position, null, captureCatalogPosition(id));
+    }
+
+    function captureCatalogPosition(id) {
+      const questionId = Number(id);
+      const card = document.querySelector(`#problemList [data-question-id="${questionId}"]`);
+      return {
+        questionId,
+        difficulty: problemDifficulty,
+        sort: problemSort,
+        scrollY: window.scrollY,
+        offset: card?.getBoundingClientRect().top ?? 0,
+      };
+    }
+
+    function restoreCatalogPosition(position) {
+      requestAnimationFrame(() => {
+        if (currentScreen !== "menu" || activeTab !== "problems") return;
+        const id = Number(position.questionId);
+        const card = Number.isInteger(id) ? document.querySelector(`#problemList [data-question-id="${id}"]`) : null;
+        const savedOffset = Number(position.offset);
+        const offset = Math.min(Math.max(0, Number.isFinite(savedOffset) ? savedOffset : 0), Math.max(0, window.innerHeight - 100));
+        const savedScroll = Number(position.scrollY);
+        const top = card ? window.scrollY + card.getBoundingClientRect().top - offset : Number.isFinite(savedScroll) ? savedScroll : 0;
+        card?.querySelector(".catalog-question")?.focus({ preventScroll: true });
+        window.scrollTo({ top: Math.max(0, top), behavior: "instant" });
+      });
     }
 
     function resumeSession() {
@@ -1977,10 +2013,17 @@
 
     function goMenu() {
       if (!leaveExplanationEditor()) return;
+      const catalogReturn = state.session?.mode === "catalog" ? state.session.catalogReturn || {
+        questionId: playQuestions[currentIndex]?.id, difficulty: problemDifficulty, sort: problemSort, offset: 0, scrollY: 0,
+      } : null;
       if (state.session?.mode === "single" || state.session?.mode === "catalog") state.session = null;
       else if (state.session) state.session.position = currentIndex;
       saveState();
-      renderMenu("challenge");
+      if (catalogReturn) {
+        problemDifficulty = isDifficulty(catalogReturn.difficulty) ? catalogReturn.difficulty : "all";
+        problemSort = catalogReturn.sort === "weak" ? "weak" : "default";
+        renderMenu("problems", catalogReturn);
+      } else renderMenu("challenge");
     }
 
     function buildPlayShell() {
@@ -1990,7 +2033,7 @@
             <p class="brand-kicker">ZUNDAMON</p>
             <h1>重要何切る問題集（基礎）</h1>
           </div>
-          <div class="top-actions"><a class="admin-link play-admin-entry" id="playAdminEntry" href="admin.html">管理</a><button class="play-home" id="homeButton" type="button">メニュー</button><div class="counter" id="counter"></div></div>
+          <div class="top-actions"><a class="admin-link play-admin-entry" id="playAdminEntry" href="admin.html">管理</a><button class="play-home" id="homeButton" type="button">${state.session?.mode === "catalog" ? "一覧へ戻る" : "メニュー"}</button><div class="counter" id="counter"></div></div>
         </header>
         <div class="progress" aria-label="回答進捗"><span id="progressBar"></span></div>
         <main class="board">
@@ -2121,7 +2164,7 @@
       document.getElementById("previousNav").disabled = currentIndex === 0;
       document.getElementById("nextNav").disabled = currentIndex === playQuestions.length - 1;
       document.getElementById("nextButton").disabled = false;
-      document.getElementById("nextButton").textContent = currentIndex === playQuestions.length - 1 && state.session?.mode !== "single" ? "結果へ" : currentIndex === playQuestions.length - 1 ? "メニューへ" : "次の問題";
+      document.getElementById("nextButton").textContent = currentIndex === playQuestions.length - 1 ? (state.session?.mode === "catalog" ? "一覧へ戻る" : state.session?.mode === "single" ? "メニューへ" : "結果へ") : "次の問題";
       if (state.session) state.session.position = currentIndex;
       saveState();
       window.scrollTo({ top: 0, behavior: "instant" });
