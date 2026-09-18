@@ -1066,19 +1066,19 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <link rel="stylesheet" href="question-review.css?v=77">
-  <link rel="stylesheet" href="answer-feedback.css?v=77">
-  <script src="config.js?v=77"></script>
-  <script src="question-metadata.js?v=77"></script>
-  <script src="question-review.js?v=77"></script>
-  <script src="shared-data.js?v=77"></script>
-  <script src="answer-feedback.js?v=77"></script>
+  <link rel="stylesheet" href="question-review.css?v=78">
+  <link rel="stylesheet" href="answer-feedback.css?v=78">
+  <script src="config.js?v=78"></script>
+  <script src="question-metadata.js?v=78"></script>
+  <script src="question-review.js?v=78"></script>
+  <script src="shared-data.js?v=78"></script>
+  <script src="answer-feedback.js?v=78"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 77;
+    const APP_VERSION = 78;
     const { DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, recordDifficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
@@ -1252,6 +1252,13 @@
       const suit = code[1];
       if (suit === "z") return HONOR_NAMES[number] || code;
       return `${number === 0 ? "赤5" : number}${SUIT_NAMES[suit] || suit}`;
+    }
+
+    function formatSituationNote(value) {
+      if (typeof value !== "string") return "";
+      // Keep saved tile codes and links intact; only the visible note uses the wind name.
+      return value.replace(/(https?:\/\/[^\s<>]+)|[2２][zｚ]/giu, (token, url, index) =>
+        !url && isExplanationTileBoundary(value, index, token.length) ? "南" : token);
     }
 
     function isRedDora(code) {
@@ -2158,7 +2165,7 @@
       if (question.melds?.length) subItems.push(question.melds[0].open ? "副露あり" : "暗槓あり");
       document.getElementById("subLine").textContent = subItems.join("　") || " ";
       const situationNote = document.getElementById("situationNote");
-      situationNote.textContent = typeof question.note === "string" ? question.note : "";
+      situationNote.textContent = formatSituationNote(question.note);
       situationNote.hidden = !situationNote.textContent;
 
       renderHand(question);

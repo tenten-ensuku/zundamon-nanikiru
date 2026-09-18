@@ -58,7 +58,7 @@ export default { async fetch(request,env,ctx={}) {
   try {
     const ip=request.headers.get("CF-Connecting-IP")||"unknown";
     if(env.EDGE_LIMIT&&!((await env.EDGE_LIMIT.limit({key:ip})).success))return json(429,{error:"アクセスが多いため、少し待ってください。"},{"Retry-After":"60"});
-    if(request.method==="GET"&&url.pathname==="/health")return json(200,{ok:true,app:"zundamon-nanikiru",version:77,storage:"d1"});
+    if(request.method==="GET"&&url.pathname==="/health")return json(200,{ok:true,app:"zundamon-nanikiru",version:78,storage:"d1"});
     if(request.method==="GET"&&url.pathname==="/access")return json(200,{mode:modeOf(env),requiresPassword:modeOf(env)==="password",canEdit:modeOf(env)==="open"});
     if(request.method==="POST"&&url.pathname==="/login"){
       if(env.WRITE_LIMIT&&!((await env.WRITE_LIMIT.limit({key:ip})).success))return json(429,{error:"少し待ってから操作してください。"},{"Retry-After":"60"});
