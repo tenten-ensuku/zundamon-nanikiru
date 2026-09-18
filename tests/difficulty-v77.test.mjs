@@ -4,6 +4,7 @@ import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import vm from 'node:vm';
 import {revisionV77} from './helpers/revision-v77.mjs';
+import {beforeV79} from './helpers/revision-v79.mjs';
 const read = file => readFile(new URL('../'+file, import.meta.url), 'utf8');
 const base = JSON.parse(await read('public/questions.json'));
 const html = await read('index.html'), context = {window:{},URL};
@@ -19,7 +20,7 @@ test('v77 partitions 292 IDs into two levels, preserving all non-difficulty base
   assert.ok(revisionV77.counts.beginner>=160&&revisionV77.counts.beginner<=200);
   assert.equal(revisionV77.counts.beginner+revisionV77.counts.intermediate,292);
   for(const q of base){
-    const entry=revisionV77.entries.find(e=>e.id===q.id), protectedData={...q};delete protectedData.difficulty;
+    const entry=revisionV77.entries.find(e=>e.id===q.id), protectedData=beforeV79(q);delete protectedData.difficulty;
     assert.equal(sha(protectedData),entry.baseProtectedSha256,`content ${q.id}`);
     assert.equal(q.difficulty,entry.difficulty);assert.ok(entry.reason.trim());
     assert.ok(['beginner','intermediate'].includes(q.difficulty));
@@ -60,13 +61,30 @@ test('legacy settings migrate while progress, ongoing session and historical cla
   create.createSession('ten',[1,2],0,'beginner');assert.equal(create.get().difficultyRevision,77);
 });
 
-test('v77 shared snapshot preserves every effective content and review field during difficulty-only migration',async t=>{
+test('v77 immutable shared-migration ledger preserves content and review hashes for all 292 questions',async()=>{
+  const migration=JSON.parse(await read('data/difficulty-migration-v77.json'));
+  assert.equal(migration.revision,77);assert.equal(migration.finalDrift.length,0);assert.deepEqual(migration.skipped,{});
+  assert.equal(migration.entries.length,292);assert.equal(new Set(migration.entries.map(e=>e.id)).size,292);
+  assert.equal(migration.questionCount,292);assert.equal(migration.protected.count,292);
+  assert.equal(migration.protected.unchanged,true);assert.equal(migration.protected.beforeSha256,migration.protected.afterSha256);
+  assert.match(migration.protected.beforeSha256,/^[a-f0-9]{64}$/);
+  assert.deepEqual(migration.protectedOmittedFields,['difficulty','overridden','overrideUpdatedAt']);
+  assert.equal(migration.changedCount,migration.verifiedChangedCount);
+  assert.equal(migration.entries.filter(e=>e.before!==e.after).length,migration.changedCount);
+  assert.deepEqual(migration.counts,revisionV77.counts);
+  for(const entry of migration.entries){
+    const classification=revisionV77.entries.find(e=>e.id===entry.id);
+    assert.equal(entry.protectedSha256,classification.effectiveProtectedSha256,`v77 protected ${entry.id}`);
+    assert.equal(entry.before,classification.beforeDifficulty);assert.equal(entry.after,classification.difficulty);
+  }
+});
+
+test('v77 release snapshot matches its historical base when that snapshot is still bundled',async t=>{
   const migration=JSON.parse(await read('data/difficulty-migration-v77.json'));
   const snapshot=JSON.parse(await read('public/shared-overrides.json'));
-  assert.equal(migration.revision,77);assert.equal(migration.finalDrift.length,0);assert.deepEqual(migration.skipped,{});
   if(snapshot.cursor!==migration.snapshotCursor){t.skip('Later shared edits; immutable migration ledger remains checked.');return;}
   const merge=new Function(`${extract('mergeExplanationWithVideoSummary')}\n${extract('mergeOverrides')};return mergeOverrides;`)();
-  const effective=merge(base,snapshot.rows);assert.equal(effective.length,292);
+  const effective=merge(base.map(beforeV79),snapshot.rows);assert.equal(effective.length,292);
   for(const q of effective){
     const entry=revisionV77.entries.find(e=>e.id===q.id),protectedData=plain(q);
     for(const field of ['difficulty','overridden','overrideUpdatedAt'])delete protectedData[field];

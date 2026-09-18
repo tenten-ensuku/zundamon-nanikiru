@@ -162,7 +162,7 @@ function normalizeStructuredQuestion(value, id) {
     ...(sourceConditionsUnspecified ? { sourceConditionsUnspecified: true } : {}),
     ...(hasMembership ? { sourcePlaylistMembership: { videoId: membership.videoId, playlistIds: [...new Set(membership.playlistIds)] } } : {}),
     dora: value.dora, melds, correctDiscards, kanChoice, correctKan: kanChoice && typeof value.correctKan === "boolean" ? value.correctKan : null,
-    ...(value.riichiChoice === true ? { riichiChoice: true, correctRiichi: typeof value.correctRiichi === "boolean" ? value.correctRiichi : null } : {}), ...(value.note ? { note: String(value.note) } : {}),
+    riichiChoice: value.riichiChoice === true, correctRiichi: value.riichiChoice === true && typeof value.correctRiichi === "boolean" ? value.correctRiichi : null, ...(value.note ? { note: String(value.note) } : {}),
   };
 }
 

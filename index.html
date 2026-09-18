@@ -1066,19 +1066,19 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <link rel="stylesheet" href="question-review.css?v=78">
-  <link rel="stylesheet" href="answer-feedback.css?v=78">
-  <script src="config.js?v=78"></script>
-  <script src="question-metadata.js?v=78"></script>
-  <script src="question-review.js?v=78"></script>
-  <script src="shared-data.js?v=78"></script>
-  <script src="answer-feedback.js?v=78"></script>
+  <link rel="stylesheet" href="question-review.css?v=79">
+  <link rel="stylesheet" href="answer-feedback.css?v=79">
+  <script src="config.js?v=79"></script>
+  <script src="question-metadata.js?v=79"></script>
+  <script src="question-review.js?v=79"></script>
+  <script src="shared-data.js?v=79"></script>
+  <script src="answer-feedback.js?v=79"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 78;
+    const APP_VERSION = 79;
     const { DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, recordDifficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
@@ -2331,7 +2331,10 @@
       const graded = discards.length > 0 || question.correctKan === true;
       if (!graded) return { graded: false, correct: null };
       if (response.choice === "kan") return { graded: true, correct: question.correctKan === true };
-      const gradesRiichi = typeof question.correctRiichi === "boolean";
+      const gradesRiichi = question.riichiChoice === true && typeof question.correctRiichi === "boolean";
+      // A missing decision (including an older tile-only answer) is not a correct
+      // riichi answer. Do not silently award credit while its key is unconfirmed.
+      if (question.riichiChoice === true && (!gradesRiichi || typeof response.riichi !== "boolean")) return { graded: false, correct: null };
       return { graded: true, correct: discards.includes(response.tile) && (!gradesRiichi || response.riichi === question.correctRiichi) };
     }
 
@@ -2602,13 +2605,18 @@
       const response = state.session?.responses?.[String(question.id)];
       const result = response ? gradeAnswer(question, response) : { graded: false };
       if (revealed && response && result.graded) {
-        const gradesRiichi = typeof question.correctRiichi === "boolean";
+        const gradesRiichi = question.riichiChoice === true && typeof question.correctRiichi === "boolean";
         const correct = result.correct;
         feedback.hidden = false;
         feedback.className = `answer-feedback ${correct ? "correct" : "incorrect"}`;
         document.getElementById("judgment").textContent = correct ? "○ 正解" : "× 不正解";
         const riichiAnswer = gradesRiichi ? (question.correctRiichi ? "立直・" : "ダマ・") : "";
         document.getElementById("correctAnswer").textContent = question.correctKan === true ? "正解：カン！" : `正解：${riichiAnswer}${correctDiscards.map(tileName).join("・")}`;
+      } else if (revealed && response && question.riichiChoice === true) {
+        feedback.hidden = false;
+        feedback.className = "answer-feedback";
+        document.getElementById("judgment").textContent = "採点保留";
+        document.getElementById("correctAnswer").textContent = typeof question.correctRiichi !== "boolean" ? "リーチ判断の正解が未設定" : "リーチ／ダマ未回答";
       } else {
         feedback.hidden = true;
         feedback.className = "answer-feedback";

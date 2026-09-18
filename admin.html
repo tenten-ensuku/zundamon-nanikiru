@@ -162,6 +162,8 @@
     .review-check:has(input:checked) { border-color: #79ca98; color: #9ee6b8; }
     .review-check:has(input:disabled) { opacity: .58; cursor: wait; }
     .editor { --admin-tile-width: 39px; min-width: 0; padding: 13px; border-top: 1px solid rgba(242,210,123,.18); }
+    .riichi-choice-field { display: flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 10px; cursor: pointer; }
+    .riichi-choice-field input { width: 22px; min-height: 22px; margin: 0; padding: 0; accent-color: #d8a83c; }
     .editor input + label, .editor textarea + label { margin-top: 14px; }
     .field-title { margin: 0 0 7px; color: var(--gold-light); font-size: 13px; }
     .hint { margin: 0 0 10px; color: var(--muted); font-family: sans-serif; font-size: 11px; font-weight: 600; }
@@ -281,11 +283,11 @@
     </section>
   </main>
 
-  <link rel="stylesheet" href="question-review.css?v=78">
-  <script src="config.js?v=78"></script>
-  <script src="question-metadata.js?v=78"></script>
-  <script src="question-review.js?v=78"></script>
-  <script src="shared-data.js?v=78"></script>
+  <link rel="stylesheet" href="question-review.css?v=79">
+  <script src="config.js?v=79"></script>
+  <script src="question-metadata.js?v=79"></script>
+  <script src="question-review.js?v=79"></script>
+  <script src="shared-data.js?v=79"></script>
   <script>
     "use strict";
     const { DIFFICULTIES, questionDifficulty, difficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
@@ -510,9 +512,7 @@
         const details = document.createElement("details");
         details.dataset.questionId = String(question.id);
         details.classList.toggle("reviewed", question.reviewed === true);
-        const answerText = question.correctKan === true ? "カン！" : question.correctDiscards?.length
-          ? question.correctDiscards.map(tileName).join("・")
-          : "正解未設定";
+        const answerText = adminAnswerText(question);
         details.innerHTML = `
           <summary>
             <span class="qid">第${question.id}問</span>
@@ -585,7 +585,8 @@
         <p class="hint">正解にする牌をタップしてください。複数選択できます。</p>
         <div class="answer-tiles"></div>
         <label class="kan-answer-field" ${draft.kanChoice ? "" : "hidden"}>カンの正解<select class="kan-answer"><option value="">未設定</option><option value="false">カンしない</option><option value="true">カン！</option></select></label>
-        <label ${draft.riichiChoice ? "" : "hidden"}>立直の正解<select class="riichi-answer"><option value="">未設定</option><option value="false">ダマ</option><option value="true">立直</option></select></label>
+        <label class="riichi-choice-field"><input class="riichi-choice" type="checkbox">リーチ／ダマの判断を出題する</label>
+        <label class="riichi-answer-field" ${draft.riichiChoice ? "" : "hidden"}>リーチ判断の正解<select class="riichi-answer"><option value="">未設定</option><option value="false">ダマ（リーチしない）</option><option value="true">リーチする</option></select></label>
         <div class="meld-preview" hidden>
           <p class="field-title">副露面子</p>
           <div class="admin-melds" aria-label="副露面子"></div>
@@ -634,10 +635,18 @@
       const videoTextarea = editor.querySelector("#videoExplanationText");
       const sourceUrlInput = editor.querySelector("#sourceUrl");
       const kanAnswerInput = editor.querySelector(".kan-answer");
+      const riichiChoiceInput = editor.querySelector(".riichi-choice");
       const riichiAnswerInput = editor.querySelector(".riichi-answer");
+      const updateRiichiInputs = () => {
+        editor.querySelector(".riichi-answer-field").hidden = !riichiChoiceInput.checked;
+        riichiAnswerInput.disabled = !riichiChoiceInput.checked;
+      };
+      riichiChoiceInput.addEventListener("change", updateRiichiInputs);
       const restoreDecisionInputs = () => {
         kanAnswerInput.value = typeof draft.correctKan === "boolean" ? String(draft.correctKan) : "";
+        riichiChoiceInput.checked = draft.riichiChoice === true;
         riichiAnswerInput.value = typeof draft.correctRiichi === "boolean" ? String(draft.correctRiichi) : "";
+        updateRiichiInputs();
       };
       restoreDecisionInputs();
       const itemMessage = editor.querySelector(".editor-actions + .item-message");
@@ -759,7 +768,7 @@
           draft.sourceLabel = draft.sourceUrl ? "元動画を開く" : "";
           draft.correctDiscards = [...selected];
           draft.correctKan = kanAnswerInput.value === "" ? null : kanAnswerInput.value === "true";
-          draft.correctRiichi = riichiAnswerInput.value === "" ? null : riichiAnswerInput.value === "true";
+          Object.assign(draft, readRiichiSettings(riichiChoiceInput.checked, riichiAnswerInput.value));
           draft.meldCount = draft.melds.length;
           const requiredHandCount = 14 - draft.melds.length * 3 - (draft.draw ? 1 : 0);
           if (draft.hand.length !== requiredHandCount) throw new Error(`手牌は${requiredHandCount}枚にしてください。`);
@@ -845,10 +854,23 @@
       });
     }
 
+    function readRiichiSettings(enabled, answer) {
+      if (!enabled) return { riichiChoice: false, correctRiichi: null };
+      if (answer !== "true" && answer !== "false") throw new Error("リーチ判断の正解（リーチする／ダマ）を選択してください。");
+      return { riichiChoice: true, correctRiichi: answer === "true" };
+    }
+
+    function adminAnswerText(question) {
+      if (question.correctKan === true) return "カン！";
+      const discard = question.correctDiscards?.length ? question.correctDiscards.map(tileName).join("・") : "正解未設定";
+      if (question.riichiChoice !== true) return discard;
+      return `${discard}・${typeof question.correctRiichi === "boolean" ? question.correctRiichi ? "リーチ" : "ダマ" : "リーチ判断未設定"}`;
+    }
+
     function updateSummary(details, question) {
       details.querySelector(".audience-badge").textContent = difficultyLabel(question);
       const state = details.querySelector(".answer-state");
-      const answerText = question.correctKan === true ? "カン！" : question.correctDiscards?.length ? question.correctDiscards.map(tileName).join("・") : "正解未設定";
+      const answerText = adminAnswerText(question);
       state.className = `answer-state ${question.overridden ? "override" : question.correctDiscards?.length || question.correctKan === true ? "" : "unset"}`;
       state.textContent = `${answerText}${question.overridden ? "　編集済み" : ""}`;
       const query = document.getElementById("search").value.trim();

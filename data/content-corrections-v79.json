@@ -1,0 +1,217 @@
+{
+  "version": 79,
+  "createdAt": "2026-09-18T03:53:01.632Z",
+  "baselineCursor": 571,
+  "questionCount": 292,
+  "riichiAdded": [
+    44,
+    57,
+    86,
+    89,
+    97,
+    122,
+    125,
+    126,
+    150
+  ],
+  "riichiTheorySupplement": [
+    125,
+    126,
+    150
+  ],
+  "preserve": [
+    "explanation",
+    "hand",
+    "draw",
+    "melds",
+    "dora",
+    "difficulty",
+    "reviewStatus",
+    "reviewed",
+    "reviewUpdatedAt"
+  ],
+  "changes": [
+    {
+      "id": 44,
+      "patch": {
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/vgvJP1nmnRI",
+          "seconds": 18,
+          "conclusion": "打5ピンでリーチなのだ"
+        }
+      },
+      "beforeBase": {}
+    },
+    {
+      "id": 57,
+      "patch": {
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/oO0j3xVXaE8",
+          "seconds": 48,
+          "conclusion": "打8ソウでダマにするのは、打点向上の恩恵を受けられなくてもったいないのだ"
+        }
+      },
+      "beforeBase": {}
+    },
+    {
+      "id": 86,
+      "patch": {
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/RVbVpbubJkM",
+          "seconds": 18,
+          "conclusion": "打3ピンでリーチなのだ"
+        },
+        "videoExplanation": "今回はカンせず、3pを1枚切ってリーチするのだ。暗刻として見るだけでなく、雀頭や順子に分けて見ることで、複数の待ちを残せるのだ。\n\n和了牌によって平和・一盃口や三暗刻が付く形なので、枚数も打点も生かしたいのだ。カンしてしまうと、この使い分けができなくなり待ちが減るのだ。4枚ある牌を、ひとまとまりとしてしか見ないのはもったいないのだ。"
+      },
+      "beforeBase": {
+        "videoExplanation": "今回はカンせず、3pを1枚切るのだ。暗刻として見るだけでなく、雀頭や順子に分けて見ることで、複数の待ちを残せるのだ。\n\n和了牌によって平和・一盃口や三暗刻が付く形なので、枚数も打点も生かしたいのだ。カンしてしまうと、この使い分けができなくなり待ちが減るのだ。4枚ある牌を、ひとまとまりとしてしか見ないのはもったいないのだ。"
+      }
+    },
+    {
+      "id": 89,
+      "patch": {
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/ewkAMZToQTc",
+          "seconds": 18,
+          "conclusion": "打8ピンでリーチなのだ"
+        },
+        "videoExplanation": "ここは8pを切ってリーチなのだ。2pを切れば三面張を取れるけれど、9pで和了したときはタンヤオが付かないのだ。\n\n8pを切る形は受け入れが少し減る代わりに、タンヤオを確保し、三色による打点上昇も残せるのだ。待ちの枚数だけを最大にするのではなく、安目で和了したときにも打点があるかを比べたいのだ。"
+      },
+      "beforeBase": {
+        "videoExplanation": "ここは8p切りなのだ。2pを切れば三面張を取れるけれど、9pで和了したときはタンヤオが付かないのだ。\n\n8pを切る形は受け入れが少し減る代わりに、タンヤオを確保し、三色による打点上昇も残せるのだ。待ちの枚数だけを最大にするのではなく、安目で和了したときにも打点があるかを比べたいのだ。"
+      }
+    },
+    {
+      "id": 97,
+      "patch": {
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/dzI9h-Sq8-k",
+          "seconds": 18,
+          "conclusion": "打8ピンでリーチなのだ"
+        }
+      },
+      "beforeBase": {}
+    },
+    {
+      "id": 122,
+      "patch": {
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/ECVKRtM-Kwk",
+          "seconds": 42,
+          "conclusion": "リーチはかけたほうが良いけど、"
+        }
+      },
+      "beforeBase": {}
+    },
+    {
+      "id": 123,
+      "patch": {
+        "correctDiscards": [
+          "5p"
+        ],
+        "videoCorrectDiscards": [
+          "5p"
+        ],
+        "videoExplanation": "ここは5p切りなのだ。受け入れ枚数が同じ打牌の中でも、ドラ6pを使えて三面張へ変化する形を残すのだ。\n\n6pを引いたら、萬子か索子の両面を整理して筒子の三面張を使う進め方があるのだ。どちらの両面を落とすかは河を見て決めるのだ。通常の5pと赤5pを区別し、赤とドラを両方使う道を見逃さないのだ。"
+      },
+      "beforeBase": {
+        "correctDiscards": [
+          "3p"
+        ],
+        "videoCorrectDiscards": [
+          "3p"
+        ],
+        "videoExplanation": "ここは3p切りなのだ。受け入れ枚数が同じ打牌の中でも、ドラ6pを使えて三面張へ変化する形を残すのだ。\n\n6pを引いたら、萬子か索子の両面を整理して筒子の三面張を使う進め方があるのだ。どちらの両面を落とすかは河を見て決めるのだ。通常の5pと赤5pを区別し、赤とドラを両方使う道を見逃さないのだ。"
+      }
+    },
+    {
+      "id": 125,
+      "patch": {
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "theory-supplement",
+          "videoUrl": "https://youtu.be/kMEqV0loSas",
+          "videoExplicitRiichi": false,
+          "assumption": "他家からの攻撃や特別な着順条件の指定がないため、先制の通常局面として判断。動画がリーチを明言したという記録ではない。",
+          "theoryDocumentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA",
+          "theoryRevision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw",
+          "reason": "7p切りで3s・5s・6s・8sの13枚待ち。門前6巡目、ドラ1。役なしのロン待ちを残さず、リーチで和了範囲と打点を確保する。"
+        }
+      },
+      "beforeBase": {}
+    },
+    {
+      "id": 126,
+      "patch": {
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "theory-supplement",
+          "videoUrl": "https://youtu.be/r1l5oD4PAHY",
+          "videoExplicitRiichi": false,
+          "assumption": "他家からの攻撃や特別な着順条件の指定がないため、先制の通常局面として判断。動画がリーチを明言したという記録ではない。",
+          "theoryDocumentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA",
+          "theoryRevision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw",
+          "reason": "1s切りで5p・7p・8pの11枚待ち。門前6巡目、ドラ1と赤1。7p和了には平和が付かないため、リーチで全ての待ちをロン可能にし打点を高める。"
+        }
+      },
+      "beforeBase": {}
+    },
+    {
+      "id": 150,
+      "patch": {
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "theory-supplement",
+          "videoUrl": "https://youtu.be/jj63zZl5sGs",
+          "videoExplicitRiichi": false,
+          "assumption": "他家からの攻撃や特別な着順条件の指定がないため、先制の通常局面として判断。動画がリーチを明言したという記録ではない。",
+          "theoryDocumentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA",
+          "theoryRevision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw",
+          "reason": "9s切りで7m・8mの7枚待ち、タンヤオ。門前6巡目の先制聴牌で、立直+1飜の原則からリーチを選ぶ。"
+        }
+      },
+      "beforeBase": {}
+    },
+    {
+      "id": 275,
+      "patch": {
+        "videoExplanation": "おすすめは3p切りなのだ。\n\n今回は雀頭がないので、両面嵌張をそのまま残すのではなく、筒子を5p・6p・7p・7p・8pの形にするのだ。面子にターツがつながるこの形は、雀頭と1面子を作りやすいのだ。"
+      },
+      "beforeBase": {
+        "videoExplanation": "おすすめは3p切りなのだ。\n\n今回は雀頭がないので、両面嵌張をそのまま残すのではなく、筒子を5p・6p・7p・7p・8pの形にするのだ。面子にターツがつながるこの形は、雀頭と1面子を作りやすいのだ。\n\nヘッドレス一向聴は広くなりやすい一方、単騎聴牌になることもあるのだ。雀頭を作りやすい連続形を残して、良形聴牌に備えるのだ。"
+      }
+    }
+  ],
+  "sourceChecks": {
+    "123": {
+      "url": "https://youtu.be/pge6YCjrQ9s",
+      "seconds": 18,
+      "conclusion": "打5ピンなのだ。赤5pではなく通常5p。"
+    },
+    "275": {
+      "kind": "user-instruction",
+      "detail": "冒頭と最初の理由段落を維持し、ヘッドレス一向聴以降の末尾段落を削除。作者の解説は維持。"
+    }
+  }
+}

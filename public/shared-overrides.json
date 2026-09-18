@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://zundamon-question-api.naga-study.workers.dev",
-  "cursor": 549,
+  "cursor": 588,
   "rows": [
     {
       "id": 1,
@@ -818,7 +818,7 @@
       ],
       "points": 25000,
       "status": "unreviewed",
-      "reviewed": false,
+      "reviewed": true,
       "threadId": "1309969118325244008",
       "createdAt": "2024-11-23T19:49:35.858000+00:00",
       "meldCount": 0,
@@ -841,7 +841,7 @@
       "correctDiscards": [
         "7m"
       ],
-      "reviewUpdatedAt": null,
+      "reviewUpdatedAt": "2026-09-16T08:32:57.751Z",
       "discordMessageId": "1309969118325244008",
       "sourceDrawStatus": "verified",
       "videoExplanation": "ここは7m切りなのだ。索子の雀頭はまだ一か所に固定されていないことがポイントなのだ。\n\n4sを雀頭と見ると7sの周り、7sを雀頭と見ると4sの周りにも聴牌する受けがあるのだ。雀頭を入れ替える見方ができれば、索子を残したときの両面変化を見落としにくくなるのだ。7mを残すよりも、索子全体のつながりを生かしたいのだ。",
@@ -860,7 +860,7 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
-      "reviewStatus": null,
+      "reviewStatus": "complete",
       "questionData": {
         "id": 6,
         "dora": "9p",
@@ -6471,8 +6471,15 @@
     },
     {
       "id": 41,
-      "dora": "5m",
-      "draw": "6p",
+      "image": "/questions/question-041.png",
+      "images": [
+        "/questions/question-041.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1312073505357172737",
+      "discordMessageId": "1312073505357172737",
+      "threadId": "1312073505357172737",
+      "createdAt": "2024-11-29T15:11:40.824000+00:00",
       "hand": [
         "1m",
         "1m",
@@ -6488,48 +6495,24 @@
         "4s",
         "2z"
       ],
-      "note": "2zは安全牌と想定する。",
+      "draw": "6p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 6,
       "honba": 0,
-      "image": "/questions/question-041.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-041.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1312073505357172737",
-      "createdAt": "2024-11-29T15:11:40.824000+00:00",
-      "meldCount": 0,
-      "sourceUrl": "https://youtu.be/SKhbShnBSRs",
-      "sourceDraw": "6p",
-      "explanation": "💯",
-      "sourceLabel": "YouTube動画を開く",
-      "answerSource": {
-        "url": "https://youtu.be/SKhbShnBSRs",
-        "kind": "video",
-        "reviewedTimestamps": [
-          21,
-          33,
-          39
-        ]
-      },
-      "authorSource": {
-        "kind": "shared-admin",
-        "updatedAt": "2026-07-16 05:29:34.603+00"
-      },
+      "dora": "5m",
+      "melds": [],
       "correctDiscards": [
         "2z"
       ],
-      "discordMessageId": "1312073505357172737",
-      "sourceDrawStatus": "verified",
+      "sourceUrl": "https://youtu.be/SKhbShnBSRs",
+      "sourceLabel": "元動画を開く",
       "videoExplanation": "おすすめは2z切りなのだ。安全牌として持っていた2zと、面子に近い8mを比べる問題なのだ。\n\n8mを残しておくと、5m・8mの受けや、タンヤオとドラを生かした打点のある手への変化を残せるのだ。今の受け入れが同じだからと安全牌を必ず残すのではなく、自分の手が満貫級に育つ価値を見て選びたいのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1312073505357172737",
-      "videoCorrectDiscards": [
-        "2z"
-      ],
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
       "videoExplanationSource": {
         "url": "https://youtu.be/SKhbShnBSRs",
         "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -6540,16 +6523,50 @@
           39
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "sourceDraw": "6p",
+      "sourceDrawStatus": "verified",
+      "authorSource": {
+        "kind": "shared-admin",
+        "updatedAt": "2026-07-16 05:29:34.603+00"
+      },
+      "note": "2zは安全牌と想定する。",
+      "videoCorrectDiscards": [
+        "2z"
+      ],
+      "answerSource": {
+        "url": "https://youtu.be/SKhbShnBSRs",
+        "kind": "video",
+        "reviewedTimestamps": [
+          21,
+          33,
+          39
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "SKhbShnBSRs",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
       "difficulty": "beginner",
-      "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "kanChoice": false,
+      "correctKan": null,
+      "correctRiichi": null,
+      "reviewed": true,
+      "reviewStatus": "complete",
+      "reviewUpdatedAt": "2026-09-18T03:42:31.941Z",
       "questionData": {
         "id": 41,
-        "dora": "5m",
-        "draw": "6p",
+        "image": "/questions/question-041.png",
+        "images": [
+          "/questions/question-041.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1312073505357172737",
+        "discordMessageId": "1312073505357172737",
+        "threadId": "1312073505357172737",
+        "createdAt": "2024-11-29T15:11:40.824000+00:00",
         "hand": [
           "1m",
           "1m",
@@ -6565,48 +6582,24 @@
           "4s",
           "2z"
         ],
-        "note": "2zは安全牌と想定する。",
+        "draw": "6p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 6,
         "honba": 0,
-        "image": "/questions/question-041.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-041.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1312073505357172737",
-        "createdAt": "2024-11-29T15:11:40.824000+00:00",
-        "meldCount": 0,
-        "sourceUrl": "https://youtu.be/SKhbShnBSRs",
-        "sourceDraw": "6p",
-        "explanation": "💯",
-        "sourceLabel": "YouTube動画を開く",
-        "answerSource": {
-          "url": "https://youtu.be/SKhbShnBSRs",
-          "kind": "video",
-          "reviewedTimestamps": [
-            21,
-            33,
-            39
-          ]
-        },
-        "authorSource": {
-          "kind": "shared-admin",
-          "updatedAt": "2026-07-16 05:29:34.603+00"
-        },
+        "dora": "5m",
+        "melds": [],
         "correctDiscards": [
           "2z"
         ],
-        "discordMessageId": "1312073505357172737",
-        "sourceDrawStatus": "verified",
+        "sourceUrl": "https://youtu.be/SKhbShnBSRs",
+        "sourceLabel": "元動画を開く",
         "videoExplanation": "おすすめは2z切りなのだ。安全牌として持っていた2zと、面子に近い8mを比べる問題なのだ。\n\n8mを残しておくと、5m・8mの受けや、タンヤオとドラを生かした打点のある手への変化を残せるのだ。今の受け入れが同じだからと安全牌を必ず残すのではなく、自分の手が満貫級に育つ価値を見て選びたいのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1312073505357172737",
-        "videoCorrectDiscards": [
-          "2z"
-        ],
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
         "videoExplanationSource": {
           "url": "https://youtu.be/SKhbShnBSRs",
           "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -6617,12 +6610,39 @@
             39
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2,
-        "difficulty": "beginner"
+        "sourceDraw": "6p",
+        "sourceDrawStatus": "verified",
+        "authorSource": {
+          "kind": "shared-admin",
+          "updatedAt": "2026-07-16 05:29:34.603+00"
+        },
+        "note": "2zは安全牌と想定する。",
+        "videoCorrectDiscards": [
+          "2z"
+        ],
+        "answerSource": {
+          "url": "https://youtu.be/SKhbShnBSRs",
+          "kind": "video",
+          "reviewedTimestamps": [
+            21,
+            33,
+            39
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "SKhbShnBSRs",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "kanChoice": false,
+        "correctKan": null,
+        "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:08:48.148Z"
+      "overrideUpdatedAt": "2026-09-18T03:42:24.416Z"
     },
     {
       "id": 42,
@@ -6930,8 +6950,15 @@
     },
     {
       "id": 44,
-      "dora": "7s",
-      "draw": "2m",
+      "image": "/questions/question-044.png",
+      "images": [
+        "/questions/question-044.png"
+      ],
+      "explanation": "||8ｐ待ちもありますね。4面張✨||",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1312073548717756528",
+      "discordMessageId": "1312073548717756528",
+      "threadId": "1312073548717756528",
+      "createdAt": "2024-11-29T15:11:51.162000+00:00",
       "hand": [
         "3m",
         "4m",
@@ -6947,33 +6974,30 @@
         "6s",
         "7s"
       ],
+      "draw": "2m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 8,
       "honba": 0,
-      "image": "/questions/question-044.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-044.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1312073548717756528",
-      "createdAt": "2024-11-29T15:11:51.162000+00:00",
-      "meldCount": 0,
+      "dora": "7s",
+      "melds": [],
+      "correctDiscards": [
+        "5p"
+      ],
+      "videoExplanation": "動画のおすすめは5pを切ってリーチなのだ。\n\n5p切りなら3p・6p・8p・9p待ちで14枚、8p切りなら3p・5p・6p待ちで9枚なのだ。8p切りは必ずタンヤオが付くけれど、5p切りでも9p以外ならタンヤオが付くのだ。\n\n赤牌を含めてドラ2があり、9pでタンヤオが付かなくても、リーチと平和で十分な打点があるのだ。今回は、タンヤオの確定より和了牌の多さを優先するのだ。\n\n※元問題の画像は8巡目、対応する動画は9巡目として解説しているのだ。ここでは動画の結論と理由を紹介しているのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
       "sourceDraw": "2m",
-      "explanation": "||8ｐ待ちもありますね。4面張✨||",
+      "sourceDrawStatus": "verified",
       "authorSource": {
         "kind": "shared-admin",
         "updatedAt": "2026-07-16 05:30:44.92+00"
       },
-      "correctDiscards": [
-        "5p"
-      ],
-      "discordMessageId": "1312073548717756528",
-      "sourceDrawStatus": "verified",
-      "videoExplanation": "動画のおすすめは5pを切ってリーチなのだ。\n\n5p切りなら3p・6p・8p・9p待ちで14枚、8p切りなら3p・5p・6p待ちで9枚なのだ。8p切りは必ずタンヤオが付くけれど、5p切りでも9p以外ならタンヤオが付くのだ。\n\n赤牌を含めてドラ2があり、9pでタンヤオが付かなくても、リーチと平和で十分な打点があるのだ。今回は、タンヤオの確定より和了牌の多さを優先するのだ。\n\n※元問題の画像は8巡目、対応する動画は9巡目として解説しているのだ。ここでは動画の結論と理由を紹介しているのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1312073548717756528",
+      "sourceUrl": "https://youtu.be/vgvJP1nmnRI",
+      "sourceLabel": "YouTube動画を開く",
       "videoExplanationSource": {
         "url": "https://youtu.be/vgvJP1nmnRI",
         "reasonSeconds": [
@@ -6994,15 +7018,38 @@
           18
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "sourcePlaylistMembership": {
+        "videoId": "vgvJP1nmnRI",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "intermediate",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "riichiDecisionSource": {
+        "kind": "video-frame",
+        "url": "https://youtu.be/vgvJP1nmnRI",
+        "seconds": 18,
+        "conclusion": "打5ピンでリーチなのだ"
+      },
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
         "id": 44,
-        "dora": "7s",
-        "draw": "2m",
+        "image": "/questions/question-044.png",
+        "images": [
+          "/questions/question-044.png"
+        ],
+        "explanation": "||8ｐ待ちもありますね。4面張✨||",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1312073548717756528",
+        "discordMessageId": "1312073548717756528",
+        "threadId": "1312073548717756528",
+        "createdAt": "2024-11-29T15:11:51.162000+00:00",
         "hand": [
           "3m",
           "4m",
@@ -7018,33 +7065,30 @@
           "6s",
           "7s"
         ],
+        "draw": "2m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 8,
         "honba": 0,
-        "image": "/questions/question-044.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-044.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1312073548717756528",
-        "createdAt": "2024-11-29T15:11:51.162000+00:00",
-        "meldCount": 0,
+        "dora": "7s",
+        "melds": [],
+        "correctDiscards": [
+          "5p"
+        ],
+        "videoExplanation": "動画のおすすめは5pを切ってリーチなのだ。\n\n5p切りなら3p・6p・8p・9p待ちで14枚、8p切りなら3p・5p・6p待ちで9枚なのだ。8p切りは必ずタンヤオが付くけれど、5p切りでも9p以外ならタンヤオが付くのだ。\n\n赤牌を含めてドラ2があり、9pでタンヤオが付かなくても、リーチと平和で十分な打点があるのだ。今回は、タンヤオの確定より和了牌の多さを優先するのだ。\n\n※元問題の画像は8巡目、対応する動画は9巡目として解説しているのだ。ここでは動画の結論と理由を紹介しているのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
         "sourceDraw": "2m",
-        "explanation": "||8ｐ待ちもありますね。4面張✨||",
+        "sourceDrawStatus": "verified",
         "authorSource": {
           "kind": "shared-admin",
           "updatedAt": "2026-07-16 05:30:44.92+00"
         },
-        "correctDiscards": [
-          "5p"
-        ],
-        "discordMessageId": "1312073548717756528",
-        "sourceDrawStatus": "verified",
-        "videoExplanation": "動画のおすすめは5pを切ってリーチなのだ。\n\n5p切りなら3p・6p・8p・9p待ちで14枚、8p切りなら3p・5p・6p待ちで9枚なのだ。8p切りは必ずタンヤオが付くけれど、5p切りでも9p以外ならタンヤオが付くのだ。\n\n赤牌を含めてドラ2があり、9pでタンヤオが付かなくても、リーチと平和で十分な打点があるのだ。今回は、タンヤオの確定より和了牌の多さを優先するのだ。\n\n※元問題の画像は8巡目、対応する動画は9巡目として解説しているのだ。ここでは動画の結論と理由を紹介しているのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1312073548717756528",
+        "sourceUrl": "https://youtu.be/vgvJP1nmnRI",
+        "sourceLabel": "YouTube動画を開く",
         "videoExplanationSource": {
           "url": "https://youtu.be/vgvJP1nmnRI",
           "reasonSeconds": [
@@ -7065,11 +7109,27 @@
             18
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "sourcePlaylistMembership": {
+          "videoId": "vgvJP1nmnRI",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "intermediate",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/vgvJP1nmnRI",
+          "seconds": 18,
+          "conclusion": "打5ピンでリーチなのだ"
+        },
+        "kanChoice": false,
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-07 19:00:14.858834+00"
+      "overrideUpdatedAt": "2026-09-18T03:55:56.227Z"
     },
     {
       "id": 45,
@@ -8351,7 +8411,7 @@
       "createdAt": "2024-12-02T04:41:17.536000+00:00",
       "meldCount": 0,
       "sourceDraw": "5m",
-      "explanation": "💯\n||スキップ牌。**頭があるからいらない**でも良いし、**5ブロックあるからいらない**でもOKです。||",
+      "explanation": "9ｓがスキップ牌。**他に頭があるからいらない**でも良いし、**5ブロックあるからいらない**でもOKです。\nちなみに、1ｍは一手先フォロー牌、1ｐはフォロー牌（6枚形）です。\n",
       "authorSource": {
         "kind": "shared-admin",
         "updatedAt": "2026-07-16 05:37:51.176+00"
@@ -8421,7 +8481,7 @@
         "createdAt": "2024-12-02T04:41:17.536000+00:00",
         "meldCount": 0,
         "sourceDraw": "5m",
-        "explanation": "💯\n||スキップ牌。**頭があるからいらない**でも良いし、**5ブロックあるからいらない**でもOKです。||",
+        "explanation": "9ｓがスキップ牌。**他に頭があるからいらない**でも良いし、**5ブロックあるからいらない**でもOKです。\nちなみに、1ｍは一手先フォロー牌、1ｐはフォロー牌（6枚形）です。\n",
         "authorSource": {
           "kind": "shared-admin",
           "updatedAt": "2026-07-16 05:37:51.176+00"
@@ -8456,7 +8516,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:08:59.408Z"
+      "overrideUpdatedAt": "2026-09-16T13:46:22.011Z"
     },
     {
       "id": 54,
@@ -8921,8 +8981,15 @@
     },
     {
       "id": 57,
-      "dora": "1s",
-      "draw": "6s",
+      "image": "/questions/question-057.png",
+      "images": [
+        "/questions/question-057.png"
+      ],
+      "explanation": "💯 \n\n||煙突形の問題。\n7ｓ切ると58ｓ8ｐ三面張（７枚）\n\n8ｓ切ると69ｓ両面（7枚）\n\n枚数同じですが打点は、最低１翻（平和）、ＭＡＸ2翻（イーペーコー）も違います。打点差がありすぎるので、枚数2～3枚差あっても両面で曲げることが多いです。\n\n||\n||https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0||",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132903655276668",
+      "discordMessageId": "1313132903655276668",
+      "threadId": "1313132903655276668",
+      "createdAt": "2024-12-02T13:21:21.061000+00:00",
       "hand": [
         "7m",
         "8m",
@@ -8938,35 +9005,30 @@
         "8s",
         "8s"
       ],
+      "draw": "6s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 6,
       "honba": 0,
-      "image": "/questions/question-057.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-057.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1313132903655276668",
-      "createdAt": "2024-12-02T13:21:21.061000+00:00",
-      "meldCount": 0,
-      "sourceUrl": "https://youtu.be/oO0j3xVXaE8",
+      "dora": "1s",
+      "melds": [],
+      "correctDiscards": [
+        "8s"
+      ],
+      "videoExplanation": "おすすめは8sを切ってリーチなのだ。\n\n7s切りなら5s・8s・8pの変則三面張で7枚、8s切りなら6s・9sの両面で6枚なのだ。9sがドラ表示牌に1枚使われているので、見た目の両面8枚ではないことにも注意するのだ。\n\n待ち枚数は1枚減るけれど、8s切りは平和が付き、6sで和了すれば一盃口も付くのだ。この打点差を重視して8s切りを選ぶのだ。ダマにしてリーチの打点上昇を逃すより、そのままリーチするのがおすすめなのだ。\n\n7s切りで手替わりを待ったり、ここから三色を追ったりする必要はないのだ。すでに十分な手なので、待ち枚数と打点を一緒に比較するのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
       "sourceDraw": "6s",
-      "explanation": "💯 \n\n||煙突形の問題。\n7ｓ切ると58ｓ8ｐ三面張（７枚）\n\n8ｓ切ると69ｓ両面（7枚）\n\n枚数同じですが打点は、最低１翻（平和）、ＭＡＸ2翻（イーペーコー）も違います。打点差がありすぎるので、枚数2～3枚差あっても両面で曲げることが多いです。\n\n||\n||https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0||",
-      "sourceLabel": "YouTube動画を開く",
+      "sourceDrawStatus": "verified",
       "authorSource": {
         "kind": "shared-admin",
         "updatedAt": "2026-07-16 05:40:49.018+00"
       },
-      "correctDiscards": [
-        "8s"
-      ],
-      "discordMessageId": "1313132903655276668",
-      "sourceDrawStatus": "verified",
-      "videoExplanation": "おすすめは8sを切ってリーチなのだ。\n\n7s切りなら5s・8s・8pの変則三面張で7枚、8s切りなら6s・9sの両面で6枚なのだ。9sがドラ表示牌に1枚使われているので、見た目の両面8枚ではないことにも注意するのだ。\n\n待ち枚数は1枚減るけれど、8s切りは平和が付き、6sで和了すれば一盃口も付くのだ。この打点差を重視して8s切りを選ぶのだ。ダマにしてリーチの打点上昇を逃すより、そのままリーチするのがおすすめなのだ。\n\n7s切りで手替わりを待ったり、ここから三色を追ったりする必要はないのだ。すでに十分な手なので、待ち枚数と打点を一緒に比較するのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132903655276668",
+      "sourceUrl": "https://youtu.be/oO0j3xVXaE8",
+      "sourceLabel": "YouTube動画を開く",
       "videoExplanationSource": {
         "url": "https://youtu.be/oO0j3xVXaE8",
         "reasonSeconds": [
@@ -8988,15 +9050,38 @@
           18
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "sourcePlaylistMembership": {
+        "videoId": "oO0j3xVXaE8",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "intermediate",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "riichiDecisionSource": {
+        "kind": "video-frame",
+        "url": "https://youtu.be/oO0j3xVXaE8",
+        "seconds": 48,
+        "conclusion": "打8ソウでダマにするのは、打点向上の恩恵を受けられなくてもったいないのだ"
+      },
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
         "id": 57,
-        "dora": "1s",
-        "draw": "6s",
+        "image": "/questions/question-057.png",
+        "images": [
+          "/questions/question-057.png"
+        ],
+        "explanation": "💯 \n\n||煙突形の問題。\n7ｓ切ると58ｓ8ｐ三面張（７枚）\n\n8ｓ切ると69ｓ両面（7枚）\n\n枚数同じですが打点は、最低１翻（平和）、ＭＡＸ2翻（イーペーコー）も違います。打点差がありすぎるので、枚数2～3枚差あっても両面で曲げることが多いです。\n\n||\n||https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0||",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132903655276668",
+        "discordMessageId": "1313132903655276668",
+        "threadId": "1313132903655276668",
+        "createdAt": "2024-12-02T13:21:21.061000+00:00",
         "hand": [
           "7m",
           "8m",
@@ -9012,35 +9097,30 @@
           "8s",
           "8s"
         ],
+        "draw": "6s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 6,
         "honba": 0,
-        "image": "/questions/question-057.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-057.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1313132903655276668",
-        "createdAt": "2024-12-02T13:21:21.061000+00:00",
-        "meldCount": 0,
-        "sourceUrl": "https://youtu.be/oO0j3xVXaE8",
+        "dora": "1s",
+        "melds": [],
+        "correctDiscards": [
+          "8s"
+        ],
+        "videoExplanation": "おすすめは8sを切ってリーチなのだ。\n\n7s切りなら5s・8s・8pの変則三面張で7枚、8s切りなら6s・9sの両面で6枚なのだ。9sがドラ表示牌に1枚使われているので、見た目の両面8枚ではないことにも注意するのだ。\n\n待ち枚数は1枚減るけれど、8s切りは平和が付き、6sで和了すれば一盃口も付くのだ。この打点差を重視して8s切りを選ぶのだ。ダマにしてリーチの打点上昇を逃すより、そのままリーチするのがおすすめなのだ。\n\n7s切りで手替わりを待ったり、ここから三色を追ったりする必要はないのだ。すでに十分な手なので、待ち枚数と打点を一緒に比較するのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
         "sourceDraw": "6s",
-        "explanation": "💯 \n\n||煙突形の問題。\n7ｓ切ると58ｓ8ｐ三面張（７枚）\n\n8ｓ切ると69ｓ両面（7枚）\n\n枚数同じですが打点は、最低１翻（平和）、ＭＡＸ2翻（イーペーコー）も違います。打点差がありすぎるので、枚数2～3枚差あっても両面で曲げることが多いです。\n\n||\n||https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0||",
-        "sourceLabel": "YouTube動画を開く",
+        "sourceDrawStatus": "verified",
         "authorSource": {
           "kind": "shared-admin",
           "updatedAt": "2026-07-16 05:40:49.018+00"
         },
-        "correctDiscards": [
-          "8s"
-        ],
-        "discordMessageId": "1313132903655276668",
-        "sourceDrawStatus": "verified",
-        "videoExplanation": "おすすめは8sを切ってリーチなのだ。\n\n7s切りなら5s・8s・8pの変則三面張で7枚、8s切りなら6s・9sの両面で6枚なのだ。9sがドラ表示牌に1枚使われているので、見た目の両面8枚ではないことにも注意するのだ。\n\n待ち枚数は1枚減るけれど、8s切りは平和が付き、6sで和了すれば一盃口も付くのだ。この打点差を重視して8s切りを選ぶのだ。ダマにしてリーチの打点上昇を逃すより、そのままリーチするのがおすすめなのだ。\n\n7s切りで手替わりを待ったり、ここから三色を追ったりする必要はないのだ。すでに十分な手なので、待ち枚数と打点を一緒に比較するのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132903655276668",
+        "sourceUrl": "https://youtu.be/oO0j3xVXaE8",
+        "sourceLabel": "YouTube動画を開く",
         "videoExplanationSource": {
           "url": "https://youtu.be/oO0j3xVXaE8",
           "reasonSeconds": [
@@ -9062,11 +9142,27 @@
             18
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "sourcePlaylistMembership": {
+          "videoId": "oO0j3xVXaE8",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "intermediate",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/oO0j3xVXaE8",
+          "seconds": 48,
+          "conclusion": "打8ソウでダマにするのは、打点向上の恩恵を受けられなくてもったいないのだ"
+        },
+        "kanChoice": false,
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-07 19:00:14.859229+00"
+      "overrideUpdatedAt": "2026-09-18T03:55:58.271Z"
     },
     {
       "id": 58,
@@ -9422,8 +9518,15 @@
     },
     {
       "id": 60,
-      "dora": "1s",
-      "draw": "9m",
+      "image": "/questions/question-060.png",
+      "images": [
+        "/questions/question-060.png"
+      ],
+      "explanation": "６ブロックにしても良い条件は見てしていないので、打2ｐ推奨とします。24ｐと24ｍの比較は孤立牌同様、タ～子もタ～子が近いと弱くなりますし、順子が近くにいると強くなりますhttps://youtu.be/rx0uO-XE_PY?si=2vc-cx12tDnE6I_b\n",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132953005723658",
+      "discordMessageId": "1313132953005723658",
+      "threadId": "1313132953005723658",
+      "createdAt": "2024-12-02T13:21:32.827000+00:00",
       "hand": [
         "2m",
         "4m",
@@ -9439,50 +9542,25 @@
         "6s",
         "6s"
       ],
+      "draw": "9m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 6,
       "honba": 0,
-      "image": "/questions/question-060.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-060.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1313132953005723658",
-      "createdAt": "2024-12-02T13:21:32.827000+00:00",
-      "meldCount": 0,
-      "sourceUrl": "https://youtu.be/rx0uO-XE_PY",
-      "sourceDraw": "9m",
-      "explanation": "||６ブロックにしても良い条件は見てしていないので、打2ｐ推奨とします。（24ｐと24ｍの比較はとじょの言う通り💯 　**孤立牌同様**、タ～子もタ～子が近いと弱くなりますし、順子が近くにいると強くなります）https://youtu.be/rx0uO-XE_PY?si=2vc-cx12tDnE6I_b||\n本当ですね！w\nそもそも3ヘッドじゃ無かったw申し訳ございません😂\n僕の回答が紛らわしいので、後で回答の方修正させて頂き、付随する文章は削除させていただきます✨",
-      "sourceLabel": "YouTube動画を開く",
-      "answerSource": {
-        "url": "https://youtu.be/rx0uO-XE_PY",
-        "kind": "instructor-and-video",
-        "reviewedTimestamps": [
-          21,
-          27,
-          33,
-          39,
-          45
-        ]
-      },
-      "authorSource": {
-        "kind": "shared-admin",
-        "updatedAt": "2026-07-16 05:42:08.577+00"
-      },
+      "dora": "1s",
+      "melds": [],
       "correctDiscards": [
         "2p",
         "4p"
       ],
-      "discordMessageId": "1313132953005723658",
-      "sourceDrawStatus": "verified",
+      "sourceUrl": "https://youtu.be/rx0uO-XE_PY",
+      "sourceLabel": "元動画を開く",
       "videoExplanation": "ここは2pから切って、筒子の嵌張を外すのだ。6ブロックを5ブロックに絞るとき、似た嵌張でも良形へ変わった後の受けを比べたいのだ。\n\n筒子側で両面を作ると、別の両面と6pの受けが重なってしまうのだ。萬子の2m・4mを残しておけば、その重なりがなく、フォロー牌や5m引きによる好形変化を生かせるのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132953005723658",
-      "videoCorrectDiscards": [
-        "2p"
-      ],
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
       "videoExplanationSource": {
         "url": "https://youtu.be/rx0uO-XE_PY",
         "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -9495,16 +9573,50 @@
           45
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "sourceDraw": "9m",
+      "sourceDrawStatus": "verified",
+      "authorSource": {
+        "kind": "shared-admin",
+        "updatedAt": "2026-07-16 05:42:08.577+00"
+      },
+      "videoCorrectDiscards": [
+        "2p"
+      ],
+      "answerSource": {
+        "url": "https://youtu.be/rx0uO-XE_PY",
+        "kind": "instructor-and-video",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "rx0uO-XE_PY",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+        ]
+      },
       "difficulty": "beginner",
+      "kanChoice": false,
+      "correctKan": null,
+      "correctRiichi": null,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "fix",
+      "reviewUpdatedAt": "2026-09-17T06:30:17.389Z",
       "questionData": {
         "id": 60,
-        "dora": "1s",
-        "draw": "9m",
+        "image": "/questions/question-060.png",
+        "images": [
+          "/questions/question-060.png"
+        ],
+        "explanation": "６ブロックにしても良い条件は見てしていないので、打2ｐ推奨とします。24ｐと24ｍの比較は孤立牌同様、タ～子もタ～子が近いと弱くなりますし、順子が近くにいると強くなりますhttps://youtu.be/rx0uO-XE_PY?si=2vc-cx12tDnE6I_b\n",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132953005723658",
+        "discordMessageId": "1313132953005723658",
+        "threadId": "1313132953005723658",
+        "createdAt": "2024-12-02T13:21:32.827000+00:00",
         "hand": [
           "2m",
           "4m",
@@ -9520,50 +9632,25 @@
           "6s",
           "6s"
         ],
+        "draw": "9m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 6,
         "honba": 0,
-        "image": "/questions/question-060.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-060.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1313132953005723658",
-        "createdAt": "2024-12-02T13:21:32.827000+00:00",
-        "meldCount": 0,
-        "sourceUrl": "https://youtu.be/rx0uO-XE_PY",
-        "sourceDraw": "9m",
-        "explanation": "||６ブロックにしても良い条件は見てしていないので、打2ｐ推奨とします。（24ｐと24ｍの比較はとじょの言う通り💯 　**孤立牌同様**、タ～子もタ～子が近いと弱くなりますし、順子が近くにいると強くなります）https://youtu.be/rx0uO-XE_PY?si=2vc-cx12tDnE6I_b||\n本当ですね！w\nそもそも3ヘッドじゃ無かったw申し訳ございません😂\n僕の回答が紛らわしいので、後で回答の方修正させて頂き、付随する文章は削除させていただきます✨",
-        "sourceLabel": "YouTube動画を開く",
-        "answerSource": {
-          "url": "https://youtu.be/rx0uO-XE_PY",
-          "kind": "instructor-and-video",
-          "reviewedTimestamps": [
-            21,
-            27,
-            33,
-            39,
-            45
-          ]
-        },
-        "authorSource": {
-          "kind": "shared-admin",
-          "updatedAt": "2026-07-16 05:42:08.577+00"
-        },
+        "dora": "1s",
+        "melds": [],
         "correctDiscards": [
           "2p",
           "4p"
         ],
-        "discordMessageId": "1313132953005723658",
-        "sourceDrawStatus": "verified",
+        "sourceUrl": "https://youtu.be/rx0uO-XE_PY",
+        "sourceLabel": "元動画を開く",
         "videoExplanation": "ここは2pから切って、筒子の嵌張を外すのだ。6ブロックを5ブロックに絞るとき、似た嵌張でも良形へ変わった後の受けを比べたいのだ。\n\n筒子側で両面を作ると、別の両面と6pの受けが重なってしまうのだ。萬子の2m・4mを残しておけば、その重なりがなく、フォロー牌や5m引きによる好形変化を生かせるのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132953005723658",
-        "videoCorrectDiscards": [
-          "2p"
-        ],
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
         "videoExplanationSource": {
           "url": "https://youtu.be/rx0uO-XE_PY",
           "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -9576,12 +9663,39 @@
             45
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2,
-        "difficulty": "beginner"
+        "sourceDraw": "9m",
+        "sourceDrawStatus": "verified",
+        "authorSource": {
+          "kind": "shared-admin",
+          "updatedAt": "2026-07-16 05:42:08.577+00"
+        },
+        "videoCorrectDiscards": [
+          "2p"
+        ],
+        "answerSource": {
+          "url": "https://youtu.be/rx0uO-XE_PY",
+          "kind": "instructor-and-video",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "rx0uO-XE_PY",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
+          ]
+        },
+        "difficulty": "beginner",
+        "kanChoice": false,
+        "correctKan": null,
+        "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:02.601Z"
+      "overrideUpdatedAt": "2026-09-18T03:44:22.708Z"
     },
     {
       "id": 61,
@@ -13460,8 +13574,15 @@
     },
     {
       "id": 86,
-      "dora": "7s",
-      "draw": "7m",
+      "image": "/questions/question-086.png",
+      "images": [
+        "/questions/question-086.png"
+      ],
+      "explanation": "https://youtu.be/RVbVpbubJkM?si=Y3BOW8EDkd5sQLqN",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198580141490177",
+      "discordMessageId": "1318198580141490177",
+      "threadId": "1318198580141490177",
+      "createdAt": "2024-12-16T12:50:32.451000+00:00",
       "hand": [
         "1m",
         "1m",
@@ -13477,50 +13598,25 @@
         "4p",
         "4p"
       ],
+      "draw": "7m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 6,
       "honba": null,
-      "image": "/questions/question-086.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-086.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1318198580141490177",
-      "createdAt": "2024-12-16T12:50:32.451000+00:00",
+      "dora": "7s",
       "kanChoice": true,
-      "meldCount": 0,
-      "sourceUrl": "https://youtu.be/RVbVpbubJkM",
-      "sourceDraw": "7m",
-      "explanation": "https://youtu.be/RVbVpbubJkM?si=Y3BOW8EDkd5sQLqN",
-      "sourceLabel": "YouTube動画を開く",
-      "answerSource": {
-        "url": "https://youtu.be/RVbVpbubJkM",
-        "kind": "video",
-        "reviewedTimestamps": [
-          21,
-          27,
-          33,
-          39,
-          45
-        ]
-      },
-      "authorSource": {
-        "kind": "shared-admin",
-        "updatedAt": "2026-07-16 07:21:34.448+00"
-      },
+      "melds": [],
       "correctDiscards": [
         "3p"
       ],
-      "discordMessageId": "1318198580141490177",
-      "sourceDrawStatus": "verified",
-      "videoExplanation": "今回はカンせず、3pを1枚切るのだ。暗刻として見るだけでなく、雀頭や順子に分けて見ることで、複数の待ちを残せるのだ。\n\n和了牌によって平和・一盃口や三暗刻が付く形なので、枚数も打点も生かしたいのだ。カンしてしまうと、この使い分けができなくなり待ちが減るのだ。4枚ある牌を、ひとまとまりとしてしか見ないのはもったいないのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198580141490177",
-      "videoCorrectDiscards": [
-        "3p"
-      ],
+      "sourceUrl": "https://youtu.be/RVbVpbubJkM",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanation": "今回はカンせず、3pを1枚切ってリーチするのだ。暗刻として見るだけでなく、雀頭や順子に分けて見ることで、複数の待ちを残せるのだ。\n\n和了牌によって平和・一盃口や三暗刻が付く形なので、枚数も打点も生かしたいのだ。カンしてしまうと、この使い分けができなくなり待ちが減るのだ。4枚ある牌を、ひとまとまりとしてしか見ないのはもったいないのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
       "videoExplanationSource": {
         "url": "https://youtu.be/RVbVpbubJkM",
         "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -13533,15 +13629,57 @@
           45
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "sourceDraw": "7m",
+      "sourceDrawStatus": "verified",
+      "authorSource": {
+        "kind": "shared-admin",
+        "updatedAt": "2026-07-16 07:21:34.448+00"
+      },
+      "videoCorrectDiscards": [
+        "3p"
+      ],
+      "answerSource": {
+        "url": "https://youtu.be/RVbVpbubJkM",
+        "kind": "video",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "RVbVpbubJkM",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "intermediate",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "riichiDecisionSource": {
+        "kind": "video-frame",
+        "url": "https://youtu.be/RVbVpbubJkM",
+        "seconds": 18,
+        "conclusion": "打3ピンでリーチなのだ"
+      },
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
         "id": 86,
-        "dora": "7s",
-        "draw": "7m",
+        "image": "/questions/question-086.png",
+        "images": [
+          "/questions/question-086.png"
+        ],
+        "explanation": "https://youtu.be/RVbVpbubJkM?si=Y3BOW8EDkd5sQLqN",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198580141490177",
+        "discordMessageId": "1318198580141490177",
+        "threadId": "1318198580141490177",
+        "createdAt": "2024-12-16T12:50:32.451000+00:00",
         "hand": [
           "1m",
           "1m",
@@ -13557,50 +13695,25 @@
           "4p",
           "4p"
         ],
+        "draw": "7m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 6,
         "honba": null,
-        "image": "/questions/question-086.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-086.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1318198580141490177",
-        "createdAt": "2024-12-16T12:50:32.451000+00:00",
+        "dora": "7s",
         "kanChoice": true,
-        "meldCount": 0,
-        "sourceUrl": "https://youtu.be/RVbVpbubJkM",
-        "sourceDraw": "7m",
-        "explanation": "https://youtu.be/RVbVpbubJkM?si=Y3BOW8EDkd5sQLqN",
-        "sourceLabel": "YouTube動画を開く",
-        "answerSource": {
-          "url": "https://youtu.be/RVbVpbubJkM",
-          "kind": "video",
-          "reviewedTimestamps": [
-            21,
-            27,
-            33,
-            39,
-            45
-          ]
-        },
-        "authorSource": {
-          "kind": "shared-admin",
-          "updatedAt": "2026-07-16 07:21:34.448+00"
-        },
+        "melds": [],
         "correctDiscards": [
           "3p"
         ],
-        "discordMessageId": "1318198580141490177",
-        "sourceDrawStatus": "verified",
-        "videoExplanation": "今回はカンせず、3pを1枚切るのだ。暗刻として見るだけでなく、雀頭や順子に分けて見ることで、複数の待ちを残せるのだ。\n\n和了牌によって平和・一盃口や三暗刻が付く形なので、枚数も打点も生かしたいのだ。カンしてしまうと、この使い分けができなくなり待ちが減るのだ。4枚ある牌を、ひとまとまりとしてしか見ないのはもったいないのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198580141490177",
-        "videoCorrectDiscards": [
-          "3p"
-        ],
+        "sourceUrl": "https://youtu.be/RVbVpbubJkM",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanation": "今回はカンせず、3pを1枚切ってリーチするのだ。暗刻として見るだけでなく、雀頭や順子に分けて見ることで、複数の待ちを残せるのだ。\n\n和了牌によって平和・一盃口や三暗刻が付く形なので、枚数も打点も生かしたいのだ。カンしてしまうと、この使い分けができなくなり待ちが減るのだ。4枚ある牌を、ひとまとまりとしてしか見ないのはもったいないのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
         "videoExplanationSource": {
           "url": "https://youtu.be/RVbVpbubJkM",
           "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -13613,11 +13726,46 @@
             45
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "sourceDraw": "7m",
+        "sourceDrawStatus": "verified",
+        "authorSource": {
+          "kind": "shared-admin",
+          "updatedAt": "2026-07-16 07:21:34.448+00"
+        },
+        "videoCorrectDiscards": [
+          "3p"
+        ],
+        "answerSource": {
+          "url": "https://youtu.be/RVbVpbubJkM",
+          "kind": "video",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "RVbVpbubJkM",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "intermediate",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/RVbVpbubJkM",
+          "seconds": 18,
+          "conclusion": "打3ピンでリーチなのだ"
+        },
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619189+00"
+      "overrideUpdatedAt": "2026-09-18T03:56:00.326Z"
     },
     {
       "id": 87,
@@ -13959,8 +14107,15 @@
     },
     {
       "id": 89,
-      "dora": "7s",
-      "draw": "6s",
+      "image": "/questions/question-089.png",
+      "images": [
+        "/questions/question-089.png"
+      ],
+      "explanation": "💯\nhttps://www.youtube.com/watch?v=ewkAMZToQTc&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=93",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198615445078016",
+      "discordMessageId": "1318198615445078016",
+      "threadId": "1318198615445078016",
+      "createdAt": "2024-12-16T12:50:40.868000+00:00",
       "hand": [
         "5m",
         "6m",
@@ -13976,49 +14131,24 @@
         "5s",
         "7s"
       ],
+      "draw": "6s",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 6,
       "honba": null,
-      "image": "/questions/question-089.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-089.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1318198615445078016",
-      "createdAt": "2024-12-16T12:50:40.868000+00:00",
-      "meldCount": 0,
-      "sourceUrl": "https://youtu.be/ewkAMZToQTc",
-      "sourceDraw": "6s",
-      "explanation": "💯\nhttps://www.youtube.com/watch?v=ewkAMZToQTc&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=93",
-      "sourceLabel": "YouTube動画を開く",
-      "answerSource": {
-        "url": "https://youtu.be/ewkAMZToQTc",
-        "kind": "video",
-        "reviewedTimestamps": [
-          21,
-          27,
-          33,
-          39,
-          45
-        ]
-      },
-      "authorSource": {
-        "kind": "shared-admin",
-        "updatedAt": "2026-07-16 07:22:24.241+00"
-      },
+      "dora": "7s",
+      "melds": [],
       "correctDiscards": [
         "8p"
       ],
-      "discordMessageId": "1318198615445078016",
-      "sourceDrawStatus": "verified",
-      "videoExplanation": "ここは8p切りなのだ。2pを切れば三面張を取れるけれど、9pで和了したときはタンヤオが付かないのだ。\n\n8pを切る形は受け入れが少し減る代わりに、タンヤオを確保し、三色による打点上昇も残せるのだ。待ちの枚数だけを最大にするのではなく、安目で和了したときにも打点があるかを比べたいのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198615445078016",
-      "videoCorrectDiscards": [
-        "8p"
-      ],
+      "sourceUrl": "https://youtu.be/ewkAMZToQTc",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanation": "ここは8pを切ってリーチなのだ。2pを切れば三面張を取れるけれど、9pで和了したときはタンヤオが付かないのだ。\n\n8pを切る形は受け入れが少し減る代わりに、タンヤオを確保し、三色による打点上昇も残せるのだ。待ちの枚数だけを最大にするのではなく、安目で和了したときにも打点があるかを比べたいのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
       "videoExplanationSource": {
         "url": "https://youtu.be/ewkAMZToQTc",
         "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -14031,16 +14161,58 @@
           45
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "sourceDraw": "6s",
+      "sourceDrawStatus": "verified",
+      "authorSource": {
+        "kind": "shared-admin",
+        "updatedAt": "2026-07-16 07:22:24.241+00"
+      },
+      "videoCorrectDiscards": [
+        "8p"
+      ],
+      "answerSource": {
+        "url": "https://youtu.be/ewkAMZToQTc",
+        "kind": "video",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "ewkAMZToQTc",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
       "difficulty": "beginner",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "riichiDecisionSource": {
+        "kind": "video-frame",
+        "url": "https://youtu.be/ewkAMZToQTc",
+        "seconds": 18,
+        "conclusion": "打8ピンでリーチなのだ"
+      },
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
         "id": 89,
-        "dora": "7s",
-        "draw": "6s",
+        "image": "/questions/question-089.png",
+        "images": [
+          "/questions/question-089.png"
+        ],
+        "explanation": "💯\nhttps://www.youtube.com/watch?v=ewkAMZToQTc&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=93",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198615445078016",
+        "discordMessageId": "1318198615445078016",
+        "threadId": "1318198615445078016",
+        "createdAt": "2024-12-16T12:50:40.868000+00:00",
         "hand": [
           "5m",
           "6m",
@@ -14056,49 +14228,24 @@
           "5s",
           "7s"
         ],
+        "draw": "6s",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 6,
         "honba": null,
-        "image": "/questions/question-089.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-089.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1318198615445078016",
-        "createdAt": "2024-12-16T12:50:40.868000+00:00",
-        "meldCount": 0,
-        "sourceUrl": "https://youtu.be/ewkAMZToQTc",
-        "sourceDraw": "6s",
-        "explanation": "💯\nhttps://www.youtube.com/watch?v=ewkAMZToQTc&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=93",
-        "sourceLabel": "YouTube動画を開く",
-        "answerSource": {
-          "url": "https://youtu.be/ewkAMZToQTc",
-          "kind": "video",
-          "reviewedTimestamps": [
-            21,
-            27,
-            33,
-            39,
-            45
-          ]
-        },
-        "authorSource": {
-          "kind": "shared-admin",
-          "updatedAt": "2026-07-16 07:22:24.241+00"
-        },
+        "dora": "7s",
+        "melds": [],
         "correctDiscards": [
           "8p"
         ],
-        "discordMessageId": "1318198615445078016",
-        "sourceDrawStatus": "verified",
-        "videoExplanation": "ここは8p切りなのだ。2pを切れば三面張を取れるけれど、9pで和了したときはタンヤオが付かないのだ。\n\n8pを切る形は受け入れが少し減る代わりに、タンヤオを確保し、三色による打点上昇も残せるのだ。待ちの枚数だけを最大にするのではなく、安目で和了したときにも打点があるかを比べたいのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198615445078016",
-        "videoCorrectDiscards": [
-          "8p"
-        ],
+        "sourceUrl": "https://youtu.be/ewkAMZToQTc",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanation": "ここは8pを切ってリーチなのだ。2pを切れば三面張を取れるけれど、9pで和了したときはタンヤオが付かないのだ。\n\n8pを切る形は受け入れが少し減る代わりに、タンヤオを確保し、三色による打点上昇も残せるのだ。待ちの枚数だけを最大にするのではなく、安目で和了したときにも打点があるかを比べたいのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
         "videoExplanationSource": {
           "url": "https://youtu.be/ewkAMZToQTc",
           "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -14111,12 +14258,47 @@
             45
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2,
-        "difficulty": "beginner"
+        "sourceDraw": "6s",
+        "sourceDrawStatus": "verified",
+        "authorSource": {
+          "kind": "shared-admin",
+          "updatedAt": "2026-07-16 07:22:24.241+00"
+        },
+        "videoCorrectDiscards": [
+          "8p"
+        ],
+        "answerSource": {
+          "url": "https://youtu.be/ewkAMZToQTc",
+          "kind": "video",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "ewkAMZToQTc",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/ewkAMZToQTc",
+          "seconds": 18,
+          "conclusion": "打8ピンでリーチなのだ"
+        },
+        "kanChoice": false,
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:31.526Z"
+      "overrideUpdatedAt": "2026-09-18T03:56:02.368Z"
     },
     {
       "id": 90,
@@ -14780,8 +14962,15 @@
     },
     {
       "id": 97,
-      "dora": "1p",
-      "draw": "4m",
+      "image": "/questions/question-097.png",
+      "images": [
+        "/questions/question-097.png"
+      ],
+      "explanation": "https://youtu.be/dzI9h-Sq8-k?si=Kqg1398hLENpE7PC",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1319615136977260554",
+      "discordMessageId": "1319615136977260554",
+      "threadId": "1319615136977260554",
+      "createdAt": "2024-12-20T10:39:25.919000+00:00",
       "hand": [
         "2m",
         "3m",
@@ -14797,50 +14986,25 @@
         "6s",
         "6s"
       ],
+      "draw": "4m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 6,
       "honba": null,
-      "image": "/questions/question-097.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-097.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1319615136977260554",
-      "createdAt": "2024-12-20T10:39:25.919000+00:00",
+      "dora": "1p",
       "kanChoice": true,
-      "meldCount": 0,
-      "sourceUrl": "https://youtu.be/dzI9h-Sq8-k",
-      "sourceDraw": "4m",
-      "explanation": "https://youtu.be/dzI9h-Sq8-k?si=Kqg1398hLENpE7PC",
-      "sourceLabel": "YouTube動画を開く",
-      "answerSource": {
-        "url": "https://youtu.be/dzI9h-Sq8-k",
-        "kind": "video",
-        "reviewedTimestamps": [
-          21,
-          27,
-          33,
-          39,
-          45
-        ]
-      },
-      "authorSource": {
-        "kind": "shared-admin",
-        "updatedAt": "2026-07-16 08:56:59.273+00"
-      },
+      "melds": [],
       "correctDiscards": [
         "8p"
       ],
-      "discordMessageId": "1319615136977260554",
-      "sourceDrawStatus": "verified",
+      "sourceUrl": "https://youtu.be/dzI9h-Sq8-k",
+      "sourceLabel": "YouTube動画を開く",
       "videoExplanation": "ここは8pを切って立直なのだ。カンはせず、待ちを広く残すのだ。5pを暗刻として見れば4p・7pのノベタン、雀頭として見れば3p・6pの両面なので、合わせて3p・4p・6p・7p待ちなのだ。\n\n5p切りにも広い待ちがあるけれど、タンヤオが付かない和了があるのだ。今回は9pがドラ表示牌で1枚見えているので、受け入れ枚数の比較でも8p切りが有利になるのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1319615136977260554",
-      "videoCorrectDiscards": [
-        "8p"
-      ],
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
       "videoExplanationSource": {
         "url": "https://youtu.be/dzI9h-Sq8-k",
         "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -14853,15 +15017,57 @@
           45
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "sourceDraw": "4m",
+      "sourceDrawStatus": "verified",
+      "authorSource": {
+        "kind": "shared-admin",
+        "updatedAt": "2026-07-16 08:56:59.273+00"
+      },
+      "videoCorrectDiscards": [
+        "8p"
+      ],
+      "answerSource": {
+        "url": "https://youtu.be/dzI9h-Sq8-k",
+        "kind": "video",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "dzI9h-Sq8-k",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "intermediate",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "riichiDecisionSource": {
+        "kind": "video-frame",
+        "url": "https://youtu.be/dzI9h-Sq8-k",
+        "seconds": 18,
+        "conclusion": "打8ピンでリーチなのだ"
+      },
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
         "id": 97,
-        "dora": "1p",
-        "draw": "4m",
+        "image": "/questions/question-097.png",
+        "images": [
+          "/questions/question-097.png"
+        ],
+        "explanation": "https://youtu.be/dzI9h-Sq8-k?si=Kqg1398hLENpE7PC",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1319615136977260554",
+        "discordMessageId": "1319615136977260554",
+        "threadId": "1319615136977260554",
+        "createdAt": "2024-12-20T10:39:25.919000+00:00",
         "hand": [
           "2m",
           "3m",
@@ -14877,50 +15083,25 @@
           "6s",
           "6s"
         ],
+        "draw": "4m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 6,
         "honba": null,
-        "image": "/questions/question-097.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-097.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1319615136977260554",
-        "createdAt": "2024-12-20T10:39:25.919000+00:00",
+        "dora": "1p",
         "kanChoice": true,
-        "meldCount": 0,
-        "sourceUrl": "https://youtu.be/dzI9h-Sq8-k",
-        "sourceDraw": "4m",
-        "explanation": "https://youtu.be/dzI9h-Sq8-k?si=Kqg1398hLENpE7PC",
-        "sourceLabel": "YouTube動画を開く",
-        "answerSource": {
-          "url": "https://youtu.be/dzI9h-Sq8-k",
-          "kind": "video",
-          "reviewedTimestamps": [
-            21,
-            27,
-            33,
-            39,
-            45
-          ]
-        },
-        "authorSource": {
-          "kind": "shared-admin",
-          "updatedAt": "2026-07-16 08:56:59.273+00"
-        },
+        "melds": [],
         "correctDiscards": [
           "8p"
         ],
-        "discordMessageId": "1319615136977260554",
-        "sourceDrawStatus": "verified",
+        "sourceUrl": "https://youtu.be/dzI9h-Sq8-k",
+        "sourceLabel": "YouTube動画を開く",
         "videoExplanation": "ここは8pを切って立直なのだ。カンはせず、待ちを広く残すのだ。5pを暗刻として見れば4p・7pのノベタン、雀頭として見れば3p・6pの両面なので、合わせて3p・4p・6p・7p待ちなのだ。\n\n5p切りにも広い待ちがあるけれど、タンヤオが付かない和了があるのだ。今回は9pがドラ表示牌で1枚見えているので、受け入れ枚数の比較でも8p切りが有利になるのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1319615136977260554",
-        "videoCorrectDiscards": [
-          "8p"
-        ],
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
         "videoExplanationSource": {
           "url": "https://youtu.be/dzI9h-Sq8-k",
           "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -14933,11 +15114,46 @@
             45
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2
+        "sourceDraw": "4m",
+        "sourceDrawStatus": "verified",
+        "authorSource": {
+          "kind": "shared-admin",
+          "updatedAt": "2026-07-16 08:56:59.273+00"
+        },
+        "videoCorrectDiscards": [
+          "8p"
+        ],
+        "answerSource": {
+          "url": "https://youtu.be/dzI9h-Sq8-k",
+          "kind": "video",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "dzI9h-Sq8-k",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "intermediate",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/dzI9h-Sq8-k",
+          "seconds": 18,
+          "conclusion": "打8ピンでリーチなのだ"
+        },
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619658+00"
+      "overrideUpdatedAt": "2026-09-18T03:56:04.428Z"
     },
     {
       "id": 98,
@@ -14996,14 +15212,176 @@
     },
     {
       "id": 106,
+      "image": "/questions/question-106.png",
+      "images": [
+        "/questions/question-106.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1321512445717512312",
+      "discordMessageId": "1321512445717512312",
+      "threadId": "1321512445717512312",
+      "createdAt": "2024-12-25T16:18:39.573000+00:00",
+      "hand": [
+        "2m",
+        "4m",
+        "6m",
+        "7m",
+        "1p",
+        "1p",
+        "2p",
+        "3p",
+        "5s",
+        "6s",
+        "7s",
+        "8s",
+        "9s"
+      ],
+      "draw": "3m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "4m",
+      "melds": [],
+      "correctDiscards": [
+        "1p"
+      ],
+      "sourceUrl": "https://youtu.be/JlG0o7Crqhc",
+      "sourceLabel": "元動画を開く",
+      "videoExplanation": "おすすめは1p切りなのだ。雀頭のない一向聴にすると、受け入れ枚数を大きく増やせるのだ。\n\nヘッドレスには単騎聴牌の弱点があるけれど、今回は索子が連続形なので、4s・7s以外の受けではノベタン以上の待ちになるのだ。平和確定の3p切りも魅力はあるけれど、この受け入れの差は見逃せないのだ。雀頭がないという理由だけで狭い手だと判断しないのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/JlG0o7Crqhc",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ],
+        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+        "revision": 60
+      },
+      "sourceDraw": "3m",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "1p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/JlG0o7Crqhc",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "JlG0o7Crqhc",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "beginner",
+      "kanChoice": false,
+      "correctKan": null,
+      "correctRiichi": null,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "check",
+      "reviewUpdatedAt": "2026-09-18T01:19:16.655Z",
       "questionData": {
-        "difficulty": "beginner"
+        "id": 106,
+        "image": "/questions/question-106.png",
+        "images": [
+          "/questions/question-106.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1321512445717512312",
+        "discordMessageId": "1321512445717512312",
+        "threadId": "1321512445717512312",
+        "createdAt": "2024-12-25T16:18:39.573000+00:00",
+        "hand": [
+          "2m",
+          "4m",
+          "6m",
+          "7m",
+          "1p",
+          "1p",
+          "2p",
+          "3p",
+          "5s",
+          "6s",
+          "7s",
+          "8s",
+          "9s"
+        ],
+        "draw": "3m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "4m",
+        "melds": [],
+        "correctDiscards": [
+          "1p"
+        ],
+        "sourceUrl": "https://youtu.be/JlG0o7Crqhc",
+        "sourceLabel": "元動画を開く",
+        "videoExplanation": "おすすめは1p切りなのだ。雀頭のない一向聴にすると、受け入れ枚数を大きく増やせるのだ。\n\nヘッドレスには単騎聴牌の弱点があるけれど、今回は索子が連続形なので、4s・7s以外の受けではノベタン以上の待ちになるのだ。平和確定の3p切りも魅力はあるけれど、この受け入れの差は見逃せないのだ。雀頭がないという理由だけで狭い手だと判断しないのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/JlG0o7Crqhc",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ],
+          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+          "revision": 60
+        },
+        "sourceDraw": "3m",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "1p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/JlG0o7Crqhc",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "JlG0o7Crqhc",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "kanChoice": false,
+        "correctKan": null,
+        "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:47.593Z"
+      "overrideUpdatedAt": "2026-09-18T03:46:53.752Z"
     },
     {
       "id": 107,
@@ -15088,10 +15466,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "打9pで完全形に取る。\nピンズ455568pは、エンスクドリルには入れてないが6枚形。　\nリャンカン468p、5pと1mのシャボ\nとも見られる形。",
         "difficulty": "beginner"
       },
+      "explanation": "打9pで完全形に取る。\nピンズ455568pは、エンスクドリルには入れてないが6枚形。　\nリャンカン468p、5pと1mのシャボ\nとも見られる形。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:00.464Z"
+      "overrideUpdatedAt": "2026-09-15T05:44:45.164Z"
     },
     {
       "id": 118,
@@ -15284,25 +15664,375 @@
     },
     {
       "id": 122,
+      "image": "/questions/question-122.png",
+      "images": [
+        "/questions/question-122.png"
+      ],
+      "explanation": "https://youtu.be/ECVKRtM-Kwk?si=lem0gHwZ0IWJFZR6",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367203734130688",
+      "discordMessageId": "1324367203734130688",
+      "threadId": "1324367203734130688",
+      "createdAt": "2025-01-02T13:22:26.923000+00:00",
+      "hand": [
+        "5m",
+        "6m",
+        "7m",
+        "8m",
+        "1p",
+        "1p",
+        "6p",
+        "6p",
+        "6p",
+        "8p",
+        "3s",
+        "3s",
+        "3s"
+      ],
+      "draw": "1p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "3z",
+      "melds": [],
+      "correctDiscards": [
+        "8p"
+      ],
+      "sourceUrl": "https://youtu.be/ECVKRtM-Kwk",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanation": "おすすめは8p切りなのだ。5m・8mのノベタン待ちにして、三暗刻を確定させるのだ。\n\n8m切りは待ちが1枚多いけれど、7pで和了すると三暗刻が付かないのだ。1枚の差より、役を逃さない打点の価値を重視するのだ。立直もかけたい手だけれど、まずは和了牌ごとにどの役が付くかを確認するのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/ECVKRtM-Kwk",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39
+        ],
+        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+        "revision": 60
+      },
+      "sourceDraw": "1p",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "8p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/ECVKRtM-Kwk",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "ECVKRtM-Kwk",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "beginner",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "riichiDecisionSource": {
+        "kind": "video-frame",
+        "url": "https://youtu.be/ECVKRtM-Kwk",
+        "seconds": 42,
+        "conclusion": "リーチはかけたほうが良いけど、"
+      },
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "difficulty": "beginner"
+        "id": 122,
+        "image": "/questions/question-122.png",
+        "images": [
+          "/questions/question-122.png"
+        ],
+        "explanation": "https://youtu.be/ECVKRtM-Kwk?si=lem0gHwZ0IWJFZR6",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367203734130688",
+        "discordMessageId": "1324367203734130688",
+        "threadId": "1324367203734130688",
+        "createdAt": "2025-01-02T13:22:26.923000+00:00",
+        "hand": [
+          "5m",
+          "6m",
+          "7m",
+          "8m",
+          "1p",
+          "1p",
+          "6p",
+          "6p",
+          "6p",
+          "8p",
+          "3s",
+          "3s",
+          "3s"
+        ],
+        "draw": "1p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "3z",
+        "melds": [],
+        "correctDiscards": [
+          "8p"
+        ],
+        "sourceUrl": "https://youtu.be/ECVKRtM-Kwk",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanation": "おすすめは8p切りなのだ。5m・8mのノベタン待ちにして、三暗刻を確定させるのだ。\n\n8m切りは待ちが1枚多いけれど、7pで和了すると三暗刻が付かないのだ。1枚の差より、役を逃さない打点の価値を重視するのだ。立直もかけたい手だけれど、まずは和了牌ごとにどの役が付くかを確認するのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/ECVKRtM-Kwk",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39
+          ],
+          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+          "revision": 60
+        },
+        "sourceDraw": "1p",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "8p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/ECVKRtM-Kwk",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "ECVKRtM-Kwk",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "video-frame",
+          "url": "https://youtu.be/ECVKRtM-Kwk",
+          "seconds": 42,
+          "conclusion": "リーチはかけたほうが良いけど、"
+        },
+        "kanChoice": false,
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:05.282Z"
+      "overrideUpdatedAt": "2026-09-18T03:56:06.475Z"
     },
     {
       "id": 123,
+      "image": "/questions/question-123.png",
+      "images": [
+        "/questions/question-123.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367232704315493",
+      "discordMessageId": "1324367232704315493",
+      "threadId": "1324367232704315493",
+      "createdAt": "2025-01-02T13:22:33.830000+00:00",
+      "hand": [
+        "8m",
+        "2p",
+        "3p",
+        "4p",
+        "5p",
+        "0p",
+        "2s",
+        "2s",
+        "7s",
+        "8s"
+      ],
+      "draw": "7m",
+      "status": "unreviewed",
+      "meldCount": 1,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "6p",
+      "melds": [
+        {
+          "type": "pon",
+          "open": true,
+          "calledIndex": 0,
+          "tiles": [
+            "6z",
+            "6z",
+            "6z"
+          ]
+        }
+      ],
+      "correctDiscards": [
+        "5p"
+      ],
+      "sourceUrl": "https://youtu.be/pge6YCjrQ9s",
+      "sourceLabel": "元動画を開く",
+      "videoExplanation": "ここは5p切りなのだ。受け入れ枚数が同じ打牌の中でも、ドラ6pを使えて三面張へ変化する形を残すのだ。\n\n6pを引いたら、萬子か索子の両面を整理して筒子の三面張を使う進め方があるのだ。どちらの両面を落とすかは河を見て決めるのだ。通常の5pと赤5pを区別し、赤とドラを両方使う道を見逃さないのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/pge6YCjrQ9s",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ],
+        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+        "revision": 60
+      },
+      "sourceDraw": "7m",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "5p"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/pge6YCjrQ9s",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "pge6YCjrQ9s",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "beginner",
+      "correctRiichi": null,
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "fix",
+      "reviewUpdatedAt": "2026-09-18T01:28:15.423Z",
       "questionData": {
-        "difficulty": "beginner"
+        "id": 123,
+        "image": "/questions/question-123.png",
+        "images": [
+          "/questions/question-123.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367232704315493",
+        "discordMessageId": "1324367232704315493",
+        "threadId": "1324367232704315493",
+        "createdAt": "2025-01-02T13:22:33.830000+00:00",
+        "hand": [
+          "8m",
+          "2p",
+          "3p",
+          "4p",
+          "5p",
+          "0p",
+          "2s",
+          "2s",
+          "7s",
+          "8s"
+        ],
+        "draw": "7m",
+        "status": "unreviewed",
+        "meldCount": 1,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "6p",
+        "melds": [
+          {
+            "type": "pon",
+            "open": true,
+            "calledIndex": 0,
+            "tiles": [
+              "6z",
+              "6z",
+              "6z"
+            ]
+          }
+        ],
+        "correctDiscards": [
+          "5p"
+        ],
+        "sourceUrl": "https://youtu.be/pge6YCjrQ9s",
+        "sourceLabel": "元動画を開く",
+        "videoExplanation": "ここは5p切りなのだ。受け入れ枚数が同じ打牌の中でも、ドラ6pを使えて三面張へ変化する形を残すのだ。\n\n6pを引いたら、萬子か索子の両面を整理して筒子の三面張を使う進め方があるのだ。どちらの両面を落とすかは河を見て決めるのだ。通常の5pと赤5pを区別し、赤とドラを両方使う道を見逃さないのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/pge6YCjrQ9s",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ],
+          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+          "revision": 60
+        },
+        "sourceDraw": "7m",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "5p"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/pge6YCjrQ9s",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "pge6YCjrQ9s",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "correctRiichi": null,
+        "kanChoice": false,
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:06.882Z"
+      "overrideUpdatedAt": "2026-09-18T03:57:30.132Z"
     },
     {
       "id": 124,
@@ -15321,7 +16051,7 @@
       "images": [
         "/questions/question-125.png"
       ],
-      "explanation": "https://youtu.be/kMEqV0loSas?si=wc19Gd_uuj3FhHPC",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367363339980891",
       "discordMessageId": "1324367363339980891",
       "threadId": "1324367363339980891",
@@ -15388,18 +16118,31 @@
           "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
         ]
       },
+      "difficulty": "intermediate",
+      "sourceLabel": "元動画を開く",
+      "correctRiichi": true,
+      "riichiChoice": true,
+      "riichiDecisionSource": {
+        "kind": "theory-supplement",
+        "videoUrl": "https://youtu.be/kMEqV0loSas",
+        "videoExplicitRiichi": false,
+        "assumption": "他家からの攻撃や特別な着順条件の指定がないため、先制の通常局面として判断。動画がリーチを明言したという記録ではない。",
+        "theoryDocumentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA",
+        "theoryRevision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw",
+        "reason": "7p切りで3s・5s・6s・8sの13枚待ち。門前6巡目、ドラ1。役なしのロン待ちを残さず、リーチで和了範囲と打点を確保する。"
+      },
       "kanChoice": false,
       "correctKan": null,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "check",
+      "reviewUpdatedAt": "2026-09-18T02:39:48.610Z",
       "questionData": {
         "id": 125,
         "image": "/questions/question-125.png",
         "images": [
           "/questions/question-125.png"
         ],
-        "explanation": "https://youtu.be/kMEqV0loSas?si=wc19Gd_uuj3FhHPC",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367363339980891",
         "discordMessageId": "1324367363339980891",
         "threadId": "1324367363339980891",
@@ -15466,22 +16209,217 @@
             "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
           ]
         },
+        "difficulty": "intermediate",
+        "sourceLabel": "元動画を開く",
+        "correctRiichi": true,
+        "riichiChoice": true,
+        "riichiDecisionSource": {
+          "kind": "theory-supplement",
+          "videoUrl": "https://youtu.be/kMEqV0loSas",
+          "videoExplicitRiichi": false,
+          "assumption": "他家からの攻撃や特別な着順条件の指定がないため、先制の通常局面として判断。動画がリーチを明言したという記録ではない。",
+          "theoryDocumentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA",
+          "theoryRevision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw",
+          "reason": "7p切りで3s・5s・6s・8sの13枚待ち。門前6巡目、ドラ1。役なしのロン待ちを残さず、リーチで和了範囲と打点を確保する。"
+        },
         "kanChoice": false,
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-11T20:29:32.324Z"
+      "overrideUpdatedAt": "2026-09-18T03:57:48.112Z"
     },
     {
       "id": 126,
+      "image": "/questions/question-126.png",
+      "images": [
+        "/questions/question-126.png"
+      ],
+      "explanation": "https://youtu.be/r1l5oD4PAHY?si=DiDpiPQ6capg5JY5",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1325072911064891496",
+      "discordMessageId": "1325072911064891496",
+      "threadId": "1325072911064891496",
+      "createdAt": "2025-01-04T12:06:40.662000+00:00",
+      "hand": [
+        "1m",
+        "2m",
+        "6p",
+        "6p",
+        "6p",
+        "7p",
+        "1s",
+        "2s",
+        "3s",
+        "4s",
+        "0s",
+        "6s",
+        "7s"
+      ],
+      "draw": "3m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "1m",
+      "melds": [],
+      "correctDiscards": [
+        "1s"
+      ],
+      "sourceUrl": "https://youtu.be/r1l5oD4PAHY",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanation": "おすすめは1s切りなのだ。すでに聴牌していて、7pを切る三面張とどちらを選ぶかという問題なのだ。\n\n7p切りは1s・4s・7s待ちの9枚、1s切りは5p・7p・8p待ちの11枚なのだ。さらに5p・8pで和了すれば平和も付くのだ。待ちが広く、打点も上がる可能性がある1s切りを選ぶのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/r1l5oD4PAHY",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ],
+        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+        "revision": 60
+      },
+      "sourceDraw": "3m",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "1s"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/r1l5oD4PAHY",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "r1l5oD4PAHY",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "beginner",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "riichiDecisionSource": {
+        "kind": "theory-supplement",
+        "videoUrl": "https://youtu.be/r1l5oD4PAHY",
+        "videoExplicitRiichi": false,
+        "assumption": "他家からの攻撃や特別な着順条件の指定がないため、先制の通常局面として判断。動画がリーチを明言したという記録ではない。",
+        "theoryDocumentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA",
+        "theoryRevision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw",
+        "reason": "1s切りで5p・7p・8pの11枚待ち。門前6巡目、ドラ1と赤1。7p和了には平和が付かないため、リーチで全ての待ちをロン可能にし打点を高める。"
+      },
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "difficulty": "beginner"
+        "id": 126,
+        "image": "/questions/question-126.png",
+        "images": [
+          "/questions/question-126.png"
+        ],
+        "explanation": "https://youtu.be/r1l5oD4PAHY?si=DiDpiPQ6capg5JY5",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1325072911064891496",
+        "discordMessageId": "1325072911064891496",
+        "threadId": "1325072911064891496",
+        "createdAt": "2025-01-04T12:06:40.662000+00:00",
+        "hand": [
+          "1m",
+          "2m",
+          "6p",
+          "6p",
+          "6p",
+          "7p",
+          "1s",
+          "2s",
+          "3s",
+          "4s",
+          "0s",
+          "6s",
+          "7s"
+        ],
+        "draw": "3m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "1m",
+        "melds": [],
+        "correctDiscards": [
+          "1s"
+        ],
+        "sourceUrl": "https://youtu.be/r1l5oD4PAHY",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanation": "おすすめは1s切りなのだ。すでに聴牌していて、7pを切る三面張とどちらを選ぶかという問題なのだ。\n\n7p切りは1s・4s・7s待ちの9枚、1s切りは5p・7p・8p待ちの11枚なのだ。さらに5p・8pで和了すれば平和も付くのだ。待ちが広く、打点も上がる可能性がある1s切りを選ぶのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/r1l5oD4PAHY",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ],
+          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+          "revision": 60
+        },
+        "sourceDraw": "3m",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "1s"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/r1l5oD4PAHY",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "r1l5oD4PAHY",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "theory-supplement",
+          "videoUrl": "https://youtu.be/r1l5oD4PAHY",
+          "videoExplicitRiichi": false,
+          "assumption": "他家からの攻撃や特別な着順条件の指定がないため、先制の通常局面として判断。動画がリーチを明言したという記録ではない。",
+          "theoryDocumentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA",
+          "theoryRevision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw",
+          "reason": "1s切りで5p・7p・8pの11枚待ち。門前6巡目、ドラ1と赤1。7p和了には平和が付かないため、リーチで全ての待ちをロン可能にし打点を高める。"
+        },
+        "kanChoice": false,
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:10.087Z"
+      "overrideUpdatedAt": "2026-09-18T03:57:50.137Z"
     },
     {
       "id": 128,
@@ -15663,7 +16601,7 @@
       "images": [
         "/questions/question-133.png"
       ],
-      "explanation": "打3p。6ブロックあるので、一つ減らして5ブロックに整理する。\n\n2p・3pと0p・6pは、どちらも4pを使う二度受け。萬子の両面を払うと、聴牌受けは1p・4p・7pの12枚。2p・3pの方を払えば、1m・4m・4p・7pの16枚になり、赤0pも残せる。\n\n💡『6ブロックより5ブロック』。両面の数だけでなく、同じ牌を二重に数えていないか確認しよう。\n\n2p切りでも受け入れは同じ。ここでは一般的な切り順として、内側の3pを先に処理する。",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1325788809601749056",
       "discordMessageId": "1325788809601749056",
       "threadId": "1325788809601749056",
@@ -15735,19 +16673,20 @@
           "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
         ]
       },
+      "difficulty": "beginner",
       "kanChoice": false,
       "correctKan": null,
       "correctRiichi": null,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "fix",
+      "reviewUpdatedAt": "2026-09-17T06:33:31.036Z",
       "questionData": {
         "id": 133,
         "image": "/questions/question-133.png",
         "images": [
           "/questions/question-133.png"
         ],
-        "explanation": "打3p。6ブロックあるので、一つ減らして5ブロックに整理する。\n\n2p・3pと0p・6pは、どちらも4pを使う二度受け。萬子の両面を払うと、聴牌受けは1p・4p・7pの12枚。2p・3pの方を払えば、1m・4m・4p・7pの16枚になり、赤0pも残せる。\n\n💡『6ブロックより5ブロック』。両面の数だけでなく、同じ牌を二重に数えていないか確認しよう。\n\n2p切りでも受け入れは同じ。ここでは一般的な切り順として、内側の3pを先に処理する。",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1325788809601749056",
         "discordMessageId": "1325788809601749056",
         "threadId": "1325788809601749056",
@@ -15819,12 +16758,13 @@
             "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv"
           ]
         },
+        "difficulty": "beginner",
         "kanChoice": false,
         "correctKan": null,
         "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T16:59:10.104Z"
+      "overrideUpdatedAt": "2026-09-18T03:49:38.201Z"
     },
     {
       "id": 134,
@@ -16580,14 +17520,198 @@
     },
     {
       "id": 150,
+      "image": "/questions/question-150.png",
+      "images": [
+        "/questions/question-150.png"
+      ],
+      "explanation": "https://youtu.be/jj63zZl5sGs?si=Ir0T6acPajcFOQqG",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1327950330775994449",
+      "discordMessageId": "1327950330775994449",
+      "threadId": "1327950330775994449",
+      "createdAt": "2025-01-12T10:40:30.981000+00:00",
+      "hand": [
+        "3m",
+        "3m",
+        "3m",
+        "4m",
+        "5m",
+        "6m",
+        "8m",
+        "2p",
+        "3p",
+        "4p",
+        "6s",
+        "7s",
+        "8s",
+        "9s"
+      ],
+      "draw": null,
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": null,
+      "dora": "4p",
+      "melds": [],
+      "correctDiscards": [
+        "9s"
+      ],
+      "sourceUrl": "https://youtu.be/jj63zZl5sGs",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanation": "ここは9s切りなのだ。8m単騎だけに見えるけれど、萬子の暗刻を雀頭へ組み替えると7mの受けもあるのだ。\n\n待ちは7m・8mの合計7枚で、8m切りの6s・9sノベタンより広いのだ。さらに9sを切ることでタンヤオも付くのだ。暗刻を固定して見ないことが、隠れた待ちと打点を見つける鍵なのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/jj63zZl5sGs",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ],
+        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+        "revision": 60
+      },
+      "sourceDraw": null,
+      "sourceDrawStatus": "not-shown",
+      "videoCorrectDiscards": [
+        "9s"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/jj63zZl5sGs",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "jj63zZl5sGs",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "beginner",
+      "riichiChoice": true,
+      "correctRiichi": true,
+      "riichiDecisionSource": {
+        "kind": "theory-supplement",
+        "videoUrl": "https://youtu.be/jj63zZl5sGs",
+        "videoExplicitRiichi": false,
+        "assumption": "他家からの攻撃や特別な着順条件の指定がないため、先制の通常局面として判断。動画がリーチを明言したという記録ではない。",
+        "theoryDocumentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA",
+        "theoryRevision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw",
+        "reason": "9s切りで7m・8mの7枚待ち、タンヤオ。門前6巡目の先制聴牌で、立直+1飜の原則からリーチを選ぶ。"
+      },
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "difficulty": "beginner"
+        "id": 150,
+        "image": "/questions/question-150.png",
+        "images": [
+          "/questions/question-150.png"
+        ],
+        "explanation": "https://youtu.be/jj63zZl5sGs?si=Ir0T6acPajcFOQqG",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1327950330775994449",
+        "discordMessageId": "1327950330775994449",
+        "threadId": "1327950330775994449",
+        "createdAt": "2025-01-12T10:40:30.981000+00:00",
+        "hand": [
+          "3m",
+          "3m",
+          "3m",
+          "4m",
+          "5m",
+          "6m",
+          "8m",
+          "2p",
+          "3p",
+          "4p",
+          "6s",
+          "7s",
+          "8s",
+          "9s"
+        ],
+        "draw": null,
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": null,
+        "dora": "4p",
+        "melds": [],
+        "correctDiscards": [
+          "9s"
+        ],
+        "sourceUrl": "https://youtu.be/jj63zZl5sGs",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanation": "ここは9s切りなのだ。8m単騎だけに見えるけれど、萬子の暗刻を雀頭へ組み替えると7mの受けもあるのだ。\n\n待ちは7m・8mの合計7枚で、8m切りの6s・9sノベタンより広いのだ。さらに9sを切ることでタンヤオも付くのだ。暗刻を固定して見ないことが、隠れた待ちと打点を見つける鍵なのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/jj63zZl5sGs",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ],
+          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+          "revision": 60
+        },
+        "sourceDraw": null,
+        "sourceDrawStatus": "not-shown",
+        "videoCorrectDiscards": [
+          "9s"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/jj63zZl5sGs",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "jj63zZl5sGs",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "riichiChoice": true,
+        "correctRiichi": true,
+        "riichiDecisionSource": {
+          "kind": "theory-supplement",
+          "videoUrl": "https://youtu.be/jj63zZl5sGs",
+          "videoExplicitRiichi": false,
+          "assumption": "他家からの攻撃や特別な着順条件の指定がないため、先制の通常局面として判断。動画がリーチを明言したという記録ではない。",
+          "theoryDocumentId": "1e-up8AUtuAOT2vF1hzsXDyMh3mMxxiosLG4LMiz46aA",
+          "theoryRevision": "ANLCKQmi9i_V6dW1rId9qmIw31GSQjGkLpqm8w6KtPwJ17GYdp2DOOcKlHOgu8HiAwWJGig4Wa50m7h__PsPKw",
+          "reason": "9s切りで7m・8mの7枚待ち、タンヤオ。門前6巡目の先制聴牌で、立直+1飜の原則からリーチを選ぶ。"
+        },
+        "kanChoice": false,
+        "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:27.742Z"
+      "overrideUpdatedAt": "2026-09-18T03:57:52.170Z"
     },
     {
       "id": 151,
@@ -22437,15 +23561,16 @@
     {
       "id": 275,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "check",
+      "reviewUpdatedAt": "2026-09-18T01:22:17.252Z",
       "questionData": {
         "explanation": "打3p。両面嵌張という形を残すより、今回はヘッドレス2型の連続形を生かす。\n\n56778pは、順子とターツがつながった5枚形。筒子の4pから9pまで、面子を作る引きも雀頭を作る引きも受けられる。索子の6s・7sを重ねる引きも聴牌になる。\n\n💡『ヘッドレスは連続形含みの2型を目指せ』。同じ6枚形でも、ほかに雀頭がある時とない時では役割が違う。頭を無理に固定せず、つながった形全体の広さを使おう。",
+        "videoExplanation": "おすすめは3p切りなのだ。\n\n今回は雀頭がないので、両面嵌張をそのまま残すのではなく、筒子を5p・6p・7p・7p・8pの形にするのだ。面子にターツがつながるこの形は、雀頭と1面子を作りやすいのだ。",
         "difficulty": "beginner"
       },
       "explanation": "打3p。両面嵌張という形を残すより、今回はヘッドレス2型の連続形を生かす。\n\n56778pは、順子とターツがつながった5枚形。筒子の4pから9pまで、面子を作る引きも雀頭を作る引きも受けられる。索子の6s・7sを重ねる引きも聴牌になる。\n\n💡『ヘッドレスは連続形含みの2型を目指せ』。同じ6枚形でも、ほかに雀頭がある時とない時では役割が違う。頭を無理に固定せず、つながった形全体の広さを使おう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:13:13.403Z"
+      "overrideUpdatedAt": "2026-09-18T03:57:54.209Z"
     },
     {
       "id": 276,
@@ -22453,12 +23578,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
-        "explanation": "打2s。赤0sを使い切り、平和が付く聴牌を残す。\n\n打7sでも受け入れは同じだが、4sを引いて一盃口にする時には0sが余ってしまう。一盃口を付けても赤を失えば、その進行では打点を増やせていない。さらに対子が暗刻になる進行では平和も消える。\n\n💡手役の名前が増えたことと、点数が上がったことは別。完成した手から出ていく赤やドラまで含めて数えよう。今回は赤と平和を安定して残す方を選ぶ。",
+        "explanation": "打2s。赤0sを使い切り、平和が付く聴牌を残す。\n\n打7sも打2sも6枚形となるため受け入れ枚数はどちらもMAXで同じ。打点で選ぼう。　　\n💡このように、7枚の形から一枚選んで最適な6枚形にする力が問われる場面は頻出。エンスクドリルで鍛えよう。",
         "difficulty": "beginner"
       },
-      "explanation": "打2s。赤0sを使い切り、平和が付く聴牌を残す。\n\n打7sでも受け入れは同じだが、4sを引いて一盃口にする時には0sが余ってしまう。一盃口を付けても赤を失えば、その進行では打点を増やせていない。さらに対子が暗刻になる進行では平和も消える。\n\n💡手役の名前が増えたことと、点数が上がったことは別。完成した手から出ていく赤やドラまで含めて数えよう。今回は赤と平和を安定して残す方を選ぶ。",
+      "explanation": "打2s。赤0sを使い切り、平和が付く聴牌を残す。\n\n打7sも打2sも6枚形となるため受け入れ枚数はどちらもMAXで同じ。打点で選ぼう。　　\n💡このように、7枚の形から一枚選んで最適な6枚形にする力が問われる場面は頻出。エンスクドリルで鍛えよう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:13:15.008Z"
+      "overrideUpdatedAt": "2026-09-16T23:56:31.566Z"
     },
     {
       "id": 277,
@@ -22601,16 +23726,16 @@
     },
     {
       "id": 278,
-      "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewed": true,
+      "reviewStatus": "complete",
+      "reviewUpdatedAt": "2026-09-16T13:41:34.569Z",
       "questionData": {
-        "explanation": "打4s。6ブロックを5ブロックに整理し、筒子の両面嵌張を残す。\n\n344568pの8pは、ただの浮き牌ではなくカン7pを受けるフォロー。こちらを残して24sを外せば、萬子と索子の両面も使える。8pを切って6ブロックを抱えるより、残す形の働きがはっきりする。\n\n今回は両面が既にあるので、24sは内側の4sから処理する。\n\n💡まず残す5ブロックを決め、それから切り順を考える。4s切りを、今すぐ一向聴に進む打牌とは取り違えないように。",
+        "explanation": "打4s　or　打2ｓ。\n344568pは6枚形『両面カンチャン形』\n三色を追った打2ｓもありだが、三色成就率が低い為、後の安全度に差があれば安全度を優先。\n\n",
         "difficulty": "beginner"
       },
-      "explanation": "打4s。6ブロックを5ブロックに整理し、筒子の両面嵌張を残す。\n\n344568pの8pは、ただの浮き牌ではなくカン7pを受けるフォロー。こちらを残して24sを外せば、萬子と索子の両面も使える。8pを切って6ブロックを抱えるより、残す形の働きがはっきりする。\n\n今回は両面が既にあるので、24sは内側の4sから処理する。\n\n💡まず残す5ブロックを決め、それから切り順を考える。4s切りを、今すぐ一向聴に進む打牌とは取り違えないように。",
+      "explanation": "打4s　or　打2ｓ。\n344568pは6枚形『両面カンチャン形』\n三色を追った打2ｓもありだが、三色成就率が低い為、後の安全度に差があれば安全度を優先。\n\n",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:13:16.612Z"
+      "overrideUpdatedAt": "2026-09-16T13:41:24.854Z"
     },
     {
       "id": 279,
@@ -23414,8 +24539,8 @@
       "correctRiichi": null,
       "difficulty": "beginner",
       "reviewed": false,
-      "reviewStatus": "fix",
-      "reviewUpdatedAt": "2026-09-10T17:23:36.408Z",
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
       "questionData": {
         "id": 295,
         "image": "/questions/question-295.png",
