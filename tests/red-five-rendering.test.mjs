@@ -74,11 +74,49 @@ test("hand and explanation red fives always share the same image mapping", () =>
 });
 
 test("invalid aliases, English identifiers and fullwidth digits around a token stay as original text", () => {
-  const input = "aka0 aka4 aka10 AKA１0 ａｋａ１０ xaka1 aka2x xr5m r5px r4m ｒ６ｐ 50ms ０ｍ９";
+  const input = "aka0 aka4 aka10 AKA１0 ａｋａ１０ xaka1 aka2x xr5m r5px r4m ｒ６ｐ 50ms ０ｍ９ x78m258sx abc78m258s 78m258sfoo 123z";
   const target = new Element("div");
   app.appendExplanationText(target, input);
   assert.equal(tiles(target).length, 0);
   assert.equal(text(target), input);
+});
+
+for (const [input, expected] of [
+  ['78m258s69s', ['7m','8m','2s','5s','8s','6s','9s']],
+  ['78ｍ258ｓ69ｓ', ['7m','8m','2s','5s','8s','6s','9s']],
+  ['６７８Ｍ７８９Ｓ', ['6m','7m','8m','7s','8s','9s']],
+  ['258 s', ['2s','5s','8s']],
+  ['６９　ｓ', ['6s','9s']],
+  ['78m258\u00a0s', ['7m','8m','2s','5s','8s']],
+  ['123m456p789s', ['1m','2m','3m','4p','5p','6p','7s','8s','9s']],
+  ['405mR5p0s1z', ['4m','0m','5m','0p','0s','1z']],
+]) {
+  test(`adjacent and spaced compact tile runs render in order: ${input}`, () => {
+    const target = new Element('div');
+    app.appendExplanationText(target, input);
+    assert.deepEqual(tiles(target).map(image => image.src), expected.map(app.explanationTilePath));
+    assert.equal(text(target), '');
+  });
+}
+
+test('Q124 author-shaped text converts complete mixed-suit runs without changing prose', () => {
+  const input = '打6ｍ➡ヘッドレス1型：78ｍ258ｓ69ｓ\n打2ｓ➡ヘッドレス2型：678ｍ789ｓ';
+  const target = new Element('div');
+  app.appendLinkedText(target, input);
+  assert.deepEqual(tiles(target).map(image => image.src), [
+    '6m','7m','8m','2s','5s','8s','6s','9s','2s','6m','7m','8m','7s','8s','9s',
+  ].map(app.explanationTilePath));
+  assert.equal(text(target), '打➡ヘッドレス1型：\n打➡ヘッドレス2型：');
+});
+
+test('compact-run rendering preserves URL contents, emphasis and line boundaries', () => {
+  const input = '**78ｍ258ｓ** [red]678m789s[/red] https://example.com/78m258s?q=69s 258\ns';
+  const target = new Element('div');
+  app.appendLinkedText(target, input);
+  assert.deepEqual(tiles(target).map(image => image.src), ['7m','8m','2s','5s','8s','6m','7m','8m','7s','8s','9s'].map(app.explanationTilePath));
+  assert.equal(all(target).find(node => node.tagName === 'A').href, 'https://example.com/78m258s?q=69s');
+  assert.ok(text(target).endsWith(' 258\ns'));
+  assert.equal(all(target).filter(node => node.tagName === 'STRONG').length, 1);
 });
 
 test("the ordinary word 真ん中 stays text while an actual 中 discard still renders", () => {

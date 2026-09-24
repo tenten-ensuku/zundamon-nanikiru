@@ -1069,19 +1069,19 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <link rel="stylesheet" href="question-review.css?v=82">
-  <link rel="stylesheet" href="answer-feedback.css?v=82">
-  <script src="config.js?v=82"></script>
-  <script src="question-metadata.js?v=82"></script>
-  <script src="question-review.js?v=82"></script>
-  <script src="shared-data.js?v=82"></script>
-  <script src="answer-feedback.js?v=82"></script>
+  <link rel="stylesheet" href="question-review.css?v=83">
+  <link rel="stylesheet" href="answer-feedback.css?v=83">
+  <script src="config.js?v=83"></script>
+  <script src="question-metadata.js?v=83"></script>
+  <script src="question-review.js?v=83"></script>
+  <script src="shared-data.js?v=83"></script>
+  <script src="answer-feedback.js?v=83"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 82;
+    const APP_VERSION = 83;
     const { DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, recordDifficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
@@ -1367,15 +1367,19 @@
     }
 
     function appendExplanationText(container, text) {
-      const pattern = /[aａ][kｋ][aａ][1-3１-３]|(?:[rｒ][5５]|赤[5５])[mpsｍｐｓ]|[0-9０-９]+[mpsｍｐｓ]|[1-7１-７][zｚ]|發|中/giu;
+      // Check word boundaries around the entire run, not between adjacent suits.
+      // Horizontal spaces are allowed before a suit, but never across a newline.
+      const pattern = /(?:[aａ][kｋ][aａ][1-3１-３]|(?:[rｒ][5５]|赤[5５])[mpsｍｐｓ]|[0-9０-９]+[ \t\u00a0\u3000]*[mpsｍｐｓ]|[1-7１-７][ \t\u00a0\u3000]*[zｚ])+|發|中/giu;
       let lastIndex = 0;
       for (const match of text.matchAll(pattern)) {
         const token = match[0];
         const index = match.index ?? 0;
         if (!isExplanationTileBoundary(text, index, token.length) || (token === "中" && !isMahjongMiddle(text, index))) continue;
-        const normalized = token.normalize("NFKC").toLowerCase();
-        const run = /^([0-9]+)([mps])$/.exec(normalized);
-        const codes = run ? [...run[1]].map(number => `${number}${run[2]}`) : [explanationTileCode(token)];
+        const normalized = token.normalize("NFKC").toLowerCase().replace(/[ \t]/g, "");
+        const codes = [...normalized.matchAll(/aka[1-3]|(?:r5|赤5)[mps]|[0-9]+[mps]|[1-7]z|發|中/g)].flatMap(part => {
+          const run = /^([0-9]+)([mps])$/.exec(part[0]);
+          return run ? [...run[1]].map(number => `${number}${run[2]}`) : [explanationTileCode(part[0])];
+        });
         if (codes.some(code => !code)) continue;
         if (index > lastIndex) container.append(document.createTextNode(text.slice(lastIndex, index)));
         for (const code of codes) {

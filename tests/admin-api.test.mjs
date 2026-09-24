@@ -488,7 +488,7 @@ test("explanations render mahjong notation as inline tile images without changin
   const source = await readFile(path.resolve("index.html"), "utf8");
   assert.match(source, /function appendExplanationText/);
   assert.match(source, /function explanationTileCode/);
-  assert.match(source, /\[0-9０-９\]\+\[mpsｍｐｓ\]/u);
+  assert.ok(source.includes(String.raw`[0-9０-９]+[ \t\u00a0\u3000]*[mpsｍｐｓ]`));
   assert.match(source, /if \(normalized === "發"\) return "6z"/);
   assert.match(source, /function isMahjongMiddle/);
   assert.match(source, /token === "中" && !isMahjongMiddle/);
