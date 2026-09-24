@@ -1,0 +1,1167 @@
+{
+  "schemaVersion": 1,
+  "revision": 81,
+  "createdAt": "2026-09-24T09:05:01.819Z",
+  "scope": "author-explanation-only",
+  "beforeCursor": 605,
+  "snapshotCursor": 703,
+  "baseQuestionsSha256": "6c103afe091c9dd24deb589cd38962dd2b7794f8d64bfcf0194d897f6cfae727",
+  "requestedCount": 98,
+  "savedCount": 98,
+  "ratingQuestionCount": 32,
+  "removedUrlCount": 83,
+  "emptyCount": 66,
+  "entries": [
+    {
+      "id": 23,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "a13d628f0365c67c72e4cecd2999a072f503a7a9123dd8d4b89cdcecf55b41ca",
+      "afterProtectedSha256": "a13d628f0365c67c72e4cecd2999a072f503a7a9123dd8d4b89cdcecf55b41ca",
+      "updatedAt": "2026-09-24T09:02:20.088Z",
+      "beforeTextSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 25,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "30aa16f8153a4fb638d1909b49bf71d79c659e502296497176ecb437d2425d48",
+      "afterProtectedSha256": "30aa16f8153a4fb638d1909b49bf71d79c659e502296497176ecb437d2425d48",
+      "updatedAt": "2026-09-24T09:02:22.214Z",
+      "beforeTextSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 26,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "04972d5735afef3b9ef817e4ff89dabffc561344d0d34e19c73e61ad837d0e4f",
+      "afterProtectedSha256": "04972d5735afef3b9ef817e4ff89dabffc561344d0d34e19c73e61ad837d0e4f",
+      "updatedAt": "2026-09-24T09:02:23.849Z",
+      "beforeTextSha256": "ebcd3a28ad1a177603bb1d2b5ec90817876e3d8106069c0c13eecff56a229b18",
+      "afterTextSha256": "20c52d43a4f31eea567aeafd289e6561d34bc6043ca0c323964f6611d6093bf1"
+    },
+    {
+      "id": 28,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "aacfea1a28129f5c88e593a85b258e8b0a9bd1116429f79e5d612f3b4f052895",
+      "afterProtectedSha256": "aacfea1a28129f5c88e593a85b258e8b0a9bd1116429f79e5d612f3b4f052895",
+      "updatedAt": "2026-09-24T09:02:25.605Z",
+      "beforeTextSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 29,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "ce60085caa671ee0a235b9e7fd76dafceb2d3ceeed10174c3998bb9a89036271",
+      "afterProtectedSha256": "ce60085caa671ee0a235b9e7fd76dafceb2d3ceeed10174c3998bb9a89036271",
+      "updatedAt": "2026-09-24T09:02:27.291Z",
+      "beforeTextSha256": "b9d8f1be77f99705c0d3886961431eb698b4358a00df23468dcf8a18d61a390d",
+      "afterTextSha256": "12a04c9e7ad51cfd74d7984fb9eae4e18f5eadd3a328d205441825cf883d1934"
+    },
+    {
+      "id": 31,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "263f5ef8c92d15f7812fb4fb2846d8760fc06298d850139dc5a3bbca5165bc74",
+      "afterProtectedSha256": "263f5ef8c92d15f7812fb4fb2846d8760fc06298d850139dc5a3bbca5165bc74",
+      "updatedAt": "2026-09-24T09:02:28.932Z",
+      "beforeTextSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 32,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "82a2ce2f9da5aa3753cc544af85d70ed0241f88102b726afdf3b043774e5c352",
+      "afterProtectedSha256": "82a2ce2f9da5aa3753cc544af85d70ed0241f88102b726afdf3b043774e5c352",
+      "updatedAt": "2026-09-24T09:02:30.542Z",
+      "beforeTextSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 34,
+      "removedUrls": [],
+      "removedRatings": 2,
+      "protectedSha256": "5e664b3ed35a0e38169c0e396c9d816efedb1f732341ea91995a81605840135e",
+      "afterProtectedSha256": "5e664b3ed35a0e38169c0e396c9d816efedb1f732341ea91995a81605840135e",
+      "updatedAt": "2026-09-24T09:02:32.178Z",
+      "beforeTextSha256": "d66747105452f6fcec81ee3702c0f52e5a63e55f589d8b64ed7055339a2b29b0",
+      "afterTextSha256": "31c8c5313eece3e43dbb8d9b489f0f764cafc02419451985b10e7b9c5aa39619"
+    },
+    {
+      "id": 38,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "acc97c212a2f93c5f829dab9e6256db0a665abdbf9c9e509e78067a481f39ef7",
+      "afterProtectedSha256": "acc97c212a2f93c5f829dab9e6256db0a665abdbf9c9e509e78067a481f39ef7",
+      "updatedAt": "2026-09-24T09:02:33.801Z",
+      "beforeTextSha256": "891cbe059f4edc9f1a3dba87ad40fbb5ef1ae25646e3fe45d08e76ecf8d70992",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 39,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "b6d70cf41961acaa96c0fb0e2f63bd2d26791e7ace73db832ad8be28c527162f",
+      "afterProtectedSha256": "b6d70cf41961acaa96c0fb0e2f63bd2d26791e7ace73db832ad8be28c527162f",
+      "updatedAt": "2026-09-24T09:02:35.440Z",
+      "beforeTextSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 43,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "dd83b8201783237a84fcbeceefb5ce81e5a1210098b79a77cb773a5d96786c96",
+      "afterProtectedSha256": "dd83b8201783237a84fcbeceefb5ce81e5a1210098b79a77cb773a5d96786c96",
+      "updatedAt": "2026-09-24T09:02:37.068Z",
+      "beforeTextSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 46,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "01b4f9d30148d8acbe8a73071b3da0073d2591e949f11e9958a698eab74a5ed8",
+      "afterProtectedSha256": "01b4f9d30148d8acbe8a73071b3da0073d2591e949f11e9958a698eab74a5ed8",
+      "updatedAt": "2026-09-24T09:02:38.732Z",
+      "beforeTextSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 47,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "67399597efc5a81a6a9543bd4fdb1fc2ddc16022c6cb416a0818d51f5277cf61",
+      "afterProtectedSha256": "67399597efc5a81a6a9543bd4fdb1fc2ddc16022c6cb416a0818d51f5277cf61",
+      "updatedAt": "2026-09-24T09:02:40.390Z",
+      "beforeTextSha256": "5e646d01d72436fa591822520f38aac3aac58bfc0aa74b5c477bac4965a4cb3b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 50,
+      "removedUrls": [],
+      "removedRatings": 1,
+      "protectedSha256": "fa050eebe688c6c6b1325eb17509e18307546b58a5b9843ca469bdcef367888e",
+      "afterProtectedSha256": "fa050eebe688c6c6b1325eb17509e18307546b58a5b9843ca469bdcef367888e",
+      "updatedAt": "2026-09-24T09:02:42.031Z",
+      "beforeTextSha256": "b016e39fe213e06109a4b99a87bcb80075a1fcf5a6d22f82fcb8cdf039e33178",
+      "afterTextSha256": "3190078e16c5f24f9080f9884e597ff9150e4c194d9cfc556515ef3d00e5180e"
+    },
+    {
+      "id": 54,
+      "removedUrls": [],
+      "removedRatings": 2,
+      "protectedSha256": "7dc97905b0ff07058460d2a9ea060883d3ad52984650287f3d67e6a3a3630439",
+      "afterProtectedSha256": "7dc97905b0ff07058460d2a9ea060883d3ad52984650287f3d67e6a3a3630439",
+      "updatedAt": "2026-09-24T09:02:43.662Z",
+      "beforeTextSha256": "9fd7ec3b06435cfb567c4baba4bd56b1c38dab0628bc9b1b7895c63311b3fc3f",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 55,
+      "removedUrls": [
+        "https://youtu.be/seFV14o3eDs?si=9Y5xdGZvjtQNANx0"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "67cab089609ad081f2375650ec4b7a13b1eb0ccf8e7d793de1ece8d553c40877",
+      "afterProtectedSha256": "67cab089609ad081f2375650ec4b7a13b1eb0ccf8e7d793de1ece8d553c40877",
+      "updatedAt": "2026-09-24T09:02:45.284Z",
+      "beforeTextSha256": "6d10c2e307abefde56206bb9399bef3380ec709a18bfd28574129f902931045a",
+      "afterTextSha256": "68b39cec8fc0b0e703d15431588941b7d7b3f8eb050140d100c0a98a9607dbea"
+    },
+    {
+      "id": 56,
+      "removedUrls": [
+        "https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "766dec5542745c196d3658f972821363b7bc4b651525baacbbc5c28a89ee510e",
+      "afterProtectedSha256": "766dec5542745c196d3658f972821363b7bc4b651525baacbbc5c28a89ee510e",
+      "updatedAt": "2026-09-24T09:02:46.925Z",
+      "beforeTextSha256": "1392c2bc9ad8e8ea72216f35d3b4e5069b53ad12bdf84fb2871f234d2f64ddb4",
+      "afterTextSha256": "17103b99929279b13014dc3d3d4a6bd81a8e877db7bd14ff75552914acd0a6fc"
+    },
+    {
+      "id": 57,
+      "removedUrls": [
+        "https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "d233fdfe3f8f25ea70d7ec7d20cbf1fc95abe80e4ff388fa78733ad4bc670389",
+      "afterProtectedSha256": "d233fdfe3f8f25ea70d7ec7d20cbf1fc95abe80e4ff388fa78733ad4bc670389",
+      "updatedAt": "2026-09-24T09:02:48.554Z",
+      "beforeTextSha256": "40235bd384468575ca89f19b9099ac8e9882cb03b27327346bbfc132ef649231",
+      "afterTextSha256": "76b830fadaf07dcf6d0684861dcc354ac3d7766be88c88973651bc6aa81f96ee"
+    },
+    {
+      "id": 60,
+      "removedUrls": [
+        "https://youtu.be/rx0uO-XE_PY?si=2vc-cx12tDnE6I_b"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "79f749fc6a836c3754605feab4febdfa5c6ebaceccdc4b1ccb54651a544f3721",
+      "afterProtectedSha256": "79f749fc6a836c3754605feab4febdfa5c6ebaceccdc4b1ccb54651a544f3721",
+      "updatedAt": "2026-09-24T09:02:50.196Z",
+      "beforeTextSha256": "1b1b5c0ac2db59ffb97e6cf71935c21854ba17caa0bb0200ed7bc35cf43f9410",
+      "afterTextSha256": "85b71b594389051439e85619cbea7efedaaa031467d70e0881f57a8f1c36a706"
+    },
+    {
+      "id": 63,
+      "removedUrls": [
+        "https://youtu.be/HxUL3ZPLN3k?si=kAt1uF4r2zez6ngq"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "760f07d5241d74a4256c4d923e76c7512304631a71415016736152b7810bf64e",
+      "afterProtectedSha256": "760f07d5241d74a4256c4d923e76c7512304631a71415016736152b7810bf64e",
+      "updatedAt": "2026-09-24T09:02:51.833Z",
+      "beforeTextSha256": "19fa103be4a452e8d999a07dca085709aceee45206a30a91dd2254584e17c7e8",
+      "afterTextSha256": "1972aa39c1982d811b02503ed319fa9689032e866c64c45e0ca819b5cc96a239"
+    },
+    {
+      "id": 64,
+      "removedUrls": [
+        "https://youtu.be/_0D-ZF1aecU?si=4-Q0szHYsEgaTM--"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "cddf2239ea2a094b2f16f03e83d153ee84bbc00678f6537708c9c2f592cfd749",
+      "afterProtectedSha256": "cddf2239ea2a094b2f16f03e83d153ee84bbc00678f6537708c9c2f592cfd749",
+      "updatedAt": "2026-09-24T09:02:53.456Z",
+      "beforeTextSha256": "c0a862bc8a2112f9f002188d71b1a527be7cff601ccf22a857f2ba52b0db4820",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 65,
+      "removedUrls": [
+        "https://youtu.be/U0sBICBsaEY?si=SwUq3NlTxvf9FQBb"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "26a562eac187d88f346d419f715b4c59a42486c4231138e5d8fa75f3c7d30214",
+      "afterProtectedSha256": "26a562eac187d88f346d419f715b4c59a42486c4231138e5d8fa75f3c7d30214",
+      "updatedAt": "2026-09-24T09:02:55.094Z",
+      "beforeTextSha256": "d6bab4b3b04de93d7a2000e623b391d05a189a85d9e87a1220577e7c5d494b28",
+      "afterTextSha256": "a7a928ced27fa011f8926e0a940c7807e9b67d43e47b3456031c05856b8efb33"
+    },
+    {
+      "id": 66,
+      "removedUrls": [
+        "https://youtu.be/iQbLSPvc84s?si=Iacy6Me3oiWfPK5Q"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "bfefadac55510386c67102437775e62ba85fd690eb2d3bb2df60bf7573d846d5",
+      "afterProtectedSha256": "bfefadac55510386c67102437775e62ba85fd690eb2d3bb2df60bf7573d846d5",
+      "updatedAt": "2026-09-24T09:02:56.712Z",
+      "beforeTextSha256": "f4c243572df7b98ee95f2d5bc515f10535825967c1d688b6b937496aababf4a0",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 67,
+      "removedUrls": [
+        "https://youtu.be/SWnptC1oBdI?si=x95hWI01zJbNvjj3"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "b76e143d5831ea77de725777fc161b2ad07e9b4de37da6c5f39c6ca77df4371f",
+      "afterProtectedSha256": "b76e143d5831ea77de725777fc161b2ad07e9b4de37da6c5f39c6ca77df4371f",
+      "updatedAt": "2026-09-24T09:02:58.347Z",
+      "beforeTextSha256": "8647e41e2c6c37468486d524fbc58157e31bcc860e280fb1ba9680593f906b63",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 68,
+      "removedUrls": [
+        "https://youtu.be/sukNqYlFkeg?si=JDd1TGXKRbfPuSpQ"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "b8a25ff079714918058c70e646c9a7726b9bd26700151e42c0a3e002f0939fdf",
+      "afterProtectedSha256": "b8a25ff079714918058c70e646c9a7726b9bd26700151e42c0a3e002f0939fdf",
+      "updatedAt": "2026-09-24T09:02:59.990Z",
+      "beforeTextSha256": "747a3cc0cee6aeb116fc81e0e8f51d5c20bfffa55e9885f99c37b72610fbb721",
+      "afterTextSha256": "8ea3243bbc0ef7a8f58f4a3741e05e52d291cbff14c85dd421a5c81e0b6d621c"
+    },
+    {
+      "id": 69,
+      "removedUrls": [
+        "https://youtu.be/cccsvX8D4tQ?si=B-kObLRuvvfAnbfE"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "95e693c9d63df66fffe0eb10eebc8d5e125c4e3362b4feefafbfb0dfd6596a6f",
+      "afterProtectedSha256": "95e693c9d63df66fffe0eb10eebc8d5e125c4e3362b4feefafbfb0dfd6596a6f",
+      "updatedAt": "2026-09-24T09:03:01.615Z",
+      "beforeTextSha256": "d72b634bb937b3ab04978186f36dc7084063227bce22385433c4d6fb06527ce9",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 70,
+      "removedUrls": [
+        "https://youtu.be/0Azz3hRHgOE?si=Mi-NxA2e4PpYFzLv"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "ef5d5d5eb724e6bfad06660c06b0ec8ba0790d1e2838787b7e62f5666842be69",
+      "afterProtectedSha256": "ef5d5d5eb724e6bfad06660c06b0ec8ba0790d1e2838787b7e62f5666842be69",
+      "updatedAt": "2026-09-24T09:03:03.235Z",
+      "beforeTextSha256": "39ab6367ee11ba864f9465a63f2241d6d1c9a0884eaa90131f222aeff10cba0c",
+      "afterTextSha256": "624fc3723a64c53b8ec5447e78c5e5ce9b06a8ea9d826c79b9930d073e1e9a50"
+    },
+    {
+      "id": 72,
+      "removedUrls": [
+        "https://youtu.be/uvHw6VB8kcQ?si=1OGxYMu4HucHfwb_"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "cd34e622718761dd3d9125afc567ac53cabb5c5a47f0053ba518089b6ec68658",
+      "afterProtectedSha256": "cd34e622718761dd3d9125afc567ac53cabb5c5a47f0053ba518089b6ec68658",
+      "updatedAt": "2026-09-24T09:03:04.866Z",
+      "beforeTextSha256": "831502112b97ab0f66a13ffb99d5cd2fe61a58f0c289d8502566f28970c12cec",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 73,
+      "removedUrls": [
+        "https://youtu.be/-RA36-f1tM8?si=vNT1VgYxjGhLQrsY"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "ff50e2160dd790622f11ae3fc3583dfece3ce0adb4ffe1899380bad62130d229",
+      "afterProtectedSha256": "ff50e2160dd790622f11ae3fc3583dfece3ce0adb4ffe1899380bad62130d229",
+      "updatedAt": "2026-09-24T09:03:06.480Z",
+      "beforeTextSha256": "1c40ce8b10c7847b3a4ee7184e4bd2b55654120c662e79b8f50057f5ae92b73f",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 74,
+      "removedUrls": [
+        "https://youtu.be/sCejb3STyuM?si=BiE0G4Bw_5TrLnLg"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "0c5732b893f6bf6c4fe400411c331ec2e39f4b79ef824ac545ae891f0ca64b6f",
+      "afterProtectedSha256": "0c5732b893f6bf6c4fe400411c331ec2e39f4b79ef824ac545ae891f0ca64b6f",
+      "updatedAt": "2026-09-24T09:03:08.110Z",
+      "beforeTextSha256": "94cd3738f0bbc0b49604b2d192e417bb0db242261b05d598cb65baaa344788e7",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 75,
+      "removedUrls": [
+        "https://youtu.be/lVtqBYHgAH0?si=pN9OKn5SemlH5zmD"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "b70a4a12c094c5ba7481721a6fbe1020d5f65ee78c3c6220cb629a8a0c37d2c7",
+      "afterProtectedSha256": "b70a4a12c094c5ba7481721a6fbe1020d5f65ee78c3c6220cb629a8a0c37d2c7",
+      "updatedAt": "2026-09-24T09:03:09.742Z",
+      "beforeTextSha256": "0fd888f1481749b16c66207744f339e8159910438b4ee6ea218f93816550cce9",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 76,
+      "removedUrls": [
+        "https://youtu.be/wKAdK431Bqk?si=7YknG7A961cOxHOS"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "dd94b32c53d4e2948f05d2acee732278a08ee1fe8644dd5614ef118a5aae0f41",
+      "afterProtectedSha256": "dd94b32c53d4e2948f05d2acee732278a08ee1fe8644dd5614ef118a5aae0f41",
+      "updatedAt": "2026-09-24T09:03:11.364Z",
+      "beforeTextSha256": "8ff3e9868707bee91be6d9f99c3f4d237066cb8927b5df69c7998101f9275d78",
+      "afterTextSha256": "7e0224bf34c35c31ac5f05cc2ff3f89759ac4d5f0cd15348f99d3af488536183"
+    },
+    {
+      "id": 78,
+      "removedUrls": [
+        "https://youtu.be/uTw3TNvSNs8?si=RMAB5WWoQaN9vJEM"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "8f5af6f1f9f7dc77a5fa9d37dd6460117eeeae4f6743e9fee0950a127b506a9b",
+      "afterProtectedSha256": "8f5af6f1f9f7dc77a5fa9d37dd6460117eeeae4f6743e9fee0950a127b506a9b",
+      "updatedAt": "2026-09-24T09:03:12.995Z",
+      "beforeTextSha256": "7715df7561fe15081b5a2f004afa3d87388d45eb3fe4041d0c05ed9c2acf471a",
+      "afterTextSha256": "7b1b0e4957cd885a47c97e3fe94d3e9eecf29b3a4bc05feb2cb7b2b1f427731a"
+    },
+    {
+      "id": 79,
+      "removedUrls": [
+        "https://youtu.be/TE_eaRe9e7I?si=coo0wsl0PnrYZjNn"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "f08796b4c17ec229bccf2cb946f1baaf9daa373ed7bdbc0beb9c3ce6185dfbc3",
+      "afterProtectedSha256": "f08796b4c17ec229bccf2cb946f1baaf9daa373ed7bdbc0beb9c3ce6185dfbc3",
+      "updatedAt": "2026-09-24T09:03:14.615Z",
+      "beforeTextSha256": "6290e36787178ef57bed22aec2b0019bd022d2c93206a7753dc08c637bea53a2",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 80,
+      "removedUrls": [
+        "https://youtu.be/uFMR9LZCodg?si=Eg_V-41AABk2bw9o"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "8e11a7976e6461bb9d387f1bfdc188abc4c634a3a39d3083266ebe2ce7a80bbb",
+      "afterProtectedSha256": "8e11a7976e6461bb9d387f1bfdc188abc4c634a3a39d3083266ebe2ce7a80bbb",
+      "updatedAt": "2026-09-24T09:03:16.233Z",
+      "beforeTextSha256": "93e497f4660d575618501d183e9354f42524e053a819b6f0ea809a276e69242f",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 81,
+      "removedUrls": [
+        "https://youtu.be/81wDOyaFvnY?si=1fBm74K6jTrY5okN"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "36e4ef29a2ce86465506c8799240e8565e5eb5ec7a4d003952dc94b78b3cce1a",
+      "afterProtectedSha256": "36e4ef29a2ce86465506c8799240e8565e5eb5ec7a4d003952dc94b78b3cce1a",
+      "updatedAt": "2026-09-24T09:03:17.871Z",
+      "beforeTextSha256": "9397d5f87a314fcf99e173c03d2216ee3fe0671ae3d6837c32a8f0dfb85130e1",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 82,
+      "removedUrls": [
+        "https://youtu.be/er0yzPNz6p0?si=fMVUpg4cvHCTNyaS"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "c7947cec56546a9f8c26676643186375cfaee622ffab9ebdaa3d8c27a631d948",
+      "afterProtectedSha256": "c7947cec56546a9f8c26676643186375cfaee622ffab9ebdaa3d8c27a631d948",
+      "updatedAt": "2026-09-24T09:03:19.493Z",
+      "beforeTextSha256": "b36a122d3eec81b3e88f624514ab5d05fd62bc233dba35a11bc607ca225479f9",
+      "afterTextSha256": "633f67369f25df7ee2456732d5c55faee6a101bc88f1417be94b92ba174addb9"
+    },
+    {
+      "id": 83,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=-YIpWzFeLGU&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=87"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "902874639ede51eb5fb1838605cf1a615fcbf6ba841b53dae1c13539639f264f",
+      "afterProtectedSha256": "902874639ede51eb5fb1838605cf1a615fcbf6ba841b53dae1c13539639f264f",
+      "updatedAt": "2026-09-24T09:03:21.108Z",
+      "beforeTextSha256": "9734dc889cd7949887b45678e01b6497d55d381bc011176a2fff31ca554d9927",
+      "afterTextSha256": "e8e3af282c61d73dda05161a569d972e6497a5be5da88f4f1ed1753087733554"
+    },
+    {
+      "id": 84,
+      "removedUrls": [
+        "https://youtu.be/ju2Lae8LS50?si=aC-I9K25tUWss22T"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "66f3728f36256c79134393eda4bf6fe8450f588ef6509074e3233fa557a7c713",
+      "afterProtectedSha256": "66f3728f36256c79134393eda4bf6fe8450f588ef6509074e3233fa557a7c713",
+      "updatedAt": "2026-09-24T09:03:22.731Z",
+      "beforeTextSha256": "2c7614c4434745fd2f04df4d8efeb7d004c3e947a287b17adc908a6ee35cb993",
+      "afterTextSha256": "497eb1f78945b035fc1d9c073099a5f6bc3ad91e5d194a822c996afa7994562c"
+    },
+    {
+      "id": 85,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=hbnEmu-J-RY&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=89"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "8fd1d930bf8744a47206d4e2b23046152d239ea52338b43bd46fcc9b1043957d",
+      "afterProtectedSha256": "8fd1d930bf8744a47206d4e2b23046152d239ea52338b43bd46fcc9b1043957d",
+      "updatedAt": "2026-09-24T09:03:24.362Z",
+      "beforeTextSha256": "f210f2ef415680fecfa39ee0761de7d57a4916acaf204122fd5738a1b1b47ac4",
+      "afterTextSha256": "c960f8177bfe961fdbf922d55c6519da0dca907a96a30ac2c294da517a44fffb"
+    },
+    {
+      "id": 86,
+      "removedUrls": [
+        "https://youtu.be/RVbVpbubJkM?si=Y3BOW8EDkd5sQLqN"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "0c9a7df2d8dbf5e81d27a4c8c7b374ba29c15c5a1b4c087ea55f900212f62ba3",
+      "afterProtectedSha256": "0c9a7df2d8dbf5e81d27a4c8c7b374ba29c15c5a1b4c087ea55f900212f62ba3",
+      "updatedAt": "2026-09-24T09:03:25.982Z",
+      "beforeTextSha256": "3019d98882e2729bb680c16b953b836579fd75559ed3311af26dddc438400d18",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 87,
+      "removedUrls": [
+        "https://youtu.be/KH-fEVUP3bs?si=LYEvgIp_VV-bahBE"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "29ab459bf95429bd9b92a80f3911ca20db8ae80122fb1c014cd8fc6ae763d025",
+      "afterProtectedSha256": "29ab459bf95429bd9b92a80f3911ca20db8ae80122fb1c014cd8fc6ae763d025",
+      "updatedAt": "2026-09-24T09:03:27.607Z",
+      "beforeTextSha256": "bfe8fde47a7c794e1e61d5f49f1b8d4ad8bec37f03e8469e7b310b0d8544c494",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 88,
+      "removedUrls": [
+        "https://youtu.be/fpF-dRMWxxE?si=y8yOQNEsVMPe6MS1"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "649947ba415e398894d68b5c284cdc384094d1c5a6e7ef9f7281d5293fca68a9",
+      "afterProtectedSha256": "649947ba415e398894d68b5c284cdc384094d1c5a6e7ef9f7281d5293fca68a9",
+      "updatedAt": "2026-09-24T09:03:29.240Z",
+      "beforeTextSha256": "fcfe2b4fe5a0d061fb19a10bcb9442fc95afc0eeebbee12d122da2646dd5aef1",
+      "afterTextSha256": "85ede85c02aa209bc0c0f2e127939d791bf638408bb16682e7236adbac2da2bb"
+    },
+    {
+      "id": 89,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=ewkAMZToQTc&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=93"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "aaae81fc39ca41be7584b8d6824447ecf8dc2f62c61862bebeaf52421921de85",
+      "afterProtectedSha256": "aaae81fc39ca41be7584b8d6824447ecf8dc2f62c61862bebeaf52421921de85",
+      "updatedAt": "2026-09-24T09:03:30.868Z",
+      "beforeTextSha256": "925a57a96d328de47e86d93228166bd2e26d4be1be850c5c2f5a2e9bf280c052",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 90,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=mCmsJuGZ9JE&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=94"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "bd3c821592b8d75852ac2a17de52b50bf0fe60449afcedd5830d35d16b0b2104",
+      "afterProtectedSha256": "bd3c821592b8d75852ac2a17de52b50bf0fe60449afcedd5830d35d16b0b2104",
+      "updatedAt": "2026-09-24T09:03:32.482Z",
+      "beforeTextSha256": "fa0bcf069ce1a5fa7cdef624163a6d134989df1b555350cddac888b44a165c78",
+      "afterTextSha256": "30e17e98f3bc71cde098f199fc3de42b1906f9756cb76242acec5fcb33ff8e33"
+    },
+    {
+      "id": 91,
+      "removedUrls": [
+        "https://youtu.be/ahTKQeKqpPU?si=hsiCKdLHO9jqXFXE"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "6baebaf081a073e433b4ebc149988c9a2108c4ee975f6b2c0707a9501996847d",
+      "afterProtectedSha256": "6baebaf081a073e433b4ebc149988c9a2108c4ee975f6b2c0707a9501996847d",
+      "updatedAt": "2026-09-24T09:03:34.190Z",
+      "beforeTextSha256": "53df7e2d59539d80347fe026908eff84ef6eed543a8d85118eb8cc7fe8bab739",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 92,
+      "removedUrls": [
+        "https://youtu.be/bLjbosKkpyE?si=07QxziImOvctLxip"
+      ],
+      "removedRatings": 1,
+      "protectedSha256": "362f5c646171f7b1dda986cb8f24d73f20b79c680fd5bfc009074b827f132960",
+      "afterProtectedSha256": "362f5c646171f7b1dda986cb8f24d73f20b79c680fd5bfc009074b827f132960",
+      "updatedAt": "2026-09-24T09:03:35.825Z",
+      "beforeTextSha256": "d1ec119bd67e354d76993b35083bab23a24f3b508fa0eb094830e5939c2e6174",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 94,
+      "removedUrls": [
+        "https://youtu.be/OFiEEk6AYf4?si=PPsvWzc25-NWdrtn"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "eb4fb1487cb9aed605afd7fce8fa915fc916a938fcbb6dc0535e0a08cccbf5c2",
+      "afterProtectedSha256": "eb4fb1487cb9aed605afd7fce8fa915fc916a938fcbb6dc0535e0a08cccbf5c2",
+      "updatedAt": "2026-09-24T09:03:37.459Z",
+      "beforeTextSha256": "9963fe6ff866fba08e0a99f36abbb7d07224d2acf015b0ec42b80ef531d4d7e3",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 95,
+      "removedUrls": [
+        "https://youtu.be/dXn-vI0X2FA?si=ZWwlokmnmXi_NM14"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "e99b125fb5a94c0f1b834e7c778de0c640e67d4f13cbdbfd2613064e287dbbfc",
+      "afterProtectedSha256": "e99b125fb5a94c0f1b834e7c778de0c640e67d4f13cbdbfd2613064e287dbbfc",
+      "updatedAt": "2026-09-24T09:03:39.101Z",
+      "beforeTextSha256": "01f86b64c44f18e28ce31611a21b237c3ea60505b15e867316acd4200f400d7f",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 96,
+      "removedUrls": [
+        "https://youtu.be/-NMEmqrYsM4?si=VYK75wVETpkdvOn6"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "aef3fbf5e0af977382a67644b8cdb03d019ac8f64808fb6f2a029fffafdd3a8b",
+      "afterProtectedSha256": "aef3fbf5e0af977382a67644b8cdb03d019ac8f64808fb6f2a029fffafdd3a8b",
+      "updatedAt": "2026-09-24T09:03:40.728Z",
+      "beforeTextSha256": "d8ef029e04d6ce7e1ec968b17e747e909544342eebc8017c55eb4a1e8363485c",
+      "afterTextSha256": "5864c23e30f7cd943f8a149e7b0d55946c2ef8160551dd5f740c08414d9c049a"
+    },
+    {
+      "id": 97,
+      "removedUrls": [
+        "https://youtu.be/dzI9h-Sq8-k?si=Kqg1398hLENpE7PC"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "21757db85ec176e87cce5cdf87de55f1871359ffdd3f739307162d9754b213c7",
+      "afterProtectedSha256": "21757db85ec176e87cce5cdf87de55f1871359ffdd3f739307162d9754b213c7",
+      "updatedAt": "2026-09-24T09:03:42.881Z",
+      "beforeTextSha256": "ee020e655dde04eba093b2f74afcaed3ccc4570700fde669512edb8fff910265",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 98,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=mFYYwKK5KGY&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=105"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "79c041e02db0ad93500e4f6a44724216884eec28cdbb0b4a609d601d7b346f68",
+      "afterProtectedSha256": "79c041e02db0ad93500e4f6a44724216884eec28cdbb0b4a609d601d7b346f68",
+      "updatedAt": "2026-09-24T09:03:44.511Z",
+      "beforeTextSha256": "ebb09d4495284604b0134a10edba8f2ca5bae6146a4a8ccb5206bf2bce29347b",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 99,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=6tcXKtx7m0M&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=106"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "607d53869b549bb70bcd5cbe5e9e820dd9fc9df2374e96c62b820574ae49a48c",
+      "afterProtectedSha256": "607d53869b549bb70bcd5cbe5e9e820dd9fc9df2374e96c62b820574ae49a48c",
+      "updatedAt": "2026-09-24T09:03:46.113Z",
+      "beforeTextSha256": "820ada86e4b5aa53e45b86b76640d1e10fb8ebdca540e4902d247e4c072a8fc6",
+      "afterTextSha256": "9072295823c4e51911d7018c6cc7a48c57f3c5270e60b59d947c81fbe5bb07d5"
+    },
+    {
+      "id": 100,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=AZ-UDNFAJ_k&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=107"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "8b80d05033213f201baf1d2627db626e5390efe86e0ec712ce7c8f398c758f0e",
+      "afterProtectedSha256": "8b80d05033213f201baf1d2627db626e5390efe86e0ec712ce7c8f398c758f0e",
+      "updatedAt": "2026-09-24T09:03:47.899Z",
+      "beforeTextSha256": "718a5bdfd0fd067372742be570a641eb02f73819f7722ca31a4cc897885bca82",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 101,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=4BvU5jHxmtI&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=108"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "12cc0228316ecad395c96519b7a0bf5c7bdaf1e3ea9bc0812069cdd657e0b5ea",
+      "afterProtectedSha256": "12cc0228316ecad395c96519b7a0bf5c7bdaf1e3ea9bc0812069cdd657e0b5ea",
+      "updatedAt": "2026-09-24T09:03:49.530Z",
+      "beforeTextSha256": "78f0c3ea985e03844b91805e32e71061bbfa5bd6dd3994edc38454b57652c56f",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 102,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=w4np2cnLwKs&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=109"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "1a01c9030b52e669060dbe31ee0766edb10f2a6d460b32df4beb80f0c58f30d1",
+      "afterProtectedSha256": "1a01c9030b52e669060dbe31ee0766edb10f2a6d460b32df4beb80f0c58f30d1",
+      "updatedAt": "2026-09-24T09:03:51.180Z",
+      "beforeTextSha256": "1c45c7b5a1e165a560941899a44fc400d3ba8b2b9df3e9376ccae959f4f84cb6",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 103,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=KVMU2MQsZ9Q&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=110"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "73ba65a889eb4619368393420e2e5e16a82487dca11b0e8190885b9ba35246e6",
+      "afterProtectedSha256": "73ba65a889eb4619368393420e2e5e16a82487dca11b0e8190885b9ba35246e6",
+      "updatedAt": "2026-09-24T09:03:52.841Z",
+      "beforeTextSha256": "3a636aa54e8fa7704285e9126a9c68e911ea19fe788ec9fa0b45e8356aa22a96",
+      "afterTextSha256": "561c6052518548dbd8cfd418416e89aad6dcd6a5d5c30ed177dc63beb544777f"
+    },
+    {
+      "id": 104,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=gddQsacKZQw&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=111"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "0edba396b6bfa657aaf922fe608b94f2c493c9a49615ef97a0a9205ba1a2849b",
+      "afterProtectedSha256": "0edba396b6bfa657aaf922fe608b94f2c493c9a49615ef97a0a9205ba1a2849b",
+      "updatedAt": "2026-09-24T09:03:54.484Z",
+      "beforeTextSha256": "8ac98bf84c0d48c38ef2664f75072765ea296425fb4ce0b0a40e561498b7421a",
+      "afterTextSha256": "e9ac90a08e15dd859e8d9805eac09c81be3ed3aa2a1c4672fe8d9ef296262959"
+    },
+    {
+      "id": 105,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=OfgaT859djo&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=112"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "ef46630504e26d374410c263d540adb169971f0d6ab4b814025649e22259f9f4",
+      "afterProtectedSha256": "ef46630504e26d374410c263d540adb169971f0d6ab4b814025649e22259f9f4",
+      "updatedAt": "2026-09-24T09:03:56.112Z",
+      "beforeTextSha256": "ac1d6055a76a5655037cdacf230cca12c088f246f064b544075d53be33ab3ef4",
+      "afterTextSha256": "fb6aedaf4e355f460ae641fc95e16d8fd4275873cd57018996224feca0550360"
+    },
+    {
+      "id": 107,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=crqsjnq8Xjc&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=114"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "f809f46fcce3d15ef34ba23286f3dbdd595f9b833bdf51e4ab45793255e75bc7",
+      "afterProtectedSha256": "f809f46fcce3d15ef34ba23286f3dbdd595f9b833bdf51e4ab45793255e75bc7",
+      "updatedAt": "2026-09-24T09:03:57.741Z",
+      "beforeTextSha256": "4116fec3e551be8df2c09e46293082a8afe679a3cf249da1335ad18e828b1d80",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 108,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=PsfTsyq2eWk&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=115"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "4140efba0c46e093297ba0c1d7510908127f886d5e8c416932321288ddaa638e",
+      "afterProtectedSha256": "4140efba0c46e093297ba0c1d7510908127f886d5e8c416932321288ddaa638e",
+      "updatedAt": "2026-09-24T09:03:59.367Z",
+      "beforeTextSha256": "56244bebecd128d8ab6513a7593d45fe79c886ef8eab1361e219523345bef2e9",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 109,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=8tW-GDTjgkU&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=116"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "19465390ea54befeaace3c5078b3e61cc41f73c0661f0911c454336dfab6bf37",
+      "afterProtectedSha256": "19465390ea54befeaace3c5078b3e61cc41f73c0661f0911c454336dfab6bf37",
+      "updatedAt": "2026-09-24T09:04:00.991Z",
+      "beforeTextSha256": "c09b3e8302e66b3d29bf9ac671d2827354b1c471d6dae07dee7186e6eeeadf22",
+      "afterTextSha256": "e4aed1392016c0e9faab15c8253ea6fde598680dfacf13c52dcb912285f715d2"
+    },
+    {
+      "id": 110,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=LARHIb_AEFg&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=117"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "5cd91cb5c6067ae4f97996361e60645c26ed2e381ded4d849a4c8b73ad9d38cd",
+      "afterProtectedSha256": "5cd91cb5c6067ae4f97996361e60645c26ed2e381ded4d849a4c8b73ad9d38cd",
+      "updatedAt": "2026-09-24T09:04:02.630Z",
+      "beforeTextSha256": "ccf9bbd3de118ace025b017d339d0ccb928c52f7c21ea2a5e6f2a81ccd6029a9",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 111,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=Np3QEVDl_28&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=119"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "96689a56f7b699717eeb63915ae2be355010a3ad59be82ab598771a253af1a92",
+      "afterProtectedSha256": "96689a56f7b699717eeb63915ae2be355010a3ad59be82ab598771a253af1a92",
+      "updatedAt": "2026-09-24T09:04:04.241Z",
+      "beforeTextSha256": "54eb928b45daa6a15f0ed01d230a4f45be22152dcbd4d07bde794b3c5dccefb4",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 112,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=-rdWsrnVQg0&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=120"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "3ea8c77c9f17532863e1baf393a93fec8e1fbd1d3c7bf183508a5ad3541f5387",
+      "afterProtectedSha256": "3ea8c77c9f17532863e1baf393a93fec8e1fbd1d3c7bf183508a5ad3541f5387",
+      "updatedAt": "2026-09-24T09:04:05.859Z",
+      "beforeTextSha256": "185f595854fcecd8c9377cc80f8ab5469729e137d69b5d8c5949e71a81ec5d65",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 113,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=KkjDiyPjffo&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=121"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "53b3be21f06f41c9d866f8d7b2f50b539ce61f94161c057f6180ee59fb5f1ef3",
+      "afterProtectedSha256": "53b3be21f06f41c9d866f8d7b2f50b539ce61f94161c057f6180ee59fb5f1ef3",
+      "updatedAt": "2026-09-24T09:04:07.493Z",
+      "beforeTextSha256": "4a3ba9442ddcf45e6212d6aae5b45d46e38a160c3d16ce8ca0d2ed54c9a83515",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 114,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=TJrhyGy_TLc&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=122"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "5bb31d39ce3b1d01438cc2f1d49b0e25ab0ce5df9307ef0d17e995804cce7b39",
+      "afterProtectedSha256": "5bb31d39ce3b1d01438cc2f1d49b0e25ab0ce5df9307ef0d17e995804cce7b39",
+      "updatedAt": "2026-09-24T09:04:09.106Z",
+      "beforeTextSha256": "1cb8196be6a11070ac4a26e389535b62cc59a0a3b85ce52849592cc70cbe91df",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 115,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=4czHFNrpHqs&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=123"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "6bb29e040d2ce0c21811ad5241c83a196080f3f8f2df9076f893f4fd26f29d7f",
+      "afterProtectedSha256": "6bb29e040d2ce0c21811ad5241c83a196080f3f8f2df9076f893f4fd26f29d7f",
+      "updatedAt": "2026-09-24T09:04:10.792Z",
+      "beforeTextSha256": "4ef2c6ca6f98448bd529ecaa669cdbc55f5db5467da6dcbb98ea67595099bafd",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 118,
+      "removedUrls": [
+        "https://youtu.be/vIXmLVP9KSI?si=iftlo-V9fPgVbbif"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "947ac8032ea8c7a687ba3330acc99506797fb56ceb86883be382400cdcf98361",
+      "afterProtectedSha256": "947ac8032ea8c7a687ba3330acc99506797fb56ceb86883be382400cdcf98361",
+      "updatedAt": "2026-09-24T09:04:12.428Z",
+      "beforeTextSha256": "0d2b626894283048d7e8ed438fb8a446d2d8ad3daebca71720c650b2373889d4",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 120,
+      "removedUrls": [
+        "https://youtu.be/Z38S59BXJ7Y?si=iQhOPEblD14q6nUd"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "185895a67661ef06f5b6344125178be43753aebf2b0e8e7f52a11841a2b4ecd6",
+      "afterProtectedSha256": "185895a67661ef06f5b6344125178be43753aebf2b0e8e7f52a11841a2b4ecd6",
+      "updatedAt": "2026-09-24T09:04:14.038Z",
+      "beforeTextSha256": "2be19f5bed0bae42f2e079a49ab327d76e0ff4c11a6228205138043702bb0ea6",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 121,
+      "removedUrls": [
+        "https://youtu.be/BJJBzA26iak?si=DnpYxg8WC5EGkAEg"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "3049f9150a27f0f8b55caceae157e7b66b4b2f7e8a1fde3ef998335d3b3bfaa2",
+      "afterProtectedSha256": "3049f9150a27f0f8b55caceae157e7b66b4b2f7e8a1fde3ef998335d3b3bfaa2",
+      "updatedAt": "2026-09-24T09:04:15.668Z",
+      "beforeTextSha256": "4899026f3339011da8ae8706719c7096b75f624e7fc217c1987841d9ba2ad718",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 122,
+      "removedUrls": [
+        "https://youtu.be/ECVKRtM-Kwk?si=lem0gHwZ0IWJFZR6"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "8519a5b0dac91fc04d33cd9adc10e453e6c29b0c8e263ca2b1eaec82c396c63f",
+      "afterProtectedSha256": "8519a5b0dac91fc04d33cd9adc10e453e6c29b0c8e263ca2b1eaec82c396c63f",
+      "updatedAt": "2026-09-24T09:04:17.292Z",
+      "beforeTextSha256": "283f5aadd1a4e8048b14621369328f6d91970fc0750ed38ed75b4144e16dcfe6",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 124,
+      "removedUrls": [
+        "https://youtu.be/mpHrvC2BYG0?si=RRGmG_eL90b3Z6AY"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "2ebcae921eecf9250b01150b53eb584127559934859ef4ca7376eaddcc1cea50",
+      "afterProtectedSha256": "2ebcae921eecf9250b01150b53eb584127559934859ef4ca7376eaddcc1cea50",
+      "updatedAt": "2026-09-24T09:04:18.930Z",
+      "beforeTextSha256": "9dca5441d75fc12f4828d4d5370476eb415d2be125a394507982faf14a3e7fd5",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 126,
+      "removedUrls": [
+        "https://youtu.be/r1l5oD4PAHY?si=DiDpiPQ6capg5JY5"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "40b7ded4fbe7abafc731215c95b6a598a24aa764dd7bd0a4239be4a83fe62897",
+      "afterProtectedSha256": "40b7ded4fbe7abafc731215c95b6a598a24aa764dd7bd0a4239be4a83fe62897",
+      "updatedAt": "2026-09-24T09:04:20.566Z",
+      "beforeTextSha256": "f901456a8bc610154a8e4c7973267a7d9e8e6dd44733af2b6772ffbe51a0be13",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 127,
+      "removedUrls": [
+        "https://youtu.be/jj8tQ3W13Zk?si=aQ7s6X40Bo5HN1jY"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "2f1b7034294aca5da85c1dd7b3ad0cce24e961d6736e6290197b732d94ce7abb",
+      "afterProtectedSha256": "2f1b7034294aca5da85c1dd7b3ad0cce24e961d6736e6290197b732d94ce7abb",
+      "updatedAt": "2026-09-24T09:04:22.233Z",
+      "beforeTextSha256": "213db69952197f13d2e52d2aaf4ed5eda085152b5af14a0063b1a8d9fb83d964",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 128,
+      "removedUrls": [
+        "https://youtu.be/v0g92rsOUEU?si=meRzgjkn53MG078Z"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "ab7091fb34fe299c5d49249a3ffff314d5d8e1deef931f5161f4af13cfc30a03",
+      "afterProtectedSha256": "ab7091fb34fe299c5d49249a3ffff314d5d8e1deef931f5161f4af13cfc30a03",
+      "updatedAt": "2026-09-24T09:04:23.890Z",
+      "beforeTextSha256": "fd1f6e7bd15329ef2f97764d8efcd9478851990f327e19cabbe26594c7b7c8bf",
+      "afterTextSha256": "f94ec1dbfd6b6d38a86bf1eb4ed77945e9ba69f2ae85671c9dab6a857a9d9c1d"
+    },
+    {
+      "id": 132,
+      "removedUrls": [
+        "https://youtu.be/beXWsrV-GQg?si=m_Sj106Wc4ZiXkA3"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "6e603327c79cb726393446502b836bffe8b0c04002c17b56e172f2e5b32055a0",
+      "afterProtectedSha256": "6e603327c79cb726393446502b836bffe8b0c04002c17b56e172f2e5b32055a0",
+      "updatedAt": "2026-09-24T09:04:25.518Z",
+      "beforeTextSha256": "89acfa540adb9e57cb1a62ed3f00f0153205e3b443003b5ac2521679cf7d2609",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 134,
+      "removedUrls": [
+        "https://youtu.be/RYYwcejEJ50?si=JEAqg_k63I2TJLo2"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "05f37def7402b0659073eb04f94fd2eac54dc3d2e51bd9bf9f263749bd7b49b2",
+      "afterProtectedSha256": "05f37def7402b0659073eb04f94fd2eac54dc3d2e51bd9bf9f263749bd7b49b2",
+      "updatedAt": "2026-09-24T09:04:27.157Z",
+      "beforeTextSha256": "50158822bf02e11c1bf0e7ec298222f8bc29c81e112493e9c9cf74b2b6856be6",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 135,
+      "removedUrls": [
+        "https://youtu.be/jjphdSwN72w?si=d38H2pix5Cc2dwdC"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "d6716511d7e4166e7b7604f00242d79b0b25146f94a88d0c9938800c66fe1584",
+      "afterProtectedSha256": "d6716511d7e4166e7b7604f00242d79b0b25146f94a88d0c9938800c66fe1584",
+      "updatedAt": "2026-09-24T09:04:28.797Z",
+      "beforeTextSha256": "ad2f6a42cadb18774aeae33f886c34d552ea847b4a619fc6b2a3662c28a86bd1",
+      "afterTextSha256": "c6639395fbd861df20292ff71e903228886aa6a784fff78cdcef7299317217e4"
+    },
+    {
+      "id": 137,
+      "removedUrls": [
+        "https://youtu.be/ecMDMJ8eHYk?si=0ni4HbQCo38f6tfL"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "251b994fe0b07554ef574437c7612f054526d978cd18ce454a3e180ccea0feb6",
+      "afterProtectedSha256": "251b994fe0b07554ef574437c7612f054526d978cd18ce454a3e180ccea0feb6",
+      "updatedAt": "2026-09-24T09:04:30.427Z",
+      "beforeTextSha256": "bac0fbe0b865cfb1a009c356d2eebf838d89816345f2767f80a664de0068022b",
+      "afterTextSha256": "a92cd8008870d9d196de08d9d8ad969e780db424def1314c29eb71f42407a371"
+    },
+    {
+      "id": 138,
+      "removedUrls": [
+        "https://youtu.be/243yZ6-AeIQ?si=SCk9gzwZu5A_xiv5"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "3cce50980fa7d904bc7f16d80dace82137db16b83503ec440b28b94eea44da0a",
+      "afterProtectedSha256": "3cce50980fa7d904bc7f16d80dace82137db16b83503ec440b28b94eea44da0a",
+      "updatedAt": "2026-09-24T09:04:32.050Z",
+      "beforeTextSha256": "f4b2a4d69f9f3110204c03db4c3ac6a91c2cdc528ce68d704418cac542da3ae4",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 139,
+      "removedUrls": [
+        "https://youtu.be/JB0x3SKTtjE?si=CkCyePfKJsIe3znq"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "ee6ba3963701efbf6737f14c34907b1c7c317add891c3026fdab810831262ea3",
+      "afterProtectedSha256": "ee6ba3963701efbf6737f14c34907b1c7c317add891c3026fdab810831262ea3",
+      "updatedAt": "2026-09-24T09:04:33.691Z",
+      "beforeTextSha256": "ac8fb22816cdbaa4b107f4d6be03895e7d968a100e4480782bd966976cc91d79",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 140,
+      "removedUrls": [
+        "https://youtu.be/5_zfsBe0Ock?si=0nass1ifDDfClGT4"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "d30f45463fff270a4b32c3124c429e5a6773cd055eb72e1cd55f0b1f98f68347",
+      "afterProtectedSha256": "d30f45463fff270a4b32c3124c429e5a6773cd055eb72e1cd55f0b1f98f68347",
+      "updatedAt": "2026-09-24T09:04:35.331Z",
+      "beforeTextSha256": "4412db8e24a84ec23e8f7bd1cc008a97b9e05fc72c58acf36cb8a22e6d6be3c5",
+      "afterTextSha256": "0697e219d238c64a93c62be94f9e02c64017d302f52a844cedf92c61075adf89"
+    },
+    {
+      "id": 141,
+      "removedUrls": [
+        "https://www.youtube.com/watch?v=DsrXEBekTmI&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=153"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "3c7327a6fd2825b139ba85a34d5e1a0b07d65655aae5b61871e5198b6304c573",
+      "afterProtectedSha256": "3c7327a6fd2825b139ba85a34d5e1a0b07d65655aae5b61871e5198b6304c573",
+      "updatedAt": "2026-09-24T09:04:36.993Z",
+      "beforeTextSha256": "d63deb744b05e193bdd7eb51b2cbbb9c2465a169aee76859b2c5f01372eef3fb",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 142,
+      "removedUrls": [
+        "https://youtu.be/ScbxHpLTRe4?si=U3N0pLELuxL77HdS"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "cc5ab7cedb811db039439abcb35ec9b197a5419969b51288764986b82f586b3c",
+      "afterProtectedSha256": "cc5ab7cedb811db039439abcb35ec9b197a5419969b51288764986b82f586b3c",
+      "updatedAt": "2026-09-24T09:04:38.623Z",
+      "beforeTextSha256": "513e8a914088c6a3c1fa4faef08307ca5ee700fcdf01aa2137a8853f0a91cbff",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 143,
+      "removedUrls": [
+        "https://youtu.be/mlOfX9YwlsQ?si=8nFUjs4JphwbYbBw"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "27e28b99dc2a6db9a462af57ef784fbffc830bc9d9b8ae4dbd2282985ebe63b7",
+      "afterProtectedSha256": "27e28b99dc2a6db9a462af57ef784fbffc830bc9d9b8ae4dbd2282985ebe63b7",
+      "updatedAt": "2026-09-24T09:04:40.246Z",
+      "beforeTextSha256": "9cea3e37af5c788d2866925e7fce1affdcc779ac9e5b86b8d06882ffb37b4ea0",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 144,
+      "removedUrls": [
+        "https://youtu.be/vxpNz8v7waI?si=fVqbxNrItawrKpHq"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "31032e6f63c042d679ae3106c473dee3a0f9597aa8fd1c6e3e56703cd1f0d176",
+      "afterProtectedSha256": "31032e6f63c042d679ae3106c473dee3a0f9597aa8fd1c6e3e56703cd1f0d176",
+      "updatedAt": "2026-09-24T09:04:41.881Z",
+      "beforeTextSha256": "481f060363a35e8b2b8b55b237869f5d0d1c441b3ad99dbee330888f0bfb1f1a",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 145,
+      "removedUrls": [
+        "https://youtu.be/am3w-wSCBTE?si=TXHfnnW8MMuzGM6i"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "f84ac9057777d2ec5f2a7e1509591f51888eaf05c7a16c5daf1c0cf1ca08e4d8",
+      "afterProtectedSha256": "f84ac9057777d2ec5f2a7e1509591f51888eaf05c7a16c5daf1c0cf1ca08e4d8",
+      "updatedAt": "2026-09-24T09:04:43.499Z",
+      "beforeTextSha256": "ca45b4ec5ce92d4915d17902322004938ba641ac4700d329bbaba3a9631fd08d",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 146,
+      "removedUrls": [
+        "https://youtu.be/e-DMKNDonro?si=DZ0H4difjpeoNc9o"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "c30b23bdfb6d0006574594b4c74c94cde51d360aa10ccbb592a8d1eecf7eba82",
+      "afterProtectedSha256": "c30b23bdfb6d0006574594b4c74c94cde51d360aa10ccbb592a8d1eecf7eba82",
+      "updatedAt": "2026-09-24T09:04:45.153Z",
+      "beforeTextSha256": "92c2a4d010f221a4bd51d0de2ee348524964997d8103f93b38b421fe260bbc5f",
+      "afterTextSha256": "577c667417b3d65190f15642033108b69e683f97fc754c2265aac8d8fd01ee38"
+    },
+    {
+      "id": 147,
+      "removedUrls": [
+        "https://youtu.be/aS6UZ292Rho?si=_1EFKlms4rgmPC9v"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "262d08c83652b8779e39867fba19bdb1fba01a3b7da47d8b2683fb974b751c87",
+      "afterProtectedSha256": "262d08c83652b8779e39867fba19bdb1fba01a3b7da47d8b2683fb974b751c87",
+      "updatedAt": "2026-09-24T09:04:46.784Z",
+      "beforeTextSha256": "9d64e96a0dc38ac539b66b561c8208d43d0f66967f7a6bf095b481a7f559f809",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 148,
+      "removedUrls": [
+        "https://youtu.be/5oeVT9_U5l0?si=TRMmmg7ew82uIF0q"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "5de50ca61328a38cff319bf8d9a047af080ecf8031788b4492a3afee57cf69ff",
+      "afterProtectedSha256": "5de50ca61328a38cff319bf8d9a047af080ecf8031788b4492a3afee57cf69ff",
+      "updatedAt": "2026-09-24T09:04:48.440Z",
+      "beforeTextSha256": "0d6131a4a1eebb33b33be8bea3b89b53dd181cabad5ec5e2ce6119492acfda71",
+      "afterTextSha256": "aec21eefcf55637ebde2bdcf6f520a267325f0d40f790bb177ed585c3cfe561b"
+    },
+    {
+      "id": 149,
+      "removedUrls": [
+        "https://youtu.be/_-2732uuBpo?si=uTEnjBe5U1GphE3O"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "93ac85b14cf731229e79583b70730f25a52f18237e38293191cfed6f4282f549",
+      "afterProtectedSha256": "93ac85b14cf731229e79583b70730f25a52f18237e38293191cfed6f4282f549",
+      "updatedAt": "2026-09-24T09:04:50.077Z",
+      "beforeTextSha256": "07e5eb9db3cb238917118255c4fdf2b42f3f62c04bffd318bbc58087e47774d2",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 150,
+      "removedUrls": [
+        "https://youtu.be/jj63zZl5sGs?si=Ir0T6acPajcFOQqG"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "ef4f6de6b825bbeaa4795d61d40dcbf2e053dd3d8ecded3589a2e93ad6808beb",
+      "afterProtectedSha256": "ef4f6de6b825bbeaa4795d61d40dcbf2e053dd3d8ecded3589a2e93ad6808beb",
+      "updatedAt": "2026-09-24T09:04:51.721Z",
+      "beforeTextSha256": "3a460f5578dbd6f6fbf04fd02a9cf1f37d1f814070d86604caaecb11f2c6c6d0",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 151,
+      "removedUrls": [
+        "https://youtu.be/nTuSbrWOFqU?si=mZzGV3CIVtd3blBM"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "ad2eb3b6aa637ce730a792139379ae48bb31e8442720fae7ae467b2b145aa87b",
+      "afterProtectedSha256": "ad2eb3b6aa637ce730a792139379ae48bb31e8442720fae7ae467b2b145aa87b",
+      "updatedAt": "2026-09-24T09:04:53.357Z",
+      "beforeTextSha256": "eda2e18836ec7d4a3173693d1f9da2df5ec188400b3be98c239ffd8a634331a9",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 152,
+      "removedUrls": [
+        "https://youtu.be/JSy3RkX6Yr0?si=c1piQBWEWC5wEaxn"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "08db717ca583656b95274884351d0c9ff4ca56bb6ae2476a497f0d10bf614864",
+      "afterProtectedSha256": "08db717ca583656b95274884351d0c9ff4ca56bb6ae2476a497f0d10bf614864",
+      "updatedAt": "2026-09-24T09:04:55.017Z",
+      "beforeTextSha256": "846d199e96a804ec6bf4bfadba22e4482d150efa3ba001605b20c209c350577a",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 153,
+      "removedUrls": [
+        "https://youtu.be/BTTqaVVSZ7s?si=MolsDLNBiqxwvMwC"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "e506244ff316554547ee5cd461259422f9cae72532b3cec570af21f9b175a0ad",
+      "afterProtectedSha256": "e506244ff316554547ee5cd461259422f9cae72532b3cec570af21f9b175a0ad",
+      "updatedAt": "2026-09-24T09:04:56.656Z",
+      "beforeTextSha256": "91c358fdfe110ac85d64f654b17dac270c2a4e8ed89456fc17936a606680760c",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 154,
+      "removedUrls": [
+        "https://youtu.be/Hxml8c6aiyg?si=0J4i7X3hIbTRmXGh"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "385557aa2298fd2fc2c9d209a2273971ac05b5e3e10bbaf4144d321805bb0195",
+      "afterProtectedSha256": "385557aa2298fd2fc2c9d209a2273971ac05b5e3e10bbaf4144d321805bb0195",
+      "updatedAt": "2026-09-24T09:04:58.272Z",
+      "beforeTextSha256": "d36498c6e09ce028f7f1a319f927bdf54fa52b15f7a2ff16ac0d6767cac72cda",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": 155,
+      "removedUrls": [
+        "https://youtu.be/S44Wpa_yuwI?si=hiTs7bZz9f1xuGlC"
+      ],
+      "removedRatings": 0,
+      "protectedSha256": "9d6fd0778896f1a75bb90f4b4a4992ae87743d7cf409077743d993e2fad5a316",
+      "afterProtectedSha256": "9d6fd0778896f1a75bb90f4b4a4992ae87743d7cf409077743d993e2fad5a316",
+      "updatedAt": "2026-09-24T09:04:59.890Z",
+      "beforeTextSha256": "32f887418d8cedfda54d1a96092da9fed75d70c75fd46a786e90c0b316d141d7",
+      "afterTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "retainedReferenceVideos": [
+    "VJEg2Q_ReH8",
+    "3VafS2YYWW8",
+    "PBp4Q7_qnVU"
+  ]
+}

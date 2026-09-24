@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://zundamon-question-api.naga-study.workers.dev",
-  "cursor": 588,
+  "cursor": 703,
   "rows": [
     {
       "id": 1,
@@ -2481,8 +2481,8 @@
       "correctKan": null,
       "correctRiichi": null,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "check",
+      "reviewUpdatedAt": "2026-09-18T06:11:26.073Z",
       "questionData": {
         "id": 16,
         "image": "/questions/question-016.png",
@@ -2970,8 +2970,8 @@
       "explanationSchemaVersion": 2,
       "difficulty": "beginner",
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "check",
+      "reviewUpdatedAt": "2026-09-18T06:13:27.620Z",
       "questionData": {
         "id": 19,
         "dora": "1s",
@@ -3576,7 +3576,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/tLjNf_BhcoM",
       "sourceDraw": "1m",
-      "explanation": "💯",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/tLjNf_BhcoM",
@@ -3655,7 +3655,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/tLjNf_BhcoM",
         "sourceDraw": "1m",
-        "explanation": "💯",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/tLjNf_BhcoM",
@@ -3698,7 +3698,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.613706+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:20.088Z"
     },
     {
       "id": 24,
@@ -3874,7 +3874,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/XRPXUIQbG4U",
       "sourceDraw": "8m",
-      "explanation": "💯",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/XRPXUIQbG4U",
@@ -3953,7 +3953,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/XRPXUIQbG4U",
         "sourceDraw": "8m",
-        "explanation": "💯",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/XRPXUIQbG4U",
@@ -3996,7 +3996,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.613754+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:22.214Z"
     },
     {
       "id": 26,
@@ -4033,7 +4033,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/d-I0fXXGY38",
       "sourceDraw": "5p",
-      "explanation": "💯\n||打9p\n\n一向聴の宿題でも何個か出てきましたが、端から始まる順子は除いて考えて問題無い事が多く、789を除いて考えると見え易いかもしれません。\nリャンメンカンチャン含みの一向聴ですね。\n14mから引いた場合には、打5pのカン2p待ちにすることがとても多い形です。（2p1枚飛んでても大体カン2pにとります。）||",
+      "explanation": "||打9p\n\n一向聴の宿題でも何個か出てきましたが、端から始まる順子は除いて考えて問題無い事が多く、789を除いて考えると見え易いかもしれません。\nリャンメンカンチャン含みの一向聴ですね。\n14mから引いた場合には、打5pのカン2p待ちにすることがとても多い形です。（2p1枚飛んでても大体カン2pにとります。）||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/d-I0fXXGY38",
@@ -4117,7 +4117,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/d-I0fXXGY38",
         "sourceDraw": "5p",
-        "explanation": "💯\n||打9p\n\n一向聴の宿題でも何個か出てきましたが、端から始まる順子は除いて考えて問題無い事が多く、789を除いて考えると見え易いかもしれません。\nリャンメンカンチャン含みの一向聴ですね。\n14mから引いた場合には、打5pのカン2p待ちにすることがとても多い形です。（2p1枚飛んでても大体カン2pにとります。）||",
+        "explanation": "||打9p\n\n一向聴の宿題でも何個か出てきましたが、端から始まる順子は除いて考えて問題無い事が多く、789を除いて考えると見え易いかもしれません。\nリャンメンカンチャン含みの一向聴ですね。\n14mから引いた場合には、打5pのカン2p待ちにすることがとても多い形です。（2p1枚飛んでても大体カン2pにとります。）||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/d-I0fXXGY38",
@@ -4165,7 +4165,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:08:35.314Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:23.849Z"
     },
     {
       "id": 27,
@@ -4363,7 +4363,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/rGKUwhn4_68",
       "sourceDraw": "9m",
-      "explanation": "💯",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/rGKUwhn4_68",
@@ -4449,7 +4449,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/rGKUwhn4_68",
         "sourceDraw": "9m",
-        "explanation": "💯",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/rGKUwhn4_68",
@@ -4499,7 +4499,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:08:38.507Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:25.605Z"
     },
     {
       "id": 29,
@@ -4536,7 +4536,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/6WRnzt3XzRU",
       "sourceDraw": "9s",
-      "explanation": "💯\n||既に5ブロック揃っている為、今（カン8s）より【明確に嬉しい】ターツ生成しか価値は無く、14mという強両面生成を見て打1pを正解としたいですが、ずんだもん何切るの正解は打2mでした。（初級者編なのでご了承ください）\n\nhttps://youtu.be/3VafS2YYWW8?si=8u3XBxeEypjjpW1V\n\n1345の1>孤立2\nとなる理由は動画通りしっかりと説明できるようにしておきましょう。||",
+      "explanation": "||既に5ブロック揃っている為、今（カン8s）より【明確に嬉しい】ターツ生成しか価値は無く、14mという強両面生成を見て打1pを正解としたいですが、ずんだもん何切るの正解は打2mでした。（初級者編なのでご了承ください）\n\nhttps://youtu.be/3VafS2YYWW8?si=8u3XBxeEypjjpW1V\n\n1345の1>孤立2\nとなる理由は動画通りしっかりと説明できるようにしておきましょう。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/6WRnzt3XzRU",
@@ -4621,7 +4621,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/6WRnzt3XzRU",
         "sourceDraw": "9s",
-        "explanation": "💯\n||既に5ブロック揃っている為、今（カン8s）より【明確に嬉しい】ターツ生成しか価値は無く、14mという強両面生成を見て打1pを正解としたいですが、ずんだもん何切るの正解は打2mでした。（初級者編なのでご了承ください）\n\nhttps://youtu.be/3VafS2YYWW8?si=8u3XBxeEypjjpW1V\n\n1345の1>孤立2\nとなる理由は動画通りしっかりと説明できるようにしておきましょう。||",
+        "explanation": "||既に5ブロック揃っている為、今（カン8s）より【明確に嬉しい】ターツ生成しか価値は無く、14mという強両面生成を見て打1pを正解としたいですが、ずんだもん何切るの正解は打2mでした。（初級者編なのでご了承ください）\n\nhttps://youtu.be/3VafS2YYWW8?si=8u3XBxeEypjjpW1V\n\n1345の1>孤立2\nとなる理由は動画通りしっかりと説明できるようにしておきましょう。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/6WRnzt3XzRU",
@@ -4670,7 +4670,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.613993+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:27.291Z"
     },
     {
       "id": 30,
@@ -4888,7 +4888,7 @@
       "meldCount": 1,
       "sourceUrl": "https://youtu.be/1tyMKl52oYQ",
       "sourceDraw": "8s",
-      "explanation": "💯",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/1tyMKl52oYQ",
@@ -4983,7 +4983,7 @@
         "meldCount": 1,
         "sourceUrl": "https://youtu.be/1tyMKl52oYQ",
         "sourceDraw": "8s",
-        "explanation": "💯",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/1tyMKl52oYQ",
@@ -5034,7 +5034,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.614126+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:28.932Z"
     },
     {
       "id": 32,
@@ -5071,7 +5071,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/hUoK7DYkjro",
       "sourceDraw": "2s",
-      "explanation": "💯",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/hUoK7DYkjro",
@@ -5154,7 +5154,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/hUoK7DYkjro",
         "sourceDraw": "2s",
-        "explanation": "💯",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/hUoK7DYkjro",
@@ -5201,7 +5201,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.614173+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:30.542Z"
     },
     {
       "id": 33,
@@ -5415,7 +5415,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/vAY9UY3zdAM",
       "sourceDraw": "6s",
-      "explanation": "💯\n||https://discord.com/channels/1166706544856006656/1310850253595082773/1311312656925331549\nの僕のお勧め打牌の思考とリンクします。　　\n今ある両面ターツよりももっと価値のあるターツ以外不要です。💯||",
+      "explanation": "||https://discord.com/channels/1166706544856006656/1310850253595082773/1311312656925331549\nの僕のお勧め打牌の思考とリンクします。　　\n今ある両面ターツよりももっと価値のあるターツ以外不要です。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/vAY9UY3zdAM",
@@ -5498,7 +5498,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/vAY9UY3zdAM",
         "sourceDraw": "6s",
-        "explanation": "💯\n||https://discord.com/channels/1166706544856006656/1310850253595082773/1311312656925331549\nの僕のお勧め打牌の思考とリンクします。　　\n今ある両面ターツよりももっと価値のあるターツ以外不要です。💯||",
+        "explanation": "||https://discord.com/channels/1166706544856006656/1310850253595082773/1311312656925331549\nの僕のお勧め打牌の思考とリンクします。　　\n今ある両面ターツよりももっと価値のあるターツ以外不要です。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/vAY9UY3zdAM",
@@ -5545,7 +5545,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.614465+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:32.178Z"
     },
     {
       "id": 35,
@@ -6039,7 +6039,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/ofe8EPsihJQ",
       "sourceDraw": "1m",
-      "explanation": "とじょ完全正解💯\nとじょ犬くんの完璧な解説を是非ご覧ください✨",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/ofe8EPsihJQ",
@@ -6120,7 +6120,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/ofe8EPsihJQ",
         "sourceDraw": "1m",
-        "explanation": "とじょ完全正解💯\nとじょ犬くんの完璧な解説を是非ご覧ください✨",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/ofe8EPsihJQ",
@@ -6165,7 +6165,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.616094+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:33.801Z"
     },
     {
       "id": 39,
@@ -6202,7 +6202,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/s4yyRno29jM",
       "sourceDraw": "5s",
-      "explanation": "💯",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/s4yyRno29jM",
@@ -6280,7 +6280,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/s4yyRno29jM",
         "sourceDraw": "5s",
-        "explanation": "💯",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/s4yyRno29jM",
@@ -6322,7 +6322,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:08:46.547Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:35.440Z"
     },
     {
       "id": 40,
@@ -6680,7 +6680,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/1iFOsPFohs0",
       "sourceDraw": "1s",
-      "explanation": "||打南\n\n③リーのみ愚形に極力ならないように手組せよ。（リーノミ愚形になる受け入れは無くして良いし、**安くなる受け入れは**少しなら減らしても良い）\n　　\n今回、打4ｐは**高くなる受け入れ（8ｓ、4ｐ）を減らしている**のでタブー。ドラ8ｓはもちろんだが、4ｐ引きもテンパネの影響で36ｐ引きよりも高い。気を付けよう。\n||",
+      "explanation": "||打南\n\n③リーのみ愚形に極力ならないように手組せよ。（リーノミ愚形になる受け入れは無くして良いし、**安くなる受け入れは**少しなら減らしても良い）\n　　\n今回、打4ｐは**高くなる受け入れ（8ｓ、4ｐ）を減らしてしまう**。ドラ8ｓはもちろんだが、4ｐ引きもテンパネの影響で36ｐ引きよりも高い。\n||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/1iFOsPFohs0",
@@ -6756,7 +6756,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/1iFOsPFohs0",
         "sourceDraw": "1s",
-        "explanation": "||打南\n\n③リーのみ愚形に極力ならないように手組せよ。（リーノミ愚形になる受け入れは無くして良いし、**安くなる受け入れは**少しなら減らしても良い）\n　　\n今回、打4ｐは**高くなる受け入れ（8ｓ、4ｐ）を減らしている**のでタブー。ドラ8ｓはもちろんだが、4ｐ引きもテンパネの影響で36ｐ引きよりも高い。気を付けよう。\n||",
+        "explanation": "||打南\n\n③リーのみ愚形に極力ならないように手組せよ。（リーノミ愚形になる受け入れは無くして良いし、**安くなる受け入れは**少しなら減らしても良い）\n　　\n今回、打4ｐは**高くなる受け入れ（8ｓ、4ｐ）を減らしてしまう**。ドラ8ｓはもちろんだが、4ｐ引きもテンパネの影響で36ｐ引きよりも高い。\n||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/1iFOsPFohs0",
@@ -6795,7 +6795,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.616336+00"
+      "overrideUpdatedAt": "2026-09-18T15:39:28.920Z"
     },
     {
       "id": 43,
@@ -6832,7 +6832,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/9W79YIm0-Mk",
       "sourceDraw": "7p",
-      "explanation": "💯",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/9W79YIm0-Mk",
@@ -6907,7 +6907,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/9W79YIm0-Mk",
         "sourceDraw": "7p",
-        "explanation": "💯",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/9W79YIm0-Mk",
@@ -6946,7 +6946,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.616404+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:37.068Z"
     },
     {
       "id": 44,
@@ -7325,7 +7325,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/UQba5N0GN5g",
       "sourceDraw": "5s",
-      "explanation": "💯",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/UQba5N0GN5g",
@@ -7405,7 +7405,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/UQba5N0GN5g",
         "sourceDraw": "5s",
-        "explanation": "💯",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/UQba5N0GN5g",
@@ -7449,7 +7449,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:08:49.763Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:38.732Z"
     },
     {
       "id": 47,
@@ -7485,7 +7485,7 @@
       "createdAt": "2024-11-30T14:36:19.404000+00:00",
       "meldCount": 0,
       "sourceDraw": "4s",
-      "explanation": "💯",
+      "explanation": "",
       "authorSource": {
         "kind": "shared-admin",
         "updatedAt": "2026-07-16 05:35:19.22+00"
@@ -7557,7 +7557,7 @@
         "createdAt": "2024-11-30T14:36:19.404000+00:00",
         "meldCount": 0,
         "sourceDraw": "4s",
-        "explanation": "💯",
+        "explanation": "",
         "authorSource": {
           "kind": "shared-admin",
           "updatedAt": "2026-07-16 05:35:19.22+00"
@@ -7594,7 +7594,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:08:51.375Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:40.390Z"
     },
     {
       "id": 48,
@@ -7923,7 +7923,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/_5vloktyoBw",
       "sourceDraw": "2s",
-      "explanation": "💯\n||打4ｍは打中に比べ受け入れ枚数が８枚も多いが、とじょ犬さんの言う通り打点の面で、やや打中の方が良さげ。\n\n和了率の観点では打4ｍが優秀ですので、局消化が優先となるシーンでは打4ｍ推奨。||",
+      "explanation": "||打4ｍは打中に比べ受け入れ枚数が８枚も多いが、とじょ犬さんの言う通り打点の面で、やや打中の方が良さげ。\n\n和了率の観点では打4ｍが優秀ですので、局消化が優先となるシーンでは打4ｍ推奨。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/_5vloktyoBw",
@@ -8001,7 +8001,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/_5vloktyoBw",
         "sourceDraw": "2s",
-        "explanation": "💯\n||打4ｍは打中に比べ受け入れ枚数が８枚も多いが、とじょ犬さんの言う通り打点の面で、やや打中の方が良さげ。\n\n和了率の観点では打4ｍが優秀ですので、局消化が優先となるシーンでは打4ｍ推奨。||",
+        "explanation": "||打4ｍは打中に比べ受け入れ枚数が８枚も多いが、とじょ犬さんの言う通り打点の面で、やや打中の方が良さげ。\n\n和了率の観点では打4ｍが優秀ですので、局消化が優先となるシーンでは打4ｍ推奨。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/_5vloktyoBw",
@@ -8043,7 +8043,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:08:56.189Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:42.031Z"
     },
     {
       "id": 51,
@@ -8553,7 +8553,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/RkrAvExSUxM",
       "sourceDraw": "2p",
-      "explanation": "💯💯",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/RkrAvExSUxM",
@@ -8632,7 +8632,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/RkrAvExSUxM",
         "sourceDraw": "2p",
-        "explanation": "💯💯",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/RkrAvExSUxM",
@@ -8675,7 +8675,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.616971+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:43.662Z"
     },
     {
       "id": 55,
@@ -8712,7 +8712,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/seFV14o3eDs",
       "sourceDraw": "5m",
-      "explanation": "💯\n||**5ブロックを補強する牌（8ｐ）を捨てて6ブロにすることが許されるのは、６ブロにしないと追えない手役がある場合のみ。**\n\n今回は該当しないし、5ブロックにした方がタンヤオにもなりやすい。またタンヤオ大正義で9ｍは微妙です。（動画参照）\n||\nhttps://youtu.be/seFV14o3eDs?si=9Y5xdGZvjtQNANx0\n今回から余力あれば元動画も貼っていきます。",
+      "explanation": "||**5ブロックを補強する牌（8ｐ）を捨てて6ブロにすることが許されるのは、６ブロにしないと追えない手役がある場合のみ。**\n\n今回は該当しないし、5ブロックにした方がタンヤオにもなりやすい。またタンヤオ大正義で9ｍは微妙です。（動画参照）",
       "answerSource": {
         "url": "https://youtu.be/seFV14o3eDs",
         "kind": "instructor-and-video",
@@ -8785,7 +8785,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/seFV14o3eDs",
         "sourceDraw": "5m",
-        "explanation": "💯\n||**5ブロックを補強する牌（8ｐ）を捨てて6ブロにすることが許されるのは、６ブロにしないと追えない手役がある場合のみ。**\n\n今回は該当しないし、5ブロックにした方がタンヤオにもなりやすい。またタンヤオ大正義で9ｍは微妙です。（動画参照）\n||\nhttps://youtu.be/seFV14o3eDs?si=9Y5xdGZvjtQNANx0\n今回から余力あれば元動画も貼っていきます。",
+        "explanation": "||**5ブロックを補強する牌（8ｐ）を捨てて6ブロにすることが許されるのは、６ブロにしないと追えない手役がある場合のみ。**\n\n今回は該当しないし、5ブロックにした方がタンヤオにもなりやすい。またタンヤオ大正義で9ｍは微妙です。（動画参照）",
         "answerSource": {
           "url": "https://youtu.be/seFV14o3eDs",
           "kind": "instructor-and-video",
@@ -8822,7 +8822,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.617045+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:45.284Z"
     },
     {
       "id": 56,
@@ -8859,7 +8859,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/h08oEYh7Mg4",
       "sourceDraw": "5s",
-      "explanation": "||3ｍと5ｍはどちらでも構いません。3ｍと5ｍの強弱は何とも言えませんので、実践では安全度の高い方を残す選択となりそうです。https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0||",
+      "explanation": "||3ｍと5ｍはどちらでも構いません。3ｍと5ｍの強弱は何とも言えませんので、実践では安全度の高い方を残す選択となりそうです。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/h08oEYh7Mg4",
@@ -8936,7 +8936,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/h08oEYh7Mg4",
         "sourceDraw": "5s",
-        "explanation": "||3ｍと5ｍはどちらでも構いません。3ｍと5ｍの強弱は何とも言えませんので、実践では安全度の高い方を残す選択となりそうです。https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0||",
+        "explanation": "||3ｍと5ｍはどちらでも構いません。3ｍと5ｍの強弱は何とも言えませんので、実践では安全度の高い方を残す選択となりそうです。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/h08oEYh7Mg4",
@@ -8977,7 +8977,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.61726+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:46.925Z"
     },
     {
       "id": 57,
@@ -8985,7 +8985,7 @@
       "images": [
         "/questions/question-057.png"
       ],
-      "explanation": "💯 \n\n||煙突形の問題。\n7ｓ切ると58ｓ8ｐ三面張（７枚）\n\n8ｓ切ると69ｓ両面（7枚）\n\n枚数同じですが打点は、最低１翻（平和）、ＭＡＸ2翻（イーペーコー）も違います。打点差がありすぎるので、枚数2～3枚差あっても両面で曲げることが多いです。\n\n||\n||https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0||",
+      "explanation": "||煙突形の問題。\n7ｓ切ると58ｓ8ｐ三面張（７枚）\n\n8ｓ切ると69ｓ両面（7枚）\n\n枚数同じですが打点は、最低１翻（平和）、ＭＡＸ2翻（イーペーコー）も違います。打点差がありすぎるので、枚数2～3枚差あっても両面で曲げることが多いです。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132903655276668",
       "discordMessageId": "1313132903655276668",
       "threadId": "1313132903655276668",
@@ -9077,7 +9077,7 @@
         "images": [
           "/questions/question-057.png"
         ],
-        "explanation": "💯 \n\n||煙突形の問題。\n7ｓ切ると58ｓ8ｐ三面張（７枚）\n\n8ｓ切ると69ｓ両面（7枚）\n\n枚数同じですが打点は、最低１翻（平和）、ＭＡＸ2翻（イーペーコー）も違います。打点差がありすぎるので、枚数2～3枚差あっても両面で曲げることが多いです。\n\n||\n||https://youtu.be/h08oEYh7Mg4?si=F6eUiCMo1JYDvhN0||",
+        "explanation": "||煙突形の問題。\n7ｓ切ると58ｓ8ｐ三面張（７枚）\n\n8ｓ切ると69ｓ両面（7枚）\n\n枚数同じですが打点は、最低１翻（平和）、ＭＡＸ2翻（イーペーコー）も違います。打点差がありすぎるので、枚数2～3枚差あっても両面で曲げることが多いです。",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132903655276668",
         "discordMessageId": "1313132903655276668",
         "threadId": "1313132903655276668",
@@ -9162,7 +9162,7 @@
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-18T03:55:58.271Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:48.554Z"
     },
     {
       "id": 58,
@@ -9522,7 +9522,7 @@
       "images": [
         "/questions/question-060.png"
       ],
-      "explanation": "６ブロックにしても良い条件は見てしていないので、打2ｐ推奨とします。24ｐと24ｍの比較は孤立牌同様、タ～子もタ～子が近いと弱くなりますし、順子が近くにいると強くなりますhttps://youtu.be/rx0uO-XE_PY?si=2vc-cx12tDnE6I_b\n",
+      "explanation": "６ブロックにしても良い条件は見てしていないので、打2ｐ推奨とします。24ｐと24ｍの比較は孤立牌同様、タ～子もタ～子が近いと弱くなりますし、順子が近くにいると強くなります",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132953005723658",
       "discordMessageId": "1313132953005723658",
       "threadId": "1313132953005723658",
@@ -9612,7 +9612,7 @@
         "images": [
           "/questions/question-060.png"
         ],
-        "explanation": "６ブロックにしても良い条件は見てしていないので、打2ｐ推奨とします。24ｐと24ｍの比較は孤立牌同様、タ～子もタ～子が近いと弱くなりますし、順子が近くにいると強くなりますhttps://youtu.be/rx0uO-XE_PY?si=2vc-cx12tDnE6I_b\n",
+        "explanation": "６ブロックにしても良い条件は見てしていないので、打2ｐ推奨とします。24ｐと24ｍの比較は孤立牌同様、タ～子もタ～子が近いと弱くなりますし、順子が近くにいると強くなります",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1313132953005723658",
         "discordMessageId": "1313132953005723658",
         "threadId": "1313132953005723658",
@@ -9695,7 +9695,7 @@
         "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-18T03:44:22.708Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:50.196Z"
     },
     {
       "id": 61,
@@ -10070,7 +10070,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/HxUL3ZPLN3k",
       "sourceDraw": "0s",
-      "explanation": "||9ｍ切りは245679ｍの6枚形（離れリャンカン）のある完全系\n\n2ｍ切りは456799ｍの6枚形のある完全系\n\nよってどちらも受け入れ枚数はＭＡＸとなるが、タンヤオになり得る分、打9ｍ。||\nhttps://youtu.be/HxUL3ZPLN3k?si=kAt1uF4r2zez6ngq",
+      "explanation": "||9ｍ切りは245679ｍの6枚形（離れリャンカン）のある完全系\n\n2ｍ切りは456799ｍの6枚形のある完全系\n\nよってどちらも受け入れ枚数はＭＡＸとなるが、タンヤオになり得る分、打9ｍ。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/HxUL3ZPLN3k",
@@ -10148,7 +10148,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/HxUL3ZPLN3k",
         "sourceDraw": "0s",
-        "explanation": "||9ｍ切りは245679ｍの6枚形（離れリャンカン）のある完全系\n\n2ｍ切りは456799ｍの6枚形のある完全系\n\nよってどちらも受け入れ枚数はＭＡＸとなるが、タンヤオになり得る分、打9ｍ。||\nhttps://youtu.be/HxUL3ZPLN3k?si=kAt1uF4r2zez6ngq",
+        "explanation": "||9ｍ切りは245679ｍの6枚形（離れリャンカン）のある完全系\n\n2ｍ切りは456799ｍの6枚形のある完全系\n\nよってどちらも受け入れ枚数はＭＡＸとなるが、タンヤオになり得る分、打9ｍ。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/HxUL3ZPLN3k",
@@ -10190,7 +10190,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:07.429Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:51.833Z"
     },
     {
       "id": 64,
@@ -10227,7 +10227,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/_0D-ZF1aecU",
       "sourceDraw": "2m",
-      "explanation": "||とじょくんの説明に付け足す事は何もありません。仕事泥棒！💯 ||\nhttps://youtu.be/_0D-ZF1aecU?si=4-Q0szHYsEgaTM--",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/_0D-ZF1aecU",
@@ -10305,7 +10305,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/_0D-ZF1aecU",
         "sourceDraw": "2m",
-        "explanation": "||とじょくんの説明に付け足す事は何もありません。仕事泥棒！💯 ||\nhttps://youtu.be/_0D-ZF1aecU?si=4-Q0szHYsEgaTM--",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/_0D-ZF1aecU",
@@ -10347,7 +10347,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:09.023Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:53.456Z"
     },
     {
       "id": 65,
@@ -10392,7 +10392,7 @@
       "meldCount": 1,
       "sourceUrl": "https://youtu.be/U0sBICBsaEY",
       "sourceDraw": "8m",
-      "explanation": "||三暗刻になるとしたら、それはトイトイになっていることになります。678ｍぶっ壊す事は無さそうですね😆 ||\nhttps://youtu.be/U0sBICBsaEY?si=SwUq3NlTxvf9FQBb",
+      "explanation": "||三暗刻になるとしたら、それはトイトイになっていることになります。678ｍぶっ壊す事は無さそうですね😆 ||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/U0sBICBsaEY",
@@ -10477,7 +10477,7 @@
         "meldCount": 1,
         "sourceUrl": "https://youtu.be/U0sBICBsaEY",
         "sourceDraw": "8m",
-        "explanation": "||三暗刻になるとしたら、それはトイトイになっていることになります。678ｍぶっ壊す事は無さそうですね😆 ||\nhttps://youtu.be/U0sBICBsaEY?si=SwUq3NlTxvf9FQBb",
+        "explanation": "||三暗刻になるとしたら、それはトイトイになっていることになります。678ｍぶっ壊す事は無さそうですね😆 ||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/U0sBICBsaEY",
@@ -10518,7 +10518,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.617499+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:55.094Z"
     },
     {
       "id": 66,
@@ -10526,7 +10526,7 @@
       "images": [
         "/questions/question-066.png"
       ],
-      "explanation": "💯 https://youtu.be/iQbLSPvc84s?si=Iacy6Me3oiWfPK5Q",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1314236647130529893",
       "discordMessageId": "1314236647130529893",
       "threadId": "1314236647130529893",
@@ -10615,7 +10615,7 @@
         "images": [
           "/questions/question-066.png"
         ],
-        "explanation": "💯 https://youtu.be/iQbLSPvc84s?si=Iacy6Me3oiWfPK5Q",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1314236647130529893",
         "discordMessageId": "1314236647130529893",
         "threadId": "1314236647130529893",
@@ -10697,7 +10697,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:10.641Z"
+      "overrideUpdatedAt": "2026-09-24T09:02:56.712Z"
     },
     {
       "id": 67,
@@ -10734,7 +10734,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/SWnptC1oBdI",
       "sourceDraw": "7m",
-      "explanation": "https://youtu.be/SWnptC1oBdI?si=x95hWI01zJbNvjj3",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/SWnptC1oBdI",
@@ -10813,7 +10813,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/SWnptC1oBdI",
         "sourceDraw": "7m",
-        "explanation": "https://youtu.be/SWnptC1oBdI?si=x95hWI01zJbNvjj3",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/SWnptC1oBdI",
@@ -10856,7 +10856,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.61758+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:58.347Z"
     },
     {
       "id": 68,
@@ -10901,7 +10901,7 @@
       "meldCount": 1,
       "sourceUrl": "https://youtu.be/sukNqYlFkeg",
       "sourceDraw": "6m",
-      "explanation": "||2ｍ。8ｓチーは勿論47ｓチーも忘れずに。||\nhttps://youtu.be/sukNqYlFkeg?si=JDd1TGXKRbfPuSpQ",
+      "explanation": "||2ｍ。8ｓチーは勿論47ｓチーも忘れずに。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/sukNqYlFkeg",
@@ -10988,7 +10988,7 @@
         "meldCount": 1,
         "sourceUrl": "https://youtu.be/sukNqYlFkeg",
         "sourceDraw": "6m",
-        "explanation": "||2ｍ。8ｓチーは勿論47ｓチーも忘れずに。||\nhttps://youtu.be/sukNqYlFkeg?si=JDd1TGXKRbfPuSpQ",
+        "explanation": "||2ｍ。8ｓチーは勿論47ｓチーも忘れずに。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/sukNqYlFkeg",
@@ -11031,7 +11031,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618363+00"
+      "overrideUpdatedAt": "2026-09-24T09:02:59.990Z"
     },
     {
       "id": 69,
@@ -11068,7 +11068,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/cccsvX8D4tQ",
       "sourceDraw": "9s",
-      "explanation": "💯\nhttps://youtu.be/cccsvX8D4tQ?si=B-kObLRuvvfAnbfE",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/cccsvX8D4tQ",
@@ -11145,7 +11145,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/cccsvX8D4tQ",
         "sourceDraw": "9s",
-        "explanation": "💯\nhttps://youtu.be/cccsvX8D4tQ?si=B-kObLRuvvfAnbfE",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/cccsvX8D4tQ",
@@ -11186,7 +11186,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618408+00"
+      "overrideUpdatedAt": "2026-09-24T09:03:01.615Z"
     },
     {
       "id": 70,
@@ -11223,7 +11223,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/0Azz3hRHgOE",
       "sourceDraw": "3p",
-      "explanation": "💯\n||**4トイツの面子手一向聴は、切った牌だけがロス！（受け入れ枚数はどれを切ってもおんなじ）**\n\nイーペーコーを残す。||\nhttps://youtu.be/0Azz3hRHgOE?si=Mi-NxA2e4PpYFzLv\nhttps://www.youtube.com/watch?v=PBp4Q7_qnVU",
+      "explanation": "||**4トイツの面子手一向聴は、切った牌だけがロス！（受け入れ枚数はどれを切ってもおんなじ）**\n\nイーペーコーを残す。||\n\nhttps://www.youtube.com/watch?v=PBp4Q7_qnVU",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/0Azz3hRHgOE",
@@ -11301,7 +11301,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/0Azz3hRHgOE",
         "sourceDraw": "3p",
-        "explanation": "💯\n||**4トイツの面子手一向聴は、切った牌だけがロス！（受け入れ枚数はどれを切ってもおんなじ）**\n\nイーペーコーを残す。||\nhttps://youtu.be/0Azz3hRHgOE?si=Mi-NxA2e4PpYFzLv\nhttps://www.youtube.com/watch?v=PBp4Q7_qnVU",
+        "explanation": "||**4トイツの面子手一向聴は、切った牌だけがロス！（受け入れ枚数はどれを切ってもおんなじ）**\n\nイーペーコーを残す。||\n\nhttps://www.youtube.com/watch?v=PBp4Q7_qnVU",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/0Azz3hRHgOE",
@@ -11343,12 +11343,19 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:12.237Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:03.235Z"
     },
     {
       "id": 71,
-      "dora": "4m",
-      "draw": "3m",
+      "image": "/questions/question-071.png",
+      "images": [
+        "/questions/question-071.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1315341246226763858",
+      "discordMessageId": "1315341246226763858",
+      "threadId": "1315341246226763858",
+      "createdAt": "2024-12-08T15:36:30.959000+00:00",
       "hand": [
         "4m",
         "5p",
@@ -11364,49 +11371,25 @@
         "7s",
         "9s"
       ],
+      "draw": "3m",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
       "seat": "west",
       "turn": 6,
       "honba": null,
-      "image": "/questions/question-071.png",
-      "melds": [],
-      "round": "east1",
-      "images": [
-        "/questions/question-071.png"
-      ],
       "points": 25000,
-      "status": "unreviewed",
-      "threadId": "1315341246226763858",
-      "createdAt": "2024-12-08T15:36:30.959000+00:00",
-      "meldCount": 0,
-      "sourceUrl": "https://youtu.be/ywwcGgKAZGY",
-      "sourceDraw": "3m",
-      "explanation": "💯\nhttps://youtu.be/ywwcGgKAZGY?si=xzEx55MaLP9tRmqV",
-      "sourceLabel": "YouTube動画を開く",
-      "answerSource": {
-        "url": "https://youtu.be/ywwcGgKAZGY",
-        "kind": "video",
-        "reviewedTimestamps": [
-          21,
-          27,
-          33,
-          39,
-          45
-        ]
-      },
-      "authorSource": {
-        "kind": "shared-admin",
-        "updatedAt": "2026-07-16 07:05:10.427+00"
-      },
+      "dora": "4m",
+      "melds": [],
       "correctDiscards": [
-        "1s"
+        "1s",
+        "9s"
       ],
-      "discordMessageId": "1315341246226763858",
-      "sourceDrawStatus": "verified",
-      "videoExplanation": "ここは1sから切り、続いて9sを整理して両面二つの形を残すのだ。筒子の両面を落として一通を狙う道もあるけれど、その高打点には引く順番などの条件が必要なのだ。\n\n1s・9sを外せば、好形で聴牌する形を確保しながら満貫を目指せるのだ。十分な打点があるときは、さらに高い役を追うために待ちを悪くせず、和了しやすさを優先したいのだ。",
-      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1315341246226763858",
-      "videoCorrectDiscards": [
-        "1s"
-      ],
+      "sourceUrl": "https://youtu.be/ywwcGgKAZGY",
+      "sourceLabel": "元動画を開く",
+      "videoExplanation": "1s・9sを外せば、好形で聴牌する形を確保しながら満貫を目指せるのだ。十分な打点があるときは、さらに高い役を追うために待ちを悪くせず、和了しやすさを優先したいのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
       "videoExplanationSource": {
         "url": "https://youtu.be/ywwcGgKAZGY",
         "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -11419,16 +11402,52 @@
           45
         ]
       },
-      "videoExplanationStatus": "verified-parts",
-      "explanationSchemaVersion": 2,
+      "sourceDraw": "3m",
+      "sourceDrawStatus": "verified",
+      "authorSource": {
+        "kind": "shared-admin",
+        "updatedAt": "2026-07-16 07:05:10.427+00"
+      },
+      "videoCorrectDiscards": [
+        "1s"
+      ],
+      "answerSource": {
+        "url": "https://youtu.be/ywwcGgKAZGY",
+        "kind": "video",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "ywwcGgKAZGY",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
       "difficulty": "beginner",
+      "kanChoice": false,
+      "correctKan": null,
+      "riichiChoice": false,
+      "correctRiichi": null,
       "reviewed": false,
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
         "id": 71,
-        "dora": "4m",
-        "draw": "3m",
+        "image": "/questions/question-071.png",
+        "images": [
+          "/questions/question-071.png"
+        ],
+        "explanation": "",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1315341246226763858",
+        "discordMessageId": "1315341246226763858",
+        "threadId": "1315341246226763858",
+        "createdAt": "2024-12-08T15:36:30.959000+00:00",
         "hand": [
           "4m",
           "5p",
@@ -11444,49 +11463,25 @@
           "7s",
           "9s"
         ],
+        "draw": "3m",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
         "seat": "west",
         "turn": 6,
         "honba": null,
-        "image": "/questions/question-071.png",
-        "melds": [],
-        "round": "east1",
-        "images": [
-          "/questions/question-071.png"
-        ],
         "points": 25000,
-        "status": "unreviewed",
-        "threadId": "1315341246226763858",
-        "createdAt": "2024-12-08T15:36:30.959000+00:00",
-        "meldCount": 0,
-        "sourceUrl": "https://youtu.be/ywwcGgKAZGY",
-        "sourceDraw": "3m",
-        "explanation": "💯\nhttps://youtu.be/ywwcGgKAZGY?si=xzEx55MaLP9tRmqV",
-        "sourceLabel": "YouTube動画を開く",
-        "answerSource": {
-          "url": "https://youtu.be/ywwcGgKAZGY",
-          "kind": "video",
-          "reviewedTimestamps": [
-            21,
-            27,
-            33,
-            39,
-            45
-          ]
-        },
-        "authorSource": {
-          "kind": "shared-admin",
-          "updatedAt": "2026-07-16 07:05:10.427+00"
-        },
+        "dora": "4m",
+        "melds": [],
         "correctDiscards": [
-          "1s"
+          "1s",
+          "9s"
         ],
-        "discordMessageId": "1315341246226763858",
-        "sourceDrawStatus": "verified",
-        "videoExplanation": "ここは1sから切り、続いて9sを整理して両面二つの形を残すのだ。筒子の両面を落として一通を狙う道もあるけれど、その高打点には引く順番などの条件が必要なのだ。\n\n1s・9sを外せば、好形で聴牌する形を確保しながら満貫を目指せるのだ。十分な打点があるときは、さらに高い役を追うために待ちを悪くせず、和了しやすさを優先したいのだ。",
-        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1315341246226763858",
-        "videoCorrectDiscards": [
-          "1s"
-        ],
+        "sourceUrl": "https://youtu.be/ywwcGgKAZGY",
+        "sourceLabel": "元動画を開く",
+        "videoExplanation": "1s・9sを外せば、好形で聴牌する形を確保しながら満貫を目指せるのだ。十分な打点があるときは、さらに高い役を追うために待ちを悪くせず、和了しやすさを優先したいのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
         "videoExplanationSource": {
           "url": "https://youtu.be/ywwcGgKAZGY",
           "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
@@ -11499,12 +11494,41 @@
             45
           ]
         },
-        "videoExplanationStatus": "verified-parts",
-        "explanationSchemaVersion": 2,
-        "difficulty": "beginner"
+        "sourceDraw": "3m",
+        "sourceDrawStatus": "verified",
+        "authorSource": {
+          "kind": "shared-admin",
+          "updatedAt": "2026-07-16 07:05:10.427+00"
+        },
+        "videoCorrectDiscards": [
+          "1s"
+        ],
+        "answerSource": {
+          "url": "https://youtu.be/ywwcGgKAZGY",
+          "kind": "video",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "ywwcGgKAZGY",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "kanChoice": false,
+        "correctKan": null,
+        "riichiChoice": false,
+        "correctRiichi": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:13.841Z"
+      "overrideUpdatedAt": "2026-09-24T08:15:08.237Z"
     },
     {
       "id": 72,
@@ -11541,7 +11565,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/uvHw6VB8kcQ",
       "sourceDraw": "6m",
-      "explanation": "💯\nhttps://youtu.be/uvHw6VB8kcQ?si=1OGxYMu4HucHfwb_",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/uvHw6VB8kcQ",
@@ -11621,7 +11645,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/uvHw6VB8kcQ",
         "sourceDraw": "6m",
-        "explanation": "💯\nhttps://youtu.be/uvHw6VB8kcQ?si=1OGxYMu4HucHfwb_",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/uvHw6VB8kcQ",
@@ -11665,7 +11689,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:15.456Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:04.866Z"
     },
     {
       "id": 73,
@@ -11702,7 +11726,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/-RA36-f1tM8",
       "sourceDraw": "8m",
-      "explanation": "💯\nhttps://youtu.be/-RA36-f1tM8?si=vNT1VgYxjGhLQrsY",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/-RA36-f1tM8",
@@ -11781,7 +11805,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/-RA36-f1tM8",
         "sourceDraw": "8m",
-        "explanation": "💯\nhttps://youtu.be/-RA36-f1tM8?si=vNT1VgYxjGhLQrsY",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/-RA36-f1tM8",
@@ -11824,7 +11848,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618587+00"
+      "overrideUpdatedAt": "2026-09-24T09:03:06.480Z"
     },
     {
       "id": 74,
@@ -11861,7 +11885,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/sCejb3STyuM",
       "sourceDraw": "7p",
-      "explanation": "💯\nhttps://youtu.be/sCejb3STyuM?si=BiE0G4Bw_5TrLnLg",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/sCejb3STyuM",
@@ -11939,7 +11963,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/sCejb3STyuM",
         "sourceDraw": "7p",
-        "explanation": "💯\nhttps://youtu.be/sCejb3STyuM?si=BiE0G4Bw_5TrLnLg",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/sCejb3STyuM",
@@ -11981,7 +12005,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:17.073Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:08.110Z"
     },
     {
       "id": 75,
@@ -12018,7 +12042,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/lVtqBYHgAH0",
       "sourceDraw": "2p",
-      "explanation": "💯\nhttps://youtu.be/lVtqBYHgAH0?si=pN9OKn5SemlH5zmD",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/lVtqBYHgAH0",
@@ -12097,7 +12121,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/lVtqBYHgAH0",
         "sourceDraw": "2p",
-        "explanation": "💯\nhttps://youtu.be/lVtqBYHgAH0?si=pN9OKn5SemlH5zmD",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/lVtqBYHgAH0",
@@ -12140,7 +12164,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618659+00"
+      "overrideUpdatedAt": "2026-09-24T09:03:09.742Z"
     },
     {
       "id": 76,
@@ -12177,7 +12201,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/wKAdK431Bqk",
       "sourceDraw": "5p",
-      "explanation": "||確かに、基礎講義でもやった通り、\nヘッドレス2型　VS　余剰牌型平和　\nでは連続形がある場合にはヘッドレス2型連続形に受けるとあったが、**78899（12233）の連続形のみ例外**。\n\n何故なら、77889ｓの連続形は雀頭が作りにくく、14ｐ引き時の聴牌形がいまいちだからだ。\n\n||\nNAGAも上記の通り。\n他の連続形の場合には全て、ヘ2型連続形にする（以下参照）\nhttps://youtu.be/wKAdK431Bqk?si=7YknG7A961cOxHOS",
+      "explanation": "||確かに、基礎講義でもやった通り、\nヘッドレス2型　VS　余剰牌型平和　\nでは連続形がある場合にはヘッドレス2型連続形に受けるとあったが、**78899（12233）の連続形のみ例外**。\n\n何故なら、77889ｓの連続形は雀頭が作りにくく、14ｐ引き時の聴牌形がいまいちだからだ。\n\nNAGAも上記の通り。\n他の連続形の場合には全て、ヘ2型連続形にする（以下参照）",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/wKAdK431Bqk",
@@ -12254,7 +12278,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/wKAdK431Bqk",
         "sourceDraw": "5p",
-        "explanation": "||確かに、基礎講義でもやった通り、\nヘッドレス2型　VS　余剰牌型平和　\nでは連続形がある場合にはヘッドレス2型連続形に受けるとあったが、**78899（12233）の連続形のみ例外**。\n\n何故なら、77889ｓの連続形は雀頭が作りにくく、14ｐ引き時の聴牌形がいまいちだからだ。\n\n||\nNAGAも上記の通り。\n他の連続形の場合には全て、ヘ2型連続形にする（以下参照）\nhttps://youtu.be/wKAdK431Bqk?si=7YknG7A961cOxHOS",
+        "explanation": "||確かに、基礎講義でもやった通り、\nヘッドレス2型　VS　余剰牌型平和　\nでは連続形がある場合にはヘッドレス2型連続形に受けるとあったが、**78899（12233）の連続形のみ例外**。\n\n何故なら、77889ｓの連続形は雀頭が作りにくく、14ｐ引き時の聴牌形がいまいちだからだ。\n\nNAGAも上記の通り。\n他の連続形の場合には全て、ヘ2型連続形にする（以下参照）",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/wKAdK431Bqk",
@@ -12295,7 +12319,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618695+00"
+      "overrideUpdatedAt": "2026-09-24T09:03:11.364Z"
     },
     {
       "id": 77,
@@ -12332,7 +12356,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/pztV_mLLNl8",
       "sourceDraw": "7p",
-      "explanation": "||3445ｍの4ｍは超強孤立牌。\n7ｍは超強孤立牌ではない。||\nhttps://youtu.be/pztV_mLLNl8?si=2wUgQgTPbKioYe5B",
+      "explanation": "くっ付きの一向聴。\n超強孤立牌である中膨れ4ｍと赤5ｐを残し、打7ｍ。\n",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/pztV_mLLNl8",
@@ -12373,9 +12397,9 @@
       },
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
-      "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewed": true,
+      "reviewStatus": "complete",
+      "reviewUpdatedAt": "2026-09-24T08:45:56.190Z",
       "questionData": {
         "id": 77,
         "dora": "9p",
@@ -12411,7 +12435,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/pztV_mLLNl8",
         "sourceDraw": "7p",
-        "explanation": "||3445ｍの4ｍは超強孤立牌。\n7ｍは超強孤立牌ではない。||\nhttps://youtu.be/pztV_mLLNl8?si=2wUgQgTPbKioYe5B",
+        "explanation": "くっ付きの一向聴。\n超強孤立牌である中膨れ4ｍと赤5ｐを残し、打7ｍ。\n",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/pztV_mLLNl8",
@@ -12454,7 +12478,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618785+00"
+      "overrideUpdatedAt": "2026-09-24T08:45:57.360Z"
     },
     {
       "id": 78,
@@ -12493,7 +12517,7 @@
       "sourceUrl": "https://youtu.be/uTw3TNvSNs8",
       "correctKan": false,
       "sourceDraw": "2p",
-      "explanation": "||**暗刻ヘッドレス2型一向聴**\n暗刻ヘッドレス2型は、授業では大して扱っていないが、とても強い形。\n再確認しよう。||\nhttps://youtu.be/uTw3TNvSNs8?si=RMAB5WWoQaN9vJEM",
+      "explanation": "||**暗刻ヘッドレス2型一向聴**\n暗刻ヘッドレス2型は、授業では大して扱っていないが、とても強い形。\n再確認しよう。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/uTw3TNvSNs8",
@@ -12575,7 +12599,7 @@
         "sourceUrl": "https://youtu.be/uTw3TNvSNs8",
         "correctKan": false,
         "sourceDraw": "2p",
-        "explanation": "||**暗刻ヘッドレス2型一向聴**\n暗刻ヘッドレス2型は、授業では大して扱っていないが、とても強い形。\n再確認しよう。||\nhttps://youtu.be/uTw3TNvSNs8?si=RMAB5WWoQaN9vJEM",
+        "explanation": "||**暗刻ヘッドレス2型一向聴**\n暗刻ヘッドレス2型は、授業では大して扱っていないが、とても強い形。\n再確認しよう。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/uTw3TNvSNs8",
@@ -12619,7 +12643,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:18.701Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:12.995Z"
     },
     {
       "id": 79,
@@ -12627,10 +12651,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:20.287Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:14.615Z"
     },
     {
       "id": 80,
@@ -12667,7 +12693,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/uFMR9LZCodg",
       "sourceDraw": "3m",
-      "explanation": "💯\nhttps://youtu.be/uFMR9LZCodg?si=Eg_V-41AABk2bw9o",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/uFMR9LZCodg",
@@ -12744,7 +12770,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/uFMR9LZCodg",
         "sourceDraw": "3m",
-        "explanation": "💯\nhttps://youtu.be/uFMR9LZCodg?si=Eg_V-41AABk2bw9o",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/uFMR9LZCodg",
@@ -12785,7 +12811,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618891+00"
+      "overrideUpdatedAt": "2026-09-24T09:03:16.233Z"
     },
     {
       "id": 81,
@@ -12822,7 +12848,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/81wDOyaFvnY",
       "sourceDraw": "7p",
-      "explanation": "💯\nhttps://youtu.be/81wDOyaFvnY?si=1fBm74K6jTrY5okN",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/81wDOyaFvnY",
@@ -12902,7 +12928,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/81wDOyaFvnY",
         "sourceDraw": "7p",
-        "explanation": "💯\nhttps://youtu.be/81wDOyaFvnY?si=1fBm74K6jTrY5okN",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/81wDOyaFvnY",
@@ -12946,7 +12972,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:21.907Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:17.871Z"
     },
     {
       "id": 82,
@@ -12983,7 +13009,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/er0yzPNz6p0",
       "sourceDraw": "7s",
-      "explanation": "💯\n||ドラ1でもあれば89m切りの方が有力になりそうですね。\n今回はリーノミになる受け入れは無くして良いので、打9p||\nhttps://youtu.be/er0yzPNz6p0?si=fMVUpg4cvHCTNyaS",
+      "explanation": "||ドラ1でもあれば89m切りの方が有力になりそうですね。\n今回はリーノミになる受け入れは無くして良いので、打9p||",
       "answerSource": {
         "url": "https://youtu.be/er0yzPNz6p0",
         "kind": "video",
@@ -13053,7 +13079,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/er0yzPNz6p0",
         "sourceDraw": "7s",
-        "explanation": "💯\n||ドラ1でもあれば89m切りの方が有力になりそうですね。\n今回はリーノミになる受け入れは無くして良いので、打9p||\nhttps://youtu.be/er0yzPNz6p0?si=fMVUpg4cvHCTNyaS",
+        "explanation": "||ドラ1でもあれば89m切りの方が有力になりそうですね。\n今回はリーノミになる受け入れは無くして良いので、打9p||",
         "answerSource": {
           "url": "https://youtu.be/er0yzPNz6p0",
           "kind": "video",
@@ -13087,7 +13113,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.618965+00"
+      "overrideUpdatedAt": "2026-09-24T09:03:19.493Z"
     },
     {
       "id": 83,
@@ -13124,7 +13150,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/-YIpWzFeLGU",
       "sourceDraw": "5m",
-      "explanation": "https://www.youtube.com/watch?v=-YIpWzFeLGU&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=87\n\n||確かに9ｓが受け入れMAXの完全形ですが、一通が消えてしまいますね。3ヘッドなので3ｓ切りのロスは3s2枚だけで、一通も残す事ができます。||\n\n\n||",
+      "explanation": "||確かに9ｓが受け入れMAXの完全形ですが、一通が消えてしまいますね。3ヘッドなので3ｓ切りのロスは3s2枚だけで、一通も残す事ができます。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/-YIpWzFeLGU",
@@ -13204,7 +13230,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/-YIpWzFeLGU",
         "sourceDraw": "5m",
-        "explanation": "https://www.youtube.com/watch?v=-YIpWzFeLGU&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=87\n\n||確かに9ｓが受け入れMAXの完全形ですが、一通が消えてしまいますね。3ヘッドなので3ｓ切りのロスは3s2枚だけで、一通も残す事ができます。||\n\n\n||",
+        "explanation": "||確かに9ｓが受け入れMAXの完全形ですが、一通が消えてしまいますね。3ヘッドなので3ｓ切りのロスは3s2枚だけで、一通も残す事ができます。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/-YIpWzFeLGU",
@@ -13248,7 +13274,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:23.518Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:21.108Z"
     },
     {
       "id": 84,
@@ -13285,7 +13311,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/ju2Lae8LS50",
       "sourceDraw": "3m",
-      "explanation": "https://youtu.be/ju2Lae8LS50?si=aC-I9K25tUWss22T\n||これはサンドイッチ形ではありませんね。サンドイッチ形は22466みたいなやつ。||",
+      "explanation": "||これはサンドイッチ形ではありませんね。サンドイッチ形は22466みたいなやつ。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/ju2Lae8LS50",
@@ -13365,7 +13391,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/ju2Lae8LS50",
         "sourceDraw": "3m",
-        "explanation": "https://youtu.be/ju2Lae8LS50?si=aC-I9K25tUWss22T\n||これはサンドイッチ形ではありませんね。サンドイッチ形は22466みたいなやつ。||",
+        "explanation": "||これはサンドイッチ形ではありませんね。サンドイッチ形は22466みたいなやつ。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/ju2Lae8LS50",
@@ -13409,7 +13435,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:25.105Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:22.731Z"
     },
     {
       "id": 85,
@@ -13446,7 +13472,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/hbnEmu-J-RY",
       "sourceDraw": "4m",
-      "explanation": "https://www.youtube.com/watch?v=hbnEmu-J-RY&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=89\n||端順子123をどかしてみると\n1345688\n8を切ると134568の離れリャンカン6枚形が見えます。\n\n打1ｐも完全系になりますが、平和やイーペーコーを強く狙える打8ｐが勝ります。||",
+      "explanation": "||端順子123をどかしてみると\n1345688\n8を切ると134568の離れリャンカン6枚形が見えます。\n\n打1ｐも完全系になりますが、平和やイーペーコーを強く狙える打8ｐが勝ります。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/hbnEmu-J-RY",
@@ -13526,7 +13552,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/hbnEmu-J-RY",
         "sourceDraw": "4m",
-        "explanation": "https://www.youtube.com/watch?v=hbnEmu-J-RY&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=89\n||端順子123をどかしてみると\n1345688\n8を切ると134568の離れリャンカン6枚形が見えます。\n\n打1ｐも完全系になりますが、平和やイーペーコーを強く狙える打8ｐが勝ります。||",
+        "explanation": "||端順子123をどかしてみると\n1345688\n8を切ると134568の離れリャンカン6枚形が見えます。\n\n打1ｐも完全系になりますが、平和やイーペーコーを強く狙える打8ｐが勝ります。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/hbnEmu-J-RY",
@@ -13570,7 +13596,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:26.720Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:24.362Z"
     },
     {
       "id": 86,
@@ -13578,7 +13604,7 @@
       "images": [
         "/questions/question-086.png"
       ],
-      "explanation": "https://youtu.be/RVbVpbubJkM?si=Y3BOW8EDkd5sQLqN",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198580141490177",
       "discordMessageId": "1318198580141490177",
       "threadId": "1318198580141490177",
@@ -13675,7 +13701,7 @@
         "images": [
           "/questions/question-086.png"
         ],
-        "explanation": "https://youtu.be/RVbVpbubJkM?si=Y3BOW8EDkd5sQLqN",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198580141490177",
         "discordMessageId": "1318198580141490177",
         "threadId": "1318198580141490177",
@@ -13765,7 +13791,7 @@
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-18T03:56:00.326Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:25.982Z"
     },
     {
       "id": 87,
@@ -13810,7 +13836,7 @@
       "meldCount": 1,
       "sourceUrl": "https://youtu.be/KH-fEVUP3bs",
       "sourceDraw": "4s",
-      "explanation": "https://youtu.be/KH-fEVUP3bs?si=LYEvgIp_VV-bahBE",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/KH-fEVUP3bs",
@@ -13898,7 +13924,7 @@
         "meldCount": 1,
         "sourceUrl": "https://youtu.be/KH-fEVUP3bs",
         "sourceDraw": "4s",
-        "explanation": "https://youtu.be/KH-fEVUP3bs?si=LYEvgIp_VV-bahBE",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/KH-fEVUP3bs",
@@ -13942,7 +13968,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:28.321Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:27.607Z"
     },
     {
       "id": 88,
@@ -13979,7 +14005,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/fpF-dRMWxxE",
       "sourceDraw": "7s",
-      "explanation": "https://youtu.be/fpF-dRMWxxE?si=y8yOQNEsVMPe6MS1\n||打2ｍ6ｍ2ｐ4ｐ全て完全系だが、打2ｐが他に比べ受け入れが１種４枚多い事に気付けるかが大事。||",
+      "explanation": "||打2ｍ6ｍ2ｐ4ｐ全て完全系だが、打2ｐが他に比べ受け入れが１種４枚多い事に気付けるかが大事。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/fpF-dRMWxxE",
@@ -14059,7 +14085,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/fpF-dRMWxxE",
         "sourceDraw": "7s",
-        "explanation": "https://youtu.be/fpF-dRMWxxE?si=y8yOQNEsVMPe6MS1\n||打2ｍ6ｍ2ｐ4ｐ全て完全系だが、打2ｐが他に比べ受け入れが１種４枚多い事に気付けるかが大事。||",
+        "explanation": "||打2ｍ6ｍ2ｐ4ｐ全て完全系だが、打2ｐが他に比べ受け入れが１種４枚多い事に気付けるかが大事。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/fpF-dRMWxxE",
@@ -14103,7 +14129,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:29.933Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:29.240Z"
     },
     {
       "id": 89,
@@ -14111,7 +14137,7 @@
       "images": [
         "/questions/question-089.png"
       ],
-      "explanation": "💯\nhttps://www.youtube.com/watch?v=ewkAMZToQTc&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=93",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198615445078016",
       "discordMessageId": "1318198615445078016",
       "threadId": "1318198615445078016",
@@ -14208,7 +14234,7 @@
         "images": [
           "/questions/question-089.png"
         ],
-        "explanation": "💯\nhttps://www.youtube.com/watch?v=ewkAMZToQTc&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=93",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318198615445078016",
         "discordMessageId": "1318198615445078016",
         "threadId": "1318198615445078016",
@@ -14298,7 +14324,7 @@
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-18T03:56:02.368Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:30.868Z"
     },
     {
       "id": 90,
@@ -14335,7 +14361,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/mCmsJuGZ9JE",
       "sourceDraw": "2m",
-      "explanation": "https://www.youtube.com/watch?v=mCmsJuGZ9JE&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=94\n||確かに7ｐの受け入れに関しては完全系（468のリャンカン）と見て導いても良いですが、**ヘッドレス2型は必ずヘッドレス1型を内包**していますので、ヘッドレス1型の▭✕（アンチョビ形）と見て処理するのもお勧めです。||",
+      "explanation": "||確かに7ｐの受け入れに関しては完全系（468のリャンカン）と見て導いても良いですが、**ヘッドレス2型は必ずヘッドレス1型を内包**していますので、ヘッドレス1型の▭✕（アンチョビ形）と見て処理するのもお勧めです。||",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/mCmsJuGZ9JE",
@@ -14414,7 +14440,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/mCmsJuGZ9JE",
         "sourceDraw": "2m",
-        "explanation": "https://www.youtube.com/watch?v=mCmsJuGZ9JE&list=PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv&index=94\n||確かに7ｐの受け入れに関しては完全系（468のリャンカン）と見て導いても良いですが、**ヘッドレス2型は必ずヘッドレス1型を内包**していますので、ヘッドレス1型の▭✕（アンチョビ形）と見て処理するのもお勧めです。||",
+        "explanation": "||確かに7ｐの受け入れに関しては完全系（468のリャンカン）と見て導いても良いですが、**ヘッドレス2型は必ずヘッドレス1型を内包**していますので、ヘッドレス1型の▭✕（アンチョビ形）と見て処理するのもお勧めです。||",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/mCmsJuGZ9JE",
@@ -14457,7 +14483,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619411+00"
+      "overrideUpdatedAt": "2026-09-24T09:03:32.482Z"
     },
     {
       "id": 91,
@@ -14494,7 +14520,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/ahTKQeKqpPU",
       "sourceDraw": "2z",
-      "explanation": "💯\nhttps://youtu.be/ahTKQeKqpPU?si=hsiCKdLHO9jqXFXE",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/ahTKQeKqpPU",
@@ -14572,7 +14598,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/ahTKQeKqpPU",
         "sourceDraw": "2z",
-        "explanation": "💯\nhttps://youtu.be/ahTKQeKqpPU?si=hsiCKdLHO9jqXFXE",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/ahTKQeKqpPU",
@@ -14614,7 +14640,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:33.140Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:34.190Z"
     },
     {
       "id": 92,
@@ -14651,7 +14677,7 @@
       "meldCount": 0,
       "sourceUrl": "https://youtu.be/bLjbosKkpyE",
       "sourceDraw": "1m",
-      "explanation": "💯\nhttps://youtu.be/bLjbosKkpyE?si=07QxziImOvctLxip",
+      "explanation": "",
       "sourceLabel": "YouTube動画を開く",
       "answerSource": {
         "url": "https://youtu.be/bLjbosKkpyE",
@@ -14731,7 +14757,7 @@
         "meldCount": 0,
         "sourceUrl": "https://youtu.be/bLjbosKkpyE",
         "sourceDraw": "1m",
-        "explanation": "💯\nhttps://youtu.be/bLjbosKkpyE?si=07QxziImOvctLxip",
+        "explanation": "",
         "sourceLabel": "YouTube動画を開く",
         "answerSource": {
           "url": "https://youtu.be/bLjbosKkpyE",
@@ -14775,7 +14801,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:34.743Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:35.825Z"
     },
     {
       "id": 93,
@@ -14820,7 +14846,7 @@
       "meldCount": 1,
       "sourceUrl": "https://youtu.be/yw5htsB5HUc",
       "sourceDraw": "4s",
-      "explanation": "💯\nhttps://youtu.be/yw5htsB5HUc?si=a2Z5EHdppMrtr_NK",
+      "explanation": "",
       "answerSource": {
         "url": "https://youtu.be/yw5htsB5HUc",
         "kind": "video",
@@ -14838,7 +14864,7 @@
       ],
       "discordMessageId": "1318798070195945493",
       "sourceDrawStatus": "verified",
-      "videoExplanation": "ここは6p切りなのだ。ドラの5pを対子で残し、打点を確保して進めたいのだ。\n\n6m切りは受け入れが広いけれど、今回はドラを手に残す価値が大きいのだ。少し広く受けることと、和了したときの打点を確実に上げることを比べるのだ。副露手でも、ドラを含む形をどこで固定するかが大切なのだ。",
+      "videoExplanation": "ここは6p切りなのだ。ドラの5pを対子で残し、打点を確保して進めたいのだ。\n\n7m切りの方が受け入れが少し広いけれど、今回はドラ2枚を使い切れるメリットの方が大きいのだ。",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318798070195945493",
       "videoCorrectDiscards": [
         "6p"
@@ -14855,8 +14881,8 @@
       "videoExplanationStatus": "verified-parts",
       "explanationSchemaVersion": 2,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "fix",
+      "reviewUpdatedAt": "2026-09-24T01:41:46.269Z",
       "questionData": {
         "id": 93,
         "dora": "5p",
@@ -14900,7 +14926,7 @@
         "meldCount": 1,
         "sourceUrl": "https://youtu.be/yw5htsB5HUc",
         "sourceDraw": "4s",
-        "explanation": "💯\nhttps://youtu.be/yw5htsB5HUc?si=a2Z5EHdppMrtr_NK",
+        "explanation": "",
         "answerSource": {
           "url": "https://youtu.be/yw5htsB5HUc",
           "kind": "video",
@@ -14918,7 +14944,7 @@
         ],
         "discordMessageId": "1318798070195945493",
         "sourceDrawStatus": "verified",
-        "videoExplanation": "ここは6p切りなのだ。ドラの5pを対子で残し、打点を確保して進めたいのだ。\n\n6m切りは受け入れが広いけれど、今回はドラを手に残す価値が大きいのだ。少し広く受けることと、和了したときの打点を確実に上げることを比べるのだ。副露手でも、ドラを含む形をどこで固定するかが大切なのだ。",
+        "videoExplanation": "ここは6p切りなのだ。ドラの5pを対子で残し、打点を確保して進めたいのだ。\n\n7m切りの方が受け入れが少し広いけれど、今回はドラ2枚を使い切れるメリットの方が大きいのだ。",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1318798070195945493",
         "videoCorrectDiscards": [
           "6p"
@@ -14936,7 +14962,7 @@
         "explanationSchemaVersion": 2
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-06 05:43:49.619619+00"
+      "overrideUpdatedAt": "2026-09-24T08:51:59.383Z"
     },
     {
       "id": 94,
@@ -14944,10 +14970,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:36.346Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:37.459Z"
     },
     {
       "id": 95,
@@ -14955,10 +14983,24 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:37.950Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:39.101Z"
+    },
+    {
+      "id": 96,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": "①②の合わせ技で、ヘ2連続形にヘ1が勝る。"
+      },
+      "explanation": "①②の合わせ技で、ヘ2連続形にヘ1が勝る。",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:03:40.728Z"
     },
     {
       "id": 97,
@@ -14966,7 +15008,7 @@
       "images": [
         "/questions/question-097.png"
       ],
-      "explanation": "https://youtu.be/dzI9h-Sq8-k?si=Kqg1398hLENpE7PC",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1319615136977260554",
       "discordMessageId": "1319615136977260554",
       "threadId": "1319615136977260554",
@@ -15063,7 +15105,7 @@
         "images": [
           "/questions/question-097.png"
         ],
-        "explanation": "https://youtu.be/dzI9h-Sq8-k?si=Kqg1398hLENpE7PC",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1319615136977260554",
         "discordMessageId": "1319615136977260554",
         "threadId": "1319615136977260554",
@@ -15153,7 +15195,7 @@
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-18T03:56:04.428Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:42.881Z"
     },
     {
       "id": 98,
@@ -15161,10 +15203,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:39.554Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:44.511Z"
     },
     {
       "id": 99,
@@ -15172,10 +15216,24 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "ドラ1でもあれば打9ｓとしそう。\n今回はドラ無しなので、\n**③リーのみ愚形に極力ならないように手組せよ。（リーノミ愚形になる受け入れは無くして良いし、安くなる受け入れは少しなら減らしても良い）**\nで解決。（9ｓ切った際の、4ｐや6ｐや8ｐの受け入れは不要の受け入れとなる。）",
         "difficulty": "beginner"
       },
+      "explanation": "ドラ1でもあれば打9ｓとしそう。\n今回はドラ無しなので、\n**③リーのみ愚形に極力ならないように手組せよ。（リーノミ愚形になる受け入れは無くして良いし、安くなる受け入れは少しなら減らしても良い）**\nで解決。（9ｓ切った際の、4ｐや6ｐや8ｐの受け入れは不要の受け入れとなる。）",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:41.173Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:46.113Z"
+    },
+    {
+      "id": 100,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:03:47.899Z"
     },
     {
       "id": 101,
@@ -15183,10 +15241,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:42.766Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:49.530Z"
     },
     {
       "id": 102,
@@ -15194,10 +15254,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:44.384Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:51.180Z"
     },
     {
       "id": 103,
@@ -15205,10 +15267,36 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "受け入れ枚数は3ｍと4ｐで同じ。\n\n煙突形（暗刻+両面）を活かすには**他に1つヘッドが必要**。（**他に1つあれば良い**）\n\nhttps://discord.com/channels/1166706544856006656/1305621184808882227/1313132919828643891　Q58\nとセットで学ぼう。",
         "difficulty": "beginner"
       },
+      "explanation": "受け入れ枚数は3ｍと4ｐで同じ。\n\n煙突形（暗刻+両面）を活かすには**他に1つヘッドが必要**。（**他に1つあれば良い**）\n\nhttps://discord.com/channels/1166706544856006656/1305621184808882227/1313132919828643891　Q58\nとセットで学ぼう。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:45.989Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:52.841Z"
+    },
+    {
+      "id": 104,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": "1ｍ2ｍ4ｐ8ｐどれを切っても受け入れ枚数は同じ完全系。ならば、全ての受け入れで三色確定となる打4ｐが明確に良い。リーノミ愚形となる受け入れ（5ｐ）は不要。"
+      },
+      "explanation": "1ｍ2ｍ4ｐ8ｐどれを切っても受け入れ枚数は同じ完全系。ならば、全ての受け入れで三色確定となる打4ｐが明確に良い。リーノミ愚形となる受け入れ（5ｐ）は不要。",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:03:54.484Z"
+    },
+    {
+      "id": 105,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": "ドラ無しだったら打9ｐもアリ寄りになるとは思います。今回は、ドラ1あるので完全系に。タンヤオ変化は7ｐくっつきで見れば十分。"
+      },
+      "explanation": "ドラ無しだったら打9ｐもアリ寄りになるとは思います。今回は、ドラ1あるので完全系に。タンヤオ変化は7ｐくっつきで見れば十分。",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:03:56.112Z"
     },
     {
       "id": 106,
@@ -15389,10 +15477,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:49.198Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:57.741Z"
     },
     {
       "id": 108,
@@ -15400,10 +15490,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:50.809Z"
+      "overrideUpdatedAt": "2026-09-24T09:03:59.367Z"
     },
     {
       "id": 109,
@@ -15411,10 +15503,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "すーちゃん形は、端っこがゴミ。（３面子作りたい時以外）\n端を切った6枚形が一番強い。",
         "difficulty": "beginner"
       },
+      "explanation": "すーちゃん形は、端っこがゴミ。（３面子作りたい時以外）\n端を切った6枚形が一番強い。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:52.412Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:00.991Z"
     },
     {
       "id": 110,
@@ -15422,10 +15516,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:54.031Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:02.630Z"
     },
     {
       "id": 111,
@@ -15433,10 +15529,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:55.628Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:04.241Z"
     },
     {
       "id": 112,
@@ -15444,10 +15542,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:57.238Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:05.859Z"
     },
     {
       "id": 113,
@@ -15455,10 +15555,36 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:09:58.851Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:07.493Z"
+    },
+    {
+      "id": 114,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:09.106Z"
+    },
+    {
+      "id": 115,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:10.792Z"
     },
     {
       "id": 116,
@@ -15479,7 +15605,7 @@
       "images": [
         "/questions/question-118.png"
       ],
-      "explanation": "https://youtu.be/vIXmLVP9KSI?si=iftlo-V9fPgVbbif",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324029295227572287",
       "discordMessageId": "1324029295227572287",
       "threadId": "1324029295227572287",
@@ -15562,7 +15688,7 @@
         "images": [
           "/questions/question-118.png"
         ],
-        "explanation": "https://youtu.be/vIXmLVP9KSI?si=iftlo-V9fPgVbbif",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324029295227572287",
         "discordMessageId": "1324029295227572287",
         "threadId": "1324029295227572287",
@@ -15638,7 +15764,182 @@
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-11T20:29:30.781Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:12.428Z"
+    },
+    {
+      "id": 119,
+      "image": "/questions/question-119.png",
+      "images": [
+        "/questions/question-119.png"
+      ],
+      "explanation": "打5ｓ。最終14ｐ待ちとなりやすいように。\n\n💡弱い所をフォローして強い所はフォローいらず。\n",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324029304241262623",
+      "discordMessageId": "1324029304241262623",
+      "threadId": "1324029304241262623",
+      "createdAt": "2025-01-01T14:59:45.406000+00:00",
+      "hand": [
+        "2m",
+        "3m",
+        "2p",
+        "3p",
+        "3p",
+        "7p",
+        "9p",
+        "4s",
+        "4s",
+        "5s",
+        "7s",
+        "8s",
+        "9s"
+      ],
+      "draw": "8p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "9s",
+      "melds": [],
+      "correctDiscards": [
+        "5s"
+      ],
+      "sourceUrl": "https://youtu.be/HquIRZSKz48",
+      "sourceLabel": "元動画を開く",
+      "videoExplanation": "おすすめは5s切りなのだ。2p切りと同じく完全一向聴になるけれど、萬子が先に完成した後の待ちが違うのだ。\n\n2pを切ると3s・6sの中央寄りの両面、5sを切ると1p・4pの端にかかる両面になるのだ。どちらも両面でも、端牌を含む方が和了しやすいことを評価して5sを選ぶのだ。待ちの種類だけでなく、数字にも注目するのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/HquIRZSKz48",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ],
+        "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+        "revision": 60
+      },
+      "sourceDraw": "8p",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "5s"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/HquIRZSKz48",
+        "reviewedTimestamps": [
+          21,
+          27,
+          33,
+          39,
+          45
+        ]
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "HquIRZSKz48",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "beginner",
+      "kanChoice": false,
+      "correctKan": null,
+      "riichiChoice": false,
+      "correctRiichi": null,
+      "reviewed": false,
+      "reviewStatus": "check",
+      "reviewUpdatedAt": "2026-09-24T06:58:41.724Z",
+      "questionData": {
+        "id": 119,
+        "image": "/questions/question-119.png",
+        "images": [
+          "/questions/question-119.png"
+        ],
+        "explanation": "打5ｓ。最終14ｐ待ちとなりやすいように。\n\n💡弱い所をフォローして強い所はフォローいらず。\n",
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324029304241262623",
+        "discordMessageId": "1324029304241262623",
+        "threadId": "1324029304241262623",
+        "createdAt": "2025-01-01T14:59:45.406000+00:00",
+        "hand": [
+          "2m",
+          "3m",
+          "2p",
+          "3p",
+          "3p",
+          "7p",
+          "9p",
+          "4s",
+          "4s",
+          "5s",
+          "7s",
+          "8s",
+          "9s"
+        ],
+        "draw": "8p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "9s",
+        "melds": [],
+        "correctDiscards": [
+          "5s"
+        ],
+        "sourceUrl": "https://youtu.be/HquIRZSKz48",
+        "sourceLabel": "元動画を開く",
+        "videoExplanation": "おすすめは5s切りなのだ。2p切りと同じく完全一向聴になるけれど、萬子が先に完成した後の待ちが違うのだ。\n\n2pを切ると3s・6sの中央寄りの両面、5sを切ると1p・4pの端にかかる両面になるのだ。どちらも両面でも、端牌を含む方が和了しやすいことを評価して5sを選ぶのだ。待ちの種類だけでなく、数字にも注目するのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/HquIRZSKz48",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ],
+          "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+          "revision": 60
+        },
+        "sourceDraw": "8p",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "5s"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/HquIRZSKz48",
+          "reviewedTimestamps": [
+            21,
+            27,
+            33,
+            39,
+            45
+          ]
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "HquIRZSKz48",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "kanChoice": false,
+        "correctKan": null,
+        "riichiChoice": false,
+        "correctRiichi": null
+      },
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T08:57:07.689Z"
     },
     {
       "id": 120,
@@ -15646,10 +15947,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:02.078Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:14.038Z"
     },
     {
       "id": 121,
@@ -15657,10 +15960,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:03.680Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:15.668Z"
     },
     {
       "id": 122,
@@ -15668,7 +15973,7 @@
       "images": [
         "/questions/question-122.png"
       ],
-      "explanation": "https://youtu.be/ECVKRtM-Kwk?si=lem0gHwZ0IWJFZR6",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367203734130688",
       "discordMessageId": "1324367203734130688",
       "threadId": "1324367203734130688",
@@ -15759,7 +16064,7 @@
         "images": [
           "/questions/question-122.png"
         ],
-        "explanation": "https://youtu.be/ECVKRtM-Kwk?si=lem0gHwZ0IWJFZR6",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367203734130688",
         "discordMessageId": "1324367203734130688",
         "threadId": "1324367203734130688",
@@ -15843,7 +16148,7 @@
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-18T03:56:06.475Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:17.292Z"
     },
     {
       "id": 123,
@@ -16037,13 +16342,15 @@
     {
       "id": 124,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "fix",
+      "reviewUpdatedAt": "2026-09-24T07:04:24.365Z",
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:08.492Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:18.930Z"
     },
     {
       "id": 125,
@@ -16234,7 +16541,7 @@
       "images": [
         "/questions/question-126.png"
       ],
-      "explanation": "https://youtu.be/r1l5oD4PAHY?si=DiDpiPQ6capg5JY5",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1325072911064891496",
       "discordMessageId": "1325072911064891496",
       "threadId": "1325072911064891496",
@@ -16330,7 +16637,7 @@
         "images": [
           "/questions/question-126.png"
         ],
-        "explanation": "https://youtu.be/r1l5oD4PAHY?si=DiDpiPQ6capg5JY5",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1325072911064891496",
         "discordMessageId": "1325072911064891496",
         "threadId": "1325072911064891496",
@@ -16419,7 +16726,19 @@
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-18T03:57:50.137Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:20.566Z"
+    },
+    {
+      "id": 127,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:22.233Z"
     },
     {
       "id": 128,
@@ -16427,10 +16746,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "ドラ1につき、1ｓが作る4ｓ4ｍの4枚の受け入れには価値がある。ドラ無しならば、36ｍ引きによるメンタンピン変化を見て打1ｓもアリ寄り。",
         "difficulty": "beginner"
       },
+      "explanation": "ドラ1につき、1ｓが作る4ｓ4ｍの4枚の受け入れには価値がある。ドラ無しならば、36ｍ引きによるメンタンピン変化を見て打1ｓもアリ寄り。",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:11.695Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:23.890Z"
     },
     {
       "id": 129,
@@ -16594,6 +16915,18 @@
         "videoExplanationStatus": "verified-parts",
         "explanationSchemaVersion": 2
       }
+    },
+    {
+      "id": 132,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:25.518Z"
     },
     {
       "id": 133,
@@ -16772,10 +17105,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:13.292Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:27.157Z"
     },
     {
       "id": 135,
@@ -16783,10 +17118,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "5ｓ引いてきたら→58ｓ引いてきたら",
         "difficulty": "beginner"
       },
+      "explanation": "5ｓ引いてきたら→58ｓ引いてきたら",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:14.896Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:28.797Z"
     },
     {
       "id": 136,
@@ -16958,12 +17295,24 @@
       }
     },
     {
+      "id": 137,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": "上と下の違いに要注意。\n\n上は、本問のまま。2ｓを切った33556ｓは4ｓ引き（チー）で3ｓ切りで47ｓ両面に受ける事が出来る。\n裏目が一切無い2ｓ切り。\n\n下は、2ｓを切ると4ｓ（4枚）が裏目となる為、普通に6ｓ切り。"
+      },
+      "explanation": "上と下の違いに要注意。\n\n上は、本問のまま。2ｓを切った33556ｓは4ｓ引き（チー）で3ｓ切りで47ｓ両面に受ける事が出来る。\n裏目が一切無い2ｓ切り。\n\n下は、2ｓを切ると4ｓ（4枚）が裏目となる為、普通に6ｓ切り。",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:30.427Z"
+    },
+    {
       "id": 138,
       "image": "/questions/question-138.png",
       "images": [
         "/questions/question-138.png"
       ],
-      "explanation": "https://youtu.be/243yZ6-AeIQ?si=SCk9gzwZu5A_xiv5",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1326217931004182588",
       "discordMessageId": "1326217931004182588",
       "threadId": "1326217931004182588",
@@ -17044,7 +17393,7 @@
         "images": [
           "/questions/question-138.png"
         ],
-        "explanation": "https://youtu.be/243yZ6-AeIQ?si=SCk9gzwZu5A_xiv5",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1326217931004182588",
         "discordMessageId": "1326217931004182588",
         "threadId": "1326217931004182588",
@@ -17118,7 +17467,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:18.108Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:32.050Z"
     },
     {
       "id": 139,
@@ -17126,7 +17475,7 @@
       "images": [
         "/questions/question-139.png"
       ],
-      "explanation": "https://youtu.be/JB0x3SKTtjE?si=CkCyePfKJsIe3znq",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1326217940495765686",
       "discordMessageId": "1326217940495765686",
       "threadId": "1326217940495765686",
@@ -17213,7 +17562,7 @@
         "images": [
           "/questions/question-139.png"
         ],
-        "explanation": "https://youtu.be/JB0x3SKTtjE?si=CkCyePfKJsIe3znq",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1326217940495765686",
         "discordMessageId": "1326217940495765686",
         "threadId": "1326217940495765686",
@@ -17293,7 +17642,43 @@
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-11T20:29:35.699Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:33.691Z"
+    },
+    {
+      "id": 140,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": "確かにピンズは9枚形で689ｐ（6枚）の受けになっていますが、両面69ｓ（8枚）の受けの方が遥かに強いです。（特に14ｍ先引き時に、待ちの強さ、打点が段違い。）"
+      },
+      "explanation": "確かにピンズは9枚形で689ｐ（6枚）の受けになっていますが、両面69ｓ（8枚）の受けの方が遥かに強いです。（特に14ｍ先引き時に、待ちの強さ、打点が段違い。）",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:35.331Z"
+    },
+    {
+      "id": 141,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:36.993Z"
+    },
+    {
+      "id": 142,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:38.623Z"
     },
     {
       "id": 143,
@@ -17301,10 +17686,36 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:19.708Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:40.246Z"
+    },
+    {
+      "id": 144,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:41.881Z"
+    },
+    {
+      "id": 145,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:43.499Z"
     },
     {
       "id": 146,
@@ -17312,10 +17723,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "水炊きに手をかける際には、**一番うれしいツモを逃さないように**選択する。\n\n今回だと、3ｐ引きの23445ｐと6ｐ引きの44567ｐの比較。\n\n前者の方が明確に嬉しい。（二度受け78ｍを払えてタンヤオへ。）",
         "difficulty": "beginner"
       },
+      "explanation": "水炊きに手をかける際には、**一番うれしいツモを逃さないように**選択する。\n\n今回だと、3ｐ引きの23445ｐと6ｐ引きの44567ｐの比較。\n\n前者の方が明確に嬉しい。（二度受け78ｍを払えてタンヤオへ。）",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:21.326Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:45.153Z"
     },
     {
       "id": 147,
@@ -17323,10 +17736,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:22.917Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:46.784Z"
     },
     {
       "id": 148,
@@ -17334,10 +17749,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "今回はむしろ縦受け4枚は高くなる受け入れ（点パネ）ですね。\n\nまた、安全度で2ｐ先切り有効かどうかは、後の否かでの安全度比較は2ｐ（3ｐ）8ｍの安全度が焦点となるので、9ｍは無関係です。\n今回のテーマは、**ドラ引きに備えよう**です。\nドラが6ｍなら、5ｍ切り。\nドラが4ｍなら、8ｍ切り。\nドラが4ｍなら3ｍ切り\nドラが2ｍなら6ｍ切り\nドラが1ｍなら2ｍ切り\nドラが6ｍなら5ｍ切り\nドラが4ｍじゃない限りは4ｍ切り（赤5ｍに備える）\n**ドラを引いた時に困らないように打ちたいですね。**",
         "difficulty": "beginner"
       },
+      "explanation": "今回はむしろ縦受け4枚は高くなる受け入れ（点パネ）ですね。\n\nまた、安全度で2ｐ先切り有効かどうかは、後の否かでの安全度比較は2ｐ（3ｐ）8ｍの安全度が焦点となるので、9ｍは無関係です。\n今回のテーマは、**ドラ引きに備えよう**です。\nドラが6ｍなら、5ｍ切り。\nドラが4ｍなら、8ｍ切り。\nドラが4ｍなら3ｍ切り\nドラが2ｍなら6ｍ切り\nドラが1ｍなら2ｍ切り\nドラが6ｍなら5ｍ切り\nドラが4ｍじゃない限りは4ｍ切り（赤5ｍに備える）\n**ドラを引いた時に困らないように打ちたいですね。**",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:24.532Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:48.440Z"
     },
     {
       "id": 149,
@@ -17345,7 +17762,7 @@
       "images": [
         "/questions/question-149.png"
       ],
-      "explanation": "https://youtu.be/_-2732uuBpo?si=uTEnjBe5U1GphE3O",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1327950317207162880",
       "discordMessageId": "1327950317207162880",
       "threadId": "1327950317207162880",
@@ -17434,7 +17851,7 @@
         "images": [
           "/questions/question-149.png"
         ],
-        "explanation": "https://youtu.be/_-2732uuBpo?si=uTEnjBe5U1GphE3O",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1327950317207162880",
         "discordMessageId": "1327950317207162880",
         "threadId": "1327950317207162880",
@@ -17516,7 +17933,7 @@
         "difficulty": "beginner"
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:26.136Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:50.077Z"
     },
     {
       "id": 150,
@@ -17524,7 +17941,7 @@
       "images": [
         "/questions/question-150.png"
       ],
-      "explanation": "https://youtu.be/jj63zZl5sGs?si=Ir0T6acPajcFOQqG",
+      "explanation": "",
       "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1327950330775994449",
       "discordMessageId": "1327950330775994449",
       "threadId": "1327950330775994449",
@@ -17621,7 +18038,7 @@
         "images": [
           "/questions/question-150.png"
         ],
-        "explanation": "https://youtu.be/jj63zZl5sGs?si=Ir0T6acPajcFOQqG",
+        "explanation": "",
         "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1327950330775994449",
         "discordMessageId": "1327950330775994449",
         "threadId": "1327950330775994449",
@@ -17711,7 +18128,7 @@
         "correctKan": null
       },
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-18T03:57:52.170Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:51.721Z"
     },
     {
       "id": 151,
@@ -17719,10 +18136,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:29.360Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:53.357Z"
     },
     {
       "id": 152,
@@ -17730,10 +18149,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:30.962Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:55.017Z"
     },
     {
       "id": 153,
@@ -17741,10 +18162,24 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:32.577Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:56.656Z"
+    },
+    {
+      "id": 154,
+      "reviewed": false,
+      "reviewStatus": null,
+      "reviewUpdatedAt": null,
+      "questionData": {
+        "explanation": ""
+      },
+      "explanation": "",
+      "overridden": true,
+      "overrideUpdatedAt": "2026-09-24T09:04:58.272Z"
     },
     {
       "id": 155,
@@ -17752,10 +18187,12 @@
       "reviewStatus": null,
       "reviewUpdatedAt": null,
       "questionData": {
+        "explanation": "",
         "difficulty": "beginner"
       },
+      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-14T20:10:34.181Z"
+      "overrideUpdatedAt": "2026-09-24T09:04:59.890Z"
     },
     {
       "id": 156,
@@ -19029,8 +19466,8 @@
       "kanChoice": false,
       "correctKan": null,
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "check",
+      "reviewUpdatedAt": "2026-09-24T07:28:46.129Z",
       "questionData": {
         "id": 164,
         "image": "/questions/question-164.png",
@@ -19199,8 +19636,8 @@
       "correctKan": null,
       "difficulty": "beginner",
       "reviewed": false,
-      "reviewStatus": null,
-      "reviewUpdatedAt": null,
+      "reviewStatus": "fix",
+      "reviewUpdatedAt": "2026-09-24T07:31:43.494Z",
       "questionData": {
         "id": 165,
         "image": "/questions/question-165.png",
