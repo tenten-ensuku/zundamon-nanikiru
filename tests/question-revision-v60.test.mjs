@@ -78,7 +78,9 @@ test("v60/v61 preserve current author text and every unapproved field against im
 
 function renderingHarness() {
   class Element {
+    nodeType = 1;
     children = [];
+    get childNodes() { return this.children; }
     attributes = {};
     constructor(tagName) { this.tagName = tagName.toUpperCase(); }
     append(...nodes) { this.children.push(...nodes); }
@@ -88,9 +90,9 @@ function renderingHarness() {
   const document = {
     createElement: tag => new Element(tag),
     createElementNS: (namespace, tag) => Object.assign(new Element(tag), { namespaceURI: namespace }),
-    createTextNode: value => ({ textContent: value }),
+    createTextNode: value => ({ nodeType: 3, textContent: value }),
   };
-  const names = ["tilePath", "explanationTilePath", "tileName", "stripDiscordMarkdown", "trimUrlPunctuation", "linkMetadata", "createLinkIcon", "setLinkContent", "explanationTileCode", "isExplanationTileBoundary", "isMahjongMiddle", "appendExplanationText", "appendFormattedText", "appendLinkedText", "explanationParts", "appendSpeakerExplanation"];
+  const names = ["tilePath", "explanationTilePath", "tileName", "stripDiscordMarkdown", "trimUrlPunctuation", "linkMetadata", "createLinkIcon", "setLinkContent", "explanationTileCode", "isExplanationTileBoundary", "isMahjongMiddle", "appendExplanationText", "appendFormattedText", "compactExplanationTiles", "appendLinkedText", "explanationParts", "appendSpeakerExplanation"];
   const functions = names.map(name => source.match(new RegExp(`    function ${name}\\([^]*?\\n    }`))?.[0] || assert.fail(name)).join("\n");
   const api = new Function("document", "window", `const APP_VERSION=60, HONOR_NAMES={1:'東',2:'南',3:'西',4:'北',5:'白',6:'發',7:'中'}, SUIT_NAMES={m:'萬',p:'筒',s:'索'}; ${functions}; return { explanationParts, appendExplanationText, appendLinkedText, appendSpeakerExplanation };`)(document, { ZUNDAMON_CONFIG: { explanationSpeakers: { author: { name: "あなた", image: "assets/speakers/author.png" } } } });
   return { ...api, make: () => new Element("div") };

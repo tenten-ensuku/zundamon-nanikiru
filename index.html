@@ -1069,20 +1069,20 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <link rel="stylesheet" href="question-review.css?v=84">
-  <link rel="stylesheet" href="answer-feedback.css?v=84">
-  <link rel="stylesheet" href="desktop.css?v=84">
-  <script src="config.js?v=84"></script>
-  <script src="question-metadata.js?v=84"></script>
-  <script src="question-review.js?v=84"></script>
-  <script src="shared-data.js?v=84"></script>
-  <script src="answer-feedback.js?v=84"></script>
+  <link rel="stylesheet" href="question-review.css?v=85">
+  <link rel="stylesheet" href="answer-feedback.css?v=85">
+  <link rel="stylesheet" href="desktop.css?v=85">
+  <script src="config.js?v=85"></script>
+  <script src="question-metadata.js?v=85"></script>
+  <script src="question-review.js?v=85"></script>
+  <script src="shared-data.js?v=85"></script>
+  <script src="answer-feedback.js?v=85"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 84;
+    const APP_VERSION = 85;
     const { DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, recordDifficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
@@ -1413,6 +1413,46 @@
       if (lastIndex < text.length) appendExplanationText(container, text.slice(lastIndex));
     }
 
+    function compactExplanationTiles(container) {
+      // Work on rendered images, not source strings: preserve prose, URLs and
+      // saved author text, including separators across bold/color boundaries.
+      let previousTile = false, separators = [], removed = 0;
+      const visit = node => {
+        if (node.nodeType === 3) {
+          if (!node.textContent) return;
+          if (previousTile && /^[ \t\u00a0\u3000・･·赤]+$/u.test(node.textContent)) {
+            separators.push(node);
+          } else {
+            previousTile = false;
+            separators = [];
+          }
+          return;
+        }
+        if (node.tagName === "IMG" && node.className === "explanation-tile") {
+          const gap = separators.map(part => part.textContent).join("");
+          const tileSeparator = /^[ \t\u00a0\u3000・･·]+$/u.test(gap);
+          // Existing author text also uses 赤0p・赤0s; keep the 赤 label itself.
+          const redTileSeparator = node.alt.startsWith("赤") && /^[ \t\u00a0\u3000・･·]+赤$/u.test(gap);
+          if (previousTile && (tileSeparator || redTileSeparator) && /[・･·]/u.test(gap)) {
+            for (const part of separators) {
+              removed += (part.textContent.match(/[・･·]/gu) || []).length;
+              part.textContent = part.textContent.replace(/[ \t\u00a0\u3000・･·]/gu, "");
+            }
+          }
+          previousTile = true;
+          separators = [];
+        } else if (node.tagName === "STRONG" || node.tagName === "SPAN") {
+          for (const child of node.childNodes) visit(child);
+        } else {
+          // Links and other elements are boundaries, never part of a tile run.
+          previousTile = false;
+          separators = [];
+        }
+      };
+      for (const node of container.childNodes) visit(node);
+      return removed;
+    }
+
     function appendLinkedText(container, value) {
       const text = stripDiscordMarkdown(value) || "この問題の解説はまだありません。";
       const chunks = text.split(/(https?:\/\/[^\s]+)/g);
@@ -1440,6 +1480,7 @@
           appendFormattedText(container, chunk);
         }
       }
+      compactExplanationTiles(container);
     }
 
     function preloadTiles() {
@@ -2530,7 +2571,7 @@
           input.rows = 5;
           input.value = explanationEditor.values[field];
           input.setAttribute("aria-label", kind === "video" ? "ずんだもんの解説を編集" : "エンスクの解説を編集");
-          input.placeholder = "解説を入力（牌は 9m・6s などで表記）";
+          input.placeholder = "解説を入力（牌は 9m6s、連続形は 455567p などで表記）";
           input.addEventListener("input", () => { explanationEditor.values[field] = input.value; updateExplanationEditControls(); });
           section.querySelector(".explanation-body").replaceChildren(input);
         }

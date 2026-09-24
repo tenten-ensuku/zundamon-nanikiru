@@ -18,7 +18,9 @@ const aliases = ({ code, alias }) => {
   return [code, `赤5${suit}`, `r5${suit}`, `R5${suit}`, `r5${suit.toUpperCase()}`, alias, alias.toUpperCase(), ...[code, `赤5${suit}`, `r5${suit}`, `R5${suit}`, alias].map(fullwidth)];
 };
 class Element {
+  nodeType = 1;
   children = [];
+  get childNodes() { return this.children; }
   attributes = {};
   constructor(tag) { this.tagName = tag.toUpperCase(); }
   append(...nodes) { this.children.push(...nodes); }
@@ -28,9 +30,9 @@ class Element {
 const document = {
   createElement: tag => new Element(tag),
   createElementNS: (namespace, tag) => Object.assign(new Element(tag), { namespaceURI: namespace }),
-  createTextNode: textContent => ({ tagName: "#TEXT", textContent }),
+  createTextNode: textContent => ({ nodeType: 3, tagName: "#TEXT", textContent }),
 };
-const functions = ["tilePath", "explanationTilePath", "tileName", "stripDiscordMarkdown", "trimUrlPunctuation", "linkMetadata", "createLinkIcon", "setLinkContent", "explanationTileCode", "isExplanationTileBoundary", "isMahjongMiddle", "appendExplanationText", "appendFormattedText", "appendLinkedText"]
+const functions = ["tilePath", "explanationTilePath", "tileName", "stripDiscordMarkdown", "trimUrlPunctuation", "linkMetadata", "createLinkIcon", "setLinkContent", "explanationTileCode", "isExplanationTileBoundary", "isMahjongMiddle", "appendExplanationText", "appendFormattedText", "compactExplanationTiles", "appendLinkedText"]
   .map(name => source.match(new RegExp(`    function ${name}\\([^]*?\\n    }`))?.[0] || assert.fail(name)).join("\n");
 const app = new Function("document", `const APP_VERSION=1, HONOR_NAMES={1:'東',2:'南',3:'西',4:'北',5:'白',6:'發',7:'中'}, SUIT_NAMES={m:'萬',p:'筒',s:'索'}; ${functions}; return { tilePath, explanationTilePath, explanationTileCode, appendExplanationText, appendLinkedText };`)(document);
 const all = node => [node, ...(node.children || []).flatMap(all)];
