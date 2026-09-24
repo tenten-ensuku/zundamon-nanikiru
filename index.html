@@ -161,6 +161,9 @@
       gap: 10px;
     }
 
+    .situation-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 7px; }
+    .question-id { flex: none; color: var(--muted); font-size: 12px; white-space: nowrap; }
+
     .round-line {
       display: flex;
       flex-wrap: wrap;
@@ -506,7 +509,7 @@
 
     .explanation a { color: var(--gold-light); }
     .review-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 9px; }
-    .review-heading h2 { margin: 0; }
+    .review-heading h2 { display: flex; align-items: baseline; gap: 8px; margin: 0; }
     .edit-explanation-button { padding: 7px 10px; min-height: 36px; font-size: 11px; color: var(--muted); border: 1px solid rgba(242,210,123,.25); border-radius: 6px; background: rgba(0,0,0,.16); cursor: pointer; }
     .explanation-section { position: relative; margin: 0 0 12px 18px; padding: 9px 11px 10px 24px; min-height: 50px; border: 1px solid rgba(180,204,193,.25); border-radius: 5px 12px 12px 12px; background: #10362c; white-space: normal; }
     .explanation-section:last-child { margin-bottom: 0; }
@@ -946,7 +949,7 @@
       white-space: nowrap;
     }
     .catalog-audience-badge { margin-top: 4px; }
-    .play-audience-badge { margin-bottom: 7px; font-size: 12px; }
+    .play-audience-badge { font-size: 12px; }
     .catalog-scene { margin-left: 5px; color: var(--muted); font-size: 10px; }
     .catalog-rate { margin: 5px 0 0; color: var(--ink); font-size: 11px; }
     .catalog-rate-bar {
@@ -1066,19 +1069,19 @@
     <div class="loading" id="loading">牌姿を準備しています…</div>
   </div>
 
-  <link rel="stylesheet" href="question-review.css?v=79">
-  <link rel="stylesheet" href="answer-feedback.css?v=79">
-  <script src="config.js?v=79"></script>
-  <script src="question-metadata.js?v=79"></script>
-  <script src="question-review.js?v=79"></script>
-  <script src="shared-data.js?v=79"></script>
-  <script src="answer-feedback.js?v=79"></script>
+  <link rel="stylesheet" href="question-review.css?v=80">
+  <link rel="stylesheet" href="answer-feedback.css?v=80">
+  <script src="config.js?v=80"></script>
+  <script src="question-metadata.js?v=80"></script>
+  <script src="question-review.js?v=80"></script>
+  <script src="shared-data.js?v=80"></script>
+  <script src="answer-feedback.js?v=80"></script>
   <script>
     "use strict";
 
     const APP_ID = "zundamon-nanikiru";
     const APP_BASE_PATH = "/zundamon-nanikiru/";
-    const APP_VERSION = 79;
+    const APP_VERSION = 80;
     const { DIFFICULTIES, isDifficulty, questionDifficulty, difficultyLabel, recordDifficultyLabel, filterByDifficulty } = window.ZUNDAMON_QUESTION_METADATA;
     const storageKey = (name) => `${APP_ID}:${name}`;
     const STORAGE_KEY = storageKey("state-v2");
@@ -2050,7 +2053,7 @@
         <div class="progress" aria-label="回答進捗"><span id="progressBar"></span></div>
         <main class="board">
           <section class="situation" aria-label="局面">
-            <span class="audience-badge play-audience-badge" id="audienceBadge" hidden></span>
+            <div class="situation-heading"><span class="audience-badge play-audience-badge" id="audienceBadge" hidden></span><span class="question-id" id="playQuestionId"></span></div>
             <div class="situation-main">
               <div>
                 <div class="round-line">
@@ -2093,7 +2096,7 @@
 
           <section class="review" id="review" aria-live="polite">
             <div class="answer-feedback" id="answerFeedback" hidden><strong id="judgment"></strong><span id="correctAnswer"></span></div>
-            <div class="review-heading"><h2>解説</h2><button class="edit-explanation-button" id="editExplanationButton" type="button" hidden>解説を編集</button></div>
+            <div class="review-heading"><h2>解説<small class="question-id" id="reviewQuestionId"></small></h2><button class="edit-explanation-button" id="editExplanationButton" type="button" hidden>解説を編集</button></div>
             <div class="explanation" id="explanation"></div>
             <div id="questionReviewControl" hidden></div>
             <div class="inline-editor-actions" id="inlineEditorActions" hidden><button class="secondary" id="cancelExplanationEdit" type="button">キャンセル</button><button class="primary" id="saveExplanationEdit" type="button" disabled>保存</button></div>
@@ -2128,6 +2131,12 @@
       document.getElementById("saveExplanationEdit").addEventListener("click", saveExplanationEdit);
     }
 
+    function renderQuestionIdentity(question) {
+      document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${playQuestions.length} 問`;
+      document.getElementById("playQuestionId").textContent = `問題 No.${question.id}`;
+      document.getElementById("reviewQuestionId").textContent = `No.${question.id}`;
+    }
+
     function renderQuestion() {
       answerFeedback.stop();
       const question = playQuestions[currentIndex];
@@ -2139,7 +2148,7 @@
       revealed = Boolean(response);
       setExplanationNotice("");
 
-      document.getElementById("counter").textContent = `第 ${currentIndex + 1} / ${playQuestions.length} 問`;
+      renderQuestionIdentity(question);
       document.getElementById("playAdminEntry").href = `admin.html?question=${encodeURIComponent(question.id)}`;
       const audienceLabel = difficultyLabel(question);
       const audienceBadge = document.getElementById("audienceBadge");
