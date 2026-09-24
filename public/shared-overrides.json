@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "source": "https://zundamon-question-api.naga-study.workers.dev",
-  "cursor": 703,
+  "cursor": 704,
   "rows": [
     {
       "id": 1,
@@ -16341,16 +16341,178 @@
     },
     {
       "id": 124,
+      "image": "/questions/question-124.png",
+      "images": [
+        "/questions/question-124.png"
+      ],
+      "explanation": "",
+      "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367247191441480",
+      "discordMessageId": "1324367247191441480",
+      "threadId": "1324367247191441480",
+      "createdAt": "2025-01-02T13:22:37.284000+00:00",
+      "hand": [
+        "6m",
+        "8m",
+        "9m",
+        "9m",
+        "9m",
+        "1p",
+        "1p",
+        "2s",
+        "3s",
+        "4s",
+        "0s",
+        "7s",
+        "9s"
+      ],
+      "draw": "1p",
+      "status": "unreviewed",
+      "meldCount": 0,
+      "round": "east1",
+      "seat": "west",
+      "turn": 6,
+      "honba": null,
+      "points": 25000,
+      "dora": "9s",
+      "melds": [],
+      "correctDiscards": [
+        "6m"
+      ],
+      "sourceUrl": "https://youtu.be/mpHrvC2BYG0",
+      "sourceLabel": "YouTube動画を開く",
+      "videoExplanation": "おすすめは6m切りなのだ。1pを引いて雀頭だった1pが暗刻になったので、6mを切って形を整理するのだ。\n\n6mを切っても8999mが残るので、7mの受け入れはなくならないのだ。7mを引けば789mと99mに組み替え、9mを雀頭にして聴牌できるのだ。\n\nこの後は8sを引いて、ドラ9sを使える聴牌が理想なのだ。ただし、先に6sを引いた場合は、ドラ9sを切って7m・8m待ちでリーチする進め方が紹介されているのだ。これは6mを切った後のツモに対する判断で、今選ぶ打牌は6mなのだ。",
+      "explanationSchemaVersion": 2,
+      "videoExplanationStatus": "verified-parts",
+      "videoExplanationSource": {
+        "url": "https://youtu.be/mpHrvC2BYG0",
+        "reviewedTimestamps": [
+          1,
+          17.5,
+          20,
+          24,
+          28,
+          33,
+          37,
+          42,
+          47
+        ],
+        "coverage": "59秒の元動画を再確認し、現在の6m切りと、その後6sを引いた場合の9s切りリーチを区別して再構成。逐語録ではない。",
+        "revision": 82
+      },
+      "sourceDraw": "1p",
+      "sourceDrawStatus": "verified",
+      "videoCorrectDiscards": [
+        "6m"
+      ],
+      "answerSource": {
+        "kind": "video",
+        "url": "https://youtu.be/mpHrvC2BYG0",
+        "reviewedTimestamps": [
+          17.5,
+          47
+        ],
+        "revision": 82
+      },
+      "sourcePlaylistMembership": {
+        "videoId": "mpHrvC2BYG0",
+        "playlistIds": [
+          "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+          "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+        ]
+      },
+      "difficulty": "beginner",
+      "kanChoice": false,
+      "correctKan": null,
       "reviewed": false,
       "reviewStatus": "fix",
       "reviewUpdatedAt": "2026-09-24T07:04:24.365Z",
       "questionData": {
+        "id": 124,
+        "image": "/questions/question-124.png",
+        "images": [
+          "/questions/question-124.png"
+        ],
         "explanation": "",
-        "difficulty": "beginner"
+        "discordMessageUrl": "https://discord.com/channels/1166706544856006656/1305621184808882227/1324367247191441480",
+        "discordMessageId": "1324367247191441480",
+        "threadId": "1324367247191441480",
+        "createdAt": "2025-01-02T13:22:37.284000+00:00",
+        "hand": [
+          "6m",
+          "8m",
+          "9m",
+          "9m",
+          "9m",
+          "1p",
+          "1p",
+          "2s",
+          "3s",
+          "4s",
+          "0s",
+          "7s",
+          "9s"
+        ],
+        "draw": "1p",
+        "status": "unreviewed",
+        "meldCount": 0,
+        "round": "east1",
+        "seat": "west",
+        "turn": 6,
+        "honba": null,
+        "points": 25000,
+        "dora": "9s",
+        "melds": [],
+        "correctDiscards": [
+          "6m"
+        ],
+        "sourceUrl": "https://youtu.be/mpHrvC2BYG0",
+        "sourceLabel": "YouTube動画を開く",
+        "videoExplanation": "おすすめは6m切りなのだ。1pを引いて雀頭だった1pが暗刻になったので、6mを切って形を整理するのだ。\n\n6mを切っても8999mが残るので、7mの受け入れはなくならないのだ。7mを引けば789mと99mに組み替え、9mを雀頭にして聴牌できるのだ。\n\nこの後は8sを引いて、ドラ9sを使える聴牌が理想なのだ。ただし、先に6sを引いた場合は、ドラ9sを切って7m・8m待ちでリーチする進め方が紹介されているのだ。これは6mを切った後のツモに対する判断で、今選ぶ打牌は6mなのだ。",
+        "explanationSchemaVersion": 2,
+        "videoExplanationStatus": "verified-parts",
+        "videoExplanationSource": {
+          "url": "https://youtu.be/mpHrvC2BYG0",
+          "reviewedTimestamps": [
+            1,
+            17.5,
+            20,
+            24,
+            28,
+            33,
+            37,
+            42,
+            47
+          ],
+          "coverage": "59秒の元動画を再確認し、現在の6m切りと、その後6sを引いた場合の9s切りリーチを区別して再構成。逐語録ではない。",
+          "revision": 82
+        },
+        "sourceDraw": "1p",
+        "sourceDrawStatus": "verified",
+        "videoCorrectDiscards": [
+          "6m"
+        ],
+        "answerSource": {
+          "kind": "video",
+          "url": "https://youtu.be/mpHrvC2BYG0",
+          "reviewedTimestamps": [
+            17.5,
+            47
+          ],
+          "revision": 82
+        },
+        "sourcePlaylistMembership": {
+          "videoId": "mpHrvC2BYG0",
+          "playlistIds": [
+            "PLsPI0JcKZ3E7QqaFQpJsLkmkS7dZlPXRv",
+            "PLsPI0JcKZ3E75g3aLjIL1ofwMsyvFJjCH"
+          ]
+        },
+        "difficulty": "beginner",
+        "kanChoice": false,
+        "correctKan": null
       },
-      "explanation": "",
       "overridden": true,
-      "overrideUpdatedAt": "2026-09-24T09:04:18.930Z"
+      "overrideUpdatedAt": "2026-09-24T09:14:18.511Z"
     },
     {
       "id": 125,

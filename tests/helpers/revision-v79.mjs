@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+import { beforeV82 } from "./revision-v82.mjs";
 
 export const revisionV79 = JSON.parse(readFileSync(new URL("../../data/content-corrections-v79.json", import.meta.url), "utf8"));
 const changes = new Map(revisionV79.changes.map(item => [item.id, item]));
@@ -8,7 +9,7 @@ const changes = new Map(revisionV79.changes.map(item => [item.id, item]));
 // keys keep their order so older byte-order-sensitive JSON hashes remain useful.
 // All other fields still flow into the old preservation tests unchanged.
 export function beforeV79(question) {
-  const result = structuredClone(question), change = changes.get(question.id);
+  const result = beforeV82(question), change = changes.get(question.id);
   if (!change) return result;
   assert.ok(change.beforeBase && typeof change.beforeBase === "object", `v79 baseline ${question.id}`);
   for (const [key, after] of Object.entries(change.patch)) {

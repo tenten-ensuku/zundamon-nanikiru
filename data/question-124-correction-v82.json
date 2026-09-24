@@ -1,0 +1,117 @@
+{
+  "revision": 82,
+  "questionId": 124,
+  "sourceUrl": "https://youtu.be/mpHrvC2BYG0",
+  "reviewedAt": "2026-09-24T09:14:18.971Z",
+  "patch": {
+    "correctDiscards": [
+      "6m"
+    ],
+    "videoCorrectDiscards": [
+      "6m"
+    ],
+    "videoExplanation": "おすすめは6m切りなのだ。1pを引いて雀頭だった1pが暗刻になったので、6mを切って形を整理するのだ。\n\n6mを切っても8999mが残るので、7mの受け入れはなくならないのだ。7mを引けば789mと99mに組み替え、9mを雀頭にして聴牌できるのだ。\n\nこの後は8sを引いて、ドラ9sを使える聴牌が理想なのだ。ただし、先に6sを引いた場合は、ドラ9sを切って7m・8m待ちでリーチする進め方が紹介されているのだ。これは6mを切った後のツモに対する判断で、今選ぶ打牌は6mなのだ。",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/mpHrvC2BYG0",
+      "reviewedTimestamps": [
+        1,
+        17.5,
+        20,
+        24,
+        28,
+        33,
+        37,
+        42,
+        47
+      ],
+      "coverage": "59秒の元動画を再確認し、現在の6m切りと、その後6sを引いた場合の9s切りリーチを区別して再構成。逐語録ではない。",
+      "revision": 82
+    },
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/mpHrvC2BYG0",
+      "reviewedTimestamps": [
+        17.5,
+        47
+      ],
+      "revision": 82
+    }
+  },
+  "beforeBase": {
+    "correctDiscards": [
+      "8m"
+    ],
+    "videoCorrectDiscards": [
+      "8m"
+    ],
+    "videoExplanation": "おすすめは8m切りなのだ。6mと9mの暗刻が残るので、8mを切っても7mの受けはなくならないのだ。7mを引いたときは9mを雀頭に組み替えて聴牌できるのだ。\n\n8sを引いてドラ9sを使える聴牌が理想だけれど、先に6sを引いた場合は別の判断になるのだ。その場合は9sを切り、7m・8m待ちで立直する進め方が紹介されているのだ。今切る8mと、後のツモに対する9s切りを区別するのだ。",
+    "videoExplanationSource": {
+      "url": "https://youtu.be/mpHrvC2BYG0",
+      "reviewedTimestamps": [
+        21,
+        27,
+        33,
+        39,
+        45
+      ],
+      "coverage": "確認済みの結論・比較を再構成。動画全編の逐語録ではない。",
+      "revision": 60
+    },
+    "answerSource": {
+      "kind": "video",
+      "url": "https://youtu.be/mpHrvC2BYG0",
+      "reviewedTimestamps": [
+        21,
+        27,
+        33,
+        39,
+        45
+      ]
+    }
+  },
+  "beforeCursor": 703,
+  "snapshotCursor": 704,
+  "updatedAt": "2026-09-24T09:14:18.511Z",
+  "protectedSha256": "c5f25434a7e7f570bb736081abc9924769668874ac8294c3be6d48e541dbf563",
+  "afterProtectedSha256": "c5f25434a7e7f570bb736081abc9924769668874ac8294c3be6d48e541dbf563",
+  "reviewStatus": "fix",
+  "reviewUpdatedAt": "2026-09-24T07:04:24.365Z",
+  "sourceEvidence": [
+    {
+      "timestamp": 1,
+      "finding": "Opening hand, draw, dora and situation match Q124. The red tile is 0s; final two hand tiles are 7s and 9s."
+    },
+    {
+      "timestamp": 17.5,
+      "finding": "Explicit recommended discard: 6m."
+    },
+    {
+      "timestamp": 20,
+      "finding": "Drawing 1p changed the former head into a concealed triplet."
+    },
+    {
+      "timestamp": 24,
+      "finding": "7m remains an improving tile even without 6m."
+    },
+    {
+      "timestamp": 28,
+      "finding": "Drawing 7m makes a tenpai hand using 9m as the head."
+    },
+    {
+      "timestamp": 33,
+      "finding": "Drawing 8s for tenpai is the ideal continuation."
+    },
+    {
+      "timestamp": 37,
+      "finding": "The video next discusses the separate future case of drawing 6s first."
+    },
+    {
+      "timestamp": 42,
+      "finding": "In that future 6s-draw case, recommended discard is dora 9s and riichi with waits 7m/8m."
+    },
+    {
+      "timestamp": 47,
+      "finding": "Original-position simulation lists 6m: 7 types / 23 tiles / EV 2139; 9s: 7 types / 23 tiles / EV 1988; 8m: 6 types / 19 tiles / EV 1983."
+    }
+  ]
+}
